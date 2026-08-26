@@ -60,6 +60,21 @@ def main():
         print("\n".join((cat("qout") or "").splitlines()[-2500:]))
     elif cmd == "chunk-send":
         chunk_send(sys.argv[2], sys.argv[3], sys.argv[4])
+    elif cmd == "chunk-fill":
+        # 逐一补传缺失块（list file: 每行一个块号）
+        fdata = open(sys.argv[2], "rb").read()
+        n = (len(fdata) + CHUNK - 1) // CHUNK
+        miss = sorted(int(x) for x in open(sys.argv[3]).read().split())
+        ok = fail = 0
+        for i in miss:
+            b = base64.b64encode(fdata[i*CHUNK:(i+1)*CHUNK]).decode()
+            for t in range(3):
+                try:
+                    put(f"dlck/{i:04d}.b64", b); ok += 1; break
+                except Exception:
+                    if t == 2: fail += 1
+                        # no-op
+        print(f"FILL ok={ok} fail={fail} of {len(miss)}")
     elif cmd == "chunk-checks":
         f = open(sys.argv[2], "rb").read()
         print("n=", (len(f) + CHUNK - 1) // CHUNK)

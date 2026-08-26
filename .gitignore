@@ -11,3 +11,7 @@ data/
 *.safetensors
 *.pt
 *.cptk
+
+# 大件（留在 F 盘不入 git）
+*.tar.zst
+*.tar.gz
