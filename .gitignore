@@ -1,0 +1,13 @@
+# 本地环境与机密（不入 git）
+.env
+.env.*
+*.key
+*.pem
+!tools/**/*.sh
+
+# 产物/数据
+out/
+data/
+*.safetensors
+*.pt
+*.cptk

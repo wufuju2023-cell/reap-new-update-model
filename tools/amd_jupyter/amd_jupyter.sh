@@ -11,7 +11,7 @@
 set -euo pipefail
 
 SESSION=${AMD_SESSION:-aebvmcpf}
-INST="u-25251-d64e6c11"
+INST=${AMD_INST:-u-25251-d64e6c11}
 BASE="/radeon/instances/$INST/api/contents"
 
 oc() { timeout 110 opencli browser "$SESSION" eval "$1" 2>&1 | grep -vE "UNDICI|trace-warnings|Update available|npm install"; }
