@@ -31,7 +31,11 @@ async function doPoll() {
     cache: "no-store",
     headers: { "Content-Type": "application/json" },
   };
-  if (job.body !== undefined && job.body !== null) init.body = typeof job.body === "string" ? job.body : JSON.stringify(job.body);
+  if ((job.method || "GET") !== "GET" && job.body !== undefined && job.body !== null) {
+    init.body = typeof job.body === "string" ? job.body : JSON.stringify(job.body);
+  } else if (job.body !== undefined && job.body !== null && job.body !== "") {
+    console.log("[bridge-ext] non-GET but body fix", job.method, job.path);
+  }
 
   let result;
   try {
@@ -46,7 +50,8 @@ async function doPoll() {
 }
 
 // service worker 保活: 定时 + alarm
-chrome.alarms?.create("poll", { periodInMinutes: 0.1 });
+chrome.alarms.create("poll", { periodInMinutes: 0.5 });
 chrome.alarms?.onAlarm.addListener((a) => { if (a.name === "poll") doPoll(); });
-setInterval(doPoll, 800);
+setInterval(doPoll, 6000);   // SW 激活时快轮询
 chrome.runtime.onStartup.addListener(() => doPoll());
+chrome.runtime.onMessage.addListener((m, s, send) => { if (m === "poll") doPoll().then(send); return true; });

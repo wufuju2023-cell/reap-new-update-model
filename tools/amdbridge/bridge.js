@@ -14,6 +14,7 @@ function json(res, code, obj) {
   res.end(b);
 }
 
+let stPolls = 0, stReplies = 0;
 const server = http.createServer((req, res) => {
   let body = "";
   req.on("data", (c) => (body += c));
@@ -24,6 +25,7 @@ const server = http.createServer((req, res) => {
       // /req     客户端同步调用            {method, path, body?, timeout?}
       const u = new URL(req.url, "http://x");
       if (u.pathname === "/poll") {
+        stPolls++;
         if (pending.size > 0) {
           const [id, p] = pending.entries().next().value;
           pending.delete(id);
@@ -32,6 +34,7 @@ const server = http.createServer((req, res) => {
         return json(res, 200, {});
       }
       if (u.pathname === "/reply") {
+        stReplies++;
         const r = JSON.parse(body || "{}");
         replies.set(r.id, r);
         return json(res, 200, { ok: true });
@@ -56,6 +59,7 @@ const server = http.createServer((req, res) => {
         }, 150);
         return;
       }
+      if (u.pathname === "/stat") return json(res, 200, { polls: stPolls, replies: stReplies, pending: pending.size });
       json(res, 404, { error: "not found" });
     } catch (e) {
       json(res, 500, { error: String(e) });

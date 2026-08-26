@@ -1,9 +1,9 @@
 {
   "manifest_version": 3,
   "name": "AMD Radeon Cloud Control Bridge",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "WSL→浏览器→AMD Radeon Cloud API 直连桥（专用控制面，替代 opencli CDP）",
-  "permissions": ["storage"],
+  "permissions": ["storage", "alarms"],
   "host_permissions": [
     "https://developer.amd.com.cn/*",
     "http://127.0.0.1/*",
