@@ -11,6 +11,9 @@ def post(url, obj, timeout=300):
                                  headers={"Content-Type": "application/json"})
     return json.loads(urllib.request.urlopen(req, timeout=timeout).read())
 
+def get(url, timeout=60):
+    return json.loads(urllib.request.urlopen(url, timeout=timeout).read())
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--host", default="localhost"); ap.add_argument("--port", type=int, default=8760)
@@ -20,7 +23,7 @@ def main():
     a = ap.parse_args()
     Path(a.metrics).parent.mkdir(parents=True, exist_ok=True)
     base = f"http://{a.host}:{a.port}"
-    print("[rttt_demo] health:", post(base + "/health", {}))
+    print("[rttt_demo] health:", get(base + "/health"))
     prompts = ["User: Please generate a tactic in lean4 to solve the state.\nSTATE:\n⊢ n / m ∣ n ∧ n / m < n\nTACTIC:\nAssistant:",
                "User: Please generate a tactic in lean4 to solve the state.\nSTATE:\n⊢ 0 < x → 2 * x < 4\nTACTIC:\nAssistant:"]
     items = []
