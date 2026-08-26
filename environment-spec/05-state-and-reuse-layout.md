@@ -9,14 +9,14 @@
 ### A. 制品仓库（git，本地 laptop = first place）
 
 ```
-/home/zhai/project/reap/new-update-model/        ← 本地 git 仓库（push 到 GitHub/Gitee 私有）
+/home/zhai/project/reap/new-update-model/        ← 本地 git 仓库（F 盘 /mnt/f/projects/reap-new-update-model；push 到 GitHub 私有）
 ├─ tools/amd_jupyter/     控制面（runner.py / bootstrap.sh / amd_jupyter.sh）
 ├─ app/                   训练管线（train_sft.py / policy_server.py / value_server.py / rttt_demo.py / restore.sh）
 ├─ v1-spec/               开发 specs（本文档）
 └─ environment-spec/      环境规格
 ```
 
-- 镜像仓库选择：**Gitee 私有**（大陆访问快；云实例与本地都好拉）优先；GitHub 私有为备份。
+- 镜像仓库：**GitHub 私有** `wufuju2023-cell/reap-new-update-model`（gh CLI 管理；本机与云实例均通过 gh token/https 拉取）。
 - 大小：全部 <= 数 MB（代码不含权重/数据）。
 - 版本：tag `v1-<date>`；每次训练包 `env.lock` + `requirements.lock` 同 commit。
 
@@ -48,8 +48,8 @@
 # 1. Launch 模板 reap-pytorch（ssh:true, rocm-pytorch）
 # 2. push bootstrap.sh + runner.py     # 工具一键
 bash bootstrap.sh                      # 控制面在线（5s）
-# 3. 仓库克隆（内部网络：gitee）
-git clone <gitee://reap/new-update-model> /workspace/app-src
+# 3. 仓库克隆（通过 GitHub 私有 repo；云实例内可用 gh token 或配好 PAT）
+git clone https://github.com/wufuju2023-cell/reap-new-update-model /workspace/app-src
 cp /workspace/app-src/app/* /workspace/app/  # 固化 app 版本（要求 requirements.lock 在）
 # 4. 恢复权重+状态
 cd /workspace/app && bash restore.sh --from modelscope:reap/rl-v1 --to /workspace/out
@@ -64,7 +64,7 @@ bash smoke.sh   # 报告：模型 hash + gpus + value head 有效 => 续训可�
 # WSL 侧（或队列 exec）
 /app/archive.sh
 #  → tar ckpt+Vhead+buffer → ModelScope 上传 → 失败自动重试 2 次
-#  → git add/app+out 记录 → commit → push（gitee 私有）
+#  → git add/app+out 记录 → commit → push（GitHub 私有）
 #  → 生成 state/hash.txt（所有产物 SHA256 清单）并发进仓库
 ```
 

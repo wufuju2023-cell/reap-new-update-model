@@ -19,7 +19,7 @@ mathlib 编译说明：
 - 采用 `lake build` 分 4 批（`Reap/Basic → Options → TreeSearch → Tactic` 依赖序），
   每批前 `touch state/lean_b<n>.done`，批间允许 >4min（队列 runner timeout 2800s 已覆盖）
 - 磁盘需求：mathlib 源+构建产物约 8–12GB → 放在 /workspace（100GB NVMe）ok
-- 若官方仓库拉取慢：git 换 `https://gitee.com/...镜像`（后续可选）
+- 若官方仓库拉取慢：git clone 走 `gh`/GitHub 直连并 `--depth=1`，改用分支镜像不设 gitee（后续可选代理镜像）
 
 ## 4.3 对接协议（Lean 侧 ↔ policy/value 服务）
 
