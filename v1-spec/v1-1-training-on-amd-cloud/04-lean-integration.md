@@ -50,9 +50,9 @@ export HF_ENDPOINT=https://hf-mirror.com; huggingface-cli download ... --resume
 # 3) pip deps (tuna)
 /opt/venv/bin/pip install -r /workspace/app/requirements.lock \
    --index-url https://pypi.tuna.tsinghua.edu.cn/simple
-# 4) SFT（4 卡 DDP）
-/opt/venv/bin/torchrun --nproc 4 /workspace/app/train_sft.py ...
-# 5) 启动 servers
+# 4) [NOT USED] SFT（4 卡 DDP）—— 停用：主线 0 训练，RTTT on-demand
+#    （如需 P3 保险丝流程，需用户决策后再启用 train_sft.py）
+# 5) 启动 servers（直载 REAL-Prover，0 长训）
 nohup /opt/venv/bin/python /workspace/app/policy_server.py > /workspace/logs/policy.log 2>&1 &
 # 6) RTTT 演练（模拟搜索回放）
 /opt/venv/bin/python /workspace/app/rttt_demo.py --steps 10

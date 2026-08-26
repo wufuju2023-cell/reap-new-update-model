@@ -44,9 +44,9 @@ $$\mathrm{Diff}(v) = 1-\mathrm{solve@}B_{\mathrm{low}}(\pi_g, v),\quad \mathrm{k
 
 ```
 T0    下载(批)          -> state/dl_*.done
-T1    SFT 阶段1(12.5k)  -> ckpt-sft-1
+T1    [NOT USED] SFT 阶段1(12.5k)  （取消；SFT 全停用，见 00 STATUS）
 T1.5  value head init   -> v_head.pt
-T2    policy_server+value_server 起（LoRA hot）
+T2    policy_server+value_server 起（LoRA hot，0 长训直载 REAL-Prover）
 T2.5  RTTT 直播（buffer>=k 更新）——截图指标每 60s 落 out/rttt_metrics.jsonl
-T3    复用 checkpoints 再训（第 2 epoch，优先用更高质量样本）
+T3    [NOT USED] 复用 checkpoints 再训（取消；如 P3 保险丝触发另行决策）
 ```

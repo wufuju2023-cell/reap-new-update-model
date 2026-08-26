@@ -29,10 +29,11 @@ teacher T  : Radeon Token Factory API（OpenAI 兼容，BaseURL /radeon/api/v1�
 
 ## 1.3 学习信号：**用即学**（RTTT 为主，SFT 可选）
 
-### (a) 策略 SFT（**可选/保险丝**，默认跳过）
+### (a) 策略 SFT（**[NOT USED] 状态：停用**（2026-08-26），仅存作保险丝档案）
 $$\mathcal{L}_{\mathrm{pol}} = -\mathbb{E}_{(s,a)\sim D}\,\log \pi_\theta(a \mid s)$$
 作用 = 将 7B 校准到 mathlib 格式；REAL-Prover 权重已对齐 → **V1-1 主线 epoch=0**。
-仅在 P1 表现停滞（连续 10 题无提升、且错误多为格式/语法类）时启用 1 epoch 校准（P3 保险丝）。
+**现行约定：不执行任何 SFT（train_sft.py 标记 DEPRECATED）**；仅当 P1 长期停滞
+（连续 10 题无提升、且错误多为格式/语法类）时，才可能征求用户决定启用 1 epoch（P3 保险丝）。
 
 ### (b) value head 初始化（一次性微校准，10 分钟）
 - 默认：**随机初始化**，头 1 s-batch 用二元信号校准（正例=验证成功，负例=验证失败）：

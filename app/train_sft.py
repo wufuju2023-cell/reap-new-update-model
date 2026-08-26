@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""V1-1 最小可运行骨架：4 卡 DDP LoRA SFT（从 REAL-Prover 权重续训，不从头）。
+"""[DEPRECATED — SFT 停用, 2026-08-26] V1-1 主线 = 0 长训 + on-demand RTTT（见 v1-spec 00 STATUS）。
+本文件仅存档为"保险丝"参考（未来用户决策启用 P3 时才恢复）。
 用法（实例内）: /opt/venv/bin/torchrun --nproc 4 /workspace/app/train_sft.py \
         --data /workspace/data/pairs/train.jsonl --ckpt-out /workspace/out/ckpt-sft
 """
