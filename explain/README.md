@@ -16,3 +16,4 @@
 | 10 | `10-mcts-usage-and-alternatives.md` | MCTS 用途与意义：AlphaGo→AlphaProof→V1/V2，搜索算法谱系与"MCTS 是首选而非妥协"论证 |
 | 11 | `11-selfplay-alpha-zero-vs-reap-ttt.md` | AlphaGo Zero self-play 机制 vs Reap-α-Π-TTT 自改进（对手→教师/验证→诊断/批→事件） |
 | 12 | `12-teacher-evolution-co-evolution.md` | 教师进化与师生共进化（AlphaEvolve/OpenEvolve 参照）：LP fitness、三层时间尺度、共漂移防性 |
+| 13 | `13-teacher-posttrain-vs-evolution.md` | 教师后训练（传统 LLM 微调, 低频） vs 教师进化：污染/保真度坍缩/共过拟合；两层教师“B为主+A为壳” |
