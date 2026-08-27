@@ -18,15 +18,14 @@
 - `/workspace/out/rttt_metrics.jsonl`（实例已删；数值已记录于上）
 - 实例 dlck 块（无需保留）
 
-## 下次实例（计划）——恢复剧本
+## 下次实例（计划）——恢复剧本（v2：镜像分发 / 实例内装包）
 ```
-1. Launch 模板 reap-pytorch（rocm-pytorch 镜像 + SSH:true）
-2. push runner.py bootstrap.sh → bash bootstrap.sh          （控制面）
-3. git clone https://github.com/wufuju2023-cell/reap-new-update-model
-4. 工具（先跑通再续）：
-   - amdrctl2.py ls                                  （验证桥链路）
-   - exec 重建 env：hf-mirror 拉模型(8min)、pip deps
-   - lean 包重传：chunk-send 372 块（分 60/批 + 逐块校验重试 v2）
+1. Launch 模板 reap-pytorch（rocm-pytorch 镜像 + SSH:true）→ bootstrap.sh（控制面）
+2. git clone https://github.com/wufuju2023-cell/reap-new-update-model → app/
+3. 实例内（rocm-pytorch 自带 torch 2.10+HIP，与 base 一致）：
+   /opt/venv/bin/pip install peft trl accelerate --index-url 清华      （~2min）
+   —— 等效 reap-train 镜像内容（GPU 镜像为可选增强，Dockerfile/CI 保留）
+4. 镜像镜像化（按需）：docker pull ghcr.io/.../reap-lean:4.28.0-rc1-reap 跑 CPU MCTS 容器
 5. policy_server 起 → rttt_demo → 续 RTTT
 ```
-> 传输工具 v2 待实装：`chunk-send` 增加远程 diff + 逐块重试（下轮直接用）。
+> GPU 镜像路径：训练环境 = rocm-pytorch base（实例镜像自带）+ 3 个包；容器镜像仅作为可复现制品留档。
