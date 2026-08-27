@@ -2,6 +2,10 @@
   "schema": "reap.local-delivery-manifest.v1",
   "scope": "Verified V1 report, source and evidence package; GPU image publication not included",
   "files": {
+    ".gitattributes": {
+      "size": 67,
+      "sha256": "928895a3679a4d4926780242232a012d7fe1f86f4bc174d68eef3ba7d7b95c1f"
+    },
     "docker/batch.example.jsonl": {
       "size": 171,
       "sha256": "c4a436c18d8c54efab98232cac306d651e37a5727772fc53ae5cc3325f4695da"
