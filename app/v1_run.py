@@ -18,21 +18,25 @@ def load_batch(path):
 
 def make_lean(task, policy, value, ps, import_extra=""):
     imports = "\n".join(f"import {m}" for m in task.get("imports", []))
+    opts = ""
+    if policy:
+        opts = (f'set_option reap.policy_endpoint "{policy}"\n'
+                f'set_option reap.value_endpoint "{value}"\n'
+                f'set_option reap.ps_endpoint "{ps}"\n')
     theorems = []
     for t in task.get("theorems", []):
         stmt = t["statement"]
         theorems.append(f"""theorem {t['name']} : {stmt} := by
-  set_option reap.policy_endpoint "{policy}"
-  set_option reap.value_endpoint "{value}"
-  set_option reap.ps_endpoint "{ps}"
   reapMCTS
 """)
     return f"""import Reap
+import Reap.Tactic.Syntax
 {imports}
 {import_extra}
 
+{opts}
 {chr(10).join(theorems)}
-print "%%TASK_{task['id']}_DONE%%"
+#eval IO.println "%%TASK_{task['id']}_DONE%%"
 """
 
 def run_one(task, args, image):
