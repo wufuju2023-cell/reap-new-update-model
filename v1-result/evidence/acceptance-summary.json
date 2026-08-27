@@ -1,0 +1,28 @@
+{
+  "schema_version": "reap.v1-result.acceptance.v1",
+  "successful_session": "online-20260827-e",
+  "true_lean_same_tree_gpu_ttt": true,
+  "single_recorded_search_launch": true,
+  "real_search_visit_backup_target": true,
+  "actual_before_after_snapshot_tensor_hashes_verified": true,
+  "raw_http_learn_receipt_equals_actual_snapshot_receipt": true,
+  "later_wire_policy_and_value_version_verified": true,
+  "independent_network_none_final_proof_recheck": true,
+  "successful_session_updates": 1,
+  "execution_window_seconds": 79.47714003700094,
+  "lean_internal_report_seconds": 29.085723079,
+  "cpu_image_id": "df23cd6a9b5b6df30fa003285fadcdc1e5d60919eb43b823b0731c17bf135646",
+  "gpu_execution_environment": "remote AMD host, not GPU container",
+  "concurrent_session": "online-20260827-f",
+  "concurrent_session_updates": 5,
+  "concurrent_session_root_verified": false,
+  "whole_two_session_batch_passed": false,
+  "gpu_container_passed": false,
+  "image_published": false,
+  "proof_quality_improvement_established": false,
+  "limitations": [
+    "One positive-visit candidate in E learning event (pi=[1]); no broad search-distillation benchmark.",
+    "Search launch continuity comes from source and artifacts, not an independent historical /proc trace.",
+    "This run does not repeat full-base hashing or snapshot restore; separate strict GPU preflight covers those gates."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "ok": true,
+  "sessions": [
+    {
+      "session_id": "multi-20260827-01r1",
+      "updates": 3,
+      "snapshot_receipts_equal_cpu_receipts": true,
+      "all_versions_used_by_later_wire_generation": true,
+      "all_updates_while_unproved": true,
+      "all_tensors_finite": true,
+      "first_last_snapshot_hash_matches": true
+    },
+    {
+      "session_id": "multi-20260827-05r2",
+      "updates": 2,
+      "snapshot_receipts_equal_cpu_receipts": true,
+      "all_versions_used_by_later_wire_generation": true,
+      "all_updates_while_unproved": true,
+      "all_tensors_finite": true,
+      "first_last_snapshot_hash_matches": true
+    }
+  ],
+  "limits": [
+    "Saved initial/final trainable state checked on CPU; no live restore and no new frozen-7B content rehash.",
+    "Intermediate updates linked by matching receipts and contiguous fingerprints, not by separate intermediate tensor snapshots."
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "schema": "reap.local-delivery-manifest.v1",
+  "scope": "Verified V1 report, source and evidence package; GPU image publication not included",
+  "files": {
+    "docker/batch.example.jsonl": {
+      "size": 171,
+      "sha256": "c4a436c18d8c54efab98232cac306d651e37a5727772fc53ae5cc3325f4695da"
+    },
+    "docker/build.sh": {
+      "size": 1032,
+      "sha256": "af3f962aaac72ec6c5f0abe63e93c60dc9a46946a9b8ca3fdd1544a0c29885d0"
+    },
+    "docker/cpu.Dockerfile": {
+      "size": 3884,
+      "sha256": "30325287bfbc8b42267d0fce37b7a8d4f1c85be3a7529b2a320d80cffa4414fb"
+    },
+    "docker/prepare_context.py": {
+      "size": 5746,
+      "sha256": "b10aefcd8ff08b4a0cefcb7f33f40739854d40e1a99eb69163b7a0042202b03c"
+    },
+    "docker/README.md": {
+      "size": 7960,
+      "sha256": "08eb40e813d9f6d0729af2570fcf8b467315906ceca04229b98ed8090a686e12"
+    },
+    "docker/run-cpu.sh": {
+      "size": 624,
+      "sha256": "0fecbca024bbdadf42f00063c4a3d8e1ea19ba4db87b39a224737067c37bbdd4"
+    },
+    "docker/run-gpu.sh": {
+      "size": 447,
+      "sha256": "a4e5f9376ea64606b254ff6c700dd15b6563ce1a85b79f4d8c8513f2e7601c47"
+    },
+    "docker/test_delivery_context.py": {
+      "size": 3081,
+      "sha256": "d0f98c2b6b41e97cecdea07cc9064ba7c0dee2321a65203035f4377ea1857389"
+    },
+    "docker/train.Dockerfile": {
+      "size": 6543,
+      "sha256": "644b586e389a1d0c0125de3876732db7e57825ff82208d88786659aaf1e49492"
+    },
+    "docs/01-实验设计与成功边界.md": {
+      "size": 4514,
+      "sha256": "229bcb1834dbb1012f86314014e08c30a5f54c359a7e098342bd1383bc4f5a83"
+    },
+    "docs/02-运行流程与复现.md": {
+      "size": 5833,
+      "sha256": "3fbf4281d7b46ded8bee3ebc235c8f4aa93c7acf8006fc037b52247e769958e0"
+    },
+    "docs/03-实际TTT结果与证据.md": {
+      "size": 4744,
+      "sha256": "ee0528350628083aecf953eba5351ba91aeaf733c18414602ceb75b242fe887c"
+    },
+    "docs/04-新agent复现prompt.md": {
+      "size": 28189,
+      "sha256": "73a689b1a4ae15fe48ee4508d4e362ce359999edd237a684684276d856528d7c"
+    },
+    "docs/05-新docker参考对比.md": {
+      "size": 3299,
+      "sha256": "9cc53a5fbc791271be8cf1517f299a6ced1b627ebaf3b4aaf71b8ff4da1d4e65"
+    },
+    "docs/06-容器未完成原因与交付边界.md": {
+      "size": 4564,
+      "sha256": "dff2905329c35531a9877d87c090b4739885d68f9c1e3a8a3d1302ce9811339e"
+    },
+    "docs/07-多轮TTT记录与成功边界.md": {
+      "size": 4438,
+      "sha256": "d41547899b6752814feebba770f9c834657499052927c133dbc787f968ddd42f"
+    },
+    "docs/08-CPU交付镜像验收.md": {
+      "size": 3815,
+      "sha256": "44310709cfcaa165134116c680d147272c02b5c6381d354802ec7a413aca933f"
+    },
+    "docs/09-五题尝试与并发结果.md": {
+      "size": 7635,
+      "sha256": "66c67d205c82f50d74a3a8603b7caa4a5fe4a4ee1b324f7c193490f256138da4"
+    },
+    "docs/10-原设计逐项对照与实际流程.md": {
+      "size": 8910,
+      "sha256": "17229a9a7b85fd2e297a05b14e7aead0c7fb3126301ca93cbaf2e898e455a4ba"
+    },
+    "docs/README.md": {
+      "size": 3838,
+      "sha256": "6efbf96bb0efd07b917d706498614dc9a6f41469eaf83caa356411398bb668a2"
+    },
+    "evidence/acceptance-summary.json": {
+      "size": 1387,
+      "sha256": "063f28647f43c210d8fe822c1829d81b65e3ed875b9ee52230519fa3cd4243e4"
+    },
+    "evidence/cpu-delivery/acceptance-summary.json": {
+      "size": 1806,
+      "sha256": "baa0af130821ad8423d8b221e48f1d817e33dab133d7243a7a06a2ec6c3841aa"
+    },
+    "evidence/cpu-delivery/raw-evidence-manifest.json": {
+      "size": 5456,
+      "sha256": "5ce48ae5b677a2caae0fd144832644000eb43bf4a073e62d1e6f041a87d1e723"
+    },
+    "evidence/cpu-delivery/raw-evidence.tar.gz": {
+      "size": 25431,
+      "sha256": "eea04eeceaa38d49c93fb7cec96ccbe48253ffc9ccf64d49ab4ba77d1a6ef6db"
+    },
+    "evidence/current-container-access.json": {
+      "size": 465,
+      "sha256": "79ce4d0a7b3363e2a8690cc963f24151d168d2c5d12990bbb4b557e37c9863ac"
+    },
+    "evidence/f-empty-tactic-analysis.json": {
+      "size": 22149,
+      "sha256": "6f1c6b55ec6816166665b255e300a0c7121ddffa61e4328d16afca5e1084dd52"
+    },
+    "evidence/independent-execution-audit.json": {
+      "size": 6373,
+      "sha256": "9d9e24e5903ab208e8fdda5aac319a7f9a58bffcff7a979501229d211b0958ac"
+    },
+    "evidence/independent-wire-e.json": {
+      "size": 5060,
+      "sha256": "689b363ec5b8b13c9adbf41f17c7c7bb39e7da19876459e909ee1fd3c5479e8e"
+    },
+    "evidence/independent-wire-f.json": {
+      "size": 53848,
+      "sha256": "36d8f7b1091b672165451d2336074088d06b51122bcfb67b75f55dfecfbb6902"
+    },
+    "evidence/multi-round-ttt.json": {
+      "size": 16160,
+      "sha256": "20e723da358853cf934e92f20e75650b23d5df9854c6dd84256fa6298caaa0c6"
+    },
+    "evidence/multiround/final-health.json": {
+      "size": 139,
+      "sha256": "fbb09274d9eba1850b41e4b0d270c3f1d7ad93e7069efd303bf878055fd1c447"
+    },
+    "evidence/multiround/raw-evidence-manifest.json": {
+      "size": 48819,
+      "sha256": "8d6d84083d5f0f180f6de6e66fa7c6ed58b92ce3318d059bfc09ebc95d48be86"
+    },
+    "evidence/multiround/raw-evidence.tar.gz": {
+      "size": 423851,
+      "sha256": "9183583475aef37bafd4d0f88e32cc958f5baa335d9b06456ee41dd02f5a6450"
+    },
+    "evidence/multiround/README.md": {
+      "size": 3118,
+      "sha256": "bb97730ca325be75d99b7d377476497877c1ab6be499550c9c1b4192f92b8c7e"
+    },
+    "evidence/multiround/snapshot-audit.json": {
+      "size": 61138,
+      "sha256": "afa6116e7f304dea5c14b1104b1141fe1379aa58adbb67d0f2ad3dd6cffed98a"
+    },
+    "evidence/multiround/snapshot-wire-crosscheck.json": {
+      "size": 942,
+      "sha256": "86e0935c8d9ee72e0544dcf59864492a8e8b91a05232813869270b573861b3c5"
+    },
+    "evidence/multiround/summary.json": {
+      "size": 7774,
+      "sha256": "98270e43033f4778996839efbd8228e92a03b32cc33f3ec0c0264b4ff24828c2"
+    },
+    "evidence/multiround/wire-01r1.json": {
+      "size": 16509,
+      "sha256": "30ad99ebc4fb0e91c309a2ab98fc2e38d157ec0def847d43a5a5ebf9863e66a4"
+    },
+    "evidence/multiround/wire-02.json": {
+      "size": 53922,
+      "sha256": "6e5dcfbc21a1d4f4c80bc8decb62594ddfa8dc7f6a1f1533cacd1de587497863"
+    },
+    "evidence/multiround/wire-03.json": {
+      "size": 5063,
+      "sha256": "4fa1a6e9f2cadfbc7ef567f36b0cdf7a8a209813ba0b00e55a3872af32acd82e"
+    },
+    "evidence/multiround/wire-05r2.json": {
+      "size": 7901,
+      "sha256": "00e0c8ae2491953f0cdf0e6401c884659a2371dc1f67ac32d8af3810c0208999"
+    },
+    "evidence/raw-evidence-manifest.json": {
+      "size": 14367,
+      "sha256": "b709f9a3a2a8d2ffbb10bdfdf4e4cfc9ae459dfcf772ea9d178129e3d9c2d791"
+    },
+    "evidence/raw-evidence.tar.gz": {
+      "size": 106016,
+      "sha256": "eb7c54a4910a1a6b81d72cb75279eb58ca6b2965a509af6c565ce297a7df37d5"
+    },
+    "evidence/README.md": {
+      "size": 6539,
+      "sha256": "fa007f417c27ad22ed96201b069e866868d2f3a5da3d85b5c9f3687d977b794b"
+    },
+    "evidence/recurrence-snapshot-audit.json": {
+      "size": 42841,
+      "sha256": "545a6594acd93744f0dcaf53f60f3e68f7ce8660194960c85660f7b5413271d7"
+    },
+    "evidence/source-checks.json": {
+      "size": 2344,
+      "sha256": "6a3f2a184f9f46a918561a63600178c72ecd1bc2b6d115c0d606b4b89be0453e"
+    },
+    "evidence/wire-snapshot-crosscheck.json": {
+      "size": 2663,
+      "sha256": "7712612d8b593d4c9aba7383ce6c4d5004a9a0b2741d0dcda6992a2291d43c5e"
+    },
+    "README.md": {
+      "size": 5758,
+      "sha256": "944bb879cfa822133c02ea21c07d2d79dc1c58abc0f7e65c8f7e1863437320e3"
+    },
+    "source/README.md": {
+      "size": 5843,
+      "sha256": "3c7571976147f3bb0b2c368d3fea8ab7eb92df9f72b3cc4c9336810cf2db2b5b"
+    },
+    "source/source-manifest.json": {
+      "size": 22881,
+      "sha256": "b7748f834c4bf9a254cc5ca63658c70a5c3a3335c3e0b98fd19289ee1912bd54"
+    },
+    "source/source-snapshot.tar.gz": {
+      "size": 114830,
+      "sha256": "69082304c896cd5995619d9c65a8659d452db13f1cfd08f48a00d7822ab141ce"
+    },
+    "source/transport-fix/http_bridge.py": {
+      "size": 19052,
+      "sha256": "3e42055edc60fb4fe94b3a8c4d6b68d163be96e0dd59423f019b83544a65ce6f"
+    },
+    "source/transport-fix/README.md": {
+      "size": 4345,
+      "sha256": "aee56ee4a36c592e9539101df3ff94c925705d5aeade2eb935eccb6078fd7aba"
+    },
+    "source/transport-fix/test_http_bridge.py": {
+      "size": 16030,
+      "sha256": "2f2e451d0c9aef0d5355d7e8e936bbc27d3234ee39f96582481ff81f8b155f50"
+    },
+    "source/verify_source.py": {
+      "size": 6801,
+      "sha256": "df1cfc12ad84f756ab79c7cf59f5866a8bd903d94d854778ec52b382e1e3fe7d"
+    }
+  }
+}

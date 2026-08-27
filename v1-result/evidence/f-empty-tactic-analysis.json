@@ -1,0 +1,827 @@
+{
+  "status": "RAW_GENERATION_IMMEDIATE_EOS_NOT_LEAN_PARSER_LOSS",
+  "collection_sha256": "8f01c4e6a38590b27a1c16880836763d14ce224cd23051409e53526edb07de9d",
+  "source_collection_sha256": "37c9774fcf916224773a8292f9d2243797e43c5e3294e5c1af9ee9dff6bf007b",
+  "raw_evidence": {
+    "archive": "raw-evidence.tar.gz",
+    "collection_member": "http-evidence-ef.json",
+    "note": "Raw collection and E/F CPU/proof-check materials are delivered inside the archive; consult its member manifest for CPU paths."
+  },
+  "session_id": "online-20260827-f",
+  "total_policy_choices": 64,
+  "raw_empty_choices": 53,
+  "empty_counts_by_version": {
+    "1": 2,
+    "2": 2,
+    "3": 2,
+    "4": 2,
+    "5": 45
+  },
+  "all_empty_choices_are_exactly_one_EOS_token": true,
+  "first_empty_step": 2,
+  "empty_choices": [
+    {
+      "step": 2,
+      "request_id": "a63edf31518549588d8659af58d92385",
+      "response_id": "chatcmpl-e866cbaf49db43e08668529e1dfdaa29",
+      "policy_version": 1,
+      "choice_index": 0,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.4470182955265045
+      },
+      "observer_sequences": [
+        19
+      ]
+    },
+    {
+      "step": 2,
+      "request_id": "a63edf31518549588d8659af58d92385",
+      "response_id": "chatcmpl-e866cbaf49db43e08668529e1dfdaa29",
+      "policy_version": 1,
+      "choice_index": 1,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.4470182955265045
+      },
+      "observer_sequences": [
+        19
+      ]
+    },
+    {
+      "step": 3,
+      "request_id": "65610b22602c460ba7304ae593ce40a6",
+      "response_id": "chatcmpl-015881ad49d94c3790aead8239a02e67",
+      "policy_version": 2,
+      "choice_index": 0,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.3345644176006317
+      },
+      "observer_sequences": [
+        28
+      ]
+    },
+    {
+      "step": 3,
+      "request_id": "65610b22602c460ba7304ae593ce40a6",
+      "response_id": "chatcmpl-015881ad49d94c3790aead8239a02e67",
+      "policy_version": 2,
+      "choice_index": 1,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.3345644176006317
+      },
+      "observer_sequences": [
+        28
+      ]
+    },
+    {
+      "step": 4,
+      "request_id": "f4b24e2e86194d99baf2273330c0158d",
+      "response_id": "chatcmpl-644be0dbe505446aae51445ae97e08f1",
+      "policy_version": 3,
+      "choice_index": 0,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.25033214688301086
+      },
+      "observer_sequences": [
+        37
+      ]
+    },
+    {
+      "step": 4,
+      "request_id": "f4b24e2e86194d99baf2273330c0158d",
+      "response_id": "chatcmpl-644be0dbe505446aae51445ae97e08f1",
+      "policy_version": 3,
+      "choice_index": 1,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.25033214688301086
+      },
+      "observer_sequences": [
+        37
+      ]
+    },
+    {
+      "step": 5,
+      "request_id": "2d05c3e12e644579a1d702a92ba6e932",
+      "response_id": "chatcmpl-ad4f45e59b764da69fedf2e4339542ec",
+      "policy_version": 4,
+      "choice_index": 0,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.20669499039649963
+      },
+      "observer_sequences": [
+        46
+      ]
+    },
+    {
+      "step": 5,
+      "request_id": "2d05c3e12e644579a1d702a92ba6e932",
+      "response_id": "chatcmpl-ad4f45e59b764da69fedf2e4339542ec",
+      "policy_version": 4,
+      "choice_index": 1,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.20669499039649963
+      },
+      "observer_sequences": [
+        46
+      ]
+    },
+    {
+      "step": 6,
+      "request_id": "7fa8458b194947aba699779a95f11331",
+      "response_id": "chatcmpl-2e64fb6630f14053804ae600868dc3a4",
+      "policy_version": 5,
+      "choice_index": 0,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        55
+      ]
+    },
+    {
+      "step": 6,
+      "request_id": "7fa8458b194947aba699779a95f11331",
+      "response_id": "chatcmpl-2e64fb6630f14053804ae600868dc3a4",
+      "policy_version": 5,
+      "choice_index": 1,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        55
+      ]
+    },
+    {
+      "step": 7,
+      "request_id": "72bdd3ae88bb40938c48cc48483d2704",
+      "response_id": "chatcmpl-8c4b45d656a74ca6b162eb345fa25f60",
+      "policy_version": 5,
+      "choice_index": 0,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        64
+      ]
+    },
+    {
+      "step": 7,
+      "request_id": "72bdd3ae88bb40938c48cc48483d2704",
+      "response_id": "chatcmpl-8c4b45d656a74ca6b162eb345fa25f60",
+      "policy_version": 5,
+      "choice_index": 1,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        64
+      ]
+    },
+    {
+      "step": 8,
+      "request_id": "02736c5936ee4ca9a4dfc9070a62cecc",
+      "response_id": "chatcmpl-61207867a89f4196819b4cbc1664777a",
+      "policy_version": 5,
+      "choice_index": 0,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        73
+      ]
+    },
+    {
+      "step": 8,
+      "request_id": "02736c5936ee4ca9a4dfc9070a62cecc",
+      "response_id": "chatcmpl-61207867a89f4196819b4cbc1664777a",
+      "policy_version": 5,
+      "choice_index": 1,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        73
+      ]
+    },
+    {
+      "step": 9,
+      "request_id": "efa900979aef451b878d8ddb4a3461c0",
+      "response_id": "chatcmpl-9544235ca37f420e94b74b072c4af121",
+      "policy_version": 5,
+      "choice_index": 0,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        82,
+        84
+      ]
+    },
+    {
+      "step": 10,
+      "request_id": "95a1c636c8b44241bf985a2ec0da5750",
+      "response_id": "chatcmpl-fa7e580b65254ccf81c29fae5ecbc02e",
+      "policy_version": 5,
+      "choice_index": 0,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        93
+      ]
+    },
+    {
+      "step": 10,
+      "request_id": "95a1c636c8b44241bf985a2ec0da5750",
+      "response_id": "chatcmpl-fa7e580b65254ccf81c29fae5ecbc02e",
+      "policy_version": 5,
+      "choice_index": 1,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        93
+      ]
+    },
+    {
+      "step": 11,
+      "request_id": "26a4341b527c4f60840a8f9ca5206d6e",
+      "response_id": "chatcmpl-03d760b41791400e99a8d6ce7fa0a119",
+      "policy_version": 5,
+      "choice_index": 0,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        102,
+        104
+      ]
+    },
+    {
+      "step": 12,
+      "request_id": "8da80bb394604ad3bdbd70f6e620bc18",
+      "response_id": "chatcmpl-75b5abb50e624b4f9470570cf22cb31b",
+      "policy_version": 5,
+      "choice_index": 0,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        113
+      ]
+    },
+    {
+      "step": 12,
+      "request_id": "8da80bb394604ad3bdbd70f6e620bc18",
+      "response_id": "chatcmpl-75b5abb50e624b4f9470570cf22cb31b",
+      "policy_version": 5,
+      "choice_index": 1,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        113
+      ]
+    },
+    {
+      "step": 13,
+      "request_id": "5068dfa3d8984b12b5c999132116c544",
+      "response_id": "chatcmpl-550f81e963c84f899aff5acd8f3de9c6",
+      "policy_version": 5,
+      "choice_index": 0,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        122
+      ]
+    },
+    {
+      "step": 13,
+      "request_id": "5068dfa3d8984b12b5c999132116c544",
+      "response_id": "chatcmpl-550f81e963c84f899aff5acd8f3de9c6",
+      "policy_version": 5,
+      "choice_index": 1,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        122
+      ]
+    },
+    {
+      "step": 14,
+      "request_id": "1aea19e5f36849778ad8a7d71b8d1919",
+      "response_id": "chatcmpl-5db261db67814da3aecf45afb08ab4d0",
+      "policy_version": 5,
+      "choice_index": 1,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        131,
+        133
+      ]
+    },
+    {
+      "step": 15,
+      "request_id": "e90c63dd78f743dbbc1acbc8c1c4d7ec",
+      "response_id": "chatcmpl-f5108356d1054292913ffe606e623026",
+      "policy_version": 5,
+      "choice_index": 0,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        142
+      ]
+    },
+    {
+      "step": 15,
+      "request_id": "e90c63dd78f743dbbc1acbc8c1c4d7ec",
+      "response_id": "chatcmpl-f5108356d1054292913ffe606e623026",
+      "policy_version": 5,
+      "choice_index": 1,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        142
+      ]
+    },
+    {
+      "step": 16,
+      "request_id": "884613cc85d44ba1b37c1c45c4b95452",
+      "response_id": "chatcmpl-388c17077368407a89b4b6020ac943f0",
+      "policy_version": 5,
+      "choice_index": 0,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        151
+      ]
+    },
+    {
+      "step": 16,
+      "request_id": "884613cc85d44ba1b37c1c45c4b95452",
+      "response_id": "chatcmpl-388c17077368407a89b4b6020ac943f0",
+      "policy_version": 5,
+      "choice_index": 1,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        151
+      ]
+    },
+    {
+      "step": 17,
+      "request_id": "1e62e47e77f24373b08eedd06e1fe234",
+      "response_id": "chatcmpl-9f7f1e488c33478aa7553355ea70144a",
+      "policy_version": 5,
+      "choice_index": 0,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        160
+      ]
+    },
+    {
+      "step": 17,
+      "request_id": "1e62e47e77f24373b08eedd06e1fe234",
+      "response_id": "chatcmpl-9f7f1e488c33478aa7553355ea70144a",
+      "policy_version": 5,
+      "choice_index": 1,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        160
+      ]
+    },
+    {
+      "step": 18,
+      "request_id": "925b1628c5f5440ba36897b934ea2427",
+      "response_id": "chatcmpl-fe74960ba8794e7b9a593abdc60cfe49",
+      "policy_version": 5,
+      "choice_index": 0,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        169
+      ]
+    },
+    {
+      "step": 18,
+      "request_id": "925b1628c5f5440ba36897b934ea2427",
+      "response_id": "chatcmpl-fe74960ba8794e7b9a593abdc60cfe49",
+      "policy_version": 5,
+      "choice_index": 1,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        169
+      ]
+    },
+    {
+      "step": 19,
+      "request_id": "340c5d2a0c3545dd97148bd2668e3658",
+      "response_id": "chatcmpl-32ed6c150676488da5fc377c271a729c",
+      "policy_version": 5,
+      "choice_index": 0,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        178
+      ]
+    },
+    {
+      "step": 19,
+      "request_id": "340c5d2a0c3545dd97148bd2668e3658",
+      "response_id": "chatcmpl-32ed6c150676488da5fc377c271a729c",
+      "policy_version": 5,
+      "choice_index": 1,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        178
+      ]
+    },
+    {
+      "step": 20,
+      "request_id": "0c99072a24e8454283da4c8a8201d818",
+      "response_id": "chatcmpl-a613e538f1004646a925102777c913fc",
+      "policy_version": 5,
+      "choice_index": 1,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        187,
+        189
+      ]
+    },
+    {
+      "step": 21,
+      "request_id": "960342b4ddb247d6bb17b59a234bf59a",
+      "response_id": "chatcmpl-0ef886354f9b47d19523ff926587fa86",
+      "policy_version": 5,
+      "choice_index": 0,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        198
+      ]
+    },
+    {
+      "step": 21,
+      "request_id": "960342b4ddb247d6bb17b59a234bf59a",
+      "response_id": "chatcmpl-0ef886354f9b47d19523ff926587fa86",
+      "policy_version": 5,
+      "choice_index": 1,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        198
+      ]
+    },
+    {
+      "step": 22,
+      "request_id": "a8ec834c8fd243fb8db670a263a1bc9a",
+      "response_id": "chatcmpl-7cc7c6e29bd94dabb93018e8b85df531",
+      "policy_version": 5,
+      "choice_index": 1,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        207,
+        209
+      ]
+    },
+    {
+      "step": 23,
+      "request_id": "5080839a5f3b4a81be706c272ef0c95e",
+      "response_id": "chatcmpl-9e8030c493834f779a1eb8acb51e9201",
+      "policy_version": 5,
+      "choice_index": 0,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        218,
+        220
+      ]
+    },
+    {
+      "step": 24,
+      "request_id": "ff82b4ee306f43f1a5374ec20678e1f4",
+      "response_id": "chatcmpl-e5f0af51e295445cb7872000ad8ef374",
+      "policy_version": 5,
+      "choice_index": 0,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        229
+      ]
+    },
+    {
+      "step": 24,
+      "request_id": "ff82b4ee306f43f1a5374ec20678e1f4",
+      "response_id": "chatcmpl-e5f0af51e295445cb7872000ad8ef374",
+      "policy_version": 5,
+      "choice_index": 1,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        229
+      ]
+    },
+    {
+      "step": 25,
+      "request_id": "86379db8bd054bbf9def84fb8f304643",
+      "response_id": "chatcmpl-61a1c92227ed4271af6a6c4d21e73e0b",
+      "policy_version": 5,
+      "choice_index": 0,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        238
+      ]
+    },
+    {
+      "step": 25,
+      "request_id": "86379db8bd054bbf9def84fb8f304643",
+      "response_id": "chatcmpl-61a1c92227ed4271af6a6c4d21e73e0b",
+      "policy_version": 5,
+      "choice_index": 1,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        238
+      ]
+    },
+    {
+      "step": 26,
+      "request_id": "ee68e618ab19436f99eb33d5686eada7",
+      "response_id": "chatcmpl-2f212b3df42e4dfcb3b2b9c58a58f42e",
+      "policy_version": 5,
+      "choice_index": 0,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        247
+      ]
+    },
+    {
+      "step": 26,
+      "request_id": "ee68e618ab19436f99eb33d5686eada7",
+      "response_id": "chatcmpl-2f212b3df42e4dfcb3b2b9c58a58f42e",
+      "policy_version": 5,
+      "choice_index": 1,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        247
+      ]
+    },
+    {
+      "step": 27,
+      "request_id": "6bdca85fc7d7463c9397597607baa01b",
+      "response_id": "chatcmpl-c180cce3591a4cdc8e016ccd02793351",
+      "policy_version": 5,
+      "choice_index": 0,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        256
+      ]
+    },
+    {
+      "step": 27,
+      "request_id": "6bdca85fc7d7463c9397597607baa01b",
+      "response_id": "chatcmpl-c180cce3591a4cdc8e016ccd02793351",
+      "policy_version": 5,
+      "choice_index": 1,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        256
+      ]
+    },
+    {
+      "step": 28,
+      "request_id": "2d2aff9c5a0f4c9c88d67a48cec3089d",
+      "response_id": "chatcmpl-1a4bed5fe56645eab76f91240dea5400",
+      "policy_version": 5,
+      "choice_index": 0,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        265
+      ]
+    },
+    {
+      "step": 28,
+      "request_id": "2d2aff9c5a0f4c9c88d67a48cec3089d",
+      "response_id": "chatcmpl-1a4bed5fe56645eab76f91240dea5400",
+      "policy_version": 5,
+      "choice_index": 1,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        265
+      ]
+    },
+    {
+      "step": 29,
+      "request_id": "64236b1be7654e61a65d3d22ad429c6f",
+      "response_id": "chatcmpl-25fbee1d8d93471aac6adabfd15a5376",
+      "policy_version": 5,
+      "choice_index": 1,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        274,
+        276
+      ]
+    },
+    {
+      "step": 30,
+      "request_id": "e3488868642f44e1b0fac1ebdc020a6f",
+      "response_id": "chatcmpl-8b5a8bd395cc4165902e1e76a6b9c27e",
+      "policy_version": 5,
+      "choice_index": 0,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        285
+      ]
+    },
+    {
+      "step": 30,
+      "request_id": "e3488868642f44e1b0fac1ebdc020a6f",
+      "response_id": "chatcmpl-8b5a8bd395cc4165902e1e76a6b9c27e",
+      "policy_version": 5,
+      "choice_index": 1,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        285
+      ]
+    },
+    {
+      "step": 31,
+      "request_id": "01e10172f4a44166bec4047968dec666",
+      "response_id": "chatcmpl-c5133a2b620f4d719d14eab632ced33a",
+      "policy_version": 5,
+      "choice_index": 0,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        294
+      ]
+    },
+    {
+      "step": 31,
+      "request_id": "01e10172f4a44166bec4047968dec666",
+      "response_id": "chatcmpl-c5133a2b620f4d719d14eab632ced33a",
+      "policy_version": 5,
+      "choice_index": 1,
+      "raw_content": "",
+      "token": {
+        "token": "<|endoftext|>",
+        "logprob": -0.18280081450939178
+      },
+      "observer_sequences": [
+        294
+      ]
+    }
+  ],
+  "interpretation": "All 53 empty raw HTTP contents correspond to a single generated <|endoftext|> token. GPU decode(skip_special_tokens=True).strip() correctly gives an empty string; Lean did not discard a nonempty proof. This identifies the mechanism, not the cause of early-EOS model behavior or an improvement claim."
+}

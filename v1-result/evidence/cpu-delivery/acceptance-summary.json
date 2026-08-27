@@ -1,0 +1,37 @@
+{
+  "schema": "reap.cpu-delivery-acceptance.v1",
+  "status": "PASS",
+  "image_tag": "localhost/reap-cpu:v1-delivery-20260827",
+  "image_id": "623ae445c3cb8c843afb6c85a1db0dfa25f17e72ae95afaf23a49ef8844f0fce",
+  "image_digest": "sha256:597edeed42e8c22cc92fc4e46fe3e20df7e0c596227b709e4a19ca735d0fbc29",
+  "source_archive_sha256": "69082304c896cd5995619d9c65a8659d452db13f1cfd08f48a00d7822ab141ce",
+  "cpu_dockerfile_sha256": "30325287bfbc8b42267d0fce37b7a8d4f1c85be3a7529b2a320d80cffa4414fb",
+  "build_exit_code": null,
+  "outer_wrapper_exit_code": 1,
+  "build_log_sha256": "4185176acd5ab4da2902997de24f5bfb7c9018ac13593cb835278fc722c655f3",
+  "build_artifact_verified": true,
+  "wrapper_observation": {
+    "source": "parent original exec session 69412 result",
+    "outer_exit_code": 1,
+    "error": "exit: : numeric argument required",
+    "exit_file_content": "",
+    "cause": "parent launch wrapper variable escaping; original Podman exit status was not retained",
+    "success_evidence": [
+      "COMMIT and Successfully tagged in unchanged build.log",
+      "full image ID in build.log equals inspected immutable image"
+    ]
+  },
+  "user": "reap",
+  "network_mode": "none",
+  "cpu_mock_sessions_solved": 2,
+  "actual_uid": 10001,
+  "cpu_runtime_files_match_frozen_source": 13,
+  "compiled_training_overlay_present": true,
+  "existing_E_proof_recompiled": true,
+  "proof_file_sha256": "69a81abecd8c4c016a5549db23faa6c743502319dfbc09055c830e22dde2f6c3",
+  "gpu_used": false,
+  "gpu_ttt_rerun": false,
+  "gpu_container_passed": false,
+  "image_published": false,
+  "scope": "Delivery CPU build artifact and runtime acceptance passed using local build cache. Original Podman exit code is unknown due to outer wrapper error. CPU mock smoke and existing proof recheck only; no GPU experiment repeated."
+}

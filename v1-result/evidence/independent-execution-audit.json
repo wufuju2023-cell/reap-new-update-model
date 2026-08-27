@@ -1,0 +1,128 @@
+{
+  "status": "PASS_LOCAL_EXECUTION_AND_NETWORK_NONE_FINAL_PROOF_RECHECK",
+  "session_id": "online-20260827-e",
+  "tree_id": "online-20260827-e.tree0",
+  "recorded_launcher_pid": 25,
+  "recorded_command": [
+    "lake",
+    "env",
+    "lean",
+    "/opt/reap-runtime/real-fixtures/RecurrenceSquare.lean"
+  ],
+  "single_recorded_search_launch": true,
+  "observer_frames": 23,
+  "frame_kinds": {
+    "selection": 6,
+    "generation": 4,
+    "eval": 4,
+    "checkpoint": 3,
+    "checkpoint_ack": 3,
+    "backup": 3
+  },
+  "checkpoint_steps": [
+    0,
+    1,
+    2
+  ],
+  "checkpoint_tree_sizes": [
+    2,
+    3,
+    4
+  ],
+  "checkpoint_root_solved": [
+    false,
+    false,
+    true
+  ],
+  "ack_versions": [
+    0,
+    1,
+    1
+  ],
+  "sequence_and_tree_identity_continuous": true,
+  "stable_node_and_edge_provenance": true,
+  "optimizer_updates": 1,
+  "learn_event_id": "online-20260827-e.s1.n0",
+  "real_lean_reward": 0,
+  "terminal_verified_at_learn": false,
+  "training_candidate": {
+    "behavior_version": 0,
+    "raw_logprob": -0.03399694634708794,
+    "tactic": "intro n",
+    "visits": 1
+  },
+  "recomputed_backup_distance": 53.388323789194764,
+  "recomputed_value_target": 0.5906567362269605,
+  "source_prompt_matches": true,
+  "post_update_generations": [
+    {
+      "node_index": 2,
+      "policy_version": 1,
+      "sequence": 17,
+      "step": 2,
+      "tree_id": "online-20260827-e.tree0"
+    }
+  ],
+  "offline_coordinator_replay_byte_equal": true,
+  "offline_replay_network_calls": 0,
+  "solutions_contains_one_E_and_all_artifact_hashes_match": true,
+  "theorem_sha256": "1f28d1c76ee65b6a73240d255a9f06c50d7bb34c9ed70783a5d9527f38f26466",
+  "proof_script": "intro n\ninduction n <;> simp_all [hstep, mul_add, add_mul, mul_comm, mul_assoc, mul_left_comm]\nring",
+  "execution_elapsed_seconds": 79.47714003700094,
+  "lean_report_elapsed_seconds": 29.085723079,
+  "limitations": [
+    "PID25 is the recorded lake env lean launcher; no independent historical /proc sample of the actual Lean child is present.",
+    "Remote wire bytes and actual GPU tensor states have not been independently reviewed here; parameter differences are server receipts.",
+    "Before/after snapshots are successful API receipts only; this review does not inspect remote snapshot bytes or tensors.",
+    "No proof-quality improvement is inferred; there is no baseline counterfactual run."
+  ],
+  "artifact_sha256": {
+    "audit_execution.py": "d547a34ebc33b756a5a085eea87aa4fdcfdb3cd227b8aadaed1aa056d3799e2d",
+    "batch-config.json": "fd0459b1d3c86b97aee6592e7b13d6a07af11927dacfca957625c0795ace73bf",
+    "batch-intent-e.json": "2b4124337df1b45f451b854ef631ce8ae72d29bf2cf5730c278340c343d089a1",
+    "batch-solutions.jsonl": "eb2101b801d94db80448422a4cbe3b7017aee6de38e7068f968a3f731f77dbf4",
+    "create-receipt.json": "327f562fd312af174c78f90bc6b67527e2317df37f5e28c24a3a52edb76f0a12",
+    "observer.jsonl": "4fb0ccf0022a7c2483852f358e715a8ea8d4e70e088e692188066d731e5ac247",
+    "online-result.json": "71599323a5069e8571d58e9368dd476e7caf2a56e46047bb4392f7d1518c1f87",
+    "process.json": "aa3c33d707a9247dc9e3d593bf15729ef8d6f5dc1e81652c23b639c17b8a65ba",
+    "progress.jsonl": "3c6cd400c409d43625dbc99236586622d87a3e2ba2787c4942237798ce77cca1",
+    "proof-recheck.log": "52540d56eb39c931e09475bd37526eb79b45e2478a173f51bc3c383b6981973e",
+    "raw_tree.json": "d7437c54c4bb8f03f19b4e813463035d088889a5fd3182f034be241250a24995",
+    "RecurrenceSquare.original.lean": "1f28d1c76ee65b6a73240d255a9f06c50d7bb34c9ed70783a5d9527f38f26466",
+    "RecurrenceSquare.recheck.lean": "69a81abecd8c4c016a5549db23faa6c743502319dfbc09055c830e22dde2f6c3",
+    "result.json": "3c37ca2bf2df47fc1fbd563b180ae1269982e438096535c39833adafd18725af",
+    "session.json": "b0e49b7b98e657713c5848d3172512a819bdb9fea9e4077880dbaab12e92b17e",
+    "snapshot-after.json": "ea1644b13730bb6f11f4e321efa71f30f1c351069eaedee670e787fe68ff4569",
+    "snapshot-before.json": "bfd1658ea6cb689dd1d6a38786acd4e330ac69ce597ea33d13d4c25ed50ba81d",
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "9d899bd4c9be943332b6609e7bfce4f49e4d1547370bde3a9b0721c3f340a5bf",
+    "wall_clock.jsonl": "05cb336aa25efa562043f0701c7dfe0f8b04df856661864f1c138e8b44ac710b",
+    "checkpoints/checkpoint-000000.ack.json": "af61f269f7524dded1552f9a6067106ed2a702e1fd7bb2054708b30497415639",
+    "checkpoints/checkpoint-000001.ack.json": "461e6f53f9e01cdf41ade70824982928a4a5c62a5e79612016e7b53d90453cde",
+    "checkpoints/checkpoint-000002.ack.json": "633d3e82c9a3cbb8833a132a7379d1efa7e6be6892237d2ebf2e05212bd446ad",
+    "checkpoints/learn-000001.receipt.json": "aa5c893ba916a0a68aa14bf06263668ba35fb7317747333de5c165ec7b1ab419",
+    "checkpoints/learn-000001.request.json": "dd6ebf8d9f8fc8cd5a893c140d6f0b3df5cb758287e240c0b6552dc944752f7d",
+    "offline-replay-checkpoints/checkpoint-000000.ack.json": "af61f269f7524dded1552f9a6067106ed2a702e1fd7bb2054708b30497415639",
+    "offline-replay-checkpoints/checkpoint-000001.ack.json": "461e6f53f9e01cdf41ade70824982928a4a5c62a5e79612016e7b53d90453cde",
+    "offline-replay-checkpoints/checkpoint-000002.ack.json": "633d3e82c9a3cbb8833a132a7379d1efa7e6be6892237d2ebf2e05212bd446ad",
+    "offline-replay-checkpoints/learn-000001.receipt.json": "aa5c893ba916a0a68aa14bf06263668ba35fb7317747333de5c165ec7b1ab419",
+    "offline-replay-checkpoints/learn-000001.request.json": "dd6ebf8d9f8fc8cd5a893c140d6f0b3df5cb758287e240c0b6552dc944752f7d"
+  },
+  "proof_recheck": {
+    "image_id": "df23cd6a9b5b6df30fa003285fadcdc1e5d60919eb43b823b0731c17bf135646",
+    "container_id": "5111feeceac1af1b5b8dfedb2aceab7ad2c39c391216429afe0405186a44333d",
+    "exit_code": 0,
+    "network_mode": "none",
+    "user": "reap",
+    "axiom_dependencies": [
+      "propext",
+      "Quot.sound"
+    ],
+    "no_sorry_or_custom_axioms": true,
+    "same_original_statement_and_exact_saved_proof_script": true,
+    "original_source_sha256": "1f28d1c76ee65b6a73240d255a9f06c50d7bb34c9ed70783a5d9527f38f26466",
+    "recheck_source_sha256": "69a81abecd8c4c016a5549db23faa6c743502319dfbc09055c830e22dde2f6c3",
+    "log_sha256": "52540d56eb39c931e09475bd37526eb79b45e2478a173f51bc3c383b6981973e",
+    "warnings": "unused simp arguments only"
+  }
+}

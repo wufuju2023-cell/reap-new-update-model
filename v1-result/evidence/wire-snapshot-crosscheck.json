@@ -1,0 +1,69 @@
+{
+  "status": "PASS_SNAPSHOT_METADATA_AND_MUTABLE_HASHES_MATCH_RAW_WIRE",
+  "collection_sha256": "8f01c4e6a38590b27a1c16880836763d14ce224cd23051409e53526edb07de9d",
+  "source_collection_sha256": "37c9774fcf916224773a8292f9d2243797e43c5e3294e5c1af9ee9dff6bf007b",
+  "raw_evidence": {
+    "archive": "raw-evidence.tar.gz",
+    "collection_member": "http-evidence-ef.json",
+    "note": "Raw collection and E/F CPU/proof-check materials are delivered inside the archive; consult its member manifest for CPU paths."
+  },
+  "snapshot_audit_sha256": "545a6594acd93744f0dcaf53f60f3e68f7ce8660194960c85660f7b5413271d7",
+  "sessions": [
+    {
+      "session_id": "online-20260827-e",
+      "before_policy_version": 0,
+      "after_policy_version": 1,
+      "before_after_adapter_value_optimizer_hashes_match_wire_receipts": true,
+      "links": [
+        {
+          "event_id": "online-20260827-e.s1.n0",
+          "request_id": "6e9f0fedde2a4e23859aa86035f0e5c2",
+          "version": 1,
+          "snapshot_receipt_equals_raw_http_and_CPU": true
+        }
+      ]
+    },
+    {
+      "session_id": "online-20260827-f",
+      "before_policy_version": 0,
+      "after_policy_version": 5,
+      "before_after_adapter_value_optimizer_hashes_match_wire_receipts": true,
+      "links": [
+        {
+          "event_id": "online-20260827-f.s1.n0",
+          "request_id": "4c894ff494b74f5ca3e1bccd27d6106b",
+          "version": 1,
+          "snapshot_receipt_equals_raw_http_and_CPU": true
+        },
+        {
+          "event_id": "online-20260827-f.s2.n1",
+          "request_id": "25fc6caf93cb4fee8cd85180e1756208",
+          "version": 2,
+          "snapshot_receipt_equals_raw_http_and_CPU": true
+        },
+        {
+          "event_id": "online-20260827-f.s3.n1",
+          "request_id": "5d3893ccb0ba4ace86a36b279a3a345d",
+          "version": 3,
+          "snapshot_receipt_equals_raw_http_and_CPU": true
+        },
+        {
+          "event_id": "online-20260827-f.s4.n1",
+          "request_id": "018e8202c38d490ab8aca414d404bf7d",
+          "version": 4,
+          "snapshot_receipt_equals_raw_http_and_CPU": true
+        },
+        {
+          "event_id": "online-20260827-f.s5.n1",
+          "request_id": "3f1e16584ab64d439f148174b43b838d",
+          "version": 5,
+          "snapshot_receipt_equals_raw_http_and_CPU": true
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Snapshot raw tensors were audited on the remote host; this local crosscheck compares that report with retained raw E/F HTTP bytes.",
+    "No restore or base-model rehash is claimed for this recurrence run."
+  ]
+}

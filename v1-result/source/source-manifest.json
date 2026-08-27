@@ -1,0 +1,687 @@
+{
+  "schema": "reap.delivery-source-snapshot.v1",
+  "is_OCI_image": false,
+  "image_built": false,
+  "archive": {
+    "name": "source-snapshot.tar.gz",
+    "size": 114830,
+    "sha256": "69082304c896cd5995619d9c65a8659d452db13f1cfd08f48a00d7822ab141ce"
+  },
+  "file_count": 77,
+  "uncompressed_bytes": 419428,
+  "files": {
+    ".dockerignore": {
+      "size": 153,
+      "sha256": "5679d408eb815ddb8c3e1779b6c0cef202f2777680b3d8f9caee97540dc92d7c"
+    },
+    "containers/cpu/Containerfile": {
+      "size": 3657,
+      "sha256": "de266526d8200b85dd3625859b23fff6ac8d54d051076db212f148f4b2fb0e2d"
+    },
+    "containers/cpu/patches/0001-training-endpoints-and-value.patch": {
+      "size": 1952,
+      "sha256": "f907a9ae1ede1c45d1593b76b8519193dc1ae1d39b96bb3e4267308a8f2e4665"
+    },
+    "containers/cpu/patches/0002-training-observer.patch": {
+      "size": 9436,
+      "sha256": "54eaeef24ffd8a605371d89b066533e45e38e419f0baa86d47c548a5a98aa209"
+    },
+    "containers/cpu/patches/0003-strict-value-errors.patch": {
+      "size": 1600,
+      "sha256": "d1f18633bc252d8e5596f2385c92fe160801ef7b2fbe5585abfb75f024f4c1f9"
+    },
+    "containers/cpu/reap-overlay/Reap/Training.lean": {
+      "size": 58,
+      "sha256": "a3748fc9b2c95dab3fc45b087223d363ecd2eab01ab16e801962cb78534e9562"
+    },
+    "containers/cpu/reap-overlay/Reap/Training/Observer.lean": {
+      "size": 4551,
+      "sha256": "b848002cfb8f25740d6023159a3bd75769bb71b244454738c89f910b6a4aca89"
+    },
+    "containers/cpu/reap-overlay/Reap/Training/RolloutSink.lean": {
+      "size": 5023,
+      "sha256": "9ea79fe21a800873c88588bb3dc974ecd40908ba7e9e228d89dd1419c0bea7fa"
+    },
+    "containers/cpu/runtime/ReapRuntime.lean": {
+      "size": 69,
+      "sha256": "742ff6a89fbf8ecb3b9bbb7730197649c9666f4e04943ebe45bf890492338780"
+    },
+    "containers/cpu/runtime/Smoke.lean": {
+      "size": 213,
+      "sha256": "2c0cdd7ab0720cf44b60802bf4c76efb40f10f0daf98cf5e525da403e9b41147"
+    },
+    "containers/cpu/runtime/lakefile.toml": {
+      "size": 231,
+      "sha256": "baa4e8e535708aba7b3d518f22df70d60c927abdeeca11a768861c7fd462657c"
+    },
+    "containers/cpu/runtime/lean-toolchain": {
+      "size": 32,
+      "sha256": "3aaff661d6b7cbf6378dd890e7be579f68a9277c26e6b9c0cb2fdf84b9555ce3"
+    },
+    "containers/cpu/smoke_cpu.sh": {
+      "size": 1248,
+      "sha256": "7ad8dfd4917144bfbb64535659ff626709049a444b9b0f0595f23534f1159921"
+    },
+    "containers/cpu/tests/fixtures/ObserverSmoke.lean": {
+      "size": 2115,
+      "sha256": "b68d7f6ed088046d2c6753a4e7673929a67c1ff5f5230c56c5539e0da50de0ed"
+    },
+    "containers/cpu/tests/fixtures/StrictValue.lean": {
+      "size": 471,
+      "sha256": "772f5c74206f79c1541a8dc5043dd49e9d77e0d9f9b59a0234c223ef65a368bd"
+    },
+    "containers/cpu/tests/fixtures/real/AccumulatorReverse.lean": {
+      "size": 768,
+      "sha256": "d1581563498e21b35560559958a89989934af42e01624cc332a29dcec158cfa3"
+    },
+    "containers/cpu/tests/fixtures/real/LogicTransfer.lean": {
+      "size": 527,
+      "sha256": "c4860b9bc04fbc4411809d0c83f426b2847a8c8d468237e8756da172781c7230"
+    },
+    "containers/cpu/tests/fixtures/real/RecurrenceGeometric.lean": {
+      "size": 570,
+      "sha256": "e3e03144568d5df9a40e24648239e7ce8ec4c586df9c7cee1be585f24e55d0c4"
+    },
+    "containers/cpu/tests/fixtures/real/RecurrenceSquare.lean": {
+      "size": 562,
+      "sha256": "1f28d1c76ee65b6a73240d255a9f06c50d7bb34c9ed70783a5d9527f38f26466"
+    },
+    "containers/cpu/tests/fixtures/real/RecursiveAddAssoc.lean": {
+      "size": 689,
+      "sha256": "ca730a6a84845a13816bb2210b376eaba09eeef3f4df5abc101a97aa89319f80"
+    },
+    "containers/cpu/tests/fixtures/real/TreeMirrorLeaves.lean": {
+      "size": 857,
+      "sha256": "4c2e54a4bbe89669bf0db5e70515098d5f1569c031e81d1ac9a516fcb3e1c8d2"
+    },
+    "containers/cpu/tests/test_observer.py": {
+      "size": 10645,
+      "sha256": "1830f4bcc0d7cdbc8efccb82312b941cf2d347dcc0c53de69a74a6bc625877ed"
+    },
+    "containers/cpu/tests/test_strict_value.py": {
+      "size": 4170,
+      "sha256": "1c74608b37c20663d781a2e0802f54a62077bffa5141e5ab37e147297da34453"
+    },
+    "containers/gpu/Containerfile": {
+      "size": 6491,
+      "sha256": "1ac9e716719dc2134380d2191c3d7508bf316feabbeb90273b8189a9cfcfb01c"
+    },
+    "containers/gpu/download_model.py": {
+      "size": 15220,
+      "sha256": "bea18b600d5a70b3b2b97b80c8d9131fda48228b67b4f114be89575e85a27531"
+    },
+    "containers/gpu/requirements-gpu-hashed.lock": {
+      "size": 2304,
+      "sha256": "6aea586c17e728886924d008df55d9383d216f81a421ea5b11670935dd199833"
+    },
+    "containers/gpu/requirements-gpu.lock": {
+      "size": 160,
+      "sha256": "58c9080957c1a0f9b4571bcc02654630f3395771277d211fe7b0a4e5cc7efaba"
+    },
+    "containers/gpu/requirements-remote.lock": {
+      "size": 588,
+      "sha256": "ef2c4a98c9dc32e1408788de600a468ac8912d531166511248977940c77496bb"
+    },
+    "containers/gpu/smoke_gpu.py": {
+      "size": 14835,
+      "sha256": "e024b6bc9b23fca1c66c3ed679e6136ada01fab503733cb396a57892aac3b759"
+    },
+    "containers/gpu/smoke_search_gpu.py": {
+      "size": 10954,
+      "sha256": "12d1918fcc2d0145ba2e7dd90bcb73878fd2a222d593e06ab3d729fc2c5ed905"
+    },
+    "containers/versions.lock": {
+      "size": 810,
+      "sha256": "9cda75499697f761f5f684b1cb6f14181ebd7334a4467dd35b4db436a7bbd74b"
+    },
+    "cpu_runtime/__init__.py": {
+      "size": 50,
+      "sha256": "0bfe0a5ea77214fa2846ea24b27751750e0134287b92f86118956df326ea8f2b"
+    },
+    "cpu_runtime/batch_solver.py": {
+      "size": 9261,
+      "sha256": "936b0bf4dbfc39e1b488125f90cfcccd6905e8ccf58f57b4f8bd962096c0eb8c"
+    },
+    "cpu_runtime/examples/smoke_sessions.jsonl": {
+      "size": 386,
+      "sha256": "5100b139e291e0c969d3b60e0ffb23445ff1a8ce8db8e51921d5d3885c5ba803"
+    },
+    "cpu_runtime/http_clients.py": {
+      "size": 3399,
+      "sha256": "5ce4e12d3e6f2d2ac3db9266357ab5d757ea8e66c554cf70fc9b74924339ba1f"
+    },
+    "cpu_runtime/mock_services.py": {
+      "size": 2182,
+      "sha256": "e88fc60144fb5d732e6ef1c3d562f2a1b91eb22169bcf9f9bf60655ca4b75bfc"
+    },
+    "cpu_runtime/normalize_rollout.py": {
+      "size": 8020,
+      "sha256": "f9108919ebbf8a30a9c810148a46b22e58fd9506e40cece3d83080b88664bfa2"
+    },
+    "cpu_runtime/online_batch.py": {
+      "size": 20565,
+      "sha256": "b28747eaf413d11ef3c75157a1a1a2cd684a32d24257fa529366aa7aa30cdfb7"
+    },
+    "cpu_runtime/online_ttt.py": {
+      "size": 21004,
+      "sha256": "cdf643e39691ac9f33e6e1bda15b9e0bf50a7852d6dae206b0ee4257f262d2f6"
+    },
+    "cpu_runtime/reap_act_runner.py": {
+      "size": 4892,
+      "sha256": "a068161c556bbe8d8475fe6db3d67e81bd84e9e8b3c2b43619c7aa8d742105ff"
+    },
+    "cpu_runtime/reap_prompt.py": {
+      "size": 1245,
+      "sha256": "4160fe53124542542d646391c7dd089206b180b3b0e5af33188c3bea59020a03"
+    },
+    "cpu_runtime/run_toy_ttt.py": {
+      "size": 2855,
+      "sha256": "a79e87cf391e298118b94d155d3c9cecedd27c9d89c840d718341eaf9fcc5e78"
+    },
+    "cpu_runtime/run_ttt.py": {
+      "size": 188,
+      "sha256": "6e31fa924fe7ce093e9882bf5d1c851ef1fc253ceedc553bd65f2b88ade1c03a"
+    },
+    "cpu_runtime/segmented_ttt.py": {
+      "size": 19701,
+      "sha256": "7c739fcb364ad35dbe344be74664f7a8602ac9161c07cfcfe1157f76d7ac360c"
+    },
+    "gpu_runtime/__init__.py": {
+      "size": 1360,
+      "sha256": "e8beeae6e7f1737717bb10b3badf9521fdc52c36ce1d9524b8547edff2a8317d"
+    },
+    "gpu_runtime/actor.py": {
+      "size": 2359,
+      "sha256": "0e438fb3b603a63c7caa37c1d892db97a96edbd9c3381661ebfb87f07f8a63ab"
+    },
+    "gpu_runtime/backend.py": {
+      "size": 1500,
+      "sha256": "886d662015ae6bfb4bdf022137c77e6b566f5f20815f7848414324c93f12ae30"
+    },
+    "gpu_runtime/errors.py": {
+      "size": 918,
+      "sha256": "9cf83587246115807bfd7025322fcf3317d13f42d1303bec435a4994010b1cb7"
+    },
+    "gpu_runtime/identifiers.py": {
+      "size": 888,
+      "sha256": "c9bc4e1f79541896b60a76848a5ee33f0f0fb485582fb8fc04b65d5445cf538a"
+    },
+    "gpu_runtime/real_backend.py": {
+      "size": 23019,
+      "sha256": "eb8cd07a5185c6ac3eb3f9939d4b044040fcfd31795d4ca617418e348f2d0c69"
+    },
+    "gpu_runtime/runtime.py": {
+      "size": 10588,
+      "sha256": "3d850f979dc1b905c151951b82325368a946e7850e6d73eb3c55fe85c04e386a"
+    },
+    "gpu_runtime/schemas.py": {
+      "size": 3933,
+      "sha256": "63fcf6a583d70210d31829aa2cef06e2b27e4b295b55337f02381a99b59caeb2"
+    },
+    "gpu_runtime/search_backend.py": {
+      "size": 16055,
+      "sha256": "dd88276887b1cd468ea61587ecb7a4195ca84a710052694baadcf9bc8947f831"
+    },
+    "gpu_runtime/search_objective.py": {
+      "size": 9442,
+      "sha256": "62939272269085464e5111d6f412500be3f28a67192f25c2a479d307625687d0"
+    },
+    "gpu_runtime/server.py": {
+      "size": 6430,
+      "sha256": "4f8398a87e85c7b03bcb1e59519f78b295e76b3c00aaa4aecec9e5bc3e83d170"
+    },
+    "gpu_runtime/session_store.py": {
+      "size": 5581,
+      "sha256": "ce3779f1aa9315059fe80f2d02668cadee89d3ebcfca83ce6a7bc7092e07464b"
+    },
+    "gpu_runtime/snapshot_store.py": {
+      "size": 4651,
+      "sha256": "11e84acf2e4bdf3f229233db8b6846a3fbc18097faa7391b7a53d396c7e3d0f3"
+    },
+    "gpu_runtime/toy_backend.py": {
+      "size": 4515,
+      "sha256": "fc0a34f8d1fcd0e35a99aaa42fde47a6eef04a3d19c975d55905a0082bee0d91"
+    },
+    "tools/amd_jupyter/audit_online_wire.py": {
+      "size": 15946,
+      "sha256": "a3c06a0bcfbf22767885131b7412777c99e85e29a4a006691e48369897e77e5f"
+    },
+    "tools/amd_jupyter/collect_http_evidence.py": {
+      "size": 11351,
+      "sha256": "0f9080c7bdafa76c09c65b172f5fa921bb0ba237d170d45f30994e186d272cbb"
+    },
+    "tools/amd_jupyter/http_bridge.py": {
+      "size": 15529,
+      "sha256": "9096b085afd67a6ce4c830b5a128318aa5ea4a2140bfa6486bb2cc92c5b77093"
+    },
+    "tools/amd_jupyter/invoke_opencli_remote.ps1": {
+      "size": 2227,
+      "sha256": "fa846ca596e4461c34542f3ef637fdb972800dcad5dbfdb37bc3d92ca5f478f7"
+    },
+    "tools/amd_jupyter/prepare_deployment.py": {
+      "size": 16301,
+      "sha256": "6471053bf75fca60ff4574dc2029f2681ab9bd2c3785086f0298d003bc9206c8"
+    },
+    "tools/amd_jupyter/prepare_gpu_build_context.py": {
+      "size": 11373,
+      "sha256": "a393ad9da6c861e334e36cc26de38748545298ff0a7a195e92662ddd06d82b88"
+    },
+    "tools/amd_jupyter/probe_remote_amd.py": {
+      "size": 9159,
+      "sha256": "25dccf494079535536061f7e1d6fb90ddd24e39c5bd14132ed427cce53b1666a"
+    },
+    "tools/amd_jupyter/remote_http_job.py": {
+      "size": 8419,
+      "sha256": "e6946a045f613c01f6e2677231c2eb416f28ef211e59909cd6ef3f54329cb72f"
+    },
+    "tools/amd_jupyter/test_prepare_gpu_build_context.py": {
+      "size": 9922,
+      "sha256": "955f413faca814e1eb37a07021db3592809925678d937f8f98f7d1791b3e1e81"
+    },
+    "v1-result/docker/README.md": {
+      "size": 7236,
+      "sha256": "fa10316fd950bcfca57458b18e5d1d441e6e8c0dba647604fccc3e455bfb3f64"
+    },
+    "v1-result/docker/batch.example.jsonl": {
+      "size": 171,
+      "sha256": "c4a436c18d8c54efab98232cac306d651e37a5727772fc53ae5cc3325f4695da"
+    },
+    "v1-result/docker/build.sh": {
+      "size": 1032,
+      "sha256": "af3f962aaac72ec6c5f0abe63e93c60dc9a46946a9b8ca3fdd1544a0c29885d0"
+    },
+    "v1-result/docker/cpu.Dockerfile": {
+      "size": 3884,
+      "sha256": "30325287bfbc8b42267d0fce37b7a8d4f1c85be3a7529b2a320d80cffa4414fb"
+    },
+    "v1-result/docker/materials-sha256.json": {
+      "size": 4491,
+      "sha256": "bbed2c88f6fdc87d62887cd3d10da57e695e7a2844f18dd5f27045975fbfd58f"
+    },
+    "v1-result/docker/prepare_context.py": {
+      "size": 5746,
+      "sha256": "b10aefcd8ff08b4a0cefcb7f33f40739854d40e1a99eb69163b7a0042202b03c"
+    },
+    "v1-result/docker/run-cpu.sh": {
+      "size": 624,
+      "sha256": "0fecbca024bbdadf42f00063c4a3d8e1ea19ba4db87b39a224737067c37bbdd4"
+    },
+    "v1-result/docker/run-gpu.sh": {
+      "size": 447,
+      "sha256": "a4e5f9376ea64606b254ff6c700dd15b6563ce1a85b79f4d8c8513f2e7601c47"
+    },
+    "v1-result/docker/test_delivery_context.py": {
+      "size": 3081,
+      "sha256": "d0f98c2b6b41e97cecdea07cc9064ba7c0dee2321a65203035f4377ea1857389"
+    },
+    "v1-result/docker/train.Dockerfile": {
+      "size": 6543,
+      "sha256": "644b586e389a1d0c0125de3876732db7e57825ff82208d88786659aaf1e49492"
+    }
+  },
+  "copy_sources": [
+    {
+      "recipe": "v1-result/docker/cpu.Dockerfile",
+      "source": "containers/cpu/reap-overlay/Reap/Training.lean",
+      "kind": "included_source"
+    },
+    {
+      "recipe": "v1-result/docker/cpu.Dockerfile",
+      "source": "containers/cpu/reap-overlay/Reap/Training",
+      "kind": "included_source"
+    },
+    {
+      "recipe": "v1-result/docker/cpu.Dockerfile",
+      "source": "containers/cpu/patches/0001-training-endpoints-and-value.patch",
+      "kind": "included_source"
+    },
+    {
+      "recipe": "v1-result/docker/cpu.Dockerfile",
+      "source": "containers/cpu/patches/0002-training-observer.patch",
+      "kind": "included_source"
+    },
+    {
+      "recipe": "v1-result/docker/cpu.Dockerfile",
+      "source": "containers/cpu/patches/0003-strict-value-errors.patch",
+      "kind": "included_source"
+    },
+    {
+      "recipe": "v1-result/docker/cpu.Dockerfile",
+      "source": "containers/cpu/runtime/lean-toolchain",
+      "kind": "included_source"
+    },
+    {
+      "recipe": "v1-result/docker/cpu.Dockerfile",
+      "source": "containers/cpu/runtime/lakefile.toml",
+      "kind": "included_source"
+    },
+    {
+      "recipe": "v1-result/docker/cpu.Dockerfile",
+      "source": "containers/cpu/runtime/ReapRuntime.lean",
+      "kind": "included_source"
+    },
+    {
+      "recipe": "v1-result/docker/cpu.Dockerfile",
+      "source": "containers/cpu/runtime/Smoke.lean",
+      "kind": "included_source"
+    },
+    {
+      "recipe": "v1-result/docker/cpu.Dockerfile",
+      "source": "cpu_runtime",
+      "kind": "included_source"
+    },
+    {
+      "recipe": "v1-result/docker/cpu.Dockerfile",
+      "source": "containers/cpu/tests/fixtures/real/RecurrenceSquare.lean",
+      "kind": "included_source"
+    },
+    {
+      "recipe": "v1-result/docker/cpu.Dockerfile",
+      "source": "containers/cpu/tests/fixtures/real/RecurrenceGeometric.lean",
+      "kind": "included_source"
+    },
+    {
+      "recipe": "v1-result/docker/cpu.Dockerfile",
+      "source": "containers/cpu/smoke_cpu.sh",
+      "kind": "included_source"
+    },
+    {
+      "recipe": "v1-result/docker/train.Dockerfile",
+      "source": "containers/gpu/requirements-gpu-hashed.lock",
+      "kind": "included_source"
+    },
+    {
+      "recipe": "v1-result/docker/train.Dockerfile",
+      "source": "gpu_runtime",
+      "kind": "included_source"
+    },
+    {
+      "recipe": "v1-result/docker/train.Dockerfile",
+      "source": "containers/gpu/smoke_gpu.py",
+      "kind": "included_source"
+    },
+    {
+      "recipe": "v1-result/docker/train.Dockerfile",
+      "source": "model/",
+      "kind": "generated_on_authorized_remote_builder"
+    },
+    {
+      "recipe": "v1-result/docker/train.Dockerfile",
+      "source": "model-manifest.json",
+      "kind": "generated_on_authorized_remote_builder"
+    },
+    {
+      "recipe": "v1-result/docker/train.Dockerfile",
+      "source": "build-context-manifest.json",
+      "kind": "generated_on_authorized_remote_builder"
+    },
+    {
+      "recipe": "v1-result/docker/train.Dockerfile",
+      "source": "containers/gpu/download_model.py",
+      "kind": "included_source"
+    },
+    {
+      "recipe": "v1-result/docker/train.Dockerfile",
+      "source": "containers/gpu/download_model.py",
+      "kind": "included_source"
+    }
+  ],
+  "resolved_project_imports": [
+    {
+      "source": "containers/gpu/smoke_gpu.py",
+      "module": "gpu_runtime"
+    },
+    {
+      "source": "containers/gpu/smoke_search_gpu.py",
+      "module": "gpu_runtime"
+    },
+    {
+      "source": "containers/gpu/smoke_search_gpu.py",
+      "module": "gpu_runtime.search_backend"
+    },
+    {
+      "source": "containers/gpu/smoke_search_gpu.py",
+      "module": "gpu_runtime.search_objective"
+    },
+    {
+      "source": "containers/gpu/smoke_search_gpu.py",
+      "module": "containers.gpu.smoke_gpu"
+    },
+    {
+      "source": "cpu_runtime/http_clients.py",
+      "module": "cpu_runtime.segmented_ttt"
+    },
+    {
+      "source": "cpu_runtime/normalize_rollout.py",
+      "module": "cpu_runtime.reap_prompt"
+    },
+    {
+      "source": "cpu_runtime/online_batch.py",
+      "module": "cpu_runtime.online_ttt"
+    },
+    {
+      "source": "cpu_runtime/online_ttt.py",
+      "module": "cpu_runtime.batch_solver"
+    },
+    {
+      "source": "cpu_runtime/online_ttt.py",
+      "module": "cpu_runtime.http_clients"
+    },
+    {
+      "source": "cpu_runtime/reap_act_runner.py",
+      "module": "cpu_runtime.batch_solver"
+    },
+    {
+      "source": "cpu_runtime/reap_act_runner.py",
+      "module": "cpu_runtime.normalize_rollout"
+    },
+    {
+      "source": "cpu_runtime/reap_act_runner.py",
+      "module": "cpu_runtime.segmented_ttt"
+    },
+    {
+      "source": "cpu_runtime/run_toy_ttt.py",
+      "module": "cpu_runtime.http_clients"
+    },
+    {
+      "source": "cpu_runtime/run_toy_ttt.py",
+      "module": "cpu_runtime.reap_act_runner"
+    },
+    {
+      "source": "cpu_runtime/run_toy_ttt.py",
+      "module": "cpu_runtime.segmented_ttt"
+    },
+    {
+      "source": "cpu_runtime/run_ttt.py",
+      "module": "cpu_runtime.run_toy_ttt"
+    },
+    {
+      "source": "gpu_runtime/__init__.py",
+      "module": "gpu_runtime.actor"
+    },
+    {
+      "source": "gpu_runtime/__init__.py",
+      "module": "gpu_runtime.backend"
+    },
+    {
+      "source": "gpu_runtime/__init__.py",
+      "module": "gpu_runtime.errors"
+    },
+    {
+      "source": "gpu_runtime/__init__.py",
+      "module": "gpu_runtime.runtime"
+    },
+    {
+      "source": "gpu_runtime/__init__.py",
+      "module": "gpu_runtime.session_store"
+    },
+    {
+      "source": "gpu_runtime/__init__.py",
+      "module": "gpu_runtime.snapshot_store"
+    },
+    {
+      "source": "gpu_runtime/__init__.py",
+      "module": "gpu_runtime.toy_backend"
+    },
+    {
+      "source": "gpu_runtime/__init__.py",
+      "module": "gpu_runtime.real_backend"
+    },
+    {
+      "source": "gpu_runtime/backend.py",
+      "module": "gpu_runtime.schemas"
+    },
+    {
+      "source": "gpu_runtime/identifiers.py",
+      "module": "gpu_runtime.errors"
+    },
+    {
+      "source": "gpu_runtime/real_backend.py",
+      "module": "gpu_runtime.backend"
+    },
+    {
+      "source": "gpu_runtime/real_backend.py",
+      "module": "gpu_runtime.errors"
+    },
+    {
+      "source": "gpu_runtime/real_backend.py",
+      "module": "gpu_runtime.schemas"
+    },
+    {
+      "source": "gpu_runtime/runtime.py",
+      "module": "gpu_runtime.actor"
+    },
+    {
+      "source": "gpu_runtime/runtime.py",
+      "module": "gpu_runtime.backend"
+    },
+    {
+      "source": "gpu_runtime/runtime.py",
+      "module": "gpu_runtime.errors"
+    },
+    {
+      "source": "gpu_runtime/runtime.py",
+      "module": "gpu_runtime.identifiers"
+    },
+    {
+      "source": "gpu_runtime/runtime.py",
+      "module": "gpu_runtime.schemas"
+    },
+    {
+      "source": "gpu_runtime/runtime.py",
+      "module": "gpu_runtime.session_store"
+    },
+    {
+      "source": "gpu_runtime/runtime.py",
+      "module": "gpu_runtime.snapshot_store"
+    },
+    {
+      "source": "gpu_runtime/search_backend.py",
+      "module": "gpu_runtime.backend"
+    },
+    {
+      "source": "gpu_runtime/search_backend.py",
+      "module": "gpu_runtime.real_backend"
+    },
+    {
+      "source": "gpu_runtime/search_backend.py",
+      "module": "gpu_runtime.search_objective"
+    },
+    {
+      "source": "gpu_runtime/search_objective.py",
+      "module": "gpu_runtime.identifiers"
+    },
+    {
+      "source": "gpu_runtime/server.py",
+      "module": "gpu_runtime.errors"
+    },
+    {
+      "source": "gpu_runtime/server.py",
+      "module": "gpu_runtime.real_backend"
+    },
+    {
+      "source": "gpu_runtime/server.py",
+      "module": "gpu_runtime.search_backend"
+    },
+    {
+      "source": "gpu_runtime/server.py",
+      "module": "gpu_runtime.runtime"
+    },
+    {
+      "source": "gpu_runtime/server.py",
+      "module": "gpu_runtime.toy_backend"
+    },
+    {
+      "source": "gpu_runtime/session_store.py",
+      "module": "gpu_runtime.errors"
+    },
+    {
+      "source": "gpu_runtime/session_store.py",
+      "module": "gpu_runtime.identifiers"
+    },
+    {
+      "source": "gpu_runtime/snapshot_store.py",
+      "module": "gpu_runtime.errors"
+    },
+    {
+      "source": "gpu_runtime/snapshot_store.py",
+      "module": "gpu_runtime.identifiers"
+    },
+    {
+      "source": "gpu_runtime/toy_backend.py",
+      "module": "gpu_runtime.backend"
+    },
+    {
+      "source": "gpu_runtime/toy_backend.py",
+      "module": "gpu_runtime.errors"
+    },
+    {
+      "source": "gpu_runtime/toy_backend.py",
+      "module": "gpu_runtime.schemas"
+    },
+    {
+      "source": "tools/amd_jupyter/audit_online_wire.py",
+      "module": "tools.amd_jupyter.collect_http_evidence"
+    },
+    {
+      "source": "tools/amd_jupyter/http_bridge.py",
+      "module": "tools.amd_jupyter.remote_http_job"
+    },
+    {
+      "source": "tools/amd_jupyter/prepare_gpu_build_context.py",
+      "module": "containers.gpu.download_model"
+    },
+    {
+      "source": "tools/amd_jupyter/prepare_gpu_build_context.py",
+      "module": "tools.amd_jupyter.prepare_deployment"
+    },
+    {
+      "source": "tools/amd_jupyter/test_prepare_gpu_build_context.py",
+      "module": "containers.gpu.download_model"
+    },
+    {
+      "source": "tools/amd_jupyter/test_prepare_gpu_build_context.py",
+      "module": "tools.amd_jupyter"
+    },
+    {
+      "source": "v1-result/docker/prepare_context.py",
+      "module": "tools.amd_jupyter"
+    },
+    {
+      "source": "v1-result/docker/test_delivery_context.py",
+      "module": "tools.amd_jupyter.test_prepare_gpu_build_context"
+    }
+  ],
+  "exclusions": [
+    "weights",
+    "downloaded dependencies",
+    "credentials",
+    "browser state",
+    ".git",
+    "private clones",
+    "pycache",
+    "checks",
+    "recursive source archive"
+  ],
+  "git_identity": "Not included; independent non-Git extraction reports head=null, dirty=null. File hashes identify source."
+}

@@ -1,0 +1,166 @@
+{
+  "schema_version": "reap.multiround.acceptance.v1",
+  "main_result": "multi-20260827-01r1",
+  "aggregate": {
+    "theorems": 5,
+    "session_attempts": 8,
+    "solved": 3,
+    "updates_as_local_receipts": 11,
+    "at_least_two_updates_plus_final_proof_count": 2
+  },
+  "attempts": [
+    {
+      "theorem_id": "01-CoupledOddSquare",
+      "session_id": "multi-20260827-01",
+      "updates": 0,
+      "solved": false,
+      "status": "exception",
+      "timing": {
+        "online_elapsed_seconds": null,
+        "online_elapsed_scope": "Search coordinator window: starts after create_session and snapshot-before; ends before snapshot-after; excludes model download, session setup/recovery, snapshots and independent audits",
+        "online_elapsed_missing_reason": "online-result.json absent after strict value inference exception; no complete outer elapsed measurement",
+        "lean_result_elapsed_ns": 660711962689,
+        "lean_result_elapsed_seconds": 660.711962689,
+        "reference_proof_validation_included_in_ttt_time": false
+      },
+      "multi_update_proof": false
+    },
+    {
+      "theorem_id": "02-AffineAccumulator",
+      "session_id": "multi-20260827-02",
+      "updates": 5,
+      "solved": false,
+      "status": "exhausted",
+      "timing": {
+        "online_elapsed_seconds": 400.0882400219998,
+        "online_elapsed_scope": "Search coordinator window: starts after create_session and snapshot-before; ends before snapshot-after; excludes model download, session setup/recovery, snapshots and independent audits",
+        "online_elapsed_missing_reason": null,
+        "lean_result_elapsed_ns": 390427647879,
+        "lean_result_elapsed_seconds": 390.427647879,
+        "reference_proof_validation_included_in_ttt_time": false
+      },
+      "multi_update_proof": false
+    },
+    {
+      "theorem_id": "03-ScaledTriangular",
+      "session_id": "multi-20260827-03",
+      "updates": 1,
+      "solved": true,
+      "status": "solved",
+      "timing": {
+        "online_elapsed_seconds": 94.3290337210019,
+        "online_elapsed_scope": "Search coordinator window: starts after create_session and snapshot-before; ends before snapshot-after; excludes model download, session setup/recovery, snapshots and independent audits",
+        "online_elapsed_missing_reason": null,
+        "lean_result_elapsed_ns": 79303787490,
+        "lean_result_elapsed_seconds": 79.30378749,
+        "reference_proof_validation_included_in_ttt_time": false
+      },
+      "multi_update_proof": false
+    },
+    {
+      "theorem_id": "04-DifferenceInvariant",
+      "session_id": "multi-20260827-04",
+      "updates": 0,
+      "solved": false,
+      "status": "exhausted",
+      "timing": {
+        "online_elapsed_seconds": 344.28810063199853,
+        "online_elapsed_scope": "Search coordinator window: starts after create_session and snapshot-before; ends before snapshot-after; excludes model download, session setup/recovery, snapshots and independent audits",
+        "online_elapsed_missing_reason": null,
+        "lean_result_elapsed_ns": 334925367715,
+        "lean_result_elapsed_seconds": 334.925367715,
+        "reference_proof_validation_included_in_ttt_time": false
+      },
+      "multi_update_proof": false
+    },
+    {
+      "theorem_id": "05-CubeAccumulator",
+      "session_id": "multi-20260827-05",
+      "updates": 0,
+      "solved": false,
+      "status": "exception",
+      "timing": {
+        "online_elapsed_seconds": null,
+        "online_elapsed_scope": "Search coordinator window: starts after create_session and snapshot-before; ends before snapshot-after; excludes model download, session setup/recovery, snapshots and independent audits",
+        "online_elapsed_missing_reason": "online-result.json absent after strict value inference exception; no complete outer elapsed measurement",
+        "lean_result_elapsed_ns": 661129121745,
+        "lean_result_elapsed_seconds": 661.129121745,
+        "reference_proof_validation_included_in_ttt_time": false
+      },
+      "multi_update_proof": false
+    },
+    {
+      "theorem_id": "01-CoupledOddSquare",
+      "session_id": "multi-20260827-01r1",
+      "updates": 3,
+      "solved": true,
+      "status": "solved",
+      "timing": {
+        "online_elapsed_seconds": 123.06198676699933,
+        "online_elapsed_scope": "Search coordinator window: starts after create_session and snapshot-before; ends before snapshot-after; excludes model download, session setup/recovery, snapshots and independent audits",
+        "online_elapsed_missing_reason": null,
+        "lean_result_elapsed_ns": 71653538300,
+        "lean_result_elapsed_seconds": 71.6535383,
+        "reference_proof_validation_included_in_ttt_time": false
+      },
+      "multi_update_proof": true
+    },
+    {
+      "theorem_id": "05-CubeAccumulator",
+      "session_id": "multi-20260827-05r1",
+      "updates": 0,
+      "solved": false,
+      "status": "no_local_lean_launch_record",
+      "timing": {
+        "online_elapsed_seconds": null,
+        "lean_result_elapsed_ns": null,
+        "lean_result_elapsed_seconds": null,
+        "online_elapsed_missing_reason": "No online-result, result, process, create receipt or observer: session creation attempt did not reach local Lean launch"
+      },
+      "multi_update_proof": false
+    },
+    {
+      "theorem_id": "05-CubeAccumulator",
+      "session_id": "multi-20260827-05r2",
+      "updates": 2,
+      "solved": true,
+      "status": "solved",
+      "timing": {
+        "online_elapsed_seconds": 55.20611415299936,
+        "online_elapsed_scope": "Search coordinator window: starts after create_session and snapshot-before; ends before snapshot-after; excludes model download, session setup/recovery, snapshots and independent audits",
+        "online_elapsed_missing_reason": null,
+        "lean_result_elapsed_ns": 36295137239,
+        "lean_result_elapsed_seconds": 36.295137239,
+        "reference_proof_validation_included_in_ttt_time": false
+      },
+      "multi_update_proof": true
+    }
+  ],
+  "gates": {
+    "real_gpu_single_problem_ttt": true,
+    "at_least_two_updates_then_proof": true,
+    "all_successful_multi_update_versions_used_later": true,
+    "all_successful_multi_updates_before_proof": true,
+    "independent_network_none_lean_rechecks": true,
+    "initial_final_trainable_tensor_snapshots_checked": true,
+    "initial_five_cpu_sessions_launched": true,
+    "initial_five_without_transport_errors": false,
+    "successful_retry_searches_overlap": false,
+    "gpu_actor_max_active": 1,
+    "cross_problem_learning": false,
+    "gpu_container_b_verified": false,
+    "performance_improvement_demonstrated": false
+  },
+  "timing_scope": "online elapsed starts after create_session and snapshot-before, ends before snapshot-after; excludes setup, both snapshots, download and independent audits. See each attempt for missing measurements.",
+  "evidence": {
+    "raw_archive_sha256": "9183583475aef37bafd4d0f88e32cc958f5baa335d9b06456ee41dd02f5a6450",
+    "final_local_audit_sha256": "a020a609c973ea34292775b4930de4ec3c7b12d53dfbe82060fe908d0577372a",
+    "final_http_collection_sha256": "e44760b8b60fd494f1ab37bfc9d7402d0d214a250345cf40e0817965335089a3"
+  },
+  "limitations": [
+    "Five selected questions with retries, not a benchmark success-rate estimate.",
+    "Initial/final mutable tensors independently checked; intermediate updates use matching receipts and continuous fingerprints.",
+    "No new frozen 7B content rehash or live restore in these five trials.",
+    "Browser transport fast-fail corrected; earlier submit loss root cause not fully established."
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "status": "PASS_LOCAL_REVIEWED_SOURCE_AND_DOCKER",
+  "archive": {
+    "name": "source-snapshot.tar.gz",
+    "size": 114830,
+    "sha256": "69082304c896cd5995619d9c65a8659d452db13f1cfd08f48a00d7822ab141ce"
+  },
+  "file_count": 77,
+  "original_archive_unchanged": true,
+  "source_delivery_files": [
+    "README.md",
+    "source-snapshot.tar.gz",
+    "source-manifest.json",
+    "verify_source.py"
+  ],
+  "docker_code_sha256": {
+    "test_delivery_context.py": "d0f98c2b6b41e97cecdea07cc9064ba7c0dee2321a65203035f4377ea1857389",
+    "run-cpu.sh": "0fecbca024bbdadf42f00063c4a3d8e1ea19ba4db87b39a224737067c37bbdd4",
+    "build.sh": "af3f962aaac72ec6c5f0abe63e93c60dc9a46946a9b8ca3fdd1544a0c29885d0",
+    "run-gpu.sh": "a4e5f9376ea64606b254ff6c700dd15b6563ce1a85b79f4d8c8513f2e7601c47",
+    "prepare_context.py": "b10aefcd8ff08b4a0cefcb7f33f40739854d40e1a99eb69163b7a0042202b03c",
+    "batch.example.jsonl": "c4a436c18d8c54efab98232cac306d651e37a5727772fc53ae5cc3325f4695da",
+    "train.Dockerfile": "644b586e389a1d0c0125de3876732db7e57825ff82208d88786659aaf1e49492",
+    "cpu.Dockerfile": "30325287bfbc8b42267d0fce37b7a8d4f1c85be3a7529b2a320d80cffa4414fb"
+  },
+  "docker_outer_code_matches_frozen_archive": true,
+  "outer_README_is_updated_guidance_not_original_snapshot_bytes": true,
+  "verifier_sha256": "df1cfc12ad84f756ab79c7cf59f5866a8bd903d94d854778ec52b382e1e3fe7d",
+  "verifier_fixture_tests": {
+    "run": 8,
+    "passed": 8,
+    "skipped": 0,
+    "cases": [
+      "valid verification/extraction",
+      "archive corruption",
+      "member corruption",
+      "path traversal",
+      "existing directory",
+      "tar symlink",
+      "parent symlink",
+      "duplicate member"
+    ]
+  },
+  "independent_extraction": "/tmp/reap-reviewed-source-check-20260827",
+  "extracted_context_tests": {
+    "run": 14,
+    "passed": 14,
+    "skipped": 0
+  },
+  "extracted_helper_imports_passed": true,
+  "shell_syntax_passed": [
+    "build.sh",
+    "run-cpu.sh",
+    "run-gpu.sh"
+  ],
+  "non_git_identity": {
+    "head": null,
+    "dirty": null
+  },
+  "relative_links_checked": 3,
+  "image_builds": 0,
+  "model_downloads": 0,
+  "remote_changes": 0,
+  "GitHub_syncs": 0,
+  "current_automation_state": "AMD idle protection and startup takeover checks deleted; no automatic AMD control"
+}
