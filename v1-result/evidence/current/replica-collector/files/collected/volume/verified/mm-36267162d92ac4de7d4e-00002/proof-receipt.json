@@ -1,0 +1,21 @@
+{
+  "schema_version": "reap.collector-verify.proof.v1",
+  "proof_from_session": "mm-36267162d92ac4de7d4e-00002",
+  "theorem": "ReapCurriculumWrapper.attempt",
+  "source_theorem_sha256": "56d2d40592bc9bf475958d05e22d0e5589594082b5d6a5c8fec847f22e72493b",
+  "generated_proof_sha256": "4e36585d777b4768668a63c42af4727ec113203ec186317e0b176f84b6aafd58",
+  "model_release_sha256": "0103155583b260c7863ea58bbf2d3377444c272db0ea4f3a75dd49c40b65c98e",
+  "image": "d2070a64912f1a7c66ec9e4bb92e66004e8adaa58887e7be333f0bf8e3d5f3b7",
+  "network": "none",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "/campaign/verified/mm-36267162d92ac4de7d4e-00002/proof.lean"
+  ],
+  "cwd": "/opt/reap-runtime",
+  "returncode": 0,
+  "elapsed_seconds": 6.987879223001073,
+  "stdout": "'ReapCurriculumWrapper.attempt' does not depend on any axioms\n",
+  "stderr": ""
+}

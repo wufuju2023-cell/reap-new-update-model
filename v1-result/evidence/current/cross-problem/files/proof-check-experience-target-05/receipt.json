@@ -1,0 +1,56 @@
+{
+  "schema_version": "reap.incremental.independent-proof-check.v1",
+  "session_id": "experience-target-05",
+  "proof_from_session": "experience-target-05",
+  "theorem": "MultiroundCandidates.CubeAccumulator.cube_accumulator",
+  "source_theorem_sha256": "78d3be9fb0da44c2576e6d51232c6a1f5444ac6573c48ca5269d24b8df316fad",
+  "input_sha256": {
+    "result.json": "50393348bca48a49fdeeb7b88b59e95860eb895eb27251168a35379317dd0b6f",
+    "online-result.json": "5a552b9c097187ab8ae42522493fc0108eba693e05913d6a41cc454d6c51d8ae",
+    "session.json": "5f34152342d4aa38aa5da7d343f41c095e26c749b8024eb10fe1ee7c1f9a2932"
+  },
+  "verifier_sha256": "05fdfed03cf69206c035f35b20d4bb303c42af00d913bdb43bfb1fbf98320c12",
+  "image": "623ae445c3cb8c843afb6c85a1db0dfa25f17e72ae95afaf23a49ef8844f0fce",
+  "proof_recheck": "PASS",
+  "status": "PASS",
+  "command": [
+    "podman",
+    "run",
+    "--name",
+    "reap-incremental-proof-experience-target-05",
+    "--pull",
+    "never",
+    "--network",
+    "none",
+    "-v",
+    "/mnt/c/Users/21812/Desktop/ai4math_26Summercamp/Alpha-Proof-26-summer-school/.downloads/incremental-run-20260828/proof-check-experience-target-05/05-CubeAccumulatorProof.lean:/proof/05-CubeAccumulatorProof.lean:ro",
+    "--entrypoint",
+    "bash",
+    "623ae445c3cb8c843afb6c85a1db0dfa25f17e72ae95afaf23a49ef8844f0fce",
+    "-lc",
+    "lake env lean /proof/05-CubeAccumulatorProof.lean"
+  ],
+  "network": "none",
+  "returncode": 0,
+  "container_exit_code": 0,
+  "container_image": "623ae445c3cb8c843afb6c85a1db0dfa25f17e72ae95afaf23a49ef8844f0fce",
+  "observed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "independent_GPU_audit": false,
+  "generated_proof_sha256": "60e365b05a80c66c23a48e8b2ec9315bc8c9834a418e86399788863c5698599e",
+  "elapsed_seconds": 14.865484569000046,
+  "stdout": "Try this:\n  [apply] ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\n/proof/05-CubeAccumulatorProof.lean:19:28: warning: This simp argument is unused:\n  hzero\n\nHint: Omit it from the simp argument list.\n  simp_all [hz̵e̵r̵o̵,̵ ̵h̵step]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/proof/05-CubeAccumulatorProof.lean:19:35: warning: This simp argument is unused:\n  hstep\n\nHint: Omit it from the simp argument list.\n  simp_all [hzero,̵ ̵h̵s̵t̵e̵p̵]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n'MultiroundCandidates.CubeAccumulator.cube_accumulator' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "gates": {
+    "command_exit_zero": true,
+    "container_exit_zero": true,
+    "container_stopped": true,
+    "network_none": true,
+    "fixed_image": true,
+    "axioms_allowed": true,
+    "no_sorryAx": true
+  }
+}

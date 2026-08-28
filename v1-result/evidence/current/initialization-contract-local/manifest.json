@@ -1,0 +1,29 @@
+{
+  "schema_version": "reap.evidence-stage.v1",
+  "source_directory": "initialization-contract-local-20260828",
+  "archive": {
+    "file": "raw.zip",
+    "bytes": 1100,
+    "sha256": "13f190832df0ea49e3244568589699d5026de700848f2a6dfb582d5bf28baf95"
+  },
+  "files": {
+    "receipt.json": {
+      "bytes": 594,
+      "sha256": "b125a26ceb854a14483ba992b02f03856fcd48a2245b1e4ab497d91be5477a25"
+    },
+    "source-after.json": {
+      "bytes": 298,
+      "sha256": "718449e155cb57317820d12d6bbfeac1c36454f6489c91bb449fbd6d32a8254e"
+    },
+    "source-before.json": {
+      "bytes": 298,
+      "sha256": "718449e155cb57317820d12d6bbfeac1c36454f6489c91bb449fbd6d32a8254e"
+    }
+  },
+  "loose_files": {
+    "receipt.json": "b125a26ceb854a14483ba992b02f03856fcd48a2245b1e4ab497d91be5477a25",
+    "source-after.json": "718449e155cb57317820d12d6bbfeac1c36454f6489c91bb449fbd6d32a8254e",
+    "source-before.json": "718449e155cb57317820d12d6bbfeac1c36454f6489c91bb449fbd6d32a8254e"
+  },
+  "excluded": "7B weights, large tensor snapshots, credentials, browser state"
+}

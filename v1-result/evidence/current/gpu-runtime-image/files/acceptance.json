@@ -1,0 +1,79 @@
+{
+  "base_pull_exit_code": null,
+  "base_pull_outer_exit_code": 1,
+  "base_pull_status_explanation": "complete pinned image independently inspected; shell exit variable lost, never assert pull exit0",
+  "baseline_torch": {
+    "hip": "7.2.53211",
+    "module": "/opt/venv/lib/python3.12/site-packages/torch/__init__.py",
+    "version": "2.10.0+rocm7.2.4.git3d3aa833"
+  },
+  "build": {
+    "command": [
+      "podman",
+      "build",
+      "--network=none",
+      "--pull=never",
+      "--retry=0",
+      "--jobs=1",
+      "--memory=8g",
+      "--memory-swap=8g",
+      "--format=docker",
+      "-f",
+      "containers/gpu/Containerfile.runtime",
+      "-t",
+      "localhost/reap-gpu:runtime-20260828",
+      "."
+    ],
+    "context_manifest_sha256": "21c75868d99d0b9c8e1a0657fe4edc1f38fa3e2c1d7ea964096eadd35fd7bf82",
+    "digest": "sha256:ed6b3a035fcded94ce2c48653120d04aeb7bb7b57e9b49782ad3edd37943255d",
+    "exit_code": 0,
+    "gpu_tested": false,
+    "image": "localhost/reap-gpu:runtime-20260828",
+    "image_id": "fc5687143dd7fd6ca276e45ed1d420fd3b611fa3299c42245216f94326c2dba3",
+    "seconds": 26.680223580999154,
+    "size": 29817042215
+  },
+  "container_smoke": {
+    "command": [
+      "podman",
+      "create",
+      "--name",
+      "reap-gpu-runtime-local-smoke-r2-20260828",
+      "--network=none",
+      "--read-only",
+      "--tmpfs",
+      "/tmp:rw,nosuid,size=256m",
+      "--memory=4g",
+      "--entrypoint",
+      "python",
+      "--volume",
+      "/mnt/c/Users/21812/Desktop/ai4math_26Summercamp/Alpha-Proof-26-summer-school/.downloads/gpu-runtime-image-local-20260828/smoke_runtime_image_v2.py:/audit.py:ro",
+      "localhost/reap-gpu:runtime-20260828",
+      "-B",
+      "/audit.py"
+    ],
+    "container_exit_code": 0,
+    "gpu_tested": false,
+    "image_id": "fc5687143dd7fd6ca276e45ed1d420fd3b611fa3299c42245216f94326c2dba3",
+    "network": "none",
+    "podman_exit_code": 0,
+    "running": false,
+    "seconds": 6.709060532000876,
+    "user": "reap"
+  },
+  "context_manifest_sha256": "21c75868d99d0b9c8e1a0657fe4edc1f38fa3e2c1d7ea964096eadd35fd7bf82",
+  "environment_supplement_sha256": "97f2757169e8b193ae140032833a9ac2dde6f55f9ec4d9a2d3950373d01c20a5",
+  "failures_preserved": [
+    "attempt1 Dockerfile heredoc parsing exit125",
+    "attempt2 initial smoke script str snapshot_root exit1"
+  ],
+  "gpu_container_tested": false,
+  "image_published": false,
+  "local_container_gate_passed": true,
+  "local_image_built": true,
+  "model_downloaded_locally": false,
+  "real_model_loaded": false,
+  "remote_container_gate": "separate current instance capability evidence owned by parent; no legal usable daemon detected; no privilege workaround",
+  "schema": "reap.gpu-runtime-image.local-acceptance.v1",
+  "source_hashes_checked": 30
+}

@@ -1,0 +1,245 @@
+{
+  "batch_elapsed_seconds": 75.31880910399923,
+  "blocking_findings": [],
+  "boundary": [
+    "only two predetermined branch-coverage problems, not success rate or throughput benchmark",
+    "observer shared-WSL monotonic overlap includes CPU Lean, transport waits and GPU calls; not kernel overlap",
+    "independent proof and replay receipts checked read-only; reviewer did not rerun Lean/GPU",
+    "legacy online-wire audit rejects the mixed collector contract; its raw decoder is reused with a separate fixed-collector identity/prompt/tactic/logprob/value audit, without changing the legacy gate",
+    "source/router semantics are the frozen bundle, not current latest-release work"
+  ],
+  "callback_concurrency": {
+    "elapsed_seconds": 75.31880910399923,
+    "handoff_backpressure_observed": false,
+    "max_search_callbacks_active": 2,
+    "max_search_stage_occupancy": 2,
+    "max_validation_callbacks_active": 1,
+    "max_validation_stage_occupancy": 2,
+    "measurement": "host callback/stage concurrency, not GPU kernel parallelism or utilization"
+  },
+  "container_phase_receipts": [
+    {
+      "exit_code": 0,
+      "network": "none",
+      "phase_id": "preflight-false-negative",
+      "seconds": 10.726486537998426
+    },
+    {
+      "exit_code": 0,
+      "network": "none",
+      "phase_id": "preflight-true-positive",
+      "seconds": 48.335956683000404
+    },
+    {
+      "exit_code": 0,
+      "network": "host",
+      "phase_id": "search-mm-36267162d92ac4de7d4e-00001",
+      "seconds": 36.635775853003
+    },
+    {
+      "exit_code": 0,
+      "network": "host",
+      "phase_id": "search-mm-36267162d92ac4de7d4e-00002",
+      "seconds": 31.807481331001327
+    },
+    {
+      "exit_code": 0,
+      "network": "none",
+      "phase_id": "verify-mm-36267162d92ac4de7d4e-00001",
+      "seconds": 16.10595777599883
+    },
+    {
+      "exit_code": 0,
+      "network": "none",
+      "phase_id": "verify-mm-36267162d92ac4de7d4e-00002",
+      "seconds": 16.074228143002983
+    }
+  ],
+  "export_files_verified": 287,
+  "export_manifest_sha256": "67392741e2bfccefbee402a9e0674ff1b909dd95673495be4cf10ebb811d5876",
+  "frozen_files_verified": 77,
+  "kernel_parallelism_or_utilization_measured": false,
+  "local_evidence_passed": true,
+  "manifest_sha256": "62acb8d99ecbd51b09c7754c0cde3dd2b2bd4cb51473272433a4c000fdb0f428",
+  "observer_first_event_to_last_event_overlap_seconds": 7.042941122,
+  "observer_search_overlap_seconds": 7.015999063,
+  "remaining": [
+    "large GPU tensor payloads not downloaded/decoded; final logical state and manifest pins are checked",
+    "outer campaign process exit0 supplied by parent; this audit verified six actual container exits and both GPU worker/suite exits"
+  ],
+  "remote_export_files_verified": 28,
+  "remote_process_identity_audited": true,
+  "remote_source_manifest_members_verified": 56,
+  "remote_wire_audited": true,
+  "reviewer": "concurrency",
+  "schema_version": "reap.replica-campaign.independent-local-audit.v1",
+  "search_and_verification_container_overlap_seconds_approx": 0,
+  "search_container_overlap_seconds_approx": 31.14852809906006,
+  "sessions": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "collector_seconds_including_initialization": 33.76396938000107,
+      "dataset_sha256": "91579318920ffc08c77eaadb62f2d9eff42856d3f33436d8ba3b298f1456601d",
+      "endpoint": {
+        "base_url": "http://127.0.0.1:18767",
+        "deployment_id": "reap-replica-20260828-0",
+        "model_release_sha256": "0103155583b260c7863ea58bbf2d3377444c272db0ea4f3a75dd49c40b65c98e",
+        "replica_id": "replica-0"
+      },
+      "observer_first_selection_to_final_ack_seconds": 11.681062914,
+      "observer_window_monotonic_ns": [
+        17178672855868,
+        17190353918782
+      ],
+      "proof_seconds": 6.84821837599884,
+      "replay_seconds": 6.369202181998844,
+      "retirement_snapshot_sha256": "a6f291e6b8c02dd63d1232605efc17d51365a76c867f9308ad4ecb0939604aeb",
+      "root_return": -2,
+      "rows": 2,
+      "session_id": "mm-36267162d92ac4de7d4e-00001",
+      "verdict": "disproved"
+    },
+    {
+      "axioms": [],
+      "collector_seconds_including_initialization": 29.03790992699942,
+      "dataset_sha256": "cd3563a8524ee9561999f4f71f88c8e6ce1e29eb8cfbb1744440450655c02ef4",
+      "endpoint": {
+        "base_url": "http://127.0.0.1:18768",
+        "deployment_id": "reap-replica-20260828-1",
+        "model_release_sha256": "0103155583b260c7863ea58bbf2d3377444c272db0ea4f3a75dd49c40b65c98e",
+        "replica_id": "replica-1"
+      },
+      "observer_first_selection_to_final_ack_seconds": 7.932359818,
+      "observer_window_monotonic_ns": [
+        17177756495113,
+        17185688854931
+      ],
+      "proof_seconds": 6.987879223001073,
+      "replay_seconds": 6.209521668999514,
+      "retirement_snapshot_sha256": "499d5a45eb27ff95d92063886715d70eb56fbf2db118e70c2abe3d285759037a",
+      "root_return": -1,
+      "rows": 1,
+      "session_id": "mm-36267162d92ac4de7d4e-00002",
+      "verdict": "proved"
+    }
+  ],
+  "speedup_claimed": false,
+  "staged_records_bound": 29,
+  "wire_audit_helper_sha256": "a3c06a0bcfbf22767885131b7412777c99e85e29a4a006691e48369897e77e5f",
+  "wire_audits": [
+    {
+      "collection_sha256": "82e96e3dc9eb05dd69acf93a9737e6ee2af366bc9fec3701ce318a1a49a9db2a",
+      "gaps": [],
+      "generations": [
+        {
+          "observer_sequence": 2,
+          "policy_request_id": "fb28699890084b28aa3ae4a6172b2aca",
+          "value_request_ids": [
+            "bd17c259d70c42b98b2e02cb2c9e28dc"
+          ]
+        },
+        {
+          "observer_sequence": 4,
+          "policy_request_id": "fb28699890084b28aa3ae4a6172b2aca",
+          "value_request_ids": [
+            "bd17c259d70c42b98b2e02cb2c9e28dc"
+          ]
+        },
+        {
+          "observer_sequence": 10,
+          "policy_request_id": "8145815c29594cd6b911a9b1c6e9d2b9",
+          "value_request_ids": [
+            "7ed926c0d9ef41eb84748ecae205c2cc"
+          ]
+        }
+      ],
+      "jobs": 6,
+      "learns": [],
+      "session_id": "mm-36267162d92ac4de7d4e-00001",
+      "status": "MATCHED_FIXED_COLLECTOR_WIRE"
+    },
+    {
+      "collection_sha256": "82e96e3dc9eb05dd69acf93a9737e6ee2af366bc9fec3701ce318a1a49a9db2a",
+      "gaps": [],
+      "generations": [
+        {
+          "observer_sequence": 2,
+          "policy_request_id": "bb820bb7ff244abbbeb4b62b8f3326e0",
+          "value_request_ids": [
+            "5caa64c170a040d788853cf867757432"
+          ]
+        },
+        {
+          "observer_sequence": 4,
+          "policy_request_id": "bb820bb7ff244abbbeb4b62b8f3326e0",
+          "value_request_ids": [
+            "5caa64c170a040d788853cf867757432"
+          ]
+        }
+      ],
+      "jobs": 4,
+      "learns": [],
+      "session_id": "mm-36267162d92ac4de7d4e-00002",
+      "status": "MATCHED_FIXED_COLLECTOR_WIRE"
+    }
+  ],
+  "wire_jobs_verified": 10,
+  "workers": [
+    {
+      "actor_metrics": {
+        "accepting": true,
+        "active": 0,
+        "active_execution_seconds": 0.0,
+        "completed": 8,
+        "execution_seconds_max": 10.771662829999514,
+        "execution_seconds_total": 17.57025262099978,
+        "failed": 0,
+        "max_active": 1,
+        "max_queued": 1,
+        "queue_wait_seconds_max": 3.1544543589998284,
+        "queue_wait_seconds_total": 3.4774740259999817,
+        "queued": 0,
+        "schema_version": "reap.gpu-actor.metrics.v1",
+        "started": 8,
+        "submitted": 8
+      },
+      "load_seconds": 39.69722339599957,
+      "pid": 2692,
+      "port": 8761,
+      "replica_id": "replica-0",
+      "returncode": 0,
+      "torch_interop": 1,
+      "torch_threads": 1
+    },
+    {
+      "actor_metrics": {
+        "accepting": true,
+        "active": 0,
+        "active_execution_seconds": 0.0,
+        "completed": 6,
+        "execution_seconds_max": 11.267580118999831,
+        "execution_seconds_total": 17.375407718999668,
+        "failed": 0,
+        "max_active": 1,
+        "max_queued": 1,
+        "queue_wait_seconds_max": 2.9514967289997003,
+        "queue_wait_seconds_total": 2.9518242640006065,
+        "queued": 0,
+        "schema_version": "reap.gpu-actor.metrics.v1",
+        "started": 6,
+        "submitted": 6
+      },
+      "load_seconds": 32.1971154339999,
+      "pid": 2749,
+      "port": 8762,
+      "replica_id": "replica-1",
+      "returncode": 0,
+      "torch_interop": 1,
+      "torch_threads": 1
+    }
+  ]
+}

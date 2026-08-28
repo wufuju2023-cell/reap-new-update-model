@@ -1,0 +1,81 @@
+{
+  "schema_version": "reap.r3.independent-readonly-review.v1",
+  "reviewer": "design_review",
+  "reviewed_at": "2026-08-27T21:18:01.238043+00:00",
+  "ok": true,
+  "blockers": [],
+  "scope": "Local read-only hash, strict dataset loader, source/proof/receipt/observer/raw HTTP correspondence review. Existing recorded independent Lean executions inspected; not rerun. No GPU or remote calls.",
+  "export_files_verified": 266,
+  "frozen_bundle_files_verified": 31,
+  "raw_http_jobs_verified": 10,
+  "raw_http_file_hashes_verified": 30,
+  "learn_jobs": 0,
+  "source_release_sha256": "0103155583b260c7863ea58bbf2d3377444c272db0ea4f3a75dd49c40b65c98e",
+  "sessions": [
+    {
+      "session_id": "mm-d5134e1eed3a0ac19ea7-00001",
+      "verdict": "disproved",
+      "dataset_sha256": "33a3be06d72cacd9dfa78c5e3f82465f3e1f6ccbf12506fad67fd423a93114ad",
+      "rows": 2,
+      "root_return": -2,
+      "tactics": [
+        "push_neg",
+        "refine' ⟨1, by norm_num⟩"
+      ],
+      "proof_sha256": "5d479a0d8905140b856f1c1785d235c5ea62d900703a0817c5c58bf811b10447",
+      "whole_proof_exit": 0,
+      "replay_exit": 0,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "retirement_snapshot_sha256": "fee4e20a208b5a88ec288efaf09a2a4bf9e753c7e94b1783ee5a1b298d791489"
+    },
+    {
+      "session_id": "mm-d5134e1eed3a0ac19ea7-00002",
+      "verdict": "proved",
+      "dataset_sha256": "464d4fded8080c055012c9c6de0f270dbe6b1305fc5f69468ed35ff8d499ab8c",
+      "rows": 1,
+      "root_return": -1,
+      "tactics": [
+        "simp only [forall_const]"
+      ],
+      "proof_sha256": "e177df9d98debb01ef1c13ddca6357762ffe49003a3ababb7feeee0410714a27",
+      "whole_proof_exit": 0,
+      "replay_exit": 0,
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "retirement_snapshot_sha256": "3562c1956f851f5c0f3102572168b30641fc5bf082a35af757980dcfaa6ed860"
+    }
+  ],
+  "selected_dataset_sha256": "33a3be06d72cacd9dfa78c5e3f82465f3e1f6ccbf12506fad67fd423a93114ad",
+  "unfold_preprocessing": "Explicit target-definition unfold preserves full root Prop/Not and exact post-theorem type guard; excluded from model-action rows/returns.",
+  "observer_overlap_seconds": 0.0,
+  "callback_search_occupancy": 2,
+  "concurrency_boundary": "Two search callbacks occupied slots, but successful r3 actual observer MCTS intervals did not overlap. Do not combine r2 failed overlap with r3 successes.",
+  "worker_returncode": 0,
+  "worker_alive": false,
+  "retirement_scope": "Released receipts plus service finish binding; tensor snapshot payloads not independently recomputed here.",
+  "limitations": [
+    "No fresh Lean execution",
+    "No GPU tensor recomputation",
+    "No performance gain or training-effect claim",
+    "Not variant-curriculum acceptance",
+    "Retirement tombstones remain current-runtime scope"
+  ],
+  "artifact_sha256": {
+    "matchmaker-campaign-r3-run-20260828\\manifest.json": "62677ed53ad1a935b74494f979b4e0d5b265f6bdc0ef48b52b2870d8be5bb547",
+    "matchmaker-campaign-r3-run-20260828\\plan.json": "2e25fcfdc0096b4e406c10ff75663507ef32b0dd12205de4f44e3a04bacaf953",
+    "matchmaker-campaign-r3-run-20260828\\collected\\export-manifest.json": "782eedfee530ed6c26fc36a700906d5b42e99d921cb1b68fca1eed94cbcd8e66",
+    "matchmaker-campaign-r3-run-20260828\\collected\\host\\campaign-report.json": "9d879cd803f735ae0f3781f79dc788e36b225203c07c1d626895daac451a920b",
+    "matchmaker-campaign-r3-run-20260828\\collected\\host\\batch-report.json": "4f6c5ac17556fe741a09f3e778967ad5f87efccccb80a12b59f2dbf390af004b",
+    "matchmaker-service-run-20260828\\http-r3-collection.json": "9d4db62092af80c7d771a02c87ea0fdaab30432f493a01d95b843493f4aa3299",
+    "matchmaker-service-run-20260828\\http-r3-audit.json": "24bb3f75b272caeccf8462ad492ef3b6eb338bcacc40ef0e5d3e718871d2fc9a",
+    "matchmaker-service-run-20260828\\service-finish-01.json": "d57dc48153a572af6859186cd8de431d3980637275d39f59c4d7eaac55988cd6",
+    "matchmaker-service-run-20260828\\status-after-finish-01.json": "3e9cf3a84fcb3e6d47929b76f452bdef9c2fbcd47b5c0188bdc52dffdd25c687"
+  },
+  "loader_sha256": "e8a2366df58e739cd5b9e0bb8068b4b4dd0bd6fc8c5f46e0299295be79dffac4"
+}

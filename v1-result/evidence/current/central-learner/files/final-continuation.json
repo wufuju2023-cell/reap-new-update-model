@@ -1,0 +1,7 @@
+{
+  "checkpoint_sha256": "9fbdefb1eaba90c53d4efdf304e622d7d5c3ea67335d9a1d5d4bd3fdb0cbc409",
+  "goal_complete": false,
+  "instance_stop_requested": false,
+  "next": "Mathlib SFT mixture and bounded target variants",
+  "release_sha256": "4e10219542361bbe407a987094120c2920a0bf733b88773b7a9dd68a1e702ede"
+}

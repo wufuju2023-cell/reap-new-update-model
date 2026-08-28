@@ -1,0 +1,9 @@
+{
+  "schema_version": "reap.mathlib-sft.linear-plan.v1",
+  "declaration": "ExistsUnique.elim₂",
+  "actions": [
+    "simp only [existsUnique_iff_exists] at h₂",
+    "apply h₂.elim",
+    "exact fun x ⟨hxp, hxq⟩ H ↦ h₁ x hxp hxq fun y hyp hyq ↦ H y ⟨hyp, hyq⟩"
+  ]
+}

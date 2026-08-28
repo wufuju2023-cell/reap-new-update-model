@@ -1,0 +1,17 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"score\":3.97445011138916}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1787873420,
+  "id": "chatcmpl-b0b7f16846614f94999de332c04c9d10",
+  "model": "reap",
+  "object": "chat.completion",
+  "policy_version": 0
+}

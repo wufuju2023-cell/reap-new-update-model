@@ -1,0 +1,24 @@
+{
+  "release_sha256": "56182ce3e4a718f44a2edddd5f0fb14bd4b1bc16040a27a04c6cd148f87322af",
+  "cpu_sources": {
+    "batch_solver.py": "936b0bf4dbfc39e1b488125f90cfcccd6905e8ccf58f57b4f8bd962096c0eb8c",
+    "http_clients.py": "a616d374097dcfa9afa7b5fe52e929b8e0bd175b5fa08e41b65486141ca87c53",
+    "mathlib_trajectory.py": "cea58743b5b457af2c8e712d275abad520a777d2376b2700e2507efe54dca1fd",
+    "mock_services.py": "e88fc60144fb5d732e6ef1c3d562f2a1b91eb22169bcf9f9bf60655ca4b75bfc",
+    "normalize_rollout.py": "f9108919ebbf8a30a9c810148a46b22e58fd9506e40cece3d83080b88664bfa2",
+    "online_batch.py": "ed88e8e0337adf057fa8dc5915fd5201f78140dcab873de7169c8379c507ad2a",
+    "online_ttt.py": "7731626f9f60c9f1a9040a26e13149fac793d0c18aa1fe24ec3c7a28911d2862",
+    "publish_experience.py": "df6aadf73ed9b40852269b8d7610a6c46cd723d77be8b11034ad7ef9a6e9d75b",
+    "reap_act_runner.py": "a068161c556bbe8d8475fe6db3d67e81bd84e9e8b3c2b43619c7aa8d742105ff",
+    "reap_prompt.py": "4160fe53124542542d646391c7dd089206b180b3b0e5af33188c3bea59020a03",
+    "run_toy_ttt.py": "a79e87cf391e298118b94d155d3c9cecedd27c9d89c840d718341eaf9fcc5e78",
+    "run_ttt.py": "6e31fa924fe7ce093e9882bf5d1c851ef1fc253ceedc553bd65f2b88ade1c03a",
+    "segmented_ttt.py": "7c739fcb364ad35dbe344be74664f7a8602ac9161c07cfcfe1157f76d7ac360c",
+    "transport_budget.py": "e0fd254e87f7e1f3cd3d53c3135fff2ea889a6cf3929be6866bb456fee83d1ac",
+    "verified_collector.py": "c3a0793ad78c48e00fb0d9014a9cb7736b959fa8772949fd4e11b087f7fb9bf2",
+    "verified_dataset_store.py": "9b9052292aaa0d50f2a51a8409eb1bbc4e1124fef99a38b5ce4f3045a27b9d58",
+    "verified_trajectory.py": "e8a2366df58e739cd5b9e0bb8068b4b4dd0bd6fc8c5f46e0299295be79dffac4",
+    "__init__.py": "0bfe0a5ea77214fa2846ea24b27751750e0134287b92f86118956df326ea8f2b"
+  },
+  "theorem_sha256": "96f6970ec21b5d998985ce33fd173c348c7f325560aa5fb51f4657a233127146"
+}

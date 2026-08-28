@@ -1,0 +1,30 @@
+{
+  "schema_version": "reap.verified-replay.receipt.v1",
+  "session_id": "central-actor-01",
+  "theorem": "LearnerLoop.AffineStrideThree",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "/work/dataset/replay.lean"
+  ],
+  "cwd": "/opt/reap-runtime",
+  "returncode": 0,
+  "elapsed_seconds": 6.772043269999813,
+  "inputs_sha256": {
+    "accepted-proof.lean": "adafb3271fc9ae651e9c6bac4c1c671f39e889b07142340af3f1ee6858c2640b",
+    "historical-proof-receipt.json": "d21ae8d48932d26664d1a4162030c907502ace3c11a8b85c08739fc27920b0cf",
+    "historical-proof.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "historical-proof.stdout": "c36893cca185374d74fc750474e62dc2575a97df6dd52f029c72ffdb8b3e9ece",
+    "observer.jsonl": "d0d5a6fd59902cb3c86b6bf1cb6348819b802115b57a9fc87082b4c796681eee",
+    "plan.json": "e546e618ca0b85e91b44cbd9b2c30ed212008fe566de340f3853ebf3ef1887b3",
+    "raw_tree.json": "16305cebeb8404faa5ef30f3cdd6d95e4ffcb007639a3bddf0530513f9cf6f89",
+    "replay.lean": "4c9defb782ec638989b6b840396dd1a45567b45c1f01e634802b441ddf8998ec",
+    "result.json": "16cd183032a66c297d227cfe491c1b95d5585bc23319efc18d704249981e9514",
+    "session.json": "58b149fb5114bad2a73b618c6a10258c810de0d22e519f1243860446e196d632",
+    "source.lean": "96f6970ec21b5d998985ce33fd173c348c7f325560aa5fb51f4657a233127146",
+    "VerifiedReplay.lean": "a642aaf993f884c26c255ca3cdf1f4c6227ccc87273880243a0fc9c153761f23"
+  },
+  "stdout_sha256": "1df56649d23a6834e697b0526c0fc6680c323111dc4214a51778ab57c44ef5a6",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,26 @@
+{
+  "stage": "capture",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "/evidence/attempt2/elim/capture.lean"
+  ],
+  "cwd": "/opt/reap-runtime",
+  "returncode": 0,
+  "elapsed_seconds": 5.7505625950007015,
+  "stdout_sha256": "5a16a4dd20a2c533d6ec27662db19a9d071979da455431e11b73dde15bfe852e",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "inputs_sha256": {
+    "source.lean": "2f5b7ae2ea952e0d924c90f47c874c21acb88e971a81df15eb6ac69b35a8eb3e",
+    "LICENSE": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+    "source.json": "f25952223af6fc1d16dd42855cc7ff8a70f7c81dcc9d82e9021ec4fc87edc141",
+    "plan.json": "f2ade7bd8a55bf18a6ecfadec9b96f118a0d1d8a258c08f704c865ee58eee50b",
+    "run.json": "162332e279389cea0190db6938c53ed217d0614930f29264675d6ad75700cf94",
+    "MathlibReplay.lean": "bc59a28fe220327ef6344365f31f2db1db927670f1fe0fb9645932cc28fca77f",
+    "extractor.py": "8d4ff389e085c45b490ba9f81581ea3db63cc2e55488e8af96ab6cf97887884e",
+    "original.lean": "6a71e7c339b3abf4a7da5c8d72deb5f6c72008b7fe69d3792b205a64c4c444e9",
+    "capture.lean": "ad63d48e7da34ae30ec401c2558979d0c21a6ff18b02d391ac00590c7fedd256",
+    "replay.lean": "8135117b6862435cffeb7237d4775f77f338ee857276a8b53c277afba3d9f16e"
+  }
+}

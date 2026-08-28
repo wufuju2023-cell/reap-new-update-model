@@ -1,0 +1,1 @@
+{"elapsed_ns":40211997644,"error":null,"proof_script":"intro n\ninduction n <;> simp_all [Nat.succ_eq_add_one, mul_add, mul_comm, mul_left_comm]\nlinarith","schema_version":"reap.training.result.v1","session_id":"inherit-concurrent-03","solved":true,"status":"solved"}

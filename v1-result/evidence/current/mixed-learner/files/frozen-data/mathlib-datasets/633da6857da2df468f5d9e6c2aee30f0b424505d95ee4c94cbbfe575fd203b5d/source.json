@@ -1,0 +1,40 @@
+{
+  "repository": "https://github.com/leanprover-community/mathlib4",
+  "commit": "5352afccd6866369be9de43f5b7ec47203555f44",
+  "file": "Mathlib/Logic/ExistsUnique.lean",
+  "source_sha256": "2f5b7ae2ea952e0d924c90f47c874c21acb88e971a81df15eb6ac69b35a8eb3e",
+  "source_git_blob_sha1": "5c60f6f88746503a79a4943d53165af114224b72",
+  "selection": {
+    "declaration": "ExistsUnique.elim₂",
+    "byte_start": 5265,
+    "byte_end": 5671,
+    "proof_byte_start": 5520,
+    "proof_byte_end": 5671,
+    "declaration_sha256": "34b9e63103b34e44f46cfe2fdbdc75ce51df71ebfd6208ca1e8141a7009d43ef",
+    "proof_sha256": "4f14f4bb4ab81694182cde37b1639e7c825dcaa30dc53aa52af0fb133c530ea4",
+    "actions": [
+      {
+        "tactic": "simp only [existsUnique_iff_exists] at h₂",
+        "byte_start": 5522,
+        "byte_end": 5565,
+        "sha256": "68279747bd498c7e9b62c8e08b18ddfe683f394e0a8a1a5e8fc5ed116b367afb"
+      },
+      {
+        "tactic": "apply h₂.elim",
+        "byte_start": 5568,
+        "byte_end": 5583,
+        "sha256": "89c8fe9f707e3f8d71224b032b4b551895a988fa4d91d226ca1ddda92e77e17a"
+      },
+      {
+        "tactic": "exact fun x ⟨hxp, hxq⟩ H ↦ h₁ x hxp hxq fun y hyp hyq ↦ H y ⟨hyp, hyq⟩",
+        "byte_start": 5586,
+        "byte_end": 5670,
+        "sha256": "3e1b3dcb8b89af321f58a4b6a7e155d62c86535f2e3ae5fe5734e5a645415f0d"
+      }
+    ]
+  },
+  "ambient_context": "namespace MathlibSFTGate\nvariable {α : Sort*}\n",
+  "source_kind": "mathlib_sft",
+  "generator_events": "none",
+  "extractor_sha256": "8d4ff389e085c45b490ba9f81581ea3db63cc2e55488e8af96ab6cf97887884e"
+}

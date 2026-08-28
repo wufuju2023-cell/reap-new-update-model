@@ -1,0 +1,30 @@
+{
+  "schema_version": "reap.verified-replay.receipt.v1",
+  "session_id": "multi-20260827-03",
+  "theorem": "MultiroundCandidates.ScaledTriangular.scaled_triangular",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "/replay-out/03/replay.lean"
+  ],
+  "cwd": "/opt/reap-runtime",
+  "returncode": 0,
+  "elapsed_seconds": 13.412494790999972,
+  "inputs_sha256": {
+    "accepted-proof.lean": "ad2a2c8856304943efc10d6fa86a6cf0a7057b08a7efaee38ff5f812735c0881",
+    "historical-proof-receipt.json": "189faa2284505622243107ce4fe2ca2db7857e5b2376976087de6bd023d96b75",
+    "historical-proof.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "historical-proof.stdout": "7d442641e0860f67253f8f174e7f5c42128ba3ad9029a05abc3f7b61da55724b",
+    "observer.jsonl": "fdf89611fe10ec4d6f36328c9fe6007eca5e8bec6d99d0170eead88121024567",
+    "plan.json": "9eb132c6f6dcc0d49dde35dbee57fd98c7a134c4abaa72f5f841e3bb6b2a736d",
+    "raw_tree.json": "c7d52792ae1128a9c7e3ae5ac2791bfb49ce349d07f3837e77db66e4261f1186",
+    "replay.lean": "31a30d91158a31fc56086268a08e71c09c98f84d79c334e4cf0846ea2d668ea6",
+    "result.json": "c1bfb25a609509b83ef84ebbba9b3b3f0c58a5f11725794607a1366b4e6d9bf7",
+    "session.json": "f644c9d1713330dcbf4f007699c6a03c912bd7403fb8f1685cbc00c5855457c6",
+    "source.lean": "87e0faa213a7af0d8074ed8e166152e22e0ff80b13607c6e6f2b34235c822883",
+    "VerifiedReplay.lean": "a642aaf993f884c26c255ca3cdf1f4c6227ccc87273880243a0fc9c153761f23"
+  },
+  "stdout_sha256": "76af1b837d0eea58679d6f2a055ae764a29ef2979cdc0da4b81285312de51a61",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

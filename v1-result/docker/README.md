@@ -1,99 +1,134 @@
-# Docker 使用流程：从源码到 A/B 验收
+# CPU/GPU镜像的构建与使用
 
-先完成 [源码校验与解包](../source/README.md)。下面的命令均在**解包得到的仓库根目录**执行；只拿外层 `docker/` 无法构建，因为 Dockerfile 和 wrapper 还要读取 `containers/`、runtime 与原 helper。
+先按[当前源码指南](../source/current/README.md)校验并解压`source/current`到新目录。本文构建命令均在**解压后的源码根目录**执行；只拿外层`docker/`目录不能构建。
 
-新A交付产物与本地运行验收已通过，ID为`623ae445c3cb8c843afb6c85a1db0dfa25f17e72ae95afaf23a49ef8844f0fce`；源码/UID、无网络双session mock及E原proof重编均通过，见[08验收报告](../docs/08-CPU交付镜像验收.md)。原Podman退出码因外层脚本转义错误未保留，保留外层exit1与实际COMMIT/inspect证据。原GPU实验仍使用增量A `df23cd6a9b5b6df30fa003285fadcdc1e5d60919eb43b823b0731c17bf135646`；新A未重复GPU实验。B实际build/run与发布仍未完成。
+## 1. 已验证范围
 
-**远端启动失败原因：** 当时实例出现只读内核配置、`proc`挂载权限错误；后续检查也没有可用Docker服务。CPU镜像已经验收，GPU容器B仍待在受支持环境验证，详细报错与解决条件见[06](../docs/06-容器未完成原因与交付边界.md)。
+- **CPU镜像。** 预编译Lean 4.28.0-rc1、Reap/Mathlib、题内TTT及独立证明复验已实际运行；后续采集镜像增加了固定发布版本的证明采集入口。
+- **GPU运行时镜像。** 已实际本地构建，并通过断网容器机制检查；不含7B权重，模型在运行时只读挂载。
+- **AMD容器运行。** 尚未完成。本次实例的Docker服务不可连接，三个候选服务套接字不存在，未安装Podman/Buildah，也没有所需的CAP_SYS_ADMIN能力。
+- **已有7B实验。** 在远端宿主隔离环境运行，使用Torch2.11；镜像中的Torch2.10仍需实际AMD兼容验收。
 
-## 1. 文件用途
+本地GPU镜像为`localhost/reap-gpu:runtime-20260828`，ID `fc5687143dd7fd6ca276e45ed1d420fd3b611fa3299c42245216f94326c2dba3`，digest `sha256:ed6b3a035fcded94ce2c48653120d04aeb7bb7b57e9b49782ad3edd37943255d`。展开大小**29,817,042,215字节（约29.817GB）**；镜像、基础层、wheelhouse及7B权重不在交付包内，未打包、未上传镜像。
 
-| 文件 | 输入、作用与输出 |
-|---|---|
-| `cpu.Dockerfile` | 从仓库读取固定 Reap、预编译 Lean/Mathlib、3 个补丁、CPU runtime 和两道递推题，构建 A |
-| `train.Dockerfile` | 固定 ROCm/PyTorch 基底、22 包哈希、REAL-Prover revision；B 的两个 release 目标默认 `real-search --gamma 0.99` |
-| `prepare_context.py` | 读取原 helper、已验证模型、官方 manifest 和 recipe；产生新的 GPU 白名单 context 与哈希清单 |
-| `build.sh` | `cpu` 构建 A；`gpu-existing` 先准备受控 context，再构建 B；默认引擎为 Podman |
-| `run-gpu.sh` | 在普通获授权 AMD 主机启动 B，私有 IPC、8GB共享内存、仅本机 8760 端口及持久输出卷 |
-| `run-cpu.sh` | 读取题单并启动 A 的双 session online batch；保存每题事件、回执、结果和 solutions |
-| `batch.example.jsonl` | 两道递推题的题单模板；运行前复制并改成新的唯一 session ID |
-| `test_delivery_context.py` | 微型模型的 14 项封装测试；检测模型/清单篡改、重复输出和 recipe 替换，不调用真实 GPU |
+实际构建退出0，26.680秒（不含基础层拉取）。随后断网、只读容器检查退出0：运行用户UID10001、30份源码哈希、22个依赖包核对通过；3个玩具后端会话、2次终态快照复用释放及补位检查通过。容器Torch为`2.10.0+rocm7.2.4.git3d3aa833`、HIP`7.2.53211`；本地`cuda_available=false`，没有加载或训练真实模型。最小原始证据导航见[当前证据目录](../evidence/current/README.md)。
 
-外层这八个代码/数据文件与冻结源码归档同哈希；本 README 是新版指导，可与归档内旧说明不同。若要确认版本，查 `source/source-manifest.json` 的 `v1-result/docker/...` 项。
+## 2. CPU镜像与Python控制代码
 
-## 2. 先检查工具和源码布局
+现有已验收的固定版本采集镜像：`localhost/reap-cpu:verified-collector-20260828`，镜像ID以原始容器检查记录为准。它在已验CPU交付镜像上依次加入选择价值刷新和固定版本采集扩展。
+
+源码中的配方依次为：
+
+1. `containers/cpu/Containerfile`：CPU基础，使用预编译Lean，本体不从源码编译。
+2. `containers/cpu/Containerfile.selection-value-refresh`：显式增量，选择价值刷新默认关闭。
+3. `containers/cpu/Containerfile.verified-collector`：固定发布版本采集的增量。
+
+两个增量配方严格检查前一镜像的源码哈希。构建前须按源码说明准备匹配的基础镜像。历史A构建与命令见[原A验收](../docs/08-CPU交付镜像验收.md)。最新Python控制代码由单独固定的只读源码目录挂载，不能把旧镜像内Python当作当前版本。搜索时使用已绑定的GPU端点；独立Lean证明复验必须`--network=none`，证据和输出使用新命名卷。
+
+题内TTT用`cpu_runtime.online_ttt`/`online_batch`；固定发布采集用`verified_collector`。`replica_collector`为每题固定使用哪一个独立推理服务。结果未知时保留原路由，不自动重试或迁移。每个服务有独立模型，服务内保护可变状态。完整入口见[当前复现指南](../source/current/README.md)。
+
+### 从包内源码构建新的CPU采集镜像
+
+交付包不含CPU镜像层。最底层另需取得配方固定的预编译Lean镜像`ghcr.io/wufuju2023-cell/reap-lean@sha256:6be053f9c1395890ca28385da56888f0735f785e6e56f54a8b96692cace8e353`，以及`ubuntu:24.04`。CPU基础构建还访问apt、固定Reap提交`0090d73c5f739e4d74000e053b00fd0148ff46aa`和Mathlib `v4.28.0-rc1`缓存；这些步骤需要联网；重新构建可能产生不同的镜像ID。若固定Lean镜像不可读取或网络/缓存失败，应保留失败并停止，不能改用另一个Lean版本。此链不需要7B权重。
+
+以下命令以新本地tag为例，按每一步实际生成的镜像ID绑定下一步；不要覆盖历史tag。构建工具必须支持配方所用Dockerfile语法。完整命令需要在已校验解压的源码根执行，最后保留自己的镜像检查结果和构建退出记录：
 
 ```bash
-python3 v1-result/docker/prepare_context.py --help
-python3 v1-result/docker/test_delivery_context.py
+set -eu
+base_tag=localhost/reap-cpu:new-base
+refresh_tag=localhost/reap-cpu:new-refresh
+collector_tag=localhost/reap-cpu:new-collector
+for tag in "$base_tag" "$refresh_tag" "$collector_tag"; do
+  status=0
+  podman image exists "$tag" || status=$?
+  case "$status" in
+    0) echo "Tag already exists; choose new names: $tag" >&2; exit 1 ;;
+    1) ;;
+    *) echo "Image lookup failed; do not build: $tag" >&2; exit "$status" ;;
+  esac
+done
+podman build --jobs=1 --retry=0 \
+  -f containers/cpu/Containerfile -t "$base_tag" .
+base_id=$(podman image inspect --format '{{.Id}}' "$base_tag")
+podman build --network=none --pull=never --jobs=1 --retry=0 \
+  --build-arg "CPU_BASE_IMAGE=$base_id" \
+  -f containers/cpu/Containerfile.selection-value-refresh -t "$refresh_tag" .
+refresh_id=$(podman image inspect --format '{{.Id}}' "$refresh_tag")
+podman build --network=none --pull=never --jobs=1 --retry=0 \
+  --build-arg "CPU_BASE_IMAGE=$refresh_id" \
+  -f containers/cpu/Containerfile.verified-collector -t "$collector_tag" .
+podman image inspect "$collector_tag"
+```
+
+包内必要路径均已列入源码清单：基础配方消费`reap-overlay/`、`runtime/`及`patches/0001`、`0002`、`0003`；第一个增量消费`patches/0004-selection-value-refresh.patch`和`selection-value-refresh-overlay/`；第二个增量消费`verified-collector-overlay/Reap/VerifiedCollector.lean`（均位于`containers/cpu/`）。`0004`含精确混合换行上下文，禁止运行dos2unix/sed统一换行。配方中的前置SHA检查失败时不能删门或直接跳补丁，应核对新基底和解包字节。
+
+以上提供完整构建入口，本轮没有重新执行这三段构建。当前已验采集镜像的历史ID为`d2070a64912f1a7c66ec9e4bb92e66004e8adaa58887e7be333f0bf8e3d5f3b7`；新构建须使用实际新ID并重新完成CPU环境/模块/闭合命题预检，不能冒用旧ID或旧预检收据。便携入口的显式新image重绑定会重新生成环境身份，并在两题CPU预检通过后才创建调度记录；以[便携复现说明](../source/current/README.md)的最终参数为准。
+
+## 3. 构建无权重GPU运行时镜像
+
+当前源码包含：
+
+- `containers/gpu/Containerfile.runtime`：独立无权重配方。
+- `containers/gpu/install_runtime.sh`：离线安装22个哈希固定wheel，不替换基础Torch。
+- `tools/amd_jupyter/prepare_gpu_runtime_context.py`：严格白名单目录，不读取模型，不复制本地杂项。
+- `containers/gpu/README.runtime.md`：解压后的详细操作和验收边界。
+
+需要Linux x86_64、Python3.12、可用的Podman或Docker服务。基础ROCm镜像压缩层约10.39GB、展开约29.54GB，应预留足够磁盘。只有依赖wheel和基础镜像需要准备，**不下载7B到本机**。
+
+以下示例目录必须是新目录。已有wheelhouse可以直接复用，并跳过下载命令；生成构建目录前会重新按锁验证。
+
+```bash
+set -eu
+wheelhouse=/absolute/new-gpu-wheels
+context=/absolute/new-gpu-runtime-context
+mkdir "$wheelhouse"
+python3.12 -m pip --isolated download --only-binary=:all: \
+  --no-deps --require-hashes \
+  -r containers/gpu/requirements-gpu-hashed.lock --dest "$wheelhouse"
+python3.12 -B -m tools.amd_jupyter.prepare_gpu_runtime_context \
+  --wheelhouse "$wheelhouse" --output "$context"
+podman pull docker.io/rocm/pytorch@sha256:4449f856653602317e4101a76fce599c7fcd58ccec2e539951fce5f73083179e
+cd "$context"
+podman build --network=none --pull=never --retry=0 --jobs=1 \
+  -f containers/gpu/Containerfile.runtime -t localhost/reap-gpu:runtime-local .
+```
+
+实际安装只用`--no-index --require-hashes --no-deps`及独立`/opt/reap-python`覆盖层；构建禁网且不拉取额外镜像。新构建的ID可能不同，必须保存自己的image inspect、引擎退出码与源码清单；不要给新产物套用上述历史ID。
+
+## 4. 在支持GPU的AMD容器环境中运行
+
+以下为**尚待真实GPU容器验收的操作模板**，不适用于本次没有可用容器服务的实例。先确认容器服务和平台GPU设备映射均获支持；只安装CLI不够。不使用`--privileged`、host IPC或安全限制绕过。
+
+模型必须为已核验的固定`REAL-Prover` revision `fe76f68d9a88f342cb7b546307c20292fea9cced`。先核验既有模型文件，再只读挂载。Podman的`keep-groups`需要其运行时支持；设备/组权限不满足时停止，不绕过。
+
+```bash
+set -eu
+model=/existing/verified/REAL-Prover
+out_volume=reap-gpu-new-out
 podman info
+if podman volume exists "$out_volume"; then
+  echo "Output volume already exists; choose a new name" >&2
+  exit 1
+fi
+podman volume create "$out_volume"
+podman run --name reap-gpu-new --pull=never --network=bridge \
+  --device /dev/kfd --device /dev/dri --group-add keep-groups \
+  --ipc=private --shm-size=8g -p 127.0.0.1:8760:8760 \
+  --mount "type=bind,source=$model,destination=/opt/models/REAL-Prover,ro" \
+  --mount "type=volume,source=$out_volume,destination=/workspace/out" \
+  localhost/reap-gpu:runtime-local \
+  --backend real-search --gamma 0.99 --model-path /opt/models/REAL-Prover \
+  --snapshot-root /workspace/out/snapshots --max-resident-sessions 2
 ```
 
-前两条应成功，微型测试应结束为 `OK`。`podman info` 要确认容器服务可用；只安装 CLI 不够。若使用 Docker，先执行 `export CONTAINER_ENGINE=docker` 并自行确认 `docker info` 成功。这些检查不会替代平台授权。
+该例是题内搜索TTT合同。mixed/verified采集需要显式对应的server profile、只读证明数据集挂载及可写独立learner仓库，参数必须与来源发布合同完全一致；不能通过改gamma或KL门限强行兼容旧发布。输出卷应可供UID10001写入，使用新卷并在首次运行核查权限。默认模型离线加载；服务端口只映射本机，没有额外API认证，跨主机连接应走已授权的安全通道。
 
-## 3. 构建 A：CPU 镜像
+`/health`可用于就绪检查，但不足以证明真实GPU计算正确。后续还需HIP设备、实际7B推理/训练、数值与隔离、完整恢复、外部挂载持久化和独立Lean验证。已有宿主Torch2.11实验与容器兼容检查分别记录。
 
-```bash
-bash v1-result/docker/build.sh cpu localhost/reap-cpu:v1-delivery
-```
+## 5. 历史配方与失败证据保留
 
-构建需要网络、磁盘及固定基础镜像/Reap/Mathlib 的可达性；不需要 GPU 或模型权重。Lean 本体使用预编译版本。成功判据是引擎退出 0，镜像可 inspect；请保存新 image ID/digest 和完整构建日志，不覆盖旧实验 tag 的身份。
+本目录的`cpu.Dockerfile`、`train.Dockerfile`、`prepare_context.py`、`build.sh`、`run-gpu.sh`、`run-cpu.sh`、题单和封装测试是**旧V1冻结交付代码**，未修改。旧GPU配方会把模型加入镜像，当前使用上述运行时挂载方式；不要误执行旧配方默认在线模型下载阶段。历史源码仍可按[source说明](../source/README.md)校验。
 
-随后可在无外网容器中运行内置 mock smoke（输出卷名必须新建）：
+本次保留首次Buildah解析Dockerfile heredoc失败（exit125），以及初次容器检查脚本snapshot_root类型错误（exit1）；修复只在新配方/新检查脚本，旧证据不覆盖。基础镜像pull外壳退出码转义丢失：outer exit1、实际pull退出码未保存；独立inspect确认固定base完整存在，**不将其改写为pull exit0**。最终build和第二次容器检查均有真实exit0。
 
-```bash
-podman run --name reap-a-smoke-new --network none -v reap-a-smoke-new-out:/workspace/out \
-  --entrypoint reap-cpu-smoke localhost/reap-cpu:v1-delivery
-```
-
-两 session solved 说明 CPU 验证链可用；这是 mock 测试，没有 GPU 参数更新。
-
-## 4. 构建 B：仅使用远端既有模型
-
-需要用户授权且具备合法容器 builder 的远端主机。模型权重不要下载本机；以下路径仅是历史示例，先确认实际模型/manifest 存在且属于固定 revision。新 context 路径必须不存在，至少额外准备约 15.25GB 用于复制模型，镜像构建还需更多空间。
-
-```bash
-export AUTHORIZED_REMOTE_BUILDER=yes
-model_dir=/mnt/workspace/models/REAL-Prover-fe76f68d
-manifest=/mnt/workspace/reap-v1-20260827-gpu/model-manifest.json
-new_context=/mnt/workspace/replace-with-new-build-context
-bash v1-result/docker/build.sh gpu-existing localhost/reap-gpu:v1-delivery \
-  "$model_dir" "$manifest" \
-  b20526a1d3a08365893fe937dfdec4b1d953b8c63f26cc89e922c962c11f3915 "$new_context"
-```
-
-wrapper 先调用原 helper 校验模型官方哈希、safetensors 索引和张量，再复制 GPU 源码/依赖/模型到新 context。随后仅替换其中的 recipe，更新文件/来源摘要，保留原 manifest 及全部模型条目，再复核整个 context。仓库原文件不变；失败时不覆盖或清理原目录。
-
-脚本显式构建 `release-existing`，不会走在线下载模型阶段。成功后保存 context manifest、recipe SHA256、image ID/digest 和构建日志；`all_context_hashes_verified=true` 只说明 context 已验证，仍要等待后续引擎 build 成功。
-
-## 5. 在受支持的 AMD 主机运行 B
-
-此模板面向普通获授权 AMD Linux 主机；设备映射、video 组、命名卷和端口必须被平台支持。B 使用私有 IPC，未使用 `--ipc=host` 或提权/安全策略绕过。
-
-```bash
-export AUTHORIZED_GPU_RUNTIME=yes
-bash v1-result/docker/run-gpu.sh localhost/reap-gpu:v1-delivery reap-b-new reap-b-new-out
-```
-
-命令前台运行。另一个终端请求 `curl --fail http://127.0.0.1:8760/health`，确认 `backend=real-search`、实际 HIP/模型状态。容器或 PID 存在不算成功；模型已烘焙，输出卷保存 snapshots。默认仅监听本机映射端口，没有额外 API 认证，跨机器应使用已授权的安全通道。
-
-当前已检查的 DSW 实例 Docker 无法连接、三个候选 socket 不存在、Podman 未安装；UID=0、seccomp=0 不代表具有 `CAP_SYS_ADMIN`，实际该能力为 false。此前另一个实例安装过 Podman但运行 proc 挂载失败，不能混用两台的状态。DSW 还明确禁止 host IPC，并限制资源组和卷类型；不能直接套用本模板。[官方限制](https://help.aliyun.com/zh/pai/using-docker-in-dsw)
-
-## 6. B ready 后，运行双 session A
-
-复制 `v1-result/docker/batch.example.jsonl` 到新文件，给两行分别设置未用过的 session ID。保持两道 theorem 路径不变。然后执行：
-
-```bash
-bash v1-result/docker/run-cpu.sh localhost/reap-cpu:v1-delivery reap-a-new \
-  /absolute/path/to/new-batch.jsonl reap-a-new-out http://127.0.0.1:8760
-```
-
-URL 必须从 A 主机可达；若经 Edge/OpenCLI bridge，改为已验证的 bridge 本机地址/端口，并在 bridge 白名单加入相同 session ID。不要复用历史实例 ID。默认 concurrency=2、gamma=0.99、最多5次更新；720/900秒只是请求/屏障保护，TTT 没有总时限。
-
-每路查看 `online-result.json`、`result.json`、observer、learn 回执和 `solutions.jsonl`。提前解题可能是 `solved_without_online_update`；完整 TTT 要有实际更新、同树后续版本消费及最终 Lean proof，再独立核对 wire、参数和隔离/恢复。保存容器 inspect、日志、输出卷和 B 快照，不能只看一句 `completed`。
-
-## 7. 当前还缺什么
-
-仍缺B recipe的实际build、合法AMD容器运行及完整复验；宿主Torch2.11与候选B的Torch2.10需要重新做兼容性门禁。A交付镜像已有独立本地验收，不替代上述B项目。镜像发布、SBOM和目标可见性也未完成。
-
-这些环境标记是防误操作提示，不授予权限。AMD 实例启停由用户负责；“AMD 空闲额度保护”和“AMD 启动后接管检查”自动任务已删除，不自动控制 AMD。本次按用户授权将结果包上传GitHub；后续同步、镜像push和远端实例变更须另行确认。遇到权限、未知更新结果或校验失败时停止并报告。
+后续复现仍需保存每次构建和运行的实际结果。平台能力不足或更新结果未知时，保留现场并核对原记录后再处理。

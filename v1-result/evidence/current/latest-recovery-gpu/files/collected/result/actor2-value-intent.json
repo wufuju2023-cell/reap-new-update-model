@@ -1,0 +1,18 @@
+{
+  "body": {
+    "logprobs": true,
+    "max_tokens": 8,
+    "messages": [
+      {
+        "content": "User: STATE:\n⊢ True\nTACTIC:",
+        "role": "user"
+      }
+    ],
+    "model": "reap",
+    "n": 1,
+    "temperature": 0.0
+  },
+  "method": "POST",
+  "mutation_retry_allowed": false,
+  "path": "/sessions/latest-recovery-r2-actor/value/v1/chat/completions"
+}

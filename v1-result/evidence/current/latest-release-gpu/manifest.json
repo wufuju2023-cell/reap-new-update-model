@@ -1,0 +1,763 @@
+{
+  "schema_version": "reap.evidence-stage.v1",
+  "source_directory": "latest-deploy-20260828",
+  "archive": {
+    "file": "raw.zip",
+    "bytes": 787978,
+    "sha256": "1ad460e2d814814f387e6ed247ae00a9695e39dafbce49d92db05a1403c8be99"
+  },
+  "files": {
+    "audit_collected.py": {
+      "bytes": 5800,
+      "sha256": "3fd91a9cdc698639117221c8c5333f39c9e43a3bcc9b70b483821e3376c158aa"
+    },
+    "code.zip": {
+      "bytes": 262247,
+      "sha256": "8dbb8930490de698126397e0f9fab94e8319b56502e3c49af7f2050ee52a25ed"
+    },
+    "collected/actual-command.json": {
+      "bytes": 1734,
+      "sha256": "ce634c45d544392535bcbe96f080501fdaf8b4deb0121b3cca28d0593b03cb90"
+    },
+    "collected/campaign-plan.json": {
+      "bytes": 4788,
+      "sha256": "b704e6be60a12345b49bb259afea6904b3733ff2f9da093857f53f97a75c06cb"
+    },
+    "collected/command.json": {
+      "bytes": 1853,
+      "sha256": "32f9ed458fc06e27baf9537144c7147555bbb99cb4012a80db827b43b2390deb"
+    },
+    "collected/export-manifest.json": {
+      "bytes": 41979,
+      "sha256": "52484967bd3354d696277d8373a86a5ce668d76048a934de5e3fd85816d811ac"
+    },
+    "collected/export-original.json.gz": {
+      "bytes": 229162,
+      "sha256": "904f12b46f6b1919c95c0fb46f3deecaa3eba22a5b1eadb4e0739dd047a8e15e"
+    },
+    "collected/launch-intent.json": {
+      "bytes": 1983,
+      "sha256": "b9d0402c1acb93d35b57c379e4cac2eb8000d1523edc267772bc1208afbf42fd"
+    },
+    "collected/launch.json": {
+      "bytes": 82,
+      "sha256": "73dc8ff58a160026a08c4c87ace25b1e13c5e52d60bf5cadb2b60417c053c37a"
+    },
+    "collected/local-audit.json": {
+      "bytes": 1145,
+      "sha256": "8d24c1160dad7ede98da42c063564f8985889f98e09d859644f0b8804c6748ad"
+    },
+    "collected/probe-launch-intent.json": {
+      "bytes": 1809,
+      "sha256": "02df66335d3e98f12a43e41223269c427b081f7ffe9b278d97fd67645451cb99"
+    },
+    "collected/probe-launch.json": {
+      "bytes": 1789,
+      "sha256": "4800d72d8800f6e50cfc9298318114890d1444e0e77322155c3504e715feb350"
+    },
+    "collected/probe.log": {
+      "bytes": 848,
+      "sha256": "cd7f6a3959871190f860d11583a234183dc3f4f39b308f4714cfdf842e17b229"
+    },
+    "collected/result/actor1-before-second.json": {
+      "bytes": 4004,
+      "sha256": "4d4630cda9c2b2072556b626f6ebfa5801cda9f45c2ede193a89ed88723c55fa"
+    },
+    "collected/result/actor1-create-intent.json": {
+      "bytes": 424,
+      "sha256": "59b9d8213a0aea6254fb46d07347994ca727bc9d46041ab076609ae6aecafcc8"
+    },
+    "collected/result/actor1-create-response.json": {
+      "bytes": 6198,
+      "sha256": "8be7f9f95335c22c3b734d171f112acab387abc2dad25668bff28e7da6ad0c4e"
+    },
+    "collected/result/actor1-initial.json": {
+      "bytes": 4004,
+      "sha256": "4d4630cda9c2b2072556b626f6ebfa5801cda9f45c2ede193a89ed88723c55fa"
+    },
+    "collected/result/actor1-policy-intent.json": {
+      "bytes": 676,
+      "sha256": "92d7c81275fc69daf6197b8641b2a4d3fb08977e04892b9175a69fb61bcd8adb"
+    },
+    "collected/result/actor1-policy-response.json": {
+      "bytes": 685,
+      "sha256": "d3006bb806caf0ffcfb018f23eb6799affd45153dee0f181e074abb5dd74fabd"
+    },
+    "collected/result/actor1-value-intent.json": {
+      "bytes": 675,
+      "sha256": "8778ff4b7a1f30ff2a79b26acfe313134b871ffbad4c0e58629eefbb2aa43bcd"
+    },
+    "collected/result/actor1-value-response.json": {
+      "bytes": 341,
+      "sha256": "afcd9ba4f2a38bca959c9c42a9987f985d0d084428dc16bd454e9bb627d92d07"
+    },
+    "collected/result/actor2-create-intent.json": {
+      "bytes": 424,
+      "sha256": "c0b8a00b5d64b3e9322ed4f70295368d55b23f62a65e1b3ff34ef94cd1329d72"
+    },
+    "collected/result/input-manifest.json": {
+      "bytes": 65062,
+      "sha256": "6ac5aff2a63e0e1cc6dd746406287f3dc324521ced7ec6bbde0ce96901f83fda"
+    },
+    "collected/result/intent1.json": {
+      "bytes": 1264,
+      "sha256": "54a4cb36bd2cf01ca55f3d0538ef05f0e0a8eb1f277376215cbd9b3a8572502c"
+    },
+    "collected/result/intent2.json": {
+      "bytes": 1259,
+      "sha256": "234c678b7b73f3e144be8f4bdc8e4f09119c0da0c1017ff20d86edbb86b32edf"
+    },
+    "collected/result/journal/create-intent.json": {
+      "bytes": 18242,
+      "sha256": "327d9ff79e2a9e0e8fc47df8433431e90597a15b7f893fef8f80e6b0e0079d91"
+    },
+    "collected/result/journal/created.json": {
+      "bytes": 2608,
+      "sha256": "83bf016493e9d96d9d532c51262f35727b676cb40b51edba31c877054bd0f717"
+    },
+    "collected/result/journal/publish-700ee66fbe22e55d41e7eb31041b1fea0d49c7de0d9f619687c749752ebc4701/intent.json": {
+      "bytes": 168,
+      "sha256": "314bb08a3f5d5e72453e9bc5b5e185e57f8bbca371dc81b84c9b50ffd1e7f22a"
+    },
+    "collected/result/journal/publish-700ee66fbe22e55d41e7eb31041b1fea0d49c7de0d9f619687c749752ebc4701/published.json": {
+      "bytes": 2688,
+      "sha256": "6cfb2136db5b221e2fd14260d7f3131d0888586ea979a0ebf9892e11b903ece4"
+    },
+    "collected/result/journal/publish-9359f56ca8cf147211d5d14f4612f97d25215edf1d8717d6c061cf21d0724d30/intent.json": {
+      "bytes": 168,
+      "sha256": "dfae4563a2345e10b3f64bdc6fa9b069879ef0ab0f84adb386d9eb0cb1a05f2e"
+    },
+    "collected/result/journal/publish-9359f56ca8cf147211d5d14f4612f97d25215edf1d8717d6c061cf21d0724d30/published.json": {
+      "bytes": 2688,
+      "sha256": "ffec3b714974bd3f4dcecaa43bb893d8e62a2ed9493870b241ea71598436db41"
+    },
+    "collected/result/journal/step-00000001/checkpoint.json": {
+      "bytes": 97,
+      "sha256": "1018bbda982fab64bd9fbfeaca68dacf72fe55dd96e73ffae494a08875e3aabf"
+    },
+    "collected/result/journal/step-00000001/data-receipt.json": {
+      "bytes": 22773,
+      "sha256": "d3b95bf0c3b5067ad5d931c00c7e2134e7f399ac6ef37d8dfe9f573648e7b697"
+    },
+    "collected/result/journal/step-00000001/intent.json": {
+      "bytes": 9890,
+      "sha256": "eed98dbf6223837add3add9c1a2e7c6be86a7c9305b5b51eb40bbdbc5f8fbd31"
+    },
+    "collected/result/journal/step-00000001/runtime-receipt.json": {
+      "bytes": 9420,
+      "sha256": "5674aeac742fb9bba82572f78b2771d259cee13a4a968fe3ffb6364f91af7a48"
+    },
+    "collected/result/journal/step-00000002/checkpoint.json": {
+      "bytes": 97,
+      "sha256": "440f1378faafa38f519c5835791ef5b34ae59218b955d8508bcb38dd540fc629"
+    },
+    "collected/result/journal/step-00000002/data-receipt.json": {
+      "bytes": 23816,
+      "sha256": "408f860d923d56253cad6f5ecb546dec2db106656718adb5a93f2375ee77f8df"
+    },
+    "collected/result/journal/step-00000002/intent.json": {
+      "bytes": 10591,
+      "sha256": "f7b8e508be3f10c7e22464cd06484a8f994a4375f1cd3be29b9021de5d890ad4"
+    },
+    "collected/result/journal/step-00000002/runtime-receipt.json": {
+      "bytes": 9536,
+      "sha256": "a9683adfcc0a623966c89c5acfe88d3ee89b77254601bc45d34172d183c3e036"
+    },
+    "collected/result/learner-store/checkpoints/502ef00442912f30bb700dfb875fce00d54c30a6fd19bea952af4bc17a56b945/.COMMITTED.json": {
+      "bytes": 724,
+      "sha256": "b32aa787eadb453badbcdf99f9057f8033776969f39852243df86ae5c9a1f394"
+    },
+    "collected/result/learner-store/checkpoints/502ef00442912f30bb700dfb875fce00d54c30a6fd19bea952af4bc17a56b945/.PORTABLE.json": {
+      "bytes": 154,
+      "sha256": "33d77d81dd8ebde645f9cfa973fedecea159652b8b4c566008fc655c636b4f8a"
+    },
+    "collected/result/learner-store/checkpoints/502ef00442912f30bb700dfb875fce00d54c30a6fd19bea952af4bc17a56b945/data_receipt.json": {
+      "bytes": 20862,
+      "sha256": "3bc80e151483ce183824ead40072b77c2c5c5eaf48005c8fd55fe1678e352ff0"
+    },
+    "collected/result/learner-store/checkpoints/502ef00442912f30bb700dfb875fce00d54c30a6fd19bea952af4bc17a56b945/logical_state.json": {
+      "bytes": 11744,
+      "sha256": "ccf8a6b5f938f19c16fcf1acf750db46751cac9ddafde6c931e60c3a9aea3dab"
+    },
+    "collected/result/learner-store/checkpoints/502ef00442912f30bb700dfb875fce00d54c30a6fd19bea952af4bc17a56b945/manifest.json": {
+      "bytes": 1039,
+      "sha256": "502ef00442912f30bb700dfb875fce00d54c30a6fd19bea952af4bc17a56b945"
+    },
+    "collected/result/learner-store/checkpoints/502ef00442912f30bb700dfb875fce00d54c30a6fd19bea952af4bc17a56b945/sampler_state.json": {
+      "bytes": 181,
+      "sha256": "e7e1bbdab493674342c33116c192d2bc108ffbc059eda1abd7631d5f704487a7"
+    },
+    "collected/result/learner-store/checkpoints/51d1e947f4757b60362853ff2d2d79f786e4b289754a1f07453346f4fc040028/.COMMITTED.json": {
+      "bytes": 724,
+      "sha256": "ace8eba6c6e86e3ce2235e45652212b3a13333808b59fdc443e52d9c18c2c27f"
+    },
+    "collected/result/learner-store/checkpoints/51d1e947f4757b60362853ff2d2d79f786e4b289754a1f07453346f4fc040028/.PORTABLE.json": {
+      "bytes": 154,
+      "sha256": "b3d470fcb03f49d719461c121792f49bd33e7fecbdbf7683e053b8c6ba1be7bb"
+    },
+    "collected/result/learner-store/checkpoints/51d1e947f4757b60362853ff2d2d79f786e4b289754a1f07453346f4fc040028/data_receipt.json": {
+      "bytes": 21032,
+      "sha256": "27abea935b35828ac865752bf47761410e6dd2ccaa265265baf310cfa45e9da9"
+    },
+    "collected/result/learner-store/checkpoints/51d1e947f4757b60362853ff2d2d79f786e4b289754a1f07453346f4fc040028/logical_state.json": {
+      "bytes": 21514,
+      "sha256": "8acf7a7c7a0d79b944279ebc5656279d5bf45fabb2a51db873f7035286b1e569"
+    },
+    "collected/result/learner-store/checkpoints/51d1e947f4757b60362853ff2d2d79f786e4b289754a1f07453346f4fc040028/manifest.json": {
+      "bytes": 1101,
+      "sha256": "51d1e947f4757b60362853ff2d2d79f786e4b289754a1f07453346f4fc040028"
+    },
+    "collected/result/learner-store/checkpoints/51d1e947f4757b60362853ff2d2d79f786e4b289754a1f07453346f4fc040028/sampler_state.json": {
+      "bytes": 182,
+      "sha256": "3a524873acb17b240b4401995c1f1a03d0b74895db100391a6b263b97fde5023"
+    },
+    "collected/result/learner-store/checkpoints/700ee66fbe22e55d41e7eb31041b1fea0d49c7de0d9f619687c749752ebc4701/.COMMITTED.json": {
+      "bytes": 724,
+      "sha256": "0bb63ce354e382ed0f4f4c255e5ec261bb6c31887c7da8ffe45492baa8f93753"
+    },
+    "collected/result/learner-store/checkpoints/700ee66fbe22e55d41e7eb31041b1fea0d49c7de0d9f619687c749752ebc4701/.PORTABLE.json": {
+      "bytes": 154,
+      "sha256": "b615e7e46dabf9db3fb61b9535d00c9665ecd974f505597bad2321d77abd9f10"
+    },
+    "collected/result/learner-store/checkpoints/700ee66fbe22e55d41e7eb31041b1fea0d49c7de0d9f619687c749752ebc4701/data_receipt.json": {
+      "bytes": 23816,
+      "sha256": "408f860d923d56253cad6f5ecb546dec2db106656718adb5a93f2375ee77f8df"
+    },
+    "collected/result/learner-store/checkpoints/700ee66fbe22e55d41e7eb31041b1fea0d49c7de0d9f619687c749752ebc4701/logical_state.json": {
+      "bytes": 22032,
+      "sha256": "6871cf7349f22e05c1ed876a13403388c475d284ad08dfd63b260c563edf71f6"
+    },
+    "collected/result/learner-store/checkpoints/700ee66fbe22e55d41e7eb31041b1fea0d49c7de0d9f619687c749752ebc4701/manifest.json": {
+      "bytes": 1123,
+      "sha256": "700ee66fbe22e55d41e7eb31041b1fea0d49c7de0d9f619687c749752ebc4701"
+    },
+    "collected/result/learner-store/checkpoints/700ee66fbe22e55d41e7eb31041b1fea0d49c7de0d9f619687c749752ebc4701/sampler_state.json": {
+      "bytes": 182,
+      "sha256": "06cc5a1e81217738eb6d95692f65862a3e8d8e31e8c694c63cfe146c286da545"
+    },
+    "collected/result/learner-store/checkpoints/863359c986dc42edaf86eb7d6373562686d2cf85b62513ab1a6b86926a4b9ced/.COMMITTED.json": {
+      "bytes": 724,
+      "sha256": "fcc4ed579998a088edee67af2f61433ede451276182e84bbbee1a57ee7232c00"
+    },
+    "collected/result/learner-store/checkpoints/863359c986dc42edaf86eb7d6373562686d2cf85b62513ab1a6b86926a4b9ced/.PORTABLE.json": {
+      "bytes": 154,
+      "sha256": "80d930ad56d8074e57fa766c7b38e5f53264b3093a7236aff2ed00536536a8e2"
+    },
+    "collected/result/learner-store/checkpoints/863359c986dc42edaf86eb7d6373562686d2cf85b62513ab1a6b86926a4b9ced/data_receipt.json": {
+      "bytes": 23815,
+      "sha256": "565a4a66201eed890ed6e310ed5a37c7919164f633d1623d454cfecf586b3c27"
+    },
+    "collected/result/learner-store/checkpoints/863359c986dc42edaf86eb7d6373562686d2cf85b62513ab1a6b86926a4b9ced/logical_state.json": {
+      "bytes": 22031,
+      "sha256": "9a438f85ba93295929b23fa8b2ea07d633d63e49ac4b3c3e00194fbfd063c2ec"
+    },
+    "collected/result/learner-store/checkpoints/863359c986dc42edaf86eb7d6373562686d2cf85b62513ab1a6b86926a4b9ced/manifest.json": {
+      "bytes": 1121,
+      "sha256": "863359c986dc42edaf86eb7d6373562686d2cf85b62513ab1a6b86926a4b9ced"
+    },
+    "collected/result/learner-store/checkpoints/863359c986dc42edaf86eb7d6373562686d2cf85b62513ab1a6b86926a4b9ced/sampler_state.json": {
+      "bytes": 182,
+      "sha256": "06cc5a1e81217738eb6d95692f65862a3e8d8e31e8c694c63cfe146c286da545"
+    },
+    "collected/result/learner-store/checkpoints/9359f56ca8cf147211d5d14f4612f97d25215edf1d8717d6c061cf21d0724d30/.COMMITTED.json": {
+      "bytes": 724,
+      "sha256": "5c74be18d5aeecebf3fa7fdcb27f9a2626a5a91aebda1514f4dbb9e7b89f902d"
+    },
+    "collected/result/learner-store/checkpoints/9359f56ca8cf147211d5d14f4612f97d25215edf1d8717d6c061cf21d0724d30/.PORTABLE.json": {
+      "bytes": 154,
+      "sha256": "12bb0154a9e295f13030d75b9eef72bd26aa9ec79c9df231ec4332c547ed2d42"
+    },
+    "collected/result/learner-store/checkpoints/9359f56ca8cf147211d5d14f4612f97d25215edf1d8717d6c061cf21d0724d30/data_receipt.json": {
+      "bytes": 22773,
+      "sha256": "d3b95bf0c3b5067ad5d931c00c7e2134e7f399ac6ef37d8dfe9f573648e7b697"
+    },
+    "collected/result/learner-store/checkpoints/9359f56ca8cf147211d5d14f4612f97d25215edf1d8717d6c061cf21d0724d30/logical_state.json": {
+      "bytes": 12217,
+      "sha256": "b77ac8db3124532dad35a25b0f8acd1675be648e8f28d79988086e9d10a44917"
+    },
+    "collected/result/learner-store/checkpoints/9359f56ca8cf147211d5d14f4612f97d25215edf1d8717d6c061cf21d0724d30/manifest.json": {
+      "bytes": 1061,
+      "sha256": "9359f56ca8cf147211d5d14f4612f97d25215edf1d8717d6c061cf21d0724d30"
+    },
+    "collected/result/learner-store/checkpoints/9359f56ca8cf147211d5d14f4612f97d25215edf1d8717d6c061cf21d0724d30/sampler_state.json": {
+      "bytes": 181,
+      "sha256": "8744e88b784856c434981119215948cd93730b90c1fb80fb2ba357e0a6cf051f"
+    },
+    "collected/result/learner-store/checkpoints/ad06dba05d3f56ac8879a05004bdb53531902184c1b694b1635bc2f8ed8b1d5f/.COMMITTED.json": {
+      "bytes": 724,
+      "sha256": "8f801220b5695ec7ac02b3005d3382ba1b9e19c6ad64c7a02c0a28b19b1d4502"
+    },
+    "collected/result/learner-store/checkpoints/ad06dba05d3f56ac8879a05004bdb53531902184c1b694b1635bc2f8ed8b1d5f/.PORTABLE.json": {
+      "bytes": 154,
+      "sha256": "9593decfaea4ef927368773d4571c20e110dd1aa2d9546eb3c0732bb948399c0"
+    },
+    "collected/result/learner-store/checkpoints/ad06dba05d3f56ac8879a05004bdb53531902184c1b694b1635bc2f8ed8b1d5f/data_receipt.json": {
+      "bytes": 22772,
+      "sha256": "dd27abfd6ac135fabe926623643ae7cd2615e380c52d35cf2455a9a95ebe0307"
+    },
+    "collected/result/learner-store/checkpoints/ad06dba05d3f56ac8879a05004bdb53531902184c1b694b1635bc2f8ed8b1d5f/logical_state.json": {
+      "bytes": 12216,
+      "sha256": "ecbb0e0595d01d073c9fa1c7c3ce865b3da6ab2e27eb06eddf6c36c3b1e91c1a"
+    },
+    "collected/result/learner-store/checkpoints/ad06dba05d3f56ac8879a05004bdb53531902184c1b694b1635bc2f8ed8b1d5f/manifest.json": {
+      "bytes": 1059,
+      "sha256": "ad06dba05d3f56ac8879a05004bdb53531902184c1b694b1635bc2f8ed8b1d5f"
+    },
+    "collected/result/learner-store/checkpoints/ad06dba05d3f56ac8879a05004bdb53531902184c1b694b1635bc2f8ed8b1d5f/sampler_state.json": {
+      "bytes": 181,
+      "sha256": "8744e88b784856c434981119215948cd93730b90c1fb80fb2ba357e0a6cf051f"
+    },
+    "collected/result/learner-store/control/0917f9b2394c75f5c4f034a55a6138cb3791c79b79b06774ceb5a053aa4f5b05/commit-00000001.json": {
+      "bytes": 180,
+      "sha256": "082650a0515e7f7e271dd6cd192eb78a5fd7f9b17b2f9283463f44f8647f696b"
+    },
+    "collected/result/learner-store/control/0917f9b2394c75f5c4f034a55a6138cb3791c79b79b06774ceb5a053aa4f5b05/commit-00000002.json": {
+      "bytes": 180,
+      "sha256": "b7ef35063c97dd98e8932a7160d0a27ca677094e35d76ee52c3c5ba97cc15178"
+    },
+    "collected/result/learner-store/control/0917f9b2394c75f5c4f034a55a6138cb3791c79b79b06774ceb5a053aa4f5b05/created.json": {
+      "bytes": 81,
+      "sha256": "9e0a3cf2c5aea71585060e8cc9873c8749e2fcde2306a229cb4ae0d3fd6f637b"
+    },
+    "collected/result/learner-store/control/0917f9b2394c75f5c4f034a55a6138cb3791c79b79b06774ceb5a053aa4f5b05/intent-00000001.json": {
+      "bytes": 9879,
+      "sha256": "77d2cd40b604de54919e274a7a223a0949c7f2c493a5997e7c0271c403d562dc"
+    },
+    "collected/result/learner-store/control/0917f9b2394c75f5c4f034a55a6138cb3791c79b79b06774ceb5a053aa4f5b05/intent-00000002.json": {
+      "bytes": 9941,
+      "sha256": "0be01b8c819fa87ea3fa13685d312d6cae021f61e38992f436d2644f00cccc7f"
+    },
+    "collected/result/learner-store/control/7105763bcdd704764b24af14ecf266465b4755647ad6153aa89ed1b947adcc5d/commit-00000001.json": {
+      "bytes": 180,
+      "sha256": "1b0112fb2b47836f522625e16527d8f66f052d00383057382d71067142153035"
+    },
+    "collected/result/learner-store/control/7105763bcdd704764b24af14ecf266465b4755647ad6153aa89ed1b947adcc5d/commit-00000002.json": {
+      "bytes": 180,
+      "sha256": "71c5342c18e7f0699fea81e1243e6afff8aeeeae95ad66fbef0d8bf495be2c5d"
+    },
+    "collected/result/learner-store/control/7105763bcdd704764b24af14ecf266465b4755647ad6153aa89ed1b947adcc5d/created.json": {
+      "bytes": 81,
+      "sha256": "b1ece4336b5aba43ef3bcddee2293d2913752f27f0b28204bc5179b81bc336cf"
+    },
+    "collected/result/learner-store/control/7105763bcdd704764b24af14ecf266465b4755647ad6153aa89ed1b947adcc5d/intent-00000001.json": {
+      "bytes": 9889,
+      "sha256": "6d57c024d9540bffae736a8fa0e49bc2590d24b38d5d741266f1a6a210a20b26"
+    },
+    "collected/result/learner-store/control/7105763bcdd704764b24af14ecf266465b4755647ad6153aa89ed1b947adcc5d/intent-00000002.json": {
+      "bytes": 10590,
+      "sha256": "d33d279228cc8c87bea81327358a20c30bd5494ab805fe106c8fa2f56d2f2a23"
+    },
+    "collected/result/learner-store/control/ea79c9af443ee80a8e9669506a6aabc1a5dcad47687c40be772798c82278b60a/commit-00000001.json": {
+      "bytes": 180,
+      "sha256": "1b5166c22c97dc87ba48aa514113d44ed9741571002b1eb269bc7104038f0cf4"
+    },
+    "collected/result/learner-store/control/ea79c9af443ee80a8e9669506a6aabc1a5dcad47687c40be772798c82278b60a/commit-00000002.json": {
+      "bytes": 180,
+      "sha256": "a538a2e0df3140179d0d4ba2a3070963c6d8aa8100379d86fb3ca7d1dd84aa06"
+    },
+    "collected/result/learner-store/control/ea79c9af443ee80a8e9669506a6aabc1a5dcad47687c40be772798c82278b60a/created.json": {
+      "bytes": 81,
+      "sha256": "11794c0e5d57eb71d0720dc6d4cc1f8112cb9337474eb94fc0fc328b25f56e95"
+    },
+    "collected/result/learner-store/control/ea79c9af443ee80a8e9669506a6aabc1a5dcad47687c40be772798c82278b60a/intent-00000001.json": {
+      "bytes": 9890,
+      "sha256": "eed98dbf6223837add3add9c1a2e7c6be86a7c9305b5b51eb40bbdbc5f8fbd31"
+    },
+    "collected/result/learner-store/control/ea79c9af443ee80a8e9669506a6aabc1a5dcad47687c40be772798c82278b60a/intent-00000002.json": {
+      "bytes": 10591,
+      "sha256": "f7b8e508be3f10c7e22464cd06484a8f994a4375f1cd3be29b9021de5d890ad4"
+    },
+    "collected/result/learner-store/control/ea79c9af443ee80a8e9669506a6aabc1a5dcad47687c40be772798c82278b60a/release-head/intent-00000001.json": {
+      "bytes": 253,
+      "sha256": "3f5de7be7cb44a93c61282bd59cc49952288e6c3180a54071fa9628fbbd23ed3"
+    },
+    "collected/result/learner-store/control/ea79c9af443ee80a8e9669506a6aabc1a5dcad47687c40be772798c82278b60a/release-head/intent-00000002.json": {
+      "bytes": 315,
+      "sha256": "5a6910ad8b28f3eeb48fe0e0ff93b1b77a0c326e225fbf5d35656f9000ae7c84"
+    },
+    "collected/result/learner-store/control/ea79c9af443ee80a8e9669506a6aabc1a5dcad47687c40be772798c82278b60a/release-head/mode.json": {
+      "bytes": 373,
+      "sha256": "504319c863b935fbe04d70776dcdb9869a87e0d3f481048dc85e270e0b269e4f"
+    },
+    "collected/result/learner-store/control/ea79c9af443ee80a8e9669506a6aabc1a5dcad47687c40be772798c82278b60a/release-head/published-00000001.json": {
+      "bytes": 438,
+      "sha256": "40ebecf1641df70be7582229a8d9eee8b4ff2de33b32ad49f0e915edf81cf5cb"
+    },
+    "collected/result/learner-store/control/ea79c9af443ee80a8e9669506a6aabc1a5dcad47687c40be772798c82278b60a/release-head/published-00000002.json": {
+      "bytes": 500,
+      "sha256": "a9051c124a2acada42cd8a5c49b3401f48c9758d8c3e233fb37947dc35400dc9"
+    },
+    "collected/result/learner-store/releases/0103155583b260c7863ea58bbf2d3377444c272db0ea4f3a75dd49c40b65c98e/.COMMITTED.json": {
+      "bytes": 379,
+      "sha256": "07eb4900a332b7199739b6f403ed20dac97b07a57609c6a3accc2d2022bd2084"
+    },
+    "collected/result/learner-store/releases/0103155583b260c7863ea58bbf2d3377444c272db0ea4f3a75dd49c40b65c98e/.PORTABLE.json": {
+      "bytes": 151,
+      "sha256": "4086b4ac9c509123f762d0c9cbd40bc2e77f0cc6f3c4e1d6f8f7c7fc98108416"
+    },
+    "collected/result/learner-store/releases/0103155583b260c7863ea58bbf2d3377444c272db0ea4f3a75dd49c40b65c98e/metadata.json": {
+      "bytes": 2587,
+      "sha256": "0103155583b260c7863ea58bbf2d3377444c272db0ea4f3a75dd49c40b65c98e"
+    },
+    "collected/result/learner-store/releases/0551bdcd0d511b87f5b0307b146efeef68a493b3d62deef684bffa387ce9abb8/.COMMITTED.json": {
+      "bytes": 379,
+      "sha256": "30bdba471757099735d3d33f23d9709bbdce4fd82cf349d9828563218063c6b8"
+    },
+    "collected/result/learner-store/releases/0551bdcd0d511b87f5b0307b146efeef68a493b3d62deef684bffa387ce9abb8/.PORTABLE.json": {
+      "bytes": 151,
+      "sha256": "7b3191a9ec5af3140b7d30b27be4ae42f4b263336908a9ecec55d12c21c72e2d"
+    },
+    "collected/result/learner-store/releases/0551bdcd0d511b87f5b0307b146efeef68a493b3d62deef684bffa387ce9abb8/metadata.json": {
+      "bytes": 2597,
+      "sha256": "0551bdcd0d511b87f5b0307b146efeef68a493b3d62deef684bffa387ce9abb8"
+    },
+    "collected/result/learner-store/releases/58eb723d0391a33680c950299c580bef736bd163ebfb8c831e8bcca0a4e1cb19/.COMMITTED.json": {
+      "bytes": 379,
+      "sha256": "03bd78afb1ea82c8d07ebe53025a6b4081eca5bee8eff14813f90ed3a95a27df"
+    },
+    "collected/result/learner-store/releases/58eb723d0391a33680c950299c580bef736bd163ebfb8c831e8bcca0a4e1cb19/.PORTABLE.json": {
+      "bytes": 151,
+      "sha256": "6520c8d59bc715325171be6c84ff6214420f9cef0fed77612fd039eaa5c5620d"
+    },
+    "collected/result/learner-store/releases/58eb723d0391a33680c950299c580bef736bd163ebfb8c831e8bcca0a4e1cb19/metadata.json": {
+      "bytes": 2587,
+      "sha256": "58eb723d0391a33680c950299c580bef736bd163ebfb8c831e8bcca0a4e1cb19"
+    },
+    "collected/result/learner-store/releases/8a2bf4d4e93cf8e4f79e6905b2a01b7df831599498e4bf856baf841e05e56dea/.COMMITTED.json": {
+      "bytes": 379,
+      "sha256": "e03951c0e0620f13e3fa7f532ed69f53e91ba5bc7787acf7ae316025ac8a892c"
+    },
+    "collected/result/learner-store/releases/8a2bf4d4e93cf8e4f79e6905b2a01b7df831599498e4bf856baf841e05e56dea/.PORTABLE.json": {
+      "bytes": 151,
+      "sha256": "9ee5c7cc2611189f9107cf5dd3d26125f24df9f73e47d399718030c24cb6e172"
+    },
+    "collected/result/learner-store/releases/8a2bf4d4e93cf8e4f79e6905b2a01b7df831599498e4bf856baf841e05e56dea/metadata.json": {
+      "bytes": 2598,
+      "sha256": "8a2bf4d4e93cf8e4f79e6905b2a01b7df831599498e4bf856baf841e05e56dea"
+    },
+    "collected/result/learner-store/releases/c1631685883f6cf0e12df187642bb86b22402c5e217e919da858567f7c860d2f/.COMMITTED.json": {
+      "bytes": 379,
+      "sha256": "f24a84eb6b6e3cd27d8e7fca64f8c42e875023f8745c70e91a52447dce76fef7"
+    },
+    "collected/result/learner-store/releases/c1631685883f6cf0e12df187642bb86b22402c5e217e919da858567f7c860d2f/.PORTABLE.json": {
+      "bytes": 151,
+      "sha256": "275d959d1b89be2484062a82cfc6029c8510f211f18c0b2845b00fea1e6711d0"
+    },
+    "collected/result/learner-store/releases/c1631685883f6cf0e12df187642bb86b22402c5e217e919da858567f7c860d2f/metadata.json": {
+      "bytes": 2598,
+      "sha256": "c1631685883f6cf0e12df187642bb86b22402c5e217e919da858567f7c860d2f"
+    },
+    "collected/result/learner-store/releases/c89d310116943d84928cc6388abae15a3aa7fec9075e0f90a494fea0f164d9f4/.COMMITTED.json": {
+      "bytes": 379,
+      "sha256": "82e15615c31b26d0c8099906fb2a9e9ecd2bf375ee44a4c957e24b0aa5431f32"
+    },
+    "collected/result/learner-store/releases/c89d310116943d84928cc6388abae15a3aa7fec9075e0f90a494fea0f164d9f4/.PORTABLE.json": {
+      "bytes": 151,
+      "sha256": "3fd67c35bafedbd32563b6c2ea66c8b5679c77fd1aca9f9f92f32ea54db55f76"
+    },
+    "collected/result/learner-store/releases/c89d310116943d84928cc6388abae15a3aa7fec9075e0f90a494fea0f164d9f4/metadata.json": {
+      "bytes": 2597,
+      "sha256": "c89d310116943d84928cc6388abae15a3aa7fec9075e0f90a494fea0f164d9f4"
+    },
+    "collected/result/learner-store/runs/0917f9b2394c75f5c4f034a55a6138cb3791c79b79b06774ceb5a053aa4f5b05/.COMMITTED.json": {
+      "bytes": 260,
+      "sha256": "1a2224c90f334b95e1b55ce776b956f58d778e5ff13ece76a9c70fce2d8bdb9b"
+    },
+    "collected/result/learner-store/runs/0917f9b2394c75f5c4f034a55a6138cb3791c79b79b06774ceb5a053aa4f5b05/.PORTABLE.json": {
+      "bytes": 147,
+      "sha256": "94f1e9670ec6d2c111cfdf731eca59cee2663c9e401f28b1d6b3227b9ee86f16"
+    },
+    "collected/result/learner-store/runs/0917f9b2394c75f5c4f034a55a6138cb3791c79b79b06774ceb5a053aa4f5b05/run.json": {
+      "bytes": 15137,
+      "sha256": "0917f9b2394c75f5c4f034a55a6138cb3791c79b79b06774ceb5a053aa4f5b05"
+    },
+    "collected/result/learner-store/runs/7105763bcdd704764b24af14ecf266465b4755647ad6153aa89ed1b947adcc5d/.COMMITTED.json": {
+      "bytes": 260,
+      "sha256": "392dcd97023efeebe125b9b0b89b37d6f87cc95fa1d29d60b37d39599f6cb8e6"
+    },
+    "collected/result/learner-store/runs/7105763bcdd704764b24af14ecf266465b4755647ad6153aa89ed1b947adcc5d/.PORTABLE.json": {
+      "bytes": 147,
+      "sha256": "e0fd14bffa0635b3780f784ce9e9dd20e692eb71891e23683be511d1eade2c73"
+    },
+    "collected/result/learner-store/runs/7105763bcdd704764b24af14ecf266465b4755647ad6153aa89ed1b947adcc5d/run.json": {
+      "bytes": 15596,
+      "sha256": "7105763bcdd704764b24af14ecf266465b4755647ad6153aa89ed1b947adcc5d"
+    },
+    "collected/result/learner-store/runs/ea79c9af443ee80a8e9669506a6aabc1a5dcad47687c40be772798c82278b60a/.COMMITTED.json": {
+      "bytes": 260,
+      "sha256": "253096cdf396acbe502821e2516343a43811a368749f5f335c9cabc6762b2b7e"
+    },
+    "collected/result/learner-store/runs/ea79c9af443ee80a8e9669506a6aabc1a5dcad47687c40be772798c82278b60a/.PORTABLE.json": {
+      "bytes": 147,
+      "sha256": "144bd3a4d3d76c2af0b1706aeba7e1e681418cc454b8f99ac9d5f51d1d4ab4d0"
+    },
+    "collected/result/learner-store/runs/ea79c9af443ee80a8e9669506a6aabc1a5dcad47687c40be772798c82278b60a/run.json": {
+      "bytes": 18154,
+      "sha256": "ea79c9af443ee80a8e9669506a6aabc1a5dcad47687c40be772798c82278b60a"
+    },
+    "collected/result/operator-safety-r1/audit.json": {
+      "bytes": 508,
+      "sha256": "0866f599a87add5f4c8655fbae825d39f00e3f2e4fd5861bf6bcbe0d731910e2"
+    },
+    "collected/result/operator-safety-r1/decode-process.json": {
+      "bytes": 583,
+      "sha256": "151120e52fe951ca6d2d58c9f655698d5243ea4512f0c95d3a9443ade47971cb"
+    },
+    "collected/result/operator-safety-r1/http-response.json": {
+      "bytes": 199,
+      "sha256": "c0b53bb850f076ac339ebbb0367780e9a5d4fb830b89ffd1eaf0edd316ccd1d3"
+    },
+    "collected/result/operator-safety-r1/intent.json": {
+      "bytes": 383,
+      "sha256": "a741e8c50cf3ef6b01e83f467cc99dd2265a6b973af244f1a6e1e2c4a02242b7"
+    },
+    "collected/result/report.json": {
+      "bytes": 783,
+      "sha256": "611d46040fa26cacf393e771ea05f20d3f78221fa740c4e9ae246d08823a0354"
+    },
+    "collected/result/reservations/events/00000001.json": {
+      "bytes": 1311,
+      "sha256": "bfd270204e64f574939e516c41d8936aa0e52199078397c0957c966b4194b519"
+    },
+    "collected/result/reservations/events/00000002.json": {
+      "bytes": 1306,
+      "sha256": "0bf383c35d488e7c4e8fe39f0de42f75ebf8318ab72912c370ec9a828d26a0a2"
+    },
+    "collected/result/reservations/run.json": {
+      "bytes": 1384,
+      "sha256": "6031f860c3d2ea9015362a1ca9e43361ce07859a50fa9ce26e37cd15e26398a7"
+    },
+    "collected/result/selection1.json": {
+      "bytes": 823,
+      "sha256": "ed3c886b1accd3191541a57870f6c288870e06f847fa6db8fa2b301a7ba9e895"
+    },
+    "collected/result/selection2.json": {
+      "bytes": 885,
+      "sha256": "24783e21fe7a4bffcbd179601182d8789d26db0f56b4b33910a9ec83f0e91f26"
+    },
+    "collected/result/service-0/command-01.json": {
+      "bytes": 75,
+      "sha256": "7fed852111ae99e5b0b52fd9a8f931e431790f46221fe7fb79451e5998b96fdb"
+    },
+    "collected/result/service-0/command-02.json": {
+      "bytes": 75,
+      "sha256": "7fed852111ae99e5b0b52fd9a8f931e431790f46221fe7fb79451e5998b96fdb"
+    },
+    "collected/result/service-0/ready.json": {
+      "bytes": 3120,
+      "sha256": "9c3e202c02a370c10b40f68afd2ad9d11447d73950679b461c1dc942d5217c3e"
+    },
+    "collected/result/service-0/response-01.json": {
+      "bytes": 4004,
+      "sha256": "4d4630cda9c2b2072556b626f6ebfa5801cda9f45c2ede193a89ed88723c55fa"
+    },
+    "collected/result/service-0/response-02.json": {
+      "bytes": 4004,
+      "sha256": "4d4630cda9c2b2072556b626f6ebfa5801cda9f45c2ede193a89ed88723c55fa"
+    },
+    "collected/result/service-0/snapshots/mm-6031f860c3d2ea901536-00001/operator-safety-r1-20260828/manifest.json": {
+      "bytes": 355,
+      "sha256": "d944c8b7de5117b46f128cc4cbb7c0245321f5ed540a78848bdcc434dca62f2e"
+    },
+    "collected/result/service-0/snapshots/mm-6031f860c3d2ea901536-00001/operator-safety-r1-20260828/session.json": {
+      "bytes": 2685,
+      "sha256": "845167e4c19ad5d7e73d493c51fb54c22715add94620cfd63dcc494e2fe94247"
+    },
+    "collected/result/service-1/ready.json": {
+      "bytes": 3120,
+      "sha256": "c88b3cc3ea4caa66a905d5295be0a6aece6293ce5850413592bcc615ac42e798"
+    },
+    "collected/result/service-1/worker-exit.json": {
+      "bytes": 135,
+      "sha256": "7d5116acb3d8cfe7d4e567772e4d9818d38367cd7f4c477d93675f5e3c705eee"
+    },
+    "collected/result/snapshots/latest-mechanism-central/learner-step-00000001/manifest.json": {
+      "bytes": 345,
+      "sha256": "3c963f4e691f9061cae8c6a8cceb9f2d8a4fc7b7aaca99655c7d460a2f4f5f62"
+    },
+    "collected/result/snapshots/latest-mechanism-central/learner-step-00000001/session.json": {
+      "bytes": 12218,
+      "sha256": "141a17db91a0aad3b351cbf136c584d54c8be11ba82cac4690e774142bcd3573"
+    },
+    "collected/result/snapshots/latest-mechanism-central/learner-step-00000002/manifest.json": {
+      "bytes": 345,
+      "sha256": "33162fa381e4bc3658887c9df4d44133c658d1ad0418019fb333143fbd5c4beb"
+    },
+    "collected/result/snapshots/latest-mechanism-central/learner-step-00000002/session.json": {
+      "bytes": 22033,
+      "sha256": "bf6bae216e4331586dd6bb66027862ec095cc0bebd87827847b8388723b535c8"
+    },
+    "collected/result/step1.json": {
+      "bytes": 17689,
+      "sha256": "6a925f60a05da61b28a711fe96f212271e95a6485291e4ece261e4404e46dc0a"
+    },
+    "collected/result/step2.json": {
+      "bytes": 17930,
+      "sha256": "858cf2abcf0cb315183276636c3b02ff183435055fce1c0004ab4aebbfd85a18"
+    },
+    "collected/result/worker-result.json": {
+      "bytes": 165,
+      "sha256": "9e82d52b318c7f9e92902e854b507cd5409cf0ef4b466388d2837234b2485087"
+    },
+    "collected/source-manifest.json": {
+      "bytes": 7562,
+      "sha256": "c1f54aecb6239f38a37a9aec14a35218f92a0589b5de24bd4814983af4062fe8"
+    },
+    "collected/terminal-readback.json": {
+      "bytes": 598,
+      "sha256": "32b13e3949db93bd30013d1654cad0211dc94f947217c820204aef03a376711f"
+    },
+    "collected/worker-exit.json": {
+      "bytes": 102,
+      "sha256": "bfcbdd79a8c25e8ad7b1cb728acc51b4f7e7a968e81eb84a7226894bb8934410"
+    },
+    "collected/worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "launch-local-check.json": {
+      "bytes": 486,
+      "sha256": "0fe744ba4cb7bc880fc321ee790a59e62f0fe477ffeef1f3e7975d25614675d0"
+    },
+    "launch.py": {
+      "bytes": 16931,
+      "sha256": "458583eed2383c6d4666092a981b942822a42b6d1aacec1a5f9dc1f130cb06fc"
+    },
+    "manifest.json": {
+      "bytes": 7926,
+      "sha256": "b2f139b151066d1bf2a0c790f38676b015275bf94d391b9c064c007815e4d5d8"
+    },
+    "probe-local/campaign-plan.json": {
+      "bytes": 4788,
+      "sha256": "b704e6be60a12345b49bb259afea6904b3733ff2f9da093857f53f97a75c06cb"
+    },
+    "probe-local/command.json": {
+      "bytes": 1853,
+      "sha256": "32f9ed458fc06e27baf9537144c7147555bbb99cb4012a80db827b43b2390deb"
+    },
+    "probe-local/independent-review.json": {
+      "bytes": 2537,
+      "sha256": "30dcd59d58b0a70392021cb58625d1fd3c7847883a01cf654d9fd783ffef2f7a"
+    },
+    "probe-local/latest_probe.py": {
+      "bytes": 22236,
+      "sha256": "c7b54691d0d6f4c56a57d2c2bcc12bc00d39f2ad141e05c4cc4023e7a149e989"
+    },
+    "probe-local/README.md": {
+      "bytes": 3140,
+      "sha256": "c82015d4203bcdd5d9260b75a313347c4dd7924e49b79c500f3a20a34f1bfb56"
+    },
+    "probe-local/source-after.json": {
+      "bytes": 370,
+      "sha256": "ea7226364b49b2edc17f4af75ca8e1f3f964eae3b8bee961f531da33bf83b543"
+    },
+    "probe-local/source-before.json": {
+      "bytes": 370,
+      "sha256": "ea7226364b49b2edc17f4af75ca8e1f3f964eae3b8bee961f531da33bf83b543"
+    },
+    "probe-local/test_latest_probe.py": {
+      "bytes": 4396,
+      "sha256": "40558e03d5e3e62e5a018d027c2e5cce6d8960917b7fd965fb3e75e2c5de5262"
+    },
+    "probe-local/windows-receipt.json": {
+      "bytes": 565,
+      "sha256": "f171dc104159172823629c81bca4757958403a5088c88c06269f9177137b5b2b"
+    },
+    "probe-local/windows.log": {
+      "bytes": 563,
+      "sha256": "09aaec106c5a27a9ae3b9c38766d6bd62cb671f1c59830e622e60ecb7bbc8723"
+    },
+    "probe-local/wsl-receipt.json": {
+      "bytes": 194,
+      "sha256": "501a33724bcbb57ad366f6bb7bca2400c6b096c8380556ca52f71ae33c128074"
+    },
+    "probe-local/wsl.log": {
+      "bytes": 323,
+      "sha256": "5c1a8cccff7f44798b245c59fbf320a99e1cd2e02298997e3701ec43adc9731d"
+    },
+    "safety-snapshot-01.json": {
+      "bytes": 704,
+      "sha256": "afa6eb6a58bbdb0cc2ccdd1a304e8be29af1523b5efd9b23d49900b929bdb107"
+    },
+    "safety_snapshot.py": {
+      "bytes": 3663,
+      "sha256": "4e704236a58ad5703c191a0ccf3a7c21d3a63f0d2471fb92813d7b98bd72f5b5"
+    },
+    "terminal-check-01.json": {
+      "bytes": 598,
+      "sha256": "32b13e3949db93bd30013d1654cad0211dc94f947217c820204aef03a376711f"
+    }
+  },
+  "loose_files": {
+    "collected/actual-command.json": "ce634c45d544392535bcbe96f080501fdaf8b4deb0121b3cca28d0593b03cb90",
+    "collected/campaign-plan.json": "b704e6be60a12345b49bb259afea6904b3733ff2f9da093857f53f97a75c06cb",
+    "collected/command.json": "32f9ed458fc06e27baf9537144c7147555bbb99cb4012a80db827b43b2390deb",
+    "collected/export-manifest.json": "52484967bd3354d696277d8373a86a5ce668d76048a934de5e3fd85816d811ac",
+    "collected/launch-intent.json": "b9d0402c1acb93d35b57c379e4cac2eb8000d1523edc267772bc1208afbf42fd",
+    "collected/launch.json": "73dc8ff58a160026a08c4c87ace25b1e13c5e52d60bf5cadb2b60417c053c37a",
+    "collected/local-audit.json": "8d24c1160dad7ede98da42c063564f8985889f98e09d859644f0b8804c6748ad",
+    "collected/probe-launch-intent.json": "02df66335d3e98f12a43e41223269c427b081f7ffe9b278d97fd67645451cb99",
+    "collected/probe-launch.json": "4800d72d8800f6e50cfc9298318114890d1444e0e77322155c3504e715feb350",
+    "collected/result/actor1-before-second.json": "4d4630cda9c2b2072556b626f6ebfa5801cda9f45c2ede193a89ed88723c55fa",
+    "collected/result/actor1-create-intent.json": "59b9d8213a0aea6254fb46d07347994ca727bc9d46041ab076609ae6aecafcc8",
+    "collected/result/actor1-create-response.json": "8be7f9f95335c22c3b734d171f112acab387abc2dad25668bff28e7da6ad0c4e",
+    "collected/result/actor1-initial.json": "4d4630cda9c2b2072556b626f6ebfa5801cda9f45c2ede193a89ed88723c55fa",
+    "collected/result/actor1-policy-intent.json": "92d7c81275fc69daf6197b8641b2a4d3fb08977e04892b9175a69fb61bcd8adb",
+    "collected/result/actor1-policy-response.json": "d3006bb806caf0ffcfb018f23eb6799affd45153dee0f181e074abb5dd74fabd",
+    "collected/result/actor1-value-intent.json": "8778ff4b7a1f30ff2a79b26acfe313134b871ffbad4c0e58629eefbb2aa43bcd",
+    "collected/result/actor1-value-response.json": "afcd9ba4f2a38bca959c9c42a9987f985d0d084428dc16bd454e9bb627d92d07",
+    "collected/result/actor2-create-intent.json": "c0b8a00b5d64b3e9322ed4f70295368d55b23f62a65e1b3ff34ef94cd1329d72",
+    "collected/result/input-manifest.json": "6ac5aff2a63e0e1cc6dd746406287f3dc324521ced7ec6bbde0ce96901f83fda",
+    "collected/result/intent1.json": "54a4cb36bd2cf01ca55f3d0538ef05f0e0a8eb1f277376215cbd9b3a8572502c",
+    "collected/result/intent2.json": "234c678b7b73f3e144be8f4bdc8e4f09119c0da0c1017ff20d86edbb86b32edf",
+    "collected/result/journal/create-intent.json": "327d9ff79e2a9e0e8fc47df8433431e90597a15b7f893fef8f80e6b0e0079d91",
+    "collected/result/journal/created.json": "83bf016493e9d96d9d532c51262f35727b676cb40b51edba31c877054bd0f717",
+    "collected/result/journal/step-00000001/checkpoint.json": "1018bbda982fab64bd9fbfeaca68dacf72fe55dd96e73ffae494a08875e3aabf",
+    "collected/result/journal/step-00000001/data-receipt.json": "d3b95bf0c3b5067ad5d931c00c7e2134e7f399ac6ef37d8dfe9f573648e7b697",
+    "collected/result/journal/step-00000001/intent.json": "eed98dbf6223837add3add9c1a2e7c6be86a7c9305b5b51eb40bbdbc5f8fbd31",
+    "collected/result/journal/step-00000001/runtime-receipt.json": "5674aeac742fb9bba82572f78b2771d259cee13a4a968fe3ffb6364f91af7a48",
+    "collected/result/journal/step-00000002/checkpoint.json": "440f1378faafa38f519c5835791ef5b34ae59218b955d8508bcb38dd540fc629",
+    "collected/result/journal/step-00000002/data-receipt.json": "408f860d923d56253cad6f5ecb546dec2db106656718adb5a93f2375ee77f8df",
+    "collected/result/journal/step-00000002/intent.json": "f7b8e508be3f10c7e22464cd06484a8f994a4375f1cd3be29b9021de5d890ad4",
+    "collected/result/journal/step-00000002/runtime-receipt.json": "a9683adfcc0a623966c89c5acfe88d3ee89b77254601bc45d34172d183c3e036",
+    "collected/result/operator-safety-r1/audit.json": "0866f599a87add5f4c8655fbae825d39f00e3f2e4fd5861bf6bcbe0d731910e2",
+    "collected/result/operator-safety-r1/decode-process.json": "151120e52fe951ca6d2d58c9f655698d5243ea4512f0c95d3a9443ade47971cb",
+    "collected/result/operator-safety-r1/http-response.json": "c0b53bb850f076ac339ebbb0367780e9a5d4fb830b89ffd1eaf0edd316ccd1d3",
+    "collected/result/operator-safety-r1/intent.json": "a741e8c50cf3ef6b01e83f467cc99dd2265a6b973af244f1a6e1e2c4a02242b7",
+    "collected/result/report.json": "611d46040fa26cacf393e771ea05f20d3f78221fa740c4e9ae246d08823a0354",
+    "collected/result/reservations/events/00000001.json": "bfd270204e64f574939e516c41d8936aa0e52199078397c0957c966b4194b519",
+    "collected/result/reservations/events/00000002.json": "0bf383c35d488e7c4e8fe39f0de42f75ebf8318ab72912c370ec9a828d26a0a2",
+    "collected/result/reservations/run.json": "6031f860c3d2ea9015362a1ca9e43361ce07859a50fa9ce26e37cd15e26398a7",
+    "collected/result/selection1.json": "ed3c886b1accd3191541a57870f6c288870e06f847fa6db8fa2b301a7ba9e895",
+    "collected/result/selection2.json": "24783e21fe7a4bffcbd179601182d8789d26db0f56b4b33910a9ec83f0e91f26",
+    "collected/result/service-0/command-01.json": "7fed852111ae99e5b0b52fd9a8f931e431790f46221fe7fb79451e5998b96fdb",
+    "collected/result/service-0/command-02.json": "7fed852111ae99e5b0b52fd9a8f931e431790f46221fe7fb79451e5998b96fdb",
+    "collected/result/service-0/ready.json": "9c3e202c02a370c10b40f68afd2ad9d11447d73950679b461c1dc942d5217c3e",
+    "collected/result/service-0/response-01.json": "4d4630cda9c2b2072556b626f6ebfa5801cda9f45c2ede193a89ed88723c55fa",
+    "collected/result/service-0/response-02.json": "4d4630cda9c2b2072556b626f6ebfa5801cda9f45c2ede193a89ed88723c55fa",
+    "collected/result/service-1/ready.json": "c88b3cc3ea4caa66a905d5295be0a6aece6293ce5850413592bcc615ac42e798",
+    "collected/result/service-1/worker-exit.json": "7d5116acb3d8cfe7d4e567772e4d9818d38367cd7f4c477d93675f5e3c705eee",
+    "collected/result/snapshots/latest-mechanism-central/learner-step-00000001/manifest.json": "3c963f4e691f9061cae8c6a8cceb9f2d8a4fc7b7aaca99655c7d460a2f4f5f62",
+    "collected/result/snapshots/latest-mechanism-central/learner-step-00000001/session.json": "141a17db91a0aad3b351cbf136c584d54c8be11ba82cac4690e774142bcd3573",
+    "collected/result/snapshots/latest-mechanism-central/learner-step-00000002/manifest.json": "33162fa381e4bc3658887c9df4d44133c658d1ad0418019fb333143fbd5c4beb",
+    "collected/result/snapshots/latest-mechanism-central/learner-step-00000002/session.json": "bf6bae216e4331586dd6bb66027862ec095cc0bebd87827847b8388723b535c8",
+    "collected/result/step1.json": "6a925f60a05da61b28a711fe96f212271e95a6485291e4ece261e4404e46dc0a",
+    "collected/result/step2.json": "858cf2abcf0cb315183276636c3b02ff183435055fce1c0004ab4aebbfd85a18",
+    "collected/result/worker-result.json": "9e82d52b318c7f9e92902e854b507cd5409cf0ef4b466388d2837234b2485087",
+    "collected/source-manifest.json": "c1f54aecb6239f38a37a9aec14a35218f92a0589b5de24bd4814983af4062fe8",
+    "collected/terminal-readback.json": "32b13e3949db93bd30013d1654cad0211dc94f947217c820204aef03a376711f",
+    "collected/worker-exit.json": "bfcbdd79a8c25e8ad7b1cb728acc51b4f7e7a968e81eb84a7226894bb8934410",
+    "launch-local-check.json": "0fe744ba4cb7bc880fc321ee790a59e62f0fe477ffeef1f3e7975d25614675d0",
+    "manifest.json": "b2f139b151066d1bf2a0c790f38676b015275bf94d391b9c064c007815e4d5d8",
+    "probe-local/campaign-plan.json": "b704e6be60a12345b49bb259afea6904b3733ff2f9da093857f53f97a75c06cb",
+    "probe-local/command.json": "32f9ed458fc06e27baf9537144c7147555bbb99cb4012a80db827b43b2390deb",
+    "probe-local/independent-review.json": "30dcd59d58b0a70392021cb58625d1fd3c7847883a01cf654d9fd783ffef2f7a",
+    "probe-local/source-after.json": "ea7226364b49b2edc17f4af75ca8e1f3f964eae3b8bee961f531da33bf83b543",
+    "probe-local/source-before.json": "ea7226364b49b2edc17f4af75ca8e1f3f964eae3b8bee961f531da33bf83b543",
+    "probe-local/windows-receipt.json": "f171dc104159172823629c81bca4757958403a5088c88c06269f9177137b5b2b",
+    "probe-local/wsl-receipt.json": "501a33724bcbb57ad366f6bb7bca2400c6b096c8380556ca52f71ae33c128074",
+    "safety-snapshot-01.json": "afa6eb6a58bbdb0cc2ccdd1a304e8be29af1523b5efd9b23d49900b929bdb107",
+    "terminal-check-01.json": "32b13e3949db93bd30013d1654cad0211dc94f947217c820204aef03a376711f"
+  },
+  "excluded": "7B weights, large tensor snapshots, credentials, browser state"
+}

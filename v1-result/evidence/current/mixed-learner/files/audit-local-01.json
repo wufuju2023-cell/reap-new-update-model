@@ -1,0 +1,783 @@
+{
+  "actual_code_files": 31,
+  "catalog_rows": {
+    "mathlib_sft": 7,
+    "replay": 13
+  },
+  "checkpoint2": "51d1e947f4757b60362853ff2d2d79f786e4b289754a1f07453346f4fc040028",
+  "curriculum_tested": false,
+  "inputs": {
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\learner-loop-r3-run-20260828\\verified-actor-01-host-recovery\\registry\\fae47cd667809fa30c7a87b782b98e2e4943ba47144ddc69eee930142552402e\\VerifiedReplay.lean": {
+      "bytes": 4450,
+      "sha256": "a642aaf993f884c26c255ca3cdf1f4c6227ccc87273880243a0fc9c153761f23"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\learner-loop-r3-run-20260828\\verified-actor-01-host-recovery\\registry\\fae47cd667809fa30c7a87b782b98e2e4943ba47144ddc69eee930142552402e\\accepted-proof.lean": {
+      "bytes": 501,
+      "sha256": "adafb3271fc9ae651e9c6bac4c1c671f39e889b07142340af3f1ee6858c2640b"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\learner-loop-r3-run-20260828\\verified-actor-01-host-recovery\\registry\\fae47cd667809fa30c7a87b782b98e2e4943ba47144ddc69eee930142552402e\\dataset.json": {
+      "bytes": 3632,
+      "sha256": "fae47cd667809fa30c7a87b782b98e2e4943ba47144ddc69eee930142552402e"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\learner-loop-r3-run-20260828\\verified-actor-01-host-recovery\\registry\\fae47cd667809fa30c7a87b782b98e2e4943ba47144ddc69eee930142552402e\\historical-proof-receipt.json": {
+      "bytes": 1454,
+      "sha256": "d21ae8d48932d26664d1a4162030c907502ace3c11a8b85c08739fc27920b0cf"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\learner-loop-r3-run-20260828\\verified-actor-01-host-recovery\\registry\\fae47cd667809fa30c7a87b782b98e2e4943ba47144ddc69eee930142552402e\\historical-proof.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\learner-loop-r3-run-20260828\\verified-actor-01-host-recovery\\registry\\fae47cd667809fa30c7a87b782b98e2e4943ba47144ddc69eee930142552402e\\historical-proof.stdout": {
+      "bytes": 961,
+      "sha256": "c36893cca185374d74fc750474e62dc2575a97df6dd52f029c72ffdb8b3e9ece"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\learner-loop-r3-run-20260828\\verified-actor-01-host-recovery\\registry\\fae47cd667809fa30c7a87b782b98e2e4943ba47144ddc69eee930142552402e\\observer.jsonl": {
+      "bytes": 8122,
+      "sha256": "d0d5a6fd59902cb3c86b6bf1cb6348819b802115b57a9fc87082b4c796681eee"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\learner-loop-r3-run-20260828\\verified-actor-01-host-recovery\\registry\\fae47cd667809fa30c7a87b782b98e2e4943ba47144ddc69eee930142552402e\\plan.json": {
+      "bytes": 802,
+      "sha256": "e546e618ca0b85e91b44cbd9b2c30ed212008fe566de340f3853ebf3ef1887b3"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\learner-loop-r3-run-20260828\\verified-actor-01-host-recovery\\registry\\fae47cd667809fa30c7a87b782b98e2e4943ba47144ddc69eee930142552402e\\raw_tree.json": {
+      "bytes": 1611,
+      "sha256": "16305cebeb8404faa5ef30f3cdd6d95e4ffcb007639a3bddf0530513f9cf6f89"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\learner-loop-r3-run-20260828\\verified-actor-01-host-recovery\\registry\\fae47cd667809fa30c7a87b782b98e2e4943ba47144ddc69eee930142552402e\\replay-receipt.json": {
+      "bytes": 1621,
+      "sha256": "aff2c4504215650b08b250d5943c42cbc0c6628ce9ccae27ff69e822ece81c72"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\learner-loop-r3-run-20260828\\verified-actor-01-host-recovery\\registry\\fae47cd667809fa30c7a87b782b98e2e4943ba47144ddc69eee930142552402e\\replay.lean": {
+      "bytes": 4920,
+      "sha256": "4c9defb782ec638989b6b840396dd1a45567b45c1f01e634802b441ddf8998ec"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\learner-loop-r3-run-20260828\\verified-actor-01-host-recovery\\registry\\fae47cd667809fa30c7a87b782b98e2e4943ba47144ddc69eee930142552402e\\replay.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\learner-loop-r3-run-20260828\\verified-actor-01-host-recovery\\registry\\fae47cd667809fa30c7a87b782b98e2e4943ba47144ddc69eee930142552402e\\replay.stdout": {
+      "bytes": 2013,
+      "sha256": "1df56649d23a6834e697b0526c0fc6680c323111dc4214a51778ab57c44ef5a6"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\learner-loop-r3-run-20260828\\verified-actor-01-host-recovery\\registry\\fae47cd667809fa30c7a87b782b98e2e4943ba47144ddc69eee930142552402e\\result.json": {
+      "bytes": 267,
+      "sha256": "16cd183032a66c297d227cfe491c1b95d5585bc23319efc18d704249981e9514"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\learner-loop-r3-run-20260828\\verified-actor-01-host-recovery\\registry\\fae47cd667809fa30c7a87b782b98e2e4943ba47144ddc69eee930142552402e\\session.json": {
+      "bytes": 3576,
+      "sha256": "58b149fb5114bad2a73b618c6a10258c810de0d22e519f1243860446e196d632"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\learner-loop-r3-run-20260828\\verified-actor-01-host-recovery\\registry\\fae47cd667809fa30c7a87b782b98e2e4943ba47144ddc69eee930142552402e\\source.lean": {
+      "bytes": 369,
+      "sha256": "96f6970ec21b5d998985ce33fd173c348c7f325560aa5fb51f4657a233127146"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\learner-loop-r3-run-20260828\\verified-actor-01-host-recovery\\registry\\fae47cd667809fa30c7a87b782b98e2e4943ba47144ddc69eee930142552402e\\trace.json": {
+      "bytes": 753,
+      "sha256": "6639815db3eec6703b62350b255131118da362c7b3e6edf8366e9a9bc4bd4b56"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\artifact-audit.json": {
+      "bytes": 1778887,
+      "sha256": "77c1e71b51f55ba59d214fa1f5ab96b455c438757070c19a17efb1ffeb1a2e47"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\audit_local.py": {
+      "bytes": 20413,
+      "sha256": "b84f52344e67b961e1fabfc35ae0c0c740414ab29466a0388a132d37dbc0cd2d"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\audit_remote.py": {
+      "bytes": 5373,
+      "sha256": "8ce549946ff8a0830945f9b0cffe63e798f9a8bc707d1ffa44bba2aaf79825c5"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\code-manifest.json": {
+      "bytes": 3091,
+      "sha256": "f672b1f4b42f419cabdc77a0d6f8be77766e9a6936e6eb438c1f17c6212bb262"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\data-manifest.json": {
+      "bytes": 23895,
+      "sha256": "3143dc8fc054e6e57aec1239021c753e77693f435e8b25f14d15929d5ba08b28"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-code\\code\\containers\\gpu\\smoke_gpu.py": {
+      "bytes": 14835,
+      "sha256": "e024b6bc9b23fca1c66c3ed679e6136ada01fab503733cb396a57892aac3b759"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-code\\code\\containers\\gpu\\smoke_kl_guard.py": {
+      "bytes": 18019,
+      "sha256": "c48ef92a8993570baf88928860eda2c20f3b217692e80b6329b35135ac7384bd"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-code\\code\\containers\\gpu\\smoke_mixed_learner.py": {
+      "bytes": 21024,
+      "sha256": "f8bcfe309c74d0a13015b190fc8fdf37a4a2aafcc541ea865ac2aaf320beffec"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-code\\code\\containers\\gpu\\smoke_search_gpu.py": {
+      "bytes": 10954,
+      "sha256": "12d1918fcc2d0145ba2e7dd90bcb73878fd2a222d593e06ab3d729fc2c5ed905"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-code\\code\\gpu_runtime\\__init__.py": {
+      "bytes": 1360,
+      "sha256": "e8beeae6e7f1737717bb10b3badf9521fdc52c36ce1d9524b8547edff2a8317d"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-code\\code\\gpu_runtime\\actor.py": {
+      "bytes": 5682,
+      "sha256": "a648761fb9a2bc6a231cb5d9bc2f6985e3d39ffc8c620fb2d580e602e4760524"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-code\\code\\gpu_runtime\\backend.py": {
+      "bytes": 2006,
+      "sha256": "007309e2cce2395810237e897adbc48fd9d5db3794ba8394af2b512fcb2fe372"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-code\\code\\gpu_runtime\\errors.py": {
+      "bytes": 918,
+      "sha256": "9cf83587246115807bfd7025322fcf3317d13f42d1303bec435a4994010b1cb7"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-code\\code\\gpu_runtime\\experience_store.py": {
+      "bytes": 2702,
+      "sha256": "998be320e7a65e68c059263460d75f9ebd90e2ab3f7f4bc19c8e1f38096aaa87"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-code\\code\\gpu_runtime\\identifiers.py": {
+      "bytes": 888,
+      "sha256": "c9bc4e1f79541896b60a76848a5ee33f0f0fb485582fb8fc04b65d5445cf538a"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-code\\code\\gpu_runtime\\learner.py": {
+      "bytes": 19465,
+      "sha256": "0def661bf55fdd402b1caaf6403a1ca6cf38ee699ebbca80cf0a96918334c2f9"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-code\\code\\gpu_runtime\\learner_release_store.py": {
+      "bytes": 33218,
+      "sha256": "3c26df9759351c76b42277994aeaac440039827417e3a4da4bff1e185294383b"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-code\\code\\gpu_runtime\\mixed_backend.py": {
+      "bytes": 3939,
+      "sha256": "c5651123a70bc7cbbb3f1df7eb9621a47c569612ed2cdca1da446bb25846a620"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-code\\code\\gpu_runtime\\mixed_learner.py": {
+      "bytes": 2889,
+      "sha256": "48133d35063918df44ceba771418ee31181952e248960af15c8f67b159ff7f2b"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-code\\code\\gpu_runtime\\mixed_learner_store.py": {
+      "bytes": 19033,
+      "sha256": "51b130cd36d1f59af40f7355ea25059a171e3fb6e4e86b7747534e783cad46ba"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-code\\code\\gpu_runtime\\mixed_objective.py": {
+      "bytes": 13227,
+      "sha256": "238c553cb9938c763fe5cf89db99df1b81fbc1edac4fcdc9e3ff319fb72df23a"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-code\\code\\gpu_runtime\\real_backend.py": {
+      "bytes": 42540,
+      "sha256": "6dace0009133b525226e3d242b41f4d10870b38d47213359120cb90b7f211f48"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-code\\code\\gpu_runtime\\runtime.py": {
+      "bytes": 33172,
+      "sha256": "28115eeeae40aaa3c24ab21808a04a9fb2a419392b1ebde29dd7777866843fd5"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-code\\code\\gpu_runtime\\schemas.py": {
+      "bytes": 3933,
+      "sha256": "63fcf6a583d70210d31829aa2cef06e2b27e4b295b55337f02381a99b59caeb2"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-code\\code\\gpu_runtime\\search_backend.py": {
+      "bytes": 22811,
+      "sha256": "a389f7464621ca217f0535a202d70b35662c20f7c51e47b7741d73db271b69dd"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-code\\code\\gpu_runtime\\search_objective.py": {
+      "bytes": 9442,
+      "sha256": "62939272269085464e5111d6f412500be3f28a67192f25c2a479d307625687d0"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-code\\code\\gpu_runtime\\server.py": {
+      "bytes": 13644,
+      "sha256": "7f28a120d9c7823955410ddf73166f59adfbde1cbcd9aff11aab8d1de8e80187"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-code\\code\\gpu_runtime\\session_store.py": {
+      "bytes": 7267,
+      "sha256": "cfe6be2cc1996c60c94272d7776dad10bb604038a355b8e8e4df4c002cc76510"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-code\\code\\gpu_runtime\\snapshot_store.py": {
+      "bytes": 8752,
+      "sha256": "2fe8b7f74e61ce623b893f17c1e6d250fd16801fbee9b6c690e7307b2f23cfd0"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-code\\code\\gpu_runtime\\toy_backend.py": {
+      "bytes": 6017,
+      "sha256": "2d049f456a0a2b408491258a70dc5d2505c63e1690134814ecce5bff5c505e6f"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-code\\code\\gpu_runtime\\verified_backend.py": {
+      "bytes": 21284,
+      "sha256": "bd3be78dd5e88d7af04cb945d141dd43ca90244a8b35b9d426ea62493b2e80a6"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-code\\code\\gpu_runtime\\verified_objective.py": {
+      "bytes": 4672,
+      "sha256": "b62bb7e98c926988507e777397a8421aca9b7e390a5badeda8ebf70424215fb2"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\code\\cpu_runtime\\__init__.py": {
+      "bytes": 50,
+      "sha256": "0bfe0a5ea77214fa2846ea24b27751750e0134287b92f86118956df326ea8f2b"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\code\\cpu_runtime\\mathlib_trajectory.py": {
+      "bytes": 18332,
+      "sha256": "cea58743b5b457af2c8e712d275abad520a777d2376b2700e2507efe54dca1fd"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\code\\cpu_runtime\\verified_dataset_store.py": {
+      "bytes": 11605,
+      "sha256": "9b9052292aaa0d50f2a51a8409eb1bbc4e1124fef99a38b5ce4f3045a27b9d58"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\code\\cpu_runtime\\verified_trajectory.py": {
+      "bytes": 22420,
+      "sha256": "e8a2366df58e739cd5b9e0bb8068b4b4dd0bd6fc8c5f46e0299295be79dffac4"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1\\LICENSE": {
+      "bytes": 11357,
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1\\MathlibReplay.lean": {
+      "bytes": 3883,
+      "sha256": "bc59a28fe220327ef6344365f31f2db1db927670f1fe0fb9645932cc28fca77f"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1\\capture-trace.json": {
+      "bytes": 2066,
+      "sha256": "13b7be980b994f45450258d95a9e05d7d0354a049ef544d81ede5f4c6074fa44"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1\\capture.lean": {
+      "bytes": 4566,
+      "sha256": "ce011935fd5c2bc17af3906aec7c582a3dc225d733afc60ed98053a94b5097fc"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1\\capture.receipt.json": {
+      "bytes": 1282,
+      "sha256": "403de534197cc47da51184afe32d6c7d3dcc19eba10186c3529e4bf796198c09"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1\\capture.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1\\capture.stdout": {
+      "bytes": 81,
+      "sha256": "219e34c00f9e825b7419444d2be94d8878b88c8f2aeb5f64fcd706d175c8a423"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1\\dataset.json": {
+      "bytes": 5794,
+      "sha256": "390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1\\extractor.py": {
+      "bytes": 17075,
+      "sha256": "8d4ff389e085c45b490ba9f81581ea3db63cc2e55488e8af96ab6cf97887884e"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1\\original.lean": {
+      "bytes": 4567,
+      "sha256": "175f165e21d8f5b3c892b748f606621e3888c4cd09e2fc50d6b00b17c2096992"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1\\original.receipt.json": {
+      "bytes": 1285,
+      "sha256": "3c02da5fb3a2c1cb88f7491df2b9281c82da772f70e2192d99bc5cd117c9f881"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1\\original.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1\\original.stdout": {
+      "bytes": 81,
+      "sha256": "219e34c00f9e825b7419444d2be94d8878b88c8f2aeb5f64fcd706d175c8a423"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1\\plan.json": {
+      "bytes": 232,
+      "sha256": "b1d74ceb005231516a7ee4fd65b5f7c6b15fcc1607b7c5b3034c2e1fa735f47a"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1\\replay-trace.json": {
+      "bytes": 2066,
+      "sha256": "13b7be980b994f45450258d95a9e05d7d0354a049ef544d81ede5f4c6074fa44"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1\\replay.lean": {
+      "bytes": 4606,
+      "sha256": "fe9177f7a8b99d18a68516d2e0898c10a6190875739cdf3da5fc8227d4c4f881"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1\\replay.receipt.json": {
+      "bytes": 1280,
+      "sha256": "a271d8b5f68b95a51eccc22f0daaf48b2d0a8510c837ff0038b19bc0c422bd75"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1\\replay.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1\\replay.stdout": {
+      "bytes": 81,
+      "sha256": "219e34c00f9e825b7419444d2be94d8878b88c8f2aeb5f64fcd706d175c8a423"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1\\run.json": {
+      "bytes": 80,
+      "sha256": "2373e73b2df4d3e1aeee5b5539e48a0ef106c9d70b6c584ef2eb2493787d1795"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1\\source.json": {
+      "bytes": 1382,
+      "sha256": "38042a7eeef682f5b7ff03e5181c3e5058dde1d08b2fe043775687df6f84cc50"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1\\source.lean": {
+      "bytes": 7192,
+      "sha256": "2f5b7ae2ea952e0d924c90f47c874c21acb88e971a81df15eb6ac69b35a8eb3e"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d\\LICENSE": {
+      "bytes": 11357,
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d\\MathlibReplay.lean": {
+      "bytes": 3883,
+      "sha256": "bc59a28fe220327ef6344365f31f2db1db927670f1fe0fb9645932cc28fca77f"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d\\capture-trace.json": {
+      "bytes": 3314,
+      "sha256": "df69054aa0bd16574d5b62151e0819e090f4198a9dcc355f885f5800a3385ee9"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d\\capture.lean": {
+      "bytes": 4533,
+      "sha256": "ad63d48e7da34ae30ec401c2558979d0c21a6ff18b02d391ac00590c7fedd256"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d\\capture.receipt.json": {
+      "bytes": 1284,
+      "sha256": "8cbf1feb05d3ddc736d65d2650f92aa8836c2dc05a888c79efff9bec3c34df78"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d\\capture.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d\\capture.stdout": {
+      "bytes": 79,
+      "sha256": "5a16a4dd20a2c533d6ec27662db19a9d071979da455431e11b73dde15bfe852e"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d\\dataset.json": {
+      "bytes": 7329,
+      "sha256": "633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d\\extractor.py": {
+      "bytes": 17075,
+      "sha256": "8d4ff389e085c45b490ba9f81581ea3db63cc2e55488e8af96ab6cf97887884e"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d\\original.lean": {
+      "bytes": 4581,
+      "sha256": "6a71e7c339b3abf4a7da5c8d72deb5f6c72008b7fe69d3792b205a64c4c444e9"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d\\original.receipt.json": {
+      "bytes": 1284,
+      "sha256": "a91d3f82c6b96c6eec6a19552334928736d5c3c19d00df85042f342267613bbc"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d\\original.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d\\original.stdout": {
+      "bytes": 79,
+      "sha256": "5a16a4dd20a2c533d6ec27662db19a9d071979da455431e11b73dde15bfe852e"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d\\plan.json": {
+      "bytes": 284,
+      "sha256": "f2ade7bd8a55bf18a6ecfadec9b96f118a0d1d8a258c08f704c865ee58eee50b"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d\\replay-trace.json": {
+      "bytes": 3314,
+      "sha256": "df69054aa0bd16574d5b62151e0819e090f4198a9dcc355f885f5800a3385ee9"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d\\replay.lean": {
+      "bytes": 4574,
+      "sha256": "8135117b6862435cffeb7237d4775f77f338ee857276a8b53c277afba3d9f16e"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d\\replay.receipt.json": {
+      "bytes": 1281,
+      "sha256": "2482b9d9ae7df749900e57ea887543adeff654f6694413d53fa3cabca41d0bac"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d\\replay.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d\\replay.stdout": {
+      "bytes": 79,
+      "sha256": "5a16a4dd20a2c533d6ec27662db19a9d071979da455431e11b73dde15bfe852e"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d\\run.json": {
+      "bytes": 81,
+      "sha256": "162332e279389cea0190db6938c53ed217d0614930f29264675d6ad75700cf94"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d\\source.json": {
+      "bytes": 1604,
+      "sha256": "f25952223af6fc1d16dd42855cc7ff8a70f7c81dcc9d82e9021ec4fc87edc141"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d\\source.lean": {
+      "bytes": 7192,
+      "sha256": "2f5b7ae2ea952e0d924c90f47c874c21acb88e971a81df15eb6ac69b35a8eb3e"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb\\LICENSE": {
+      "bytes": 11357,
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb\\MathlibReplay.lean": {
+      "bytes": 3883,
+      "sha256": "bc59a28fe220327ef6344365f31f2db1db927670f1fe0fb9645932cc28fca77f"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb\\capture-trace.json": {
+      "bytes": 1897,
+      "sha256": "28d8360d512a866ab5704c09876b3d136bf63698a2bddbb27bd48c1fd0bd2485"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb\\capture.lean": {
+      "bytes": 4514,
+      "sha256": "071957e4dd40a7bc09bb884c9bfa98f717c23c1202e15429c41201def143aeac"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb\\capture.receipt.json": {
+      "bytes": 1281,
+      "sha256": "0550224516990f022a073976bec65546bd34d77d298e5098307695ea3cb70feb"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb\\capture.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb\\capture.stdout": {
+      "bytes": 80,
+      "sha256": "be9f356014db911a74c7045943c984f6ccffb5b203771b7aba00ce78bbc9b2ce"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb\\dataset.json": {
+      "bytes": 5638,
+      "sha256": "98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb\\extractor.py": {
+      "bytes": 17075,
+      "sha256": "8d4ff389e085c45b490ba9f81581ea3db63cc2e55488e8af96ab6cf97887884e"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb\\original.lean": {
+      "bytes": 4532,
+      "sha256": "d11b2bad15d900de2e404e8a41b07a6d411a5ba26fbd63ebd40ee85de58a397d"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb\\original.receipt.json": {
+      "bytes": 1283,
+      "sha256": "2df5c705742f3558e789769fb45b75dc026cae1d8cb060225ea99add7af8a55b"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb\\original.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb\\original.stdout": {
+      "bytes": 80,
+      "sha256": "be9f356014db911a74c7045943c984f6ccffb5b203771b7aba00ce78bbc9b2ce"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb\\plan.json": {
+      "bytes": 246,
+      "sha256": "9a1a6d6a8e3bf22a47e1c8310fe1a83cb1ab7ca82ec98b166035e490ef6f69b3"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb\\replay-trace.json": {
+      "bytes": 1897,
+      "sha256": "28d8360d512a866ab5704c09876b3d136bf63698a2bddbb27bd48c1fd0bd2485"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb\\replay.lean": {
+      "bytes": 4553,
+      "sha256": "bd1cf6b982eb33f3ac55f0770b6396441773ff23fb835b69f82bce4dc6278194"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb\\replay.receipt.json": {
+      "bytes": 1279,
+      "sha256": "e3c061651b36b81fb9bc1f8a98d130a04eb7b56ae327f07871012adc0071c961"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb\\replay.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb\\replay.stdout": {
+      "bytes": 80,
+      "sha256": "be9f356014db911a74c7045943c984f6ccffb5b203771b7aba00ce78bbc9b2ce"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb\\run.json": {
+      "bytes": 79,
+      "sha256": "5d4d77f9a3823698485ac4b9461762207fba07f5a3897700f5c33c5dacb39b08"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb\\source.json": {
+      "bytes": 1396,
+      "sha256": "8aa66b2e30bd23758eb667c05bd3f7daf0928579477945632da14bac6db28a56"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\frozen-data\\mathlib-datasets\\98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb\\source.lean": {
+      "bytes": 7192,
+      "sha256": "2f5b7ae2ea952e0d924c90f47c874c21acb88e971a81df15eb6ac69b35a8eb3e"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\mixed-learner-run-20260828\\launch.py": {
+      "bytes": 5462,
+      "sha256": "f4048d7936cf58df4dec52873851df4f575872fd464faec3448a7d75147c57ba"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\01\\VerifiedReplay.lean": {
+      "bytes": 4450,
+      "sha256": "a642aaf993f884c26c255ca3cdf1f4c6227ccc87273880243a0fc9c153761f23"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\01\\accepted-proof.lean": {
+      "bytes": 769,
+      "sha256": "941e19a050e5cd91e0ef4a8ac5279240063a736a402f9ccea7813adf97c92873"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\01\\dataset.json": {
+      "bytes": 6725,
+      "sha256": "b89032bee7d7d75449f5395e9c34c99ff538624bd21abc057ae4be76ae8441eb"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\01\\historical-proof-receipt.json": {
+      "bytes": 2001,
+      "sha256": "42aff45e8799a9ede8e1ac73452ea0c1f5d575e1e15d3adb1b0655bea4cb5a0b"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\01\\historical-proof.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\01\\historical-proof.stdout": {
+      "bytes": 909,
+      "sha256": "0a1da5fa68f3d0b77e5a38f71319659a9fd31ae65cf12dc93e5e575f7f89e2e1"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\01\\observer.jsonl": {
+      "bytes": 76249,
+      "sha256": "aa1d82672cda091744f89702baaaf3a571a7cf597ae141cd054d894bab244567"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\01\\plan.json": {
+      "bytes": 1809,
+      "sha256": "a8a19f32f03e08c6bc34ad17fcd3078218c0f388a1000f5a28eaae8c93a7703c"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\01\\raw_tree.json": {
+      "bytes": 4657,
+      "sha256": "20aa1a5fe10f837f5741cc69aab0245920ddd442d2468184dc05795087e3612a"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\01\\replay-receipt.json": {
+      "bytes": 1653,
+      "sha256": "356c9cbd6b17eda86baf43b80453d0d0535cc34c0b37c2dbb9e0f2b47bedac8b"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\01\\replay.lean": {
+      "bytes": 5220,
+      "sha256": "02dbf84a3ed1482e37ad75a8fd5c5785c4bae6612c67d7602a91064ff8b556b5"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\01\\replay.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\01\\replay.stdout": {
+      "bytes": 761,
+      "sha256": "2de2232e7bd7ce89db1c1dd7ae2feedf5b9c2b92b94250874c8a346c9b207708"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\01\\result.json": {
+      "bytes": 238,
+      "sha256": "a9e474be874d92bf8c4580494074ffb1ad70b129cea338c8ebaa1fd59f7322f1"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\01\\session.json": {
+      "bytes": 537,
+      "sha256": "f8bef9dd7841f5c7a0bb9e2c784ef22c7f5c7b3f401126088232eb25207c0c84"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\01\\source.lean": {
+      "bytes": 640,
+      "sha256": "1c934ede5d3f068c24d12dc19d4b887078e5d17904cb690f022044714cf244e0"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\01\\trace.json": {
+      "bytes": 2336,
+      "sha256": "eb96a05e4ca578ed3d0580d41679a84f3f60e598d93ccde5e45ff8909b55b7c5"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\03\\VerifiedReplay.lean": {
+      "bytes": 4450,
+      "sha256": "a642aaf993f884c26c255ca3cdf1f4c6227ccc87273880243a0fc9c153761f23"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\03\\accepted-proof.lean": {
+      "bytes": 714,
+      "sha256": "ad2a2c8856304943efc10d6fa86a6cf0a7057b08a7efaee38ff5f812735c0881"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\03\\dataset.json": {
+      "bytes": 5110,
+      "sha256": "7975e11a24d74f326387e82fd4b8f9fc2489d1d570e44c17c5f8a03e1b9555ff"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\03\\historical-proof-receipt.json": {
+      "bytes": 1296,
+      "sha256": "189faa2284505622243107ce4fe2ca2db7857e5b2376976087de6bd023d96b75"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\03\\historical-proof.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\03\\historical-proof.stdout": {
+      "bytes": 694,
+      "sha256": "7d442641e0860f67253f8f174e7f5c42128ba3ad9029a05abc3f7b61da55724b"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\03\\observer.jsonl": {
+      "bytes": 19501,
+      "sha256": "fdf89611fe10ec4d6f36328c9fe6007eca5e8bec6d99d0170eead88121024567"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\03\\plan.json": {
+      "bytes": 1248,
+      "sha256": "9eb132c6f6dcc0d49dde35dbee57fd98c7a134c4abaa72f5f841e3bb6b2a736d"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\03\\raw_tree.json": {
+      "bytes": 2656,
+      "sha256": "c7d52792ae1128a9c7e3ae5ac2791bfb49ce349d07f3837e77db66e4261f1186"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\03\\replay-receipt.json": {
+      "bytes": 1650,
+      "sha256": "af613c9ba13d1b66ddb3affb24a72f653676248adce2cebbf3265ab3832e910a"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\03\\replay.lean": {
+      "bytes": 5175,
+      "sha256": "31a30d91158a31fc56086268a08e71c09c98f84d79c334e4cf0846ea2d668ea6"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\03\\replay.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\03\\replay.stdout": {
+      "bytes": 800,
+      "sha256": "76af1b837d0eea58679d6f2a055ae764a29ef2979cdc0da4b81285312de51a61"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\03\\result.json": {
+      "bytes": 227,
+      "sha256": "c1bfb25a609509b83ef84ebbba9b3b3f0c58a5f11725794607a1366b4e6d9bf7"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\03\\session.json": {
+      "bytes": 529,
+      "sha256": "f644c9d1713330dcbf4f007699c6a03c912bd7403fb8f1685cbc00c5855457c6"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\03\\source.lean": {
+      "bytes": 596,
+      "sha256": "87e0faa213a7af0d8074ed8e166152e22e0ff80b13607c6e6f2b34235c822883"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\03\\trace.json": {
+      "bytes": 1466,
+      "sha256": "fc72e276fa8743a968bcd5d742e6619a682bcfc03b83349276a4af24f09e4c1c"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\05\\VerifiedReplay.lean": {
+      "bytes": 4450,
+      "sha256": "a642aaf993f884c26c255ca3cdf1f4c6227ccc87273880243a0fc9c153761f23"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\05\\accepted-proof.lean": {
+      "bytes": 713,
+      "sha256": "021e3ee7337678a20b2037b9b90aca1d454371a4c4a4632c953b5757d92b6cec"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\05\\dataset.json": {
+      "bytes": 6280,
+      "sha256": "179c51f5f802311f9d1f292902fb4f0d452159dbe33afd6e14d823cae948fa0a"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\05\\historical-proof-receipt.json": {
+      "bytes": 1708,
+      "sha256": "0a5ef7a19fd436b22d16e580c74346893ba7aef0f935d8cba775a05005e42007"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\05\\historical-proof.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\05\\historical-proof.stdout": {
+      "bytes": 625,
+      "sha256": "a10c1c8f6813f32fe96e39ff85e526dcac9f5a4af9c18a3adafd54dfcaf894e2"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\05\\observer.jsonl": {
+      "bytes": 31034,
+      "sha256": "3a1a8743bc187fcf51d7336b18d81fbb4bc316100304fe3fa62edae0ffe0c592"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\05\\plan.json": {
+      "bytes": 1636,
+      "sha256": "53602d4b779a92ff216d7aeda7aa8705a1c62d4e9002bac11c8a8314558befc6"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\05\\raw_tree.json": {
+      "bytes": 4420,
+      "sha256": "6352dae7f7424a05ab595614194128123dd29d961dd996a043e8a716564221de"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\05\\replay-receipt.json": {
+      "bytes": 1650,
+      "sha256": "4a22511c93a7193217a0660ed94587e33e8656fc211057e96d8057cdd4b717e0"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\05\\replay.lean": {
+      "bytes": 5152,
+      "sha256": "d34a02103ab22938ab32b42936cb32dc4e94ce8da66f0682548f45ffc67af404"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\05\\replay.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\05\\replay.stdout": {
+      "bytes": 768,
+      "sha256": "6b1c2d1426090e10ae1ccf61fe0a59bc6be094f64570aa08308c7b140e6403c5"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\05\\result.json": {
+      "bytes": 250,
+      "sha256": "d57b13d005d644955a5af16efc1ac1b51f05cb8b54b4bc1aedb459f1d82b354c"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\05\\session.json": {
+      "bytes": 536,
+      "sha256": "2bd93fd06d06d3b3b67ee9717e871eda6c607bc8e976db4b118a6bcfc27df12d"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\05\\source.lean": {
+      "bytes": 575,
+      "sha256": "78d3be9fb0da44c2576e6d51232c6a1f5444ac6573c48ca5269d24b8df316fad"
+    },
+    "C:\\Users\\21812\\Desktop\\ai4math_26Summercamp\\Alpha-Proof-26-summer-school\\.downloads\\verified-trajectory-local-20260828\\final-v3\\05\\trace.json": {
+      "bytes": 2038,
+      "sha256": "4c44af0d78714014c240e57114b067222d2ef51c76f8387bdb22aefa4bf14dd7"
+    }
+  },
+  "large_files_remote_only": {
+    "result/actor1-before.pt": {
+      "bytes": 84564643,
+      "sha256": "ae6ca39fa6fc69e2b01944e9b8699698842e9a77ec971340079733c0f930afbf"
+    },
+    "result/actor1-final.pt": {
+      "bytes": 84564643,
+      "sha256": "ae6ca39fa6fc69e2b01944e9b8699698842e9a77ec971340079733c0f930afbf"
+    },
+    "result/actor2-initial.pt": {
+      "bytes": 84564643,
+      "sha256": "b9c0b3cc2b43fd6c9cf1478ab4bf4d8392c33e176079b3e3b5761ec730a759ff"
+    },
+    "result/learner-store/checkpoints/502ef00442912f30bb700dfb875fce00d54c30a6fd19bea952af4bc17a56b945/backend_state.json": {
+      "bytes": 338324188,
+      "sha256": "10f220d8d1f80237168b1a4a2281e2a9408f8bc6a6cacc948e3f671f1b2e6ab3"
+    },
+    "result/learner-store/checkpoints/51d1e947f4757b60362853ff2d2d79f786e4b289754a1f07453346f4fc040028/backend_state.json": {
+      "bytes": 338329988,
+      "sha256": "b66b0d75d7b7bfd34846606db3351e8c997bcdcc38cb33047d8148037327bea0"
+    },
+    "result/learner-store/releases/0103155583b260c7863ea58bbf2d3377444c272db0ea4f3a75dd49c40b65c98e/weights.json": {
+      "bytes": 112740691,
+      "sha256": "81024c827f156c0f09d29beb76d1beb2f8f6b82db317dad58d6c961e6b7d67e0"
+    },
+    "result/learner-store/releases/58eb723d0391a33680c950299c580bef736bd163ebfb8c831e8bcca0a4e1cb19/weights.json": {
+      "bytes": 112740691,
+      "sha256": "de4853f13893da1f832aa5af992981f91f041421e40ef0beefede473f3a4eb23"
+    },
+    "result/snapshots/mixed-central/502ef00442912f30bb700dfb875fce00d54c30a6fd19bea952af4bc17a56b945/backend.json": {
+      "bytes": 338324189,
+      "sha256": "6145224d5f076a8f79172cac1d1fed83e19636c19844b91c0d776e90ed6304de"
+    },
+    "result/snapshots/mixed-central/learner-step-00000001/backend.json": {
+      "bytes": 338324189,
+      "sha256": "6145224d5f076a8f79172cac1d1fed83e19636c19844b91c0d776e90ed6304de"
+    },
+    "result/snapshots/mixed-central/learner-step-00000002/backend.json": {
+      "bytes": 338329989,
+      "sha256": "ee26d4b9ea9455d5b47f62a497a77ec7873bcbdf5093b530a63bacd367b995c2"
+    }
+  },
+  "ok": true,
+  "performance_improvement_claimed": false,
+  "releases": [
+    "58eb723d0391a33680c950299c580bef736bd163ebfb8c831e8bcca0a4e1cb19",
+    "0103155583b260c7863ea58bbf2d3377444c272db0ea4f3a75dd49c40b65c98e"
+  ],
+  "remote_unpublished_exclusions": [
+    "result/learner-store/checkpoints/.staging-650f54df94df4a2ea02bdb58e48c80af",
+    "result/learner-store/checkpoints/.staging-f9a6dec356334b8c8cf43c72607d5263",
+    "result/learner-store/releases/.staging-93397fb8d8d44f53ac6d2c60f91d4fa9",
+    "result/learner-store/releases/.staging-dc1756f7e94341369ac42f00af360540",
+    "result/learner-store/runs/.staging-7c38a3b91c294c11a27b1e8e49c3d3fa",
+    "result/learner-store/writers"
+  ],
+  "reported_worker_gates": {
+    "CP1_complete_private_restore_exact": true,
+    "R1_immutable_and_R2_distinct": true,
+    "actor1_exact_R1_weights": true,
+    "actor2_exact_R2_weights": true,
+    "actor_seeds_independent": true,
+    "first_adapter_and_head_changed": true,
+    "first_receipt_9_1_verified": true,
+    "full_frozen_base_exact": true,
+    "host_RNG_exact": true,
+    "new_actor_private_states_fresh": true,
+    "old_actor_complete_state_unchanged": true,
+    "publishing_does_not_mutate_learner": true,
+    "sampler_restore_exact": true,
+    "second_adapter_and_head_changed": true,
+    "second_receipt_9_1_verified": true,
+    "two_cursor_commits_exact": true
+  },
+  "run_sha256": "0917f9b2394c75f5c4f034a55a6138cb3791c79b79b06774ceb5a053aa4f5b05",
+  "sampled_unique_rows": {
+    "mathlib_sft": 2,
+    "replay": 13
+  },
+  "schema_version": "reap.mixed-learner.local-audit.v1",
+  "scope": "Local source/data/receipt/chain consistency. Tensor equality, Adam/RNG restore and frozen-base measurements depend on actual frozen GPU worker; no local Torch/Lean/train rerun.",
+  "small_files_locally_rehashed": 227,
+  "snapshots_checked": [
+    "result/snapshots/mixed-central/502ef00442912f30bb700dfb875fce00d54c30a6fd19bea952af4bc17a56b945/manifest.json",
+    "result/snapshots/mixed-central/learner-step-00000001/manifest.json",
+    "result/snapshots/mixed-central/learner-step-00000002/manifest.json"
+  ],
+  "worker_exit_code": 0
+}

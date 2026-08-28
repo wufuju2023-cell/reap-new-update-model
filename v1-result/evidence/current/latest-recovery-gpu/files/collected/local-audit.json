@@ -1,0 +1,29 @@
+{
+  "status": "passed_recovery_consumption_only",
+  "raw_files": 60,
+  "actual_code_hashes": 68,
+  "report_sha256": "362f50a4063721f619d995b6be4baf6e95ad0d2b999aa2b6ffcdf8e2f2c72c71",
+  "probe_returncode": 0,
+  "child_pids": [
+    3608,
+    3609
+  ],
+  "original_R1_complete_sha256": "157a429fd75352a1d64e94ba7b40a22b875b066defdacd39cca5d434764768bd",
+  "R2_release": "8a2bf4d4e93cf8e4f79e6905b2a01b7df831599498e4bf856baf841e05e56dea",
+  "gates": {
+    "actual_R2_HTTP_policy_value": true,
+    "both_base_fingerprints_unchanged": true,
+    "both_retired_and_child_exit0": true,
+    "original_R1_complete_private_state_restored": true,
+    "original_cp2_release_parameters_exact": true,
+    "original_head_selection_bound": true,
+    "restored_R1_unchanged_during_R2_consumption": true,
+    "two_new_independent_7B_processes": true
+  },
+  "scope": "Local independent raw-file and metadata audit. Real pinned worker performed CPU tensor decoding and actual GPU/HTTP operations; no GPU rerun by auditor.",
+  "boundaries": [
+    "Original run remains failed. R1 was fully restored into a new process, not uninterrupted.",
+    "No new training, publication, Lean proof, complete collector campaign, throughput comparison, or kernel trace.",
+    "Large tensor payloads remain remote; local audit verifies their pinned worker evidence, not an independent local tensor decode."
+  ]
+}

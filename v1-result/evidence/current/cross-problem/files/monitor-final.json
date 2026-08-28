@@ -1,0 +1,51 @@
+{
+  "epoch": 1787851192.0565126,
+  "root": "/mnt/workspace/reap-ttt-20260828-incremental",
+  "files": [
+    "deployment-receipt.json",
+    "deployment.tar.gz",
+    "launch-worker.log",
+    "launch-worker.py",
+    "model-verification.json",
+    "part-0",
+    "part-1",
+    "part-2",
+    "part-3",
+    "part-4",
+    "part-5",
+    "part-6",
+    "server-command.json",
+    "server.log",
+    "server.pid"
+  ],
+  "model-verification.json": "{\"passed\": true, \"epoch\": 1787850547.5827742, \"files\": {\".gitattributes\": \"c4cb545ce9c9bbbff6607aa2f92b4a57a0851402\", \"README.md\": \"69fa127701c2dc7b8728ed4596ea5c26df84a7fd\", \"added_tokens.json\": \"482ced4679301bf287ebb310bdd1790eb4514232\", \"config.json\": \"bd2a49ebd05c1b89d292130875b773dda6eb7fd0\", \"configuration.json\": \"7853e762727fdc2e889c2606f8b9950cde165097\", \"generation_config.json\": \"504ff911661fed5bdf7830ef32e78032c2dc89bc\", \"merges.txt\": \"31349551d90c7606f325fe0f11bbb8bd5fa0d7c7\", \"model-00001-of-00004.safetensors\": \"ee47ed2bcec347b49889318e18829317c28a24c9218a18ed656af309ad9dbe8c\", \"model-00002-of-00004.safetensors\": \"35f819719647d84594f4d1097dd76371c2273072a4ba44e90d496a93506730f5\", \"model-00003-of-00004.safetensors\": \"a869a66b2eb8e0cc4a034b7106c677b62b3dfe7e0fcd6e7e28ce3236a35591e8\", \"model-00004-of-00004.safetensors\": \"51437ff72d3506924876b22f775dcf20702276381d58973ac937d870dc2cc12e\", \"model.safetensors.index.json\": \"6ca5084b88f1a95fef37f1b94c6e87ff69422bb7\", \"special_tokens_map.json\": \"17305b3603dfb19ccc0f658ec2cd2cd3adff4a58\", \"tokenizer.json\": \"9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa\", \"tokenizer_config.json\": \"890cea437e3ca044df0eefa0f3dd51732956f5ce\", \"vocab.json\": \"4783fe10ac3adce15ac8f358ef5462739852c569\"}}",
+  "launch-worker.log": "",
+  "health": {
+    "ok": true,
+    "backend": "real-search",
+    "gpu_actor_completed": 50,
+    "gpu_actor_max_active": 1,
+    "gpu_actor": {
+      "schema_version": "reap.gpu-actor.metrics.v1",
+      "accepting": true,
+      "submitted": 50,
+      "started": 50,
+      "completed": 50,
+      "failed": 0,
+      "active": 0,
+      "max_active": 1,
+      "queued": 0,
+      "max_queued": 3,
+      "queue_wait_seconds_total": 32.0158418850001,
+      "queue_wait_seconds_max": 14.123869388999992,
+      "execution_seconds_total": 82.66107126100007,
+      "execution_seconds_max": 15.53477972799999,
+      "active_execution_seconds": 0.0
+    },
+    "max_resident_sessions": 2
+  },
+  "server_log_tail": "`torch_dtype` is deprecated! Use `dtype` instead!\n\nLoading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]\nLoading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 64.16it/s]\n{\"ready\": true, \"host\": \"127.0.0.1\", \"port\": 8760, \"backend\": \"real-search\", \"policy_scoring\": \"tokenwise\", \"policy_score_batch_size\": 2, \"policy_score_token_chunk\": 8, \"max_post_update_kl\": null}\n/mnt/workspace/reap-v1-20260827-gpu/code/venv/lib/python3.12/site-packages/peft/tuners/tuners_utils.py:1064: UserWarning: Adapter inherit-concurrent-03 was active which is now deleted. Setting active adapter to __bootstrap__.\n  warnings.warn(\n/mnt/workspace/reap-v1-20260827-gpu/code/venv/lib/python3.12/site-packages/peft/tuners/tuners_utils.py:1064: UserWarning: Adapter experience-target-05 was active which is now deleted. Setting active adapter to __bootstrap__.\n  warnings.warn(\n/mnt/workspace/reap-v1-20260827-gpu/code/venv/lib/python3.12/site-packages/peft/tuners/tuners_utils.py:1064: UserWarning: Adapter inherit-refill-02 was active which is now deleted. Setting active adapter to __bootstrap__.\n  warnings.warn(\n",
+  "worker_alive": true,
+  "worker_io": "rchar: 15248263145\nwchar: 1808\nsyscr: 1983\nsyscw: 3\nread_bytes: 15247224832\nwrite_bytes: 12288\ncancelled_write_bytes: 0\n",
+  "worker_state": "S"
+}

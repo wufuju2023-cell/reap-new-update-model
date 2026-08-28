@@ -1,0 +1,34 @@
+{
+  "schema_version": "reap.verified-replay.plan.v1",
+  "nodes": [
+    {
+      "node_index": 0,
+      "state": [
+        "⊢ ¬∀ (n : ℕ), n = 0"
+      ],
+      "kind": "OR",
+      "tactic": "push_neg",
+      "children": [
+        1
+      ]
+    },
+    {
+      "node_index": 1,
+      "state": [
+        "⊢ ∃ n, n ≠ 0"
+      ],
+      "kind": "OR",
+      "tactic": "refine' ⟨1, by norm_num⟩",
+      "children": [
+        2
+      ]
+    },
+    {
+      "node_index": 2,
+      "state": [],
+      "kind": "terminal",
+      "tactic": "",
+      "children": []
+    }
+  ]
+}

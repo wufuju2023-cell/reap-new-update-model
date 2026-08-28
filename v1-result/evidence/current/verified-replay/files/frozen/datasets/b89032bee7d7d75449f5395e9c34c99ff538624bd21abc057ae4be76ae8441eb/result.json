@@ -1,0 +1,1 @@
+{"elapsed_ns":71653538300,"error":null,"proof_script":"intro n\ninduction n <;> simp_all [hfstep, hgstep]\nring\nnext => simp","schema_version":"reap.training.result.v1","session_id":"multi-20260827-01r1","solved":true,"status":"solved"}

@@ -1,0 +1,7 @@
+{
+  "checkpoint_sha256": "863359c986dc42edaf86eb7d6373562686d2cf85b62513ab1a6b86926a4b9ced",
+  "goal_complete": false,
+  "input_integrity_pending": true,
+  "release_sha256": "0551bdcd0d511b87f5b0307b146efeef68a493b3d62deef684bffa387ce9abb8",
+  "training_gates_passed": true
+}

@@ -1,0 +1,7 @@
+{
+  "worker_pid": 3593,
+  "root": "/mnt/workspace/reap/runs/20260828-latest-recovery",
+  "old_code_files": 67,
+  "new_training_steps": 0,
+  "publish_calls": 0
+}

@@ -1,0 +1,28 @@
+{
+  "source_theorem_sha256": "1c934ede5d3f068c24d12dc19d4b887078e5d17904cb690f022044714cf244e0",
+  "generated_proof_sha256": "941e19a050e5cd91e0ef4a8ac5279240063a736a402f9ccea7813adf97c92873",
+  "proof_from_session": "multi-20260827-01r1",
+  "image": "df23cd6a9b5b6df30fa003285fadcdc1e5d60919eb43b823b0731c17bf135646",
+  "command": [
+    "podman",
+    "run",
+    "--name",
+    "reap-multiround-proof-multi-20260827-01r1",
+    "--network",
+    "none",
+    "-v",
+    "/mnt/c/Users/21812/Desktop/ai4math_26Summercamp/Alpha-Proof-26-summer-school/.downloads/multiround-run-20260827/proof-check01/01-CoupledOddSquareProof.lean:/proof/01-CoupledOddSquareProof.lean:ro",
+    "--entrypoint",
+    "bash",
+    "df23cd6a9b5b6df30fa003285fadcdc1e5d60919eb43b823b0731c17bf135646",
+    "-lc",
+    "lake env lean /proof/01-CoupledOddSquareProof.lean"
+  ],
+  "network": "none",
+  "returncode": 0,
+  "container_exit_code": 0,
+  "container_image": "df23cd6a9b5b6df30fa003285fadcdc1e5d60919eb43b823b0731c17bf135646",
+  "elapsed_seconds": 52.30264023100244,
+  "stdout": "Try this:\n  [apply] ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\n/proof/01-CoupledOddSquareProof.lean:20:28: warning: This simp argument is unused:\n  hfstep\n\nHint: Omit it from the simp argument list.\n  simp_all [hf̵s̵t̵e̵p̵,̵ ̵h̵gstep]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/proof/01-CoupledOddSquareProof.lean:20:36: warning: This simp argument is unused:\n  hgstep\n\nHint: Omit it from the simp argument list.\n  simp_all [hfstep,̵ ̵h̵g̵s̵t̵e̵p̵]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n'MultiroundCandidates.CoupledOddSquare.coupled_odd_square' depends on axioms: [propext]\n",
+  "stderr": ""
+}

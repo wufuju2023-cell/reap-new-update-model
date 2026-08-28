@@ -1,0 +1,357 @@
+{
+  "R1_full_private_state_restoration": true,
+  "R2_parameters": {
+    "adapter": "8d9fcdda49eb821b2b7dc1b2a5df9c778c31ca2a6232e3c6150c15e8a848e13e",
+    "value_head": "afa785f60bcc5e46bece7ecab0ae90392f9b1e6fa22fd22b1f27aaa8f40704bd"
+  },
+  "ReplicaCollector_batch_executed": false,
+  "automatic_retry_allowed": false,
+  "gates": {
+    "actual_R2_HTTP_policy_value": true,
+    "both_base_fingerprints_unchanged": true,
+    "both_retired_and_child_exit0": true,
+    "original_R1_complete_private_state_restored": true,
+    "original_cp2_release_parameters_exact": true,
+    "original_head_selection_bound": true,
+    "restored_R1_unchanged_during_R2_consumption": true,
+    "two_new_independent_7B_processes": true
+  },
+  "head": {
+    "checkpoint_sha256": "700ee66fbe22e55d41e7eb31041b1fea0d49c7de0d9f619687c749752ebc4701",
+    "model_release_sha256": "8a2bf4d4e93cf8e4f79e6905b2a01b7df831599498e4bf856baf841e05e56dea",
+    "previous_head_sha256": "40ebecf1641df70be7582229a8d9eee8b4ff2de33b32ad49f0e915edf81cf5cb",
+    "publication_intent_sha256": "5a6910ad8b28f3eeb48fe0e0ff93b1b77a0c326e225fbf5d35656f9000ae7c84",
+    "run_sha256": "ea79c9af443ee80a8e9669506a6aabc1a5dcad47687c40be772798c82278b60a",
+    "schema_version": "reap.learner.release-head.v1",
+    "step": 2
+  },
+  "learner_restore_performed": false,
+  "new_Lean_search": false,
+  "new_mathematical_verification": false,
+  "new_training_steps": 0,
+  "ok": true,
+  "original_actor_uninterrupted": false,
+  "original_run_still_failed": true,
+  "publish_calls": 0,
+  "real_7B_GPU_gate_passed": true,
+  "release": {
+    "acceptance": {
+      "committed_step": 2,
+      "kind": "mixed-training"
+    },
+    "contract": {
+      "backend": "mixed-replay",
+      "base_sha256": "2ff73d37f6f4edad02f5c2e67bdabeeecef97a187b4747834e6acdf648980839",
+      "hidden_size": 3584,
+      "lora_alpha": 32,
+      "lora_dropout": 0.0,
+      "lora_rank": 16,
+      "mixed_config": {
+        "base_tokenizer_sha256": "2ff73d37f6f4edad02f5c2e67bdabeeecef97a187b4747834e6acdf648980839",
+        "eos_token_id": 151643,
+        "head": "linear-silu-linear-categorical",
+        "hidden_size": 3584,
+        "kl_beta": 0.02,
+        "kl_reduction": "mean_over_sampled_rows_of_prefix_token_sum_current_to_frozen_base",
+        "learning_rate": 0.0001,
+        "lora": {
+          "alpha": 32,
+          "dropout": 0.0,
+          "rank": 16,
+          "target_modules": [
+            "down_proj",
+            "gate_proj",
+            "k_proj",
+            "o_proj",
+            "q_proj",
+            "up_proj",
+            "v_proj"
+          ]
+        },
+        "max_batch_samples": 10,
+        "max_grad_norm": 1.0,
+        "max_post_update_kl": 100.0,
+        "max_sequence_tokens": 4096,
+        "mixture": {
+          "ratio_scope": "every_complete_batch",
+          "sample_weight": 0.1,
+          "sampling_unit": "verified_action_row",
+          "source_counts": {
+            "mathlib_sft": 1,
+            "replay": 9
+          },
+          "source_losses": {
+            "mathlib_sft": [
+              "policy",
+              "value"
+            ],
+            "replay": [
+              "policy",
+              "value"
+            ]
+          },
+          "source_profiles": {
+            "mathlib_sft": "mathlib_sft_linear_negative_remaining_actions_v1",
+            "replay": "verified-generated-action-negative-longest-branch-v1"
+          }
+        },
+        "objective": "verified_replay_mathlib_sft",
+        "policy_loss": "mean_over_sampled_rows_of_joint_tactic_plus_one_EOS_negative_log_probability",
+        "source_loss_report_reduction": "contribution_to_full_batch_mean; includes_1_over_10_weight",
+        "support": {
+          "distance_max": 8,
+          "distance_min": 1,
+          "overflow": "reject",
+          "return": "negative_integer_verified_action_longest_branch; human_profile_linear_remaining_actions"
+        },
+        "tokenization": "canonical_tactic_separate_no_special_tokens_append_exactly_one_EOS",
+        "value_coefficient": 0.5,
+        "value_learning_rate": 0.0003,
+        "value_loss": "categorical_cross_entropy_exact_integer_class",
+        "value_semantics": "verified_negative_longest_branch_categorical.v1"
+      },
+      "objective": "verified_replay_mathlib_sft",
+      "target_modules": [
+        "down_proj",
+        "gate_proj",
+        "k_proj",
+        "o_proj",
+        "q_proj",
+        "up_proj",
+        "v_proj"
+      ],
+      "value_head": "linear-silu-linear-categorical-v1"
+    },
+    "data_receipt_sha256": "408f860d923d56253cad6f5ecb546dec2db106656718adb5a93f2375ee77f8df",
+    "model_release_sha256": "8a2bf4d4e93cf8e4f79e6905b2a01b7df831599498e4bf856baf841e05e56dea",
+    "reset": [
+      "optimizer",
+      "rng",
+      "buffer",
+      "policy_version",
+      "event_receipts"
+    ],
+    "run_sha256": "ea79c9af443ee80a8e9669506a6aabc1a5dcad47687c40be772798c82278b60a",
+    "schema_version": "reap.learner.release.v1",
+    "source": {
+      "checkpoint_sha256": "700ee66fbe22e55d41e7eb31041b1fea0d49c7de0d9f619687c749752ebc4701",
+      "learner_id": "latest-mechanism-central",
+      "learner_step": 2,
+      "source_kind": "learner_checkpoint"
+    },
+    "transfer": [
+      "adapter",
+      "value_head"
+    ],
+    "weights_sha256": "2b3d6bdedbd36e95d7cee4bf1a0d47a8f0faae0e4a42a6fc2f301211fcf15dd1"
+  },
+  "restored_original_complete_sha256": "157a429fd75352a1d64e94ba7b40a22b875b066defdacd39cca5d434764768bd",
+  "schema_version": "reap.latest-release.recovery-consumption.v1",
+  "service_ready": [
+    {
+      "base_fingerprint": {
+        "base_parameters_require_grad": false,
+        "buffer_tensors": 1,
+        "bytes": 15231233280,
+        "coverage": "all_non_LoRA_model_parameters_and_buffers",
+        "cpu_chunk_bytes": 8388608,
+        "elements": 7615616576,
+        "parameter_tensors": 339,
+        "sha256": "426bf7dced89e3aeb2ba88fcd492078a754d58552af77ee32446cb7f97a61ab5"
+      },
+      "contract": {
+        "backend": "mixed-replay",
+        "base_sha256": "2ff73d37f6f4edad02f5c2e67bdabeeecef97a187b4747834e6acdf648980839",
+        "hidden_size": 3584,
+        "lora_alpha": 32,
+        "lora_dropout": 0.0,
+        "lora_rank": 16,
+        "mixed_config": {
+          "base_tokenizer_sha256": "2ff73d37f6f4edad02f5c2e67bdabeeecef97a187b4747834e6acdf648980839",
+          "eos_token_id": 151643,
+          "head": "linear-silu-linear-categorical",
+          "hidden_size": 3584,
+          "kl_beta": 0.02,
+          "kl_reduction": "mean_over_sampled_rows_of_prefix_token_sum_current_to_frozen_base",
+          "learning_rate": 0.0001,
+          "lora": {
+            "alpha": 32,
+            "dropout": 0.0,
+            "rank": 16,
+            "target_modules": [
+              "down_proj",
+              "gate_proj",
+              "k_proj",
+              "o_proj",
+              "q_proj",
+              "up_proj",
+              "v_proj"
+            ]
+          },
+          "max_batch_samples": 10,
+          "max_grad_norm": 1.0,
+          "max_post_update_kl": 100.0,
+          "max_sequence_tokens": 4096,
+          "mixture": {
+            "ratio_scope": "every_complete_batch",
+            "sample_weight": 0.1,
+            "sampling_unit": "verified_action_row",
+            "source_counts": {
+              "mathlib_sft": 1,
+              "replay": 9
+            },
+            "source_losses": {
+              "mathlib_sft": [
+                "policy",
+                "value"
+              ],
+              "replay": [
+                "policy",
+                "value"
+              ]
+            },
+            "source_profiles": {
+              "mathlib_sft": "mathlib_sft_linear_negative_remaining_actions_v1",
+              "replay": "verified-generated-action-negative-longest-branch-v1"
+            }
+          },
+          "objective": "verified_replay_mathlib_sft",
+          "policy_loss": "mean_over_sampled_rows_of_joint_tactic_plus_one_EOS_negative_log_probability",
+          "source_loss_report_reduction": "contribution_to_full_batch_mean; includes_1_over_10_weight",
+          "support": {
+            "distance_max": 8,
+            "distance_min": 1,
+            "overflow": "reject",
+            "return": "negative_integer_verified_action_longest_branch; human_profile_linear_remaining_actions"
+          },
+          "tokenization": "canonical_tactic_separate_no_special_tokens_append_exactly_one_EOS",
+          "value_coefficient": 0.5,
+          "value_learning_rate": 0.0003,
+          "value_loss": "categorical_cross_entropy_exact_integer_class",
+          "value_semantics": "verified_negative_longest_branch_categorical.v1"
+        },
+        "objective": "verified_replay_mathlib_sft",
+        "target_modules": [
+          "down_proj",
+          "gate_proj",
+          "k_proj",
+          "o_proj",
+          "q_proj",
+          "up_proj",
+          "v_proj"
+        ],
+        "value_head": "linear-silu-linear-categorical-v1"
+      },
+      "control_timeout_seconds": 1800,
+      "device": "cuda:0",
+      "hip": "7.2.53211",
+      "pid": 3608,
+      "url": "http://127.0.0.1:37115"
+    },
+    {
+      "base_fingerprint": {
+        "base_parameters_require_grad": false,
+        "buffer_tensors": 1,
+        "bytes": 15231233280,
+        "coverage": "all_non_LoRA_model_parameters_and_buffers",
+        "cpu_chunk_bytes": 8388608,
+        "elements": 7615616576,
+        "parameter_tensors": 339,
+        "sha256": "426bf7dced89e3aeb2ba88fcd492078a754d58552af77ee32446cb7f97a61ab5"
+      },
+      "contract": {
+        "backend": "mixed-replay",
+        "base_sha256": "2ff73d37f6f4edad02f5c2e67bdabeeecef97a187b4747834e6acdf648980839",
+        "hidden_size": 3584,
+        "lora_alpha": 32,
+        "lora_dropout": 0.0,
+        "lora_rank": 16,
+        "mixed_config": {
+          "base_tokenizer_sha256": "2ff73d37f6f4edad02f5c2e67bdabeeecef97a187b4747834e6acdf648980839",
+          "eos_token_id": 151643,
+          "head": "linear-silu-linear-categorical",
+          "hidden_size": 3584,
+          "kl_beta": 0.02,
+          "kl_reduction": "mean_over_sampled_rows_of_prefix_token_sum_current_to_frozen_base",
+          "learning_rate": 0.0001,
+          "lora": {
+            "alpha": 32,
+            "dropout": 0.0,
+            "rank": 16,
+            "target_modules": [
+              "down_proj",
+              "gate_proj",
+              "k_proj",
+              "o_proj",
+              "q_proj",
+              "up_proj",
+              "v_proj"
+            ]
+          },
+          "max_batch_samples": 10,
+          "max_grad_norm": 1.0,
+          "max_post_update_kl": 100.0,
+          "max_sequence_tokens": 4096,
+          "mixture": {
+            "ratio_scope": "every_complete_batch",
+            "sample_weight": 0.1,
+            "sampling_unit": "verified_action_row",
+            "source_counts": {
+              "mathlib_sft": 1,
+              "replay": 9
+            },
+            "source_losses": {
+              "mathlib_sft": [
+                "policy",
+                "value"
+              ],
+              "replay": [
+                "policy",
+                "value"
+              ]
+            },
+            "source_profiles": {
+              "mathlib_sft": "mathlib_sft_linear_negative_remaining_actions_v1",
+              "replay": "verified-generated-action-negative-longest-branch-v1"
+            }
+          },
+          "objective": "verified_replay_mathlib_sft",
+          "policy_loss": "mean_over_sampled_rows_of_joint_tactic_plus_one_EOS_negative_log_probability",
+          "source_loss_report_reduction": "contribution_to_full_batch_mean; includes_1_over_10_weight",
+          "support": {
+            "distance_max": 8,
+            "distance_min": 1,
+            "overflow": "reject",
+            "return": "negative_integer_verified_action_longest_branch; human_profile_linear_remaining_actions"
+          },
+          "tokenization": "canonical_tactic_separate_no_special_tokens_append_exactly_one_EOS",
+          "value_coefficient": 0.5,
+          "value_learning_rate": 0.0003,
+          "value_loss": "categorical_cross_entropy_exact_integer_class",
+          "value_semantics": "verified_negative_longest_branch_categorical.v1"
+        },
+        "objective": "verified_replay_mathlib_sft",
+        "target_modules": [
+          "down_proj",
+          "gate_proj",
+          "k_proj",
+          "o_proj",
+          "q_proj",
+          "up_proj",
+          "v_proj"
+        ],
+        "value_head": "linear-silu-linear-categorical-v1"
+      },
+      "control_timeout_seconds": 1800,
+      "device": "cuda:0",
+      "hip": "7.2.53211",
+      "pid": 3609,
+      "url": "http://127.0.0.1:33441"
+    }
+  ],
+  "worker_result": {
+    "bytes": 164,
+    "file": "worker-result.json",
+    "sha256": "9cdb2db91936ecbed0af57c5c4d00d248cfec77e1953ae485572ab4f563ca7a5"
+  }
+}

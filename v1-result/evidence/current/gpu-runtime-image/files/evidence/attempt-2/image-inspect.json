@@ -1,0 +1,326 @@
+[
+     {
+          "Id": "fc5687143dd7fd6ca276e45ed1d420fd3b611fa3299c42245216f94326c2dba3",
+          "Digest": "sha256:ed6b3a035fcded94ce2c48653120d04aeb7bb7b57e9b49782ad3edd37943255d",
+          "RepoTags": [
+               "localhost/reap-gpu:runtime-20260828"
+          ],
+          "RepoDigests": [
+               "localhost/reap-gpu@sha256:ed6b3a035fcded94ce2c48653120d04aeb7bb7b57e9b49782ad3edd37943255d"
+          ],
+          "Parent": "0a51253539cdecd2420a10327548a24433e96fdb55d63686a6f28d71dc989794",
+          "Comment": "",
+          "Created": "2026-08-27T21:58:14.84705566Z",
+          "Config": {
+               "User": "reap",
+               "ExposedPorts": {
+                    "8760/tcp": {}
+               },
+               "Env": [
+                    "PATH=/opt/venv/bin:/opt/rocm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "DEBIAN_FRONTEND=noninteractive",
+                    "LD_LIBRARY_PATH=/opt/rocm/lib",
+                    "PYTHONUNBUFFERED=1",
+                    "PYTHONDONTWRITEBYTECODE=1",
+                    "PYTHONPATH=/opt/reap-python:/opt/reap-gpu",
+                    "HF_HOME=/opt/huggingface",
+                    "TRANSFORMERS_OFFLINE=1",
+                    "HF_HUB_OFFLINE=1",
+                    "REAP_MODEL_PATH=/opt/models/REAL-Prover",
+                    "REAP_SNAPSHOT_ROOT=/workspace/out/snapshots"
+               ],
+               "Entrypoint": [
+                    "python",
+                    "-m",
+                    "gpu_runtime.server"
+               ],
+               "Cmd": [
+                    "--backend",
+                    "real",
+                    "--model-path",
+                    "/opt/models/REAL-Prover",
+                    "--snapshot-root",
+                    "/workspace/out/snapshots"
+               ],
+               "WorkingDir": "/workspace",
+               "Labels": {
+                    "io.buildah.version": "1.33.7",
+                    "org.opencontainers.image.ref.name": "rocm/pytorch:rocm7.2.4_ubuntu24.04_py3.12_pytorch_release_2.10.0+rocm7.2.4.lw.git3d3aa833",
+                    "org.opencontainers.image.version": "24.04"
+               }
+          },
+          "Version": "",
+          "Author": "",
+          "Architecture": "amd64",
+          "Os": "linux",
+          "Size": 29817042215,
+          "VirtualSize": 29817042215,
+          "GraphDriver": {
+               "Name": "overlay",
+               "Data": {
+                    "LowerDir": "/home/hsy/.local/share/containers/storage/overlay/630b34347bf6bfd65cc98108f6d2795996ad6121a4bc94cc9f29a778e2217521/diff:/home/hsy/.local/share/containers/storage/overlay/614e7e9c36cb26099bfd5a4c6bb5d285ecb7ea389f763da307ce747d5f48431a/diff:/home/hsy/.local/share/containers/storage/overlay/0b3cbfbdfeee22125eca612c564de504ed37db9c9cb80032574435cccc6c5aaf/diff:/home/hsy/.local/share/containers/storage/overlay/18009de50393a9c8d1ed93f17938a50944729f512328ecca523013b36641ed0c/diff:/home/hsy/.local/share/containers/storage/overlay/2b7c27f1c29efe54dbe0b267a2a1f35a1a65f84baae9ac18ee75bc874a357f6f/diff:/home/hsy/.local/share/containers/storage/overlay/355198a9eec4c6d0bfc53f5103ffa4555baaf717f40c7aa585869d2b096f212c/diff:/home/hsy/.local/share/containers/storage/overlay/8ec08a2ab77bbffbbf5ce82a2e87f42d1ec22e7ca2b3be5ca388e00f0112c28a/diff:/home/hsy/.local/share/containers/storage/overlay/39f39d58e8a1b8b86288393c48e1dc92c7bcae8b9b1a37a69d828ef8f6db2bca/diff:/home/hsy/.local/share/containers/storage/overlay/503aaf6233fd45570d5fac2ff655b4b757a057104b66b2cb478dd61ebc18ea38/diff:/home/hsy/.local/share/containers/storage/overlay/45bf911e1e48bcaf74310fd73fb55e9202aba2bfa4a54d86444dd88da123d752/diff:/home/hsy/.local/share/containers/storage/overlay/f2633f69b271bc74aa93ff309efa5b95cd92653df710fab0c2ae8e7852d01507/diff:/home/hsy/.local/share/containers/storage/overlay/f32067907d7e4630b222e33fa613da7b1135192e68bd4b3fd90e7cd2389ac38a/diff:/home/hsy/.local/share/containers/storage/overlay/a29b613e983fe6b082247d09767998f2f7f12c58e66996ed3557a8ca875512eb/diff:/home/hsy/.local/share/containers/storage/overlay/880507606e4c5a7e78c6a93d8c610c4ec0ecbb9e270edbc9b3b4a567a8b09737/diff:/home/hsy/.local/share/containers/storage/overlay/80f77b4b3fd64e2aebf9068ef0744ec5acd5b8c0e8b25a3265135c8ed9459164/diff:/home/hsy/.local/share/containers/storage/overlay/538812a4b9bd45adaac2b5e5b967daa6999aa44eb110aa32ae7c69702b906475/diff",
+                    "UpperDir": "/home/hsy/.local/share/containers/storage/overlay/b8bba0823df933ae7a7614bef08d1241a40b118e358d8b08f75b9707870f4aa3/diff",
+                    "WorkDir": "/home/hsy/.local/share/containers/storage/overlay/b8bba0823df933ae7a7614bef08d1241a40b118e358d8b08f75b9707870f4aa3/work"
+               }
+          },
+          "RootFS": {
+               "Type": "layers",
+               "Layers": [
+                    "sha256:538812a4b9bd45adaac2b5e5b967daa6999aa44eb110aa32ae7c69702b906475",
+                    "sha256:ba706710b01d46390833a8008c34d6becbace8529bb4540d800157003ebed56f",
+                    "sha256:23b20c949681d946628cb8b61cbf454905ff70495bc5a210e11be6c1b998eaaa",
+                    "sha256:003540beaa9be64258b60d8c2ac45a7d29d6bf6bd1e688a46f81e6776035b855",
+                    "sha256:0d24e247c253c046e08a3309be9a74bbed6eab9ec8b457a34348d8809c69c18a",
+                    "sha256:7f33f8effea8bd245556e74f2747817a178fe72316ae00494680437e776c33a7",
+                    "sha256:a202ee0769d28be14d1817cd8c142dd1c1fc11271a9c2c2a50ec8255c0a574d3",
+                    "sha256:76b2a40a425e7cb114972765472c1a411356d93e394910afc8722e040826debf",
+                    "sha256:e75d33e5d420fab4347e62b21474f95b957ad80f5ecccd62ed4af0bbf016c849",
+                    "sha256:3e8742e0514aa1ba3c4941e24957437434d37d689292733bbd3aaaddf818ec3f",
+                    "sha256:1a7a2ea660cf1a10dd8baabce317e5ec8f7dd249ca989280abc78feee1dc65da",
+                    "sha256:fd0be5e2932a4b5de72583c4120a77aea7b7ca9ee32a2012d71a15a694af5b2a",
+                    "sha256:5510dd0ca1396e52375ec45d15447c6cb5233ab5f5de37f4018a0e956b1b9466",
+                    "sha256:f19994ac68ecb31db275e88776145202a4fa67831f8608204aa37c1900a7966f",
+                    "sha256:b7f00151f1391f5df66592b87883854a2fb91a8f8118719a19041b579694b326",
+                    "sha256:64253315072aabb3e4df3e4830ea98ada577a6d637f74e19c91d8b9bd73d4de3",
+                    "sha256:0543737f3c997d66d48e88efae56df38ec9abbe4f253760a42ff971e36e3c268"
+               ]
+          },
+          "Labels": {
+               "io.buildah.version": "1.33.7",
+               "org.opencontainers.image.ref.name": "rocm/pytorch:rocm7.2.4_ubuntu24.04_py3.12_pytorch_release_2.10.0+rocm7.2.4.lw.git3d3aa833",
+               "org.opencontainers.image.version": "24.04"
+          },
+          "Annotations": {},
+          "ManifestType": "application/vnd.docker.distribution.manifest.v2+json",
+          "User": "reap",
+          "History": [
+               {
+                    "created": "2026-04-10T06:49:15.45210454Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG RELEASE",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-04-10T06:49:15.493474875Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG LAUNCHPAD_BUILD_ARCH",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-04-10T06:49:15.521658623Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.version=24.04",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-04-10T06:49:17.706887224Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:8ce1caf246e7c778bca84c516d02fd4e83766bb2c530a0fffa8a351b560a2728 in / "
+               },
+               {
+                    "created": "2026-04-10T06:49:18.133477895Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-05-28T20:53:03.351716557Z",
+                    "created_by": "ARG BASE_IMAGE=ubuntu:24.04",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-05-28T20:53:03.351716557Z",
+                    "created_by": "ARG PYTHON_VERSION=3.12",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-05-28T20:53:03.351716557Z",
+                    "created_by": "ARG PYTORCH_VERSION=2.10.0+rocm7.2.4.lw.git3d3aa833",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-05-28T20:53:03.351716557Z",
+                    "created_by": "ARG TORCHVISION_VERSION=0.25.0+rocm7.2.4.git82df5f59",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-05-28T20:53:03.351716557Z",
+                    "created_by": "ARG TORCHAUDIO_VERSION=2.10.0+rocm7.2.4.git5047768f",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-05-28T20:53:03.351716557Z",
+                    "created_by": "ARG TRITON_VERSION=3.6.0+rocm7.2.4.git4ed88892",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-05-28T20:53:03.351716557Z",
+                    "created_by": "ARG APEX_VERSION=1.10.0+rocm7.2.4.git751f5dd5",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-05-28T20:53:03.351716557Z",
+                    "created_by": "ARG ROCM_VERSION=7.2.4",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-05-28T20:53:03.351716557Z",
+                    "created_by": "ARG UBUNTU_VERSION=24.04",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-05-28T20:53:03.351716557Z",
+                    "created_by": "ARG PYTORCH_WHEEL_INDEX=https://repo.radeon.com/rocm/manylinux/rocm-rel-7.2.4/",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-05-28T20:53:03.351716557Z",
+                    "created_by": "LABEL org.opencontainers.image.ref.name=rocm/pytorch:rocm7.2.4_ubuntu24.04_py3.12_pytorch_release_2.10.0+rocm7.2.4.lw.git3d3aa833",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-05-28T20:53:03.351716557Z",
+                    "created_by": "ENV DEBIAN_FRONTEND=noninteractive",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-05-28T20:53:03.351716557Z",
+                    "created_by": "RUN |10 BASE_IMAGE=ubuntu:24.04 PYTHON_VERSION=3.12 PYTORCH_VERSION=2.10.0+rocm7.2.4.lw.git3d3aa833 TORCHVISION_VERSION=0.25.0+rocm7.2.4.git82df5f59 TORCHAUDIO_VERSION=2.10.0+rocm7.2.4.git5047768f TRITON_VERSION=3.6.0+rocm7.2.4.git4ed88892 APEX_VERSION=1.10.0+rocm7.2.4.git751f5dd5 ROCM_VERSION=7.2.4 UBUNTU_VERSION=24.04 PYTORCH_WHEEL_INDEX=https://repo.radeon.com/rocm/manylinux/rocm-rel-7.2.4/ /bin/sh -c echo \"tzdata tzdata/Areas select Etc\" | debconf-set-selections && echo \"tzdata tzdata/Zones/Etc select UTC\" | debconf-set-selections # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+               },
+               {
+                    "created": "2026-05-28T20:53:36.664835155Z",
+                    "created_by": "RUN |10 BASE_IMAGE=ubuntu:24.04 PYTHON_VERSION=3.12 PYTORCH_VERSION=2.10.0+rocm7.2.4.lw.git3d3aa833 TORCHVISION_VERSION=0.25.0+rocm7.2.4.git82df5f59 TORCHAUDIO_VERSION=2.10.0+rocm7.2.4.git5047768f TRITON_VERSION=3.6.0+rocm7.2.4.git4ed88892 APEX_VERSION=1.10.0+rocm7.2.4.git751f5dd5 ROCM_VERSION=7.2.4 UBUNTU_VERSION=24.04 PYTORCH_WHEEL_INDEX=https://repo.radeon.com/rocm/manylinux/rocm-rel-7.2.4/ /bin/sh -c apt update && apt install -y wget software-properties-common curl rsync dialog git gnupg # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+               },
+               {
+                    "created": "2026-05-28T20:53:36.664835155Z",
+                    "created_by": "ENV PATH=/opt/rocm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin LD_LIBRARY_PATH=/opt/rocm/lib",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-05-28T20:54:01.626107532Z",
+                    "created_by": "RUN |10 BASE_IMAGE=ubuntu:24.04 PYTHON_VERSION=3.12 PYTORCH_VERSION=2.10.0+rocm7.2.4.lw.git3d3aa833 TORCHVISION_VERSION=0.25.0+rocm7.2.4.git82df5f59 TORCHAUDIO_VERSION=2.10.0+rocm7.2.4.git5047768f TRITON_VERSION=3.6.0+rocm7.2.4.git4ed88892 APEX_VERSION=1.10.0+rocm7.2.4.git751f5dd5 ROCM_VERSION=7.2.4 UBUNTU_VERSION=24.04 PYTORCH_WHEEL_INDEX=https://repo.radeon.com/rocm/manylinux/rocm-rel-7.2.4/ /bin/sh -c add-apt-repository ppa:deadsnakes/ppa && apt update && apt install -y python${PYTHON_VERSION} python3-pip python3-venv && if [ \"${PYTHON_VERSION}\" = \"3.10\" ]; then apt install -y --no-install-recommends python${PYTHON_VERSION}-dev python${PYTHON_VERSION}-distutils python${PYTHON_VERSION}-venv; elif [ \"${PYTHON_VERSION}\" = \"3.12\" ]; then apt install -y --no-install-recommends python${PYTHON_VERSION}-dev python${PYTHON_VERSION}-venv; else echo \"Only PYTHON_VERSION 3.10 or 3.12 is supported\" && exit 1; fi && apt clean && rm -rf /var/lib/apt/lists/* # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+               },
+               {
+                    "created": "2026-05-28T20:54:12.878671404Z",
+                    "created_by": "RUN |10 BASE_IMAGE=ubuntu:24.04 PYTHON_VERSION=3.12 PYTORCH_VERSION=2.10.0+rocm7.2.4.lw.git3d3aa833 TORCHVISION_VERSION=0.25.0+rocm7.2.4.git82df5f59 TORCHAUDIO_VERSION=2.10.0+rocm7.2.4.git5047768f TRITON_VERSION=3.6.0+rocm7.2.4.git4ed88892 APEX_VERSION=1.10.0+rocm7.2.4.git751f5dd5 ROCM_VERSION=7.2.4 UBUNTU_VERSION=24.04 PYTORCH_WHEEL_INDEX=https://repo.radeon.com/rocm/manylinux/rocm-rel-7.2.4/ /bin/sh -c python${PYTHON_VERSION} -m venv /opt/venv && . /opt/venv/bin/activate && /opt/venv/bin/python -m pip install --upgrade pip setuptools && /opt/venv/bin/python -m pip install hypothesis scipy ninja # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+               },
+               {
+                    "created": "2026-05-28T20:54:12.878671404Z",
+                    "created_by": "ENV PATH=/opt/venv/bin:/opt/rocm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-05-28T20:56:57.432472461Z",
+                    "created_by": "RUN |10 BASE_IMAGE=ubuntu:24.04 PYTHON_VERSION=3.12 PYTORCH_VERSION=2.10.0+rocm7.2.4.lw.git3d3aa833 TORCHVISION_VERSION=0.25.0+rocm7.2.4.git82df5f59 TORCHAUDIO_VERSION=2.10.0+rocm7.2.4.git5047768f TRITON_VERSION=3.6.0+rocm7.2.4.git4ed88892 APEX_VERSION=1.10.0+rocm7.2.4.git751f5dd5 ROCM_VERSION=7.2.4 UBUNTU_VERSION=24.04 PYTORCH_WHEEL_INDEX=https://repo.radeon.com/rocm/manylinux/rocm-rel-7.2.4/ /bin/sh -c set -eux;     mkdir -p --mode=0755 /etc/apt/keyrings;     wget -qO- https://repo.radeon.com/rocm/rocm.gpg.key | gpg --dearmor | tee /etc/apt/keyrings/rocm.gpg > /dev/null;     if [ \"$PYTHON_VERSION\" = \"3.12\" ]; then CODENAME=noble;     elif [ \"$PYTHON_VERSION\" = \"3.10\" ]; then CODENAME=jammy;     else echo \"Only PYTHON_VERSION 3.10 or 3.12 is supported\" && exit 1; fi;     printf 'deb [arch=amd64 signed-by=/etc/apt/keyrings/rocm.gpg] https://repo.radeon.com/rocm/apt/%s %s main\\n' \"${ROCM_VERSION}\" \"${CODENAME}\" > /etc/apt/sources.list.d/rocm.list;     printf '%s\\n' 'Package: *' 'Pin: release o=repo.radeon.com' 'Pin-Priority: 600' > /etc/apt/preferences.d/rocm-pin-600;     apt-get update;     apt-get install -y --no-install-recommends rocm python3-setuptools python3-wheel;     apt-get clean && rm -rf /var/lib/apt/lists/* # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+               },
+               {
+                    "created": "2026-05-28T20:57:58.738854199Z",
+                    "created_by": "RUN |10 BASE_IMAGE=ubuntu:24.04 PYTHON_VERSION=3.12 PYTORCH_VERSION=2.10.0+rocm7.2.4.lw.git3d3aa833 TORCHVISION_VERSION=0.25.0+rocm7.2.4.git82df5f59 TORCHAUDIO_VERSION=2.10.0+rocm7.2.4.git5047768f TRITON_VERSION=3.6.0+rocm7.2.4.git4ed88892 APEX_VERSION=1.10.0+rocm7.2.4.git751f5dd5 ROCM_VERSION=7.2.4 UBUNTU_VERSION=24.04 PYTORCH_WHEEL_INDEX=https://repo.radeon.com/rocm/manylinux/rocm-rel-7.2.4/ /bin/sh -c set -e && WHEEL_INDEX=\"${PYTORCH_WHEEL_INDEX:-https://repo.radeon.com/rocm/manylinux/rocm-rel-${ROCM_VERSION}/}\" && echo \"Installing from $WHEEL_INDEX Python $PYTHON_VERSION\" && pip install --no-cache-dir --find-links \"${WHEEL_INDEX}\" --prefer-binary \"torch==${PYTORCH_VERSION}\" \"torchvision==${TORCHVISION_VERSION}\" \"torchaudio==${TORCHAUDIO_VERSION}\" \"triton==${TRITON_VERSION}\" && pip install --no-cache-dir --find-links \"${WHEEL_INDEX}\" --prefer-binary \"apex==${APEX_VERSION}\" && for pkg in torch torchvision torchaudio triton apex; do pip show \"$pkg\" >/dev/null 2>&1 || { echo \"ERROR: $pkg missing\"; exit 1; }; done && python -c \"import torch, torchvision, torchaudio; tv=torch.__version__; vv=torchvision.__version__; av=torchaudio.__version__; assert '+rocm' in tv, f'Expected ROCm torch wheel, got: {tv}'; assert '+rocm' in vv, f'Expected ROCm torchvision wheel, got: {vv}'; assert '+rocm' in av, f'Expected ROCm torchaudio wheel, got: {av}'; print('torch:', tv, 'hip:', torch.version.hip); print('torchvision:', vv); print('torchaudio:', av)\" # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+               },
+               {
+                    "created": "2026-05-28T20:57:59.50274108Z",
+                    "created_by": "RUN |10 BASE_IMAGE=ubuntu:24.04 PYTHON_VERSION=3.12 PYTORCH_VERSION=2.10.0+rocm7.2.4.lw.git3d3aa833 TORCHVISION_VERSION=0.25.0+rocm7.2.4.git82df5f59 TORCHAUDIO_VERSION=2.10.0+rocm7.2.4.git5047768f TRITON_VERSION=3.6.0+rocm7.2.4.git4ed88892 APEX_VERSION=1.10.0+rocm7.2.4.git751f5dd5 ROCM_VERSION=7.2.4 UBUNTU_VERSION=24.04 PYTORCH_WHEEL_INDEX=https://repo.radeon.com/rocm/manylinux/rocm-rel-7.2.4/ /bin/sh -c git clone https://github.com/ROCm/pytorch-micro-benchmarking /var/lib/jenkins/pytorch-micro-benchmarking && ln -sf /usr/bin/python3 /usr/bin/python # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+               },
+               {
+                    "created": "2026-08-27T21:57:47.733658031Z",
+                    "created_by": "/bin/sh -c #(nop) ENV PYTHONUNBUFFERED=1     PYTHONDONTWRITEBYTECODE=1     PYTHONPATH=/opt/reap-python:/opt/reap-gpu     HF_HOME=/opt/huggingface     TRANSFORMERS_OFFLINE=1     HF_HUB_OFFLINE=1     REAP_MODEL_PATH=/opt/models/REAL-Prover     REAP_SNAPSHOT_ROOT=/workspace/out/snapshots",
+                    "comment": "FROM docker.io/rocm/pytorch@sha256:4449f856653602317e4101a76fce599c7fcd58ccec2e539951fce5f73083179e",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-08-27T21:57:47.90816735Z",
+                    "created_by": "/bin/sh -c #(nop) COPY file:07b980f8d2d970247b1c0846783cff1d1764a85fc9c0bcd5f34c05064db8042e in /tmp/requirements-gpu-hashed.lock ",
+                    "comment": "FROM d5551239e632"
+               },
+               {
+                    "created": "2026-08-27T21:57:48.316247408Z",
+                    "created_by": "/bin/sh -c #(nop) COPY dir:b8d422e194a8bbddab9e3629d212ab9e006e6b96c80a0695e3dcc7f8c48abbdb in /opt/reap-wheels/ ",
+                    "comment": "FROM 401622d0351a"
+               },
+               {
+                    "created": "2026-08-27T21:57:48.750557496Z",
+                    "created_by": "/bin/sh -c #(nop) COPY file:aa78ae31154aebd891f743ed8bf7f68c07b2d2c3ad8cfeecac8c985e7a9ce759 in /tmp/install_runtime.sh ",
+                    "comment": "FROM bd8d3cca00b8"
+               },
+               {
+                    "created": "2026-08-27T21:58:10.575216976Z",
+                    "created_by": "/bin/sh -c sh /tmp/install_runtime.sh",
+                    "comment": "FROM c306af38a878"
+               },
+               {
+                    "created": "2026-08-27T21:58:12.674738276Z",
+                    "created_by": "/bin/sh -c #(nop) COPY dir:3988aaa9c6daaf9018d59a57de01a58691c958b373f0a2f584aa98e3f5d2abaa in /opt/reap-gpu/gpu_runtime ",
+                    "comment": "FROM 2d272dd7f750"
+               },
+               {
+                    "created": "2026-08-27T21:58:12.937599173Z",
+                    "created_by": "/bin/sh -c #(nop) COPY file:6ac11ae5c635eafabe4544ec02fb93eae166200b6ad4d99d9f4a7094a3765cf8 in /opt/reap-runtime-context-manifest.json ",
+                    "comment": "FROM 17c827fec410"
+               },
+               {
+                    "created": "2026-08-27T21:58:13.312530712Z",
+                    "created_by": "/bin/sh -c #(nop) COPY multi:b0109b3567f0c1cdcdf8e061e8a654cf9ecd3bbd1cebac55bd3248f588cb911b in /opt/reap-gpu/cpu_runtime/ ",
+                    "comment": "FROM 7d07596d99f4"
+               },
+               {
+                    "created": "2026-08-27T21:58:13.566943803Z",
+                    "created_by": "/bin/sh -c #(nop) COPY file:a78169545d40ca13572458179dedfcda04acb5c165842e596f9f3c7a35beebf9 in /usr/local/bin/reap-gpu-smoke ",
+                    "comment": "FROM afeb4eedad12"
+               },
+               {
+                    "created": "2026-08-27T21:58:13.980407576Z",
+                    "created_by": "/bin/sh -c useradd --create-home --uid 10001 reap     && mkdir -p /workspace/out /opt/models /opt/huggingface     && chown -R reap:reap /workspace /opt/models /opt/huggingface",
+                    "comment": "FROM dd24f4c49dd2"
+               },
+               {
+                    "created": "2026-08-27T21:58:14.098864127Z",
+                    "created_by": "/bin/sh -c #(nop) USER reap",
+                    "comment": "FROM ff4c7ad1b807",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-08-27T21:58:14.287909729Z",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /workspace",
+                    "comment": "FROM 6d985c882bca",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-08-27T21:58:14.473326926Z",
+                    "created_by": "/bin/sh -c #(nop) EXPOSE 8760",
+                    "comment": "FROM de5aa159b6ba",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-08-27T21:58:14.661607777Z",
+                    "created_by": "/bin/sh -c #(nop) ENTRYPOINT [\"python\", \"-m\", \"gpu_runtime.server\"]",
+                    "comment": "FROM 01f3c4cb4f18",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-08-27T21:58:14.847840036Z",
+                    "created_by": "/bin/sh -c #(nop) CMD [\"--backend\", \"real\", \"--model-path\", \"/opt/models/REAL-Prover\", \"--snapshot-root\", \"/workspace/out/snapshots\"]",
+                    "comment": "FROM 0a51253539cd",
+                    "empty_layer": true
+               }
+          ],
+          "NamesHistory": [
+               "localhost/reap-gpu:runtime-20260828"
+          ]
+     }
+]

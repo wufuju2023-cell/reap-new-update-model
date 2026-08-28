@@ -1,0 +1,55 @@
+{
+  "blocking_findings": [],
+  "current_source_sha256": {
+    "cpu_runtime/collector_batch.py": "9cac4c779054d7611f7da7ba25c7d264121cbf31fc2314da95c70052a89dc56f",
+    "cpu_runtime/released_attempts.py": "3af3d5945357e005faa18a552476b4148e261924608a894b63b0c6eb496a3ff2",
+    "cpu_runtime/replica_collector.py": "5450717b1ae4e514652305409c5ef92351a4fd8811d62b260a0e568f313f5924",
+    "gpu_runtime/continual_mixed_learner.py": "56c1810827754b3d743b735304b8d04272fc10502d0caee2c54bdd5b38a6e0b6",
+    "gpu_runtime/learner.py": "21eca972d360d7034e83b5b7c31f875a15bc0d7c3f14db659d8132478a51a191",
+    "gpu_runtime/release_head.py": "60a2dceda32719a2fc01e5b584a42c37d45816623fbd2450947961a0cf0a6010",
+    "tests/test_replica_latest.py": "b3a75953fb4437beba488f79f9d8b4ee0991d1a8d6aceada0dac50541735e3f3"
+  },
+  "evidence_sha256": {
+    "windows-final-after.json": "cc48589efde0ac16feffae4d5c7f644ecbf6367d83525f39c6639f9d1f585b59",
+    "windows-final-before.json": "cc48589efde0ac16feffae4d5c7f644ecbf6367d83525f39c6639f9d1f585b59",
+    "windows-final-receipt.json": "c2ba4a75298903d25027fc55e93a5511a795c7bfc8e03931a3db3fa03899f4b7",
+    "windows-final.log": "7b462b2220cca0dbc97118e9df78474a7f744bd3b2c349a61127a9ccacbcf14a",
+    "wsl-final-after.json": "58ae90ab0d36c584ed4eb4f72c762ed5765b3a610325ae7e27e96e69d6bdcdb1",
+    "wsl-final-before.json": "58ae90ab0d36c584ed4eb4f72c762ed5765b3a610325ae7e27e96e69d6bdcdb1",
+    "wsl-final-receipt.json": "c31313e224b5da76b1cdc27b185688129898c0bc22d6ed7e603c00726b48f101",
+    "wsl-final.log": "ed46371b7a0affdc82ed7b8b9ba241556767c1e95c632eec574feb28ea854165"
+  },
+  "limits": [
+    "Only local mechanism acceptance; data admission and accepted mathematical verdict use explicit test fixtures, not new real Lean evidence.",
+    "The real AMD dual-service campaign uses its fixed frozen bundle; latest-at-reservation plus dual GPU services has not been run together.",
+    "Provider atomicity requires the same owning learner object/process and writer lease; direct cross-process head reading is not atomic dispatch.",
+    "CAS cache assumes immutable operator-owned stores without external file mutation. Deployment IDs are configuration labels, not authenticated process identity.",
+    "Callbacks remain responsible for endpoint/release propagation and safe I/O deadlines; no automatic retry or service failover is added."
+  ],
+  "reviewed": [
+    "Pool v2 binds owning provider/run and full canonical contract; fixed mode remains default and separately rejects changed release.",
+    "Immutable release is loaded and bound to same run, contract, learner step and checkpoint; its exact durable publication confirmation is required, not CAS existence alone.",
+    "Same owning learner lock selects latest confirmed head and reserves the attempt; source preparation happens once outside lock and cannot change problem, polarity or budget.",
+    "Already reserved R1 remains valid after R2 publishes; idle endpoint loads R2 without changing active R1. Per-attempt route pins remain immutable.",
+    "Unknown publication blocks new reservation; an admitted old actor may finish/retire. Output sidecar/route failures retain durable pending barriers, and unknown retirement retains capacity.",
+    "Completed restoration reads recorded old/new source pins and receipts without rerunning search/learn/retire.",
+    "Local actual tiny autograd v3 fixture trains two generations, appends a dataset pin at step2, and uses two actual HTTP/runtime actor endpoints; R1 fingerprint remains equal while R2 is live."
+  ],
+  "reviewer": "concurrency",
+  "schema_version": "reap.replica-latest.independent-review.v1",
+  "validation": {
+    "GPU_used_by_reviewer": false,
+    "Lean_rerun_by_reviewer": false,
+    "tests_rerun_by_reviewer": false,
+    "windows": {
+      "passed": 50,
+      "run": 50,
+      "skipped": 0
+    },
+    "wsl": {
+      "passed": 43,
+      "run": 50,
+      "skipped": 7
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "ok": true,
+  "scope": "independent local evidence consistency audit; no GPU/Lean/train rerun",
+  "small_files_locally_rehashed": 52,
+  "large_files_remote_hash_only": 7,
+  "remote_actual_code_hashes": 30,
+  "tests": {
+    "run": 11,
+    "passed": 11,
+    "seconds": 0.08
+  },
+  "source_and_report_match": true,
+  "files": {
+    "audit_local.py": "97849935681f71e74b508c75b5944272d7274d55a7bb9d477434a66761810d48",
+    "test_audit_local.py": "8700a70d72d60a43d0b5e04b0e68f0893e22334ab03416e59ed3667b6eef3cc1",
+    "audit-final-02.json": "90e17de4ca7f182c00b30a62dacb663c2e8cbb1b99b21c2da002a7873ff40606",
+    "audit-tests-02.log": "06fa8faf9805783831b141b4e4a6104f455a058549b36e65f589e3a92eced811",
+    "independent-review.md": "516658b6c889f18e1e538dee1754960c49986319916ac51d76c2974c73fa58e5",
+    "artifact-audit.json": "63cdb4080bd628a283e4991e904d3fdcbacf9437e729d4459f253b95e0e55b56",
+    "wire-evidence.json.gz": "e4e6dbdc0b53538e55c76d620b79d08219aa8eb00c77e470b827d4ff4fd073d3",
+    "report.json": "282ec476522aa2b829bfe6714b11128134369189dc95fe2de743491d5d3098ae",
+    "worker-exit.json": "c6b29095db6fb5bbc95aea752cf38f22111394ececf2f0c388becaab8083aea9",
+    "final-continuation.json": "b3f91fcccf729d7b2eff033646e9e68d54436423adcd0c80622d14e15cbbf46c",
+    "old-auditor-compatibility.json": "5cbaf3f2efeaf36c44f056d76e8ced7ac3d522f2e772cf2b4afa4e9dcfc56453"
+  },
+  "limits": [
+    "14 tensor gates executed by frozen real remote worker, not recomputed by this local audit",
+    "actor02 initialization only; no proof run",
+    "no performance gain or full-design completion established"
+  ]
+}

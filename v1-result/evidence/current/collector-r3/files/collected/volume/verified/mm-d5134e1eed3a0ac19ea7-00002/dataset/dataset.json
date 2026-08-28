@@ -1,0 +1,52 @@
+{
+  "schema_version": "reap.verified-success-trajectory.v1",
+  "profile": "verified-generated-action-negative-longest-branch-v1",
+  "session_id": "mm-d5134e1eed3a0ac19ea7-00002",
+  "tree_id": "mm-d5134e1eed3a0ac19ea7-00002.tree0",
+  "theorem": "ReapCurriculumWrapper.attempt",
+  "theorem_sha256": "56d2d40592bc9bf475958d05e22d0e5589594082b5d6a5c8fec847f22e72493b",
+  "root_return": -1,
+  "action_unit": "one generated tactic string; focus transitions cost zero",
+  "and_return": "minimum branch return; shared-metavariable branch skipping rejected",
+  "state_origin": "exact saved state matched against independent Lean replay",
+  "training_integration": "none; not search_visit_backup or categorical-head training",
+  "axioms": [
+    "propext",
+    "Quot.sound"
+  ],
+  "final_policy_version": 0,
+  "inputs_sha256": {
+    "raw_tree.json": "1d37b4e44527ce5135aa4a45eed9c12340aa864dc28e6fa3db29d7bb5b9a0ad6",
+    "replay.lean": "ff199943e64eed6e4f4e30cd4ff267d4902d8aa02906a57721033186b467e6b6",
+    "plan.json": "1e44e53a1a0eaa65d836f77afe43f9af0a93e8844a4efcc8cb9b24f148d2f74b",
+    "source.lean": "56d2d40592bc9bf475958d05e22d0e5589594082b5d6a5c8fec847f22e72493b",
+    "observer.jsonl": "53757bc1024ef22887b2e7f90f61b1cde5bac9eebda30a2f278f242d547d267a",
+    "historical-proof.stdout": "f8df2456111a097c775a547d5f7dbdc1ff9b455551a1cebaabbf7f67fca83da9",
+    "VerifiedReplay.lean": "a642aaf993f884c26c255ca3cdf1f4c6227ccc87273880243a0fc9c153761f23",
+    "historical-proof.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "session.json": "18af6b3d927c331d9ade3ea784c7c11748700cd16259d1efdd395b2982333614",
+    "historical-proof-receipt.json": "d7655629f45cb47a26bd1f5bc7f9e6f7c8d0832bd829c113ec6cf20fa251e5f0",
+    "accepted-proof.lean": "e177df9d98debb01ef1c13ddca6357762ffe49003a3ababb7feeee0410714a27",
+    "result.json": "7872ce931068c5a73dda766562eaee78932e74c3b82f28f9e281b00b020a3716"
+  },
+  "trace_sha256": "2944877abbc95b6b007ee05bdff48ef170abcaf2e1c37464c2c01816c24f7271",
+  "replay_receipt_sha256": "b4896d3b0f0a7a30e5e66867f8841f0d5aec57a895d35326c4fe30a1f1f122b7",
+  "rows": [
+    {
+      "node_index": 0,
+      "child_index": 1,
+      "state": [
+        "⊢ ∀ (n : ℕ), n = n"
+      ],
+      "next_state": [],
+      "tactic": "simp only [forall_const]",
+      "return": -1,
+      "prompt": "User: Please generate a tactic in lean4 to solve the state.\nHere're some theorems that may be helpful:\n\nSTATE:\n⊢ ∀ (n : ℕ), n = n\nTACTIC:\n\nAssistant:",
+      "policy_version": 0,
+      "generation_sequence": 2,
+      "eval_sequence": 3,
+      "generation_index": 0,
+      "candidate_index": 0
+    }
+  ]
+}

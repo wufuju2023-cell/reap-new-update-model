@@ -1,0 +1,18 @@
+{
+  "status": "saved_and_compared",
+  "session_id": "mm-6031f860c3d2ea901536-00001",
+  "snapshot": "operator-safety-r1-20260828",
+  "audit": {
+    "complete_sha256": "157a429fd75352a1d64e94ba7b40a22b875b066defdacd39cca5d434764768bd",
+    "matches_actor1_before_second": true,
+    "metadata_exact": true,
+    "policy_version": 0,
+    "snapshot_files_sha256": {
+      "session.json": "845167e4c19ad5d7e73d493c51fb54c22715add94620cfd63dcc494e2fe94247",
+      "backend.json": "e9d4fdb42b71338d72231f54bc0103bbd2355ee43e679dbdcaf3f390e551a92b"
+    },
+    "manifest_sha256": "d944c8b7de5117b46f128cc4cbb7c0245321f5ed540a78848bdcc434dca62f2e",
+    "cpu_only_decode": true,
+    "original_probe_gate": false
+  }
+}

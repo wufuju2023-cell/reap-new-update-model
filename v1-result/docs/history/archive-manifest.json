@@ -1,0 +1,81 @@
+{
+  "schema_version": "reap.documentation-history.v1",
+  "scope": "Previous documentation and package manifest; original code and raw evidence stay in place",
+  "old_manifest_files_verified": 56,
+  "archive_sha256": "af3cc5e64caed43a2efb235738bcb72710b5146c4c1d367be4b38c0324a1b6ab",
+  "archive_bytes": 51609,
+  "files": {
+    "README.md": {
+      "size": 5758,
+      "sha256": "944bb879cfa822133c02ea21c07d2d79dc1c58abc0f7e65c8f7e1863437320e3"
+    },
+    "docker/README.md": {
+      "size": 7960,
+      "sha256": "08eb40e813d9f6d0729af2570fcf8b467315906ceca04229b98ed8090a686e12"
+    },
+    "docs/01-实验设计与成功边界.md": {
+      "size": 4514,
+      "sha256": "229bcb1834dbb1012f86314014e08c30a5f54c359a7e098342bd1383bc4f5a83"
+    },
+    "docs/02-运行流程与复现.md": {
+      "size": 5833,
+      "sha256": "3fbf4281d7b46ded8bee3ebc235c8f4aa93c7acf8006fc037b52247e769958e0"
+    },
+    "docs/03-实际TTT结果与证据.md": {
+      "size": 4744,
+      "sha256": "ee0528350628083aecf953eba5351ba91aeaf733c18414602ceb75b242fe887c"
+    },
+    "docs/04-新agent复现prompt.md": {
+      "size": 28189,
+      "sha256": "73a689b1a4ae15fe48ee4508d4e362ce359999edd237a684684276d856528d7c"
+    },
+    "docs/05-新docker参考对比.md": {
+      "size": 3299,
+      "sha256": "9cc53a5fbc791271be8cf1517f299a6ced1b627ebaf3b4aaf71b8ff4da1d4e65"
+    },
+    "docs/06-容器未完成原因与交付边界.md": {
+      "size": 4564,
+      "sha256": "dff2905329c35531a9877d87c090b4739885d68f9c1e3a8a3d1302ce9811339e"
+    },
+    "docs/07-多轮TTT记录与成功边界.md": {
+      "size": 4438,
+      "sha256": "d41547899b6752814feebba770f9c834657499052927c133dbc787f968ddd42f"
+    },
+    "docs/08-CPU交付镜像验收.md": {
+      "size": 3815,
+      "sha256": "44310709cfcaa165134116c680d147272c02b5c6381d354802ec7a413aca933f"
+    },
+    "docs/09-五题尝试与并发结果.md": {
+      "size": 7635,
+      "sha256": "66c67d205c82f50d74a3a8603b7caa4a5fe4a4ee1b324f7c193490f256138da4"
+    },
+    "docs/10-原设计逐项对照与实际流程.md": {
+      "size": 8910,
+      "sha256": "17229a9a7b85fd2e297a05b14e7aead0c7fb3126301ca93cbaf2e898e455a4ba"
+    },
+    "docs/README.md": {
+      "size": 3838,
+      "sha256": "6efbf96bb0efd07b917d706498614dc9a6f41469eaf83caa356411398bb668a2"
+    },
+    "evidence/README.md": {
+      "size": 6539,
+      "sha256": "fa007f417c27ad22ed96201b069e866868d2f3a5da3d85b5c9f3687d977b794b"
+    },
+    "evidence/multiround/README.md": {
+      "size": 3118,
+      "sha256": "bb97730ca325be75d99b7d377476497877c1ab6be499550c9c1b4192f92b8c7e"
+    },
+    "package-manifest.json": {
+      "size": 8891,
+      "sha256": "957d5454d1106ca515a60e10faa5234ad40b114a90fb2f03dff8cff3ed1a5fff"
+    },
+    "source/README.md": {
+      "size": 5843,
+      "sha256": "3c7571976147f3bb0b2c368d3fea8ab7eb92df9f72b3cc4c9336810cf2db2b5b"
+    },
+    "source/transport-fix/README.md": {
+      "size": 4345,
+      "sha256": "aee56ee4a36c592e9539101df3ff94c925705d5aeade2eb935eccb6078fd7aba"
+    }
+  }
+}

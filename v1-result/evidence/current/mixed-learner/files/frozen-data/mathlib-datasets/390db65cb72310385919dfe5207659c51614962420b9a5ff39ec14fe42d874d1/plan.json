@@ -1,0 +1,8 @@
+{
+  "schema_version": "reap.mathlib-sft.linear-plan.v1",
+  "declaration": "ExistsUnique.unique₂",
+  "actions": [
+    "simp only [existsUnique_iff_exists] at h",
+    "exact h.unique ⟨hpy₁, hqy₁⟩ ⟨hpy₂, hqy₂⟩"
+  ]
+}

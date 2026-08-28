@@ -1,0 +1,28 @@
+{
+  "source_theorem_sha256": "78d3be9fb0da44c2576e6d51232c6a1f5444ac6573c48ca5269d24b8df316fad",
+  "generated_proof_sha256": "021e3ee7337678a20b2037b9b90aca1d454371a4c4a4632c953b5757d92b6cec",
+  "proof_from_session": "multi-20260827-05r2",
+  "image": "df23cd6a9b5b6df30fa003285fadcdc1e5d60919eb43b823b0731c17bf135646",
+  "command": [
+    "podman",
+    "run",
+    "--name",
+    "reap-multiround-proof-multi-20260827-05r2",
+    "--network",
+    "none",
+    "-v",
+    "/mnt/c/Users/21812/Desktop/ai4math_26Summercamp/Alpha-Proof-26-summer-school/.downloads/multiround-run-20260827/proof-check05/05-CubeAccumulatorProof.lean:/proof/05-CubeAccumulatorProof.lean:ro",
+    "--entrypoint",
+    "bash",
+    "df23cd6a9b5b6df30fa003285fadcdc1e5d60919eb43b823b0731c17bf135646",
+    "-lc",
+    "lake env lean /proof/05-CubeAccumulatorProof.lean"
+  ],
+  "network": "none",
+  "returncode": 0,
+  "container_exit_code": 0,
+  "container_image": "df23cd6a9b5b6df30fa003285fadcdc1e5d60919eb43b823b0731c17bf135646",
+  "elapsed_seconds": 53.27634206000221,
+  "stdout": "/proof/05-CubeAccumulatorProof.lean:19:28: warning: This simp argument is unused:\n  hzero\n\nHint: Omit it from the simp argument list.\n  simp_all [hz̵e̵r̵o̵,̵ ̵h̵step]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/proof/05-CubeAccumulatorProof.lean:19:35: warning: This simp argument is unused:\n  hstep\n\nHint: Omit it from the simp argument list.\n  simp_all [hzero,̵ ̵h̵s̵t̵e̵p̵]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n'MultiroundCandidates.CubeAccumulator.cube_accumulator' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": ""
+}

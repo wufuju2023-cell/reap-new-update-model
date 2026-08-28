@@ -1,0 +1,13 @@
+{
+  "checkpoint_sha256": "863359c986dc42edaf86eb7d6373562686d2cf85b62513ab1a6b86926a4b9ced",
+  "goal_complete": false,
+  "release_sha256": "0551bdcd0d511b87f5b0307b146efeef68a493b3d62deef684bffa387ce9abb8",
+  "sampler_state": {
+    "config_sha256": "c3705fb0a787ec0058f2ee6b314116a0b7da31e8ba87049a8afd1247d7fed982",
+    "mathlib_sft_cursor": 2,
+    "replay_cursor": 18,
+    "schema_version": "reap.mixed-sampler-state.v1",
+    "step": 2
+  },
+  "stage_passed": true
+}

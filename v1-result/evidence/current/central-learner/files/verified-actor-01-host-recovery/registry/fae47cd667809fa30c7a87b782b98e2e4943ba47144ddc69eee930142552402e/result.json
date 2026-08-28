@@ -1,0 +1,1 @@
+{"elapsed_ns":10123318188,"error":null,"proof_script":"intro n\ninduction n <;> simp_all [hs, pow_succ, mul_add, mul_one, add_assoc, add_comm, add_left_comm]","schema_version":"reap.training.result.v1","session_id":"central-actor-01","solved":true,"status":"solved"}

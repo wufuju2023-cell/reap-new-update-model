@@ -1,0 +1,40 @@
+{
+  "schema_version": "reap.incremental.independent-proof-check.v1",
+  "session_id": "inherit-refill-02",
+  "proof_from_session": "inherit-refill-02",
+  "theorem": "MultiroundCandidates.AffineAccumulator.affine_accumulator",
+  "source_theorem_sha256": "fbca2a6cd4dd707a3854caa1361029f279fceb9d336b7de02961b9bd09d81b81",
+  "input_sha256": {
+    "result.json": "5a34de86f19f40e0aa47a1926d60a942270c47312c28755e8fa0916f0b66fc36",
+    "online-result.json": "a820c33bac0d51e7413d6b54af4393c8803af923b2ae7d3e1c27793b13b65ba0",
+    "session.json": "2e79041e26722500f05f0dc40e4138158c15c73ef26bf0c98b5bc4750b993367"
+  },
+  "verifier_sha256": "05fdfed03cf69206c035f35b20d4bb303c42af00d913bdb43bfb1fbf98320c12",
+  "image": "623ae445c3cb8c843afb6c85a1db0dfa25f17e72ae95afaf23a49ef8844f0fce",
+  "proof_recheck": "NOT_VERIFIED",
+  "status": "NOT_VERIFIED",
+  "command": [
+    "podman",
+    "run",
+    "--name",
+    "reap-incremental-proof-inherit-refill-02",
+    "--pull",
+    "never",
+    "--network",
+    "none",
+    "-v",
+    "/mnt/c/Users/21812/Desktop/ai4math_26Summercamp/Alpha-Proof-26-summer-school/.downloads/incremental-run-20260828/proof-check-inherit-refill-02/02-AffineAccumulatorProof.lean:/proof/02-AffineAccumulatorProof.lean:ro",
+    "--entrypoint",
+    "bash",
+    "623ae445c3cb8c843afb6c85a1db0dfa25f17e72ae95afaf23a49ef8844f0fce",
+    "-lc",
+    "lake env lean /proof/02-AffineAccumulatorProof.lean"
+  ],
+  "network": null,
+  "returncode": null,
+  "container_exit_code": null,
+  "container_image": null,
+  "observed_axioms": [],
+  "independent_GPU_audit": false,
+  "generated_proof_sha256": "90172700e89d8a762067a14717449586354ac527efd9f5f4fa6848811172d940"
+}

@@ -1,0 +1,34 @@
+{
+  "epoch": 1787867448.6331325,
+  "uid": 0,
+  "sockets": {
+    "/var/run/docker.sock": false,
+    "/run/docker.sock": false,
+    "/run/podman/podman.sock": false
+  },
+  "commands": {
+    "docker": {
+      "installed": true,
+      "returncode": 1,
+      "stdout": "Client: Docker Engine - Community\n Version:           28.1.0\n API version:       1.49\n Go version:        go1.23.8\n Git commit:        4d8c241\n Built:             Thu Apr 17 09:54:52 2025\n OS/Arch:           linux/amd64\n Context:           default\n",
+      "stderr": "Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?\n"
+    },
+    "podman": {
+      "installed": false
+    },
+    "buildah": {
+      "installed": false
+    }
+  },
+  "disk": {
+    "/": {
+      "total": 634058342400,
+      "free": 600844959744
+    },
+    "/mnt/workspace": {
+      "total": 1125899906842624,
+      "free": 1088436788264960
+    }
+  },
+  "cap_sys_admin": false
+}

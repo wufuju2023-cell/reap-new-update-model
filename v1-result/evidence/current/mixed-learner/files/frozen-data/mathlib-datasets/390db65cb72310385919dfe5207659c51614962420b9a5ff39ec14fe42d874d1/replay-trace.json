@@ -1,0 +1,23 @@
+{"theorem": "MathlibSFTGate.ExistsUnique.unique₂",
+ "schema_version": "reap.mathlib-sft.linear-trace.v1",
+ "rows":
+ [{"tactic": "simp only [existsUnique_iff_exists] at h",
+   "state":
+   ["α : Sort u_1\np : α → Sort u_2\ninst✝ : ∀ (x : α), Subsingleton (p x)\nq : (x : α) → p x → Prop\nh : ∃! x, ∃! hx, q x hx\ny₁ y₂ : α\nhpy₁ : p y₁\nhqy₁ : q y₁ hpy₁\nhpy₂ : p y₂\nhqy₂ : q y₂ hpy₂\n⊢ y₁ = y₂"],
+   "row": 0,
+   "return": -2,
+   "prompt":
+   "User: Please generate a tactic in lean4 to solve the state.\nHere're some theorems that may be helpful:\n\nSTATE:\nα : Sort u_1\np : α → Sort u_2\ninst✝ : ∀ (x : α), Subsingleton (p x)\nq : (x : α) → p x → Prop\nh : ∃! x, ∃! hx, q x hx\ny₁ y₂ : α\nhpy₁ : p y₁\nhqy₁ : q y₁ hpy₁\nhpy₂ : p y₂\nhqy₂ : q y₂ hpy₂\n⊢ y₁ = y₂\nTACTIC:\n\nAssistant:",
+   "next_state":
+   ["α : Sort u_1\np : α → Sort u_2\ninst✝ : ∀ (x : α), Subsingleton (p x)\nq : (x : α) → p x → Prop\ny₁ y₂ : α\nhpy₁ : p y₁\nhqy₁ : q y₁ hpy₁\nhpy₂ : p y₂\nhqy₂ : q y₂ hpy₂\nh : ∃! x, ∃ hx, q x hx\n⊢ y₁ = y₂"]},
+  {"tactic": "exact h.unique ⟨hpy₁, hqy₁⟩ ⟨hpy₂, hqy₂⟩",
+   "state":
+   ["α : Sort u_1\np : α → Sort u_2\ninst✝ : ∀ (x : α), Subsingleton (p x)\nq : (x : α) → p x → Prop\ny₁ y₂ : α\nhpy₁ : p y₁\nhqy₁ : q y₁ hpy₁\nhpy₂ : p y₂\nhqy₂ : q y₂ hpy₂\nh : ∃! x, ∃ hx, q x hx\n⊢ y₁ = y₂"],
+   "row": 1,
+   "return": -1,
+   "prompt":
+   "User: Please generate a tactic in lean4 to solve the state.\nHere're some theorems that may be helpful:\n\nSTATE:\nα : Sort u_1\np : α → Sort u_2\ninst✝ : ∀ (x : α), Subsingleton (p x)\nq : (x : α) → p x → Prop\ny₁ y₂ : α\nhpy₁ : p y₁\nhqy₁ : q y₁ hpy₁\nhpy₂ : p y₂\nhqy₂ : q y₂ hpy₂\nh : ∃! x, ∃ hx, q x hx\n⊢ y₁ = y₂\nTACTIC:\n\nAssistant:",
+   "next_state": []}],
+ "root_return": -2,
+ "original_declaration": "ExistsUnique.unique₂",
+ "complete": true}

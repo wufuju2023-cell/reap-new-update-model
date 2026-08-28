@@ -1,0 +1,71 @@
+{
+  "schema_version": "reap.evidence-stage.v1",
+  "source_directory": "portable-lean-local-20260828",
+  "archive": {
+    "file": "raw.zip",
+    "bytes": 16849,
+    "sha256": "660181ecba59c2d612b84a37e0f0c76580251094a8afc85b326e167849386cf8"
+  },
+  "files": {
+    "independent-review.json": {
+      "bytes": 5180,
+      "sha256": "aeeb0a3332d7baae5237b19c083d01a01e8a2b7e677f6822f94c3c6cec624b2d"
+    },
+    "local-acceptance.json": {
+      "bytes": 3252,
+      "sha256": "f4542d21862314ba89de65ded07f76a350d0765f05f4968b8918497195518bbe"
+    },
+    "rebind-final-receipt.json": {
+      "bytes": 6764,
+      "sha256": "49bd622ca9aff2bff1099c1354d10f84ed8f67d454fef65bef32d12ec752c2a7"
+    },
+    "rebind-source-after.json": {
+      "bytes": 2756,
+      "sha256": "35c0a5cfd94f12948a0b77c1af6dece2c69f7c3a35db9aeab3144963384c6132"
+    },
+    "rebind-source-before.json": {
+      "bytes": 2756,
+      "sha256": "35c0a5cfd94f12948a0b77c1af6dece2c69f7c3a35db9aeab3144963384c6132"
+    },
+    "windows-rebind-final.log": {
+      "bytes": 3485,
+      "sha256": "8359e7e1ee9d32ff3f8c8e2a4dc46653f747e8d79688492c1b1cf4426c72f1bc"
+    },
+    "windows-rebind-tests.log": {
+      "bytes": 3328,
+      "sha256": "be3166c76171f122045c14c3e21e9c7b0e449b3aff46c3f8649ac73eb77997c4"
+    },
+    "windows-tests-v2.log": {
+      "bytes": 2546,
+      "sha256": "d93f2c75f9d2ca58d9437d03668ad64381a713e001b117945131238e5bc84d15"
+    },
+    "windows-tests.log": {
+      "bytes": 14483,
+      "sha256": "7c27bac65f93476707cbc4927200661ffc4bc38939ceb4fe510c8418181427b0"
+    },
+    "wsl-rebind-final.log": {
+      "bytes": 3486,
+      "sha256": "7bdad92d060fe29d771fc31a78ad3243e421817a79d8c32db721b0c448d0638b"
+    },
+    "wsl-rebind-tests.log": {
+      "bytes": 3329,
+      "sha256": "06438b330e7cf018e4c91d32c70e4d2746e25e23a2950e67a992c8f5a93fdb2f"
+    },
+    "wsl-tests-v2.log": {
+      "bytes": 2546,
+      "sha256": "5583f30f53b933cef122f54370c40d3f94abfc0f780fd14fa8c7d9336b21998b"
+    },
+    "wsl-tests.log": {
+      "bytes": 14651,
+      "sha256": "68b9733371222dfb3ea609e4c9e106f168fffdc03f5ae78b320a51ba4d87f81c"
+    }
+  },
+  "loose_files": {
+    "independent-review.json": "aeeb0a3332d7baae5237b19c083d01a01e8a2b7e677f6822f94c3c6cec624b2d",
+    "local-acceptance.json": "f4542d21862314ba89de65ded07f76a350d0765f05f4968b8918497195518bbe",
+    "rebind-final-receipt.json": "49bd622ca9aff2bff1099c1354d10f84ed8f67d454fef65bef32d12ec752c2a7",
+    "rebind-source-after.json": "35c0a5cfd94f12948a0b77c1af6dece2c69f7c3a35db9aeab3144963384c6132",
+    "rebind-source-before.json": "35c0a5cfd94f12948a0b77c1af6dece2c69f7c3a35db9aeab3144963384c6132"
+  },
+  "excluded": "7B weights, large tensor snapshots, credentials, browser state"
+}

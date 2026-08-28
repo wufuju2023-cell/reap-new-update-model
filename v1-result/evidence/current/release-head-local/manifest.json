@@ -1,0 +1,52 @@
+{
+  "schema_version": "reap.evidence-stage.v1",
+  "source_directory": "release-head-local-20260828",
+  "archive": {
+    "file": "raw.zip",
+    "bytes": 11842,
+    "sha256": "08a333e9a9eaea36597bff8a77aadaf3f62b8497152085ad44290e417f797315"
+  },
+  "files": {
+    "final-v2/independent-review.json": {
+      "bytes": 2140,
+      "sha256": "c17a186dc5135146ea1cdb150255ff0a8289c55685e8a1818d5d6511a056016f"
+    },
+    "final-v2/source-after.json": {
+      "bytes": 623,
+      "sha256": "87705677c2ee088b80fbc56fbada7f1805f4ab985f48e3fe27df85caee93869d"
+    },
+    "final-v2/source-before.json": {
+      "bytes": 623,
+      "sha256": "7d0e3225138802dd6e912cb7dcce7184cbd284740a51a3a07fb7c6cb71c84a70"
+    },
+    "final-v2/test-receipt.json": {
+      "bytes": 1249,
+      "sha256": "56da11e51ccf39bbb5adc4c243c83d8daa6413e3103ebcbdbb9820bef357bb98"
+    },
+    "final-v2/windows-receipt.json": {
+      "bytes": 143,
+      "sha256": "62060ec2b7769260dfdf026a3630ece46dea02ecdda13a5d0558683817440c5b"
+    },
+    "final-v2/windows.log": {
+      "bytes": 25355,
+      "sha256": "47e531c718a4663d65f07440d7cc8fb892827bf9df4b4423359c1f994b38a82e"
+    },
+    "final-v2/wsl-receipt.json": {
+      "bytes": 142,
+      "sha256": "21ed06ceaca00b2d9c3f67bfb6b0bcef96c55660339f1f432501f5537dca440d"
+    },
+    "final-v2/wsl.log": {
+      "bytes": 20017,
+      "sha256": "8079328702b99a117e1c9ffa65dcd6616dcc957d8dca82b5c335dab5d6b17625"
+    }
+  },
+  "loose_files": {
+    "final-v2/independent-review.json": "c17a186dc5135146ea1cdb150255ff0a8289c55685e8a1818d5d6511a056016f",
+    "final-v2/source-after.json": "87705677c2ee088b80fbc56fbada7f1805f4ab985f48e3fe27df85caee93869d",
+    "final-v2/source-before.json": "7d0e3225138802dd6e912cb7dcce7184cbd284740a51a3a07fb7c6cb71c84a70",
+    "final-v2/test-receipt.json": "56da11e51ccf39bbb5adc4c243c83d8daa6413e3103ebcbdbb9820bef357bb98",
+    "final-v2/windows-receipt.json": "62060ec2b7769260dfdf026a3630ece46dea02ecdda13a5d0558683817440c5b",
+    "final-v2/wsl-receipt.json": "21ed06ceaca00b2d9c3f67bfb6b0bcef96c55660339f1f432501f5537dca440d"
+  },
+  "excluded": "7B weights, large tensor snapshots, credentials, browser state"
+}

@@ -1,0 +1,65 @@
+{
+  "schema_version": "reap.fixed-collector.wire-audit.v1",
+  "ok": true,
+  "collection_sha256": "9d4db62092af80c7d771a02c87ea0fdaab30432f493a01d95b843493f4aa3299",
+  "sessions": {
+    "mm-d5134e1eed3a0ac19ea7-00001": {
+      "jobs": 6,
+      "generations": [
+        {
+          "sequence": 2,
+          "policy_request_id": "9ad573851c7e4789a317734f005bfa9d",
+          "value_request_ids": [
+            "1a9561a4baa74ba0a4c5eac6c7974b54"
+          ]
+        },
+        {
+          "sequence": 4,
+          "policy_request_id": "9ad573851c7e4789a317734f005bfa9d",
+          "value_request_ids": [
+            "1a9561a4baa74ba0a4c5eac6c7974b54"
+          ]
+        },
+        {
+          "sequence": 10,
+          "policy_request_id": "fc34c905f1744a7ca0bcb2bd6db51e9a",
+          "value_request_ids": [
+            "05807d7dc17e42a8bec967c447153dd9"
+          ]
+        }
+      ],
+      "terminal_status": "solved_pending_independent_verification",
+      "retire_request_id": "41c2effa65e747f5a393b238b61ce378",
+      "observer_start_ns": 13896885302356,
+      "observer_end_ns": 13904545841895
+    },
+    "mm-d5134e1eed3a0ac19ea7-00002": {
+      "jobs": 4,
+      "generations": [
+        {
+          "sequence": 2,
+          "policy_request_id": "4e652209c0924d66881398eacd539383",
+          "value_request_ids": [
+            "c258872691d74713a27994a5a6614881"
+          ]
+        },
+        {
+          "sequence": 4,
+          "policy_request_id": "4e652209c0924d66881398eacd539383",
+          "value_request_ids": [
+            "c258872691d74713a27994a5a6614881"
+          ]
+        }
+      ],
+      "terminal_status": "solved_pending_independent_verification",
+      "retire_request_id": "7fcda7062954464881b7b84ca9b9fc1b",
+      "observer_start_ns": 13883942145053,
+      "observer_end_ns": 13888752482373
+    }
+  },
+  "jobs": 10,
+  "learn_jobs": 0,
+  "all_retired": true,
+  "observer_overlap_seconds": 0.0,
+  "scope": "raw HTTP bytes and observer links; no independent tensor audit, no proof or speed claim"
+}

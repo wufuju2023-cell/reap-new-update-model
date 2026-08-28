@@ -1,0 +1,7 @@
+{
+  "default_no_run_exit": 0,
+  "stdlib_test_exit": 0,
+  "tests": 1,
+  "seconds": 0.8025507769998512,
+  "scope": "Linux default-no-run CLI and one HTTP single-submit fault test; no Torch/GPU"
+}

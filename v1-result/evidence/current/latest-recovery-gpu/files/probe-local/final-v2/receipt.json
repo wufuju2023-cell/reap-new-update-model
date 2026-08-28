@@ -1,0 +1,11 @@
+{
+  "returncode": 0,
+  "tests": 1,
+  "seconds": 9.89100000000326,
+  "source_unchanged": true,
+  "sources": {
+    "recover_consume.py": "33641acded89106df38cbb1b5048d1b8f3b6bb6989602dd181d39738df442bbd",
+    "test_recovery.py": "555f8704ef61b5dfd3d5a7925319eddb95f38c3de3f114807b559548ab69d7b9"
+  },
+  "scope": "Actual tiny CPU snapshot restore/two spawn HTTP services; no real GPU/Lean"
+}

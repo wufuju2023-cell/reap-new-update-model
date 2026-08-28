@@ -1,0 +1,1 @@
+{"elapsed_ns":50746529080,"error":null,"proof_script":"intro n\ninduction n <;> simp_all [Nat.mul_add, Nat.add_mul, Nat.add_assoc, Nat.add_comm, Nat.add_left_comm]\nnlinarith","schema_version":"reap.training.result.v1","session_id":"inherit-refill-02","solved":true,"status":"solved"}

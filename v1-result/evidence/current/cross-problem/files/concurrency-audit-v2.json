@@ -1,0 +1,125 @@
+{
+  "schema_version": "reap.incremental-concurrency-audit.v2",
+  "ok": true,
+  "source_sha256": {
+    "batch-console.log": "d13330977e001681203a9bc45c09e5ce02f6ef2e2ce0a99a69f4fb583e6a7293",
+    "monitor-final.json": "1d891ddc7ebfd8c5a40685131fd7176e2a565a1bd17ff0b294149f273095a495",
+    "bridge-interop.log": "12c4e7b2d1db5d23b31ba4194968722e804aab9f3e98f53b6d2eccbf3cfa8567",
+    "batch-final\\solutions.jsonl": "70a93889a7d71028f5360b0aa060b9240510ae833c51d6ac2d111c563751f583",
+    "batch-final\\inherit-concurrent-03\\observer.jsonl": "3b320f8fba440d9da3662886e8e5cf387216b90763d577f55d805d2a39418379",
+    "batch-final\\.batch-retirements\\inherit-concurrent-03.intent.json": "e828a451e8f47215b960fd8443f15afdcf258c90a324b0c282284ca87dac6230",
+    "batch-final\\.batch-retirements\\inherit-concurrent-03.receipt.json": "8715083c5d616bff742ab83214d2314a8924dd1f59484bc39eaade25bc513357",
+    "batch-final\\experience-target-05\\observer.jsonl": "d7a512183f08cf75951b6f56ec7c8b6408774e4d003baeaca1aaef416709cae2",
+    "batch-final\\.batch-retirements\\experience-target-05.intent.json": "b440c012408f8eefc3ebad17b160e98fefe122c6de087c9c4331b53bc44e4487",
+    "batch-final\\.batch-retirements\\experience-target-05.receipt.json": "b7dc7794bf5a7ebbbdb641fa725ebd3cc4260243a884580848cdb0c845b4dd54",
+    "batch-final\\inherit-refill-02\\observer.jsonl": "ca046354710426cb72f194613ed89dbf493796f1e077bdf436610aced0920d40",
+    "batch-final\\.batch-retirements\\inherit-refill-02.intent.json": "3e7be254a97cca89b5d2b7e8a16b363a62036c40bcf2b7406a3284a360776e44",
+    "batch-final\\.batch-retirements\\inherit-refill-02.receipt.json": "3a4fbb426e336d7bd148eca3ccfa7edaac6b4968759bb136b6954f0ab0c402cc"
+  },
+  "wire_sha256": "eb388d267842daa164f5e343447fc0019efa7ae715e0178f935f17071fb34cf5",
+  "windows": {
+    "inherit-concurrent-03": {
+      "first_ns": 454013752150,
+      "last_ns": 494142569539,
+      "update_ack_ns": {
+        "1": 494142569539
+      }
+    },
+    "experience-target-05": {
+      "first_ns": 454001743680,
+      "last_ns": 532401017502,
+      "update_ack_ns": {
+        "1": 485015259667,
+        "2": 497698123995,
+        "3": 506829689852,
+        "4": 532401017502
+      }
+    },
+    "inherit-refill-02": {
+      "first_ns": 534727390189,
+      "last_ns": 585360336510,
+      "update_ack_ns": {
+        "1": 585360336510
+      }
+    }
+  },
+  "first_pair_observer_overlap_seconds": 40.128817389,
+  "both_updated_during_overlap": true,
+  "retirements": {
+    "inherit-concurrent-03": {
+      "raw_request_id": "3cd1e4fd46e14e3889136bbcfcc7425a",
+      "bridge_completed_monotonic_seconds": 515.454756936,
+      "snapshot_sha256": "d1620d4cd35e64871a7976d9f217351db53f336d643db6727b13f29bd6936bff"
+    },
+    "experience-target-05": {
+      "raw_request_id": "4f43f4a710bc4c1b90f8d29025c265a5",
+      "bridge_completed_monotonic_seconds": 563.164727462,
+      "snapshot_sha256": "cdd98a586b5fe13f7e7add3c34ef39397f5e6b9b384f7990725fcac187567d69"
+    },
+    "inherit-refill-02": {
+      "raw_request_id": "832fdaca40114bd4b23963ea1f73ebd8",
+      "bridge_completed_monotonic_seconds": 606.868074808,
+      "snapshot_sha256": "a7c518384dfaf97b2de9f5b14cbea9ba69dfc7be7e6563e1e0af19ade940d21a"
+    }
+  },
+  "third_create_after_first_release_seconds": 0.02847356300003412,
+  "gpu_actor": {
+    "schema_version": "reap.gpu-actor.metrics.v1",
+    "accepting": true,
+    "submitted": 50,
+    "started": 50,
+    "completed": 50,
+    "failed": 0,
+    "active": 0,
+    "max_active": 1,
+    "queued": 0,
+    "max_queued": 3,
+    "queue_wait_seconds_total": 32.0158418850001,
+    "queue_wait_seconds_max": 14.123869388999992,
+    "execution_seconds_total": 82.66107126100007,
+    "execution_seconds_max": 15.53477972799999,
+    "active_execution_seconds": 0.0
+  },
+  "batch": {
+    "schema_version": "reap.online-batch.result.v1",
+    "profile": "online-search-visit-backup-v1",
+    "status": "completed",
+    "concurrency": 2,
+    "completed": [
+      "experience-target-05",
+      "inherit-concurrent-03",
+      "inherit-refill-02"
+    ],
+    "exhausted": [],
+    "skipped": [],
+    "skipped_exhausted": [],
+    "retired": [
+      "experience-target-05",
+      "inherit-concurrent-03",
+      "inherit-refill-02"
+    ],
+    "retirement_skipped": [],
+    "recovered_without_GPU_calls": [],
+    "recovered_without_search_rerun": [],
+    "not_started": [],
+    "failures": [],
+    "scheduling": {
+      "started": 3,
+      "finished": 3,
+      "active": 0,
+      "max_active": 2,
+      "session_execution_seconds_total": 421.000711426,
+      "elapsed_seconds": 242.566033146,
+      "measurement": "host_wall_time_including_Lean_HTTP_and_snapshots_not_GPU_utilization"
+    },
+    "total_deadline_seconds": null,
+    "independent_GPU_tensor_and_wire_audit_passed": false
+  },
+  "limits": [
+    "Shared CPU monotonic clock measures observer overlap, not simultaneous GPU execution.",
+    "Actor execution includes snapshots and host work; this is not GPU kernel utilization.",
+    "No total device memory release is claimed; base model remains loaded.",
+    "Selected three tasks are not a benchmark or a causal performance comparison."
+  ],
+  "previous_audit_sha256": "4c6d10ef30e4adcdf0dcbde44169f4ec7c3aaf45a8297042da0b5b78f0d76198"
+}

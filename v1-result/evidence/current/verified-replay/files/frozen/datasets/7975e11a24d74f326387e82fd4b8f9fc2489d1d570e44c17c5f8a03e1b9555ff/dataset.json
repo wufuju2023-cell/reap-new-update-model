@@ -1,0 +1,89 @@
+{
+  "schema_version": "reap.verified-success-trajectory.v1",
+  "profile": "verified-generated-action-negative-longest-branch-v1",
+  "session_id": "multi-20260827-03",
+  "tree_id": "multi-20260827-03.tree0",
+  "theorem": "MultiroundCandidates.ScaledTriangular.scaled_triangular",
+  "theorem_sha256": "87e0faa213a7af0d8074ed8e166152e22e0ff80b13607c6e6f2b34235c822883",
+  "root_return": -3,
+  "action_unit": "one generated tactic string; focus transitions cost zero",
+  "and_return": "minimum branch return; shared-metavariable branch skipping rejected",
+  "state_origin": "exact saved state matched against independent Lean replay",
+  "training_integration": "none; not search_visit_backup or categorical-head training",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "final_policy_version": 1,
+  "inputs_sha256": {
+    "accepted-proof.lean": "ad2a2c8856304943efc10d6fa86a6cf0a7057b08a7efaee38ff5f812735c0881",
+    "historical-proof-receipt.json": "189faa2284505622243107ce4fe2ca2db7857e5b2376976087de6bd023d96b75",
+    "historical-proof.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "historical-proof.stdout": "7d442641e0860f67253f8f174e7f5c42128ba3ad9029a05abc3f7b61da55724b",
+    "observer.jsonl": "fdf89611fe10ec4d6f36328c9fe6007eca5e8bec6d99d0170eead88121024567",
+    "plan.json": "9eb132c6f6dcc0d49dde35dbee57fd98c7a134c4abaa72f5f841e3bb6b2a736d",
+    "raw_tree.json": "c7d52792ae1128a9c7e3ae5ac2791bfb49ce349d07f3837e77db66e4261f1186",
+    "replay.lean": "31a30d91158a31fc56086268a08e71c09c98f84d79c334e4cf0846ea2d668ea6",
+    "result.json": "c1bfb25a609509b83ef84ebbba9b3b3f0c58a5f11725794607a1366b4e6d9bf7",
+    "session.json": "f644c9d1713330dcbf4f007699c6a03c912bd7403fb8f1685cbc00c5855457c6",
+    "source.lean": "87e0faa213a7af0d8074ed8e166152e22e0ff80b13607c6e6f2b34235c822883",
+    "VerifiedReplay.lean": "a642aaf993f884c26c255ca3cdf1f4c6227ccc87273880243a0fc9c153761f23"
+  },
+  "trace_sha256": "fc72e276fa8743a968bcd5d742e6619a682bcfc03b83349276a4af24f09e4c1c",
+  "replay_receipt_sha256": "af613c9ba13d1b66ddb3affb24a72f653676248adce2cebbf3265ab3832e910a",
+  "rows": [
+    {
+      "node_index": 0,
+      "child_index": 1,
+      "state": [
+        "f : ℕ → ℕ\na b : ℕ\nhzero : f 0 = a\nhstep : ∀ (n : ℕ), f (n + 1) = f n + b * (n + 1)\n⊢ ∀ (n : ℕ), 2 * f n = 2 * a + b * n * (n + 1)"
+      ],
+      "next_state": [
+        "f : ℕ → ℕ\na b : ℕ\nhzero : f 0 = a\nhstep : ∀ (n : ℕ), f (n + 1) = f n + b * (n + 1)\nn : ℕ\n⊢ 2 * f n = 2 * a + b * n * (n + 1)"
+      ],
+      "tactic": "intro n",
+      "return": -3,
+      "prompt": "User: Please generate a tactic in lean4 to solve the state.\nHere're some theorems that may be helpful:\n\nSTATE:\nf : ℕ → ℕ\na b : ℕ\nhzero : f 0 = a\nhstep : ∀ (n : ℕ), f (n + 1) = f n + b * (n + 1)\n⊢ ∀ (n : ℕ), 2 * f n = 2 * a + b * n * (n + 1)\nTACTIC:\n\nAssistant:",
+      "policy_version": 0,
+      "generation_sequence": 1,
+      "eval_sequence": 2,
+      "generation_index": 0,
+      "candidate_index": 0
+    },
+    {
+      "node_index": 1,
+      "child_index": 2,
+      "state": [
+        "f : ℕ → ℕ\na b : ℕ\nhzero : f 0 = a\nhstep : ∀ (n : ℕ), f (n + 1) = f n + b * (n + 1)\nn : ℕ\n⊢ 2 * f n = 2 * a + b * n * (n + 1)"
+      ],
+      "next_state": [
+        "case succ\nf : ℕ → ℕ\na b : ℕ\nhzero : f 0 = a\nhstep : ∀ (n : ℕ), f (n + 1) = f n + b * (n + 1)\nn✝ : ℕ\na✝ : 2 * f n✝ = 2 * a + b * n✝ * (n✝ + 1)\n⊢ 2 * (f n✝ + b * (n✝ + 1)) = 2 * a + b * (n✝ + 1) * (n✝ + 1 + 1)"
+      ],
+      "tactic": "induction n <;> simp_all [hstep, pow_succ]",
+      "return": -2,
+      "prompt": "User: Please generate a tactic in lean4 to solve the state.\nHere're some theorems that may be helpful:\n\nSTATE:\nf : ℕ → ℕ\na b : ℕ\nhzero : f 0 = a\nhstep : ∀ (n : ℕ), f (n + 1) = f n + b * (n + 1)\nn : ℕ\n⊢ 2 * f n = 2 * a + b * n * (n + 1)\nTACTIC:\n\nAssistant:",
+      "policy_version": 0,
+      "generation_sequence": 11,
+      "eval_sequence": 12,
+      "generation_index": 0,
+      "candidate_index": 1
+    },
+    {
+      "node_index": 2,
+      "child_index": 3,
+      "state": [
+        "case succ\nf : ℕ → ℕ\na b : ℕ\nhzero : f 0 = a\nhstep : ∀ (n : ℕ), f (n + 1) = f n + b * (n + 1)\nn✝ : ℕ\na✝ : 2 * f n✝ = 2 * a + b * n✝ * (n✝ + 1)\n⊢ 2 * (f n✝ + b * (n✝ + 1)) = 2 * a + b * (n✝ + 1) * (n✝ + 1 + 1)"
+      ],
+      "next_state": [],
+      "tactic": "linarith",
+      "return": -1,
+      "prompt": "User: Please generate a tactic in lean4 to solve the state.\nHere're some theorems that may be helpful:\n\nSTATE:\ncase succ\nf : ℕ → ℕ\na b : ℕ\nhzero : f 0 = a\nhstep : ∀ (n : ℕ), f (n + 1) = f n + b * (n + 1)\nn✝ : ℕ\na✝ : 2 * f n✝ = 2 * a + b * n✝ * (n✝ + 1)\n⊢ 2 * (f n✝ + b * (n✝ + 1)) = 2 * a + b * (n✝ + 1) * (n✝ + 1 + 1)\nTACTIC:\n\nAssistant:",
+      "policy_version": 1,
+      "generation_sequence": 19,
+      "eval_sequence": 20,
+      "generation_index": 0,
+      "candidate_index": 0
+    }
+  ]
+}

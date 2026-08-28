@@ -1,0 +1,539 @@
+{
+  "schema_version": "reap.evidence-stage.v1",
+  "source_directory": "incremental-run-20260828",
+  "archive": {
+    "file": "raw.zip",
+    "bytes": 162141,
+    "sha256": "545b0a2374e03ac7855d9172664e9ef3972bf6015bc82df5bd42ea88c9697b17"
+  },
+  "files": {
+    "batch-final/.batch-retirements/experience-target-05.intent.json": {
+      "bytes": 330,
+      "sha256": "b440c012408f8eefc3ebad17b160e98fefe122c6de087c9c4331b53bc44e4487"
+    },
+    "batch-final/.batch-retirements/experience-target-05.receipt.json": {
+      "bytes": 398,
+      "sha256": "b7dc7794bf5a7ebbbdb641fa725ebd3cc4260243a884580848cdb0c845b4dd54"
+    },
+    "batch-final/.batch-retirements/experience-target-05.response.json": {
+      "bytes": 303,
+      "sha256": "617bad22d390937fe63c20de9581c5aa9f834b42d1c390c2ea8a6f9eaeab0c08"
+    },
+    "batch-final/.batch-retirements/inherit-concurrent-03.intent.json": {
+      "bytes": 331,
+      "sha256": "e828a451e8f47215b960fd8443f15afdcf258c90a324b0c282284ca87dac6230"
+    },
+    "batch-final/.batch-retirements/inherit-concurrent-03.receipt.json": {
+      "bytes": 399,
+      "sha256": "8715083c5d616bff742ab83214d2314a8924dd1f59484bc39eaade25bc513357"
+    },
+    "batch-final/.batch-retirements/inherit-concurrent-03.response.json": {
+      "bytes": 304,
+      "sha256": "12f65d39633bde8cc56422bc60210cc93f8cbad5534a84e82b30d1dc83003bbe"
+    },
+    "batch-final/.batch-retirements/inherit-refill-02.intent.json": {
+      "bytes": 327,
+      "sha256": "3e7be254a97cca89b5d2b7e8a16b363a62036c40bcf2b7406a3284a360776e44"
+    },
+    "batch-final/.batch-retirements/inherit-refill-02.receipt.json": {
+      "bytes": 395,
+      "sha256": "3a4fbb426e336d7bd148eca3ccfa7edaac6b4968759bb136b6954f0ab0c402cc"
+    },
+    "batch-final/.batch-retirements/inherit-refill-02.response.json": {
+      "bytes": 300,
+      "sha256": "0e72de7a26782cb0492bd38b60e17deab13a01d28f6a9b2875e42eed017a461d"
+    },
+    "concurrency-audit-v2.json": {
+      "bytes": 5366,
+      "sha256": "f835a3d015bb15f64639e635f7300e5e78343aaf80a47ff6c2dfeaeed0342368"
+    },
+    "deploy-receipt.json": {
+      "bytes": 236,
+      "sha256": "4b0bde8cb774664514593b70e2605789bba5199a5697267981f4a9b768c6ef12"
+    },
+    "final/experience-target-05/checkpoints/checkpoint-000000.ack.json": {
+      "bytes": 93,
+      "sha256": "925632a3141e46fd9f9bba354d26d28116a2d41ec00ca23543653de96dd59181"
+    },
+    "final/experience-target-05/checkpoints/checkpoint-000001.ack.json": {
+      "bytes": 93,
+      "sha256": "c0ed070248cc89c89d64ea61aa2786d5c2abf2fcf710dbd2631df169d080bcd4"
+    },
+    "final/experience-target-05/checkpoints/checkpoint-000002.ack.json": {
+      "bytes": 93,
+      "sha256": "488923749b071951c51ed5b2d15eaa057165ea1836ffe5e30d3e66138bd25b37"
+    },
+    "final/experience-target-05/checkpoints/checkpoint-000003.ack.json": {
+      "bytes": 93,
+      "sha256": "7f1a3467f1853936267a2a5cacbd89580a3dbdb69827f7fc5604f6e39d5dcd88"
+    },
+    "final/experience-target-05/checkpoints/checkpoint-000004.ack.json": {
+      "bytes": 93,
+      "sha256": "4590ce04bcd3980e691a9a8de13ce49f1a00debad332db402bea975c396862b9"
+    },
+    "final/experience-target-05/checkpoints/checkpoint-000005.ack.json": {
+      "bytes": 93,
+      "sha256": "8dc9a19baa820fb46ff8326f67a78efb4616e1b8edacd0c549ca98268dada07a"
+    },
+    "final/experience-target-05/checkpoints/learn-000001.receipt.json": {
+      "bytes": 4164,
+      "sha256": "5884774e456f67dce8535dd28c734141cb27ea5f478dc187131aafd0705d1516"
+    },
+    "final/experience-target-05/checkpoints/learn-000001.request.json": {
+      "bytes": 743,
+      "sha256": "a26d1cfcaa46ec8b0a24d49ac392aa8776797649377873fe6584a08e26cf9985"
+    },
+    "final/experience-target-05/checkpoints/learn-000002.receipt.json": {
+      "bytes": 4498,
+      "sha256": "3d3a0a82c62f99b3135e4d2488c600ea736825be143037a5826aa88214f796bd"
+    },
+    "final/experience-target-05/checkpoints/learn-000002.request.json": {
+      "bytes": 930,
+      "sha256": "32353cce88847b5754201c658eca777e16091808a07e01bf33ea52bbe13f179e"
+    },
+    "final/experience-target-05/checkpoints/learn-000003.receipt.json": {
+      "bytes": 4246,
+      "sha256": "d77cfdfbc8fc88f5d5413d1f7af1a428962843cd94d71b0f25fc9d9bfec588b3"
+    },
+    "final/experience-target-05/checkpoints/learn-000003.request.json": {
+      "bytes": 831,
+      "sha256": "d2ee90ad667f854a7ff3994dd95c0b045910731ee40e8a2ea558ed26415a2029"
+    },
+    "final/experience-target-05/checkpoints/learn-000004.receipt.json": {
+      "bytes": 4247,
+      "sha256": "221e7ddc7541123532db8a3094de1780019083acae68d32bbc64908807d4d8ac"
+    },
+    "final/experience-target-05/checkpoints/learn-000004.request.json": {
+      "bytes": 831,
+      "sha256": "0390b1f70c1b26550e8a8c3f0d51aa3c1b4a52d845b782b52aec224ec80a2bfc"
+    },
+    "final/experience-target-05/create-receipt.json": {
+      "bytes": 1838,
+      "sha256": "37b7dd7f967cf2ddebe404e5b484c9e9a924b25fddc6d09d47e1d97f77df7fbc"
+    },
+    "final/experience-target-05/observer.jsonl": {
+      "bytes": 51955,
+      "sha256": "d7a512183f08cf75951b6f56ec7c8b6408774e4d003baeaca1aaef416709cae2"
+    },
+    "final/experience-target-05/online-result.json": {
+      "bytes": 18439,
+      "sha256": "5a552b9c097187ab8ae42522493fc0108eba693e05913d6a41cc454d6c51d8ae"
+    },
+    "final/experience-target-05/process.json": {
+      "bytes": 180,
+      "sha256": "1abd752dd5c873824f2f146dfe4f63c6a8306bb71b4ff08bfad1220b46a94e8e"
+    },
+    "final/experience-target-05/progress.jsonl": {
+      "bytes": 2072,
+      "sha256": "f721b635a7f69c0e21be6262650e273e078b4145f1bf5543d06538e7705b6ee9"
+    },
+    "final/experience-target-05/raw_tree.json": {
+      "bytes": 4423,
+      "sha256": "fa263ddda87a13bccff59586d42b1cbb76d163e7f99091204946bd18c4671454"
+    },
+    "final/experience-target-05/result.json": {
+      "bytes": 249,
+      "sha256": "50393348bca48a49fdeeb7b88b59e95860eb895eb27251168a35379317dd0b6f"
+    },
+    "final/experience-target-05/session.json": {
+      "bytes": 795,
+      "sha256": "5f34152342d4aa38aa5da7d343f41c095e26c749b8024eb10fe1ee7c1f9a2932"
+    },
+    "final/experience-target-05/snapshot-after.json": {
+      "bytes": 71,
+      "sha256": "b47cdc122bbec7d9593f3eb7dfb72bdc3e12fe7de6720a320ab1976248906a75"
+    },
+    "final/experience-target-05/snapshot-before.json": {
+      "bytes": 72,
+      "sha256": "ab3d52ecf7d106fe5d2cf5684886f53dced49264cf54b760de10245aa3511851"
+    },
+    "final/experience-target-05/stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "final/experience-target-05/stdout.log": {
+      "bytes": 3043,
+      "sha256": "9823c24722dc0817ea700241f41c2635081804fd60c15ff91ec767df94b7025c"
+    },
+    "final/experience-target-05/wall_clock.jsonl": {
+      "bytes": 20419,
+      "sha256": "632f317dafe266787a5293afe4470a83d509bb837eab68ea681cce106601ded7"
+    },
+    "final/inherit-concurrent-03/checkpoints/checkpoint-000000.ack.json": {
+      "bytes": 94,
+      "sha256": "790fd540835325f17cf5c5f6ff1b2cb8547bad80c30acf30b77627124af590dd"
+    },
+    "final/inherit-concurrent-03/checkpoints/checkpoint-000001.ack.json": {
+      "bytes": 94,
+      "sha256": "8f43f0d8fbf5cac97c19c91fa7ca22ef893ffbca21c196ffa32e29a161b30aaf"
+    },
+    "final/inherit-concurrent-03/checkpoints/checkpoint-000002.ack.json": {
+      "bytes": 94,
+      "sha256": "b127d7d6e73f682b4c8143f07deedf91d73c44f4ead3b3a29ef68af1d41a7f0b"
+    },
+    "final/inherit-concurrent-03/checkpoints/learn-000001.receipt.json": {
+      "bytes": 4164,
+      "sha256": "df60ea0e26c5b6e0a7bf7bf7a9da6b9977c4747f5008f071bece6547cae1231c"
+    },
+    "final/inherit-concurrent-03/checkpoints/learn-000001.request.json": {
+      "bytes": 764,
+      "sha256": "696ea5879c45f154aa696682b3e5907640e1ab21328ede4b1ea99f0efe7da85a"
+    },
+    "final/inherit-concurrent-03/create-receipt.json": {
+      "bytes": 1840,
+      "sha256": "6c855c912765e95729cddb23f3fdd31724f1e9ed031d43a87735064a8b0fe618"
+    },
+    "final/inherit-concurrent-03/observer.jsonl": {
+      "bytes": 19594,
+      "sha256": "3b320f8fba440d9da3662886e8e5cf387216b90763d577f55d805d2a39418379"
+    },
+    "final/inherit-concurrent-03/online-result.json": {
+      "bytes": 5016,
+      "sha256": "34c03dd385e3b0ad025a0d75b140069a5987f0925d51e743355023af15f0dbcd"
+    },
+    "final/inherit-concurrent-03/process.json": {
+      "bytes": 182,
+      "sha256": "3d40f7b85a55bf682467fce778abfe4810f48819c4328b3df4a33e970476569e"
+    },
+    "final/inherit-concurrent-03/progress.jsonl": {
+      "bytes": 1101,
+      "sha256": "a423fdbd3573c019f7e7bf00ba133017ce12e4ffa6ec32349cd81619e502a7c3"
+    },
+    "final/inherit-concurrent-03/raw_tree.json": {
+      "bytes": 2734,
+      "sha256": "a604bd68448bff3d02829231cbf91cf23067466637a0baa002fc121ed4fff6d9"
+    },
+    "final/inherit-concurrent-03/result.json": {
+      "bytes": 269,
+      "sha256": "4fef5036a1acc9daa23a58bf36108e24ddaebf4ec6bda1cb03254707e179ebfe"
+    },
+    "final/inherit-concurrent-03/session.json": {
+      "bytes": 800,
+      "sha256": "2738d32c7dc7cca8cec4812f525ed5b8e9578fdd139b0263f2135d8d03a0fd70"
+    },
+    "final/inherit-concurrent-03/snapshot-after.json": {
+      "bytes": 72,
+      "sha256": "74ef2c7b28b078fa90a3c79094884908c9f3fe6dae674636198c6aff08304580"
+    },
+    "final/inherit-concurrent-03/snapshot-before.json": {
+      "bytes": 73,
+      "sha256": "fbac7b2f2db6ffd94f7a087e8487acf7b5ce0dc1a6f60373b99c5f3cd4684dbb"
+    },
+    "final/inherit-concurrent-03/stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "final/inherit-concurrent-03/stdout.log": {
+      "bytes": 2248,
+      "sha256": "c21880f0b5230e6346966e9675384681d0b4782c6f8b83a756b0ded8db2bdd3b"
+    },
+    "final/inherit-concurrent-03/wall_clock.jsonl": {
+      "bytes": 12003,
+      "sha256": "d6d81df5bf95ec2dd870e5c46802a2be05e433cc7d2a765f60c0d4f08da1b0ea"
+    },
+    "final/inherit-refill-02/checkpoints/checkpoint-000000.ack.json": {
+      "bytes": 90,
+      "sha256": "a6aa02edbc8dae6fd5bb87c30aa90bfd7651399408dfeb3553cf163694edacb2"
+    },
+    "final/inherit-refill-02/checkpoints/checkpoint-000001.ack.json": {
+      "bytes": 90,
+      "sha256": "c9d901432860fac6e0cdafd4a4e58dd41e60cb5606b7a110802ecdd13c5f3b42"
+    },
+    "final/inherit-refill-02/checkpoints/checkpoint-000002.ack.json": {
+      "bytes": 90,
+      "sha256": "6c90422be7c859589da036f92ef66ea00c4a8ca3079758bbbb6a4f44a3b06288"
+    },
+    "final/inherit-refill-02/checkpoints/checkpoint-000003.ack.json": {
+      "bytes": 90,
+      "sha256": "973ffc11842bcff3952e69c6515504f5a7e4f0e74d305128f0bd7b0105672322"
+    },
+    "final/inherit-refill-02/checkpoints/checkpoint-000004.ack.json": {
+      "bytes": 90,
+      "sha256": "ccd76b76bde415fc64931ef4ab2ca7287266cad7d5e98d6840ec634723a1a1cd"
+    },
+    "final/inherit-refill-02/checkpoints/checkpoint-000005.ack.json": {
+      "bytes": 90,
+      "sha256": "7cfec1b894c4aeabebb0642638b82adb1fc45535f115f94ee4b5183f2e4bad2b"
+    },
+    "final/inherit-refill-02/checkpoints/checkpoint-000006.ack.json": {
+      "bytes": 90,
+      "sha256": "411a87c4c8c361cff2d35dd438c1acc74f5a457abde586f77931e9a60a013dfd"
+    },
+    "final/inherit-refill-02/checkpoints/learn-000005.receipt.json": {
+      "bytes": 4150,
+      "sha256": "77317eddb8f5a6f3fc81af4c39a0e744767421337e188a57da92f8dfb72a1565"
+    },
+    "final/inherit-refill-02/checkpoints/learn-000005.request.json": {
+      "bytes": 835,
+      "sha256": "3164c38a98ae7c3c0ce25230a01a44c577b6ff0a63d2ca4a2ec7a1a74c92bade"
+    },
+    "final/inherit-refill-02/create-receipt.json": {
+      "bytes": 1836,
+      "sha256": "e0aadb29b30feb1b5171b20951de67f19f1273432b1cd54b23735fa704ae506f"
+    },
+    "final/inherit-refill-02/observer.jsonl": {
+      "bytes": 43303,
+      "sha256": "ca046354710426cb72f194613ed89dbf493796f1e077bdf436610aced0920d40"
+    },
+    "final/inherit-refill-02/online-result.json": {
+      "bytes": 4882,
+      "sha256": "a820c33bac0d51e7413d6b54af4393c8803af923b2ae7d3e1c27793b13b65ba0"
+    },
+    "final/inherit-refill-02/process.json": {
+      "bytes": 181,
+      "sha256": "9f532699165e4503fe016391e1244c9ea42f8bc3dbb3695b751edf1d96fef770"
+    },
+    "final/inherit-refill-02/progress.jsonl": {
+      "bytes": 2318,
+      "sha256": "f41de53b37a56b5f5d7729a85d3d56c321d61d5086f80f808307786454043668"
+    },
+    "final/inherit-refill-02/raw_tree.json": {
+      "bytes": 4030,
+      "sha256": "08468ea6b00c8017cc42de301bcfff9cdb270f9095a17e8c342419fb6232c883"
+    },
+    "final/inherit-refill-02/result.json": {
+      "bytes": 285,
+      "sha256": "5a34de86f19f40e0aa47a1926d60a942270c47312c28755e8fa0916f0b66fc36"
+    },
+    "final/inherit-refill-02/session.json": {
+      "bytes": 785,
+      "sha256": "2e79041e26722500f05f0dc40e4138158c15c73ef26bf0c98b5bc4750b993367"
+    },
+    "final/inherit-refill-02/snapshot-after.json": {
+      "bytes": 68,
+      "sha256": "a3c5905975ee73d4c65015d03cad3332841288a599ed2853bfff5754f3c13b52"
+    },
+    "final/inherit-refill-02/snapshot-before.json": {
+      "bytes": 69,
+      "sha256": "6eaa7377a3df5259205f7efa6e6d8157703b94c8da1e27047206990094b3d71a"
+    },
+    "final/inherit-refill-02/stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "final/inherit-refill-02/stdout.log": {
+      "bytes": 1712,
+      "sha256": "7fb1119fe0188b2b7242a31a91e73619760de4a1a2de6ffe48cbc717d3b17a9d"
+    },
+    "final/inherit-refill-02/wall_clock.jsonl": {
+      "bytes": 34493,
+      "sha256": "bc75ae16cf5f2203dcec8a4042e3aa5e34fcdf369f9bbc947e9eb8d29b21fb82"
+    },
+    "monitor-final.json": {
+      "bytes": 3861,
+      "sha256": "1d891ddc7ebfd8c5a40685131fd7176e2a565a1bd17ff0b294149f273095a495"
+    },
+    "proof-check-experience-target-05/05-CubeAccumulatorProof.lean": {
+      "bytes": 711,
+      "sha256": "60e365b05a80c66c23a48e8b2ec9315bc8c9834a418e86399788863c5698599e"
+    },
+    "proof-check-experience-target-05/container-exists.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof-check-experience-target-05/container-exists.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof-check-experience-target-05/container-inspect.json": {
+      "bytes": 12666,
+      "sha256": "9c3c2bf611680991615d820ef71cfec683c721115345f0943ea242440ed50967"
+    },
+    "proof-check-experience-target-05/container-inspect.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof-check-experience-target-05/intent.json": {
+      "bytes": 1669,
+      "sha256": "f3e4bb1b69ceddab7865d810e9c3cdc88e56b2ab55f35cb331c9e434ed15bcab"
+    },
+    "proof-check-experience-target-05/proof.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof-check-experience-target-05/proof.stdout": {
+      "bytes": 924,
+      "sha256": "bebe75d0c126ff02f0e2b53be69a48e47a3fa4c9d5042e139b0ab13b1c367e7f"
+    },
+    "proof-check-experience-target-05/receipt.json": {
+      "bytes": 3003,
+      "sha256": "48ea35b58d4541fee76462e1e1b35105ae4dc0f04f7c5bd4645eee262fcbf754"
+    },
+    "proof-check-inherit-concurrent-03/03-ScaledTriangularProof.lean": {
+      "bytes": 752,
+      "sha256": "af40f7cda8e5474610c6c447f0c931b6700d352bf40bf477e425515d95d8d1da"
+    },
+    "proof-check-inherit-concurrent-03/container-exists.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof-check-inherit-concurrent-03/container-exists.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof-check-inherit-concurrent-03/container-inspect.json": {
+      "bytes": 12680,
+      "sha256": "e50b0f536ae720e77da4d133a2d8092c218cdc489f5051da96cbe5a9a1dafd96"
+    },
+    "proof-check-inherit-concurrent-03/container-inspect.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof-check-inherit-concurrent-03/intent.json": {
+      "bytes": 1678,
+      "sha256": "bd37c25e2a18c70f5e1ad25dd2d76b3b201c9c51b9a75406106d8b001811590e"
+    },
+    "proof-check-inherit-concurrent-03/proof.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof-check-inherit-concurrent-03/proof.stdout": {
+      "bytes": 456,
+      "sha256": "f4bae2f543bde5b8b3f4018c0284c4447f3f87dfa581250cd3f2dab44c1139d0"
+    },
+    "proof-check-inherit-concurrent-03/receipt.json": {
+      "bytes": 2530,
+      "sha256": "b09671d850996e993c4339b1881f81a35b10c5f9767f2327d507131e397ed636"
+    },
+    "proof-check-inherit-refill-02/02-AffineAccumulatorProof.lean": {
+      "bytes": 866,
+      "sha256": "90172700e89d8a762067a14717449586354ac527efd9f5f4fa6848811172d940"
+    },
+    "proof-check-inherit-refill-02/container-exists.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof-check-inherit-refill-02/container-exists.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof-check-inherit-refill-02/container-inspect.json": {
+      "bytes": 12669,
+      "sha256": "bdf79d70fa7ed6a49c0c4eeda54514e100eac4d9995a42777ad5030579f1c734"
+    },
+    "proof-check-inherit-refill-02/container-inspect.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof-check-inherit-refill-02/intent.json": {
+      "bytes": 1667,
+      "sha256": "9deba63353df5b67a32b2d7ed8c8a4fd9ae4191fac8b42fe54e7affa51d63dbe"
+    },
+    "proof-check-inherit-refill-02/proof.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof-check-inherit-refill-02/proof.stdout": {
+      "bytes": 119,
+      "sha256": "a6a148c54c1b02ead738da8223f9d233cac437a931b0f2e9a2bef4561f15642c"
+    },
+    "proof-check-inherit-refill-02/receipt.json": {
+      "bytes": 2176,
+      "sha256": "74cf64f53fb69faed991543842839b0caa127f5a1a04515eb8c4286d4344b1d8"
+    },
+    "snapshot-audit.json": {
+      "bytes": 91949,
+      "sha256": "16d34f4c51149c9c42b14d183617ac1a54ad6950ea40551ce4eaeda307c02afa"
+    },
+    "wire-audit-02.json": {
+      "bytes": 7933,
+      "sha256": "8cb08195b28a3b2d049f4eedadcb2311020202b3209614d4617521c79a6e5b2d"
+    },
+    "wire-audit-03.json": {
+      "bytes": 5074,
+      "sha256": "58ec7259aee67a2bdd4a14e01ab5d43f27fb2fbf6a7fa65b640f75a7abfb6322"
+    },
+    "wire-audit-05.json": {
+      "bytes": 13573,
+      "sha256": "2470244b5ea8a98a8ed0d07e8e2da52defbc1c29a77c4c9f292d82d68f1c7fa8"
+    },
+    "wire.json": {
+      "bytes": 176848,
+      "sha256": "eb388d267842daa164f5e343447fc0019efa7ae715e0178f935f17071fb34cf5"
+    }
+  },
+  "loose_files": {
+    "batch-final/.batch-retirements/experience-target-05.intent.json": "b440c012408f8eefc3ebad17b160e98fefe122c6de087c9c4331b53bc44e4487",
+    "batch-final/.batch-retirements/experience-target-05.receipt.json": "b7dc7794bf5a7ebbbdb641fa725ebd3cc4260243a884580848cdb0c845b4dd54",
+    "batch-final/.batch-retirements/experience-target-05.response.json": "617bad22d390937fe63c20de9581c5aa9f834b42d1c390c2ea8a6f9eaeab0c08",
+    "batch-final/.batch-retirements/inherit-concurrent-03.intent.json": "e828a451e8f47215b960fd8443f15afdcf258c90a324b0c282284ca87dac6230",
+    "batch-final/.batch-retirements/inherit-concurrent-03.receipt.json": "8715083c5d616bff742ab83214d2314a8924dd1f59484bc39eaade25bc513357",
+    "batch-final/.batch-retirements/inherit-concurrent-03.response.json": "12f65d39633bde8cc56422bc60210cc93f8cbad5534a84e82b30d1dc83003bbe",
+    "batch-final/.batch-retirements/inherit-refill-02.intent.json": "3e7be254a97cca89b5d2b7e8a16b363a62036c40bcf2b7406a3284a360776e44",
+    "batch-final/.batch-retirements/inherit-refill-02.receipt.json": "3a4fbb426e336d7bd148eca3ccfa7edaac6b4968759bb136b6954f0ab0c402cc",
+    "batch-final/.batch-retirements/inherit-refill-02.response.json": "0e72de7a26782cb0492bd38b60e17deab13a01d28f6a9b2875e42eed017a461d",
+    "concurrency-audit-v2.json": "f835a3d015bb15f64639e635f7300e5e78343aaf80a47ff6c2dfeaeed0342368",
+    "deploy-receipt.json": "4b0bde8cb774664514593b70e2605789bba5199a5697267981f4a9b768c6ef12",
+    "final/experience-target-05/checkpoints/checkpoint-000000.ack.json": "925632a3141e46fd9f9bba354d26d28116a2d41ec00ca23543653de96dd59181",
+    "final/experience-target-05/checkpoints/checkpoint-000001.ack.json": "c0ed070248cc89c89d64ea61aa2786d5c2abf2fcf710dbd2631df169d080bcd4",
+    "final/experience-target-05/checkpoints/checkpoint-000002.ack.json": "488923749b071951c51ed5b2d15eaa057165ea1836ffe5e30d3e66138bd25b37",
+    "final/experience-target-05/checkpoints/checkpoint-000003.ack.json": "7f1a3467f1853936267a2a5cacbd89580a3dbdb69827f7fc5604f6e39d5dcd88",
+    "final/experience-target-05/checkpoints/checkpoint-000004.ack.json": "4590ce04bcd3980e691a9a8de13ce49f1a00debad332db402bea975c396862b9",
+    "final/experience-target-05/checkpoints/checkpoint-000005.ack.json": "8dc9a19baa820fb46ff8326f67a78efb4616e1b8edacd0c549ca98268dada07a",
+    "final/experience-target-05/checkpoints/learn-000001.receipt.json": "5884774e456f67dce8535dd28c734141cb27ea5f478dc187131aafd0705d1516",
+    "final/experience-target-05/checkpoints/learn-000001.request.json": "a26d1cfcaa46ec8b0a24d49ac392aa8776797649377873fe6584a08e26cf9985",
+    "final/experience-target-05/checkpoints/learn-000002.receipt.json": "3d3a0a82c62f99b3135e4d2488c600ea736825be143037a5826aa88214f796bd",
+    "final/experience-target-05/checkpoints/learn-000002.request.json": "32353cce88847b5754201c658eca777e16091808a07e01bf33ea52bbe13f179e",
+    "final/experience-target-05/checkpoints/learn-000003.receipt.json": "d77cfdfbc8fc88f5d5413d1f7af1a428962843cd94d71b0f25fc9d9bfec588b3",
+    "final/experience-target-05/checkpoints/learn-000003.request.json": "d2ee90ad667f854a7ff3994dd95c0b045910731ee40e8a2ea558ed26415a2029",
+    "final/experience-target-05/checkpoints/learn-000004.receipt.json": "221e7ddc7541123532db8a3094de1780019083acae68d32bbc64908807d4d8ac",
+    "final/experience-target-05/checkpoints/learn-000004.request.json": "0390b1f70c1b26550e8a8c3f0d51aa3c1b4a52d845b782b52aec224ec80a2bfc",
+    "final/experience-target-05/create-receipt.json": "37b7dd7f967cf2ddebe404e5b484c9e9a924b25fddc6d09d47e1d97f77df7fbc",
+    "final/experience-target-05/online-result.json": "5a552b9c097187ab8ae42522493fc0108eba693e05913d6a41cc454d6c51d8ae",
+    "final/experience-target-05/process.json": "1abd752dd5c873824f2f146dfe4f63c6a8306bb71b4ff08bfad1220b46a94e8e",
+    "final/experience-target-05/raw_tree.json": "fa263ddda87a13bccff59586d42b1cbb76d163e7f99091204946bd18c4671454",
+    "final/experience-target-05/result.json": "50393348bca48a49fdeeb7b88b59e95860eb895eb27251168a35379317dd0b6f",
+    "final/experience-target-05/session.json": "5f34152342d4aa38aa5da7d343f41c095e26c749b8024eb10fe1ee7c1f9a2932",
+    "final/experience-target-05/snapshot-after.json": "b47cdc122bbec7d9593f3eb7dfb72bdc3e12fe7de6720a320ab1976248906a75",
+    "final/experience-target-05/snapshot-before.json": "ab3d52ecf7d106fe5d2cf5684886f53dced49264cf54b760de10245aa3511851",
+    "final/inherit-concurrent-03/checkpoints/checkpoint-000000.ack.json": "790fd540835325f17cf5c5f6ff1b2cb8547bad80c30acf30b77627124af590dd",
+    "final/inherit-concurrent-03/checkpoints/checkpoint-000001.ack.json": "8f43f0d8fbf5cac97c19c91fa7ca22ef893ffbca21c196ffa32e29a161b30aaf",
+    "final/inherit-concurrent-03/checkpoints/checkpoint-000002.ack.json": "b127d7d6e73f682b4c8143f07deedf91d73c44f4ead3b3a29ef68af1d41a7f0b",
+    "final/inherit-concurrent-03/checkpoints/learn-000001.receipt.json": "df60ea0e26c5b6e0a7bf7bf7a9da6b9977c4747f5008f071bece6547cae1231c",
+    "final/inherit-concurrent-03/checkpoints/learn-000001.request.json": "696ea5879c45f154aa696682b3e5907640e1ab21328ede4b1ea99f0efe7da85a",
+    "final/inherit-concurrent-03/create-receipt.json": "6c855c912765e95729cddb23f3fdd31724f1e9ed031d43a87735064a8b0fe618",
+    "final/inherit-concurrent-03/online-result.json": "34c03dd385e3b0ad025a0d75b140069a5987f0925d51e743355023af15f0dbcd",
+    "final/inherit-concurrent-03/process.json": "3d40f7b85a55bf682467fce778abfe4810f48819c4328b3df4a33e970476569e",
+    "final/inherit-concurrent-03/raw_tree.json": "a604bd68448bff3d02829231cbf91cf23067466637a0baa002fc121ed4fff6d9",
+    "final/inherit-concurrent-03/result.json": "4fef5036a1acc9daa23a58bf36108e24ddaebf4ec6bda1cb03254707e179ebfe",
+    "final/inherit-concurrent-03/session.json": "2738d32c7dc7cca8cec4812f525ed5b8e9578fdd139b0263f2135d8d03a0fd70",
+    "final/inherit-concurrent-03/snapshot-after.json": "74ef2c7b28b078fa90a3c79094884908c9f3fe6dae674636198c6aff08304580",
+    "final/inherit-concurrent-03/snapshot-before.json": "fbac7b2f2db6ffd94f7a087e8487acf7b5ce0dc1a6f60373b99c5f3cd4684dbb",
+    "final/inherit-refill-02/checkpoints/checkpoint-000000.ack.json": "a6aa02edbc8dae6fd5bb87c30aa90bfd7651399408dfeb3553cf163694edacb2",
+    "final/inherit-refill-02/checkpoints/checkpoint-000001.ack.json": "c9d901432860fac6e0cdafd4a4e58dd41e60cb5606b7a110802ecdd13c5f3b42",
+    "final/inherit-refill-02/checkpoints/checkpoint-000002.ack.json": "6c90422be7c859589da036f92ef66ea00c4a8ca3079758bbbb6a4f44a3b06288",
+    "final/inherit-refill-02/checkpoints/checkpoint-000003.ack.json": "973ffc11842bcff3952e69c6515504f5a7e4f0e74d305128f0bd7b0105672322",
+    "final/inherit-refill-02/checkpoints/checkpoint-000004.ack.json": "ccd76b76bde415fc64931ef4ab2ca7287266cad7d5e98d6840ec634723a1a1cd",
+    "final/inherit-refill-02/checkpoints/checkpoint-000005.ack.json": "7cfec1b894c4aeabebb0642638b82adb1fc45535f115f94ee4b5183f2e4bad2b",
+    "final/inherit-refill-02/checkpoints/checkpoint-000006.ack.json": "411a87c4c8c361cff2d35dd438c1acc74f5a457abde586f77931e9a60a013dfd",
+    "final/inherit-refill-02/checkpoints/learn-000005.receipt.json": "77317eddb8f5a6f3fc81af4c39a0e744767421337e188a57da92f8dfb72a1565",
+    "final/inherit-refill-02/checkpoints/learn-000005.request.json": "3164c38a98ae7c3c0ce25230a01a44c577b6ff0a63d2ca4a2ec7a1a74c92bade",
+    "final/inherit-refill-02/create-receipt.json": "e0aadb29b30feb1b5171b20951de67f19f1273432b1cd54b23735fa704ae506f",
+    "final/inherit-refill-02/online-result.json": "a820c33bac0d51e7413d6b54af4393c8803af923b2ae7d3e1c27793b13b65ba0",
+    "final/inherit-refill-02/process.json": "9f532699165e4503fe016391e1244c9ea42f8bc3dbb3695b751edf1d96fef770",
+    "final/inherit-refill-02/raw_tree.json": "08468ea6b00c8017cc42de301bcfff9cdb270f9095a17e8c342419fb6232c883",
+    "final/inherit-refill-02/result.json": "5a34de86f19f40e0aa47a1926d60a942270c47312c28755e8fa0916f0b66fc36",
+    "final/inherit-refill-02/session.json": "2e79041e26722500f05f0dc40e4138158c15c73ef26bf0c98b5bc4750b993367",
+    "final/inherit-refill-02/snapshot-after.json": "a3c5905975ee73d4c65015d03cad3332841288a599ed2853bfff5754f3c13b52",
+    "final/inherit-refill-02/snapshot-before.json": "6eaa7377a3df5259205f7efa6e6d8157703b94c8da1e27047206990094b3d71a",
+    "monitor-final.json": "1d891ddc7ebfd8c5a40685131fd7176e2a565a1bd17ff0b294149f273095a495",
+    "proof-check-experience-target-05/05-CubeAccumulatorProof.lean": "60e365b05a80c66c23a48e8b2ec9315bc8c9834a418e86399788863c5698599e",
+    "proof-check-experience-target-05/container-inspect.json": "9c3c2bf611680991615d820ef71cfec683c721115345f0943ea242440ed50967",
+    "proof-check-experience-target-05/intent.json": "f3e4bb1b69ceddab7865d810e9c3cdc88e56b2ab55f35cb331c9e434ed15bcab",
+    "proof-check-experience-target-05/receipt.json": "48ea35b58d4541fee76462e1e1b35105ae4dc0f04f7c5bd4645eee262fcbf754",
+    "proof-check-inherit-concurrent-03/03-ScaledTriangularProof.lean": "af40f7cda8e5474610c6c447f0c931b6700d352bf40bf477e425515d95d8d1da",
+    "proof-check-inherit-concurrent-03/container-inspect.json": "e50b0f536ae720e77da4d133a2d8092c218cdc489f5051da96cbe5a9a1dafd96",
+    "proof-check-inherit-concurrent-03/intent.json": "bd37c25e2a18c70f5e1ad25dd2d76b3b201c9c51b9a75406106d8b001811590e",
+    "proof-check-inherit-concurrent-03/receipt.json": "b09671d850996e993c4339b1881f81a35b10c5f9767f2327d507131e397ed636",
+    "proof-check-inherit-refill-02/02-AffineAccumulatorProof.lean": "90172700e89d8a762067a14717449586354ac527efd9f5f4fa6848811172d940",
+    "proof-check-inherit-refill-02/container-inspect.json": "bdf79d70fa7ed6a49c0c4eeda54514e100eac4d9995a42777ad5030579f1c734",
+    "proof-check-inherit-refill-02/intent.json": "9deba63353df5b67a32b2d7ed8c8a4fd9ae4191fac8b42fe54e7affa51d63dbe",
+    "proof-check-inherit-refill-02/receipt.json": "74cf64f53fb69faed991543842839b0caa127f5a1a04515eb8c4286d4344b1d8",
+    "snapshot-audit.json": "16d34f4c51149c9c42b14d183617ac1a54ad6950ea40551ce4eaeda307c02afa",
+    "wire-audit-02.json": "8cb08195b28a3b2d049f4eedadcb2311020202b3209614d4617521c79a6e5b2d",
+    "wire-audit-03.json": "58ec7259aee67a2bdd4a14e01ab5d43f27fb2fbf6a7fa65b640f75a7abfb6322",
+    "wire-audit-05.json": "2470244b5ea8a98a8ed0d07e8e2da52defbc1c29a77c4c9f292d82d68f1c7fa8",
+    "wire.json": "eb388d267842daa164f5e343447fc0019efa7ae715e0178f935f17071fb34cf5"
+  },
+  "excluded": "7B weights, large tensor snapshots, credentials, browser state"
+}

@@ -1,0 +1,70 @@
+{
+  "schema_version": "reap.evidence-stage.v1",
+  "source_directory": "replica-collector-local-20260828",
+  "archive": {
+    "file": "raw.zip",
+    "bytes": 32778,
+    "sha256": "428634a695f434478001977606cdec94cb5ecd184a093579c927a1855e1b566e"
+  },
+  "files": {
+    "final-v2/frozen/cpu_runtime/collector_batch.py": {
+      "bytes": 21729,
+      "sha256": "9cac4c779054d7611f7da7ba25c7d264121cbf31fc2314da95c70052a89dc56f"
+    },
+    "final-v2/frozen/cpu_runtime/http_clients.py": {
+      "bytes": 5751,
+      "sha256": "c65d81a6f922c62c90d40a08113f9699d634b647e3798b3578a69df2dffa4488"
+    },
+    "final-v2/frozen/cpu_runtime/matchmaker.py": {
+      "bytes": 27103,
+      "sha256": "8536a531a9b8be98f9f145f2ec8d43a6b019f9884f4299eab9b8eb8ae899369f"
+    },
+    "final-v2/frozen/cpu_runtime/replica_collector.py": {
+      "bytes": 12342,
+      "sha256": "fe81d71cf61aa6815d869f418d32418a70a0c7a91644ebfd3d85d107493fd938"
+    },
+    "final-v2/frozen/cpu_runtime/transport_budget.py": {
+      "bytes": 1351,
+      "sha256": "e0fd254e87f7e1f3cd3d53c3135fff2ea889a6cf3929be6866bb456fee83d1ac"
+    },
+    "final-v2/frozen/cpu_runtime/verified_collector.py": {
+      "bytes": 22412,
+      "sha256": "3ee7543ec54b2416acfcfd7da7b79a5f5dad3ee6298723f6c08deff32fc827c5"
+    },
+    "final-v2/frozen/tests/test_replica_collector.py": {
+      "bytes": 13217,
+      "sha256": "fee65c0e59951beaacb9b91e65b07914954cb3eb773779aa26b76d849398dcbd"
+    },
+    "final-v2/independent-review.json": {
+      "bytes": 1853,
+      "sha256": "28bd652d01c680a9ad205ab75b52a6bb8d594c4af73568b295c11ae419053653"
+    },
+    "final-v2/linux.log": {
+      "bytes": 132,
+      "sha256": "5ae58622769bb0728b55de5cf497719df0f5985130367c2a5026561510828261"
+    },
+    "final-v2/receipt.json": {
+      "bytes": 925,
+      "sha256": "108ee120a894d52c8dfaeda5bb156997b5ce4cde135cd5cdeb04eff329f4b0ed"
+    },
+    "final-v2/source-after.json": {
+      "bytes": 739,
+      "sha256": "0b98f6f168a3febc046fff974a3987fee0c5f1328f04935e4bb6859d62e19e95"
+    },
+    "final-v2/source-before.json": {
+      "bytes": 739,
+      "sha256": "0b98f6f168a3febc046fff974a3987fee0c5f1328f04935e4bb6859d62e19e95"
+    },
+    "final-v2/windows.log": {
+      "bytes": 137,
+      "sha256": "994c43b56b2ee6a19003dc319765380fe47e05ef6069029191b6f7b80d7a1157"
+    }
+  },
+  "loose_files": {
+    "final-v2/independent-review.json": "28bd652d01c680a9ad205ab75b52a6bb8d594c4af73568b295c11ae419053653",
+    "final-v2/receipt.json": "108ee120a894d52c8dfaeda5bb156997b5ce4cde135cd5cdeb04eff329f4b0ed",
+    "final-v2/source-after.json": "0b98f6f168a3febc046fff974a3987fee0c5f1328f04935e4bb6859d62e19e95",
+    "final-v2/source-before.json": "0b98f6f168a3febc046fff974a3987fee0c5f1328f04935e4bb6859d62e19e95"
+  },
+  "excluded": "7B weights, large tensor snapshots, credentials, browser state"
+}

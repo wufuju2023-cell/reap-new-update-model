@@ -1,18 +1,22 @@
-# 如何阅读和复核实验凭证
+# 实验凭证与复核入口
 
-这里回答三个问题：模型有没有真正训练？训练后搜索有没有用新参数？最终证明是否成立？先读报告，只有需要复核时才解包原始数据。所有检查都可以从本地开始；不需要重新打开 AMD 实例。
+这里保存模型实际更新、搜索使用新参数及最终证明验收的凭证。先读报告，再按需要解包原始数据；文件完整性和运行收据可先在本地核对。
 
-## 最新五题结果：先看这里
+## 当前实验：先看这里
+
+最新阶段从[当前证据导航](current/README.md)进入，覆盖跨题继承、证明回流训练、混合学习、多服务并发及发布后的恢复消费。各阶段单独记录，不能把不同实验拼成一次运行。
+
+## 2026-08-27五题结果
 
 第1题三次更新后成功、第5题两次更新后成功，证据集中在 [multiround/](multiround/README.md)。[summary.json](multiround/summary.json) 给出五题八次尝试的总表；其余文件依次验证实际更新、新版本继续搜索和最终证明。
 
-下面根目录的 E/F 文件保留较早实验的结果，不是最新五题的总表；`acceptance-summary.json` 等历史 JSON 保持原字节，不因新结果改写。
+下面根目录的E/F文件保留更早实验的结果；`acceptance-summary.json` 等历史 JSON 保持原字节，不因新结果改写。
 
 ## 1. 历史 E/F：结论与依据
 
 | 按顺序查看 | 这个文件说明什么 | 怎样理解结果 |
 |---|---|---|
-| `acceptance-summary.json` | 各验收项的总表 | E 的真实同树 TTT 为 true；双题整批、GPU 容器、发布、能力提升仍为 false |
+| `acceptance-summary.json` | 各验收项的总表 | 当时E的真实同树TTT为true；当时双题整批、GPU容器、发布、能力提升为false，后续状态见当前报告 |
 | `independent-execution-audit.json` | E 的搜索树、更新位置、最终证明重检 | 树节点继续增长；一次更新之后继续生成；无网络证明重检退出码为 0 |
 | `independent-wire-e.json` | E 的 CPU 记录与远端原始 HTTP 是否对应 | 10 个 job，更新一次，后续 policy/value 为 v1，`gaps=[]` |
 | `recurrence-snapshot-audit.json` | 真实训练前后快照中的张量检查 | E 的 196 个 LoRA 张量、4 个 value-head 张量改变，数值有限 |
@@ -20,14 +24,14 @@
 | `independent-wire-f.json` | 并发 F 的训练链 | 5 次更新可核验，最终证明未通过，保留为 partial |
 | `multi-round-ttt.json` | F 五轮的集中对照 | 每轮更新、optimizer step、新版本推理和参数摘要逐项列出；最终证明为 false |
 | `f-empty-tactic-analysis.json` | F 为什么出现大量空候选 | 64 条候选中 53 条直接生成结束标记；深层原因尚未做对照实验 |
-| `current-container-access.json` | 最后一次只读容器环境核查 | 当前未发现 Docker daemon/代理 socket；B 的构建与运行仍待具备条件的环境 |
-| `source-checks.json` | 源码快照和本地交付工具的检查 | 仅覆盖源码完整性、解包和工具测试；GPU 容器仍需另验 |
+| `current-container-access.json` | 当时的只读容器环境核查 | 当时未发现可用容器服务；后续GPU镜像已本地构建，AMD容器训练仍未验 |
+| `source-checks.json` | 源码快照和本地交付工具的检查 | 只覆盖当时的源码完整性、解包和工具测试，不代表GPU容器运行验收 |
 
 E 的训练数据来自真实搜索的访问次数和回传值。学习发生时题目还未解决，随后同一棵树继续生成，最终证明通过。完整解释见[实验结果](../docs/03-实际TTT结果与证据.md)。
 
 ## 2. 需要原始记录时，解开证据包
 
-`raw-evidence.tar.gz` 收纳本次 E/F 的原始记录；`raw-evidence-manifest.json` 给出压缩包及每个文件的大小、SHA256。它们不含模型权重。此前 A—D 的历史实验、重复回放副本和上传临时文件保留在原本地记录中，不随本包交付。
+`raw-evidence.tar.gz` 收纳早期E/F实验的原始记录；`raw-evidence-manifest.json` 给出压缩包及每个文件的大小、SHA256。它们不含模型权重。此前 A—D 的历史实验、重复回放副本和上传临时文件保留在原本地记录中，不随本包交付。
 
 解包前先核对压缩包 SHA256；解包后逐文件核对清单。使用全新目录，避免和新实验输出混在一起。解包后的主要路径如下：
 
@@ -51,7 +55,7 @@ E 的训练数据来自真实搜索的访问次数和回传值。学习发生时
 | `proof-recheck/proof-recheck.log` | 无网络重检结果，含公理依赖检查 |
 | `proof-recheck/*inspect.json` | 证明重检所用 CPU 镜像、用户、网络模式等容器信息 |
 
-## 3. 如何重新做本地 HTTP 审计
+## 3. 本地HTTP审计
 
 先按[source 说明](../source/README.md)校验并解出源码，再解出上面的证据。下面两个路径需替换为自己的目录；输出文件应尚不存在。
 

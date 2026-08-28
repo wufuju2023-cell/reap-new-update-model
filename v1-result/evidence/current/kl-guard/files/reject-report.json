@@ -1,0 +1,195 @@
+{
+  "Adam_scope": "fresh_empty_Adam_to_real_tentative_moments; populated_preexisting_moments_NOT_tested_here",
+  "artifacts": {
+    "after_kl-replay-control": {
+      "bytes": 84555875,
+      "decoded_state_sha256": "ac72c0e13d243ddf7f09cce771d19ac36623b33bcf067edd64b616f635da8df5",
+      "file": "after-kl-replay-control.pt",
+      "sha256": "733f15440e22431fe65fce5a3e9a538f6c86bf0e384112469467f3c77e153d18"
+    },
+    "after_kl-replay-target": {
+      "bytes": 84555875,
+      "decoded_state_sha256": "d89ccb62afc4a2a9582b7d3e6ff2d344b071d33cd401fd1c09305a96bd87b5aa",
+      "file": "after-kl-replay-target.pt",
+      "sha256": "9848c2561acc7da8260eea9b25278d91a554b8cd36a66d2c73e3aa81afdf9c1c"
+    },
+    "before_kl-replay-control": {
+      "bytes": 84555875,
+      "decoded_state_sha256": "ac72c0e13d243ddf7f09cce771d19ac36623b33bcf067edd64b616f635da8df5",
+      "file": "before-kl-replay-control.pt",
+      "sha256": "733f15440e22431fe65fce5a3e9a538f6c86bf0e384112469467f3c77e153d18"
+    },
+    "before_kl-replay-target": {
+      "bytes": 84555875,
+      "decoded_state_sha256": "d89ccb62afc4a2a9582b7d3e6ff2d344b071d33cd401fd1c09305a96bd87b5aa",
+      "file": "before-kl-replay-target.pt",
+      "sha256": "9848c2561acc7da8260eea9b25278d91a554b8cd36a66d2c73e3aa81afdf9c1c"
+    },
+    "host_rng": {
+      "bytes": 12317,
+      "decoded_state_sha256": "c404e61fc6442b0e86357d6a525b6ed3e801f5b0539f146a146168c94c14c8ee",
+      "file": "host-rng-before-after.pt",
+      "sha256": "ed2fd97c6558b9a3615d31d1b5a41faf3ec3cec94bbb55fb40d4f180ccca10c1"
+    },
+    "tentative_observations": {
+      "bytes": 178847,
+      "file": "tentative-observations.json",
+      "sha256": "ad59a6b7a2fe360a6770d0f13f2f2017c2c7de8395fcaef272b7cea1213296c7"
+    }
+  },
+  "case": "reject",
+  "committed_parameter_deltas": {
+    "adapter": {
+      "added_tensors": 0,
+      "after_tensors": 392,
+      "before_tensors": 392,
+      "changed_tensors": 0,
+      "removed_tensors": 0
+    },
+    "optimizer": {
+      "added_tensors": 0,
+      "after_tensors": 0,
+      "before_tensors": 0,
+      "changed_tensors": 0,
+      "removed_tensors": 0
+    },
+    "value_head": {
+      "added_tensors": 0,
+      "after_tensors": 4,
+      "before_tensors": 4,
+      "changed_tensors": 0,
+      "removed_tensors": 0
+    }
+  },
+  "contract_sha256": "e70b0e5220fa36e3da129fa9271a4117fb0da8827390059949e581743d91efad",
+  "dependencies": {
+    "peft": "0.17.1",
+    "transformers": "4.57.1"
+  },
+  "device": "",
+  "experience_inherited": false,
+  "full_frozen_base_content_hash_checked": false,
+  "gates": {
+    "actual_finite_post_step_guard": true,
+    "control_exactly_unchanged": true,
+    "exactly_one_actual_optimizer_step": true,
+    "fixed_contract_unchanged": true,
+    "fresh_sessions_without_experience": true,
+    "host_RNG_exactly_unchanged": true,
+    "no_unexpected_exception": true,
+    "optimizer_scope_correct": true,
+    "rejected_above_threshold": true,
+    "rejected_exact_KL_exception": true,
+    "rollback_exact_full_target": true,
+    "tentative_Adam_moments_created": true,
+    "tentative_adapter_changed": true,
+    "tentative_not_committed": true,
+    "tentative_value_head_changed": true,
+    "version_zero_no_committed_receipt": true
+  },
+  "guard_rejection": {
+    "detail": {
+      "accepted": false,
+      "maximum": 1e-12,
+      "measurement_clock": "host_perf_counter_wall_including_tensor_transfer",
+      "measurement_seconds": 0.09944252900004358,
+      "post_update_kl": 1.3369488716125488,
+      "reduction": "visit_weighted_sum_of_prefix_next_token_KL_current_to_frozen_base",
+      "reject_if": "strictly_greater",
+      "scope": "current_event_candidate_prefixes_only",
+      "timing": "after_optimizer_step_before_commit"
+    },
+    "type": "KLGuardExceeded"
+  },
+  "input_provenance": {
+    "candidate_behavior_versions_preserved": true,
+    "execution": "offline_replay_of_previously_recorded_search_feedback_NOT_new_Lean_search",
+    "identity_rebindings": {
+      "event_id": {
+        "replay": "kl-replay-target.replay-0",
+        "source": "experience-source-01.s13.n0"
+      },
+      "session_id": {
+        "replay": "kl-replay-target",
+        "source": "experience-source-01"
+      },
+      "tree_id": {
+        "replay": "kl-replay-target.replay-tree",
+        "source": "experience-source-01.tree0"
+      }
+    },
+    "preserved_training_fields_sha256": "572dd9ebd774fa1b9dc00a52fecee536b933ed5f34b7d0a0d439034e25040e8e",
+    "source_file_sha256": "007f8bccd408afcca59630517a732caa8267f7bf9d4e85fca1a8461e4ea19881",
+    "source_version_zero_is_not_a_same_weights_or_on_policy_claim": true
+  },
+  "learn_receipt": null,
+  "learn_wall_seconds": 5.688616529000228,
+  "maximum": 1e-12,
+  "model_lock": {
+    "meaning": "recorded_identity_only; model_files_not_rehashed_by_this_probe",
+    "revision": "fe76f68d9a88f342cb7b546307c20292fea9cced",
+    "sha256": "88cf6547133e49c28a2186a26fbaef6a3b9b50447d5f2406a26173b0910376b0"
+  },
+  "new_Lean_search_verified": false,
+  "new_proof_verified": false,
+  "ok": true,
+  "optimizer_step_observer": "native_read_only_register_step_post_hook; no_mocked_step_or_KL",
+  "performance_improvement_claimed": false,
+  "post_step_guard": {
+    "accepted": false,
+    "maximum": 1e-12,
+    "measurement_clock": "host_perf_counter_wall_including_tensor_transfer",
+    "measurement_seconds": 0.09944252900004358,
+    "post_update_kl": 1.3369488716125488,
+    "reduction": "visit_weighted_sum_of_prefix_next_token_KL_current_to_frozen_base",
+    "reject_if": "strictly_greater",
+    "scope": "current_event_candidate_prefixes_only",
+    "timing": "after_optimizer_step_before_commit"
+  },
+  "real_7B_GPU_gate_passed": true,
+  "rollback_scope": "adapter_value_head_Adam_private_RNG_counters_full_logical_metadata_buffer_and_receipts",
+  "schema_version": "reap.kl-guard-gpu-replay.v1",
+  "source_sha256": {
+    "containers/gpu/smoke_gpu.py": "e024b6bc9b23fca1c66c3ed679e6136ada01fab503733cb396a57892aac3b759",
+    "containers/gpu/smoke_kl_guard.py": "c48ef92a8993570baf88928860eda2c20f3b217692e80b6329b35135ac7384bd",
+    "containers/gpu/smoke_search_gpu.py": "12d1918fcc2d0145ba2e7dd90bcb73878fd2a222d593e06ab3d729fc2c5ed905",
+    "gpu_runtime/actor.py": "a648761fb9a2bc6a231cb5d9bc2f6985e3d39ffc8c620fb2d580e602e4760524",
+    "gpu_runtime/real_backend.py": "6dae5e59cc8fbcaa7f2101e3c93cf6f3735b439750e322aa0e0fe681a0d595c8",
+    "gpu_runtime/runtime.py": "115ec6c508383d5ec8da9144820d25f1eacec63577706bb1764f89886873ccbb",
+    "gpu_runtime/search_backend.py": "a389f7464621ca217f0535a202d70b35662c20f7c51e47b7741d73db271b69dd",
+    "gpu_runtime/search_objective.py": "62939272269085464e5111d6f412500be3f28a67192f25c2a479d307625687d0",
+    "gpu_runtime/session_store.py": "25f213a132c90148ed34daf7989cac5e786132b1ab90467b90933afa1134cf43"
+  },
+  "timing_scope": "runtime_learn_plus_private_state_post_step_observer; excludes_model_load_and_disk_artifacts; NOT_kernel_time",
+  "torch_hip": "7.2.53211",
+  "torch_version": "2.11.0+gitd0c8b1f",
+  "total_wall_seconds": 31.153677528000117,
+  "training_contract": {
+    "gamma": 0.99,
+    "head": "sigmoid",
+    "hidden_size": 3584,
+    "kl_beta": 0.02,
+    "kl_guard": {
+      "maximum": 1e-12,
+      "numeric_policy": "reject_nonfinite_or_negative_without_clamping",
+      "reduction": "visit_weighted_sum_of_prefix_next_token_KL_current_to_frozen_base",
+      "reject_if": "strictly_greater",
+      "timing": "after_optimizer_step_before_commit"
+    },
+    "kl_reduction": "visit_weighted_sum_of_prefix_next_token_KL_current_to_frozen_base",
+    "learning_rate": 0.0001,
+    "lora_rank": 16,
+    "max_candidates": 64,
+    "max_distance": 1375.6317296601653,
+    "max_grad_norm": 1.0,
+    "max_sequence_tokens": 4096,
+    "objective": "search_visit_backup",
+    "policy_reduction": "visit_weighted_joint_token_sum",
+    "tokenization": "canonical_tactic_separate_tokenization_no_implicit_EOS_joint_token_sum",
+    "value_coefficient": 0.5,
+    "value_floor": 1e-06,
+    "value_learning_rate": 0.0003,
+    "value_semantics": "reap.search_backup_discounted_return.v1"
+  },
+  "unexpected_exception": null
+}

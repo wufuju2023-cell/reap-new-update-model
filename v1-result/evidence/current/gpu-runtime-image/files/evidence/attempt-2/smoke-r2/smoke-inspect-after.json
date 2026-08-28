@@ -1,0 +1,291 @@
+[
+     {
+          "Id": "a19e7e59a88d352c0672b38e0a47131a7d86326f3c9e4e763bcdf3eb88e19f60",
+          "Created": "2026-08-28T05:59:21.380708583+08:00",
+          "Path": "python",
+          "Args": [
+               "-B",
+               "/audit.py"
+          ],
+          "State": {
+               "OciVersion": "1.1.0",
+               "Status": "exited",
+               "Running": false,
+               "Paused": false,
+               "Restarting": false,
+               "OOMKilled": false,
+               "Dead": false,
+               "Pid": 0,
+               "ExitCode": 0,
+               "Error": "",
+               "StartedAt": "2026-08-28T05:59:22.64805802+08:00",
+               "FinishedAt": "2026-08-28T05:59:27.35960906+08:00",
+               "Health": {
+                    "Status": "",
+                    "FailingStreak": 0,
+                    "Log": null
+               },
+               "CheckpointedAt": "0001-01-01T00:00:00Z",
+               "RestoredAt": "0001-01-01T00:00:00Z"
+          },
+          "Image": "fc5687143dd7fd6ca276e45ed1d420fd3b611fa3299c42245216f94326c2dba3",
+          "ImageDigest": "sha256:ed6b3a035fcded94ce2c48653120d04aeb7bb7b57e9b49782ad3edd37943255d",
+          "ImageName": "localhost/reap-gpu:runtime-20260828",
+          "Rootfs": "",
+          "Pod": "",
+          "ResolvConfPath": "",
+          "HostnamePath": "/run/user/1000/containers/overlay-containers/a19e7e59a88d352c0672b38e0a47131a7d86326f3c9e4e763bcdf3eb88e19f60/userdata/hostname",
+          "HostsPath": "/run/user/1000/containers/overlay-containers/a19e7e59a88d352c0672b38e0a47131a7d86326f3c9e4e763bcdf3eb88e19f60/userdata/hosts",
+          "StaticDir": "/home/hsy/.local/share/containers/storage/overlay-containers/a19e7e59a88d352c0672b38e0a47131a7d86326f3c9e4e763bcdf3eb88e19f60/userdata",
+          "OCIConfigPath": "/home/hsy/.local/share/containers/storage/overlay-containers/a19e7e59a88d352c0672b38e0a47131a7d86326f3c9e4e763bcdf3eb88e19f60/userdata/config.json",
+          "OCIRuntime": "crun",
+          "ConmonPidFile": "/run/user/1000/containers/overlay-containers/a19e7e59a88d352c0672b38e0a47131a7d86326f3c9e4e763bcdf3eb88e19f60/userdata/conmon.pid",
+          "PidFile": "/run/user/1000/containers/overlay-containers/a19e7e59a88d352c0672b38e0a47131a7d86326f3c9e4e763bcdf3eb88e19f60/userdata/pidfile",
+          "Name": "reap-gpu-runtime-local-smoke-r2-20260828",
+          "RestartCount": 0,
+          "Driver": "overlay",
+          "MountLabel": "",
+          "ProcessLabel": "",
+          "AppArmorProfile": "",
+          "EffectiveCaps": null,
+          "BoundingCaps": [
+               "CAP_CHOWN",
+               "CAP_DAC_OVERRIDE",
+               "CAP_FOWNER",
+               "CAP_FSETID",
+               "CAP_KILL",
+               "CAP_NET_BIND_SERVICE",
+               "CAP_SETFCAP",
+               "CAP_SETGID",
+               "CAP_SETPCAP",
+               "CAP_SETUID",
+               "CAP_SYS_CHROOT"
+          ],
+          "ExecIDs": [],
+          "GraphDriver": {
+               "Name": "overlay",
+               "Data": {
+                    "LowerDir": "/home/hsy/.local/share/containers/storage/overlay/b8bba0823df933ae7a7614bef08d1241a40b118e358d8b08f75b9707870f4aa3/diff:/home/hsy/.local/share/containers/storage/overlay/630b34347bf6bfd65cc98108f6d2795996ad6121a4bc94cc9f29a778e2217521/diff:/home/hsy/.local/share/containers/storage/overlay/614e7e9c36cb26099bfd5a4c6bb5d285ecb7ea389f763da307ce747d5f48431a/diff:/home/hsy/.local/share/containers/storage/overlay/0b3cbfbdfeee22125eca612c564de504ed37db9c9cb80032574435cccc6c5aaf/diff:/home/hsy/.local/share/containers/storage/overlay/18009de50393a9c8d1ed93f17938a50944729f512328ecca523013b36641ed0c/diff:/home/hsy/.local/share/containers/storage/overlay/2b7c27f1c29efe54dbe0b267a2a1f35a1a65f84baae9ac18ee75bc874a357f6f/diff:/home/hsy/.local/share/containers/storage/overlay/355198a9eec4c6d0bfc53f5103ffa4555baaf717f40c7aa585869d2b096f212c/diff:/home/hsy/.local/share/containers/storage/overlay/8ec08a2ab77bbffbbf5ce82a2e87f42d1ec22e7ca2b3be5ca388e00f0112c28a/diff:/home/hsy/.local/share/containers/storage/overlay/39f39d58e8a1b8b86288393c48e1dc92c7bcae8b9b1a37a69d828ef8f6db2bca/diff:/home/hsy/.local/share/containers/storage/overlay/503aaf6233fd45570d5fac2ff655b4b757a057104b66b2cb478dd61ebc18ea38/diff:/home/hsy/.local/share/containers/storage/overlay/45bf911e1e48bcaf74310fd73fb55e9202aba2bfa4a54d86444dd88da123d752/diff:/home/hsy/.local/share/containers/storage/overlay/f2633f69b271bc74aa93ff309efa5b95cd92653df710fab0c2ae8e7852d01507/diff:/home/hsy/.local/share/containers/storage/overlay/f32067907d7e4630b222e33fa613da7b1135192e68bd4b3fd90e7cd2389ac38a/diff:/home/hsy/.local/share/containers/storage/overlay/a29b613e983fe6b082247d09767998f2f7f12c58e66996ed3557a8ca875512eb/diff:/home/hsy/.local/share/containers/storage/overlay/880507606e4c5a7e78c6a93d8c610c4ec0ecbb9e270edbc9b3b4a567a8b09737/diff:/home/hsy/.local/share/containers/storage/overlay/80f77b4b3fd64e2aebf9068ef0744ec5acd5b8c0e8b25a3265135c8ed9459164/diff:/home/hsy/.local/share/containers/storage/overlay/538812a4b9bd45adaac2b5e5b967daa6999aa44eb110aa32ae7c69702b906475/diff",
+                    "UpperDir": "/home/hsy/.local/share/containers/storage/overlay/8ae64726f33b16dfb17c43e875c4cf2b876055a3926332480b69cd9de1b9f431/diff",
+                    "WorkDir": "/home/hsy/.local/share/containers/storage/overlay/8ae64726f33b16dfb17c43e875c4cf2b876055a3926332480b69cd9de1b9f431/work"
+               }
+          },
+          "Mounts": [
+               {
+                    "Type": "bind",
+                    "Source": "/mnt/c/Users/21812/Desktop/ai4math_26Summercamp/Alpha-Proof-26-summer-school/.downloads/gpu-runtime-image-local-20260828/smoke_runtime_image_v2.py",
+                    "Destination": "/audit.py",
+                    "Driver": "",
+                    "Mode": "",
+                    "Options": [
+                         "rbind"
+                    ],
+                    "RW": false,
+                    "Propagation": "rprivate"
+               }
+          ],
+          "Dependencies": [],
+          "NetworkSettings": {
+               "EndpointID": "",
+               "Gateway": "",
+               "IPAddress": "",
+               "IPPrefixLen": 0,
+               "IPv6Gateway": "",
+               "GlobalIPv6Address": "",
+               "GlobalIPv6PrefixLen": 0,
+               "MacAddress": "",
+               "Bridge": "",
+               "SandboxID": "",
+               "HairpinMode": false,
+               "LinkLocalIPv6Address": "",
+               "LinkLocalIPv6PrefixLen": 0,
+               "Ports": {},
+               "SandboxKey": "",
+               "Networks": {
+                    "none": {
+                         "EndpointID": "",
+                         "Gateway": "",
+                         "IPAddress": "",
+                         "IPPrefixLen": 0,
+                         "IPv6Gateway": "",
+                         "GlobalIPv6Address": "",
+                         "GlobalIPv6PrefixLen": 0,
+                         "MacAddress": "",
+                         "NetworkID": "none",
+                         "DriverOpts": null,
+                         "IPAMConfig": null,
+                         "Links": null
+                    }
+               }
+          },
+          "Namespace": "",
+          "IsInfra": false,
+          "IsService": false,
+          "KubeExitCodePropagation": "invalid",
+          "lockNumber": 129,
+          "Config": {
+               "Hostname": "a19e7e59a88d",
+               "Domainname": "",
+               "User": "reap",
+               "AttachStdin": false,
+               "AttachStdout": false,
+               "AttachStderr": false,
+               "Tty": false,
+               "OpenStdin": false,
+               "StdinOnce": false,
+               "Env": [
+                    "container=podman",
+                    "PYTHONUNBUFFERED=1",
+                    "REAP_MODEL_PATH=/opt/models/REAL-Prover",
+                    "PYTHONDONTWRITEBYTECODE=1",
+                    "LD_LIBRARY_PATH=/opt/rocm/lib",
+                    "REAP_SNAPSHOT_ROOT=/workspace/out/snapshots",
+                    "PATH=/opt/venv/bin:/opt/rocm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "PYTHONPATH=/opt/reap-python:/opt/reap-gpu",
+                    "TRANSFORMERS_OFFLINE=1",
+                    "HF_HUB_OFFLINE=1",
+                    "DEBIAN_FRONTEND=noninteractive",
+                    "HF_HOME=/opt/huggingface",
+                    "HOME=/home/reap",
+                    "HOSTNAME=a19e7e59a88d"
+               ],
+               "Cmd": [
+                    "-B",
+                    "/audit.py"
+               ],
+               "Image": "localhost/reap-gpu:runtime-20260828",
+               "Volumes": null,
+               "WorkingDir": "/workspace",
+               "Entrypoint": "python",
+               "OnBuild": null,
+               "Labels": {
+                    "io.buildah.version": "1.33.7",
+                    "org.opencontainers.image.ref.name": "rocm/pytorch:rocm7.2.4_ubuntu24.04_py3.12_pytorch_release_2.10.0+rocm7.2.4.lw.git3d3aa833",
+                    "org.opencontainers.image.version": "24.04"
+               },
+               "Annotations": {
+                    "io.container.manager": "libpod",
+                    "org.opencontainers.image.stopSignal": "15"
+               },
+               "StopSignal": 15,
+               "HealthcheckOnFailureAction": "none",
+               "CreateCommand": [
+                    "podman",
+                    "create",
+                    "--name",
+                    "reap-gpu-runtime-local-smoke-r2-20260828",
+                    "--network=none",
+                    "--read-only",
+                    "--tmpfs",
+                    "/tmp:rw,nosuid,size=256m",
+                    "--memory=4g",
+                    "--entrypoint",
+                    "python",
+                    "--volume",
+                    "/mnt/c/Users/21812/Desktop/ai4math_26Summercamp/Alpha-Proof-26-summer-school/.downloads/gpu-runtime-image-local-20260828/smoke_runtime_image_v2.py:/audit.py:ro",
+                    "localhost/reap-gpu:runtime-20260828",
+                    "-B",
+                    "/audit.py"
+               ],
+               "Umask": "0022",
+               "Timeout": 0,
+               "StopTimeout": 10,
+               "Passwd": true,
+               "sdNotifyMode": "container"
+          },
+          "HostConfig": {
+               "Binds": [
+                    "/mnt/c/Users/21812/Desktop/ai4math_26Summercamp/Alpha-Proof-26-summer-school/.downloads/gpu-runtime-image-local-20260828/smoke_runtime_image_v2.py:/audit.py:ro,rprivate,rbind"
+               ],
+               "CgroupManager": "systemd",
+               "CgroupMode": "private",
+               "ContainerIDFile": "",
+               "LogConfig": {
+                    "Type": "journald",
+                    "Config": null,
+                    "Path": "",
+                    "Tag": "",
+                    "Size": "0B"
+               },
+               "NetworkMode": "none",
+               "PortBindings": {},
+               "RestartPolicy": {
+                    "Name": "",
+                    "MaximumRetryCount": 0
+               },
+               "AutoRemove": false,
+               "VolumeDriver": "",
+               "VolumesFrom": null,
+               "CapAdd": [],
+               "CapDrop": [],
+               "Dns": [],
+               "DnsOptions": [],
+               "DnsSearch": [],
+               "ExtraHosts": [],
+               "GroupAdd": [],
+               "IpcMode": "shareable",
+               "Cgroup": "",
+               "Cgroups": "default",
+               "Links": null,
+               "OomScoreAdj": 0,
+               "PidMode": "private",
+               "Privileged": false,
+               "PublishAllPorts": false,
+               "ReadonlyRootfs": true,
+               "SecurityOpt": [],
+               "Tmpfs": {
+                    "/tmp": "rw,nosuid,size=256m,rprivate,nodev,tmpcopyup"
+               },
+               "UTSMode": "private",
+               "UsernsMode": "",
+               "ShmSize": 65536000,
+               "Runtime": "oci",
+               "ConsoleSize": [
+                    0,
+                    0
+               ],
+               "Isolation": "",
+               "CpuShares": 0,
+               "Memory": 4294967296,
+               "NanoCpus": 0,
+               "CgroupParent": "user.slice",
+               "BlkioWeight": 0,
+               "BlkioWeightDevice": null,
+               "BlkioDeviceReadBps": null,
+               "BlkioDeviceWriteBps": null,
+               "BlkioDeviceReadIOps": null,
+               "BlkioDeviceWriteIOps": null,
+               "CpuPeriod": 0,
+               "CpuQuota": 0,
+               "CpuRealtimePeriod": 0,
+               "CpuRealtimeRuntime": 0,
+               "CpusetCpus": "",
+               "CpusetMems": "",
+               "Devices": [],
+               "DiskQuota": 0,
+               "KernelMemory": 0,
+               "MemoryReservation": 0,
+               "MemorySwap": 8589934592,
+               "MemorySwappiness": -1,
+               "OomKillDisable": false,
+               "PidsLimit": 2048,
+               "Ulimits": [
+                    {
+                         "Name": "RLIMIT_NOFILE",
+                         "Soft": 1048576,
+                         "Hard": 1048576
+                    },
+                    {
+                         "Name": "RLIMIT_NPROC",
+                         "Soft": 62907,
+                         "Hard": 62907
+                    }
+               ],
+               "CpuCount": 0,
+               "CpuPercent": 0,
+               "IOMaximumIOps": 0,
+               "IOMaximumBandwidth": 0,
+               "CgroupConf": null
+          }
+     }
+]

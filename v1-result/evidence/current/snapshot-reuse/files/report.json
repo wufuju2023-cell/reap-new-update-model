@@ -1,0 +1,187 @@
+{
+  "actor": {
+    "accepting": true,
+    "active": 0,
+    "active_execution_seconds": 0.0,
+    "completed": 7,
+    "execution_seconds_max": 5.011969287000284,
+    "execution_seconds_total": 8.467594277999524,
+    "failed": 0,
+    "max_active": 1,
+    "max_queued": 1,
+    "queue_wait_seconds_max": 0.0008091109993983991,
+    "queue_wait_seconds_total": 0.001875977000054263,
+    "queued": 0,
+    "schema_version": "reap.gpu-actor.metrics.v1",
+    "started": 7,
+    "submitted": 7
+  },
+  "dependencies": {
+    "peft": "0.17.1",
+    "transformers": "4.57.1"
+  },
+  "device": "cuda:0",
+  "gates": {
+    "final_all_bytes_unchanged": true,
+    "final_payload_and_logical_exact": true,
+    "only_source_and_final_snapshots": true,
+    "resident_capacity_released": true,
+    "reuse_export_call_count_zero": true,
+    "source_and_copy_all_bytes_unchanged": true,
+    "strict_v2_released_receipt": true
+  },
+  "gpu_name": "",
+  "hip": "7.2.53211",
+  "memory_after_retirement": {
+    "allocated_bytes": 15460150784,
+    "peak_allocated_bytes": 15804691456,
+    "peak_reserved_bytes": 15823011840,
+    "reserved_bytes": 15823011840
+  },
+  "memory_before_retirement": {
+    "allocated_bytes": 15713785856,
+    "peak_allocated_bytes": 15804691456,
+    "peak_reserved_bytes": 15823011840,
+    "reserved_bytes": 15823011840
+  },
+  "memory_scope": "allocator measurements after restored state and after deletion/GC; not kernel utilization or throughput",
+  "model_lock_is_prior_verification_only": true,
+  "model_lock_sha256": "88cf6547133e49c28a2186a26fbaef6a3b9b50447d5f2406a26173b0910376b0",
+  "model_revision": "fe76f68d9a88f342cb7b546307c20292fea9cced",
+  "mutation_retry_allowed": false,
+  "no_generation_or_Lean": true,
+  "no_training": true,
+  "ok": true,
+  "performance_improvement_claimed": false,
+  "real_7B_GPU_gate_passed": true,
+  "retirement_receipt": {
+    "mutation_retry_allowed": false,
+    "policy_version": 1,
+    "schema_version": "reap.gpu.retirement.v2",
+    "session_id": "verified-learner",
+    "snapshot": "reuse-final",
+    "snapshot_mode": "reuse_verified",
+    "snapshot_revision": 4,
+    "snapshot_sha256": "46f5dfe33895d210ee378748106a6226df729102ed535b505187aafa07a58918",
+    "status": "released",
+    "tombstone_scope": "current_runtime"
+  },
+  "retirement_wall_seconds": 0.39688756899977307,
+  "reuse_export_calls": 0,
+  "schema_version": "reap.snapshot-reuse.gpu-probe.v1",
+  "source": {
+    "copied_snapshot": "/mnt/workspace/reap-ttt-20260828-snapshot-reuse/result/snapshots/verified-learner/after",
+    "expected_policy_version": 1,
+    "files": {
+      "backend.json": {
+        "bytes": 338554084,
+        "sha256": "4b08241b70d28496e268f7df41e233316577ee2521560f63bcaf66c025f7823a"
+      },
+      "manifest.json": {
+        "bytes": 320,
+        "sha256": "48afb1be924690f0775a8f142408c51147db1d38d1cac6b6b151e88cb223ffa8"
+      },
+      "session.json": {
+        "bytes": 9386,
+        "sha256": "779c8d134f838657df5529d5a24229bfa08915c906567cafdcbf43fd21c3dc81"
+      }
+    },
+    "schema_version": "reap.snapshot-reuse.source.v1",
+    "session_id": "verified-learner",
+    "snapshot": "after",
+    "source": "/mnt/workspace/reap-ttt-20260828-verified-replay/result/snapshots/verified-learner/after"
+  },
+  "source_code_pins": {
+    "containers/gpu/smoke_gpu.py": {
+      "bytes": 14835,
+      "sha256": "e024b6bc9b23fca1c66c3ed679e6136ada01fab503733cb396a57892aac3b759"
+    },
+    "containers/gpu/smoke_kl_guard.py": {
+      "bytes": 18019,
+      "sha256": "c48ef92a8993570baf88928860eda2c20f3b217692e80b6329b35135ac7384bd"
+    },
+    "containers/gpu/smoke_policy_scoring.py": {
+      "bytes": 17821,
+      "sha256": "1ab5b81991d1e5603754bb1d77fc7a92f0868f15645fc418b409736bc914529e"
+    },
+    "containers/gpu/smoke_snapshot_reuse.py": {
+      "bytes": 13961,
+      "sha256": "404e2048b0f6dcb397fb454d19d065c738e3645eee481c334ac2f183e8f0e482"
+    },
+    "gpu_runtime/actor.py": {
+      "bytes": 5682,
+      "sha256": "a648761fb9a2bc6a231cb5d9bc2f6985e3d39ffc8c620fb2d580e602e4760524"
+    },
+    "gpu_runtime/real_backend.py": {
+      "bytes": 42540,
+      "sha256": "6dace0009133b525226e3d242b41f4d10870b38d47213359120cb90b7f211f48"
+    },
+    "gpu_runtime/runtime.py": {
+      "bytes": 29953,
+      "sha256": "f4db2954f887f39cbce39d071a4a5ebc321320e03bee469aa78d194eec5a9a2d"
+    },
+    "gpu_runtime/search_backend.py": {
+      "bytes": 22811,
+      "sha256": "a389f7464621ca217f0535a202d70b35662c20f7c51e47b7741d73db271b69dd"
+    },
+    "gpu_runtime/session_store.py": {
+      "bytes": 6428,
+      "sha256": "25f213a132c90148ed34daf7989cac5e786132b1ab90467b90933afa1134cf43"
+    },
+    "gpu_runtime/snapshot_store.py": {
+      "bytes": 8752,
+      "sha256": "2fe8b7f74e61ce623b893f17c1e6d250fd16801fbee9b6c690e7307b2f23cfd0"
+    },
+    "gpu_runtime/verified_backend.py": {
+      "bytes": 15909,
+      "sha256": "380c2f09971ee17e60f56fcbdc047fc7565bf09e468a91527e2b3d4e419a8526"
+    },
+    "gpu_runtime/verified_objective.py": {
+      "bytes": 4672,
+      "sha256": "b62bb7e98c926988507e777397a8421aca9b7e390a5badeda8ebf70424215fb2"
+    }
+  },
+  "source_code_unchanged": true,
+  "timing_scope": "one runtime retire including full file verification and synchronized GPU completion; no speed baseline",
+  "torch_version": "2.11.0+gitd0c8b1f",
+  "verified_config": {
+    "base_tokenizer_sha256": "2ff73d37f6f4edad02f5c2e67bdabeeecef97a187b4747834e6acdf648980839",
+    "eos_token_id": 151643,
+    "head": "linear-silu-linear-categorical",
+    "hidden_size": 3584,
+    "kl_beta": 0.02,
+    "kl_reduction": "mean_over_sampled_rows_of_prefix_token_sum_current_to_frozen_base",
+    "learning_rate": 0.0001,
+    "lora": {
+      "alpha": 32,
+      "dropout": 0.0,
+      "rank": 16,
+      "target_modules": [
+        "down_proj",
+        "gate_proj",
+        "k_proj",
+        "o_proj",
+        "q_proj",
+        "up_proj",
+        "v_proj"
+      ]
+    },
+    "max_batch_samples": 32,
+    "max_grad_norm": 1.0,
+    "max_post_update_kl": 100.0,
+    "max_sequence_tokens": 4096,
+    "objective": "verified_success_replay",
+    "policy_loss": "mean_over_sampled_rows_of_joint_tactic_plus_one_EOS_negative_log_probability",
+    "support": {
+      "distance_max": 64,
+      "distance_min": 1,
+      "overflow": "reject",
+      "return": "negative_integer_longest_generated_action_branch"
+    },
+    "tokenization": "canonical_tactic_separate_no_special_tokens_append_exactly_one_EOS",
+    "value_coefficient": 0.5,
+    "value_learning_rate": 0.0003,
+    "value_loss": "categorical_cross_entropy_exact_integer_class",
+    "value_semantics": "verified_negative_longest_branch_categorical.v1"
+  }
+}

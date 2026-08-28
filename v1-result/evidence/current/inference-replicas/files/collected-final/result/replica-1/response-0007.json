@@ -1,0 +1,11 @@
+{
+  "action": "reset",
+  "command_sha256": "c6d90f1b7427b4376dfbf2f39be248c8366c984404b138cbf819a87656378cbe",
+  "result": {
+    "full_restore_equal": true,
+    "policy_version": 0,
+    "session_id": "inference-replica-1",
+    "worker_operation_wall_seconds": 1.6841627889998563
+  },
+  "seq": 7
+}

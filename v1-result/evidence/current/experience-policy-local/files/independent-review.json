@@ -1,0 +1,47 @@
+{
+  "blocking_findings": [],
+  "boundaries": [
+    "family/tags are operator routing declarations, not mathematical relations",
+    "acceptance is recorded attestation, not reverified by policy",
+    "only fixed legacy theorem-search contract, not mixed model-release routing"
+  ],
+  "checks": [
+    "deterministic fresh/chain/bank selection and full source pins",
+    "actual store read and finite canonical contract",
+    "pre-create target/source/gamma check",
+    "post-create full contract before snapshot or Lean",
+    "resume policy/session/report/source revalidation",
+    "unknown does not resubmit"
+  ],
+  "current_source_sha256": {
+    "cpu_runtime/experience_policy.py": "392c56b990810257e963dba0947c6aa7bb76e9327e7409febe29401363bb1a38",
+    "cpu_runtime/http_clients.py": "c65d81a6f922c62c90d40a08113f9699d634b647e3798b3578a69df2dffa4488",
+    "cpu_runtime/online_batch.py": "eed38f205fdae681972e7227257e3870d62498ff8fa0179eeee001bb26f19671",
+    "cpu_runtime/online_ttt.py": "cf475e6ada531f749172473040620eb1f8d8f259e0f9e82ff22094d8c9d5301f",
+    "gpu_runtime/server.py": "03f7c5a2df7ef10541468d63372b0c933b4b8f5ca580ac4fe165c89472705ce1",
+    "tests/test_experience_policy.py": "406a53f478aa7cbd03e5d5deb7059b1ad45fe43e70fdca26540c411badbabeef",
+    "tests/test_gpu_http.py": "914690d5794e3537c8c8834a4c51d419979c2d87d87af0bebc76cddfdab091e6"
+  },
+  "evidence_sha256": {
+    "windows-receipt.json": "c1119384963018e528c8d88c8237adaa78bf0a5e99a6a50f9c5ffc38aa6b7ced",
+    "windows.log": "cb3466ecd3e64c176e81553296ac5e7319fede522ff1515641fd0ebe04fde378",
+    "wsl-receipt.json": "22c0448f4e8408ec8ebd73dafe0080caba082a5df03ad49bbe0143f67bb77509",
+    "wsl-stdlib-receipt.json": "b6c77524d3f258b1fb73f507bfb38bbbdc1153acbea56cfd6be72fdddc354dda",
+    "wsl-stdlib.log": "80f3c97686400a00f12900e4bfbe94d9fa69e613d8fe277ef5b9f430809ae52a"
+  },
+  "gpu_or_lean_run_by_reviewer": false,
+  "independent_readonly_scope": [
+    "cpu_runtime/experience_policy.py",
+    "cpu_runtime/online_ttt.py",
+    "cpu_runtime/online_batch.py",
+    "tests/test_experience_policy.py"
+  ],
+  "integration_files_authored_by_this_reviewer_not_independent": [
+    "gpu_runtime/server.py",
+    "cpu_runtime/http_clients.py",
+    "tests/test_gpu_http.py"
+  ],
+  "reviewer": "concurrency",
+  "schema": "reap.independent-review.v1",
+  "tests_rerun_by_reviewer": false
+}

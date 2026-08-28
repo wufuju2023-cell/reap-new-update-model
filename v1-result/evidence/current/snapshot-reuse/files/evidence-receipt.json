@@ -1,0 +1,16 @@
+{
+  "files_sha256": {
+    "final-pins.json": "f60b690e35d4502ad6f23a94c27d0a89b9456fbec14e58cc9e31af71588f6ebe",
+    "fingerprints.json": "045f92fc91a855d3c1308e45728a94a962222bc05292430bf86f9838230aecf9",
+    "report.json": "912f2fecf5b92549836947f27b37b5a01cf11f2a81fcfac02eaf6fecfa06bd49",
+    "restore-receipt.json": "f4167174a19c6a155b7754e667ee73ee01755fa8cd8a92203e2c3691d16cadd6",
+    "retirement-intent.json": "8f148a5bac0936ca7592c56b9e1b2ff690da5c1a85a19f50347df4a09b797940",
+    "retirement-readback.json": "e50a740f25ee1cc327ae5fd8405bcf83ecd8132085b230464d526b6c3fe9194a",
+    "retirement-receipt.json": "e50a740f25ee1cc327ae5fd8405bcf83ecd8132085b230464d526b6c3fe9194a",
+    "source-code-pins.json": "ee8c619f8454f35cb6d14419b0e19abc4ad6ce91d3754bb301816aec45a8c405",
+    "source-pins.json": "35a6e3ffe7e8e7b6655b6c18e62aacbe7f8a8304a0515479171968b1c59c52e5",
+    "artifact-audit.json": "030350bef71bf1a60376e20d79ee455994f286a8182e9351856ffe44ab9f7ccd"
+  },
+  "gaps": [],
+  "source_manifest_sha256": "48afb1be924690f0775a8f142408c51147db1d38d1cac6b6b151e88cb223ffa8"
+}

@@ -1,0 +1,65 @@
+{
+  "schema_version": "reap.fixed-collector.wire-audit.v1",
+  "ok": true,
+  "collection_sha256": "82e96e3dc9eb05dd69acf93a9737e6ee2af366bc9fec3701ce318a1a49a9db2a",
+  "sessions": {
+    "mm-36267162d92ac4de7d4e-00001": {
+      "jobs": 6,
+      "generations": [
+        {
+          "sequence": 2,
+          "policy_request_id": "fb28699890084b28aa3ae4a6172b2aca",
+          "value_request_ids": [
+            "bd17c259d70c42b98b2e02cb2c9e28dc"
+          ]
+        },
+        {
+          "sequence": 4,
+          "policy_request_id": "fb28699890084b28aa3ae4a6172b2aca",
+          "value_request_ids": [
+            "bd17c259d70c42b98b2e02cb2c9e28dc"
+          ]
+        },
+        {
+          "sequence": 10,
+          "policy_request_id": "8145815c29594cd6b911a9b1c6e9d2b9",
+          "value_request_ids": [
+            "7ed926c0d9ef41eb84748ecae205c2cc"
+          ]
+        }
+      ],
+      "terminal_status": "solved_pending_independent_verification",
+      "retire_request_id": "336d7e5aed024ad6b2521b5714887c03",
+      "observer_start_ns": 17178645913809,
+      "observer_end_ns": 17190353918782
+    },
+    "mm-36267162d92ac4de7d4e-00002": {
+      "jobs": 4,
+      "generations": [
+        {
+          "sequence": 2,
+          "policy_request_id": "bb820bb7ff244abbbeb4b62b8f3326e0",
+          "value_request_ids": [
+            "5caa64c170a040d788853cf867757432"
+          ]
+        },
+        {
+          "sequence": 4,
+          "policy_request_id": "bb820bb7ff244abbbeb4b62b8f3326e0",
+          "value_request_ids": [
+            "5caa64c170a040d788853cf867757432"
+          ]
+        }
+      ],
+      "terminal_status": "solved_pending_independent_verification",
+      "retire_request_id": "4150e8527b90447c92b62db67874d680",
+      "observer_start_ns": 17177720192588,
+      "observer_end_ns": 17185688854931
+    }
+  },
+  "jobs": 10,
+  "learn_jobs": 0,
+  "all_retired": true,
+  "observer_overlap_seconds": 7.042941122,
+  "scope": "raw HTTP bytes and observer links; no independent tensor audit, no proof or speed claim"
+}

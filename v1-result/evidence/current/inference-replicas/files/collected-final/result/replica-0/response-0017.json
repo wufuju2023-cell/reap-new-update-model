@@ -1,0 +1,87 @@
+{
+  "action": "measure",
+  "command_sha256": "81d92b346012299192e9f6e50c1ab9bbb6212bb71f0448aa8b25fdb1e1dd0bc9",
+  "result": {
+    "end_monotonic_ns": 3681165221162,
+    "memory": {
+      "allocated_bytes": 15624262656,
+      "device_global_free_bytes": 172635979776,
+      "device_global_total_bytes": 205822885888,
+      "peak_allocated_bytes": 15642279424,
+      "peak_reserved_bytes": 15741222912,
+      "process_rss_bytes": 3360329728,
+      "reserved_bytes": 15741222912,
+      "sample_monotonic_ns": 3681165547830
+    },
+    "outputs": [
+      {
+        "choices": [
+          {
+            "content": "push_neg",
+            "tokens": [
+              {
+                "logprob": -1.0107120275497437,
+                "token": "push"
+              },
+              {
+                "logprob": 0.0,
+                "token": "_neg"
+              },
+              {
+                "logprob": -6.19869097135961e-05,
+                "token": "<|endoftext|>"
+              }
+            ]
+          }
+        ],
+        "policy_version": 0,
+        "value": 2.6920952796936035
+      },
+      {
+        "choices": [
+          {
+            "content": "exact fun n ↦ rfl",
+            "tokens": [
+              {
+                "logprob": -1.4418103694915771,
+                "token": " exact"
+              },
+              {
+                "logprob": -0.002391932299360633,
+                "token": " fun"
+              },
+              {
+                "logprob": -0.00062851223628968,
+                "token": " n"
+              },
+              {
+                "logprob": -0.055079083889722824,
+                "token": " �"
+              },
+              {
+                "logprob": 0.0,
+                "token": "�"
+              },
+              {
+                "logprob": -2.3841855067985307e-07,
+                "token": " rfl"
+              },
+              {
+                "logprob": -2.3841828351578442e-06,
+                "token": "<|endoftext|>"
+              }
+            ]
+          }
+        ],
+        "policy_version": 0,
+        "value": 2.878215789794922
+      }
+    ],
+    "pid": 2341,
+    "session_id": "inference-replica-0",
+    "start_monotonic_ns": 3680314538112,
+    "synchronized_seconds": 0.85068305,
+    "worker_operation_wall_seconds": 0.8511991290001788
+  },
+  "seq": 17
+}

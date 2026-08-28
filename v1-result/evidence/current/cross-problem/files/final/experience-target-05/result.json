@@ -1,0 +1,1 @@
+{"elapsed_ns":78466941579,"error":null,"proof_script":"intro n\ninduction n <;> simp_all [hzero, hstep]\nring\nnlinarith [hzero, hstep]","schema_version":"reap.training.result.v1","session_id":"experience-target-05","solved":true,"status":"solved"}

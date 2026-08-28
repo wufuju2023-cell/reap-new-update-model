@@ -1,0 +1,1502 @@
+{
+  "actor_metrics": {
+    "accepting": true,
+    "active": 0,
+    "active_execution_seconds": 0.0,
+    "completed": 32,
+    "execution_seconds_max": 12.03204765100054,
+    "execution_seconds_total": 73.82313835499372,
+    "failed": 0,
+    "max_active": 1,
+    "max_queued": 1,
+    "queue_wait_seconds_max": 0.0013179449997551274,
+    "queue_wait_seconds_total": 0.01168251800663711,
+    "queued": 0,
+    "schema_version": "reap.gpu-actor.metrics.v1",
+    "started": 32,
+    "submitted": 32
+  },
+  "actor_search_performed": false,
+  "artifacts": {
+    "actor1_before": {
+      "bytes": 84564643,
+      "decoded_state_sha256": "3f99599ec7c5216d1d55c6c6472e7ba3d37378937c31c703ff8241cb032f8468",
+      "file": "actor1-before.pt",
+      "sha256": "ae6ca39fa6fc69e2b01944e9b8699698842e9a77ec971340079733c0f930afbf"
+    },
+    "actor1_final": {
+      "bytes": 84564643,
+      "decoded_state_sha256": "3f99599ec7c5216d1d55c6c6472e7ba3d37378937c31c703ff8241cb032f8468",
+      "file": "actor1-final.pt",
+      "sha256": "ae6ca39fa6fc69e2b01944e9b8699698842e9a77ec971340079733c0f930afbf"
+    },
+    "actor2_initial": {
+      "bytes": 84564643,
+      "decoded_state_sha256": "2e48504726bac718c55d0413ac3cd8c64bb1d759c862559723abde326dc0d8b1",
+      "file": "actor2-initial.pt",
+      "sha256": "b9c0b3cc2b43fd6c9cf1478ab4bf4d8392c33e176079b3e3b5761ec730a759ff"
+    }
+  },
+  "base_after": {
+    "base_parameters_require_grad": false,
+    "buffer_tensors": 1,
+    "bytes": 15231233280,
+    "coverage": "all_non_LoRA_model_parameters_and_buffers",
+    "cpu_chunk_bytes": 8388608,
+    "elements": 7615616576,
+    "parameter_tensors": 339,
+    "sha256": "426bf7dced89e3aeb2ba88fcd492078a754d58552af77ee32446cb7f97a61ab5"
+  },
+  "base_before": {
+    "base_parameters_require_grad": false,
+    "buffer_tensors": 1,
+    "bytes": 15231233280,
+    "coverage": "all_non_LoRA_model_parameters_and_buffers",
+    "cpu_chunk_bytes": 8388608,
+    "elements": 7615616576,
+    "parameter_tensors": 339,
+    "sha256": "426bf7dced89e3aeb2ba88fcd492078a754d58552af77ee32446cb7f97a61ab5"
+  },
+  "catalog_rows": {
+    "mathlib_sft": 7,
+    "replay": 13
+  },
+  "checked_batches": [
+    {
+      "sample_weight": 0.1,
+      "samples": [
+        {
+          "dataset_sha256": "b89032bee7d7d75449f5395e9c34c99ff538624bd21abc057ae4be76ae8441eb",
+          "distance": 4,
+          "node_index": 0,
+          "return": -4,
+          "row": 0,
+          "source": "replay",
+          "source_policy_version": 0,
+          "source_session_id": "multi-20260827-01r1",
+          "source_theorem_sha256": "1c934ede5d3f068c24d12dc19d4b887078e5d17904cb690f022044714cf244e0",
+          "source_tree_id": "multi-20260827-01r1.tree0",
+          "value_class": 3
+        },
+        {
+          "dataset_sha256": "b89032bee7d7d75449f5395e9c34c99ff538624bd21abc057ae4be76ae8441eb",
+          "distance": 3,
+          "node_index": 1,
+          "return": -3,
+          "row": 1,
+          "source": "replay",
+          "source_policy_version": 0,
+          "source_session_id": "multi-20260827-01r1",
+          "source_theorem_sha256": "1c934ede5d3f068c24d12dc19d4b887078e5d17904cb690f022044714cf244e0",
+          "source_tree_id": "multi-20260827-01r1.tree0",
+          "value_class": 2
+        },
+        {
+          "dataset_sha256": "b89032bee7d7d75449f5395e9c34c99ff538624bd21abc057ae4be76ae8441eb",
+          "distance": 2,
+          "node_index": 2,
+          "return": -2,
+          "row": 2,
+          "source": "replay",
+          "source_policy_version": 2,
+          "source_session_id": "multi-20260827-01r1",
+          "source_theorem_sha256": "1c934ede5d3f068c24d12dc19d4b887078e5d17904cb690f022044714cf244e0",
+          "source_tree_id": "multi-20260827-01r1.tree0",
+          "value_class": 1
+        },
+        {
+          "dataset_sha256": "b89032bee7d7d75449f5395e9c34c99ff538624bd21abc057ae4be76ae8441eb",
+          "distance": 1,
+          "node_index": 4,
+          "return": -1,
+          "row": 3,
+          "source": "replay",
+          "source_policy_version": 3,
+          "source_session_id": "multi-20260827-01r1",
+          "source_theorem_sha256": "1c934ede5d3f068c24d12dc19d4b887078e5d17904cb690f022044714cf244e0",
+          "source_tree_id": "multi-20260827-01r1.tree0",
+          "value_class": 0
+        },
+        {
+          "dataset_sha256": "7975e11a24d74f326387e82fd4b8f9fc2489d1d570e44c17c5f8a03e1b9555ff",
+          "distance": 3,
+          "node_index": 0,
+          "return": -3,
+          "row": 0,
+          "source": "replay",
+          "source_policy_version": 0,
+          "source_session_id": "multi-20260827-03",
+          "source_theorem_sha256": "87e0faa213a7af0d8074ed8e166152e22e0ff80b13607c6e6f2b34235c822883",
+          "source_tree_id": "multi-20260827-03.tree0",
+          "value_class": 2
+        },
+        {
+          "dataset_sha256": "7975e11a24d74f326387e82fd4b8f9fc2489d1d570e44c17c5f8a03e1b9555ff",
+          "distance": 2,
+          "node_index": 1,
+          "return": -2,
+          "row": 1,
+          "source": "replay",
+          "source_policy_version": 0,
+          "source_session_id": "multi-20260827-03",
+          "source_theorem_sha256": "87e0faa213a7af0d8074ed8e166152e22e0ff80b13607c6e6f2b34235c822883",
+          "source_tree_id": "multi-20260827-03.tree0",
+          "value_class": 1
+        },
+        {
+          "dataset_sha256": "7975e11a24d74f326387e82fd4b8f9fc2489d1d570e44c17c5f8a03e1b9555ff",
+          "distance": 1,
+          "node_index": 2,
+          "return": -1,
+          "row": 2,
+          "source": "replay",
+          "source_policy_version": 1,
+          "source_session_id": "multi-20260827-03",
+          "source_theorem_sha256": "87e0faa213a7af0d8074ed8e166152e22e0ff80b13607c6e6f2b34235c822883",
+          "source_tree_id": "multi-20260827-03.tree0",
+          "value_class": 0
+        },
+        {
+          "dataset_sha256": "179c51f5f802311f9d1f292902fb4f0d452159dbe33afd6e14d823cae948fa0a",
+          "distance": 4,
+          "node_index": 0,
+          "return": -4,
+          "row": 0,
+          "source": "replay",
+          "source_policy_version": 0,
+          "source_session_id": "multi-20260827-05r2",
+          "source_theorem_sha256": "78d3be9fb0da44c2576e6d51232c6a1f5444ac6573c48ca5269d24b8df316fad",
+          "source_tree_id": "multi-20260827-05r2.tree0",
+          "value_class": 3
+        },
+        {
+          "dataset_sha256": "179c51f5f802311f9d1f292902fb4f0d452159dbe33afd6e14d823cae948fa0a",
+          "distance": 3,
+          "node_index": 1,
+          "return": -3,
+          "row": 1,
+          "source": "replay",
+          "source_policy_version": 0,
+          "source_session_id": "multi-20260827-05r2",
+          "source_theorem_sha256": "78d3be9fb0da44c2576e6d51232c6a1f5444ac6573c48ca5269d24b8df316fad",
+          "source_tree_id": "multi-20260827-05r2.tree0",
+          "value_class": 2
+        },
+        {
+          "dataset_sha256": "98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb",
+          "distance": 1,
+          "mathlib_source": {
+            "ambient_context": "namespace MathlibSFTGate\nvariable {α : Sort*}\n",
+            "commit": "5352afccd6866369be9de43f5b7ec47203555f44",
+            "extractor_sha256": "8d4ff389e085c45b490ba9f81581ea3db63cc2e55488e8af96ab6cf97887884e",
+            "file": "Mathlib/Logic/ExistsUnique.lean",
+            "generator_events": "none",
+            "repository": "https://github.com/leanprover-community/mathlib4",
+            "selection": {
+              "actions": [
+                {
+                  "byte_end": 5944,
+                  "byte_start": 5909,
+                  "sha256": "e983a7dcbd9afbc8190945a9998d6890783a321c431b2aa3be3c6db2f0b1b813",
+                  "tactic": "simp only [existsUnique_iff_exists]"
+                },
+                {
+                  "byte_end": 6023,
+                  "byte_start": 5947,
+                  "sha256": "1b121e6edc9209e9312509c64e08b7b5b2d089f43b4fc65db05c98e9e7a67835",
+                  "tactic": "exact ExistsUnique.intro w ⟨hp, hq⟩ fun y ⟨hyp, hyq⟩ ↦ H y hyp hyq"
+                }
+              ],
+              "byte_end": 6024,
+              "byte_start": 5672,
+              "declaration": "ExistsUnique.intro₂",
+              "declaration_sha256": "2df8c8aaceaa94dec285fb39260082e16911a4f3866cab6b8d178653ad8b6b95",
+              "proof_byte_end": 6024,
+              "proof_byte_start": 5907,
+              "proof_sha256": "3dc0616e1645f8a67a348ab13286e8500bcb9f13d77aba4494cd64e8326c4ed1"
+            },
+            "source_git_blob_sha1": "5c60f6f88746503a79a4943d53165af114224b72",
+            "source_kind": "mathlib_sft",
+            "source_sha256": "2f5b7ae2ea952e0d924c90f47c874c21acb88e971a81df15eb6ac69b35a8eb3e"
+          },
+          "return": -1,
+          "row": 1,
+          "source": "mathlib_sft",
+          "source_policy_version": null,
+          "value_class": 0
+        }
+      ],
+      "source_counts": {
+        "mathlib_sft": 1,
+        "replay": 9
+      },
+      "source_losses": {
+        "mathlib_sft": {
+          "kl": 0.0,
+          "loss": 2.136196994781494,
+          "policy_loss": 2.0207792282104493,
+          "rows": 1,
+          "value_loss": 0.23083553314208985,
+          "weight_sum": 0.1
+        },
+        "replay": {
+          "kl": 0.0,
+          "loss": 4.6947540014982225,
+          "policy_loss": 3.706014981865883,
+          "rows": 9,
+          "value_loss": 1.977478039264679,
+          "weight_sum": 0.9
+        }
+      }
+    },
+    {
+      "sample_weight": 0.1,
+      "samples": [
+        {
+          "dataset_sha256": "179c51f5f802311f9d1f292902fb4f0d452159dbe33afd6e14d823cae948fa0a",
+          "distance": 2,
+          "node_index": 2,
+          "return": -2,
+          "row": 2,
+          "source": "replay",
+          "source_policy_version": 1,
+          "source_session_id": "multi-20260827-05r2",
+          "source_theorem_sha256": "78d3be9fb0da44c2576e6d51232c6a1f5444ac6573c48ca5269d24b8df316fad",
+          "source_tree_id": "multi-20260827-05r2.tree0",
+          "value_class": 1
+        },
+        {
+          "dataset_sha256": "179c51f5f802311f9d1f292902fb4f0d452159dbe33afd6e14d823cae948fa0a",
+          "distance": 1,
+          "node_index": 4,
+          "return": -1,
+          "row": 3,
+          "source": "replay",
+          "source_policy_version": 2,
+          "source_session_id": "multi-20260827-05r2",
+          "source_theorem_sha256": "78d3be9fb0da44c2576e6d51232c6a1f5444ac6573c48ca5269d24b8df316fad",
+          "source_tree_id": "multi-20260827-05r2.tree0",
+          "value_class": 0
+        },
+        {
+          "dataset_sha256": "fae47cd667809fa30c7a87b782b98e2e4943ba47144ddc69eee930142552402e",
+          "distance": 2,
+          "node_index": 0,
+          "return": -2,
+          "row": 0,
+          "source": "replay",
+          "source_policy_version": 0,
+          "source_session_id": "central-actor-01",
+          "source_theorem_sha256": "96f6970ec21b5d998985ce33fd173c348c7f325560aa5fb51f4657a233127146",
+          "source_tree_id": "central-actor-01.tree0",
+          "value_class": 1
+        },
+        {
+          "dataset_sha256": "fae47cd667809fa30c7a87b782b98e2e4943ba47144ddc69eee930142552402e",
+          "distance": 1,
+          "node_index": 1,
+          "return": -1,
+          "row": 1,
+          "source": "replay",
+          "source_policy_version": 0,
+          "source_session_id": "central-actor-01",
+          "source_theorem_sha256": "96f6970ec21b5d998985ce33fd173c348c7f325560aa5fb51f4657a233127146",
+          "source_tree_id": "central-actor-01.tree0",
+          "value_class": 0
+        },
+        {
+          "dataset_sha256": "b89032bee7d7d75449f5395e9c34c99ff538624bd21abc057ae4be76ae8441eb",
+          "distance": 4,
+          "node_index": 0,
+          "return": -4,
+          "row": 0,
+          "source": "replay",
+          "source_policy_version": 0,
+          "source_session_id": "multi-20260827-01r1",
+          "source_theorem_sha256": "1c934ede5d3f068c24d12dc19d4b887078e5d17904cb690f022044714cf244e0",
+          "source_tree_id": "multi-20260827-01r1.tree0",
+          "value_class": 3
+        },
+        {
+          "dataset_sha256": "b89032bee7d7d75449f5395e9c34c99ff538624bd21abc057ae4be76ae8441eb",
+          "distance": 3,
+          "node_index": 1,
+          "return": -3,
+          "row": 1,
+          "source": "replay",
+          "source_policy_version": 0,
+          "source_session_id": "multi-20260827-01r1",
+          "source_theorem_sha256": "1c934ede5d3f068c24d12dc19d4b887078e5d17904cb690f022044714cf244e0",
+          "source_tree_id": "multi-20260827-01r1.tree0",
+          "value_class": 2
+        },
+        {
+          "dataset_sha256": "b89032bee7d7d75449f5395e9c34c99ff538624bd21abc057ae4be76ae8441eb",
+          "distance": 2,
+          "node_index": 2,
+          "return": -2,
+          "row": 2,
+          "source": "replay",
+          "source_policy_version": 2,
+          "source_session_id": "multi-20260827-01r1",
+          "source_theorem_sha256": "1c934ede5d3f068c24d12dc19d4b887078e5d17904cb690f022044714cf244e0",
+          "source_tree_id": "multi-20260827-01r1.tree0",
+          "value_class": 1
+        },
+        {
+          "dataset_sha256": "b89032bee7d7d75449f5395e9c34c99ff538624bd21abc057ae4be76ae8441eb",
+          "distance": 1,
+          "node_index": 4,
+          "return": -1,
+          "row": 3,
+          "source": "replay",
+          "source_policy_version": 3,
+          "source_session_id": "multi-20260827-01r1",
+          "source_theorem_sha256": "1c934ede5d3f068c24d12dc19d4b887078e5d17904cb690f022044714cf244e0",
+          "source_tree_id": "multi-20260827-01r1.tree0",
+          "value_class": 0
+        },
+        {
+          "dataset_sha256": "7975e11a24d74f326387e82fd4b8f9fc2489d1d570e44c17c5f8a03e1b9555ff",
+          "distance": 3,
+          "node_index": 0,
+          "return": -3,
+          "row": 0,
+          "source": "replay",
+          "source_policy_version": 0,
+          "source_session_id": "multi-20260827-03",
+          "source_theorem_sha256": "87e0faa213a7af0d8074ed8e166152e22e0ff80b13607c6e6f2b34235c822883",
+          "source_tree_id": "multi-20260827-03.tree0",
+          "value_class": 2
+        },
+        {
+          "dataset_sha256": "390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1",
+          "distance": 2,
+          "mathlib_source": {
+            "ambient_context": "namespace MathlibSFTGate\nvariable {α : Sort*}\n",
+            "commit": "5352afccd6866369be9de43f5b7ec47203555f44",
+            "extractor_sha256": "8d4ff389e085c45b490ba9f81581ea3db63cc2e55488e8af96ab6cf97887884e",
+            "file": "Mathlib/Logic/ExistsUnique.lean",
+            "generator_events": "none",
+            "repository": "https://github.com/leanprover-community/mathlib4",
+            "selection": {
+              "actions": [
+                {
+                  "byte_end": 6547,
+                  "byte_start": 6507,
+                  "sha256": "a713facdee70fb8de79cd244e6dccd9e61b60253f73552eca91322ca30542988",
+                  "tactic": "simp only [existsUnique_iff_exists] at h"
+                },
+                {
+                  "byte_end": 6606,
+                  "byte_start": 6550,
+                  "sha256": "72375844784eeac078e1f7326b458a86861559075b09f6938291779722242905",
+                  "tactic": "exact h.unique ⟨hpy₁, hqy₁⟩ ⟨hpy₂, hqy₂⟩"
+                }
+              ],
+              "byte_end": 6607,
+              "byte_start": 6225,
+              "declaration": "ExistsUnique.unique₂",
+              "declaration_sha256": "168e38b7ae8540be7d528c531463dfa464ff6fe6e9b83d7c9282407c6d2b0b13",
+              "proof_byte_end": 6607,
+              "proof_byte_start": 6505,
+              "proof_sha256": "f24afa7ee23a92c731eb6b72e495d222bf73ab0b9d9cb44d980c1336857fc527"
+            },
+            "source_git_blob_sha1": "5c60f6f88746503a79a4943d53165af114224b72",
+            "source_kind": "mathlib_sft",
+            "source_sha256": "2f5b7ae2ea952e0d924c90f47c874c21acb88e971a81df15eb6ac69b35a8eb3e"
+          },
+          "return": -2,
+          "row": 0,
+          "source": "mathlib_sft",
+          "source_policy_version": null,
+          "value_class": 1
+        }
+      ],
+      "source_counts": {
+        "mathlib_sft": 1,
+        "replay": 9
+      },
+      "source_losses": {
+        "mathlib_sft": {
+          "kl": 0.01608065962791443,
+          "loss": 1.66981416785717,
+          "policy_loss": 1.5666168212890625,
+          "rows": 1,
+          "value_loss": 0.20575146675109865,
+          "weight_sum": 0.1
+        },
+        "replay": {
+          "kl": 0.20916763544082642,
+          "loss": 3.5434876657724383,
+          "policy_loss": 2.9528553023934365,
+          "rows": 9,
+          "value_loss": 1.1728980213403701,
+          "weight_sum": 0.9
+        }
+      }
+    }
+  ],
+  "curriculum_tested": false,
+  "first": {
+    "checkpoint_sha256": "502ef00442912f30bb700dfb875fce00d54c30a6fd19bea952af4bc17a56b945",
+    "runtime_receipt": {
+      "applied": true,
+      "detail": {
+        "base_content_hash_checked": false,
+        "base_parameters_frozen": true,
+        "examples_seen": 10,
+        "finite_gradients": true,
+        "finite_loss": true,
+        "finite_optimizer_state": true,
+        "finite_parameters": true,
+        "grad_norm": 43.43450164794922,
+        "kl": 0.0,
+        "kl_guard": {
+          "accepted": true,
+          "maximum": 100.0,
+          "post_update_kl": 0.4425833031535149,
+          "reduction": "mean_over_sampled_rows_of_prefix_token_sum_current_to_frozen_base",
+          "scope": "current_verified_batch_prefixes_only",
+          "timing": "after_optimizer_step_before_commit"
+        },
+        "loss": 6.830950996279716,
+        "objective": "verified_replay_mathlib_sft",
+        "optimizer_steps": 1,
+        "parameter_diffs": {
+          "adapter": {
+            "added_tensors": 0,
+            "after_sha256": "2d2ead9c07a614895e2e8f71ea04a945de1fa3d28324134a222fa7a311e1ce02",
+            "after_tensors": 392,
+            "before_sha256": "fdee3f1ad86045273cbea7b8ee7af7dbc13bbe05adc3ccc0d35a645e8186e38a",
+            "before_tensors": 392,
+            "changed_names_sample": [
+              "/base_model.model.model.layers.0.mlp.down_proj.lora_B.weight",
+              "/base_model.model.model.layers.0.mlp.gate_proj.lora_B.weight",
+              "/base_model.model.model.layers.0.mlp.up_proj.lora_B.weight",
+              "/base_model.model.model.layers.0.self_attn.k_proj.lora_B.weight"
+            ],
+            "changed_tensors": 196,
+            "diff_manifest_sha256": "a90d1d3d6593b33f4f55d2c378a6d80d5a636e9470bf4472a950ca827eec3151",
+            "removed_tensors": 0
+          },
+          "optimizer": {
+            "added_tensors": 1188,
+            "after_sha256": "5656364b7f41d477eaffb79f4a6db96c64655c983f216d66680fa57c7691cd8e",
+            "after_tensors": 1188,
+            "before_sha256": "1a58fbaf42bac7f3d5568777b25308d2822c113921809b8fb03fd1fcb3f83b8a",
+            "before_tensors": 0,
+            "changed_names_sample": [],
+            "changed_tensors": 0,
+            "diff_manifest_sha256": "6668337db3b6820555f7a540e37725e35597ffb17f71000236fbbdbf154cde7f",
+            "removed_tensors": 0
+          },
+          "rng_counters": {
+            "added_tensors": 0,
+            "after_sha256": "d672a7e55b4418acf5025d415f2395b54ff40dc11ff018d4bbcfaedc990b4e40",
+            "after_tensors": 2,
+            "before_sha256": "733f2dc4bf70a44ca2915b5471547439beb1df76785c405036adfe4b1e92dee7",
+            "before_tensors": 2,
+            "changed_names_sample": [],
+            "changed_tensors": 0,
+            "diff_manifest_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "removed_tensors": 0
+          },
+          "value_head": {
+            "added_tensors": 0,
+            "after_sha256": "f55d59d8442a9dfadfa810e33754e3b802d5047ff6446565c00b70c42e517d10",
+            "after_tensors": 4,
+            "before_sha256": "e277dfc0e45b662c96f6bff97b1bea991a6b50952585d0243025e3e82cd95c07",
+            "before_tensors": 4,
+            "changed_names_sample": [
+              "/0.bias",
+              "/0.weight",
+              "/2.bias",
+              "/2.weight"
+            ],
+            "changed_tensors": 4,
+            "diff_manifest_sha256": "c92557455d7244be0407f6cc9f4f5dced0188218036c58c05cc3cc033878538d",
+            "removed_tensors": 0
+          }
+        },
+        "policy_loss": 5.726794210076332,
+        "sample_weight": 0.1,
+        "samples": [
+          {
+            "dataset_sha256": "b89032bee7d7d75449f5395e9c34c99ff538624bd21abc057ae4be76ae8441eb",
+            "distance": 4,
+            "node_index": 0,
+            "return": -4,
+            "row": 0,
+            "source": "replay",
+            "source_policy_version": 0,
+            "source_session_id": "multi-20260827-01r1",
+            "source_theorem_sha256": "1c934ede5d3f068c24d12dc19d4b887078e5d17904cb690f022044714cf244e0",
+            "source_tree_id": "multi-20260827-01r1.tree0",
+            "value_class": 3
+          },
+          {
+            "dataset_sha256": "b89032bee7d7d75449f5395e9c34c99ff538624bd21abc057ae4be76ae8441eb",
+            "distance": 3,
+            "node_index": 1,
+            "return": -3,
+            "row": 1,
+            "source": "replay",
+            "source_policy_version": 0,
+            "source_session_id": "multi-20260827-01r1",
+            "source_theorem_sha256": "1c934ede5d3f068c24d12dc19d4b887078e5d17904cb690f022044714cf244e0",
+            "source_tree_id": "multi-20260827-01r1.tree0",
+            "value_class": 2
+          },
+          {
+            "dataset_sha256": "b89032bee7d7d75449f5395e9c34c99ff538624bd21abc057ae4be76ae8441eb",
+            "distance": 2,
+            "node_index": 2,
+            "return": -2,
+            "row": 2,
+            "source": "replay",
+            "source_policy_version": 2,
+            "source_session_id": "multi-20260827-01r1",
+            "source_theorem_sha256": "1c934ede5d3f068c24d12dc19d4b887078e5d17904cb690f022044714cf244e0",
+            "source_tree_id": "multi-20260827-01r1.tree0",
+            "value_class": 1
+          },
+          {
+            "dataset_sha256": "b89032bee7d7d75449f5395e9c34c99ff538624bd21abc057ae4be76ae8441eb",
+            "distance": 1,
+            "node_index": 4,
+            "return": -1,
+            "row": 3,
+            "source": "replay",
+            "source_policy_version": 3,
+            "source_session_id": "multi-20260827-01r1",
+            "source_theorem_sha256": "1c934ede5d3f068c24d12dc19d4b887078e5d17904cb690f022044714cf244e0",
+            "source_tree_id": "multi-20260827-01r1.tree0",
+            "value_class": 0
+          },
+          {
+            "dataset_sha256": "7975e11a24d74f326387e82fd4b8f9fc2489d1d570e44c17c5f8a03e1b9555ff",
+            "distance": 3,
+            "node_index": 0,
+            "return": -3,
+            "row": 0,
+            "source": "replay",
+            "source_policy_version": 0,
+            "source_session_id": "multi-20260827-03",
+            "source_theorem_sha256": "87e0faa213a7af0d8074ed8e166152e22e0ff80b13607c6e6f2b34235c822883",
+            "source_tree_id": "multi-20260827-03.tree0",
+            "value_class": 2
+          },
+          {
+            "dataset_sha256": "7975e11a24d74f326387e82fd4b8f9fc2489d1d570e44c17c5f8a03e1b9555ff",
+            "distance": 2,
+            "node_index": 1,
+            "return": -2,
+            "row": 1,
+            "source": "replay",
+            "source_policy_version": 0,
+            "source_session_id": "multi-20260827-03",
+            "source_theorem_sha256": "87e0faa213a7af0d8074ed8e166152e22e0ff80b13607c6e6f2b34235c822883",
+            "source_tree_id": "multi-20260827-03.tree0",
+            "value_class": 1
+          },
+          {
+            "dataset_sha256": "7975e11a24d74f326387e82fd4b8f9fc2489d1d570e44c17c5f8a03e1b9555ff",
+            "distance": 1,
+            "node_index": 2,
+            "return": -1,
+            "row": 2,
+            "source": "replay",
+            "source_policy_version": 1,
+            "source_session_id": "multi-20260827-03",
+            "source_theorem_sha256": "87e0faa213a7af0d8074ed8e166152e22e0ff80b13607c6e6f2b34235c822883",
+            "source_tree_id": "multi-20260827-03.tree0",
+            "value_class": 0
+          },
+          {
+            "dataset_sha256": "179c51f5f802311f9d1f292902fb4f0d452159dbe33afd6e14d823cae948fa0a",
+            "distance": 4,
+            "node_index": 0,
+            "return": -4,
+            "row": 0,
+            "source": "replay",
+            "source_policy_version": 0,
+            "source_session_id": "multi-20260827-05r2",
+            "source_theorem_sha256": "78d3be9fb0da44c2576e6d51232c6a1f5444ac6573c48ca5269d24b8df316fad",
+            "source_tree_id": "multi-20260827-05r2.tree0",
+            "value_class": 3
+          },
+          {
+            "dataset_sha256": "179c51f5f802311f9d1f292902fb4f0d452159dbe33afd6e14d823cae948fa0a",
+            "distance": 3,
+            "node_index": 1,
+            "return": -3,
+            "row": 1,
+            "source": "replay",
+            "source_policy_version": 0,
+            "source_session_id": "multi-20260827-05r2",
+            "source_theorem_sha256": "78d3be9fb0da44c2576e6d51232c6a1f5444ac6573c48ca5269d24b8df316fad",
+            "source_tree_id": "multi-20260827-05r2.tree0",
+            "value_class": 2
+          },
+          {
+            "dataset_sha256": "98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb",
+            "distance": 1,
+            "mathlib_source": {
+              "ambient_context": "namespace MathlibSFTGate\nvariable {α : Sort*}\n",
+              "commit": "5352afccd6866369be9de43f5b7ec47203555f44",
+              "extractor_sha256": "8d4ff389e085c45b490ba9f81581ea3db63cc2e55488e8af96ab6cf97887884e",
+              "file": "Mathlib/Logic/ExistsUnique.lean",
+              "generator_events": "none",
+              "repository": "https://github.com/leanprover-community/mathlib4",
+              "selection": {
+                "actions": [
+                  {
+                    "byte_end": 5944,
+                    "byte_start": 5909,
+                    "sha256": "e983a7dcbd9afbc8190945a9998d6890783a321c431b2aa3be3c6db2f0b1b813",
+                    "tactic": "simp only [existsUnique_iff_exists]"
+                  },
+                  {
+                    "byte_end": 6023,
+                    "byte_start": 5947,
+                    "sha256": "1b121e6edc9209e9312509c64e08b7b5b2d089f43b4fc65db05c98e9e7a67835",
+                    "tactic": "exact ExistsUnique.intro w ⟨hp, hq⟩ fun y ⟨hyp, hyq⟩ ↦ H y hyp hyq"
+                  }
+                ],
+                "byte_end": 6024,
+                "byte_start": 5672,
+                "declaration": "ExistsUnique.intro₂",
+                "declaration_sha256": "2df8c8aaceaa94dec285fb39260082e16911a4f3866cab6b8d178653ad8b6b95",
+                "proof_byte_end": 6024,
+                "proof_byte_start": 5907,
+                "proof_sha256": "3dc0616e1645f8a67a348ab13286e8500bcb9f13d77aba4494cd64e8326c4ed1"
+              },
+              "source_git_blob_sha1": "5c60f6f88746503a79a4943d53165af114224b72",
+              "source_kind": "mathlib_sft",
+              "source_sha256": "2f5b7ae2ea952e0d924c90f47c874c21acb88e971a81df15eb6ac69b35a8eb3e"
+            },
+            "return": -1,
+            "row": 1,
+            "source": "mathlib_sft",
+            "source_policy_version": null,
+            "value_class": 0
+          }
+        ],
+        "source_counts": {
+          "mathlib_sft": 1,
+          "replay": 9
+        },
+        "source_loss_reduction": "contribution_to_full_batch_mean; includes_1_over_10_weight",
+        "source_losses": {
+          "mathlib_sft": {
+            "kl": 0.0,
+            "loss": 2.136196994781494,
+            "policy_loss": 2.0207792282104493,
+            "rows": 1,
+            "value_loss": 0.23083553314208985,
+            "weight_sum": 0.1
+          },
+          "replay": {
+            "kl": 0.0,
+            "loss": 4.6947540014982225,
+            "policy_loss": 3.706014981865883,
+            "rows": 9,
+            "value_loss": 1.977478039264679,
+            "weight_sum": 0.9
+          }
+        },
+        "training_config": {
+          "base_tokenizer_sha256": "2ff73d37f6f4edad02f5c2e67bdabeeecef97a187b4747834e6acdf648980839",
+          "eos_token_id": 151643,
+          "head": "linear-silu-linear-categorical",
+          "hidden_size": 3584,
+          "kl_beta": 0.02,
+          "kl_reduction": "mean_over_sampled_rows_of_prefix_token_sum_current_to_frozen_base",
+          "learning_rate": 0.0001,
+          "lora": {
+            "alpha": 32,
+            "dropout": 0.0,
+            "rank": 16,
+            "target_modules": [
+              "down_proj",
+              "gate_proj",
+              "k_proj",
+              "o_proj",
+              "q_proj",
+              "up_proj",
+              "v_proj"
+            ]
+          },
+          "max_batch_samples": 10,
+          "max_grad_norm": 1.0,
+          "max_post_update_kl": 100.0,
+          "max_sequence_tokens": 4096,
+          "mixture": {
+            "ratio_scope": "every_complete_batch",
+            "sample_weight": 0.1,
+            "sampling_unit": "verified_action_row",
+            "source_counts": {
+              "mathlib_sft": 1,
+              "replay": 9
+            },
+            "source_losses": {
+              "mathlib_sft": [
+                "policy",
+                "value"
+              ],
+              "replay": [
+                "policy",
+                "value"
+              ]
+            },
+            "source_profiles": {
+              "mathlib_sft": "mathlib_sft_linear_negative_remaining_actions_v1",
+              "replay": "verified-generated-action-negative-longest-branch-v1"
+            }
+          },
+          "objective": "verified_replay_mathlib_sft",
+          "policy_loss": "mean_over_sampled_rows_of_joint_tactic_plus_one_EOS_negative_log_probability",
+          "source_loss_report_reduction": "contribution_to_full_batch_mean; includes_1_over_10_weight",
+          "support": {
+            "distance_max": 8,
+            "distance_min": 1,
+            "overflow": "reject",
+            "return": "negative_integer_verified_action_longest_branch; human_profile_linear_remaining_actions"
+          },
+          "tokenization": "canonical_tactic_separate_no_special_tokens_append_exactly_one_EOS",
+          "value_coefficient": 0.5,
+          "value_learning_rate": 0.0003,
+          "value_loss": "categorical_cross_entropy_exact_integer_class",
+          "value_semantics": "verified_negative_longest_branch_categorical.v1"
+        },
+        "value_loss": 2.2083135724067686
+      },
+      "event_id": "lr-0917f9b2394c75f5-1",
+      "idempotent": false,
+      "policy_version": 1
+    },
+    "step": 1
+  },
+  "gates": {
+    "CP1_complete_private_restore_exact": true,
+    "R1_immutable_and_R2_distinct": true,
+    "actor1_exact_R1_weights": true,
+    "actor2_exact_R2_weights": true,
+    "actor_seeds_independent": true,
+    "first_adapter_and_head_changed": true,
+    "first_receipt_9_1_verified": true,
+    "full_frozen_base_exact": true,
+    "host_RNG_exact": true,
+    "new_actor_private_states_fresh": true,
+    "old_actor_complete_state_unchanged": true,
+    "publishing_does_not_mutate_learner": true,
+    "sampler_restore_exact": true,
+    "second_adapter_and_head_changed": true,
+    "second_receipt_9_1_verified": true,
+    "two_cursor_commits_exact": true
+  },
+  "input_files_unchanged": true,
+  "instance_stop_requested": false,
+  "large_states": "remote persistent output/store only; report is not a local tensor backup",
+  "mutation_retry_allowed": false,
+  "new_Lean_search": false,
+  "ok": true,
+  "performance_improvement_claimed": false,
+  "real_7B_GPU_gate_passed": true,
+  "release1": {
+    "acceptance": {
+      "committed_step": 1,
+      "kind": "mixed-training"
+    },
+    "contract": {
+      "backend": "mixed-replay",
+      "base_sha256": "2ff73d37f6f4edad02f5c2e67bdabeeecef97a187b4747834e6acdf648980839",
+      "hidden_size": 3584,
+      "lora_alpha": 32,
+      "lora_dropout": 0.0,
+      "lora_rank": 16,
+      "mixed_config": {
+        "base_tokenizer_sha256": "2ff73d37f6f4edad02f5c2e67bdabeeecef97a187b4747834e6acdf648980839",
+        "eos_token_id": 151643,
+        "head": "linear-silu-linear-categorical",
+        "hidden_size": 3584,
+        "kl_beta": 0.02,
+        "kl_reduction": "mean_over_sampled_rows_of_prefix_token_sum_current_to_frozen_base",
+        "learning_rate": 0.0001,
+        "lora": {
+          "alpha": 32,
+          "dropout": 0.0,
+          "rank": 16,
+          "target_modules": [
+            "down_proj",
+            "gate_proj",
+            "k_proj",
+            "o_proj",
+            "q_proj",
+            "up_proj",
+            "v_proj"
+          ]
+        },
+        "max_batch_samples": 10,
+        "max_grad_norm": 1.0,
+        "max_post_update_kl": 100.0,
+        "max_sequence_tokens": 4096,
+        "mixture": {
+          "ratio_scope": "every_complete_batch",
+          "sample_weight": 0.1,
+          "sampling_unit": "verified_action_row",
+          "source_counts": {
+            "mathlib_sft": 1,
+            "replay": 9
+          },
+          "source_losses": {
+            "mathlib_sft": [
+              "policy",
+              "value"
+            ],
+            "replay": [
+              "policy",
+              "value"
+            ]
+          },
+          "source_profiles": {
+            "mathlib_sft": "mathlib_sft_linear_negative_remaining_actions_v1",
+            "replay": "verified-generated-action-negative-longest-branch-v1"
+          }
+        },
+        "objective": "verified_replay_mathlib_sft",
+        "policy_loss": "mean_over_sampled_rows_of_joint_tactic_plus_one_EOS_negative_log_probability",
+        "source_loss_report_reduction": "contribution_to_full_batch_mean; includes_1_over_10_weight",
+        "support": {
+          "distance_max": 8,
+          "distance_min": 1,
+          "overflow": "reject",
+          "return": "negative_integer_verified_action_longest_branch; human_profile_linear_remaining_actions"
+        },
+        "tokenization": "canonical_tactic_separate_no_special_tokens_append_exactly_one_EOS",
+        "value_coefficient": 0.5,
+        "value_learning_rate": 0.0003,
+        "value_loss": "categorical_cross_entropy_exact_integer_class",
+        "value_semantics": "verified_negative_longest_branch_categorical.v1"
+      },
+      "objective": "verified_replay_mathlib_sft",
+      "target_modules": [
+        "down_proj",
+        "gate_proj",
+        "k_proj",
+        "o_proj",
+        "q_proj",
+        "up_proj",
+        "v_proj"
+      ],
+      "value_head": "linear-silu-linear-categorical-v1"
+    },
+    "data_receipt_sha256": "3bc80e151483ce183824ead40072b77c2c5c5eaf48005c8fd55fe1678e352ff0",
+    "model_release_sha256": "58eb723d0391a33680c950299c580bef736bd163ebfb8c831e8bcca0a4e1cb19",
+    "reset": [
+      "optimizer",
+      "rng",
+      "buffer",
+      "policy_version",
+      "event_receipts"
+    ],
+    "run_sha256": "0917f9b2394c75f5c4f034a55a6138cb3791c79b79b06774ceb5a053aa4f5b05",
+    "schema_version": "reap.learner.release.v1",
+    "source": {
+      "checkpoint_sha256": "502ef00442912f30bb700dfb875fce00d54c30a6fd19bea952af4bc17a56b945",
+      "learner_id": "mixed-central",
+      "learner_step": 1,
+      "source_kind": "learner_checkpoint"
+    },
+    "transfer": [
+      "adapter",
+      "value_head"
+    ],
+    "weights_sha256": "de4853f13893da1f832aa5af992981f91f041421e40ef0beefede473f3a4eb23"
+  },
+  "release2": {
+    "acceptance": {
+      "committed_step": 2,
+      "kind": "mixed-training"
+    },
+    "contract": {
+      "backend": "mixed-replay",
+      "base_sha256": "2ff73d37f6f4edad02f5c2e67bdabeeecef97a187b4747834e6acdf648980839",
+      "hidden_size": 3584,
+      "lora_alpha": 32,
+      "lora_dropout": 0.0,
+      "lora_rank": 16,
+      "mixed_config": {
+        "base_tokenizer_sha256": "2ff73d37f6f4edad02f5c2e67bdabeeecef97a187b4747834e6acdf648980839",
+        "eos_token_id": 151643,
+        "head": "linear-silu-linear-categorical",
+        "hidden_size": 3584,
+        "kl_beta": 0.02,
+        "kl_reduction": "mean_over_sampled_rows_of_prefix_token_sum_current_to_frozen_base",
+        "learning_rate": 0.0001,
+        "lora": {
+          "alpha": 32,
+          "dropout": 0.0,
+          "rank": 16,
+          "target_modules": [
+            "down_proj",
+            "gate_proj",
+            "k_proj",
+            "o_proj",
+            "q_proj",
+            "up_proj",
+            "v_proj"
+          ]
+        },
+        "max_batch_samples": 10,
+        "max_grad_norm": 1.0,
+        "max_post_update_kl": 100.0,
+        "max_sequence_tokens": 4096,
+        "mixture": {
+          "ratio_scope": "every_complete_batch",
+          "sample_weight": 0.1,
+          "sampling_unit": "verified_action_row",
+          "source_counts": {
+            "mathlib_sft": 1,
+            "replay": 9
+          },
+          "source_losses": {
+            "mathlib_sft": [
+              "policy",
+              "value"
+            ],
+            "replay": [
+              "policy",
+              "value"
+            ]
+          },
+          "source_profiles": {
+            "mathlib_sft": "mathlib_sft_linear_negative_remaining_actions_v1",
+            "replay": "verified-generated-action-negative-longest-branch-v1"
+          }
+        },
+        "objective": "verified_replay_mathlib_sft",
+        "policy_loss": "mean_over_sampled_rows_of_joint_tactic_plus_one_EOS_negative_log_probability",
+        "source_loss_report_reduction": "contribution_to_full_batch_mean; includes_1_over_10_weight",
+        "support": {
+          "distance_max": 8,
+          "distance_min": 1,
+          "overflow": "reject",
+          "return": "negative_integer_verified_action_longest_branch; human_profile_linear_remaining_actions"
+        },
+        "tokenization": "canonical_tactic_separate_no_special_tokens_append_exactly_one_EOS",
+        "value_coefficient": 0.5,
+        "value_learning_rate": 0.0003,
+        "value_loss": "categorical_cross_entropy_exact_integer_class",
+        "value_semantics": "verified_negative_longest_branch_categorical.v1"
+      },
+      "objective": "verified_replay_mathlib_sft",
+      "target_modules": [
+        "down_proj",
+        "gate_proj",
+        "k_proj",
+        "o_proj",
+        "q_proj",
+        "up_proj",
+        "v_proj"
+      ],
+      "value_head": "linear-silu-linear-categorical-v1"
+    },
+    "data_receipt_sha256": "27abea935b35828ac865752bf47761410e6dd2ccaa265265baf310cfa45e9da9",
+    "model_release_sha256": "0103155583b260c7863ea58bbf2d3377444c272db0ea4f3a75dd49c40b65c98e",
+    "reset": [
+      "optimizer",
+      "rng",
+      "buffer",
+      "policy_version",
+      "event_receipts"
+    ],
+    "run_sha256": "0917f9b2394c75f5c4f034a55a6138cb3791c79b79b06774ceb5a053aa4f5b05",
+    "schema_version": "reap.learner.release.v1",
+    "source": {
+      "checkpoint_sha256": "51d1e947f4757b60362853ff2d2d79f786e4b289754a1f07453346f4fc040028",
+      "learner_id": "mixed-central",
+      "learner_step": 2,
+      "source_kind": "learner_checkpoint"
+    },
+    "transfer": [
+      "adapter",
+      "value_head"
+    ],
+    "weights_sha256": "81024c827f156c0f09d29beb76d1beb2f8f6b82db317dad58d6c961e6b7d67e0"
+  },
+  "sampled_unique_rows": {
+    "mathlib_sft": 2,
+    "replay": 13
+  },
+  "sampler_after_first": {
+    "config_sha256": "3985f2cb16804a768f27198e493d33aee944a816d726971586b9d9a1beb855ba",
+    "mathlib_sft_cursor": 1,
+    "replay_cursor": 9,
+    "schema_version": "reap.mixed-sampler-state.v1",
+    "step": 1
+  },
+  "sampler_after_second": {
+    "config_sha256": "3985f2cb16804a768f27198e493d33aee944a816d726971586b9d9a1beb855ba",
+    "mathlib_sft_cursor": 2,
+    "replay_cursor": 18,
+    "schema_version": "reap.mixed-sampler-state.v1",
+    "step": 2
+  },
+  "sampler_initial": {
+    "config_sha256": "3985f2cb16804a768f27198e493d33aee944a816d726971586b9d9a1beb855ba",
+    "mathlib_sft_cursor": 0,
+    "replay_cursor": 0,
+    "schema_version": "reap.mixed-sampler-state.v1",
+    "step": 0
+  },
+  "schema_version": "reap.mixed-learner.gpu-gate.v1",
+  "second": {
+    "checkpoint_sha256": "51d1e947f4757b60362853ff2d2d79f786e4b289754a1f07453346f4fc040028",
+    "runtime_receipt": {
+      "applied": true,
+      "detail": {
+        "base_content_hash_checked": false,
+        "base_parameters_frozen": true,
+        "examples_seen": 20,
+        "finite_gradients": true,
+        "finite_loss": true,
+        "finite_optimizer_state": true,
+        "finite_parameters": true,
+        "grad_norm": 15.06085205078125,
+        "kl": 0.22524829506874086,
+        "kl_guard": {
+          "accepted": true,
+          "maximum": 100.0,
+          "post_update_kl": 1.1216481558978557,
+          "reduction": "mean_over_sampled_rows_of_prefix_token_sum_current_to_frozen_base",
+          "scope": "current_verified_batch_prefixes_only",
+          "timing": "after_optimizer_step_before_commit"
+        },
+        "loss": 5.213301833629608,
+        "objective": "verified_replay_mathlib_sft",
+        "optimizer_steps": 2,
+        "parameter_diffs": {
+          "adapter": {
+            "added_tensors": 0,
+            "after_sha256": "2d4c9e3dffd96888dc08fe4d98efc7e336c9d2d1614006d36ce5b263603dd0c6",
+            "after_tensors": 392,
+            "before_sha256": "2d2ead9c07a614895e2e8f71ea04a945de1fa3d28324134a222fa7a311e1ce02",
+            "before_tensors": 392,
+            "changed_names_sample": [
+              "/base_model.model.model.layers.0.mlp.down_proj.lora_A.weight",
+              "/base_model.model.model.layers.0.mlp.down_proj.lora_B.weight",
+              "/base_model.model.model.layers.0.mlp.gate_proj.lora_A.weight",
+              "/base_model.model.model.layers.0.mlp.gate_proj.lora_B.weight"
+            ],
+            "changed_tensors": 392,
+            "diff_manifest_sha256": "fb269ce1c38a692eef662b5eec80dbab2511bc54f08939cc4f531d48e30d2eb3",
+            "removed_tensors": 0
+          },
+          "optimizer": {
+            "added_tensors": 0,
+            "after_sha256": "a4b3f3d0d4260392e612656c20ab69548999ca3f850ab405833a8de468c7934e",
+            "after_tensors": 1188,
+            "before_sha256": "5656364b7f41d477eaffb79f4a6db96c64655c983f216d66680fa57c7691cd8e",
+            "before_tensors": 1188,
+            "changed_names_sample": [
+              "/state/0/exp_avg",
+              "/state/0/exp_avg_sq",
+              "/state/0/step",
+              "/state/1/exp_avg"
+            ],
+            "changed_tensors": 1188,
+            "diff_manifest_sha256": "05984ae62498f210a7cb32bc78a91d310293d94a6b16d0da95a332988c37aef4",
+            "removed_tensors": 0
+          },
+          "rng_counters": {
+            "added_tensors": 0,
+            "after_sha256": "004a802800ba271bddcb229f88b8c0b3cd0e9c88d2ec1f26ec5367e8e655fb58",
+            "after_tensors": 2,
+            "before_sha256": "d672a7e55b4418acf5025d415f2395b54ff40dc11ff018d4bbcfaedc990b4e40",
+            "before_tensors": 2,
+            "changed_names_sample": [],
+            "changed_tensors": 0,
+            "diff_manifest_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "removed_tensors": 0
+          },
+          "value_head": {
+            "added_tensors": 0,
+            "after_sha256": "19734f05f2096ff3c2d8c571e09aca80463107021e57c71a31cad4b2fac93a1a",
+            "after_tensors": 4,
+            "before_sha256": "f55d59d8442a9dfadfa810e33754e3b802d5047ff6446565c00b70c42e517d10",
+            "before_tensors": 4,
+            "changed_names_sample": [
+              "/0.bias",
+              "/0.weight",
+              "/2.bias",
+              "/2.weight"
+            ],
+            "changed_tensors": 4,
+            "diff_manifest_sha256": "0d76f0ecd3cfa0d6e232f74818cfa619babaf80e348fe5d9680fcd28bdeac9de",
+            "removed_tensors": 0
+          }
+        },
+        "policy_loss": 4.519472123682499,
+        "sample_weight": 0.1,
+        "samples": [
+          {
+            "dataset_sha256": "179c51f5f802311f9d1f292902fb4f0d452159dbe33afd6e14d823cae948fa0a",
+            "distance": 2,
+            "node_index": 2,
+            "return": -2,
+            "row": 2,
+            "source": "replay",
+            "source_policy_version": 1,
+            "source_session_id": "multi-20260827-05r2",
+            "source_theorem_sha256": "78d3be9fb0da44c2576e6d51232c6a1f5444ac6573c48ca5269d24b8df316fad",
+            "source_tree_id": "multi-20260827-05r2.tree0",
+            "value_class": 1
+          },
+          {
+            "dataset_sha256": "179c51f5f802311f9d1f292902fb4f0d452159dbe33afd6e14d823cae948fa0a",
+            "distance": 1,
+            "node_index": 4,
+            "return": -1,
+            "row": 3,
+            "source": "replay",
+            "source_policy_version": 2,
+            "source_session_id": "multi-20260827-05r2",
+            "source_theorem_sha256": "78d3be9fb0da44c2576e6d51232c6a1f5444ac6573c48ca5269d24b8df316fad",
+            "source_tree_id": "multi-20260827-05r2.tree0",
+            "value_class": 0
+          },
+          {
+            "dataset_sha256": "fae47cd667809fa30c7a87b782b98e2e4943ba47144ddc69eee930142552402e",
+            "distance": 2,
+            "node_index": 0,
+            "return": -2,
+            "row": 0,
+            "source": "replay",
+            "source_policy_version": 0,
+            "source_session_id": "central-actor-01",
+            "source_theorem_sha256": "96f6970ec21b5d998985ce33fd173c348c7f325560aa5fb51f4657a233127146",
+            "source_tree_id": "central-actor-01.tree0",
+            "value_class": 1
+          },
+          {
+            "dataset_sha256": "fae47cd667809fa30c7a87b782b98e2e4943ba47144ddc69eee930142552402e",
+            "distance": 1,
+            "node_index": 1,
+            "return": -1,
+            "row": 1,
+            "source": "replay",
+            "source_policy_version": 0,
+            "source_session_id": "central-actor-01",
+            "source_theorem_sha256": "96f6970ec21b5d998985ce33fd173c348c7f325560aa5fb51f4657a233127146",
+            "source_tree_id": "central-actor-01.tree0",
+            "value_class": 0
+          },
+          {
+            "dataset_sha256": "b89032bee7d7d75449f5395e9c34c99ff538624bd21abc057ae4be76ae8441eb",
+            "distance": 4,
+            "node_index": 0,
+            "return": -4,
+            "row": 0,
+            "source": "replay",
+            "source_policy_version": 0,
+            "source_session_id": "multi-20260827-01r1",
+            "source_theorem_sha256": "1c934ede5d3f068c24d12dc19d4b887078e5d17904cb690f022044714cf244e0",
+            "source_tree_id": "multi-20260827-01r1.tree0",
+            "value_class": 3
+          },
+          {
+            "dataset_sha256": "b89032bee7d7d75449f5395e9c34c99ff538624bd21abc057ae4be76ae8441eb",
+            "distance": 3,
+            "node_index": 1,
+            "return": -3,
+            "row": 1,
+            "source": "replay",
+            "source_policy_version": 0,
+            "source_session_id": "multi-20260827-01r1",
+            "source_theorem_sha256": "1c934ede5d3f068c24d12dc19d4b887078e5d17904cb690f022044714cf244e0",
+            "source_tree_id": "multi-20260827-01r1.tree0",
+            "value_class": 2
+          },
+          {
+            "dataset_sha256": "b89032bee7d7d75449f5395e9c34c99ff538624bd21abc057ae4be76ae8441eb",
+            "distance": 2,
+            "node_index": 2,
+            "return": -2,
+            "row": 2,
+            "source": "replay",
+            "source_policy_version": 2,
+            "source_session_id": "multi-20260827-01r1",
+            "source_theorem_sha256": "1c934ede5d3f068c24d12dc19d4b887078e5d17904cb690f022044714cf244e0",
+            "source_tree_id": "multi-20260827-01r1.tree0",
+            "value_class": 1
+          },
+          {
+            "dataset_sha256": "b89032bee7d7d75449f5395e9c34c99ff538624bd21abc057ae4be76ae8441eb",
+            "distance": 1,
+            "node_index": 4,
+            "return": -1,
+            "row": 3,
+            "source": "replay",
+            "source_policy_version": 3,
+            "source_session_id": "multi-20260827-01r1",
+            "source_theorem_sha256": "1c934ede5d3f068c24d12dc19d4b887078e5d17904cb690f022044714cf244e0",
+            "source_tree_id": "multi-20260827-01r1.tree0",
+            "value_class": 0
+          },
+          {
+            "dataset_sha256": "7975e11a24d74f326387e82fd4b8f9fc2489d1d570e44c17c5f8a03e1b9555ff",
+            "distance": 3,
+            "node_index": 0,
+            "return": -3,
+            "row": 0,
+            "source": "replay",
+            "source_policy_version": 0,
+            "source_session_id": "multi-20260827-03",
+            "source_theorem_sha256": "87e0faa213a7af0d8074ed8e166152e22e0ff80b13607c6e6f2b34235c822883",
+            "source_tree_id": "multi-20260827-03.tree0",
+            "value_class": 2
+          },
+          {
+            "dataset_sha256": "390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1",
+            "distance": 2,
+            "mathlib_source": {
+              "ambient_context": "namespace MathlibSFTGate\nvariable {α : Sort*}\n",
+              "commit": "5352afccd6866369be9de43f5b7ec47203555f44",
+              "extractor_sha256": "8d4ff389e085c45b490ba9f81581ea3db63cc2e55488e8af96ab6cf97887884e",
+              "file": "Mathlib/Logic/ExistsUnique.lean",
+              "generator_events": "none",
+              "repository": "https://github.com/leanprover-community/mathlib4",
+              "selection": {
+                "actions": [
+                  {
+                    "byte_end": 6547,
+                    "byte_start": 6507,
+                    "sha256": "a713facdee70fb8de79cd244e6dccd9e61b60253f73552eca91322ca30542988",
+                    "tactic": "simp only [existsUnique_iff_exists] at h"
+                  },
+                  {
+                    "byte_end": 6606,
+                    "byte_start": 6550,
+                    "sha256": "72375844784eeac078e1f7326b458a86861559075b09f6938291779722242905",
+                    "tactic": "exact h.unique ⟨hpy₁, hqy₁⟩ ⟨hpy₂, hqy₂⟩"
+                  }
+                ],
+                "byte_end": 6607,
+                "byte_start": 6225,
+                "declaration": "ExistsUnique.unique₂",
+                "declaration_sha256": "168e38b7ae8540be7d528c531463dfa464ff6fe6e9b83d7c9282407c6d2b0b13",
+                "proof_byte_end": 6607,
+                "proof_byte_start": 6505,
+                "proof_sha256": "f24afa7ee23a92c731eb6b72e495d222bf73ab0b9d9cb44d980c1336857fc527"
+              },
+              "source_git_blob_sha1": "5c60f6f88746503a79a4943d53165af114224b72",
+              "source_kind": "mathlib_sft",
+              "source_sha256": "2f5b7ae2ea952e0d924c90f47c874c21acb88e971a81df15eb6ac69b35a8eb3e"
+            },
+            "return": -2,
+            "row": 0,
+            "source": "mathlib_sft",
+            "source_policy_version": null,
+            "value_class": 1
+          }
+        ],
+        "source_counts": {
+          "mathlib_sft": 1,
+          "replay": 9
+        },
+        "source_loss_reduction": "contribution_to_full_batch_mean; includes_1_over_10_weight",
+        "source_losses": {
+          "mathlib_sft": {
+            "kl": 0.01608065962791443,
+            "loss": 1.66981416785717,
+            "policy_loss": 1.5666168212890625,
+            "rows": 1,
+            "value_loss": 0.20575146675109865,
+            "weight_sum": 0.1
+          },
+          "replay": {
+            "kl": 0.20916763544082642,
+            "loss": 3.5434876657724383,
+            "policy_loss": 2.9528553023934365,
+            "rows": 9,
+            "value_loss": 1.1728980213403701,
+            "weight_sum": 0.9
+          }
+        },
+        "training_config": {
+          "base_tokenizer_sha256": "2ff73d37f6f4edad02f5c2e67bdabeeecef97a187b4747834e6acdf648980839",
+          "eos_token_id": 151643,
+          "head": "linear-silu-linear-categorical",
+          "hidden_size": 3584,
+          "kl_beta": 0.02,
+          "kl_reduction": "mean_over_sampled_rows_of_prefix_token_sum_current_to_frozen_base",
+          "learning_rate": 0.0001,
+          "lora": {
+            "alpha": 32,
+            "dropout": 0.0,
+            "rank": 16,
+            "target_modules": [
+              "down_proj",
+              "gate_proj",
+              "k_proj",
+              "o_proj",
+              "q_proj",
+              "up_proj",
+              "v_proj"
+            ]
+          },
+          "max_batch_samples": 10,
+          "max_grad_norm": 1.0,
+          "max_post_update_kl": 100.0,
+          "max_sequence_tokens": 4096,
+          "mixture": {
+            "ratio_scope": "every_complete_batch",
+            "sample_weight": 0.1,
+            "sampling_unit": "verified_action_row",
+            "source_counts": {
+              "mathlib_sft": 1,
+              "replay": 9
+            },
+            "source_losses": {
+              "mathlib_sft": [
+                "policy",
+                "value"
+              ],
+              "replay": [
+                "policy",
+                "value"
+              ]
+            },
+            "source_profiles": {
+              "mathlib_sft": "mathlib_sft_linear_negative_remaining_actions_v1",
+              "replay": "verified-generated-action-negative-longest-branch-v1"
+            }
+          },
+          "objective": "verified_replay_mathlib_sft",
+          "policy_loss": "mean_over_sampled_rows_of_joint_tactic_plus_one_EOS_negative_log_probability",
+          "source_loss_report_reduction": "contribution_to_full_batch_mean; includes_1_over_10_weight",
+          "support": {
+            "distance_max": 8,
+            "distance_min": 1,
+            "overflow": "reject",
+            "return": "negative_integer_verified_action_longest_branch; human_profile_linear_remaining_actions"
+          },
+          "tokenization": "canonical_tactic_separate_no_special_tokens_append_exactly_one_EOS",
+          "value_coefficient": 0.5,
+          "value_learning_rate": 0.0003,
+          "value_loss": "categorical_cross_entropy_exact_integer_class",
+          "value_semantics": "verified_negative_longest_branch_categorical.v1"
+        },
+        "value_loss": 1.3786494880914688
+      },
+      "event_id": "lr-0917f9b2394c75f5-2",
+      "idempotent": false,
+      "policy_version": 2
+    },
+    "step": 2
+  },
+  "source_sha256_after": {
+    "containers/gpu/smoke_gpu.py": "e024b6bc9b23fca1c66c3ed679e6136ada01fab503733cb396a57892aac3b759",
+    "containers/gpu/smoke_kl_guard.py": "c48ef92a8993570baf88928860eda2c20f3b217692e80b6329b35135ac7384bd",
+    "containers/gpu/smoke_mixed_learner.py": "f8bcfe309c74d0a13015b190fc8fdf37a4a2aafcc541ea865ac2aaf320beffec",
+    "containers/gpu/smoke_search_gpu.py": "12d1918fcc2d0145ba2e7dd90bcb73878fd2a222d593e06ab3d729fc2c5ed905",
+    "cpu_runtime/__init__.py": "0bfe0a5ea77214fa2846ea24b27751750e0134287b92f86118956df326ea8f2b",
+    "cpu_runtime/mathlib_trajectory.py": "cea58743b5b457af2c8e712d275abad520a777d2376b2700e2507efe54dca1fd",
+    "cpu_runtime/verified_dataset_store.py": "9b9052292aaa0d50f2a51a8409eb1bbc4e1124fef99a38b5ce4f3045a27b9d58",
+    "cpu_runtime/verified_trajectory.py": "e8a2366df58e739cd5b9e0bb8068b4b4dd0bd6fc8c5f46e0299295be79dffac4",
+    "gpu_runtime/__init__.py": "e8beeae6e7f1737717bb10b3badf9521fdc52c36ce1d9524b8547edff2a8317d",
+    "gpu_runtime/actor.py": "a648761fb9a2bc6a231cb5d9bc2f6985e3d39ffc8c620fb2d580e602e4760524",
+    "gpu_runtime/backend.py": "007309e2cce2395810237e897adbc48fd9d5db3794ba8394af2b512fcb2fe372",
+    "gpu_runtime/errors.py": "9cf83587246115807bfd7025322fcf3317d13f42d1303bec435a4994010b1cb7",
+    "gpu_runtime/experience_store.py": "998be320e7a65e68c059263460d75f9ebd90e2ab3f7f4bc19c8e1f38096aaa87",
+    "gpu_runtime/identifiers.py": "c9bc4e1f79541896b60a76848a5ee33f0f0fb485582fb8fc04b65d5445cf538a",
+    "gpu_runtime/learner.py": "0def661bf55fdd402b1caaf6403a1ca6cf38ee699ebbca80cf0a96918334c2f9",
+    "gpu_runtime/learner_release_store.py": "3c26df9759351c76b42277994aeaac440039827417e3a4da4bff1e185294383b",
+    "gpu_runtime/mixed_backend.py": "c5651123a70bc7cbbb3f1df7eb9621a47c569612ed2cdca1da446bb25846a620",
+    "gpu_runtime/mixed_learner.py": "48133d35063918df44ceba771418ee31181952e248960af15c8f67b159ff7f2b",
+    "gpu_runtime/mixed_learner_store.py": "51b130cd36d1f59af40f7355ea25059a171e3fb6e4e86b7747534e783cad46ba",
+    "gpu_runtime/mixed_objective.py": "238c553cb9938c763fe5cf89db99df1b81fbc1edac4fcdc9e3ff319fb72df23a",
+    "gpu_runtime/real_backend.py": "6dace0009133b525226e3d242b41f4d10870b38d47213359120cb90b7f211f48",
+    "gpu_runtime/runtime.py": "28115eeeae40aaa3c24ab21808a04a9fb2a419392b1ebde29dd7777866843fd5",
+    "gpu_runtime/schemas.py": "63fcf6a583d70210d31829aa2cef06e2b27e4b295b55337f02381a99b59caeb2",
+    "gpu_runtime/search_backend.py": "a389f7464621ca217f0535a202d70b35662c20f7c51e47b7741d73db271b69dd",
+    "gpu_runtime/search_objective.py": "62939272269085464e5111d6f412500be3f28a67192f25c2a479d307625687d0",
+    "gpu_runtime/server.py": "7f28a120d9c7823955410ddf73166f59adfbde1cbcd9aff11aab8d1de8e80187",
+    "gpu_runtime/session_store.py": "cfe6be2cc1996c60c94272d7776dad10bb604038a355b8e8e4df4c002cc76510",
+    "gpu_runtime/snapshot_store.py": "2fe8b7f74e61ce623b893f17c1e6d250fd16801fbee9b6c690e7307b2f23cfd0",
+    "gpu_runtime/toy_backend.py": "2d049f456a0a2b408491258a70dc5d2505c63e1690134814ecce5bff5c505e6f",
+    "gpu_runtime/verified_backend.py": "bd3be78dd5e88d7af04cb945d141dd43ca90244a8b35b9d426ea62493b2e80a6",
+    "gpu_runtime/verified_objective.py": "b62bb7e98c926988507e777397a8421aca9b7e390a5badeda8ebf70424215fb2"
+  },
+  "timing_scope": "each train_next including checkpoint; excludes model preparation, publish, restore and actor checks",
+  "train_with_checkpoint_seconds": [
+    23.801044391000687,
+    24.067495187999157
+  ],
+  "training_config": {
+    "base_tokenizer_sha256": "2ff73d37f6f4edad02f5c2e67bdabeeecef97a187b4747834e6acdf648980839",
+    "eos_token_id": 151643,
+    "head": "linear-silu-linear-categorical",
+    "hidden_size": 3584,
+    "kl_beta": 0.02,
+    "kl_reduction": "mean_over_sampled_rows_of_prefix_token_sum_current_to_frozen_base",
+    "learning_rate": 0.0001,
+    "lora": {
+      "alpha": 32,
+      "dropout": 0.0,
+      "rank": 16,
+      "target_modules": [
+        "down_proj",
+        "gate_proj",
+        "k_proj",
+        "o_proj",
+        "q_proj",
+        "up_proj",
+        "v_proj"
+      ]
+    },
+    "max_batch_samples": 10,
+    "max_grad_norm": 1.0,
+    "max_post_update_kl": 100.0,
+    "max_sequence_tokens": 4096,
+    "mixture": {
+      "ratio_scope": "every_complete_batch",
+      "sample_weight": 0.1,
+      "sampling_unit": "verified_action_row",
+      "source_counts": {
+        "mathlib_sft": 1,
+        "replay": 9
+      },
+      "source_losses": {
+        "mathlib_sft": [
+          "policy",
+          "value"
+        ],
+        "replay": [
+          "policy",
+          "value"
+        ]
+      },
+      "source_profiles": {
+        "mathlib_sft": "mathlib_sft_linear_negative_remaining_actions_v1",
+        "replay": "verified-generated-action-negative-longest-branch-v1"
+      }
+    },
+    "objective": "verified_replay_mathlib_sft",
+    "policy_loss": "mean_over_sampled_rows_of_joint_tactic_plus_one_EOS_negative_log_probability",
+    "source_loss_report_reduction": "contribution_to_full_batch_mean; includes_1_over_10_weight",
+    "support": {
+      "distance_max": 8,
+      "distance_min": 1,
+      "overflow": "reject",
+      "return": "negative_integer_verified_action_longest_branch; human_profile_linear_remaining_actions"
+    },
+    "tokenization": "canonical_tactic_separate_no_special_tokens_append_exactly_one_EOS",
+    "value_coefficient": 0.5,
+    "value_learning_rate": 0.0003,
+    "value_loss": "categorical_cross_entropy_exact_integer_class",
+    "value_semantics": "verified_negative_longest_branch_categorical.v1"
+  }
+}

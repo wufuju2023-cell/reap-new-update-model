@@ -1,0 +1,19 @@
+{
+  "schema_version": "reap.evidence-stage.v1",
+  "source_directory": "policy-deferred-r2-run-20260828",
+  "archive": {
+    "file": "raw.zip",
+    "bytes": 30597,
+    "sha256": "4a09dbc8946f06308229b2f7d9a441405c45a862ff8cf9ecba03f4b481b91c1a"
+  },
+  "files": {
+    "report.json": {
+      "bytes": 525409,
+      "sha256": "c13861811fb5704fb5568192a36f4a416eed13030ebe96fe1cde9ff1ea30323b"
+    }
+  },
+  "loose_files": {
+    "report.json": "c13861811fb5704fb5568192a36f4a416eed13030ebe96fe1cde9ff1ea30323b"
+  },
+  "excluded": "7B weights, large tensor snapshots, credentials, browser state"
+}

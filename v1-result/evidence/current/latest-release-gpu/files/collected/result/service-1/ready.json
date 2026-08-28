@@ -1,0 +1,99 @@
+{
+  "base_fingerprint": {
+    "base_parameters_require_grad": false,
+    "buffer_tensors": 1,
+    "bytes": 15231233280,
+    "coverage": "all_non_LoRA_model_parameters_and_buffers",
+    "cpu_chunk_bytes": 8388608,
+    "elements": 7615616576,
+    "parameter_tensors": 339,
+    "sha256": "426bf7dced89e3aeb2ba88fcd492078a754d58552af77ee32446cb7f97a61ab5"
+  },
+  "contract": {
+    "backend": "mixed-replay",
+    "base_sha256": "2ff73d37f6f4edad02f5c2e67bdabeeecef97a187b4747834e6acdf648980839",
+    "hidden_size": 3584,
+    "lora_alpha": 32,
+    "lora_dropout": 0.0,
+    "lora_rank": 16,
+    "mixed_config": {
+      "base_tokenizer_sha256": "2ff73d37f6f4edad02f5c2e67bdabeeecef97a187b4747834e6acdf648980839",
+      "eos_token_id": 151643,
+      "head": "linear-silu-linear-categorical",
+      "hidden_size": 3584,
+      "kl_beta": 0.02,
+      "kl_reduction": "mean_over_sampled_rows_of_prefix_token_sum_current_to_frozen_base",
+      "learning_rate": 0.0001,
+      "lora": {
+        "alpha": 32,
+        "dropout": 0.0,
+        "rank": 16,
+        "target_modules": [
+          "down_proj",
+          "gate_proj",
+          "k_proj",
+          "o_proj",
+          "q_proj",
+          "up_proj",
+          "v_proj"
+        ]
+      },
+      "max_batch_samples": 10,
+      "max_grad_norm": 1.0,
+      "max_post_update_kl": 100.0,
+      "max_sequence_tokens": 4096,
+      "mixture": {
+        "ratio_scope": "every_complete_batch",
+        "sample_weight": 0.1,
+        "sampling_unit": "verified_action_row",
+        "source_counts": {
+          "mathlib_sft": 1,
+          "replay": 9
+        },
+        "source_losses": {
+          "mathlib_sft": [
+            "policy",
+            "value"
+          ],
+          "replay": [
+            "policy",
+            "value"
+          ]
+        },
+        "source_profiles": {
+          "mathlib_sft": "mathlib_sft_linear_negative_remaining_actions_v1",
+          "replay": "verified-generated-action-negative-longest-branch-v1"
+        }
+      },
+      "objective": "verified_replay_mathlib_sft",
+      "policy_loss": "mean_over_sampled_rows_of_joint_tactic_plus_one_EOS_negative_log_probability",
+      "source_loss_report_reduction": "contribution_to_full_batch_mean; includes_1_over_10_weight",
+      "support": {
+        "distance_max": 8,
+        "distance_min": 1,
+        "overflow": "reject",
+        "return": "negative_integer_verified_action_longest_branch; human_profile_linear_remaining_actions"
+      },
+      "tokenization": "canonical_tactic_separate_no_special_tokens_append_exactly_one_EOS",
+      "value_coefficient": 0.5,
+      "value_learning_rate": 0.0003,
+      "value_loss": "categorical_cross_entropy_exact_integer_class",
+      "value_semantics": "verified_negative_longest_branch_categorical.v1"
+    },
+    "objective": "verified_replay_mathlib_sft",
+    "target_modules": [
+      "down_proj",
+      "gate_proj",
+      "k_proj",
+      "o_proj",
+      "q_proj",
+      "up_proj",
+      "v_proj"
+    ],
+    "value_head": "linear-silu-linear-categorical-v1"
+  },
+  "device": "cuda:0",
+  "hip": "7.2.53211",
+  "pid": 3391,
+  "url": "http://127.0.0.1:34105"
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": "reap.operator.instance-stop-receipt.v1",
+  "epoch": 1787875268.8461113,
+  "gateway_instance_id": "dsw-2136565",
+  "platform_instance_id": "dsw-djren8sasu9gdf6vdu",
+  "instance_id_boundary": "Gateway route ID and notebook API InstanceId are distinct identifiers observed in the same selected workspace page.",
+  "action": "ordinary Edge UI Stop instance and confirmation, submitted once",
+  "confirmed_status": "Stopped",
+  "is_active": false,
+  "visible_state": [
+    "\u8fde\u63a5\u8fd0\u884c\u65f6"
+  ],
+  "verification": "Read-only GET of the exact jupyter/get URL already observed by the selected workspace page; only allowlisted noncredential fields retained.",
+  "readback_sha256": "c096bf8df7c83372e28eb26b8751165131654c797155e50033702a3c7459f961",
+  "stop_intent_sha256": "ce0c847f63c59dc404d28f3957d88c8890c4571bb428e4c01b2e17c26c5b51ed",
+  "continuation_sha256": "cf22db102868ba73e102537eb3e4c612dc33dc2d60cfba2a3346886cc07b4c8f",
+  "automatic_retry_performed": false,
+  "new_instance_created": false,
+  "data_deleted": false,
+  "pre_stop_checks": "All 8 original/recovery experiment PIDs absent and all 4 experiment service ports closed; persisted continuation and local raw evidence verified.",
+  "local_bridge_cleanup_reported_by_parent": {
+    "ports": [
+      18767,
+      18768
+    ],
+    "listening": false,
+    "browser_bridge_retained": true
+  }
+}

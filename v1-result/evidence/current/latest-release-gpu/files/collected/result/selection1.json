@@ -1,0 +1,15 @@
+{
+  "head": {
+    "checkpoint_sha256": "9359f56ca8cf147211d5d14f4612f97d25215edf1d8717d6c061cf21d0724d30",
+    "model_release_sha256": "c1631685883f6cf0e12df187642bb86b22402c5e217e919da858567f7c860d2f",
+    "previous_head_sha256": null,
+    "publication_intent_sha256": "3f5de7be7cb44a93c61282bd59cc49952288e6c3180a54071fa9628fbbd23ed3",
+    "run_sha256": "ea79c9af443ee80a8e9669506a6aabc1a5dcad47687c40be772798c82278b60a",
+    "schema_version": "reap.learner.release-head.v1",
+    "step": 1
+  },
+  "head_sha256": "40ebecf1641df70be7582229a8d9eee8b4ff2de33b32ad49f0e915edf81cf5cb",
+  "intent_sha256": "128af6266869234d63a79ea354491093a9412f29e77ffef07b4977fb308bb31b",
+  "learner_run_sha256": "ea79c9af443ee80a8e9669506a6aabc1a5dcad47687c40be772798c82278b60a",
+  "schema_version": "reap.attempt.publication-selection.v1"
+}

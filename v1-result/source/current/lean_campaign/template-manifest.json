@@ -1,0 +1,25 @@
+{
+  "files_sha256": {
+    "binding.py": "389fdd826bfe71ec60a3fc8d2ef257eb614854b97c4c63cb1f4e57b7e0a6e2ff",
+    "campaign.py": "e196c9acef96e077d97cae80e18e7b8b2f9c01c8eb7069504ff155e3850cab74",
+    "container_job.py": "2385d24263cc86f64cca91bdf73b265a4ca48fc3575c00378847c266c729e663",
+    "inputs/declarations.lean": "f898205b30b61dad4a106db40f80d58fe13b21651d7717f605e335bac4898097",
+    "inputs/environment.json": "1b75b2584417fc280d208dfe68819f2610f80e6b0f9f6ae4cae60abd1590d1a3",
+    "inputs/false-negative/attempt.lean": "647e6f6d83ac00b562d54b8cf60d3d7a5f975b00afc574c3dbe3676f93f7862c",
+    "inputs/false-negative/preflight.lean": "623f97b1cb41aab425e77c1cd845bf7a5bc1e05fbec65e14dbe2f4a48087ce10",
+    "inputs/false-negative/receipt.json": "58060101b05501f0b891d1d873eb209e7c9105015933878797bd4e6a0bf8d515",
+    "inputs/false-negative/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "inputs/false-negative/stdout.log": "cdd3008c3e856e748ead8aa99e027161d020daba4a61d6806cffbce2d5202450",
+    "inputs/true-positive/attempt.lean": "56d2d40592bc9bf475958d05e22d0e5589594082b5d6a5c8fec847f22e72493b",
+    "inputs/true-positive/preflight.lean": "f863e981b81dd7f3030ea321eab610fef096528be173335f3d5b9858cd7712f7",
+    "inputs/true-positive/receipt.json": "0fab86b92b1f95524109a1cc361314eb3f0599044507b2a40e0713008042c859",
+    "inputs/true-positive/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "inputs/true-positive/stdout.log": "cdd3008c3e856e748ead8aa99e027161d020daba4a61d6806cffbce2d5202450",
+    "plan-template.json": "03921ba20365e820779ea1322b79c1e0576b1882383f0d4637d72b960cf9a4bb"
+  },
+  "origin": "parameterized wrappers from actual replica-collector-run-20260828; production modules are copied from explicit source-root",
+  "original_helpers": {
+    "campaign.py": "45cc40616b91d933e08a2fd3a3734fe58b8958cfb5d34de19eb6280de1aa8b62",
+    "container_job.py": "b6dd70ef871753d63b65b924d228aab3ff047a8828d95cc62a8ae81739ad6ee7"
+  }
+}

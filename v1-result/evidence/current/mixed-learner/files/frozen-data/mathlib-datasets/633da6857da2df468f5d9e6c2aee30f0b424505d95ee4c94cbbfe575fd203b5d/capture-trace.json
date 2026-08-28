@@ -1,0 +1,33 @@
+{"theorem": "MathlibSFTGate.ExistsUnique.elim₂",
+ "schema_version": "reap.mathlib-sft.linear-trace.v1",
+ "rows":
+ [{"tactic": "simp only [existsUnique_iff_exists] at h₂",
+   "state":
+   ["α : Sort u_1\np : α → Sort u_2\ninst✝ : ∀ (x : α), Subsingleton (p x)\nq : (x : α) → p x → Prop\nb : Prop\nh₂ : ∃! x, ∃! h, q x h\nh₁ : ∀ (x : α) (h : p x), q x h → (∀ (y : α) (hy : p y), q y hy → y = x) → b\n⊢ b"],
+   "row": 0,
+   "return": -3,
+   "prompt":
+   "User: Please generate a tactic in lean4 to solve the state.\nHere're some theorems that may be helpful:\n\nSTATE:\nα : Sort u_1\np : α → Sort u_2\ninst✝ : ∀ (x : α), Subsingleton (p x)\nq : (x : α) → p x → Prop\nb : Prop\nh₂ : ∃! x, ∃! h, q x h\nh₁ : ∀ (x : α) (h : p x), q x h → (∀ (y : α) (hy : p y), q y hy → y = x) → b\n⊢ b\nTACTIC:\n\nAssistant:",
+   "next_state":
+   ["α : Sort u_1\np : α → Sort u_2\ninst✝ : ∀ (x : α), Subsingleton (p x)\nq : (x : α) → p x → Prop\nb : Prop\nh₁ : ∀ (x : α) (h : p x), q x h → (∀ (y : α) (hy : p y), q y hy → y = x) → b\nh₂ : ∃! x, ∃ h, q x h\n⊢ b"]},
+  {"tactic": "apply h₂.elim",
+   "state":
+   ["α : Sort u_1\np : α → Sort u_2\ninst✝ : ∀ (x : α), Subsingleton (p x)\nq : (x : α) → p x → Prop\nb : Prop\nh₁ : ∀ (x : α) (h : p x), q x h → (∀ (y : α) (hy : p y), q y hy → y = x) → b\nh₂ : ∃! x, ∃ h, q x h\n⊢ b"],
+   "row": 1,
+   "return": -2,
+   "prompt":
+   "User: Please generate a tactic in lean4 to solve the state.\nHere're some theorems that may be helpful:\n\nSTATE:\nα : Sort u_1\np : α → Sort u_2\ninst✝ : ∀ (x : α), Subsingleton (p x)\nq : (x : α) → p x → Prop\nb : Prop\nh₁ : ∀ (x : α) (h : p x), q x h → (∀ (y : α) (hy : p y), q y hy → y = x) → b\nh₂ : ∃! x, ∃ h, q x h\n⊢ b\nTACTIC:\n\nAssistant:",
+   "next_state":
+   ["α : Sort u_1\np : α → Sort u_2\ninst✝ : ∀ (x : α), Subsingleton (p x)\nq : (x : α) → p x → Prop\nb : Prop\nh₁ : ∀ (x : α) (h : p x), q x h → (∀ (y : α) (hy : p y), q y hy → y = x) → b\nh₂ : ∃! x, ∃ h, q x h\n⊢ ∀ (x : α), (∃ h, q x h) → (∀ (y : α), (∃ h, q y h) → y = x) → b"]},
+  {"tactic":
+   "exact fun x ⟨hxp, hxq⟩ H ↦ h₁ x hxp hxq fun y hyp hyq ↦ H y ⟨hyp, hyq⟩",
+   "state":
+   ["α : Sort u_1\np : α → Sort u_2\ninst✝ : ∀ (x : α), Subsingleton (p x)\nq : (x : α) → p x → Prop\nb : Prop\nh₁ : ∀ (x : α) (h : p x), q x h → (∀ (y : α) (hy : p y), q y hy → y = x) → b\nh₂ : ∃! x, ∃ h, q x h\n⊢ ∀ (x : α), (∃ h, q x h) → (∀ (y : α), (∃ h, q y h) → y = x) → b"],
+   "row": 2,
+   "return": -1,
+   "prompt":
+   "User: Please generate a tactic in lean4 to solve the state.\nHere're some theorems that may be helpful:\n\nSTATE:\nα : Sort u_1\np : α → Sort u_2\ninst✝ : ∀ (x : α), Subsingleton (p x)\nq : (x : α) → p x → Prop\nb : Prop\nh₁ : ∀ (x : α) (h : p x), q x h → (∀ (y : α) (hy : p y), q y hy → y = x) → b\nh₂ : ∃! x, ∃ h, q x h\n⊢ ∀ (x : α), (∃ h, q x h) → (∀ (y : α), (∃ h, q y h) → y = x) → b\nTACTIC:\n\nAssistant:",
+   "next_state": []}],
+ "root_return": -3,
+ "original_declaration": "ExistsUnique.elim₂",
+ "complete": true}

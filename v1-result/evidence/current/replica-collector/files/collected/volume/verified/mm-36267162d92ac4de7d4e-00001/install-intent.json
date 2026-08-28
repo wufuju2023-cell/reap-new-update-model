@@ -1,0 +1,5 @@
+{
+  "dataset_sha256": "91579318920ffc08c77eaadb62f2d9eff42856d3f33436d8ba3b298f1456601d",
+  "dataset_store": "/campaign/dataset-store",
+  "mutation_retry_allowed": false
+}

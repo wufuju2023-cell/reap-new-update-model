@@ -1,0 +1,40 @@
+{
+  "scope": "portable wrapper local preparation/check/unit tests; no new GPU, Lean or Podman execution",
+  "source_sha256_after": {
+    "v1-result/source/current/portable_lean.py": "51649f42e88f7d31e1f80fc68d0c81bd20078f3d60d0566d502b0c48117f5048",
+    "v1-result/source/current/test_portable_lean.py": "d00ee07e68d2825d830e403093e84efa9f84afcc79d49423f08fb879f3fa8b93",
+    "v1-result/source/current/lean_campaign/campaign.py": "209383214c4a1489f9aae93a340523c20c6f330d9e6ecb59b3cd799794f58131",
+    "v1-result/source/current/lean_campaign/container_job.py": "9835f44826e8bf6e3c62f668cf7f5cceb864ba25cd5264bb0b2a041bc0e1ebfe",
+    "v1-result/source/current/lean_campaign/inputs/declarations.lean": "f898205b30b61dad4a106db40f80d58fe13b21651d7717f605e335bac4898097",
+    "v1-result/source/current/lean_campaign/inputs/environment.json": "1b75b2584417fc280d208dfe68819f2610f80e6b0f9f6ae4cae60abd1590d1a3",
+    "v1-result/source/current/lean_campaign/inputs/false-negative/attempt.lean": "647e6f6d83ac00b562d54b8cf60d3d7a5f975b00afc574c3dbe3676f93f7862c",
+    "v1-result/source/current/lean_campaign/inputs/false-negative/preflight.lean": "623f97b1cb41aab425e77c1cd845bf7a5bc1e05fbec65e14dbe2f4a48087ce10",
+    "v1-result/source/current/lean_campaign/inputs/false-negative/receipt.json": "58060101b05501f0b891d1d873eb209e7c9105015933878797bd4e6a0bf8d515",
+    "v1-result/source/current/lean_campaign/inputs/false-negative/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "v1-result/source/current/lean_campaign/inputs/false-negative/stdout.log": "cdd3008c3e856e748ead8aa99e027161d020daba4a61d6806cffbce2d5202450",
+    "v1-result/source/current/lean_campaign/inputs/true-positive/attempt.lean": "56d2d40592bc9bf475958d05e22d0e5589594082b5d6a5c8fec847f22e72493b",
+    "v1-result/source/current/lean_campaign/inputs/true-positive/preflight.lean": "f863e981b81dd7f3030ea321eab610fef096528be173335f3d5b9858cd7712f7",
+    "v1-result/source/current/lean_campaign/inputs/true-positive/receipt.json": "0fab86b92b1f95524109a1cc361314eb3f0599044507b2a40e0713008042c859",
+    "v1-result/source/current/lean_campaign/inputs/true-positive/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "v1-result/source/current/lean_campaign/inputs/true-positive/stdout.log": "cdd3008c3e856e748ead8aa99e027161d020daba4a61d6806cffbce2d5202450",
+    "v1-result/source/current/lean_campaign/plan-template.json": "03921ba20365e820779ea1322b79c1e0576b1882383f0d4637d72b960cf9a4bb",
+    "v1-result/source/current/lean_campaign/README.md": "c5789ad4467e1209b4cdcbca96360fc37ab7d81ec7f2887a9e7043d2a9dd53ad",
+    "v1-result/source/current/lean_campaign/template-manifest.json": "03ff288172402f78ee51af9adca6c5487e83da5d42d2d5954b225c6089cb9996"
+  },
+  "tests": {
+    "windows": {
+      "run": 9,
+      "passed": 9,
+      "seconds": 3.001,
+      "log": "windows-tests-v2.log"
+    },
+    "wsl": {
+      "run": 9,
+      "passed": 9,
+      "seconds": 7.504,
+      "log": "wsl-tests-v2.log"
+    }
+  },
+  "initial_failure_retained": "first test stage rejected >40 character family IDs; fixed compact family preserves full run nonce",
+  "archive_or_production_source_modified": false
+}

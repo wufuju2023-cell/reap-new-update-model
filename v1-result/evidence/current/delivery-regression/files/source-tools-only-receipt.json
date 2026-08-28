@@ -1,0 +1,15 @@
+{
+  "returncode": 0,
+  "seconds": 5.142891600000439,
+  "modules": [
+    "tools.amd_jupyter.test_download_from_urls",
+    "tools.amd_jupyter.test_http_bridge",
+    "tools.amd_jupyter.test_http_evidence",
+    "tools.amd_jupyter.test_prepare_deployment",
+    "tools.amd_jupyter.test_prepare_gpu_build_context",
+    "tools.amd_jupyter.test_prepare_gpu_runtime_context",
+    "tools.amd_jupyter.test_status_probe"
+  ],
+  "source_archive_sha256": "128427384bfd3010f45809690d008183477c5533eafb5980bb938bf5ae6de7f5",
+  "log_sha256": "a4733fce314f573a645f6e5a526b941cd96efb567520123c80c4aba4cfac82df"
+}

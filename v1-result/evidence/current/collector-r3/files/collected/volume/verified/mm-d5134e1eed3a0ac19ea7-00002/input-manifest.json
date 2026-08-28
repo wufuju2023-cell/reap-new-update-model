@@ -1,0 +1,30 @@
+{
+  "schema_version": "reap.collector-verify.inputs.v1",
+  "inputs_sha256": {
+    "session.json": "18af6b3d927c331d9ade3ea784c7c11748700cd16259d1efdd395b2982333614",
+    "collector-result.json": "09d6fe72c52f321eea2949b72516ed3918e78d0fd578ad0e52736ad4ec1d63fd",
+    "create-receipt.json": "f2537d6b23d66b4562059af1038a426490f51c8e27efe16f4a980b673f729854",
+    "result.json": "7872ce931068c5a73dda766562eaee78932e74c3b82f28f9e281b00b020a3716",
+    "raw_tree.json": "1d37b4e44527ce5135aa4a45eed9c12340aa864dc28e6fa3db29d7bb5b9a0ad6",
+    "observer.jsonl": "53757bc1024ef22887b2e7f90f61b1cde5bac9eebda30a2f278f242d547d267a",
+    "source.lean": "56d2d40592bc9bf475958d05e22d0e5589594082b5d6a5c8fec847f22e72493b",
+    "run.lean": "e8b300706edc85f51fb3565cce4dbafa0adf49de8b4a7643626388bd0df6a90a",
+    "process.json": "f23e0a8cffedc2c8bf3208512c80bb8fe7c5e69b45d4ca6a8f61a952402da924",
+    "proof.lean": "e177df9d98debb01ef1c13ddca6357762ffe49003a3ababb7feeee0410714a27",
+    "proof-candidate.json": "913047c55683177410328dbcc4eca8ad1cb36ec0009c95646f9e854c0026fd68",
+    "VerifiedReplay.lean": "a642aaf993f884c26c255ca3cdf1f4c6227ccc87273880243a0fc9c153761f23"
+  },
+  "expected_release_sha256": "0103155583b260c7863ea58bbf2d3377444c272db0ea4f3a75dd49c40b65c98e",
+  "expected_execution_source_sha256": "56d2d40592bc9bf475958d05e22d0e5589594082b5d6a5c8fec847f22e72493b",
+  "implementation_sha256": {
+    "collector_verify.py": "c89d913d29f049de9182a0320da1c65551edbb81581b8a0755c6931fbe97c1dc",
+    "verified_collector.py": "3ee7543ec54b2416acfcfd7da7b79a5f5dad3ee6298723f6c08deff32fc827c5",
+    "verified_trajectory.py": "e8a2366df58e739cd5b9e0bb8068b4b4dd0bd6fc8c5f46e0299295be79dffac4",
+    "verified_dataset_store.py": "9b9052292aaa0d50f2a51a8409eb1bbc4e1124fef99a38b5ce4f3045a27b9d58"
+  },
+  "launcher_attestation": {
+    "image": "d2070a64912f1a7c66ec9e4bb92e66004e8adaa58887e7be333f0bf8e3d5f3b7",
+    "network": "none"
+  },
+  "scope": "launcher must independently bind container image/network; not inferred by verifier"
+}

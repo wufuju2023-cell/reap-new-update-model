@@ -2,7 +2,7 @@
 
 本目录交付实际修复版 `http_bridge.py` 和对应的 `test_http_bridge.py`，与工作区文件逐字节一致。它修复本地 WSL → Windows OpenCLI → DSW 的宿主桥，不修改模型、训练目标、远端 worker 或 A/B 镜像。
 
-## 为什么保留旧源码包
+## 旧源码包与补丁的版本关系
 
 上一级 `source-snapshot.tar.gz` 与 `source-manifest.json` 记录原交付的固定身份，继续保留原样；原包摘要仍为 `69082304c896cd5995619d9c65a8659d452db13f1cfd08f48a00d7822ab141ce`。先验证旧包，再应用本补丁，不把补丁后的文件冒充原清单内容。原包的 `remote_http_job.py` 已确认与本次测试使用的依赖逐字节相同。
 

@@ -1,0 +1,30 @@
+{
+  "schema_version": "reap.verified-replay.receipt.v1",
+  "session_id": "multi-20260827-05r2",
+  "theorem": "MultiroundCandidates.CubeAccumulator.cube_accumulator",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "/replay-out/05/replay.lean"
+  ],
+  "cwd": "/opt/reap-runtime",
+  "returncode": 0,
+  "elapsed_seconds": 15.338566411000102,
+  "inputs_sha256": {
+    "accepted-proof.lean": "021e3ee7337678a20b2037b9b90aca1d454371a4c4a4632c953b5757d92b6cec",
+    "historical-proof-receipt.json": "0a5ef7a19fd436b22d16e580c74346893ba7aef0f935d8cba775a05005e42007",
+    "historical-proof.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "historical-proof.stdout": "a10c1c8f6813f32fe96e39ff85e526dcac9f5a4af9c18a3adafd54dfcaf894e2",
+    "observer.jsonl": "3a1a8743bc187fcf51d7336b18d81fbb4bc316100304fe3fa62edae0ffe0c592",
+    "plan.json": "53602d4b779a92ff216d7aeda7aa8705a1c62d4e9002bac11c8a8314558befc6",
+    "raw_tree.json": "6352dae7f7424a05ab595614194128123dd29d961dd996a043e8a716564221de",
+    "replay.lean": "d34a02103ab22938ab32b42936cb32dc4e94ce8da66f0682548f45ffc67af404",
+    "result.json": "d57b13d005d644955a5af16efc1ac1b51f05cb8b54b4bc1aedb459f1d82b354c",
+    "session.json": "2bd93fd06d06d3b3b67ee9717e871eda6c607bc8e976db4b118a6bcfc27df12d",
+    "source.lean": "78d3be9fb0da44c2576e6d51232c6a1f5444ac6573c48ca5269d24b8df316fad",
+    "VerifiedReplay.lean": "a642aaf993f884c26c255ca3cdf1f4c6227ccc87273880243a0fc9c153761f23"
+  },
+  "stdout_sha256": "6b1c2d1426090e10ae1ccf61fe0a59bc6be094f64570aa08308c7b140e6403c5",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "/campaign/verified/mm-36267162d92ac4de7d4e-00002/proof.lean"
+  ],
+  "cwd": "/opt/reap-runtime",
+  "timeout_seconds": 180,
+  "proof_sha256": "4e36585d777b4768668a63c42af4727ec113203ec186317e0b176f84b6aafd58",
+  "mutation_retry_allowed": false
+}

@@ -1,0 +1,35 @@
+{
+  "records": [
+    {
+      "platform": "windows",
+      "command": [
+        "C:\\Users\\21812\\anaconda3\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "tests.test_replica_collector",
+        "tests.test_collector_batch"
+      ],
+      "exit_code": 0,
+      "seconds": 7.907000000006519,
+      "log_sha256": "994c43b56b2ee6a19003dc319765380fe47e05ef6069029191b6f7b80d7a1157"
+    },
+    {
+      "platform": "linux",
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu",
+        "--",
+        "bash",
+        "-lc",
+        "python3 -B -m unittest tests.test_replica_collector tests.test_collector_batch"
+      ],
+      "exit_code": 0,
+      "seconds": 6.405999999988126,
+      "log_sha256": "5ae58622769bb0728b55de5cf497719df0f5985130367c2a5026561510828261"
+    }
+  ],
+  "sources_unchanged": true,
+  "scope": "local routing/HTTP Toy; not GPU or Lean"
+}

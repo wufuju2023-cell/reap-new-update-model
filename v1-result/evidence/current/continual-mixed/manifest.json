@@ -1,0 +1,44 @@
+{
+  "schema_version": "reap.evidence-stage.v1",
+  "source_directory": "continual-mixed-run-20260828",
+  "archive": {
+    "file": "raw.zip",
+    "bytes": 17438,
+    "sha256": "0a3f8b59dbb422ab0ca7c9b88c32f02cc8d3a37413ed1d5286564906c1074186"
+  },
+  "files": {
+    "collected-final/probe-pid.json": {
+      "bytes": 42,
+      "sha256": "b4a48aec41b24104d3b84f96a89b997cebb801b6529a41fd720e5421b8839210"
+    },
+    "collected-final/result/final-continuation.json": {
+      "bytes": 468,
+      "sha256": "b98bea226024b242341a58aedb274f635992d2e7df667d273664a6d611a1d9cb"
+    },
+    "collected-final/result/report.json": {
+      "bytes": 71712,
+      "sha256": "7b3496780e59067b1a9d5f55781a89a4401dc88647ff795f2a3cb642307b2e23"
+    },
+    "collected-final/result/step1.json": {
+      "bytes": 17931,
+      "sha256": "7ec51f534fa9a81733bf0e16e3b268dc27ada96e3430d2397929030314fcbae5"
+    },
+    "collected-final/result/training-continuation.json": {
+      "bytes": 276,
+      "sha256": "47d41da3af1b8041641fae409d392e4a656b1d201a375e891140830d46beefde"
+    },
+    "collected-final/worker-exit.json": {
+      "bytes": 164,
+      "sha256": "81f5818912694c220e0d7f25d05ff37b43107ee037d07e03ca9041dc791c0972"
+    }
+  },
+  "loose_files": {
+    "collected-final/probe-pid.json": "b4a48aec41b24104d3b84f96a89b997cebb801b6529a41fd720e5421b8839210",
+    "collected-final/result/final-continuation.json": "b98bea226024b242341a58aedb274f635992d2e7df667d273664a6d611a1d9cb",
+    "collected-final/result/report.json": "7b3496780e59067b1a9d5f55781a89a4401dc88647ff795f2a3cb642307b2e23",
+    "collected-final/result/step1.json": "7ec51f534fa9a81733bf0e16e3b268dc27ada96e3430d2397929030314fcbae5",
+    "collected-final/result/training-continuation.json": "47d41da3af1b8041641fae409d392e4a656b1d201a375e891140830d46beefde",
+    "collected-final/worker-exit.json": "81f5818912694c220e0d7f25d05ff37b43107ee037d07e03ca9041dc791c0972"
+  },
+  "excluded": "7B weights, large tensor snapshots, credentials, browser state"
+}

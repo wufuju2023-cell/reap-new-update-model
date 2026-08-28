@@ -1,0 +1,36 @@
+{
+  "ok": true,
+  "collection_files_rehashed": 111,
+  "frozen_archive_members_rehashed": 38,
+  "actual_python_source_before_matches_manifest": 36,
+  "rounds": [
+    {
+      "round": 0,
+      "serial_seconds": 1.688728909,
+      "parallel_span_seconds": 0.886617299,
+      "overlap_seconds": 0.84099477,
+      "ratio": 1.9046875251641127
+    },
+    {
+      "round": 1,
+      "serial_seconds": 1.7334755190000002,
+      "parallel_span_seconds": 0.872825001,
+      "overlap_seconds": 0.837816183,
+      "ratio": 1.9860516335049392
+    },
+    {
+      "round": 2,
+      "serial_seconds": 1.721801974,
+      "parallel_span_seconds": 0.893774429,
+      "overlap_seconds": 0.821798682,
+      "ratio": 1.926439063519012
+    }
+  ],
+  "median_ratio": 1.926439063519012,
+  "probe_process_to_worker_exit_seconds": 183.5553514957428,
+  "report_sha256": "ecbf37c4bff6c6b0eb4147ce8114c835423960e4dd9915ac927341ad05c3d70d",
+  "source_unchanged_scope": "frozen worker compares original source-store file byte hashes before/after; large remote files not rehashed locally",
+  "base_scope": "per-call parameter/buffer identity/version only; no new full frozen-base byte hash",
+  "state_scope": "same replica serial/parallel outputs and private fingerprints exact; GPU tensor reads performed by frozen worker",
+  "new_GPU_Lean_or_training": false
+}

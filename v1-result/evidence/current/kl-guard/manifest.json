@@ -1,0 +1,24 @@
+{
+  "schema_version": "reap.evidence-stage.v1",
+  "source_directory": "kl-guard-run-20260828",
+  "archive": {
+    "file": "raw.zip",
+    "bytes": 7522,
+    "sha256": "45b3016cb7e831a920b1cea987e78f41c872271565a7f8b293757f437ed27c55"
+  },
+  "files": {
+    "accept-report.json": {
+      "bytes": 13750,
+      "sha256": "3a347662f0bd1167261d842399eea3904b7de1a5d40665b35bea5703630d61fe"
+    },
+    "reject-report.json": {
+      "bytes": 8096,
+      "sha256": "5d238cee6b296bb8e6dc7dc32d37cf962eab6c8f1a9568fa6d31dfaa10b7823e"
+    }
+  },
+  "loose_files": {
+    "accept-report.json": "3a347662f0bd1167261d842399eea3904b7de1a5d40665b35bea5703630d61fe",
+    "reject-report.json": "5d238cee6b296bb8e6dc7dc32d37cf962eab6c8f1a9568fa6d31dfaa10b7823e"
+  },
+  "excluded": "7B weights, large tensor snapshots, credentials, browser state"
+}

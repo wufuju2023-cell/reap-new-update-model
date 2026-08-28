@@ -1,0 +1,8 @@
+{
+  "session_id": "central-actor-02",
+  "theorem_id": "87e0faa213a7af0d8074ed8e166152e22e0ff80b13607c6e6f2b34235c822883",
+  "model_release_sha256": "4e10219542361bbe407a987094120c2920a0bf733b88773b7a9dd68a1e702ede",
+  "purpose": "parameter initialization only; no search or proof requested",
+  "source_file": ".downloads/verified-trajectory-local-20260828/final-v3/03/source.lean",
+  "mutation_retry_allowed": false
+}

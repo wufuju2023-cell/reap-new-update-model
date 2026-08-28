@@ -1,0 +1,25 @@
+{"theorem": "MultiroundCandidates.ScaledTriangular.scaled_triangular",
+ "schema_version": "reap.verified-replay.trace.v1",
+ "rows":
+ [{"tactic": "intro n",
+   "state":
+   ["f : ℕ → ℕ\na b : ℕ\nhzero : f 0 = a\nhstep : ∀ (n : ℕ), f (n + 1) = f n + b * (n + 1)\n⊢ ∀ (n : ℕ), 2 * f n = 2 * a + b * n * (n + 1)"],
+   "return": -3,
+   "node_index": 0,
+   "next_state":
+   ["f : ℕ → ℕ\na b : ℕ\nhzero : f 0 = a\nhstep : ∀ (n : ℕ), f (n + 1) = f n + b * (n + 1)\nn : ℕ\n⊢ 2 * f n = 2 * a + b * n * (n + 1)"]},
+  {"tactic": "induction n <;> simp_all [hstep, pow_succ]",
+   "state":
+   ["f : ℕ → ℕ\na b : ℕ\nhzero : f 0 = a\nhstep : ∀ (n : ℕ), f (n + 1) = f n + b * (n + 1)\nn : ℕ\n⊢ 2 * f n = 2 * a + b * n * (n + 1)"],
+   "return": -2,
+   "node_index": 1,
+   "next_state":
+   ["case succ\nf : ℕ → ℕ\na b : ℕ\nhzero : f 0 = a\nhstep : ∀ (n : ℕ), f (n + 1) = f n + b * (n + 1)\nn✝ : ℕ\na✝ : 2 * f n✝ = 2 * a + b * n✝ * (n✝ + 1)\n⊢ 2 * (f n✝ + b * (n✝ + 1)) = 2 * a + b * (n✝ + 1) * (n✝ + 1 + 1)"]},
+  {"tactic": "linarith",
+   "state":
+   ["case succ\nf : ℕ → ℕ\na b : ℕ\nhzero : f 0 = a\nhstep : ∀ (n : ℕ), f (n + 1) = f n + b * (n + 1)\nn✝ : ℕ\na✝ : 2 * f n✝ = 2 * a + b * n✝ * (n✝ + 1)\n⊢ 2 * (f n✝ + b * (n✝ + 1)) = 2 * a + b * (n✝ + 1) * (n✝ + 1 + 1)"],
+   "return": -1,
+   "node_index": 2,
+   "next_state": []}],
+ "root_return": -3,
+ "complete": true}

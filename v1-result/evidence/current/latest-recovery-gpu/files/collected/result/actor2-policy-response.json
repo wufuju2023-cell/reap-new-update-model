@@ -1,0 +1,53 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": {
+        "content": [
+          {
+            "logprob": -2.284364938735962,
+            "token": " show"
+          },
+          {
+            "logprob": -0.666574239730835,
+            "token": " Me"
+          },
+          {
+            "logprob": -0.00132282474078238,
+            "token": "asurable"
+          },
+          {
+            "logprob": -0.05794861912727356,
+            "token": "Set"
+          },
+          {
+            "logprob": -1.9590568542480469,
+            "token": " is"
+          },
+          {
+            "logprob": -0.375692754983902,
+            "token": " measurable"
+          },
+          {
+            "logprob": -0.4296395778656006,
+            "token": "Set"
+          },
+          {
+            "logprob": -0.9867361187934875,
+            "token": " from"
+          }
+        ]
+      },
+      "message": {
+        "content": "show MeasurableSet is measurableSet from",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1787874753,
+  "id": "chatcmpl-cd6d997a1d8d43b88b5baa8f4cfd9a06",
+  "model": "reap",
+  "object": "chat.completion",
+  "policy_version": 0
+}

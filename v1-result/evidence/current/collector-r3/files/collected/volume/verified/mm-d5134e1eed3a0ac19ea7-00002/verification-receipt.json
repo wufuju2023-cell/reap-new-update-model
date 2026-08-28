@@ -1,0 +1,28 @@
+{
+  "schema_version": "reap.collector-verify.result.v1",
+  "verified": true,
+  "session_id": "mm-d5134e1eed3a0ac19ea7-00002",
+  "theorem": "ReapCurriculumWrapper.attempt",
+  "model_release_sha256": "0103155583b260c7863ea58bbf2d3377444c272db0ea4f3a75dd49c40b65c98e",
+  "execution_source_sha256": "56d2d40592bc9bf475958d05e22d0e5589594082b5d6a5c8fec847f22e72493b",
+  "proof_sha256": "e177df9d98debb01ef1c13ddca6357762ffe49003a3ababb7feeee0410714a27",
+  "proof_path": "/campaign/verified/mm-d5134e1eed3a0ac19ea7-00002/proof.lean",
+  "proof_receipt_sha256": "d7655629f45cb47a26bd1f5bc7f9e6f7c8d0832bd829c113ec6cf20fa251e5f0",
+  "proof_receipt_path": "/campaign/verified/mm-d5134e1eed3a0ac19ea7-00002/proof-receipt.json",
+  "dataset_sha256": "464d4fded8080c055012c9c6de0f270dbe6b1305fc5f69468ed35ff8d499ab8c",
+  "dataset_path": "/campaign/dataset-store/464d4fded8080c055012c9c6de0f270dbe6b1305fc5f69468ed35ff8d499ab8c",
+  "dataset_receipt_sha256": "5f91951b78fe258a5662141773e93c45f8d3d3c9fd59acf5c0e7d882bc039f99",
+  "dataset_receipt_path": "/campaign/verified/mm-d5134e1eed3a0ac19ea7-00002/dataset-receipt.json",
+  "replay_receipt_sha256": "b4896d3b0f0a7a30e5e66867f8841f0d5aec57a895d35326c4fe30a1f1f122b7",
+  "input_manifest_sha256": "ad0651df6f3be779f1a74f8e5385b55eee6d57dbac8059cd004f427d53cd7481",
+  "root_return": -1,
+  "rows": 1,
+  "axioms": [
+    "propext",
+    "Quot.sound"
+  ],
+  "new_search": false,
+  "optimizer_updates": 0,
+  "mutation_retry_allowed": false,
+  "elapsed_seconds": 18.144818303000648
+}

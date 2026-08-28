@@ -1,0 +1,136 @@
+{
+  "schema_version": "reap.evidence-stage.v1",
+  "source_directory": "gpu-runtime-image-local-20260828",
+  "archive": {
+    "file": "raw.zip",
+    "bytes": 32754,
+    "sha256": "63a1ee4d31d8e97ee929e8c3e5541722ca8124cacaa8fd69aa7a5688fa153bd1"
+  },
+  "files": {
+    "acceptance.json": {
+      "bytes": 2762,
+      "sha256": "3e8f0b8f909905a61eb22f72156f1cac89cd76e7d30dd965492e18f5cf4eb347"
+    },
+    "delivery-whitelist.json": {
+      "bytes": 4488,
+      "sha256": "00e813303b34fa142ca64407c7651dd855eed56716af3aaa3b3a717634bbf3dc"
+    },
+    "evidence/attempt-1/build-result.json": {
+      "bytes": 528,
+      "sha256": "ef154eb664bcaf988a35eba23c678db6c4c1a05eab6a73d9a9a419f428641dba"
+    },
+    "evidence/attempt-1/build.log": {
+      "bytes": 78,
+      "sha256": "f316f292b5a73d600241f589eae7d29a08cf52257ece271a721caa0657edd34d"
+    },
+    "evidence/attempt-1/pull-end.txt": {
+      "bytes": 26,
+      "sha256": "99317ec6c45cc4b68f64c3bb6183bbda1601c1ed85adc53afc497f2c1102a5c6"
+    },
+    "evidence/attempt-1/pull-exit.txt": {
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "evidence/attempt-1/pull-start.txt": {
+      "bytes": 26,
+      "sha256": "e57246fd38bbc2c1df2ad29377f5e1710fbe0296560b6a633972c37ecaad2ef5"
+    },
+    "evidence/attempt-1/pull.log": {
+      "bytes": 1015,
+      "sha256": "73c691ab49cd0f1e8e47d4f4f7f43bbe89087062e0e952bfc4c459ca1bfc9f70"
+    },
+    "evidence/attempt-2/base-inspect-before-build.json": {
+      "bytes": 16556,
+      "sha256": "2ec75a47e1bffba02be25967ce347ef6baa79d0df0d9efea14be8cc46b4e3238"
+    },
+    "evidence/attempt-2/build-result.json": {
+      "bytes": 718,
+      "sha256": "524a5a7666bee897a711901d9531644fbb9b61990934c88c356de178354fdab8"
+    },
+    "evidence/attempt-2/build.log": {
+      "bytes": 5562,
+      "sha256": "2f36a596121ae30d5f766113efaf4f56efe491cfc3316475a1a100c039fd7b6e"
+    },
+    "evidence/attempt-2/image-inspect.json": {
+      "bytes": 24422,
+      "sha256": "ba72f2c702b4d4bac159a2a7ef7a71525de61df2fb2da79fe78f503c40f86482"
+    },
+    "evidence/attempt-2/smoke-r2/smoke-inspect-after.json": {
+      "bytes": 13770,
+      "sha256": "3c1a25bb40838e1b186031be461302b3976f871b4c731b0885b48e5efb87169a"
+    },
+    "evidence/attempt-2/smoke-r2/smoke-inspect-before.json": {
+      "bytes": 12733,
+      "sha256": "66df597f4b16750e766f0f5f3228e37a8367f4f9d0114d16037647fe6b9db485"
+    },
+    "evidence/attempt-2/smoke-r2/smoke-result.json": {
+      "bytes": 755,
+      "sha256": "67ddd238662e3c459909622dddd755f03a011e61a172bb9d2d135d0d6b7a376f"
+    },
+    "evidence/attempt-2/smoke-r2/smoke.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/attempt-2/smoke-r2/smoke.stdout": {
+      "bytes": 3380,
+      "sha256": "364dba31b72a6f5d8cf38a93ad275ac0956883632523a277bd3f8f76e77ac64b"
+    },
+    "evidence/attempt-2/smoke-result.json": {
+      "bytes": 749,
+      "sha256": "f0d6d55e3f175f1bb590fb1292ea5ee5fc359436f063239cc075b8475d7d8e42"
+    },
+    "evidence/attempt-2/smoke.stderr": {
+      "bytes": 579,
+      "sha256": "3cd379ca2f6e21d7642e14d2cdafab71f6c9e856476b9e6c5e1a94478da42012"
+    },
+    "final-v2/linux.log": {
+      "bytes": 117,
+      "sha256": "cdeaa2f63e721f3fa6747f57ab1a9e7eb471178e1e43fab3c7b8611d813c244b"
+    },
+    "final-v2/receipt.json": {
+      "bytes": 433,
+      "sha256": "abb74f5a06bd482ddfdb8b47cb78226cef7d5d7482ad24c7338aec5c811c8669"
+    },
+    "final-v2/source-after.json": {
+      "bytes": 696,
+      "sha256": "c6f442a77fc43643b9a061e4777f0a46b27a6bea9f7efeaeb264b4c153c35c1c"
+    },
+    "final-v2/source-before.json": {
+      "bytes": 696,
+      "sha256": "c6f442a77fc43643b9a061e4777f0a46b27a6bea9f7efeaeb264b4c153c35c1c"
+    },
+    "final-v2/windows.log": {
+      "bytes": 134,
+      "sha256": "96915703594b7ac7a595eac2492c416a126ed00242557d5d148737a3eb65e432"
+    },
+    "python-environment-supplement.json": {
+      "bytes": 706,
+      "sha256": "97f2757169e8b193ae140032833a9ac2dde6f55f9ec4d9a2d3950373d01c20a5"
+    },
+    "smoke_runtime_image.py": {
+      "bytes": 3758,
+      "sha256": "372c9b799c0b7103170c31812556910e780dc15586f238fa7d5ce612c0b84255"
+    },
+    "smoke_runtime_image_v2.py": {
+      "bytes": 3764,
+      "sha256": "653b2ef70c9d9a3c6b6e9a1ba02cb048b8f77a2b6a68abd28eb1438a4abad04c"
+    }
+  },
+  "loose_files": {
+    "acceptance.json": "3e8f0b8f909905a61eb22f72156f1cac89cd76e7d30dd965492e18f5cf4eb347",
+    "delivery-whitelist.json": "00e813303b34fa142ca64407c7651dd855eed56716af3aaa3b3a717634bbf3dc",
+    "evidence/attempt-1/build-result.json": "ef154eb664bcaf988a35eba23c678db6c4c1a05eab6a73d9a9a419f428641dba",
+    "evidence/attempt-2/base-inspect-before-build.json": "2ec75a47e1bffba02be25967ce347ef6baa79d0df0d9efea14be8cc46b4e3238",
+    "evidence/attempt-2/build-result.json": "524a5a7666bee897a711901d9531644fbb9b61990934c88c356de178354fdab8",
+    "evidence/attempt-2/image-inspect.json": "ba72f2c702b4d4bac159a2a7ef7a71525de61df2fb2da79fe78f503c40f86482",
+    "evidence/attempt-2/smoke-r2/smoke-inspect-after.json": "3c1a25bb40838e1b186031be461302b3976f871b4c731b0885b48e5efb87169a",
+    "evidence/attempt-2/smoke-r2/smoke-inspect-before.json": "66df597f4b16750e766f0f5f3228e37a8367f4f9d0114d16037647fe6b9db485",
+    "evidence/attempt-2/smoke-r2/smoke-result.json": "67ddd238662e3c459909622dddd755f03a011e61a172bb9d2d135d0d6b7a376f",
+    "evidence/attempt-2/smoke-result.json": "f0d6d55e3f175f1bb590fb1292ea5ee5fc359436f063239cc075b8475d7d8e42",
+    "final-v2/receipt.json": "abb74f5a06bd482ddfdb8b47cb78226cef7d5d7482ad24c7338aec5c811c8669",
+    "final-v2/source-after.json": "c6f442a77fc43643b9a061e4777f0a46b27a6bea9f7efeaeb264b4c153c35c1c",
+    "final-v2/source-before.json": "c6f442a77fc43643b9a061e4777f0a46b27a6bea9f7efeaeb264b4c153c35c1c",
+    "python-environment-supplement.json": "97f2757169e8b193ae140032833a9ac2dde6f55f9ec4d9a2d3950373d01c20a5"
+  },
+  "excluded": "7B weights, large tensor snapshots, credentials, browser state"
+}

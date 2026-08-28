@@ -1,0 +1,9 @@
+{
+  "patch_sha256": "e71b3ab9b517b41801551e9874b5369a570a33a09e7d761fc8d8b8800b2ccfbd",
+  "archive_bytes": 5863,
+  "base_manifest_sha256": "c1f54aecb6239f38a37a9aec14a35218f92a0589b5de24bd4814983af4062fe8",
+  "files_sha256": {
+    "code/recover_consume.py": "33641acded89106df38cbb1b5048d1b8f3b6bb6989602dd181d39738df442bbd",
+    "command.json": "e99028409b3734006b563e9c74c67fc98004c3adbb22b3b0f91ec9cfd24c0b4e"
+  }
+}

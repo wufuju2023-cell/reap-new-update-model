@@ -1,0 +1,105 @@
+{
+  "schema_version": "reap.verified-success-trajectory.v1",
+  "profile": "verified-generated-action-negative-longest-branch-v1",
+  "session_id": "multi-20260827-01r1",
+  "tree_id": "multi-20260827-01r1.tree0",
+  "theorem": "MultiroundCandidates.CoupledOddSquare.coupled_odd_square",
+  "theorem_sha256": "1c934ede5d3f068c24d12dc19d4b887078e5d17904cb690f022044714cf244e0",
+  "root_return": -4,
+  "action_unit": "one generated tactic string; focus transitions cost zero",
+  "and_return": "minimum branch return; shared-metavariable branch skipping rejected",
+  "state_origin": "exact saved state matched against independent Lean replay",
+  "training_integration": "none; not search_visit_backup or categorical-head training",
+  "axioms": [
+    "propext"
+  ],
+  "final_policy_version": 3,
+  "inputs_sha256": {
+    "accepted-proof.lean": "941e19a050e5cd91e0ef4a8ac5279240063a736a402f9ccea7813adf97c92873",
+    "historical-proof-receipt.json": "42aff45e8799a9ede8e1ac73452ea0c1f5d575e1e15d3adb1b0655bea4cb5a0b",
+    "historical-proof.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "historical-proof.stdout": "0a1da5fa68f3d0b77e5a38f71319659a9fd31ae65cf12dc93e5e575f7f89e2e1",
+    "observer.jsonl": "aa1d82672cda091744f89702baaaf3a571a7cf597ae141cd054d894bab244567",
+    "plan.json": "a8a19f32f03e08c6bc34ad17fcd3078218c0f388a1000f5a28eaae8c93a7703c",
+    "raw_tree.json": "20aa1a5fe10f837f5741cc69aab0245920ddd442d2468184dc05795087e3612a",
+    "replay.lean": "02dbf84a3ed1482e37ad75a8fd5c5785c4bae6612c67d7602a91064ff8b556b5",
+    "result.json": "a9e474be874d92bf8c4580494074ffb1ad70b129cea338c8ebaa1fd59f7322f1",
+    "session.json": "f8bef9dd7841f5c7a0bb9e2c784ef22c7f5c7b3f401126088232eb25207c0c84",
+    "source.lean": "1c934ede5d3f068c24d12dc19d4b887078e5d17904cb690f022044714cf244e0",
+    "VerifiedReplay.lean": "a642aaf993f884c26c255ca3cdf1f4c6227ccc87273880243a0fc9c153761f23"
+  },
+  "trace_sha256": "eb96a05e4ca578ed3d0580d41679a84f3f60e598d93ccde5e45ff8909b55b7c5",
+  "replay_receipt_sha256": "356c9cbd6b17eda86baf43b80453d0d0535cc34c0b37c2dbb9e0f2b47bedac8b",
+  "rows": [
+    {
+      "node_index": 0,
+      "child_index": 1,
+      "state": [
+        "f g : ℕ → ℕ\nhfzero : f 0 = 1\nhgzero : g 0 = 0\nhfstep : ∀ (n : ℕ), f (n + 1) = f n + 2\nhgstep : ∀ (n : ℕ), g (n + 1) = g n + f n\n⊢ ∀ (n : ℕ), f n = 2 * n + 1 ∧ g n = n * n"
+      ],
+      "next_state": [
+        "f g : ℕ → ℕ\nhfzero : f 0 = 1\nhgzero : g 0 = 0\nhfstep : ∀ (n : ℕ), f (n + 1) = f n + 2\nhgstep : ∀ (n : ℕ), g (n + 1) = g n + f n\nn : ℕ\n⊢ f n = 2 * n + 1 ∧ g n = n * n"
+      ],
+      "tactic": "intro n",
+      "return": -4,
+      "prompt": "User: Please generate a tactic in lean4 to solve the state.\nHere're some theorems that may be helpful:\n\nSTATE:\nf g : ℕ → ℕ\nhfzero : f 0 = 1\nhgzero : g 0 = 0\nhfstep : ∀ (n : ℕ), f (n + 1) = f n + 2\nhgstep : ∀ (n : ℕ), g (n + 1) = g n + f n\n⊢ ∀ (n : ℕ), f n = 2 * n + 1 ∧ g n = n * n\nTACTIC:\n\nAssistant:",
+      "policy_version": 0,
+      "generation_sequence": 48,
+      "eval_sequence": 49,
+      "generation_index": 7,
+      "candidate_index": 1
+    },
+    {
+      "node_index": 1,
+      "child_index": 2,
+      "state": [
+        "f g : ℕ → ℕ\nhfzero : f 0 = 1\nhgzero : g 0 = 0\nhfstep : ∀ (n : ℕ), f (n + 1) = f n + 2\nhgstep : ∀ (n : ℕ), g (n + 1) = g n + f n\nn : ℕ\n⊢ f n = 2 * n + 1 ∧ g n = n * n"
+      ],
+      "next_state": [
+        "case succ\nf g : ℕ → ℕ\nhfzero : f 0 = 1\nhgzero : g 0 = 0\nhfstep : ∀ (n : ℕ), f (n + 1) = f n + 2\nhgstep : ∀ (n : ℕ), g (n + 1) = g n + f n\nn✝ : ℕ\na✝ : f n✝ = 2 * n✝ + 1 ∧ g n✝ = n✝ * n✝\n⊢ 2 * n✝ + 2 = 2 * (n✝ + 1) ∧ n✝ * n✝ + (2 * n✝ + 1) = (n✝ + 1) * (n✝ + 1)"
+      ],
+      "tactic": "induction n <;> simp_all [hfstep, hgstep]",
+      "return": -3,
+      "prompt": "User: Please generate a tactic in lean4 to solve the state.\nHere're some theorems that may be helpful:\n\nSTATE:\nf g : ℕ → ℕ\nhfzero : f 0 = 1\nhgzero : g 0 = 0\nhfstep : ∀ (n : ℕ), f (n + 1) = f n + 2\nhgstep : ∀ (n : ℕ), g (n + 1) = g n + f n\nn : ℕ\n⊢ f n = 2 * n + 1 ∧ g n = n * n\nTACTIC:\n\nAssistant:",
+      "policy_version": 0,
+      "generation_sequence": 54,
+      "eval_sequence": 55,
+      "generation_index": 0,
+      "candidate_index": 0
+    },
+    {
+      "node_index": 2,
+      "child_index": 4,
+      "state": [
+        "case succ\nf g : ℕ → ℕ\nhfzero : f 0 = 1\nhgzero : g 0 = 0\nhfstep : ∀ (n : ℕ), f (n + 1) = f n + 2\nhgstep : ∀ (n : ℕ), g (n + 1) = g n + f n\nn✝ : ℕ\na✝ : f n✝ = 2 * n✝ + 1 ∧ g n✝ = n✝ * n✝\n⊢ 2 * n✝ + 2 = 2 * (n✝ + 1) ∧ n✝ * n✝ + (2 * n✝ + 1) = (n✝ + 1) * (n✝ + 1)"
+      ],
+      "next_state": [
+        "case succ\nf g : ℕ → ℕ\nhfzero : f 0 = 1\nhgzero : g 0 = 0\nhfstep : ∀ (n : ℕ), f (n + 1) = f n + 2\nhgstep : ∀ (n : ℕ), g (n + 1) = g n + f n\nn✝ : ℕ\na✝ : f n✝ = 2 * n✝ + 1 ∧ g n✝ = n✝ * n✝\n⊢ True ∧ True"
+      ],
+      "tactic": "ring",
+      "return": -2,
+      "prompt": "User: Please generate a tactic in lean4 to solve the state.\nHere're some theorems that may be helpful:\n\nSTATE:\ncase succ\nf g : ℕ → ℕ\nhfzero : f 0 = 1\nhgzero : g 0 = 0\nhfstep : ∀ (n : ℕ), f (n + 1) = f n + 2\nhgstep : ∀ (n : ℕ), g (n + 1) = g n + f n\nn✝ : ℕ\na✝ : f n✝ = 2 * n✝ + 1 ∧ g n✝ = n✝ * n✝\n⊢ 2 * n✝ + 2 = 2 * (n✝ + 1) ∧ n✝ * n✝ + (2 * n✝ + 1) = (n✝ + 1) * (n✝ + 1)\nTACTIC:\n\nAssistant:",
+      "policy_version": 2,
+      "generation_sequence": 75,
+      "eval_sequence": 76,
+      "generation_index": 1,
+      "candidate_index": 0
+    },
+    {
+      "node_index": 4,
+      "child_index": 5,
+      "state": [
+        "case succ\nf g : ℕ → ℕ\nhfzero : f 0 = 1\nhgzero : g 0 = 0\nhfstep : ∀ (n : ℕ), f (n + 1) = f n + 2\nhgstep : ∀ (n : ℕ), g (n + 1) = g n + f n\nn✝ : ℕ\na✝ : f n✝ = 2 * n✝ + 1 ∧ g n✝ = n✝ * n✝\n⊢ True ∧ True"
+      ],
+      "next_state": [],
+      "tactic": "next => simp",
+      "return": -1,
+      "prompt": "User: Please generate a tactic in lean4 to solve the state.\nHere're some theorems that may be helpful:\n\nSTATE:\ncase succ\nf g : ℕ → ℕ\nhfzero : f 0 = 1\nhgzero : g 0 = 0\nhfstep : ∀ (n : ℕ), f (n + 1) = f n + 2\nhgstep : ∀ (n : ℕ), g (n + 1) = g n + f n\nn✝ : ℕ\na✝ : f n✝ = 2 * n✝ + 1 ∧ g n✝ = n✝ * n✝\n⊢ True ∧ True\nTACTIC:\n\nAssistant:",
+      "policy_version": 3,
+      "generation_sequence": 87,
+      "eval_sequence": 88,
+      "generation_index": 0,
+      "candidate_index": 0
+    }
+  ]
+}

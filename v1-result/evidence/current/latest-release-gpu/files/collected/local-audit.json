@@ -1,0 +1,32 @@
+{
+  "status": "failed_real_stage_evidence_verified",
+  "scope": "Raw files and frozen code verified; complete GPU joint stage did not pass.",
+  "files": 146,
+  "actual_code_hashes": 67,
+  "report_sha256": "611d46040fa26cacf393e771ea05f20d3f78221fa740c4e9ae246d08823a0354",
+  "worker": {
+    "automatic_retry_allowed": false,
+    "epoch": 1787874005.52261,
+    "probe_returncode": 1,
+    "returncode": 1
+  },
+  "error": {
+    "message": "<urlopen error [Errno 111] Connection refused>",
+    "mutation_retry_allowed": false,
+    "type": "URLError"
+  },
+  "committed_checkpoints": [
+    {
+      "checkpoint_sha256": "9359f56ca8cf147211d5d14f4612f97d25215edf1d8717d6c061cf21d0724d30",
+      "step": 1
+    },
+    {
+      "checkpoint_sha256": "700ee66fbe22e55d41e7eb31041b1fea0d49c7de0d9f619687c749752ebc4701",
+      "step": 2
+    }
+  ],
+  "boundaries": [
+    "No training or HTTP retry was performed. Failed stage is not a completed mathematical or performance experiment.",
+    "Large tensors were not downloaded. Any final full base/source immutability gate not reached by the failed worker remains unverified."
+  ]
+}

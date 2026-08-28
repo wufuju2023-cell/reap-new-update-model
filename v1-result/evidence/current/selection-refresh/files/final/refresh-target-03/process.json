@@ -1,0 +1,1 @@
+{"command": ["lake", "env", "lean", "/opt/reap-runtime/inputs/03-ScaledTriangular.lean"], "pid": 2, "started_at_epoch": 1787852203.578452, "tree_id": "refresh-target-03.tree0"}

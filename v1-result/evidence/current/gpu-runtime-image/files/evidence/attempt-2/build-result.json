@@ -1,0 +1,26 @@
+{
+  "command": [
+    "podman",
+    "build",
+    "--network=none",
+    "--pull=never",
+    "--retry=0",
+    "--jobs=1",
+    "--memory=8g",
+    "--memory-swap=8g",
+    "--format=docker",
+    "-f",
+    "containers/gpu/Containerfile.runtime",
+    "-t",
+    "localhost/reap-gpu:runtime-20260828",
+    "."
+  ],
+  "seconds": 26.680223580999154,
+  "exit_code": 0,
+  "context_manifest_sha256": "21c75868d99d0b9c8e1a0657fe4edc1f38fa3e2c1d7ea964096eadd35fd7bf82",
+  "image": "localhost/reap-gpu:runtime-20260828",
+  "gpu_tested": false,
+  "image_id": "fc5687143dd7fd6ca276e45ed1d420fd3b611fa3299c42245216f94326c2dba3",
+  "digest": "sha256:ed6b3a035fcded94ce2c48653120d04aeb7bb7b57e9b49782ad3edd37943255d",
+  "size": 29817042215
+}

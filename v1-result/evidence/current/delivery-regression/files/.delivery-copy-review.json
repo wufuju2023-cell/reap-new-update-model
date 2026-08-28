@@ -1,0 +1,352 @@
+{
+  "COPY_source_files_verified": 73,
+  "GPU_or_Lean_executed": false,
+  "bash_blocks_syntax_checked": 3,
+  "blocking_findings_remaining": [],
+  "build_run": false,
+  "container_run": false,
+  "docker_readme_sha256": "640bb7d0b11df72ebd968741be62d052988936a203258c5fabb7fd1602c60f55",
+  "generated_external_not_missing": [
+    {
+      "generated_or_external_input": "model/",
+      "recipe": "containers/gpu/Containerfile"
+    },
+    {
+      "generated_or_external_input": "model-manifest.json",
+      "recipe": "containers/gpu/Containerfile"
+    },
+    {
+      "generated_or_external_input": "build-context-manifest.json",
+      "recipe": "containers/gpu/Containerfile"
+    },
+    {
+      "generated_or_external_input": "wheels/",
+      "recipe": "containers/gpu/Containerfile.runtime"
+    },
+    {
+      "generated_or_external_input": "runtime-context-manifest.json",
+      "recipe": "containers/gpu/Containerfile.runtime"
+    }
+  ],
+  "limits": [
+    "Only COPY input availability/byte identity and shell syntax were checked; no new image rebuild was performed.",
+    "Fixed precompiled Lean base, Ubuntu, apt/Reap/Mathlib network/cache prerequisites remain external; do not substitute another Lean version.",
+    "GPU model/wheels/generated context metadata are deliberately external to source delivery; no weights downloaded or packed.",
+    "Historical image IDs and actual build/experiment receipts are unchanged."
+  ],
+  "ok": true,
+  "prior_findings": {
+    "archive_sha256": "128427384bfd3010f45809690d008183477c5533eafb5980bb938bf5ae6de7f5",
+    "impact": "base CPU COPY fails without lean-toolchain; image smoke references smoke_sessions.jsonl",
+    "missing": [
+      "containers/cpu/runtime/lean-toolchain",
+      "cpu_runtime/examples/smoke_sessions.jsonl"
+    ],
+    "resolution": "both added with original workspace bytes to new archive and verified extracted files"
+  },
+  "recipes": [
+    "containers/cpu/Containerfile",
+    "containers/cpu/Containerfile.selection-value-refresh",
+    "containers/cpu/Containerfile.verified-collector",
+    "containers/gpu/Containerfile",
+    "containers/gpu/Containerfile.runtime"
+  ],
+  "reviewer": "concurrency",
+  "schema_version": "reap.delivery-copy.independent-review.v1",
+  "source_archive_sha256": "50bd3fb37005694e97b5244b7def5ea7b33881d6e61adc5223998fcef30f4e7c",
+  "source_files": {
+    "containers/cpu/patches/0001-training-endpoints-and-value.patch": {
+      "bytes": 1952,
+      "sha256": "f907a9ae1ede1c45d1593b76b8519193dc1ae1d39b96bb3e4267308a8f2e4665"
+    },
+    "containers/cpu/patches/0002-training-observer.patch": {
+      "bytes": 9436,
+      "sha256": "54eaeef24ffd8a605371d89b066533e45e38e419f0baa86d47c548a5a98aa209"
+    },
+    "containers/cpu/patches/0003-strict-value-errors.patch": {
+      "bytes": 1600,
+      "sha256": "d1f18633bc252d8e5596f2385c92fe160801ef7b2fbe5585abfb75f024f4c1f9"
+    },
+    "containers/cpu/patches/0004-selection-value-refresh.patch": {
+      "bytes": 10861,
+      "sha256": "9555b493849e2afdfd5c69d08203a5bdb046e5ba30d8363960ce432a4d38ceb3"
+    },
+    "containers/cpu/reap-overlay/Reap/Training.lean": {
+      "bytes": 58,
+      "sha256": "a3748fc9b2c95dab3fc45b087223d363ecd2eab01ab16e801962cb78534e9562"
+    },
+    "containers/cpu/reap-overlay/Reap/Training/Observer.lean": {
+      "bytes": 4551,
+      "sha256": "b848002cfb8f25740d6023159a3bd75769bb71b244454738c89f910b6a4aca89"
+    },
+    "containers/cpu/reap-overlay/Reap/Training/RolloutSink.lean": {
+      "bytes": 5023,
+      "sha256": "9ea79fe21a800873c88588bb3dc974ecd40908ba7e9e228d89dd1419c0bea7fa"
+    },
+    "containers/cpu/runtime/ReapRuntime.lean": {
+      "bytes": 69,
+      "sha256": "742ff6a89fbf8ecb3b9bbb7730197649c9666f4e04943ebe45bf890492338780"
+    },
+    "containers/cpu/runtime/Smoke.lean": {
+      "bytes": 213,
+      "sha256": "2c0cdd7ab0720cf44b60802bf4c76efb40f10f0daf98cf5e525da403e9b41147"
+    },
+    "containers/cpu/runtime/lakefile.toml": {
+      "bytes": 231,
+      "sha256": "baa4e8e535708aba7b3d518f22df70d60c927abdeeca11a768861c7fd462657c"
+    },
+    "containers/cpu/runtime/lean-toolchain": {
+      "bytes": 32,
+      "sha256": "3aaff661d6b7cbf6378dd890e7be579f68a9277c26e6b9c0cb2fdf84b9555ce3"
+    },
+    "containers/cpu/selection-value-refresh-overlay/Reap/Training/SelectionValueRefresh.lean": {
+      "bytes": 1968,
+      "sha256": "4645c80751ea84677e37e24621646319d48bc12040b9d5d996abd2f3a4d5dd2f"
+    },
+    "containers/cpu/smoke_cpu.sh": {
+      "bytes": 1248,
+      "sha256": "7ad8dfd4917144bfbb64535659ff626709049a444b9b0f0595f23534f1159921"
+    },
+    "containers/cpu/verified-collector-overlay/Reap/VerifiedCollector.lean": {
+      "bytes": 7073,
+      "sha256": "f37d8ba3a55706aeac3578626430bb47ad8fea08d2892324f7b1e4552d59a3bd"
+    },
+    "containers/gpu/download_model.py": {
+      "bytes": 15220,
+      "sha256": "bea18b600d5a70b3b2b97b80c8d9131fda48228b67b4f114be89575e85a27531"
+    },
+    "containers/gpu/install_runtime.sh": {
+      "bytes": 2897,
+      "sha256": "66b05268dca073a94feb300e53a52c129b203e0c128e4f769e3a2d8b897208cd"
+    },
+    "containers/gpu/requirements-gpu-hashed.lock": {
+      "bytes": 2304,
+      "sha256": "6aea586c17e728886924d008df55d9383d216f81a421ea5b11670935dd199833"
+    },
+    "containers/gpu/smoke_gpu.py": {
+      "bytes": 14835,
+      "sha256": "e024b6bc9b23fca1c66c3ed679e6136ada01fab503733cb396a57892aac3b759"
+    },
+    "cpu_runtime/__init__.py": {
+      "bytes": 50,
+      "sha256": "0bfe0a5ea77214fa2846ea24b27751750e0134287b92f86118956df326ea8f2b"
+    },
+    "cpu_runtime/batch_solver.py": {
+      "bytes": 9261,
+      "sha256": "936b0bf4dbfc39e1b488125f90cfcccd6905e8ccf58f57b4f8bd962096c0eb8c"
+    },
+    "cpu_runtime/closed_problem.py": {
+      "bytes": 9560,
+      "sha256": "fe04e75b0802e98331ac050636f542bfe78e29f92d9346278fb356590fc576d0"
+    },
+    "cpu_runtime/collector_batch.py": {
+      "bytes": 21729,
+      "sha256": "9cac4c779054d7611f7da7ba25c7d264121cbf31fc2314da95c70052a89dc56f"
+    },
+    "cpu_runtime/collector_verify.py": {
+      "bytes": 17826,
+      "sha256": "c89d913d29f049de9182a0320da1c65551edbb81581b8a0755c6931fbe97c1dc"
+    },
+    "cpu_runtime/curriculum_admission.py": {
+      "bytes": 8989,
+      "sha256": "e55c4e84d0c5d160a13ea222d3d34364ce7a87c86a466cc3400af6f702e91140"
+    },
+    "cpu_runtime/examples/smoke_sessions.jsonl": {
+      "bytes": 386,
+      "sha256": "5100b139e291e0c969d3b60e0ffb23445ff1a8ce8db8e51921d5d3885c5ba803"
+    },
+    "cpu_runtime/experience_policy.py": {
+      "bytes": 18636,
+      "sha256": "392c56b990810257e963dba0947c6aa7bb76e9327e7409febe29401363bb1a38"
+    },
+    "cpu_runtime/http_clients.py": {
+      "bytes": 5751,
+      "sha256": "c65d81a6f922c62c90d40a08113f9699d634b647e3798b3578a69df2dffa4488"
+    },
+    "cpu_runtime/matchmaker.py": {
+      "bytes": 27103,
+      "sha256": "8536a531a9b8be98f9f145f2ec8d43a6b019f9884f4299eab9b8eb8ae899369f"
+    },
+    "cpu_runtime/mathlib_trajectory.py": {
+      "bytes": 18332,
+      "sha256": "cea58743b5b457af2c8e712d275abad520a777d2376b2700e2507efe54dca1fd"
+    },
+    "cpu_runtime/mock_services.py": {
+      "bytes": 2182,
+      "sha256": "e88fc60144fb5d732e6ef1c3d562f2a1b91eb22169bcf9f9bf60655ca4b75bfc"
+    },
+    "cpu_runtime/normalize_rollout.py": {
+      "bytes": 8020,
+      "sha256": "f9108919ebbf8a30a9c810148a46b22e58fd9506e40cece3d83080b88664bfa2"
+    },
+    "cpu_runtime/online_batch.py": {
+      "bytes": 35896,
+      "sha256": "eed38f205fdae681972e7227257e3870d62498ff8fa0179eeee001bb26f19671"
+    },
+    "cpu_runtime/online_ttt.py": {
+      "bytes": 34618,
+      "sha256": "cf475e6ada531f749172473040620eb1f8d8f259e0f9e82ff22094d8c9d5301f"
+    },
+    "cpu_runtime/publish_experience.py": {
+      "bytes": 1937,
+      "sha256": "df6aadf73ed9b40852269b8d7610a6c46cd723d77be8b11034ad7ef9a6e9d75b"
+    },
+    "cpu_runtime/reap_act_runner.py": {
+      "bytes": 4892,
+      "sha256": "a068161c556bbe8d8475fe6db3d67e81bd84e9e8b3c2b43619c7aa8d742105ff"
+    },
+    "cpu_runtime/reap_prompt.py": {
+      "bytes": 1245,
+      "sha256": "4160fe53124542542d646391c7dd089206b180b3b0e5af33188c3bea59020a03"
+    },
+    "cpu_runtime/released_attempts.py": {
+      "bytes": 3937,
+      "sha256": "3af3d5945357e005faa18a552476b4148e261924608a894b63b0c6eb496a3ff2"
+    },
+    "cpu_runtime/replica_collector.py": {
+      "bytes": 16778,
+      "sha256": "5450717b1ae4e514652305409c5ef92351a4fd8811d62b260a0e568f313f5924"
+    },
+    "cpu_runtime/run_toy_ttt.py": {
+      "bytes": 2855,
+      "sha256": "a79e87cf391e298118b94d155d3c9cecedd27c9d89c840d718341eaf9fcc5e78"
+    },
+    "cpu_runtime/run_ttt.py": {
+      "bytes": 188,
+      "sha256": "6e31fa924fe7ce093e9882bf5d1c851ef1fc253ceedc553bd65f2b88ade1c03a"
+    },
+    "cpu_runtime/segmented_ttt.py": {
+      "bytes": 19701,
+      "sha256": "7c739fcb364ad35dbe344be74664f7a8602ac9161c07cfcfe1157f76d7ac360c"
+    },
+    "cpu_runtime/target_curriculum.py": {
+      "bytes": 16131,
+      "sha256": "2cb4de8cf768deb0505a32e1316ef0198575ef19f288c225345c57a78acc1ee2"
+    },
+    "cpu_runtime/target_variants.py": {
+      "bytes": 6738,
+      "sha256": "368c7f3b2626ae1365680d77978f6c3a08a335961b79d461fbf4b4a6e2f1d000"
+    },
+    "cpu_runtime/transport_budget.py": {
+      "bytes": 1351,
+      "sha256": "e0fd254e87f7e1f3cd3d53c3135fff2ea889a6cf3929be6866bb456fee83d1ac"
+    },
+    "cpu_runtime/verified_collector.py": {
+      "bytes": 22412,
+      "sha256": "3ee7543ec54b2416acfcfd7da7b79a5f5dad3ee6298723f6c08deff32fc827c5"
+    },
+    "cpu_runtime/verified_dataset_store.py": {
+      "bytes": 11605,
+      "sha256": "9b9052292aaa0d50f2a51a8409eb1bbc4e1124fef99a38b5ce4f3045a27b9d58"
+    },
+    "cpu_runtime/verified_trajectory.py": {
+      "bytes": 22420,
+      "sha256": "e8a2366df58e739cd5b9e0bb8068b4b4dd0bd6fc8c5f46e0299295be79dffac4"
+    },
+    "gpu_runtime/__init__.py": {
+      "bytes": 1360,
+      "sha256": "e8beeae6e7f1737717bb10b3badf9521fdc52c36ce1d9524b8547edff2a8317d"
+    },
+    "gpu_runtime/actor.py": {
+      "bytes": 5682,
+      "sha256": "a648761fb9a2bc6a231cb5d9bc2f6985e3d39ffc8c620fb2d580e602e4760524"
+    },
+    "gpu_runtime/backend.py": {
+      "bytes": 2006,
+      "sha256": "007309e2cce2395810237e897adbc48fd9d5db3794ba8394af2b512fcb2fe372"
+    },
+    "gpu_runtime/continual_mixed_learner.py": {
+      "bytes": 4226,
+      "sha256": "56c1810827754b3d743b735304b8d04272fc10502d0caee2c54bdd5b38a6e0b6"
+    },
+    "gpu_runtime/continual_mixed_store.py": {
+      "bytes": 8236,
+      "sha256": "91676d42af1b6fe6da4f2e24f5903b26d433d9dfff16a20d83f303c6bfd42b6c"
+    },
+    "gpu_runtime/errors.py": {
+      "bytes": 918,
+      "sha256": "9cf83587246115807bfd7025322fcf3317d13f42d1303bec435a4994010b1cb7"
+    },
+    "gpu_runtime/experience_store.py": {
+      "bytes": 2702,
+      "sha256": "998be320e7a65e68c059263460d75f9ebd90e2ab3f7f4bc19c8e1f38096aaa87"
+    },
+    "gpu_runtime/identifiers.py": {
+      "bytes": 888,
+      "sha256": "c9bc4e1f79541896b60a76848a5ee33f0f0fb485582fb8fc04b65d5445cf538a"
+    },
+    "gpu_runtime/learner.py": {
+      "bytes": 20832,
+      "sha256": "21eca972d360d7034e83b5b7c31f875a15bc0d7c3f14db659d8132478a51a191"
+    },
+    "gpu_runtime/learner_release_store.py": {
+      "bytes": 33218,
+      "sha256": "3c26df9759351c76b42277994aeaac440039827417e3a4da4bff1e185294383b"
+    },
+    "gpu_runtime/mixed_backend.py": {
+      "bytes": 3939,
+      "sha256": "c5651123a70bc7cbbb3f1df7eb9621a47c569612ed2cdca1da446bb25846a620"
+    },
+    "gpu_runtime/mixed_learner.py": {
+      "bytes": 2889,
+      "sha256": "48133d35063918df44ceba771418ee31181952e248960af15c8f67b159ff7f2b"
+    },
+    "gpu_runtime/mixed_learner_store.py": {
+      "bytes": 19327,
+      "sha256": "d858b8c26fde5ce094c2896db66d54e2a2cea8367aa0d43990e54a7900e76c85"
+    },
+    "gpu_runtime/mixed_objective.py": {
+      "bytes": 13227,
+      "sha256": "238c553cb9938c763fe5cf89db99df1b81fbc1edac4fcdc9e3ff319fb72df23a"
+    },
+    "gpu_runtime/real_backend.py": {
+      "bytes": 42540,
+      "sha256": "6dace0009133b525226e3d242b41f4d10870b38d47213359120cb90b7f211f48"
+    },
+    "gpu_runtime/release_head.py": {
+      "bytes": 12690,
+      "sha256": "60a2dceda32719a2fc01e5b584a42c37d45816623fbd2450947961a0cf0a6010"
+    },
+    "gpu_runtime/runtime.py": {
+      "bytes": 33876,
+      "sha256": "e0c8da70c3b5a43e9c799048fd71d78e31adbde2890bcfa302aa9249d680d5ce"
+    },
+    "gpu_runtime/schemas.py": {
+      "bytes": 3933,
+      "sha256": "63fcf6a583d70210d31829aa2cef06e2b27e4b295b55337f02381a99b59caeb2"
+    },
+    "gpu_runtime/search_backend.py": {
+      "bytes": 22811,
+      "sha256": "a389f7464621ca217f0535a202d70b35662c20f7c51e47b7741d73db271b69dd"
+    },
+    "gpu_runtime/search_objective.py": {
+      "bytes": 9442,
+      "sha256": "62939272269085464e5111d6f412500be3f28a67192f25c2a479d307625687d0"
+    },
+    "gpu_runtime/server.py": {
+      "bytes": 16237,
+      "sha256": "03f7c5a2df7ef10541468d63372b0c933b4b8f5ca580ac4fe165c89472705ce1"
+    },
+    "gpu_runtime/session_store.py": {
+      "bytes": 7267,
+      "sha256": "cfe6be2cc1996c60c94272d7776dad10bb604038a355b8e8e4df4c002cc76510"
+    },
+    "gpu_runtime/snapshot_store.py": {
+      "bytes": 8752,
+      "sha256": "2fe8b7f74e61ce623b893f17c1e6d250fd16801fbee9b6c690e7307b2f23cfd0"
+    },
+    "gpu_runtime/toy_backend.py": {
+      "bytes": 6017,
+      "sha256": "2d049f456a0a2b408491258a70dc5d2505c63e1690134814ecce5bff5c505e6f"
+    },
+    "gpu_runtime/verified_backend.py": {
+      "bytes": 21284,
+      "sha256": "bd3be78dd5e88d7af04cb945d141dd43ca90244a8b35b9d426ea62493b2e80a6"
+    },
+    "gpu_runtime/verified_objective.py": {
+      "bytes": 4672,
+      "sha256": "b62bb7e98c926988507e777397a8421aca9b7e390a5badeda8ebf70424215fb2"
+    }
+  },
+  "source_members": 188
+}

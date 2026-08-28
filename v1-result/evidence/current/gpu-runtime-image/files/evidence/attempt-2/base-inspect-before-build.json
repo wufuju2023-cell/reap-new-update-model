@@ -1,0 +1,209 @@
+[
+     {
+          "Id": "2eff32b27136f588d210dcee439719cc9b568b0470bdd6df4c139cfb8a19ad36",
+          "Digest": "sha256:4449f856653602317e4101a76fce599c7fcd58ccec2e539951fce5f73083179e",
+          "RepoTags": [],
+          "RepoDigests": [
+               "docker.io/rocm/pytorch@sha256:4449f856653602317e4101a76fce599c7fcd58ccec2e539951fce5f73083179e"
+          ],
+          "Parent": "",
+          "Comment": "",
+          "Created": "2026-05-28T20:57:59.50274108Z",
+          "Config": {
+               "Env": [
+                    "PATH=/opt/venv/bin:/opt/rocm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "DEBIAN_FRONTEND=noninteractive",
+                    "LD_LIBRARY_PATH=/opt/rocm/lib"
+               ],
+               "Cmd": [
+                    "/bin/bash"
+               ],
+               "Labels": {
+                    "org.opencontainers.image.ref.name": "rocm/pytorch:rocm7.2.4_ubuntu24.04_py3.12_pytorch_release_2.10.0+rocm7.2.4.lw.git3d3aa833",
+                    "org.opencontainers.image.version": "24.04"
+               }
+          },
+          "Version": "",
+          "Author": "",
+          "Architecture": "amd64",
+          "Os": "linux",
+          "Size": 29541748962,
+          "VirtualSize": 29541748962,
+          "GraphDriver": {
+               "Name": "overlay",
+               "Data": {
+                    "LowerDir": "/home/hsy/.local/share/containers/storage/overlay/45bf911e1e48bcaf74310fd73fb55e9202aba2bfa4a54d86444dd88da123d752/diff:/home/hsy/.local/share/containers/storage/overlay/f2633f69b271bc74aa93ff309efa5b95cd92653df710fab0c2ae8e7852d01507/diff:/home/hsy/.local/share/containers/storage/overlay/f32067907d7e4630b222e33fa613da7b1135192e68bd4b3fd90e7cd2389ac38a/diff:/home/hsy/.local/share/containers/storage/overlay/a29b613e983fe6b082247d09767998f2f7f12c58e66996ed3557a8ca875512eb/diff:/home/hsy/.local/share/containers/storage/overlay/880507606e4c5a7e78c6a93d8c610c4ec0ecbb9e270edbc9b3b4a567a8b09737/diff:/home/hsy/.local/share/containers/storage/overlay/80f77b4b3fd64e2aebf9068ef0744ec5acd5b8c0e8b25a3265135c8ed9459164/diff:/home/hsy/.local/share/containers/storage/overlay/538812a4b9bd45adaac2b5e5b967daa6999aa44eb110aa32ae7c69702b906475/diff",
+                    "UpperDir": "/home/hsy/.local/share/containers/storage/overlay/503aaf6233fd45570d5fac2ff655b4b757a057104b66b2cb478dd61ebc18ea38/diff",
+                    "WorkDir": "/home/hsy/.local/share/containers/storage/overlay/503aaf6233fd45570d5fac2ff655b4b757a057104b66b2cb478dd61ebc18ea38/work"
+               }
+          },
+          "RootFS": {
+               "Type": "layers",
+               "Layers": [
+                    "sha256:538812a4b9bd45adaac2b5e5b967daa6999aa44eb110aa32ae7c69702b906475",
+                    "sha256:ba706710b01d46390833a8008c34d6becbace8529bb4540d800157003ebed56f",
+                    "sha256:23b20c949681d946628cb8b61cbf454905ff70495bc5a210e11be6c1b998eaaa",
+                    "sha256:003540beaa9be64258b60d8c2ac45a7d29d6bf6bd1e688a46f81e6776035b855",
+                    "sha256:0d24e247c253c046e08a3309be9a74bbed6eab9ec8b457a34348d8809c69c18a",
+                    "sha256:7f33f8effea8bd245556e74f2747817a178fe72316ae00494680437e776c33a7",
+                    "sha256:a202ee0769d28be14d1817cd8c142dd1c1fc11271a9c2c2a50ec8255c0a574d3",
+                    "sha256:76b2a40a425e7cb114972765472c1a411356d93e394910afc8722e040826debf"
+               ]
+          },
+          "Labels": {
+               "org.opencontainers.image.ref.name": "rocm/pytorch:rocm7.2.4_ubuntu24.04_py3.12_pytorch_release_2.10.0+rocm7.2.4.lw.git3d3aa833",
+               "org.opencontainers.image.version": "24.04"
+          },
+          "Annotations": {},
+          "ManifestType": "application/vnd.docker.distribution.manifest.v2+json",
+          "User": "",
+          "History": [
+               {
+                    "created": "2026-04-10T06:49:15.45210454Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG RELEASE",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-04-10T06:49:15.493474875Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG LAUNCHPAD_BUILD_ARCH",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-04-10T06:49:15.521658623Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.version=24.04",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-04-10T06:49:17.706887224Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:8ce1caf246e7c778bca84c516d02fd4e83766bb2c530a0fffa8a351b560a2728 in / "
+               },
+               {
+                    "created": "2026-04-10T06:49:18.133477895Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-05-28T20:53:03.351716557Z",
+                    "created_by": "ARG BASE_IMAGE=ubuntu:24.04",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-05-28T20:53:03.351716557Z",
+                    "created_by": "ARG PYTHON_VERSION=3.12",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-05-28T20:53:03.351716557Z",
+                    "created_by": "ARG PYTORCH_VERSION=2.10.0+rocm7.2.4.lw.git3d3aa833",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-05-28T20:53:03.351716557Z",
+                    "created_by": "ARG TORCHVISION_VERSION=0.25.0+rocm7.2.4.git82df5f59",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-05-28T20:53:03.351716557Z",
+                    "created_by": "ARG TORCHAUDIO_VERSION=2.10.0+rocm7.2.4.git5047768f",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-05-28T20:53:03.351716557Z",
+                    "created_by": "ARG TRITON_VERSION=3.6.0+rocm7.2.4.git4ed88892",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-05-28T20:53:03.351716557Z",
+                    "created_by": "ARG APEX_VERSION=1.10.0+rocm7.2.4.git751f5dd5",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-05-28T20:53:03.351716557Z",
+                    "created_by": "ARG ROCM_VERSION=7.2.4",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-05-28T20:53:03.351716557Z",
+                    "created_by": "ARG UBUNTU_VERSION=24.04",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-05-28T20:53:03.351716557Z",
+                    "created_by": "ARG PYTORCH_WHEEL_INDEX=https://repo.radeon.com/rocm/manylinux/rocm-rel-7.2.4/",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-05-28T20:53:03.351716557Z",
+                    "created_by": "LABEL org.opencontainers.image.ref.name=rocm/pytorch:rocm7.2.4_ubuntu24.04_py3.12_pytorch_release_2.10.0+rocm7.2.4.lw.git3d3aa833",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-05-28T20:53:03.351716557Z",
+                    "created_by": "ENV DEBIAN_FRONTEND=noninteractive",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-05-28T20:53:03.351716557Z",
+                    "created_by": "RUN |10 BASE_IMAGE=ubuntu:24.04 PYTHON_VERSION=3.12 PYTORCH_VERSION=2.10.0+rocm7.2.4.lw.git3d3aa833 TORCHVISION_VERSION=0.25.0+rocm7.2.4.git82df5f59 TORCHAUDIO_VERSION=2.10.0+rocm7.2.4.git5047768f TRITON_VERSION=3.6.0+rocm7.2.4.git4ed88892 APEX_VERSION=1.10.0+rocm7.2.4.git751f5dd5 ROCM_VERSION=7.2.4 UBUNTU_VERSION=24.04 PYTORCH_WHEEL_INDEX=https://repo.radeon.com/rocm/manylinux/rocm-rel-7.2.4/ /bin/sh -c echo \"tzdata tzdata/Areas select Etc\" | debconf-set-selections && echo \"tzdata tzdata/Zones/Etc select UTC\" | debconf-set-selections # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+               },
+               {
+                    "created": "2026-05-28T20:53:36.664835155Z",
+                    "created_by": "RUN |10 BASE_IMAGE=ubuntu:24.04 PYTHON_VERSION=3.12 PYTORCH_VERSION=2.10.0+rocm7.2.4.lw.git3d3aa833 TORCHVISION_VERSION=0.25.0+rocm7.2.4.git82df5f59 TORCHAUDIO_VERSION=2.10.0+rocm7.2.4.git5047768f TRITON_VERSION=3.6.0+rocm7.2.4.git4ed88892 APEX_VERSION=1.10.0+rocm7.2.4.git751f5dd5 ROCM_VERSION=7.2.4 UBUNTU_VERSION=24.04 PYTORCH_WHEEL_INDEX=https://repo.radeon.com/rocm/manylinux/rocm-rel-7.2.4/ /bin/sh -c apt update && apt install -y wget software-properties-common curl rsync dialog git gnupg # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+               },
+               {
+                    "created": "2026-05-28T20:53:36.664835155Z",
+                    "created_by": "ENV PATH=/opt/rocm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin LD_LIBRARY_PATH=/opt/rocm/lib",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-05-28T20:54:01.626107532Z",
+                    "created_by": "RUN |10 BASE_IMAGE=ubuntu:24.04 PYTHON_VERSION=3.12 PYTORCH_VERSION=2.10.0+rocm7.2.4.lw.git3d3aa833 TORCHVISION_VERSION=0.25.0+rocm7.2.4.git82df5f59 TORCHAUDIO_VERSION=2.10.0+rocm7.2.4.git5047768f TRITON_VERSION=3.6.0+rocm7.2.4.git4ed88892 APEX_VERSION=1.10.0+rocm7.2.4.git751f5dd5 ROCM_VERSION=7.2.4 UBUNTU_VERSION=24.04 PYTORCH_WHEEL_INDEX=https://repo.radeon.com/rocm/manylinux/rocm-rel-7.2.4/ /bin/sh -c add-apt-repository ppa:deadsnakes/ppa && apt update && apt install -y python${PYTHON_VERSION} python3-pip python3-venv && if [ \"${PYTHON_VERSION}\" = \"3.10\" ]; then apt install -y --no-install-recommends python${PYTHON_VERSION}-dev python${PYTHON_VERSION}-distutils python${PYTHON_VERSION}-venv; elif [ \"${PYTHON_VERSION}\" = \"3.12\" ]; then apt install -y --no-install-recommends python${PYTHON_VERSION}-dev python${PYTHON_VERSION}-venv; else echo \"Only PYTHON_VERSION 3.10 or 3.12 is supported\" && exit 1; fi && apt clean && rm -rf /var/lib/apt/lists/* # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+               },
+               {
+                    "created": "2026-05-28T20:54:12.878671404Z",
+                    "created_by": "RUN |10 BASE_IMAGE=ubuntu:24.04 PYTHON_VERSION=3.12 PYTORCH_VERSION=2.10.0+rocm7.2.4.lw.git3d3aa833 TORCHVISION_VERSION=0.25.0+rocm7.2.4.git82df5f59 TORCHAUDIO_VERSION=2.10.0+rocm7.2.4.git5047768f TRITON_VERSION=3.6.0+rocm7.2.4.git4ed88892 APEX_VERSION=1.10.0+rocm7.2.4.git751f5dd5 ROCM_VERSION=7.2.4 UBUNTU_VERSION=24.04 PYTORCH_WHEEL_INDEX=https://repo.radeon.com/rocm/manylinux/rocm-rel-7.2.4/ /bin/sh -c python${PYTHON_VERSION} -m venv /opt/venv && . /opt/venv/bin/activate && /opt/venv/bin/python -m pip install --upgrade pip setuptools && /opt/venv/bin/python -m pip install hypothesis scipy ninja # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+               },
+               {
+                    "created": "2026-05-28T20:54:12.878671404Z",
+                    "created_by": "ENV PATH=/opt/venv/bin:/opt/rocm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+               },
+               {
+                    "created": "2026-05-28T20:56:57.432472461Z",
+                    "created_by": "RUN |10 BASE_IMAGE=ubuntu:24.04 PYTHON_VERSION=3.12 PYTORCH_VERSION=2.10.0+rocm7.2.4.lw.git3d3aa833 TORCHVISION_VERSION=0.25.0+rocm7.2.4.git82df5f59 TORCHAUDIO_VERSION=2.10.0+rocm7.2.4.git5047768f TRITON_VERSION=3.6.0+rocm7.2.4.git4ed88892 APEX_VERSION=1.10.0+rocm7.2.4.git751f5dd5 ROCM_VERSION=7.2.4 UBUNTU_VERSION=24.04 PYTORCH_WHEEL_INDEX=https://repo.radeon.com/rocm/manylinux/rocm-rel-7.2.4/ /bin/sh -c set -eux;     mkdir -p --mode=0755 /etc/apt/keyrings;     wget -qO- https://repo.radeon.com/rocm/rocm.gpg.key | gpg --dearmor | tee /etc/apt/keyrings/rocm.gpg > /dev/null;     if [ \"$PYTHON_VERSION\" = \"3.12\" ]; then CODENAME=noble;     elif [ \"$PYTHON_VERSION\" = \"3.10\" ]; then CODENAME=jammy;     else echo \"Only PYTHON_VERSION 3.10 or 3.12 is supported\" && exit 1; fi;     printf 'deb [arch=amd64 signed-by=/etc/apt/keyrings/rocm.gpg] https://repo.radeon.com/rocm/apt/%s %s main\\n' \"${ROCM_VERSION}\" \"${CODENAME}\" > /etc/apt/sources.list.d/rocm.list;     printf '%s\\n' 'Package: *' 'Pin: release o=repo.radeon.com' 'Pin-Priority: 600' > /etc/apt/preferences.d/rocm-pin-600;     apt-get update;     apt-get install -y --no-install-recommends rocm python3-setuptools python3-wheel;     apt-get clean && rm -rf /var/lib/apt/lists/* # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+               },
+               {
+                    "created": "2026-05-28T20:57:58.738854199Z",
+                    "created_by": "RUN |10 BASE_IMAGE=ubuntu:24.04 PYTHON_VERSION=3.12 PYTORCH_VERSION=2.10.0+rocm7.2.4.lw.git3d3aa833 TORCHVISION_VERSION=0.25.0+rocm7.2.4.git82df5f59 TORCHAUDIO_VERSION=2.10.0+rocm7.2.4.git5047768f TRITON_VERSION=3.6.0+rocm7.2.4.git4ed88892 APEX_VERSION=1.10.0+rocm7.2.4.git751f5dd5 ROCM_VERSION=7.2.4 UBUNTU_VERSION=24.04 PYTORCH_WHEEL_INDEX=https://repo.radeon.com/rocm/manylinux/rocm-rel-7.2.4/ /bin/sh -c set -e && WHEEL_INDEX=\"${PYTORCH_WHEEL_INDEX:-https://repo.radeon.com/rocm/manylinux/rocm-rel-${ROCM_VERSION}/}\" && echo \"Installing from $WHEEL_INDEX Python $PYTHON_VERSION\" && pip install --no-cache-dir --find-links \"${WHEEL_INDEX}\" --prefer-binary \"torch==${PYTORCH_VERSION}\" \"torchvision==${TORCHVISION_VERSION}\" \"torchaudio==${TORCHAUDIO_VERSION}\" \"triton==${TRITON_VERSION}\" && pip install --no-cache-dir --find-links \"${WHEEL_INDEX}\" --prefer-binary \"apex==${APEX_VERSION}\" && for pkg in torch torchvision torchaudio triton apex; do pip show \"$pkg\" >/dev/null 2>&1 || { echo \"ERROR: $pkg missing\"; exit 1; }; done && python -c \"import torch, torchvision, torchaudio; tv=torch.__version__; vv=torchvision.__version__; av=torchaudio.__version__; assert '+rocm' in tv, f'Expected ROCm torch wheel, got: {tv}'; assert '+rocm' in vv, f'Expected ROCm torchvision wheel, got: {vv}'; assert '+rocm' in av, f'Expected ROCm torchaudio wheel, got: {av}'; print('torch:', tv, 'hip:', torch.version.hip); print('torchvision:', vv); print('torchaudio:', av)\" # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+               },
+               {
+                    "created": "2026-05-28T20:57:59.50274108Z",
+                    "created_by": "RUN |10 BASE_IMAGE=ubuntu:24.04 PYTHON_VERSION=3.12 PYTORCH_VERSION=2.10.0+rocm7.2.4.lw.git3d3aa833 TORCHVISION_VERSION=0.25.0+rocm7.2.4.git82df5f59 TORCHAUDIO_VERSION=2.10.0+rocm7.2.4.git5047768f TRITON_VERSION=3.6.0+rocm7.2.4.git4ed88892 APEX_VERSION=1.10.0+rocm7.2.4.git751f5dd5 ROCM_VERSION=7.2.4 UBUNTU_VERSION=24.04 PYTORCH_WHEEL_INDEX=https://repo.radeon.com/rocm/manylinux/rocm-rel-7.2.4/ /bin/sh -c git clone https://github.com/ROCm/pytorch-micro-benchmarking /var/lib/jenkins/pytorch-micro-benchmarking && ln -sf /usr/bin/python3 /usr/bin/python # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+               }
+          ],
+          "NamesHistory": [
+               "docker.io/rocm/pytorch@sha256:4449f856653602317e4101a76fce599c7fcd58ccec2e539951fce5f73083179e"
+          ]
+     }
+]

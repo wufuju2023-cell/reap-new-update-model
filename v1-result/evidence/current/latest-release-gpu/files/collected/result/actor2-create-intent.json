@@ -1,0 +1,10 @@
+{
+  "body": {
+    "expected_initialization_contract_sha256": "4294169799687e9fec1388979f648e15b195d56d97fb4640f74f4058b933a75d",
+    "model_release_sha256": "8a2bf4d4e93cf8e4f79e6905b2a01b7df831599498e4bf856baf841e05e56dea",
+    "theorem_id": "56d2d40592bc9bf475958d05e22d0e5589594082b5d6a5c8fec847f22e72493b"
+  },
+  "method": "POST",
+  "mutation_retry_allowed": false,
+  "path": "/sessions/mm-6031f860c3d2ea901536-00002"
+}

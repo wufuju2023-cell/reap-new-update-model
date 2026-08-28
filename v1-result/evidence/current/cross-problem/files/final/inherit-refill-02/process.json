@@ -1,0 +1,1 @@
+{"command": ["lake", "env", "lean", "/opt/reap-runtime/inputs/02-AffineAccumulator.lean"], "pid": 196, "started_at_epoch": 1787850826.8124125, "tree_id": "inherit-refill-02.tree0"}

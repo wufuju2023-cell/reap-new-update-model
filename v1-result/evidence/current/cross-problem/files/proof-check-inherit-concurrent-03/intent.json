@@ -1,0 +1,40 @@
+{
+  "schema_version": "reap.incremental.independent-proof-check.v1",
+  "session_id": "inherit-concurrent-03",
+  "proof_from_session": "inherit-concurrent-03",
+  "theorem": "MultiroundCandidates.ScaledTriangular.scaled_triangular",
+  "source_theorem_sha256": "87e0faa213a7af0d8074ed8e166152e22e0ff80b13607c6e6f2b34235c822883",
+  "input_sha256": {
+    "result.json": "4fef5036a1acc9daa23a58bf36108e24ddaebf4ec6bda1cb03254707e179ebfe",
+    "online-result.json": "34c03dd385e3b0ad025a0d75b140069a5987f0925d51e743355023af15f0dbcd",
+    "session.json": "2738d32c7dc7cca8cec4812f525ed5b8e9578fdd139b0263f2135d8d03a0fd70"
+  },
+  "verifier_sha256": "05fdfed03cf69206c035f35b20d4bb303c42af00d913bdb43bfb1fbf98320c12",
+  "image": "623ae445c3cb8c843afb6c85a1db0dfa25f17e72ae95afaf23a49ef8844f0fce",
+  "proof_recheck": "NOT_VERIFIED",
+  "status": "NOT_VERIFIED",
+  "command": [
+    "podman",
+    "run",
+    "--name",
+    "reap-incremental-proof-inherit-concurrent-03",
+    "--pull",
+    "never",
+    "--network",
+    "none",
+    "-v",
+    "/mnt/c/Users/21812/Desktop/ai4math_26Summercamp/Alpha-Proof-26-summer-school/.downloads/incremental-run-20260828/proof-check-inherit-concurrent-03/03-ScaledTriangularProof.lean:/proof/03-ScaledTriangularProof.lean:ro",
+    "--entrypoint",
+    "bash",
+    "623ae445c3cb8c843afb6c85a1db0dfa25f17e72ae95afaf23a49ef8844f0fce",
+    "-lc",
+    "lake env lean /proof/03-ScaledTriangularProof.lean"
+  ],
+  "network": null,
+  "returncode": null,
+  "container_exit_code": null,
+  "container_image": null,
+  "observed_axioms": [],
+  "independent_GPU_audit": false,
+  "generated_proof_sha256": "af40f7cda8e5474610c6c447f0c931b6700d352bf40bf477e425515d95d8d1da"
+}

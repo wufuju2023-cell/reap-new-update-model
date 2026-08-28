@@ -1,0 +1,39 @@
+{
+  "schema_version": "reap.evidence-stage.v1",
+  "source_directory": "matchmaker-service-run-20260828",
+  "archive": {
+    "file": "raw.zip",
+    "bytes": 15436,
+    "sha256": "8f846fa5b2732ae46b52a229c32b38dfb559b83644030b480c7b30a7a4e7da8e"
+  },
+  "files": {
+    "http-r2-audit.json": {
+      "bytes": 13200,
+      "sha256": "20e67c3779c9e0685813ec19a0b66baf657f1366977adddda6264a8d2c61dd9e"
+    },
+    "http-r3-audit.json": {
+      "bytes": 2084,
+      "sha256": "24bb3f75b272caeccf8462ad492ef3b6eb338bcacc40ef0e5d3e718871d2fc9a"
+    },
+    "http-r3-collection.json": {
+      "bytes": 34236,
+      "sha256": "9d4db62092af80c7d771a02c87ea0fdaab30432f493a01d95b843493f4aa3299"
+    },
+    "service-finish-01.json": {
+      "bytes": 1364,
+      "sha256": "d57dc48153a572af6859186cd8de431d3980637275d39f59c4d7eaac55988cd6"
+    },
+    "status-after-finish-01.json": {
+      "bytes": 5338,
+      "sha256": "3e9cf3a84fcb3e6d47929b76f452bdef9c2fbcd47b5c0188bdc52dffdd25c687"
+    }
+  },
+  "loose_files": {
+    "http-r2-audit.json": "20e67c3779c9e0685813ec19a0b66baf657f1366977adddda6264a8d2c61dd9e",
+    "http-r3-audit.json": "24bb3f75b272caeccf8462ad492ef3b6eb338bcacc40ef0e5d3e718871d2fc9a",
+    "http-r3-collection.json": "9d4db62092af80c7d771a02c87ea0fdaab30432f493a01d95b843493f4aa3299",
+    "service-finish-01.json": "d57dc48153a572af6859186cd8de431d3980637275d39f59c4d7eaac55988cd6",
+    "status-after-finish-01.json": "3e9cf3a84fcb3e6d47929b76f452bdef9c2fbcd47b5c0188bdc52dffdd25c687"
+  },
+  "excluded": "7B weights, large tensor snapshots, credentials, browser state"
+}

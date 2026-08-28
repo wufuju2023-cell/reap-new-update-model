@@ -1,0 +1,22 @@
+{
+  "source_sha256": "26f9575c498331c7a1570ba56e60de5ad45a93a7dd07b4ce456fdee499ebd390",
+  "checks": [
+    {
+      "case": "success",
+      "fixture_exit_code": 0,
+      "Popen_calls": 1
+    },
+    {
+      "case": "timeout",
+      "fixture_exit_code": 1,
+      "Popen_calls": 1
+    },
+    {
+      "case": "late_error",
+      "fixture_exit_code": 1,
+      "Popen_calls": 1
+    }
+  ],
+  "outer_and_worker_compiled": true,
+  "real_subprocess_or_remote_or_GPU": false
+}

@@ -1,0 +1,30 @@
+{
+  "GPU_or_Lean_run": false,
+  "blocking_findings": [],
+  "checks": [
+    "One first train_next_and_publish and one second inside exactly-once prepare callback; no retry loop or repeated first step.",
+    "Provider selects the new run published R1, then R2 after preparation-time publication; two heads, source run, contract, checkpoint ancestry and sampler append are checked.",
+    "Three real spawn PIDs, three independent models/runtime/RNG; child runtime explicitly uses continual-mixed-v3 and HTTP responses use exact canonical-with-LF contract pins.",
+    "Actual HTTP create/policy/value/retire, finite policy token scores and bounded distance, full actor source/reset/local0/empty private state checks.",
+    "Old actor complete state remains equal while learner updates/publishes and other process initializes R2; full frozen base fingerprints equal before/after.",
+    "No fake search or proof receipt: reservations stay pending. ReplicaCollector search/batch and Lean are explicitly outside this probe.",
+    "Old CAS is hashed then independently copied into a new run store; no old-source hardlinks/writes. New append is explicit and source/dataset integrity rechecked on pass.",
+    "Child normal close requires zero resident sessions and base unchanged; main requires child join exit0 plus exit receipts. Late integrity/cleanup errors clear report PASS."
+  ],
+  "limits": [
+    "CPU tiny test uses synthetic admission and a tiny fixed base; it does not establish real 7B success.",
+    "Actual external main process exit0 is still required in addition to report.ok and both child exits.",
+    "Failure cleanup can terminate owned child processes; missing normal child exit receipts cannot count as success. There is no automatic retry or restart.",
+    "No GPU unknown-publication fault injection, new mathematical proof, complete CPU batch, performance improvement or kernel trace is claimed."
+  ],
+  "reviewer": "concurrency",
+  "schema_version": "reap.latest-gpu-probe.preflight-independent-review.v1",
+  "source_sha256": {
+    "campaign-plan.json": "b704e6be60a12345b49bb259afea6904b3733ff2f9da093857f53f97a75c06cb",
+    "command.json": "32f9ed458fc06e27baf9537144c7147555bbb99cb4012a80db827b43b2390deb",
+    "latest_probe.py": "c7b54691d0d6f4c56a57d2c2bcc12bc00d39f2ad141e05c4cc4023e7a149e989",
+    "test_latest_probe.py": "40558e03d5e3e62e5a018d027c2e5cce6d8960917b7fd965fb3e75e2c5de5262"
+  },
+  "tests_rerun": false,
+  "windows_receipt_sha256": "f171dc104159172823629c81bca4757958403a5088c88c06269f9177137b5b2b"
+}

@@ -1,0 +1,7 @@
+{
+  "external_process_exit_still_required": true,
+  "mutation_retry_allowed": false,
+  "ok": false,
+  "planned_exit_code": 1,
+  "report_publication_pending": true
+}

@@ -1,0 +1,17 @@
+{
+  "epoch": 1787874091.7190464,
+  "pids": {
+    "3366": false,
+    "3367": false,
+    "3390": false,
+    "3391": false
+  },
+  "head2_published_mtime": 1787873858.2662365,
+  "head2_raw_sha256": "a9051c124a2acada42cd8a5c49b3401f48c9758d8c3e233fb37947dc35400dc9",
+  "first_safety_intent_epoch": 1787873904.6519687,
+  "first_safety_audit_mtime": 1787873909.3439155,
+  "first_safety_follows_published2_by_filesystem_clock": true,
+  "second_safety_directory_exists": false,
+  "second_safety_snapshot_exists": false,
+  "report_sha256": "611d46040fa26cacf393e771ea05f20d3f78221fa740c4e9ae246d08823a0354"
+}

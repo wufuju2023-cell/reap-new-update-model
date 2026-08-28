@@ -1,0 +1,113 @@
+{
+  "schema_version": "reap.mathlib-sft.dataset.v1",
+  "profile": "mathlib_sft_linear_negative_remaining_actions_v1",
+  "source_kind": "mathlib_sft",
+  "source": {
+    "repository": "https://github.com/leanprover-community/mathlib4",
+    "commit": "5352afccd6866369be9de43f5b7ec47203555f44",
+    "file": "Mathlib/Logic/ExistsUnique.lean",
+    "source_sha256": "2f5b7ae2ea952e0d924c90f47c874c21acb88e971a81df15eb6ac69b35a8eb3e",
+    "source_git_blob_sha1": "5c60f6f88746503a79a4943d53165af114224b72",
+    "selection": {
+      "declaration": "ExistsUnique.elim₂",
+      "byte_start": 5265,
+      "byte_end": 5671,
+      "proof_byte_start": 5520,
+      "proof_byte_end": 5671,
+      "declaration_sha256": "34b9e63103b34e44f46cfe2fdbdc75ce51df71ebfd6208ca1e8141a7009d43ef",
+      "proof_sha256": "4f14f4bb4ab81694182cde37b1639e7c825dcaa30dc53aa52af0fb133c530ea4",
+      "actions": [
+        {
+          "tactic": "simp only [existsUnique_iff_exists] at h₂",
+          "byte_start": 5522,
+          "byte_end": 5565,
+          "sha256": "68279747bd498c7e9b62c8e08b18ddfe683f394e0a8a1a5e8fc5ed116b367afb"
+        },
+        {
+          "tactic": "apply h₂.elim",
+          "byte_start": 5568,
+          "byte_end": 5583,
+          "sha256": "89c8fe9f707e3f8d71224b032b4b551895a988fa4d91d226ca1ddda92e77e17a"
+        },
+        {
+          "tactic": "exact fun x ⟨hxp, hxq⟩ H ↦ h₁ x hxp hxq fun y hyp hyq ↦ H y ⟨hyp, hyq⟩",
+          "byte_start": 5586,
+          "byte_end": 5670,
+          "sha256": "3e1b3dcb8b89af321f58a4b6a7e155d62c86535f2e3ae5fe5734e5a645415f0d"
+        }
+      ]
+    },
+    "ambient_context": "namespace MathlibSFTGate\nvariable {α : Sort*}\n",
+    "source_kind": "mathlib_sft",
+    "generator_events": "none",
+    "extractor_sha256": "8d4ff389e085c45b490ba9f81581ea3db63cc2e55488e8af96ab6cf97887884e"
+  },
+  "inputs_sha256": {
+    "LICENSE": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+    "MathlibReplay.lean": "bc59a28fe220327ef6344365f31f2db1db927670f1fe0fb9645932cc28fca77f",
+    "capture-trace.json": "df69054aa0bd16574d5b62151e0819e090f4198a9dcc355f885f5800a3385ee9",
+    "capture.lean": "ad63d48e7da34ae30ec401c2558979d0c21a6ff18b02d391ac00590c7fedd256",
+    "capture.receipt.json": "8cbf1feb05d3ddc736d65d2650f92aa8836c2dc05a888c79efff9bec3c34df78",
+    "capture.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "capture.stdout": "5a16a4dd20a2c533d6ec27662db19a9d071979da455431e11b73dde15bfe852e",
+    "extractor.py": "8d4ff389e085c45b490ba9f81581ea3db63cc2e55488e8af96ab6cf97887884e",
+    "original.lean": "6a71e7c339b3abf4a7da5c8d72deb5f6c72008b7fe69d3792b205a64c4c444e9",
+    "original.receipt.json": "a91d3f82c6b96c6eec6a19552334928736d5c3c19d00df85042f342267613bbc",
+    "original.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "original.stdout": "5a16a4dd20a2c533d6ec27662db19a9d071979da455431e11b73dde15bfe852e",
+    "plan.json": "f2ade7bd8a55bf18a6ecfadec9b96f118a0d1d8a258c08f704c865ee58eee50b",
+    "replay-trace.json": "df69054aa0bd16574d5b62151e0819e090f4198a9dcc355f885f5800a3385ee9",
+    "replay.lean": "8135117b6862435cffeb7237d4775f77f338ee857276a8b53c277afba3d9f16e",
+    "replay.receipt.json": "2482b9d9ae7df749900e57ea887543adeff654f6694413d53fa3cabca41d0bac",
+    "replay.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "replay.stdout": "5a16a4dd20a2c533d6ec27662db19a9d071979da455431e11b73dde15bfe852e",
+    "run.json": "162332e279389cea0190db6938c53ed217d0614930f29264675d6ad75700cf94",
+    "source.json": "f25952223af6fc1d16dd42855cc7ff8a70f7c81dcc9d82e9021ec4fc87edc141",
+    "source.lean": "2f5b7ae2ea952e0d924c90f47c874c21acb88e971a81df15eb6ac69b35a8eb3e"
+  },
+  "rows": [
+    {
+      "tactic": "simp only [existsUnique_iff_exists] at h₂",
+      "state": [
+        "α : Sort u_1\np : α → Sort u_2\ninst✝ : ∀ (x : α), Subsingleton (p x)\nq : (x : α) → p x → Prop\nb : Prop\nh₂ : ∃! x, ∃! h, q x h\nh₁ : ∀ (x : α) (h : p x), q x h → (∀ (y : α) (hy : p y), q y hy → y = x) → b\n⊢ b"
+      ],
+      "row": 0,
+      "return": -3,
+      "prompt": "User: Please generate a tactic in lean4 to solve the state.\nHere're some theorems that may be helpful:\n\nSTATE:\nα : Sort u_1\np : α → Sort u_2\ninst✝ : ∀ (x : α), Subsingleton (p x)\nq : (x : α) → p x → Prop\nb : Prop\nh₂ : ∃! x, ∃! h, q x h\nh₁ : ∀ (x : α) (h : p x), q x h → (∀ (y : α) (hy : p y), q y hy → y = x) → b\n⊢ b\nTACTIC:\n\nAssistant:",
+      "next_state": [
+        "α : Sort u_1\np : α → Sort u_2\ninst✝ : ∀ (x : α), Subsingleton (p x)\nq : (x : α) → p x → Prop\nb : Prop\nh₁ : ∀ (x : α) (h : p x), q x h → (∀ (y : α) (hy : p y), q y hy → y = x) → b\nh₂ : ∃! x, ∃ h, q x h\n⊢ b"
+      ]
+    },
+    {
+      "tactic": "apply h₂.elim",
+      "state": [
+        "α : Sort u_1\np : α → Sort u_2\ninst✝ : ∀ (x : α), Subsingleton (p x)\nq : (x : α) → p x → Prop\nb : Prop\nh₁ : ∀ (x : α) (h : p x), q x h → (∀ (y : α) (hy : p y), q y hy → y = x) → b\nh₂ : ∃! x, ∃ h, q x h\n⊢ b"
+      ],
+      "row": 1,
+      "return": -2,
+      "prompt": "User: Please generate a tactic in lean4 to solve the state.\nHere're some theorems that may be helpful:\n\nSTATE:\nα : Sort u_1\np : α → Sort u_2\ninst✝ : ∀ (x : α), Subsingleton (p x)\nq : (x : α) → p x → Prop\nb : Prop\nh₁ : ∀ (x : α) (h : p x), q x h → (∀ (y : α) (hy : p y), q y hy → y = x) → b\nh₂ : ∃! x, ∃ h, q x h\n⊢ b\nTACTIC:\n\nAssistant:",
+      "next_state": [
+        "α : Sort u_1\np : α → Sort u_2\ninst✝ : ∀ (x : α), Subsingleton (p x)\nq : (x : α) → p x → Prop\nb : Prop\nh₁ : ∀ (x : α) (h : p x), q x h → (∀ (y : α) (hy : p y), q y hy → y = x) → b\nh₂ : ∃! x, ∃ h, q x h\n⊢ ∀ (x : α), (∃ h, q x h) → (∀ (y : α), (∃ h, q y h) → y = x) → b"
+      ]
+    },
+    {
+      "tactic": "exact fun x ⟨hxp, hxq⟩ H ↦ h₁ x hxp hxq fun y hyp hyq ↦ H y ⟨hyp, hyq⟩",
+      "state": [
+        "α : Sort u_1\np : α → Sort u_2\ninst✝ : ∀ (x : α), Subsingleton (p x)\nq : (x : α) → p x → Prop\nb : Prop\nh₁ : ∀ (x : α) (h : p x), q x h → (∀ (y : α) (hy : p y), q y hy → y = x) → b\nh₂ : ∃! x, ∃ h, q x h\n⊢ ∀ (x : α), (∃ h, q x h) → (∀ (y : α), (∃ h, q y h) → y = x) → b"
+      ],
+      "row": 2,
+      "return": -1,
+      "prompt": "User: Please generate a tactic in lean4 to solve the state.\nHere're some theorems that may be helpful:\n\nSTATE:\nα : Sort u_1\np : α → Sort u_2\ninst✝ : ∀ (x : α), Subsingleton (p x)\nq : (x : α) → p x → Prop\nb : Prop\nh₁ : ∀ (x : α) (h : p x), q x h → (∀ (y : α) (hy : p y), q y hy → y = x) → b\nh₂ : ∃! x, ∃ h, q x h\n⊢ ∀ (x : α), (∃ h, q x h) → (∀ (y : α), (∃ h, q y h) → y = x) → b\nTACTIC:\n\nAssistant:",
+      "next_state": []
+    }
+  ],
+  "root_return": -3,
+  "axioms": [
+    "propext",
+    "Quot.sound"
+  ],
+  "action_unit": "one original top-level single-line tactic; linear-only; branch rejected",
+  "prompt_origin": "pinned Reap mkPrompt(actual_state, empty premises)",
+  "source_policy_version": null,
+  "training_integration": "none"
+}

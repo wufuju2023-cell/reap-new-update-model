@@ -1,0 +1,37 @@
+{
+  "blocking_findings": [],
+  "boundaries": [
+    "two chosen known closed problems are a branch/transport test, not random success rate",
+    "deployment_id is operator metadata, not authenticated process identity",
+    "actual host/GPU process overlap and old actor isolation need remote receipts",
+    "unresolved live containers may yield partial final export; archive existence alone is not PASS",
+    "source tree includes paused variant modules but this fixed campaign does not invoke or enable variants"
+  ],
+  "checks": [
+    "endpoint written with original intent before CPU container",
+    "terminal session policy/value URLs match fixed route",
+    "original collector source/release/contract validation unchanged",
+    "retirement on original route through existing strict receipt validation",
+    "independent verifier output remains required",
+    "target_port strict int allowlist 8760/8761/8762, fixed loopback, full request hash",
+    "None preserves old wire payload and old UUID recovery logic"
+  ],
+  "manifest_members_hash_checked": 77,
+  "manifest_sha256": "62acb8d99ecbd51b09c7754c0cde3dd2b2bd4cb51473272433a4c000fdb0f428",
+  "not_reviewed": [
+    "parent server_worker deployment or actual remote process identities"
+  ],
+  "readonly_reviewed": [
+    "campaign.py",
+    "container_job.py",
+    "plan.json",
+    "test_campaign.py",
+    "transport/http_bridge.py",
+    "transport/remote_http_job.py"
+  ],
+  "remote_or_gpu_used_by_reviewer": false,
+  "reviewer": "concurrency",
+  "router_authored_by_this_reviewer_not_independent": true,
+  "schema": "reap.independent-review.v1",
+  "tests_rerun_by_reviewer": false
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": "reap.verified-replay.plan.v1",
+  "nodes": [
+    {
+      "node_index": 0,
+      "state": [
+        "f : ℕ → ℕ\nhzero : f 0 = 0\nhstep : ∀ (n : ℕ), f (n + 1) = f n + (n + 1) ^ 3\n⊢ ∀ (n : ℕ), 4 * f n = (n * (n + 1)) ^ 2"
+      ],
+      "kind": "OR",
+      "tactic": "intro n",
+      "children": [
+        1
+      ]
+    },
+    {
+      "node_index": 1,
+      "state": [
+        "f : ℕ → ℕ\nhzero : f 0 = 0\nhstep : ∀ (n : ℕ), f (n + 1) = f n + (n + 1) ^ 3\nn : ℕ\n⊢ 4 * f n = (n * (n + 1)) ^ 2"
+      ],
+      "kind": "OR",
+      "tactic": "induction n <;> simp_all [hzero, hstep]",
+      "children": [
+        2
+      ]
+    },
+    {
+      "node_index": 2,
+      "state": [
+        "case succ\nf : ℕ → ℕ\nhzero : f 0 = 0\nhstep : ∀ (n : ℕ), f (n + 1) = f n + (n + 1) ^ 3\nn✝ : ℕ\na✝ : 4 * f n✝ = (n✝ * (n✝ + 1)) ^ 2\n⊢ 4 * (f n✝ + (n✝ + 1) ^ 3) = ((n✝ + 1) * (n✝ + 1 + 1)) ^ 2"
+      ],
+      "kind": "OR",
+      "tactic": "ring_nf",
+      "children": [
+        3
+      ]
+    },
+    {
+      "node_index": 4,
+      "state": [
+        "case succ\nf : ℕ → ℕ\nhzero : f 0 = 0\nhstep : ∀ (n : ℕ), f (n + 1) = f n + (n + 1) ^ 3\nn✝ : ℕ\na✝ : 4 * f n✝ = (n✝ * (n✝ + 1)) ^ 2\n⊢ 4 + f n✝ * 4 + n✝ * 12 + n✝ ^ 2 * 12 + n✝ ^ 3 * 4 = 4 + n✝ * 12 + n✝ ^ 2 * 13 + n✝ ^ 3 * 6 + n✝ ^ 4"
+      ],
+      "kind": "OR",
+      "tactic": "linarith [hzero, hstep]",
+      "children": [
+        4
+      ]
+    },
+    {
+      "node_index": 5,
+      "state": [],
+      "kind": "terminal",
+      "tactic": "",
+      "children": []
+    }
+  ]
+}

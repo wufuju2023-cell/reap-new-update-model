@@ -1,0 +1,8 @@
+{
+  "deployed": true,
+  "files": 27,
+  "archive_sha256": "71735ac86612124e1866cdf748ffe96ec6bddbf6f02a9f349a59a6583a0462fa",
+  "worker_pid": 1337,
+  "epoch": 1787850447.7079375,
+  "root": "/mnt/workspace/reap-ttt-20260828-incremental"
+}

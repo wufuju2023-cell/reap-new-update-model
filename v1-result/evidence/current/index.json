@@ -1,0 +1,127 @@
+{
+  "cross-problem": {
+    "manifest": "cross-problem/manifest.json",
+    "files": 111,
+    "archive_bytes": 162141
+  },
+  "source-experience": {
+    "manifest": "source-experience/manifest.json",
+    "files": 46,
+    "archive_bytes": 149702
+  },
+  "selection-refresh": {
+    "manifest": "selection-refresh/manifest.json",
+    "files": 31,
+    "archive_bytes": 46992
+  },
+  "kl-guard": {
+    "manifest": "kl-guard/manifest.json",
+    "files": 2,
+    "archive_bytes": 7522
+  },
+  "verified-replay": {
+    "manifest": "verified-replay/manifest.json",
+    "files": 53,
+    "archive_bytes": 67579
+  },
+  "snapshot-reuse": {
+    "manifest": "snapshot-reuse/manifest.json",
+    "files": 2,
+    "archive_bytes": 3432
+  },
+  "central-learner": {
+    "manifest": "central-learner/manifest.json",
+    "files": 31,
+    "archive_bytes": 155265
+  },
+  "mixed-learner": {
+    "manifest": "mixed-learner/manifest.json",
+    "files": 75,
+    "archive_bytes": 589963
+  },
+  "collector-r3": {
+    "manifest": "collector-r3/manifest.json",
+    "files": 268,
+    "archive_bytes": 277747
+  },
+  "collector-r2": {
+    "manifest": "collector-r2/manifest.json",
+    "files": 67,
+    "archive_bytes": 80423
+  },
+  "collector-service": {
+    "manifest": "collector-service/manifest.json",
+    "files": 5,
+    "archive_bytes": 15436
+  },
+  "continual-mixed": {
+    "manifest": "continual-mixed/manifest.json",
+    "files": 6,
+    "archive_bytes": 17438
+  },
+  "release-head-local": {
+    "manifest": "release-head-local/manifest.json",
+    "files": 8,
+    "archive_bytes": 11842
+  },
+  "initialization-contract-local": {
+    "manifest": "initialization-contract-local/manifest.json",
+    "files": 3,
+    "archive_bytes": 1100
+  },
+  "policy-scoring": {
+    "manifest": "policy-scoring/manifest.json",
+    "files": 1,
+    "archive_bytes": 30597
+  },
+  "inference-replicas": {
+    "manifest": "inference-replicas/manifest.json",
+    "files": 114,
+    "archive_bytes": 881106
+  },
+  "experience-policy-local": {
+    "manifest": "experience-policy-local/manifest.json",
+    "files": 18,
+    "archive_bytes": 22547
+  },
+  "replica-collector-local": {
+    "manifest": "replica-collector-local/manifest.json",
+    "files": 13,
+    "archive_bytes": 32778
+  },
+  "replica-collector": {
+    "manifest": "replica-collector/manifest.json",
+    "files": 403,
+    "archive_bytes": 780584
+  },
+  "gpu-runtime-image": {
+    "manifest": "gpu-runtime-image/manifest.json",
+    "files": 27,
+    "archive_bytes": 32754
+  },
+  "replica-latest-local": {
+    "manifest": "replica-latest-local/manifest.json",
+    "files": 17,
+    "archive_bytes": 16338
+  },
+  "portable-lean-local": {
+    "manifest": "portable-lean-local/manifest.json",
+    "files": 13,
+    "archive_bytes": 16849
+  },
+  "delivery-regression": {
+    "manifest": "delivery-regression/manifest.json",
+    "files": 16,
+    "archive_bytes": 27176
+  },
+  "latest-release-gpu": {
+    "manifest": "latest-release-gpu/manifest.json",
+    "files": 170,
+    "archive_bytes": 787978
+  },
+  "latest-recovery-gpu": {
+    "manifest": "latest-recovery-gpu/manifest.json",
+    "files": 82,
+    "archive_bytes": 135524
+  }
+}

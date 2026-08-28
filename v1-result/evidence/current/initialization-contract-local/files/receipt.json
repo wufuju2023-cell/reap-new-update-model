@@ -1,0 +1,21 @@
+{
+  "scope": "optional HTTP initialization contract gate; real local HTTP with toy backend, not GPU",
+  "ok": true,
+  "source_unchanged": true,
+  "results": [
+    {
+      "name": "windows",
+      "exit_code": 0,
+      "seconds": 8.734116700012237,
+      "log_sha256": "a347a474a3612f61ef1f2184406f811f1d01db55d7756e7a54decc81e15e01b1"
+    },
+    {
+      "name": "linux",
+      "exit_code": 0,
+      "seconds": 7.893309299979592,
+      "log_sha256": "2c8e677f1608c1a75a84119ac12049846eb739ab28460ed4468d011526f01507"
+    }
+  ],
+  "GPU_used": false,
+  "remote_called": false
+}

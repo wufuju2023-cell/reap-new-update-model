@@ -1,0 +1,1 @@
+{"command": ["lake", "env", "lean", "/opt/reap-runtime/inputs/03-ScaledTriangular.lean"], "pid": 4, "started_at_epoch": 1787850682.6602151, "tree_id": "inherit-concurrent-03.tree0"}

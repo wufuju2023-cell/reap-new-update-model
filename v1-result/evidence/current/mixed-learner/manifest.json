@@ -1,0 +1,361 @@
+{
+  "schema_version": "reap.evidence-stage.v1",
+  "source_directory": "mixed-learner-run-20260828",
+  "archive": {
+    "file": "raw.zip",
+    "bytes": 589963,
+    "sha256": "4fde78f26588e1336875805b1809691349f363b31061542524a732fa05254ea5"
+  },
+  "files": {
+    "artifact-audit.json": {
+      "bytes": 1778887,
+      "sha256": "77c1e71b51f55ba59d214fa1f5ab96b455c438757070c19a17efb1ffeb1a2e47"
+    },
+    "audit-local-01.json": {
+      "bytes": 58332,
+      "sha256": "a1eb46d11e6abc903e7e1f4d9eba106e192f6d2000c15c9ccea72e8b49a9aae2"
+    },
+    "final-continuation.json": {
+      "bytes": 504,
+      "sha256": "635b3634902f368b188e7afacfe9126836a51d2b0aa75e33aa99dd0ffdf38e88"
+    },
+    "frozen-data/code/cpu_runtime/__init__.py": {
+      "bytes": 50,
+      "sha256": "0bfe0a5ea77214fa2846ea24b27751750e0134287b92f86118956df326ea8f2b"
+    },
+    "frozen-data/code/cpu_runtime/mathlib_trajectory.py": {
+      "bytes": 18332,
+      "sha256": "cea58743b5b457af2c8e712d275abad520a777d2376b2700e2507efe54dca1fd"
+    },
+    "frozen-data/code/cpu_runtime/verified_dataset_store.py": {
+      "bytes": 11605,
+      "sha256": "9b9052292aaa0d50f2a51a8409eb1bbc4e1124fef99a38b5ce4f3045a27b9d58"
+    },
+    "frozen-data/code/cpu_runtime/verified_trajectory.py": {
+      "bytes": 22420,
+      "sha256": "e8a2366df58e739cd5b9e0bb8068b4b4dd0bd6fc8c5f46e0299295be79dffac4"
+    },
+    "frozen-data/mathlib-datasets/390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1/capture-trace.json": {
+      "bytes": 2066,
+      "sha256": "13b7be980b994f45450258d95a9e05d7d0354a049ef544d81ede5f4c6074fa44"
+    },
+    "frozen-data/mathlib-datasets/390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1/capture.lean": {
+      "bytes": 4566,
+      "sha256": "ce011935fd5c2bc17af3906aec7c582a3dc225d733afc60ed98053a94b5097fc"
+    },
+    "frozen-data/mathlib-datasets/390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1/capture.receipt.json": {
+      "bytes": 1282,
+      "sha256": "403de534197cc47da51184afe32d6c7d3dcc19eba10186c3529e4bf796198c09"
+    },
+    "frozen-data/mathlib-datasets/390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1/capture.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frozen-data/mathlib-datasets/390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1/capture.stdout": {
+      "bytes": 81,
+      "sha256": "219e34c00f9e825b7419444d2be94d8878b88c8f2aeb5f64fcd706d175c8a423"
+    },
+    "frozen-data/mathlib-datasets/390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1/dataset.json": {
+      "bytes": 5794,
+      "sha256": "390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1"
+    },
+    "frozen-data/mathlib-datasets/390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1/extractor.py": {
+      "bytes": 17075,
+      "sha256": "8d4ff389e085c45b490ba9f81581ea3db63cc2e55488e8af96ab6cf97887884e"
+    },
+    "frozen-data/mathlib-datasets/390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1/LICENSE": {
+      "bytes": 11357,
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+    },
+    "frozen-data/mathlib-datasets/390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1/MathlibReplay.lean": {
+      "bytes": 3883,
+      "sha256": "bc59a28fe220327ef6344365f31f2db1db927670f1fe0fb9645932cc28fca77f"
+    },
+    "frozen-data/mathlib-datasets/390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1/original.lean": {
+      "bytes": 4567,
+      "sha256": "175f165e21d8f5b3c892b748f606621e3888c4cd09e2fc50d6b00b17c2096992"
+    },
+    "frozen-data/mathlib-datasets/390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1/original.receipt.json": {
+      "bytes": 1285,
+      "sha256": "3c02da5fb3a2c1cb88f7491df2b9281c82da772f70e2192d99bc5cd117c9f881"
+    },
+    "frozen-data/mathlib-datasets/390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1/original.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frozen-data/mathlib-datasets/390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1/original.stdout": {
+      "bytes": 81,
+      "sha256": "219e34c00f9e825b7419444d2be94d8878b88c8f2aeb5f64fcd706d175c8a423"
+    },
+    "frozen-data/mathlib-datasets/390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1/plan.json": {
+      "bytes": 232,
+      "sha256": "b1d74ceb005231516a7ee4fd65b5f7c6b15fcc1607b7c5b3034c2e1fa735f47a"
+    },
+    "frozen-data/mathlib-datasets/390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1/replay-trace.json": {
+      "bytes": 2066,
+      "sha256": "13b7be980b994f45450258d95a9e05d7d0354a049ef544d81ede5f4c6074fa44"
+    },
+    "frozen-data/mathlib-datasets/390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1/replay.lean": {
+      "bytes": 4606,
+      "sha256": "fe9177f7a8b99d18a68516d2e0898c10a6190875739cdf3da5fc8227d4c4f881"
+    },
+    "frozen-data/mathlib-datasets/390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1/replay.receipt.json": {
+      "bytes": 1280,
+      "sha256": "a271d8b5f68b95a51eccc22f0daaf48b2d0a8510c837ff0038b19bc0c422bd75"
+    },
+    "frozen-data/mathlib-datasets/390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1/replay.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frozen-data/mathlib-datasets/390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1/replay.stdout": {
+      "bytes": 81,
+      "sha256": "219e34c00f9e825b7419444d2be94d8878b88c8f2aeb5f64fcd706d175c8a423"
+    },
+    "frozen-data/mathlib-datasets/390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1/run.json": {
+      "bytes": 80,
+      "sha256": "2373e73b2df4d3e1aeee5b5539e48a0ef106c9d70b6c584ef2eb2493787d1795"
+    },
+    "frozen-data/mathlib-datasets/390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1/source.json": {
+      "bytes": 1382,
+      "sha256": "38042a7eeef682f5b7ff03e5181c3e5058dde1d08b2fe043775687df6f84cc50"
+    },
+    "frozen-data/mathlib-datasets/390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1/source.lean": {
+      "bytes": 7192,
+      "sha256": "2f5b7ae2ea952e0d924c90f47c874c21acb88e971a81df15eb6ac69b35a8eb3e"
+    },
+    "frozen-data/mathlib-datasets/633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d/capture-trace.json": {
+      "bytes": 3314,
+      "sha256": "df69054aa0bd16574d5b62151e0819e090f4198a9dcc355f885f5800a3385ee9"
+    },
+    "frozen-data/mathlib-datasets/633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d/capture.lean": {
+      "bytes": 4533,
+      "sha256": "ad63d48e7da34ae30ec401c2558979d0c21a6ff18b02d391ac00590c7fedd256"
+    },
+    "frozen-data/mathlib-datasets/633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d/capture.receipt.json": {
+      "bytes": 1284,
+      "sha256": "8cbf1feb05d3ddc736d65d2650f92aa8836c2dc05a888c79efff9bec3c34df78"
+    },
+    "frozen-data/mathlib-datasets/633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d/capture.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frozen-data/mathlib-datasets/633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d/capture.stdout": {
+      "bytes": 79,
+      "sha256": "5a16a4dd20a2c533d6ec27662db19a9d071979da455431e11b73dde15bfe852e"
+    },
+    "frozen-data/mathlib-datasets/633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d/dataset.json": {
+      "bytes": 7329,
+      "sha256": "633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d"
+    },
+    "frozen-data/mathlib-datasets/633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d/extractor.py": {
+      "bytes": 17075,
+      "sha256": "8d4ff389e085c45b490ba9f81581ea3db63cc2e55488e8af96ab6cf97887884e"
+    },
+    "frozen-data/mathlib-datasets/633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d/LICENSE": {
+      "bytes": 11357,
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+    },
+    "frozen-data/mathlib-datasets/633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d/MathlibReplay.lean": {
+      "bytes": 3883,
+      "sha256": "bc59a28fe220327ef6344365f31f2db1db927670f1fe0fb9645932cc28fca77f"
+    },
+    "frozen-data/mathlib-datasets/633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d/original.lean": {
+      "bytes": 4581,
+      "sha256": "6a71e7c339b3abf4a7da5c8d72deb5f6c72008b7fe69d3792b205a64c4c444e9"
+    },
+    "frozen-data/mathlib-datasets/633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d/original.receipt.json": {
+      "bytes": 1284,
+      "sha256": "a91d3f82c6b96c6eec6a19552334928736d5c3c19d00df85042f342267613bbc"
+    },
+    "frozen-data/mathlib-datasets/633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d/original.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frozen-data/mathlib-datasets/633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d/original.stdout": {
+      "bytes": 79,
+      "sha256": "5a16a4dd20a2c533d6ec27662db19a9d071979da455431e11b73dde15bfe852e"
+    },
+    "frozen-data/mathlib-datasets/633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d/plan.json": {
+      "bytes": 284,
+      "sha256": "f2ade7bd8a55bf18a6ecfadec9b96f118a0d1d8a258c08f704c865ee58eee50b"
+    },
+    "frozen-data/mathlib-datasets/633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d/replay-trace.json": {
+      "bytes": 3314,
+      "sha256": "df69054aa0bd16574d5b62151e0819e090f4198a9dcc355f885f5800a3385ee9"
+    },
+    "frozen-data/mathlib-datasets/633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d/replay.lean": {
+      "bytes": 4574,
+      "sha256": "8135117b6862435cffeb7237d4775f77f338ee857276a8b53c277afba3d9f16e"
+    },
+    "frozen-data/mathlib-datasets/633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d/replay.receipt.json": {
+      "bytes": 1281,
+      "sha256": "2482b9d9ae7df749900e57ea887543adeff654f6694413d53fa3cabca41d0bac"
+    },
+    "frozen-data/mathlib-datasets/633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d/replay.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frozen-data/mathlib-datasets/633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d/replay.stdout": {
+      "bytes": 79,
+      "sha256": "5a16a4dd20a2c533d6ec27662db19a9d071979da455431e11b73dde15bfe852e"
+    },
+    "frozen-data/mathlib-datasets/633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d/run.json": {
+      "bytes": 81,
+      "sha256": "162332e279389cea0190db6938c53ed217d0614930f29264675d6ad75700cf94"
+    },
+    "frozen-data/mathlib-datasets/633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d/source.json": {
+      "bytes": 1604,
+      "sha256": "f25952223af6fc1d16dd42855cc7ff8a70f7c81dcc9d82e9021ec4fc87edc141"
+    },
+    "frozen-data/mathlib-datasets/633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d/source.lean": {
+      "bytes": 7192,
+      "sha256": "2f5b7ae2ea952e0d924c90f47c874c21acb88e971a81df15eb6ac69b35a8eb3e"
+    },
+    "frozen-data/mathlib-datasets/98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb/capture-trace.json": {
+      "bytes": 1897,
+      "sha256": "28d8360d512a866ab5704c09876b3d136bf63698a2bddbb27bd48c1fd0bd2485"
+    },
+    "frozen-data/mathlib-datasets/98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb/capture.lean": {
+      "bytes": 4514,
+      "sha256": "071957e4dd40a7bc09bb884c9bfa98f717c23c1202e15429c41201def143aeac"
+    },
+    "frozen-data/mathlib-datasets/98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb/capture.receipt.json": {
+      "bytes": 1281,
+      "sha256": "0550224516990f022a073976bec65546bd34d77d298e5098307695ea3cb70feb"
+    },
+    "frozen-data/mathlib-datasets/98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb/capture.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frozen-data/mathlib-datasets/98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb/capture.stdout": {
+      "bytes": 80,
+      "sha256": "be9f356014db911a74c7045943c984f6ccffb5b203771b7aba00ce78bbc9b2ce"
+    },
+    "frozen-data/mathlib-datasets/98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb/dataset.json": {
+      "bytes": 5638,
+      "sha256": "98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb"
+    },
+    "frozen-data/mathlib-datasets/98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb/extractor.py": {
+      "bytes": 17075,
+      "sha256": "8d4ff389e085c45b490ba9f81581ea3db63cc2e55488e8af96ab6cf97887884e"
+    },
+    "frozen-data/mathlib-datasets/98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb/LICENSE": {
+      "bytes": 11357,
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+    },
+    "frozen-data/mathlib-datasets/98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb/MathlibReplay.lean": {
+      "bytes": 3883,
+      "sha256": "bc59a28fe220327ef6344365f31f2db1db927670f1fe0fb9645932cc28fca77f"
+    },
+    "frozen-data/mathlib-datasets/98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb/original.lean": {
+      "bytes": 4532,
+      "sha256": "d11b2bad15d900de2e404e8a41b07a6d411a5ba26fbd63ebd40ee85de58a397d"
+    },
+    "frozen-data/mathlib-datasets/98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb/original.receipt.json": {
+      "bytes": 1283,
+      "sha256": "2df5c705742f3558e789769fb45b75dc026cae1d8cb060225ea99add7af8a55b"
+    },
+    "frozen-data/mathlib-datasets/98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb/original.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frozen-data/mathlib-datasets/98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb/original.stdout": {
+      "bytes": 80,
+      "sha256": "be9f356014db911a74c7045943c984f6ccffb5b203771b7aba00ce78bbc9b2ce"
+    },
+    "frozen-data/mathlib-datasets/98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb/plan.json": {
+      "bytes": 246,
+      "sha256": "9a1a6d6a8e3bf22a47e1c8310fe1a83cb1ab7ca82ec98b166035e490ef6f69b3"
+    },
+    "frozen-data/mathlib-datasets/98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb/replay-trace.json": {
+      "bytes": 1897,
+      "sha256": "28d8360d512a866ab5704c09876b3d136bf63698a2bddbb27bd48c1fd0bd2485"
+    },
+    "frozen-data/mathlib-datasets/98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb/replay.lean": {
+      "bytes": 4553,
+      "sha256": "bd1cf6b982eb33f3ac55f0770b6396441773ff23fb835b69f82bce4dc6278194"
+    },
+    "frozen-data/mathlib-datasets/98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb/replay.receipt.json": {
+      "bytes": 1279,
+      "sha256": "e3c061651b36b81fb9bc1f8a98d130a04eb7b56ae327f07871012adc0071c961"
+    },
+    "frozen-data/mathlib-datasets/98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb/replay.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frozen-data/mathlib-datasets/98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb/replay.stdout": {
+      "bytes": 80,
+      "sha256": "be9f356014db911a74c7045943c984f6ccffb5b203771b7aba00ce78bbc9b2ce"
+    },
+    "frozen-data/mathlib-datasets/98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb/run.json": {
+      "bytes": 79,
+      "sha256": "5d4d77f9a3823698485ac4b9461762207fba07f5a3897700f5c33c5dacb39b08"
+    },
+    "frozen-data/mathlib-datasets/98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb/source.json": {
+      "bytes": 1396,
+      "sha256": "8aa66b2e30bd23758eb667c05bd3f7daf0928579477945632da14bac6db28a56"
+    },
+    "frozen-data/mathlib-datasets/98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb/source.lean": {
+      "bytes": 7192,
+      "sha256": "2f5b7ae2ea952e0d924c90f47c874c21acb88e971a81df15eb6ac69b35a8eb3e"
+    },
+    "report.json": {
+      "bytes": 60140,
+      "sha256": "cafbdeb8c2bae77c51c8850e56190ab73067f755b2e364c2983f56fffba2c405"
+    },
+    "worker-exit.json": {
+      "bytes": 46,
+      "sha256": "931a282f3a3b1a055b3aaba26b7c07f3a287682678ce034e65cc2001a42e4d4c"
+    }
+  },
+  "loose_files": {
+    "artifact-audit.json": "77c1e71b51f55ba59d214fa1f5ab96b455c438757070c19a17efb1ffeb1a2e47",
+    "audit-local-01.json": "a1eb46d11e6abc903e7e1f4d9eba106e192f6d2000c15c9ccea72e8b49a9aae2",
+    "final-continuation.json": "635b3634902f368b188e7afacfe9126836a51d2b0aa75e33aa99dd0ffdf38e88",
+    "frozen-data/mathlib-datasets/390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1/capture-trace.json": "13b7be980b994f45450258d95a9e05d7d0354a049ef544d81ede5f4c6074fa44",
+    "frozen-data/mathlib-datasets/390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1/capture.lean": "ce011935fd5c2bc17af3906aec7c582a3dc225d733afc60ed98053a94b5097fc",
+    "frozen-data/mathlib-datasets/390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1/capture.receipt.json": "403de534197cc47da51184afe32d6c7d3dcc19eba10186c3529e4bf796198c09",
+    "frozen-data/mathlib-datasets/390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1/dataset.json": "390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1",
+    "frozen-data/mathlib-datasets/390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1/MathlibReplay.lean": "bc59a28fe220327ef6344365f31f2db1db927670f1fe0fb9645932cc28fca77f",
+    "frozen-data/mathlib-datasets/390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1/original.lean": "175f165e21d8f5b3c892b748f606621e3888c4cd09e2fc50d6b00b17c2096992",
+    "frozen-data/mathlib-datasets/390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1/original.receipt.json": "3c02da5fb3a2c1cb88f7491df2b9281c82da772f70e2192d99bc5cd117c9f881",
+    "frozen-data/mathlib-datasets/390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1/plan.json": "b1d74ceb005231516a7ee4fd65b5f7c6b15fcc1607b7c5b3034c2e1fa735f47a",
+    "frozen-data/mathlib-datasets/390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1/replay-trace.json": "13b7be980b994f45450258d95a9e05d7d0354a049ef544d81ede5f4c6074fa44",
+    "frozen-data/mathlib-datasets/390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1/replay.lean": "fe9177f7a8b99d18a68516d2e0898c10a6190875739cdf3da5fc8227d4c4f881",
+    "frozen-data/mathlib-datasets/390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1/replay.receipt.json": "a271d8b5f68b95a51eccc22f0daaf48b2d0a8510c837ff0038b19bc0c422bd75",
+    "frozen-data/mathlib-datasets/390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1/run.json": "2373e73b2df4d3e1aeee5b5539e48a0ef106c9d70b6c584ef2eb2493787d1795",
+    "frozen-data/mathlib-datasets/390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1/source.json": "38042a7eeef682f5b7ff03e5181c3e5058dde1d08b2fe043775687df6f84cc50",
+    "frozen-data/mathlib-datasets/390db65cb72310385919dfe5207659c51614962420b9a5ff39ec14fe42d874d1/source.lean": "2f5b7ae2ea952e0d924c90f47c874c21acb88e971a81df15eb6ac69b35a8eb3e",
+    "frozen-data/mathlib-datasets/633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d/capture-trace.json": "df69054aa0bd16574d5b62151e0819e090f4198a9dcc355f885f5800a3385ee9",
+    "frozen-data/mathlib-datasets/633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d/capture.lean": "ad63d48e7da34ae30ec401c2558979d0c21a6ff18b02d391ac00590c7fedd256",
+    "frozen-data/mathlib-datasets/633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d/capture.receipt.json": "8cbf1feb05d3ddc736d65d2650f92aa8836c2dc05a888c79efff9bec3c34df78",
+    "frozen-data/mathlib-datasets/633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d/dataset.json": "633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d",
+    "frozen-data/mathlib-datasets/633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d/MathlibReplay.lean": "bc59a28fe220327ef6344365f31f2db1db927670f1fe0fb9645932cc28fca77f",
+    "frozen-data/mathlib-datasets/633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d/original.lean": "6a71e7c339b3abf4a7da5c8d72deb5f6c72008b7fe69d3792b205a64c4c444e9",
+    "frozen-data/mathlib-datasets/633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d/original.receipt.json": "a91d3f82c6b96c6eec6a19552334928736d5c3c19d00df85042f342267613bbc",
+    "frozen-data/mathlib-datasets/633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d/plan.json": "f2ade7bd8a55bf18a6ecfadec9b96f118a0d1d8a258c08f704c865ee58eee50b",
+    "frozen-data/mathlib-datasets/633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d/replay-trace.json": "df69054aa0bd16574d5b62151e0819e090f4198a9dcc355f885f5800a3385ee9",
+    "frozen-data/mathlib-datasets/633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d/replay.lean": "8135117b6862435cffeb7237d4775f77f338ee857276a8b53c277afba3d9f16e",
+    "frozen-data/mathlib-datasets/633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d/replay.receipt.json": "2482b9d9ae7df749900e57ea887543adeff654f6694413d53fa3cabca41d0bac",
+    "frozen-data/mathlib-datasets/633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d/run.json": "162332e279389cea0190db6938c53ed217d0614930f29264675d6ad75700cf94",
+    "frozen-data/mathlib-datasets/633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d/source.json": "f25952223af6fc1d16dd42855cc7ff8a70f7c81dcc9d82e9021ec4fc87edc141",
+    "frozen-data/mathlib-datasets/633da6857da2df468f5d9e6c2aee30f0b424505d95ee4c94cbbfe575fd203b5d/source.lean": "2f5b7ae2ea952e0d924c90f47c874c21acb88e971a81df15eb6ac69b35a8eb3e",
+    "frozen-data/mathlib-datasets/98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb/capture-trace.json": "28d8360d512a866ab5704c09876b3d136bf63698a2bddbb27bd48c1fd0bd2485",
+    "frozen-data/mathlib-datasets/98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb/capture.lean": "071957e4dd40a7bc09bb884c9bfa98f717c23c1202e15429c41201def143aeac",
+    "frozen-data/mathlib-datasets/98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb/capture.receipt.json": "0550224516990f022a073976bec65546bd34d77d298e5098307695ea3cb70feb",
+    "frozen-data/mathlib-datasets/98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb/dataset.json": "98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb",
+    "frozen-data/mathlib-datasets/98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb/MathlibReplay.lean": "bc59a28fe220327ef6344365f31f2db1db927670f1fe0fb9645932cc28fca77f",
+    "frozen-data/mathlib-datasets/98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb/original.lean": "d11b2bad15d900de2e404e8a41b07a6d411a5ba26fbd63ebd40ee85de58a397d",
+    "frozen-data/mathlib-datasets/98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb/original.receipt.json": "2df5c705742f3558e789769fb45b75dc026cae1d8cb060225ea99add7af8a55b",
+    "frozen-data/mathlib-datasets/98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb/plan.json": "9a1a6d6a8e3bf22a47e1c8310fe1a83cb1ab7ca82ec98b166035e490ef6f69b3",
+    "frozen-data/mathlib-datasets/98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb/replay-trace.json": "28d8360d512a866ab5704c09876b3d136bf63698a2bddbb27bd48c1fd0bd2485",
+    "frozen-data/mathlib-datasets/98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb/replay.lean": "bd1cf6b982eb33f3ac55f0770b6396441773ff23fb835b69f82bce4dc6278194",
+    "frozen-data/mathlib-datasets/98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb/replay.receipt.json": "e3c061651b36b81fb9bc1f8a98d130a04eb7b56ae327f07871012adc0071c961",
+    "frozen-data/mathlib-datasets/98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb/run.json": "5d4d77f9a3823698485ac4b9461762207fba07f5a3897700f5c33c5dacb39b08",
+    "frozen-data/mathlib-datasets/98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb/source.json": "8aa66b2e30bd23758eb667c05bd3f7daf0928579477945632da14bac6db28a56",
+    "frozen-data/mathlib-datasets/98c67e8f220e8f5a9227ce010a95792f838b10a9cee6f15a98f1eae695d788cb/source.lean": "2f5b7ae2ea952e0d924c90f47c874c21acb88e971a81df15eb6ac69b35a8eb3e",
+    "report.json": "cafbdeb8c2bae77c51c8850e56190ab73067f755b2e364c2983f56fffba2c405",
+    "worker-exit.json": "931a282f3a3b1a055b3aaba26b7c07f3a287682678ce034e65cc2001a42e4d4c"
+  },
+  "excluded": "7B weights, large tensor snapshots, credentials, browser state"
+}

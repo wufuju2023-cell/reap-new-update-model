@@ -1,0 +1,18 @@
+{
+  "body": {
+    "logprobs": true,
+    "max_tokens": 8,
+    "messages": [
+      {
+        "content": "User: Please generate a tactic in lean4 to solve the state.\nHere're some theorems that may be helpful:\n\nSTATE:\nf g : ℕ → ℕ\nhfzero : f 0 = 1\nhgzero : g 0 = 0\nhfstep : ∀ (n : ℕ), f (n + 1) = f n + 2\nhgstep : ∀ (n : ℕ), g (n + 1) = g n + f n\n⊢ ∀ (n : ℕ), f n = 2 * n + 1 ∧ g n = n * n\nTACTIC:\n\nAssistant:",
+        "role": "user"
+      }
+    ],
+    "model": "reap",
+    "n": 1,
+    "temperature": 0.0
+  },
+  "method": "POST",
+  "mutation_retry_allowed": false,
+  "path": "/sessions/mm-6031f860c3d2ea901536-00001/value/v1/chat/completions"
+}

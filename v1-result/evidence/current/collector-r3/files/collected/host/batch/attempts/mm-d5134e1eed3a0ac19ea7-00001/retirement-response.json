@@ -1,0 +1,1 @@
+{"mutation_retry_allowed":false,"policy_version":0,"schema_version":"reap.gpu.retirement.v1","session_id":"mm-d5134e1eed3a0ac19ea7-00001","snapshot":"retired-collector","snapshot_sha256":"fee4e20a208b5a88ec288efaf09a2a4bf9e753c7e94b1783ee5a1b298d791489","status":"released","tombstone_scope":"current_runtime"}

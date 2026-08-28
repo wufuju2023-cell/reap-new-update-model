@@ -1,0 +1,14 @@
+{
+  "schema_version": "reap.operator.instance-stop.v1",
+  "epoch": 1787875122.5707953,
+  "instance_id": "dsw-2136565",
+  "browser_session": "amd-recovery",
+  "page": "https://www.modelscope.cn/code/workspace",
+  "method": "ordinary_UI_Stop_instance_then_confirm",
+  "authorization": "user delegated; parent confirmed after recovery evidence passed",
+  "all_8_experiment_pids_absent": true,
+  "all_4_experiment_ports_closed": true,
+  "continuation_file": "operator-continuation.json",
+  "mutation_submissions_planned": 1,
+  "automatic_retry_allowed": false
+}

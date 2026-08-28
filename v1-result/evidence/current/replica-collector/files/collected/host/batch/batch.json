@@ -1,0 +1,1 @@
+{"matchmaker_run_sha256":"36267162d92ac4de7d4e74edb992eb22634cfb481990a0dfc0a311bf49f0c7fa","max_pending_validation":2,"pending_definition":"queued_plus_running_validation; blocked_handoff_retains_search_stage_slot","schema_version":"reap.collector-batch.run.v1","search_workers":2,"validation_workers":1}

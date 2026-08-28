@@ -1,0 +1,120 @@
+{
+  "launch.json": {
+    "worker_pid": 1188,
+    "root": "/mnt/workspace/reap-ttt-20260828-matchmaker-campaign",
+    "epoch": 1787863395.0374346,
+    "server_worker_sha256": "5eb17c1b46bbebaa2d1ad4f3519cd6c3fb4b527aa34954cec10ac83728ab3481"
+  },
+  "ready.json": {
+    "ready": true,
+    "epoch": 1787863616.04751,
+    "contract": {
+      "backend": "mixed-replay",
+      "base_sha256": "2ff73d37f6f4edad02f5c2e67bdabeeecef97a187b4747834e6acdf648980839",
+      "objective": "verified_replay_mathlib_sft",
+      "hidden_size": 3584,
+      "lora_rank": 16,
+      "lora_alpha": 32,
+      "lora_dropout": 0.0,
+      "target_modules": [
+        "down_proj",
+        "gate_proj",
+        "k_proj",
+        "o_proj",
+        "q_proj",
+        "up_proj",
+        "v_proj"
+      ],
+      "value_head": "linear-silu-linear-categorical-v1",
+      "mixed_config": {
+        "objective": "verified_replay_mathlib_sft",
+        "value_semantics": "verified_negative_longest_branch_categorical.v1",
+        "base_tokenizer_sha256": "2ff73d37f6f4edad02f5c2e67bdabeeecef97a187b4747834e6acdf648980839",
+        "lora": {
+          "rank": 16,
+          "alpha": 32,
+          "dropout": 0.0,
+          "target_modules": [
+            "down_proj",
+            "gate_proj",
+            "k_proj",
+            "o_proj",
+            "q_proj",
+            "up_proj",
+            "v_proj"
+          ]
+        },
+        "eos_token_id": 151643,
+        "support": {
+          "distance_min": 1,
+          "distance_max": 8,
+          "return": "negative_integer_verified_action_longest_branch; human_profile_linear_remaining_actions",
+          "overflow": "reject"
+        },
+        "head": "linear-silu-linear-categorical",
+        "hidden_size": 3584,
+        "value_loss": "categorical_cross_entropy_exact_integer_class",
+        "policy_loss": "mean_over_sampled_rows_of_joint_tactic_plus_one_EOS_negative_log_probability",
+        "tokenization": "canonical_tactic_separate_no_special_tokens_append_exactly_one_EOS",
+        "kl_reduction": "mean_over_sampled_rows_of_prefix_token_sum_current_to_frozen_base",
+        "max_sequence_tokens": 4096,
+        "max_batch_samples": 10,
+        "learning_rate": 0.0001,
+        "value_learning_rate": 0.0003,
+        "value_coefficient": 0.5,
+        "kl_beta": 0.02,
+        "max_grad_norm": 1.0,
+        "max_post_update_kl": 100.0,
+        "mixture": {
+          "source_counts": {
+            "replay": 9,
+            "mathlib_sft": 1
+          },
+          "sample_weight": 0.1,
+          "sampling_unit": "verified_action_row",
+          "ratio_scope": "every_complete_batch",
+          "source_profiles": {
+            "replay": "verified-generated-action-negative-longest-branch-v1",
+            "mathlib_sft": "mathlib_sft_linear_negative_remaining_actions_v1"
+          },
+          "source_losses": {
+            "replay": [
+              "policy",
+              "value"
+            ],
+            "mathlib_sft": [
+              "policy",
+              "value"
+            ]
+          }
+        },
+        "source_loss_report_reduction": "contribution_to_full_batch_mean; includes_1_over_10_weight"
+      }
+    },
+    "resident_cap": 2
+  },
+  "worker-exit.json": {
+    "returncode": 0,
+    "epoch": 1787865142.37227,
+    "actor_metrics": {
+      "schema_version": "reap.gpu-actor.metrics.v1",
+      "accepting": true,
+      "submitted": 47,
+      "started": 47,
+      "completed": 47,
+      "failed": 0,
+      "active": 0,
+      "max_active": 1,
+      "queued": 0,
+      "max_queued": 3,
+      "queue_wait_seconds_total": 48.127839424999706,
+      "queue_wait_seconds_max": 15.090271502000064,
+      "execution_seconds_total": 95.6386199229998,
+      "execution_seconds_max": 16.02616173299998,
+      "active_execution_seconds": 0.0
+    },
+    "instance_stop_requested": false
+  },
+  "worker_alive": false,
+  "log_tail": "`torch_dtype` is deprecated! Use `dtype` instead!\n\nLoading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]\nLoading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:01,  1.86it/s]\nLoading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.62it/s]\nLoading checkpoint shards:  75%|███████▌  | 3/4 [00:01<00:00,  1.67it/s]\nLoading checkpoint shards: 100%|██████████| 4/4 [00:01<00:00,  2.22it/s]\n/mnt/workspace/reap-v1-20260827-gpu/code/venv/lib/python3.12/site-packages/peft/tuners/tuners_utils.py:1064: UserWarning: Adapter mm-9f156020c79f16202ad1-00001 was active which is now deleted. Setting active adapter to __bootstrap__.\n  warnings.warn(\n/mnt/workspace/reap-v1-20260827-gpu/code/venv/lib/python3.12/site-packages/peft/tuners/tuners_utils.py:1064: UserWarning: Adapter mm-9f156020c79f16202ad1-00002 was active which is now deleted. Setting active adapter to __bootstrap__.\n  warnings.warn(\n/mnt/workspace/reap-v1-20260827-gpu/code/venv/lib/python3.12/site-packages/peft/tuners/tuners_utils.py:1064: UserWarning: Adapter mm-d5134e1eed3a0ac19ea7-00002 was active which is now deleted. Setting active adapter to __bootstrap__.\n  warnings.warn(\n/mnt/workspace/reap-v1-20260827-gpu/code/venv/lib/python3.12/site-packages/peft/tuners/tuners_utils.py:1064: UserWarning: Adapter mm-d5134e1eed3a0ac19ea7-00001 was active which is now deleted. Setting active adapter to __bootstrap__.\n  warnings.warn(\n"
+}

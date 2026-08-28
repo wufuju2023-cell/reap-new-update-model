@@ -1,0 +1,1 @@
+{"attempt_id":"mm-9f156020c79f16202ad1-00002","evidence":{"actual_steps":7,"terminal_receipt_sha256":"407b33d374c2115daf2a7f8bead90fd78e2594cd93baa91f20b9dc3475208197"},"intent_sha256":"042f0305a34ee04c310b9858c7dc36117ce6da28dbefc340427586b8c51fd670","outcome":"exhausted","schema_version":"reap.matchmaker.result.v1"}

@@ -1,0 +1,25 @@
+{
+  "epoch": 1787847507.3220496,
+  "files": {
+    "proof-checksource/receipt.json": "2bd4430c737f67505cb0afa88c212d393b3ae7926b38ece2a7b646a9e0469ce4",
+    "snapshot-audit.json": "b4f8b975a2cd4cd36d6c8c0afdd527cc6a37d1977e78bac732c2eb9aac198610",
+    "source-final/experience-candidate.json": "f1df61f5b229fe7a54813d0485773c004e4e2a154c4017ed22d999501e3e9574",
+    "source-final/online-result.json": "b5c020e4e27cdfd17c33df7e7c8e8d0e00d126e759239a29636b547925dc1de6",
+    "source-wire-audit.json": "d121051dba7259c13c86120a5f9e9f97d9f15e4d1644fb8542308746e2ea437a"
+  },
+  "observed_axioms": [
+    "propext"
+  ],
+  "operator": "local audited admission; not a cryptographic trust replacement",
+  "passed": true,
+  "schema_version": "reap.experience.source-acceptance-evidence.v1",
+  "source": {
+    "parent_experience_id": null,
+    "policy_version": 2,
+    "session_id": "experience-source-01",
+    "snapshot": "experience-candidate",
+    "snapshot_sha256": "759661e4477bbeff353bc7e1c7e90e4e86f8ec07f38d19a044e14347c20a1402",
+    "theorem_id": "1c934ede5d3f068c24d12dc19d4b887078e5d17904cb690f022044714cf244e0"
+  },
+  "updates": 2
+}

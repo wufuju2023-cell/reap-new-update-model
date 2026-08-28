@@ -1,0 +1,28 @@
+{
+  "schema_version": "reap.replica-collector.independent-review.v1",
+  "reviewer": "design_review",
+  "review_mode": "read-only code and existing receipt inspection; no repeated test, GPU, browser or Lean run",
+  "source_sha256": {
+    "cpu_runtime/replica_collector.py": "fe81d71cf61aa6815d869f418d32418a70a0c7a91644ebfd3d85d107493fd938",
+    "tests/test_replica_collector.py": "fee65c0e59951beaacb9b91e65b07914954cb3eb773779aa26b76d849398dcbd"
+  },
+  "blocking_findings": [],
+  "checked": [
+    "Route binds the exact reserved intent and fixed pool release before calling the search adapter",
+    "Search callback and HTTP retirement are outside the local admission lock",
+    "Capacity remains held until same-endpoint released receipt is validated and durably published",
+    "Unknown search/retirement blocks new dispatch and recovery, without replay or failover",
+    "Already admitted independent work can retire after another attempt becomes unknown",
+    "Complete restart audit refuses modified/incomplete/staged records and does not re-run search",
+    "Final default HTTP timeout uses DEFAULT_BUDGET.client rather than the prior short constant",
+    "The actual campaign adapter separately binds URL, fixed release, collector evidence and independent proof verification"
+  ],
+  "boundaries": [
+    "Endpoint/deployment labels are operator declarations; actual distinct process/device and same-release claims require deployment evidence",
+    "Router terminal-envelope checks do not independently prove Lean or validate 7B tensors",
+    "Local two-HTTP-runtime tests use Toy parameters; no real GPU throughput claim follows",
+    "Single owning-process/single-writer routing; unknown requests require read-only reconciliation, not automatic retry"
+  ],
+  "existing_test_receipt": "receipt.json",
+  "approved_for_bounded_integration": true
+}

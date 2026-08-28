@@ -1,0 +1,9 @@
+{
+  "cpu_runtime/replica_collector.py": "fe81d71cf61aa6815d869f418d32418a70a0c7a91644ebfd3d85d107493fd938",
+  "tests/test_replica_collector.py": "fee65c0e59951beaacb9b91e65b07914954cb3eb773779aa26b76d849398dcbd",
+  "cpu_runtime/collector_batch.py": "9cac4c779054d7611f7da7ba25c7d264121cbf31fc2314da95c70052a89dc56f",
+  "cpu_runtime/matchmaker.py": "8536a531a9b8be98f9f145f2ec8d43a6b019f9884f4299eab9b8eb8ae899369f",
+  "cpu_runtime/http_clients.py": "c65d81a6f922c62c90d40a08113f9699d634b647e3798b3578a69df2dffa4488",
+  "cpu_runtime/verified_collector.py": "3ee7543ec54b2416acfcfd7da7b79a5f5dad3ee6298723f6c08deff32fc827c5",
+  "cpu_runtime/transport_budget.py": "e0fd254e87f7e1f3cd3d53c3135fff2ea889a6cf3929be6866bb456fee83d1ac"
+}

@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "seconds": 9.796999999991385,
+  "tests": 3,
+  "scope": "CPU tiny actual Adam+spawn/HTTP; synthetic admission/base fixtures; no GPU or Lean",
+  "sources": {
+    "latest_probe.py": "c7b54691d0d6f4c56a57d2c2bcc12bc00d39f2ad141e05c4cc4023e7a149e989",
+    "test_latest_probe.py": "40558e03d5e3e62e5a018d027c2e5cce6d8960917b7fd965fb3e75e2c5de5262",
+    "campaign-plan.json": "b704e6be60a12345b49bb259afea6904b3733ff2f9da093857f53f97a75c06cb",
+    "command.json": "32f9ed458fc06e27baf9537144c7147555bbb99cb4012a80db827b43b2390deb"
+  }
+}

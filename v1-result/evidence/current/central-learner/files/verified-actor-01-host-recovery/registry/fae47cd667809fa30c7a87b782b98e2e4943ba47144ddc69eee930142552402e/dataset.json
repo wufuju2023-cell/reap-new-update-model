@@ -1,0 +1,69 @@
+{
+  "schema_version": "reap.verified-success-trajectory.v1",
+  "profile": "verified-generated-action-negative-longest-branch-v1",
+  "session_id": "central-actor-01",
+  "tree_id": "central-actor-01.tree0",
+  "theorem": "LearnerLoop.AffineStrideThree",
+  "theorem_sha256": "96f6970ec21b5d998985ce33fd173c348c7f325560aa5fb51f4657a233127146",
+  "root_return": -2,
+  "action_unit": "one generated tactic string; focus transitions cost zero",
+  "and_return": "minimum branch return; shared-metavariable branch skipping rejected",
+  "state_origin": "exact saved state matched against independent Lean replay",
+  "training_integration": "none; not search_visit_backup or categorical-head training",
+  "axioms": [
+    "propext"
+  ],
+  "final_policy_version": 0,
+  "inputs_sha256": {
+    "accepted-proof.lean": "adafb3271fc9ae651e9c6bac4c1c671f39e889b07142340af3f1ee6858c2640b",
+    "historical-proof-receipt.json": "d21ae8d48932d26664d1a4162030c907502ace3c11a8b85c08739fc27920b0cf",
+    "historical-proof.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "historical-proof.stdout": "c36893cca185374d74fc750474e62dc2575a97df6dd52f029c72ffdb8b3e9ece",
+    "observer.jsonl": "d0d5a6fd59902cb3c86b6bf1cb6348819b802115b57a9fc87082b4c796681eee",
+    "plan.json": "e546e618ca0b85e91b44cbd9b2c30ed212008fe566de340f3853ebf3ef1887b3",
+    "raw_tree.json": "16305cebeb8404faa5ef30f3cdd6d95e4ffcb007639a3bddf0530513f9cf6f89",
+    "replay.lean": "4c9defb782ec638989b6b840396dd1a45567b45c1f01e634802b441ddf8998ec",
+    "result.json": "16cd183032a66c297d227cfe491c1b95d5585bc23319efc18d704249981e9514",
+    "session.json": "58b149fb5114bad2a73b618c6a10258c810de0d22e519f1243860446e196d632",
+    "source.lean": "96f6970ec21b5d998985ce33fd173c348c7f325560aa5fb51f4657a233127146",
+    "VerifiedReplay.lean": "a642aaf993f884c26c255ca3cdf1f4c6227ccc87273880243a0fc9c153761f23"
+  },
+  "trace_sha256": "6639815db3eec6703b62350b255131118da362c7b3e6edf8366e9a9bc4bd4b56",
+  "replay_receipt_sha256": "aff2c4504215650b08b250d5943c42cbc0c6628ce9ccae27ff69e822ece81c72",
+  "rows": [
+    {
+      "node_index": 0,
+      "child_index": 1,
+      "state": [
+        "f : ℕ → ℕ\nh0 : f 0 = 2\nhs : ∀ (n : ℕ), f (n + 1) = f n + 3\n⊢ ∀ (n : ℕ), f n = 2 + 3 * n"
+      ],
+      "next_state": [
+        "f : ℕ → ℕ\nh0 : f 0 = 2\nhs : ∀ (n : ℕ), f (n + 1) = f n + 3\nn : ℕ\n⊢ f n = 2 + 3 * n"
+      ],
+      "tactic": "intro n",
+      "return": -2,
+      "prompt": "User: Please generate a tactic in lean4 to solve the state.\nHere're some theorems that may be helpful:\n\nSTATE:\nf : ℕ → ℕ\nh0 : f 0 = 2\nhs : ∀ (n : ℕ), f (n + 1) = f n + 3\n⊢ ∀ (n : ℕ), f n = 2 + 3 * n\nTACTIC:\n\nAssistant:",
+      "policy_version": 0,
+      "generation_sequence": 2,
+      "eval_sequence": 3,
+      "generation_index": 0,
+      "candidate_index": 0
+    },
+    {
+      "node_index": 1,
+      "child_index": 2,
+      "state": [
+        "f : ℕ → ℕ\nh0 : f 0 = 2\nhs : ∀ (n : ℕ), f (n + 1) = f n + 3\nn : ℕ\n⊢ f n = 2 + 3 * n"
+      ],
+      "next_state": [],
+      "tactic": "induction n <;> simp_all [hs, pow_succ, mul_add, mul_one, add_assoc, add_comm, add_left_comm]",
+      "return": -1,
+      "prompt": "User: Please generate a tactic in lean4 to solve the state.\nHere're some theorems that may be helpful:\n\nSTATE:\nf : ℕ → ℕ\nh0 : f 0 = 2\nhs : ∀ (n : ℕ), f (n + 1) = f n + 3\nn : ℕ\n⊢ f n = 2 + 3 * n\nTACTIC:\n\nAssistant:",
+      "policy_version": 0,
+      "generation_sequence": 8,
+      "eval_sequence": 9,
+      "generation_index": 0,
+      "candidate_index": 0
+    }
+  ]
+}

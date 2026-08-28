@@ -1,0 +1,24 @@
+{
+  "schema_version": "reap.evidence-stage.v1",
+  "source_directory": "snapshot-reuse-run-20260828",
+  "archive": {
+    "file": "raw.zip",
+    "bytes": 3432,
+    "sha256": "572db0a8a3b90f5ff89371e5e1044ca220b39507d6c8aa65a570cc8af8ed5fe8"
+  },
+  "files": {
+    "evidence-receipt.json": {
+      "bytes": 1099,
+      "sha256": "f7582ed949c251d535cbe686886c9a8157f49f3f0fb0bdb6a1299741533e200f"
+    },
+    "report.json": {
+      "bytes": 6614,
+      "sha256": "912f2fecf5b92549836947f27b37b5a01cf11f2a81fcfac02eaf6fecfa06bd49"
+    }
+  },
+  "loose_files": {
+    "evidence-receipt.json": "f7582ed949c251d535cbe686886c9a8157f49f3f0fb0bdb6a1299741533e200f",
+    "report.json": "912f2fecf5b92549836947f27b37b5a01cf11f2a81fcfac02eaf6fecfa06bd49"
+  },
+  "excluded": "7B weights, large tensor snapshots, credentials, browser state"
+}

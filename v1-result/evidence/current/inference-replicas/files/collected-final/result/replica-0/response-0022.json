@@ -1,0 +1,9 @@
+{
+  "action": "stop",
+  "command_sha256": "4a21e512a1bc65017cd0ddfad0b86c0f0fdcbd2dd93457b4d27eca863866f66f",
+  "result": {
+    "closed": true,
+    "worker_operation_wall_seconds": 0.00010535999990679557
+  },
+  "seq": 22
+}

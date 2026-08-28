@@ -1,0 +1,33 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": {
+        "content": [
+          {
+            "logprob": -0.06241054832935333,
+            "token": "intro"
+          },
+          {
+            "logprob": -1.9550132492440753e-05,
+            "token": " n"
+          },
+          {
+            "logprob": -0.002820682479068637,
+            "token": "<|endoftext|>"
+          }
+        ]
+      },
+      "message": {
+        "content": "intro n",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1787873420,
+  "id": "chatcmpl-9e7f7f7f51c9457fb7568d5051ad0632",
+  "model": "reap",
+  "object": "chat.completion",
+  "policy_version": 0
+}

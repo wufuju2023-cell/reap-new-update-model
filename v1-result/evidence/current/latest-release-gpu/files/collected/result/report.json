@@ -1,0 +1,24 @@
+{
+  "ReplicaCollector_search_or_batch_executed": false,
+  "curriculum_generation": false,
+  "error": {
+    "message": "<urlopen error [Errno 111] Connection refused>",
+    "mutation_retry_allowed": false,
+    "type": "URLError"
+  },
+  "mathematical_verification_performed": false,
+  "mutation_retry_allowed": false,
+  "new_Lean_search": false,
+  "ok": false,
+  "performance_claimed": false,
+  "real_7B_GPU_gate_passed": false,
+  "schema_version": "reap.latest-release.mechanism.v1",
+  "timing_finished_epoch": 1787874004.5985293,
+  "timing_started_epoch": 1787872824.9063833,
+  "unknown_publication_fault_injected": false,
+  "worker_result": {
+    "bytes": 165,
+    "file": "worker-result.json",
+    "sha256": "9e82d52b318c7f9e92902e854b507cd5409cf0ef4b466388d2837234b2485087"
+  }
+}

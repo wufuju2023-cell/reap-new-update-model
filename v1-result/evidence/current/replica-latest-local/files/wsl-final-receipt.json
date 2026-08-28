@@ -1,0 +1,21 @@
+{
+  "run": 50,
+  "passed": 43,
+  "skipped": 7,
+  "errors": 0,
+  "failures": 0,
+  "seconds": 7.186010785997496,
+  "source_sha256": {
+    "cpu_runtime/replica_collector.py": "5450717b1ae4e514652305409c5ef92351a4fd8811d62b260a0e568f313f5924",
+    "tests/test_replica_latest.py": "b3a75953fb4437beba488f79f9d8b4ee0991d1a8d6aceada0dac50541735e3f3",
+    "cpu_runtime/released_attempts.py": "3af3d5945357e005faa18a552476b4148e261924608a894b63b0c6eb496a3ff2",
+    "cpu_runtime/collector_batch.py": "9cac4c779054d7611f7da7ba25c7d264121cbf31fc2314da95c70052a89dc56f",
+    "gpu_runtime/release_head.py": "60a2dceda32719a2fc01e5b584a42c37d45816623fbd2450947961a0cf0a6010",
+    "gpu_runtime/learner.py": "21eca972d360d7034e83b5b7c31f875a15bc0d7c3f14db659d8132478a51a191",
+    "gpu_runtime/continual_mixed_learner.py": "56c1810827754b3d743b735304b8d04272fc10502d0caee2c54bdd5b38a6e0b6"
+  },
+  "sources_unchanged": true,
+  "GPU_used": false,
+  "Lean_rerun": false,
+  "ok": true
+}

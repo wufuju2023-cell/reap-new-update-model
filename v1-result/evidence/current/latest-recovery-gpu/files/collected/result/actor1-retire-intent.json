@@ -1,0 +1,9 @@
+{
+  "body": {
+    "expected_policy_version": 0,
+    "name": "recovery-final"
+  },
+  "method": "POST",
+  "mutation_retry_allowed": false,
+  "path": "/sessions/mm-6031f860c3d2ea901536-00001/retire/v1"
+}

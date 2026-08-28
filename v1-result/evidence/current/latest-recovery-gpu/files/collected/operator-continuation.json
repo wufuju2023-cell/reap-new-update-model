@@ -1,0 +1,186 @@
+{
+  "actual_worker_exit": {
+    "automatic_retry_allowed": false,
+    "epoch": 1787874790.9116807,
+    "probe_returncode": 0,
+    "returncode": 0
+  },
+  "automatic_retry_allowed": false,
+  "base_tokenizer_contract_sha256": "2ff73d37f6f4edad02f5c2e67bdabeeecef97a187b4747834e6acdf648980839",
+  "committed_steps": [
+    {
+      "bytes": 180,
+      "path": "/mnt/workspace/reap/runs/20260828-latest-release/result/learner-store/control/ea79c9af443ee80a8e9669506a6aabc1a5dcad47687c40be772798c82278b60a/commit-00000001.json",
+      "receipt": {
+        "checkpoint_sha256": "9359f56ca8cf147211d5d14f4612f97d25215edf1d8717d6c061cf21d0724d30",
+        "intent_sha256": "eed98dbf6223837add3add9c1a2e7c6be86a7c9305b5b51eb40bbdbc5f8fbd31",
+        "step": 1
+      },
+      "sha256": "1b5166c22c97dc87ba48aa514113d44ed9741571002b1eb269bc7104038f0cf4"
+    },
+    {
+      "bytes": 180,
+      "path": "/mnt/workspace/reap/runs/20260828-latest-release/result/learner-store/control/ea79c9af443ee80a8e9669506a6aabc1a5dcad47687c40be772798c82278b60a/commit-00000002.json",
+      "receipt": {
+        "checkpoint_sha256": "700ee66fbe22e55d41e7eb31041b1fea0d49c7de0d9f619687c749752ebc4701",
+        "intent_sha256": "f7b8e508be3f10c7e22464cd06484a8f994a4375f1cd3be29b9021de5d890ad4",
+        "step": 2
+      },
+      "sha256": "a538a2e0df3140179d0d4ba2a3070963c6d8aa8100379d86fb3ca7d1dd84aa06"
+    }
+  ],
+  "dataset_roots": {
+    "mathlib": "/mnt/workspace/reap-ttt-20260828-mixed-learner/mathlib-datasets",
+    "replay": "/mnt/workspace/reap-ttt-20260828-continual-mixed/datasets"
+  },
+  "deployment": "Existing remote host venv; not a GPU container.",
+  "epoch": 1787875069.169735,
+  "full_base_fingerprint": {
+    "base_parameters_require_grad": false,
+    "buffer_tensors": 1,
+    "bytes": 15231233280,
+    "coverage": "all_non_LoRA_model_parameters_and_buffers",
+    "cpu_chunk_bytes": 8388608,
+    "elements": 7615616576,
+    "parameter_tensors": 339,
+    "sha256": "426bf7dced89e3aeb2ba88fcd492078a754d58552af77ee32446cb7f97a61ab5"
+  },
+  "future_resume": "Do not rerun either probe. Future learner work must explicitly restore the committed head with its durable ledger; restore of the learner was not tested in this recovery stage.",
+  "head": {
+    "checkpoint_sha256": "700ee66fbe22e55d41e7eb31041b1fea0d49c7de0d9f619687c749752ebc4701",
+    "model_release_sha256": "8a2bf4d4e93cf8e4f79e6905b2a01b7df831599498e4bf856baf841e05e56dea",
+    "previous_head_sha256": "40ebecf1641df70be7582229a8d9eee8b4ff2de33b32ad49f0e915edf81cf5cb",
+    "publication_intent_sha256": "5a6910ad8b28f3eeb48fe0e0ff93b1b77a0c326e225fbf5d35656f9000ae7c84",
+    "run_sha256": "ea79c9af443ee80a8e9669506a6aabc1a5dcad47687c40be772798c82278b60a",
+    "schema_version": "reap.learner.release-head.v1",
+    "step": 2
+  },
+  "learner_store": "/mnt/workspace/reap/runs/20260828-latest-release/result/learner-store",
+  "listening_ports": {
+    "33441": false,
+    "34105": false,
+    "37115": false,
+    "37373": false
+  },
+  "model_path": "/mnt/workspace/models/REAL-Prover-fe76f68d",
+  "original_R1_safety_snapshot": {
+    "complete_sha256": "157a429fd75352a1d64e94ba7b40a22b875b066defdacd39cca5d434764768bd",
+    "manifest": {
+      "bytes": 355,
+      "path": "/mnt/workspace/reap/runs/20260828-latest-release/result/service-0/snapshots/mm-6031f860c3d2ea901536-00001/operator-safety-r1-20260828/manifest.json",
+      "sha256": "d944c8b7de5117b46f128cc4cbb7c0245321f5ed540a78848bdcc434dca62f2e"
+    },
+    "path": "/mnt/workspace/reap/runs/20260828-latest-release/result/service-0/snapshots/mm-6031f860c3d2ea901536-00001/operator-safety-r1-20260828"
+  },
+  "original_report": {
+    "bytes": 783,
+    "path": "/mnt/workspace/reap/runs/20260828-latest-release/result/report.json",
+    "sha256": "611d46040fa26cacf393e771ea05f20d3f78221fa740c4e9ae246d08823a0354"
+  },
+  "original_run": "/mnt/workspace/reap/runs/20260828-latest-release",
+  "original_run_status": "failed",
+  "original_source_manifest": {
+    "bytes": 7562,
+    "path": "/mnt/workspace/reap/runs/20260828-latest-release/source-manifest.json",
+    "sha256": "c1f54aecb6239f38a37a9aec14a35218f92a0589b5de24bd4814983af4062fe8"
+  },
+  "process_presence": {
+    "3366": false,
+    "3367": false,
+    "3390": false,
+    "3391": false,
+    "3593": false,
+    "3594": false,
+    "3608": false,
+    "3609": false
+  },
+  "published_heads": [
+    {
+      "bytes": 438,
+      "head": {
+        "checkpoint_sha256": "9359f56ca8cf147211d5d14f4612f97d25215edf1d8717d6c061cf21d0724d30",
+        "model_release_sha256": "c1631685883f6cf0e12df187642bb86b22402c5e217e919da858567f7c860d2f",
+        "previous_head_sha256": null,
+        "publication_intent_sha256": "3f5de7be7cb44a93c61282bd59cc49952288e6c3180a54071fa9628fbbd23ed3",
+        "run_sha256": "ea79c9af443ee80a8e9669506a6aabc1a5dcad47687c40be772798c82278b60a",
+        "schema_version": "reap.learner.release-head.v1",
+        "step": 1
+      },
+      "path": "/mnt/workspace/reap/runs/20260828-latest-release/result/learner-store/control/ea79c9af443ee80a8e9669506a6aabc1a5dcad47687c40be772798c82278b60a/release-head/published-00000001.json",
+      "sha256": "40ebecf1641df70be7582229a8d9eee8b4ff2de33b32ad49f0e915edf81cf5cb"
+    },
+    {
+      "bytes": 500,
+      "head": {
+        "checkpoint_sha256": "700ee66fbe22e55d41e7eb31041b1fea0d49c7de0d9f619687c749752ebc4701",
+        "model_release_sha256": "8a2bf4d4e93cf8e4f79e6905b2a01b7df831599498e4bf856baf841e05e56dea",
+        "previous_head_sha256": "40ebecf1641df70be7582229a8d9eee8b4ff2de33b32ad49f0e915edf81cf5cb",
+        "publication_intent_sha256": "5a6910ad8b28f3eeb48fe0e0ff93b1b77a0c326e225fbf5d35656f9000ae7c84",
+        "run_sha256": "ea79c9af443ee80a8e9669506a6aabc1a5dcad47687c40be772798c82278b60a",
+        "schema_version": "reap.learner.release-head.v1",
+        "step": 2
+      },
+      "path": "/mnt/workspace/reap/runs/20260828-latest-release/result/learner-store/control/ea79c9af443ee80a8e9669506a6aabc1a5dcad47687c40be772798c82278b60a/release-head/published-00000002.json",
+      "sha256": "a9051c124a2acada42cd8a5c49b3401f48c9758d8c3e233fb37947dc35400dc9"
+    }
+  ],
+  "python": "/mnt/workspace/reap-v1-20260827-gpu/code/venv/bin/python",
+  "recovery_report": {
+    "bytes": 12798,
+    "path": "/mnt/workspace/reap/runs/20260828-latest-recovery/result/report.json",
+    "sha256": "362f50a4063721f619d995b6be4baf6e95ad0d2b999aa2b6ffcdf8e2f2c72c71"
+  },
+  "recovery_retired_snapshots": [
+    {
+      "manifest": {
+        "bytes": 342,
+        "path": "/mnt/workspace/reap/runs/20260828-latest-recovery/result/service-0/snapshots/mm-6031f860c3d2ea901536-00001/recovery-final/manifest.json",
+        "sha256": "d8c613cc67c3a7726756f28ed5f86d4a12b65403bb7c17b197b9ea64a38116d4"
+      },
+      "path": "/mnt/workspace/reap/runs/20260828-latest-recovery/result/service-0/snapshots/mm-6031f860c3d2ea901536-00001/recovery-final",
+      "receipt": {
+        "mutation_retry_allowed": false,
+        "policy_version": 0,
+        "schema_version": "reap.gpu.retirement.v1",
+        "session_id": "mm-6031f860c3d2ea901536-00001",
+        "snapshot": "recovery-final",
+        "snapshot_sha256": "d8c613cc67c3a7726756f28ed5f86d4a12b65403bb7c17b197b9ea64a38116d4",
+        "status": "released",
+        "tombstone_scope": "current_runtime"
+      }
+    },
+    {
+      "manifest": {
+        "bytes": 337,
+        "path": "/mnt/workspace/reap/runs/20260828-latest-recovery/result/service-1/snapshots/latest-recovery-r2-actor/recovery-final/manifest.json",
+        "sha256": "76bc9fe95c84b26d4ab5d9eb07440144727a50f293f1814de64922f271222391"
+      },
+      "path": "/mnt/workspace/reap/runs/20260828-latest-recovery/result/service-1/snapshots/latest-recovery-r2-actor/recovery-final",
+      "receipt": {
+        "mutation_retry_allowed": false,
+        "policy_version": 0,
+        "schema_version": "reap.gpu.retirement.v1",
+        "session_id": "latest-recovery-r2-actor",
+        "snapshot": "recovery-final",
+        "snapshot_sha256": "76bc9fe95c84b26d4ab5d9eb07440144727a50f293f1814de64922f271222391",
+        "status": "released",
+        "tombstone_scope": "current_runtime"
+      }
+    }
+  ],
+  "recovery_run": "/mnt/workspace/reap/runs/20260828-latest-recovery",
+  "recovery_script": {
+    "bytes": 15546,
+    "path": "/mnt/workspace/reap/runs/20260828-latest-recovery/code/recover_consume.py",
+    "sha256": "33641acded89106df38cbb1b5048d1b8f3b6bb6989602dd181d39738df442bbd"
+  },
+  "recovery_status": "passed_consumption_only",
+  "run_sha256": "ea79c9af443ee80a8e9669506a6aabc1a5dcad47687c40be772798c82278b60a",
+  "schema_version": "reap.operator.continuation-inventory.v1",
+  "scope": "Post-terminal paths and small-file hashes only. No additional training, publication, inference, restore, or full tensor revalidation.",
+  "source_manifest": {
+    "bytes": 7550,
+    "path": "/mnt/workspace/reap/runs/20260828-latest-recovery/source-manifest.json",
+    "sha256": "899f1152375abe0555b565a96618260906c53a3c66514115804a5dec4463c9aa"
+  }
+}

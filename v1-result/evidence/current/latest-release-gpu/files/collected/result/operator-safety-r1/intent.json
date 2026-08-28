@@ -1,0 +1,1 @@
+{"automatic_retry_allowed": false, "body": {"for_experience": false, "name": "operator-safety-r1-20260828"}, "epoch": 1787873904.6519687, "expected_observed_policy_version": 0, "method": "POST", "pipe_keepalive": false, "purpose": "extra operator safety preservation, outside original probe gates", "url": "http://127.0.0.1:37373/sessions/mm-6031f860c3d2ea901536-00001/snapshot/v1"}

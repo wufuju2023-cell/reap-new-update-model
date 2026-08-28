@@ -1,0 +1,10 @@
+{"theorem": "ReapCurriculumWrapper.attempt",
+ "schema_version": "reap.verified-replay.trace.v1",
+ "rows":
+ [{"tactic": "simp only [forall_const]",
+   "state": ["⊢ ∀ (n : ℕ), n = n"],
+   "return": -1,
+   "node_index": 0,
+   "next_state": []}],
+ "root_return": -1,
+ "complete": true}

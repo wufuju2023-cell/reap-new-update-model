@@ -1,0 +1,1 @@
+{"command":["lake","env","lean","--version"],"returncode":0,"stderr":"","stdout":"Lean (version 4.28.0-rc1, x86_64-unknown-linux-gnu, commit 3b0f2862196c6a8af9eb0025ee650252694013dd, Release)\n"}

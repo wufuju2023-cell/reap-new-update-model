@@ -1,0 +1,5 @@
+{
+  "returncode": 0,
+  "stdout": "{\n  \"status\": 500,\n  \"text\": \"{\\\"error\\\":\\\"Failed to execute command\\\"}\"\n}\n",
+  "stderr": ""
+}

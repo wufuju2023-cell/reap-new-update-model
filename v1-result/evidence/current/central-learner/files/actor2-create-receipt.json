@@ -1,0 +1,88 @@
+{
+  "schema_version": "reap.gpu.session.v1",
+  "session_id": "central-actor-02",
+  "theorem_id": "87e0faa213a7af0d8074ed8e166152e22e0ff80b13607c6e6f2b34235c822883",
+  "lineage": {
+    "model_release_sha256": "4e10219542361bbe407a987094120c2920a0bf733b88773b7a9dd68a1e702ede",
+    "weights_sha256": "b1d79b8e53a2908124901c38ab4570972636eddbcf41821741cc5044ec0110d6",
+    "source": {
+      "checkpoint_sha256": "9fbdefb1eaba90c53d4efdf304e622d7d5c3ea67335d9a1d5d4bd3fdb0cbc409",
+      "learner_id": "central-verified",
+      "learner_step": 2,
+      "source_kind": "learner_checkpoint"
+    },
+    "reset": [
+      "optimizer",
+      "rng",
+      "buffer",
+      "policy_version",
+      "event_receipts"
+    ]
+  },
+  "completed": false,
+  "policy_version": 0,
+  "adapter_metadata": {
+    "kind": "lora",
+    "rank": 16,
+    "initial_equivalence_checked": false,
+    "initialized_from_experience": true,
+    "objective": "verified_success_replay"
+  },
+  "value_metadata": {
+    "objective": "verified_success_replay",
+    "value_semantics": "verified_negative_longest_branch_categorical.v1",
+    "base_tokenizer_sha256": "2ff73d37f6f4edad02f5c2e67bdabeeecef97a187b4747834e6acdf648980839",
+    "lora": {
+      "rank": 16,
+      "alpha": 32,
+      "dropout": 0.0,
+      "target_modules": [
+        "down_proj",
+        "gate_proj",
+        "k_proj",
+        "o_proj",
+        "q_proj",
+        "up_proj",
+        "v_proj"
+      ]
+    },
+    "eos_token_id": 151643,
+    "support": {
+      "distance_min": 1,
+      "distance_max": 64,
+      "return": "negative_integer_longest_generated_action_branch",
+      "overflow": "reject"
+    },
+    "head": "linear-silu-linear-categorical",
+    "hidden_size": 3584,
+    "value_loss": "categorical_cross_entropy_exact_integer_class",
+    "policy_loss": "mean_over_sampled_rows_of_joint_tactic_plus_one_EOS_negative_log_probability",
+    "tokenization": "canonical_tactic_separate_no_special_tokens_append_exactly_one_EOS",
+    "kl_reduction": "mean_over_sampled_rows_of_prefix_token_sum_current_to_frozen_base",
+    "max_sequence_tokens": 4096,
+    "max_batch_samples": 32,
+    "learning_rate": 0.0001,
+    "value_learning_rate": 0.0003,
+    "value_coefficient": 0.5,
+    "kl_beta": 0.02,
+    "max_grad_norm": 1.0,
+    "max_post_update_kl": 100.0,
+    "initialized_from_experience": true
+  },
+  "optimizer_metadata": {
+    "kind": "AdamW",
+    "steps": 0
+  },
+  "reference_metadata": {
+    "kind": "frozen_base",
+    "adapter_disabled": true
+  },
+  "buffer_metadata": {
+    "events": {},
+    "pending_event_ids": [],
+    "consumed_event_ids": []
+  },
+  "event_receipts": {},
+  "created_at": 1787857716.5033572,
+  "role": "actor"
+}

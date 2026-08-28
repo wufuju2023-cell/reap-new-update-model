@@ -1,0 +1,58 @@
+{
+  "blocking_findings_in_reviewed_scripts": [],
+  "checks": [
+    "Original fixed-image mode remains explicit; changed image requires rebind opt-in.",
+    "New environment/image/project/source guard pin produces new declaration/problem/execution identity; old receipts remain provenance, not current compilation proof.",
+    "Pending mode has no run SHA, attempts or accepted compilation receipt. Both actual offline version/module/closed-proposition preflights must finish successfully before runtime scheduler creation.",
+    "Finalization binds full original receipt bytes plus strict descriptors and source/environment hashes. Search/verify independently recompute the runtime-plan binding.",
+    "Run intent and per-container create intent are exclusive and retained on unknown outcomes. Container phase checks both Podman and container exit codes and requires Running false.",
+    "Existing or unknown volume lookup is refused; named volume, image, read-only bundle and phase-specific network are checked via inspect. No automatic cleanup or retry.",
+    "Finally export may capture a failed or still-running unknown phase; it is not itself success. Final success requires campaign ok and outer run-exit0.",
+    "GPU server CLI is only parsed locally; no model load, GPU or network performed by those tests."
+  ],
+  "limits": [
+    "New-image preflight protocol tested using synthetic receipt fixtures; no new image compatibility or real Lean/GPU campaign has been accepted here.",
+    "Operator-owned immutable bundle and single-writer output are required; configured deployment labels are not authentication.",
+    "CPU image source/archive completeness is audited separately; this receipt covers the portable scripts and their pinned test evidence, not rebuilding the Docker image."
+  ],
+  "receipt_sha256": "49bd622ca9aff2bff1099c1354d10f84ed8f67d454fef65bef32d12ec752c2a7",
+  "reviewed": [
+    "portable_lean.py",
+    "lean_campaign/binding.py",
+    "lean_campaign/campaign.py",
+    "lean_campaign/container_job.py",
+    "test_portable_lean.py"
+  ],
+  "reviewer": "concurrency",
+  "schema_version": "reap.portable-lean.independent-review.v1",
+  "source_sha256": {
+    "v1-result/source/current/lean_campaign/README.md": "0253689f82d27ab9efd69aee95273cdc065bacbbec62814295a594acb00ca372",
+    "v1-result/source/current/lean_campaign/binding.py": "389fdd826bfe71ec60a3fc8d2ef257eb614854b97c4c63cb1f4e57b7e0a6e2ff",
+    "v1-result/source/current/lean_campaign/campaign.py": "e196c9acef96e077d97cae80e18e7b8b2f9c01c8eb7069504ff155e3850cab74",
+    "v1-result/source/current/lean_campaign/container_job.py": "2385d24263cc86f64cca91bdf73b265a4ca48fc3575c00378847c266c729e663",
+    "v1-result/source/current/lean_campaign/inputs/declarations.lean": "f898205b30b61dad4a106db40f80d58fe13b21651d7717f605e335bac4898097",
+    "v1-result/source/current/lean_campaign/inputs/environment.json": "1b75b2584417fc280d208dfe68819f2610f80e6b0f9f6ae4cae60abd1590d1a3",
+    "v1-result/source/current/lean_campaign/inputs/false-negative/attempt.lean": "647e6f6d83ac00b562d54b8cf60d3d7a5f975b00afc574c3dbe3676f93f7862c",
+    "v1-result/source/current/lean_campaign/inputs/false-negative/preflight.lean": "623f97b1cb41aab425e77c1cd845bf7a5bc1e05fbec65e14dbe2f4a48087ce10",
+    "v1-result/source/current/lean_campaign/inputs/false-negative/receipt.json": "58060101b05501f0b891d1d873eb209e7c9105015933878797bd4e6a0bf8d515",
+    "v1-result/source/current/lean_campaign/inputs/false-negative/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "v1-result/source/current/lean_campaign/inputs/false-negative/stdout.log": "cdd3008c3e856e748ead8aa99e027161d020daba4a61d6806cffbce2d5202450",
+    "v1-result/source/current/lean_campaign/inputs/true-positive/attempt.lean": "56d2d40592bc9bf475958d05e22d0e5589594082b5d6a5c8fec847f22e72493b",
+    "v1-result/source/current/lean_campaign/inputs/true-positive/preflight.lean": "f863e981b81dd7f3030ea321eab610fef096528be173335f3d5b9858cd7712f7",
+    "v1-result/source/current/lean_campaign/inputs/true-positive/receipt.json": "0fab86b92b1f95524109a1cc361314eb3f0599044507b2a40e0713008042c859",
+    "v1-result/source/current/lean_campaign/inputs/true-positive/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "v1-result/source/current/lean_campaign/inputs/true-positive/stdout.log": "cdd3008c3e856e748ead8aa99e027161d020daba4a61d6806cffbce2d5202450",
+    "v1-result/source/current/lean_campaign/plan-template.json": "03921ba20365e820779ea1322b79c1e0576b1882383f0d4637d72b960cf9a4bb",
+    "v1-result/source/current/lean_campaign/template-manifest.json": "6be68a515a86a4a5a93791cf547cd7a5e77298616b5ec4949b6eb00b0f57544c",
+    "v1-result/source/current/portable_lean.py": "077e27a569f90d9b7310692e89483c0a779126d1f07953e8608fad5971c4fdd3",
+    "v1-result/source/current/test_portable_lean.py": "6738b9fcd914feef2e4b460a6542f763c047db9b12a3e421699c3c19c44b4e29"
+  },
+  "validation": {
+    "Lean_or_GPU_or_Podman_run_by_reviewer": false,
+    "all_passed_as_recorded": true,
+    "test_logs_rehashed": true,
+    "tests_rerun_by_reviewer": false,
+    "windows_tests": 14,
+    "wsl_tests": 14
+  }
+}

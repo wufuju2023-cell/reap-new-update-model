@@ -1,0 +1,87 @@
+{
+  "schema_version": "reap.evidence-stage.v1",
+  "source_directory": "current-delivery-checks-20260828",
+  "archive": {
+    "file": "raw.zip",
+    "bytes": 27176,
+    "sha256": "f05a733227e85479a812ead6c2900f0791bf7f16d9514c265a14c8e50778fa15"
+  },
+  "files": {
+    ".delivery-copy-review.json": {
+      "bytes": 13659,
+      "sha256": "a71f6df15713659d38688022fb92f277207e073f096560be791968bd1db7866c"
+    },
+    "package-tools-windows-receipt.json": {
+      "bytes": 237,
+      "sha256": "3040406797d6c5538beebb274bea13444e1b53c1bfae44b32277a59c154b19d0"
+    },
+    "package-tools-windows.log": {
+      "bytes": 1705,
+      "sha256": "ad87bc9562663a754a8bf4785201e6f3d2e8937e4fdd96488b7f9c5dfe02e2a0"
+    },
+    "package-tools-wsl-receipt.json": {
+      "bytes": 233,
+      "sha256": "23fc4f71475c3196015bb196269c5e645d518478e1edadf7b4ce696aafaa9f5d"
+    },
+    "package-tools-wsl.log": {
+      "bytes": 1652,
+      "sha256": "102d4c942de207e3e9013764de1452da27f77251cc816991cf7e118d799aa1a3"
+    },
+    "source-before-packaging-fix-manifest.json": {
+      "bytes": 30440,
+      "sha256": "c962580d9ddeb276ff4a58042aa9e04c7d1d453db297027ba2aff8499489b03c"
+    },
+    "source-delivery-receipt.json": {
+      "bytes": 300,
+      "sha256": "9ddd91d3c4fcc288b0c6a9bceec45806e92a2eb2d8e1937e4afc49e4ba3c947f"
+    },
+    "source-delivery-tests.log": {
+      "bytes": 3372,
+      "sha256": "231f27d7023a27718adacd1964c2fa6e0ca200b729203f939ec75665ee1b3eb6"
+    },
+    "source-final-receipt.json": {
+      "bytes": 275,
+      "sha256": "bcc43699e557d39b4e21c46d02da0a68ffe8becbd8aa9aa1047400afe80b6102"
+    },
+    "source-final-tests.log": {
+      "bytes": 3371,
+      "sha256": "1af6bd3f562d360ca08304c4b5a0be71c772c2431b9b0bc049392298fb3005fb"
+    },
+    "source-final-tools-receipt.json": {
+      "bytes": 862,
+      "sha256": "511943277ae5f6ca51bdcb34e1fbeeaa5c0645adab2bb1c5f694e9424aaa134a"
+    },
+    "source-final-tools-tests.log": {
+      "bytes": 56537,
+      "sha256": "78d25d1648b955777fe7e9be99c038bbcedf731f6e98ab103dabbe68190df5f3"
+    },
+    "source-tools-only-receipt.json": {
+      "bytes": 606,
+      "sha256": "07ebd2eb623d681acdc81ebb71445465496373b6ab3d962cede71140517c2e49"
+    },
+    "source-tools-only-tests.log": {
+      "bytes": 187,
+      "sha256": "a4733fce314f573a645f6e5a526b941cd96efb567520123c80c4aba4cfac82df"
+    },
+    "source-tools-wsl-receipt.json": {
+      "bytes": 593,
+      "sha256": "c6161864135902b35ac15e973d5288e69de6aeb9fa4ea56e97defdb4bcd0ba8e"
+    },
+    "source-tools-wsl-tests.log": {
+      "bytes": 170,
+      "sha256": "f8419ce7b343f2cba16bcdd67bc1190416698e04aedcc18490ff726ce3fa4bcd"
+    }
+  },
+  "loose_files": {
+    ".delivery-copy-review.json": "a71f6df15713659d38688022fb92f277207e073f096560be791968bd1db7866c",
+    "package-tools-windows-receipt.json": "3040406797d6c5538beebb274bea13444e1b53c1bfae44b32277a59c154b19d0",
+    "package-tools-wsl-receipt.json": "23fc4f71475c3196015bb196269c5e645d518478e1edadf7b4ce696aafaa9f5d",
+    "source-before-packaging-fix-manifest.json": "c962580d9ddeb276ff4a58042aa9e04c7d1d453db297027ba2aff8499489b03c",
+    "source-delivery-receipt.json": "9ddd91d3c4fcc288b0c6a9bceec45806e92a2eb2d8e1937e4afc49e4ba3c947f",
+    "source-final-receipt.json": "bcc43699e557d39b4e21c46d02da0a68ffe8becbd8aa9aa1047400afe80b6102",
+    "source-final-tools-receipt.json": "511943277ae5f6ca51bdcb34e1fbeeaa5c0645adab2bb1c5f694e9424aaa134a",
+    "source-tools-only-receipt.json": "07ebd2eb623d681acdc81ebb71445465496373b6ab3d962cede71140517c2e49",
+    "source-tools-wsl-receipt.json": "c6161864135902b35ac15e973d5288e69de6aeb9fa4ea56e97defdb4bcd0ba8e"
+  },
+  "excluded": "7B weights, large tensor snapshots, credentials, browser state"
+}

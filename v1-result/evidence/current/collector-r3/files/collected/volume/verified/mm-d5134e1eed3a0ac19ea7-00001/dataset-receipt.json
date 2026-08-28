@@ -1,0 +1,11 @@
+{
+  "status": "installed",
+  "dataset_sha256": "33a3be06d72cacd9dfa78c5e3f82465f3e1f6ccbf12506fad67fd423a93114ad",
+  "path": "/campaign/dataset-store/33a3be06d72cacd9dfa78c5e3f82465f3e1f6ccbf12506fad67fd423a93114ad",
+  "schema_version": "reap.collector-verify.dataset-install.v1",
+  "verification_profile": "verified-release-collector-v1",
+  "model_release_sha256": "0103155583b260c7863ea58bbf2d3377444c272db0ea4f3a75dd49c40b65c98e",
+  "execution_source_sha256": "647e6f6d83ac00b562d54b8cf60d3d7a5f975b00afc574c3dbe3676f93f7862c",
+  "proof_receipt_sha256": "cb95373b83bc51e12e1fb9f254865562263c6bb15575afd2914f00216c55dcaf",
+  "replay_receipt_sha256": "b4be95b9f54996c389ffdfa66982a52cb722cad9effb0b38cae4e66425c4a848"
+}

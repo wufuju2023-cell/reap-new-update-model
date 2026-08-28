@@ -1,0 +1,1039 @@
+{
+  "report": {
+    "ok": true,
+    "schema_version": "reap.multiround-snapshot-cpu-audit.v1",
+    "collected_at_epoch": 1787847464.3058085,
+    "sessions": [
+      {
+        "session_id": "experience-source-01",
+        "before": {
+          "path": "/mnt/workspace/reap-ttt-20260828-experience/source-snapshots/experience-source-01/before-online-ttt",
+          "manifest_sha256": "8913ee48d44aa1cb1afad7e9eedc17eb988b87ca75d0a4c028bef25ab3d5457f",
+          "manifest": {
+            "files": {
+              "backend.json": {
+                "bytes": 112746948,
+                "sha256": "3d69528b8c1b99288a4192bc0d628d07038b8f3337bc500e47646c6c461f4417"
+              },
+              "session.json": {
+                "bytes": 1178,
+                "sha256": "45cc58ed2b329de18cfcc567d49bf368b6b3c6186eb3b6d00ab5cb190e3d5e25"
+              }
+            },
+            "schema_version": "reap.gpu.snapshot.v1",
+            "session_id": "experience-source-01",
+            "snapshot": "before-online-ttt"
+          },
+          "state": {
+            "adapter_metadata": {
+              "initial_equivalent_to_base": true,
+              "kind": "lora",
+              "objective": "search_visit_backup",
+              "rank": 16
+            },
+            "buffer_metadata": {
+              "consumed_event_ids": [],
+              "events": {},
+              "pending_event_ids": []
+            },
+            "completed": false,
+            "created_at": 1787847182.879046,
+            "event_receipts": {},
+            "lineage": {},
+            "optimizer_metadata": {
+              "kind": "AdamW",
+              "steps": 0
+            },
+            "policy_version": 0,
+            "reference_metadata": {
+              "adapter_disabled": true,
+              "kind": "frozen_base"
+            },
+            "schema_version": "reap.gpu.session.v1",
+            "session_id": "experience-source-01",
+            "theorem_id": "1c934ede5d3f068c24d12dc19d4b887078e5d17904cb690f022044714cf244e0",
+            "value_metadata": {
+              "gamma": 0.99,
+              "head": "sigmoid",
+              "hidden_size": 3584,
+              "kl_beta": 0.02,
+              "kl_reduction": "visit_weighted_sum_of_prefix_next_token_KL_current_to_frozen_base",
+              "learning_rate": 0.0001,
+              "lora_rank": 16,
+              "max_candidates": 64,
+              "max_distance": 1375.6317296601653,
+              "max_grad_norm": 1.0,
+              "max_sequence_tokens": 4096,
+              "objective": "search_visit_backup",
+              "policy_reduction": "visit_weighted_joint_token_sum",
+              "tokenization": "canonical_tactic_separate_tokenization_no_implicit_EOS_joint_token_sum",
+              "value_coefficient": 0.5,
+              "value_floor": 1e-06,
+              "value_learning_rate": 0.0003,
+              "value_semantics": "reap.search_backup_discounted_return.v1"
+            }
+          },
+          "backend_metadata": {
+            "encoding": "torch-save-base64",
+            "schema_version": "reap.gpu.real-search-backend.v1",
+            "search_config": {
+              "gamma": 0.99,
+              "head": "sigmoid",
+              "hidden_size": 3584,
+              "kl_beta": 0.02,
+              "kl_reduction": "visit_weighted_sum_of_prefix_next_token_KL_current_to_frozen_base",
+              "learning_rate": 0.0001,
+              "lora_rank": 16,
+              "max_candidates": 64,
+              "max_distance": 1375.6317296601653,
+              "max_grad_norm": 1.0,
+              "max_sequence_tokens": 4096,
+              "objective": "search_visit_backup",
+              "policy_reduction": "visit_weighted_joint_token_sum",
+              "tokenization": "canonical_tactic_separate_tokenization_no_implicit_EOS_joint_token_sum",
+              "value_coefficient": 0.5,
+              "value_floor": 1e-06,
+              "value_learning_rate": 0.0003,
+              "value_semantics": "reap.search_backup_discounted_return.v1"
+            },
+            "session_id": "experience-source-01"
+          },
+          "groups": {
+            "adapter": {
+              "sha256": "40ab030bf448e5933481985d1d3fa530afd2d5f31d9adf3b904ef2dec94a0d63",
+              "tensor_count": 392
+            },
+            "value_head": {
+              "sha256": "bdeddd7daf6b789f371f2b3f363222d0cf3de8b7bcc99e59833393db8b2e423c",
+              "tensor_count": 4
+            },
+            "optimizer": {
+              "sha256": "1a58fbaf42bac7f3d5568777b25308d2822c113921809b8fb03fd1fcb3f83b8a",
+              "tensor_count": 0
+            },
+            "rng_counters": {
+              "sha256": "81f8f431748d68348cbf18e581a5d9bcc431a379275cb614627c4e23d4256581",
+              "tensor_count": 2
+            }
+          },
+          "all_tensors_finite": true,
+          "optimizer_steps": 0,
+          "examples_seen": 0,
+          "optimizer_state_steps": [],
+          "lora_B_nonzero_tensors": 0,
+          "lora_B_tensor_count": 196,
+          "rng_seed": 6453621056743959171
+        },
+        "after": {
+          "path": "/mnt/workspace/reap-ttt-20260828-experience/source-snapshots/experience-source-01/after-online-ttt",
+          "manifest_sha256": "8eba6d7e760c78c505343e7415bb9e62a0e36984ef569b0a915b475312a16980",
+          "manifest": {
+            "files": {
+              "backend.json": {
+                "bytes": 338294556,
+                "sha256": "4f960953a2509c083851c8faea9adaf5f0bd5407deb4d356373b7b3a2201bb6e"
+              },
+              "session.json": {
+                "bytes": 9736,
+                "sha256": "df685c11b734671d33a7232a3e345135c19848f2225f8eef23bf4340a027a5ac"
+              }
+            },
+            "schema_version": "reap.gpu.snapshot.v1",
+            "session_id": "experience-source-01",
+            "snapshot": "after-online-ttt"
+          },
+          "state": {
+            "adapter_metadata": {
+              "examples_seen": 2,
+              "kind": "lora",
+              "objective": "search_visit_backup",
+              "rank": 16
+            },
+            "buffer_metadata": {
+              "consumed_event_ids": [
+                "experience-source-01.s13.n0",
+                "experience-source-01.s14.n1"
+              ],
+              "events": {
+                "experience-source-01.s13.n0": {
+                  "digest": "8cb817a0e965c14249713dd81937a521f0e4e4c0723da719d4969affad1c5a98",
+                  "policy_version": 0,
+                  "status": "consumed"
+                },
+                "experience-source-01.s14.n1": {
+                  "digest": "8c232add5739c0c25b711a6c31c11ca22bc3ec5c90f5335d07d3b1ae28dc5138",
+                  "policy_version": 1,
+                  "status": "consumed"
+                }
+              },
+              "pending_event_ids": []
+            },
+            "completed": false,
+            "created_at": 1787847182.879046,
+            "event_receipts": {
+              "experience-source-01.s13.n0": {
+                "digest": "8cb817a0e965c14249713dd81937a521f0e4e4c0723da719d4969affad1c5a98",
+                "response": {
+                  "applied": true,
+                  "detail": {
+                    "base_content_hash_checked": false,
+                    "base_parameters_frozen": true,
+                    "candidate_targets": [
+                      {
+                        "behavior_version": 0,
+                        "joint_token_nll": 4.412448883056641,
+                        "prefix_kl_sum": 0.0,
+                        "raw_logprob": -4.414157111066743,
+                        "tactic": "intro n",
+                        "target_probability": 1.0,
+                        "target_tokens": 2,
+                        "trained": true,
+                        "visits": 1
+                      }
+                    ],
+                    "finite_gradients": true,
+                    "finite_loss": true,
+                    "finite_optimizer_state": true,
+                    "finite_parameters": true,
+                    "grad_norm": 86.51692199707031,
+                    "kl": 0.0,
+                    "loss": 4.41244954995318,
+                    "objective": "search_visit_backup",
+                    "optimizer_steps": 1,
+                    "parameter_diffs": {
+                      "adapter": {
+                        "added_tensors": 0,
+                        "after_sha256": "0488e458cd6f3713c04a62ac30ff435ddc7dd9b3babe2a4ff37260c44d2af0b4",
+                        "after_tensors": 392,
+                        "before_sha256": "40ab030bf448e5933481985d1d3fa530afd2d5f31d9adf3b904ef2dec94a0d63",
+                        "before_tensors": 392,
+                        "changed_names_sample": [
+                          "/base_model.model.model.layers.0.mlp.down_proj.lora_B.weight",
+                          "/base_model.model.model.layers.0.mlp.gate_proj.lora_B.weight",
+                          "/base_model.model.model.layers.0.mlp.up_proj.lora_B.weight",
+                          "/base_model.model.model.layers.0.self_attn.k_proj.lora_B.weight"
+                        ],
+                        "changed_tensors": 196,
+                        "diff_manifest_sha256": "fc1a3a63044ddd9acf30089637fe1348f0f8c7fa61b75da40f8a9bcbbe5edbf9",
+                        "removed_tensors": 0
+                      },
+                      "optimizer": {
+                        "added_tensors": 1188,
+                        "after_sha256": "2cdc6969cd7fda28e6f893ffd5f84f966426ed730c155f5fa5597375fd132b65",
+                        "after_tensors": 1188,
+                        "before_sha256": "1a58fbaf42bac7f3d5568777b25308d2822c113921809b8fb03fd1fcb3f83b8a",
+                        "before_tensors": 0,
+                        "changed_names_sample": [],
+                        "changed_tensors": 0,
+                        "diff_manifest_sha256": "1a20aeb465b7b60a7172d69145c2887d63fc3750b912439f9ab4e7146a8439ae",
+                        "removed_tensors": 0
+                      },
+                      "rng_counters": {
+                        "added_tensors": 0,
+                        "after_sha256": "bdc0231a09902af751c413a429eac8dc2b5d3e831a82c9fa7a6accc36625433a",
+                        "after_tensors": 2,
+                        "before_sha256": "0194fa908bcae6d8739471711f2a4cfbf514d40b683457932169f752456bbdcd",
+                        "before_tensors": 2,
+                        "changed_names_sample": [],
+                        "changed_tensors": 0,
+                        "diff_manifest_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+                        "removed_tensors": 0
+                      },
+                      "value_head": {
+                        "added_tensors": 0,
+                        "after_sha256": "f674406305ec2103ac086e495eb00184b47a709147228e96f0215745ef36cebf",
+                        "after_tensors": 4,
+                        "before_sha256": "bdeddd7daf6b789f371f2b3f363222d0cf3de8b7bcc99e59833393db8b2e423c",
+                        "before_tensors": 4,
+                        "changed_names_sample": [
+                          "/0.bias",
+                          "/0.weight",
+                          "/2.bias",
+                          "/2.weight"
+                        ],
+                        "changed_tensors": 4,
+                        "diff_manifest_sha256": "6476f49a5b6d75f9a0acb67927f292481326fd83819851045700a153d1b87486",
+                        "removed_tensors": 0
+                      }
+                    },
+                    "policy_loss": 4.412448883056641,
+                    "prompt_sha256": "cbcbddb5566a72777289c634c09c4e4e1a541616b40ea50e9ff8855954b07cf5",
+                    "reward": 0.0,
+                    "search_trace": {
+                      "gamma": 0.99,
+                      "node_index": 0,
+                      "policy_version": 0,
+                      "step": 13,
+                      "terminal_verified": false,
+                      "tree_id": "experience-source-01.tree0",
+                      "value_trace": {
+                        "aggregation": "exp_of_mean_negative_distance_not_mean_return",
+                        "distance": 54.01228400077452,
+                        "distance_before_roundoff_clip": 54.01228400077452,
+                        "floor_clipped": false,
+                        "roundoff_clipped": false,
+                        "source_kind": "OR",
+                        "source_value_sum": -756.1719760108433,
+                        "source_visits": 14,
+                        "target": 0.5869643118283483,
+                        "unclipped_target": 0.5869643118283483,
+                        "value_floor": 1e-06,
+                        "value_semantics": "reap.search_backup_discounted_return.v1"
+                      }
+                    },
+                    "training_config": {
+                      "gamma": 0.99,
+                      "head": "sigmoid",
+                      "hidden_size": 3584,
+                      "kl_beta": 0.02,
+                      "kl_reduction": "visit_weighted_sum_of_prefix_next_token_KL_current_to_frozen_base",
+                      "learning_rate": 0.0001,
+                      "lora_rank": 16,
+                      "max_candidates": 64,
+                      "max_distance": 1375.6317296601653,
+                      "max_grad_norm": 1.0,
+                      "max_sequence_tokens": 4096,
+                      "objective": "search_visit_backup",
+                      "policy_reduction": "visit_weighted_joint_token_sum",
+                      "tokenization": "canonical_tactic_separate_tokenization_no_implicit_EOS_joint_token_sum",
+                      "value_coefficient": 0.5,
+                      "value_floor": 1e-06,
+                      "value_learning_rate": 0.0003,
+                      "value_semantics": "reap.search_backup_discounted_return.v1"
+                    },
+                    "value_before": 0.5858094096183777,
+                    "value_loss": 1.3337930795387365e-06,
+                    "value_target": 0.5869643118283483
+                  },
+                  "event_id": "experience-source-01.s13.n0",
+                  "idempotent": false,
+                  "policy_version": 1
+                }
+              },
+              "experience-source-01.s14.n1": {
+                "digest": "8c232add5739c0c25b711a6c31c11ca22bc3ec5c90f5335d07d3b1ae28dc5138",
+                "response": {
+                  "applied": true,
+                  "detail": {
+                    "base_content_hash_checked": false,
+                    "base_parameters_frozen": true,
+                    "candidate_targets": [
+                      {
+                        "behavior_version": 0,
+                        "joint_token_nll": 2.2003860473632812,
+                        "prefix_kl_sum": 0.05083312466740608,
+                        "raw_logprob": -1.570215279207332,
+                        "tactic": "induction n <;> simp_all [hfstep, hgstep]",
+                        "target_probability": 1.0,
+                        "target_tokens": 15,
+                        "trained": true,
+                        "visits": 1
+                      }
+                    ],
+                    "finite_gradients": true,
+                    "finite_loss": true,
+                    "finite_optimizer_state": true,
+                    "finite_parameters": true,
+                    "grad_norm": 26.037155151367188,
+                    "kl": 0.05083312466740608,
+                    "loss": 2.2426996762305498,
+                    "objective": "search_visit_backup",
+                    "optimizer_steps": 2,
+                    "parameter_diffs": {
+                      "adapter": {
+                        "added_tensors": 0,
+                        "after_sha256": "86c1ee175be6f5e717c5d0aba358d3ed94ba6a409a6fad86123ebbd1e47913b0",
+                        "after_tensors": 392,
+                        "before_sha256": "0488e458cd6f3713c04a62ac30ff435ddc7dd9b3babe2a4ff37260c44d2af0b4",
+                        "before_tensors": 392,
+                        "changed_names_sample": [
+                          "/base_model.model.model.layers.0.mlp.down_proj.lora_A.weight",
+                          "/base_model.model.model.layers.0.mlp.down_proj.lora_B.weight",
+                          "/base_model.model.model.layers.0.mlp.gate_proj.lora_A.weight",
+                          "/base_model.model.model.layers.0.mlp.gate_proj.lora_B.weight"
+                        ],
+                        "changed_tensors": 392,
+                        "diff_manifest_sha256": "7179e2acbb0b7eb3968631a73a8a945e3509a1b6af04af21fb2a02b7a696df49",
+                        "removed_tensors": 0
+                      },
+                      "optimizer": {
+                        "added_tensors": 0,
+                        "after_sha256": "0036e951046b9ccd22b11dcc32db5d0fdb7a5240ff876ef74d7e172957ce773d",
+                        "after_tensors": 1188,
+                        "before_sha256": "2cdc6969cd7fda28e6f893ffd5f84f966426ed730c155f5fa5597375fd132b65",
+                        "before_tensors": 1188,
+                        "changed_names_sample": [
+                          "/state/0/exp_avg",
+                          "/state/0/exp_avg_sq",
+                          "/state/0/step",
+                          "/state/1/exp_avg"
+                        ],
+                        "changed_tensors": 1188,
+                        "diff_manifest_sha256": "7e03d697de04588a39f559cc8272042ff174f32718228ca18c140db2c6186a41",
+                        "removed_tensors": 0
+                      },
+                      "rng_counters": {
+                        "added_tensors": 0,
+                        "after_sha256": "ac682859359449e58a3e345633751268a45887bcc4f73b5f770fa13c8b7f73a6",
+                        "after_tensors": 2,
+                        "before_sha256": "4e66d505ad011d4c5e65f4786a443ed11deca3d89fec54d8c20f45c9e6375703",
+                        "before_tensors": 2,
+                        "changed_names_sample": [],
+                        "changed_tensors": 0,
+                        "diff_manifest_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+                        "removed_tensors": 0
+                      },
+                      "value_head": {
+                        "added_tensors": 0,
+                        "after_sha256": "f90e1fdff85c153e99d5769ac8ea91bf3032cc4f47d3bbdb728a9437b4f32fff",
+                        "after_tensors": 4,
+                        "before_sha256": "f674406305ec2103ac086e495eb00184b47a709147228e96f0215745ef36cebf",
+                        "before_tensors": 4,
+                        "changed_names_sample": [
+                          "/0.bias",
+                          "/0.weight",
+                          "/2.bias",
+                          "/2.weight"
+                        ],
+                        "changed_tensors": 4,
+                        "diff_manifest_sha256": "00f9cc0dbb7ac27f33c22e4f44d0d4e8c42e5892538574d159b4ee8377218988",
+                        "removed_tensors": 0
+                      }
+                    },
+                    "policy_loss": 2.2003860473632812,
+                    "prompt_sha256": "32acc0897a1c9c79012d78830dd2306b2f851fd70a270019e04d8af524fc0667",
+                    "reward": 0.0,
+                    "search_trace": {
+                      "gamma": 0.99,
+                      "node_index": 1,
+                      "policy_version": 1,
+                      "step": 14,
+                      "terminal_verified": false,
+                      "tree_id": "experience-source-01.tree0",
+                      "value_trace": {
+                        "aggregation": "exp_of_mean_negative_distance_not_mean_return",
+                        "distance": 35.685727085832,
+                        "distance_before_roundoff_clip": 35.685727085832,
+                        "floor_clipped": false,
+                        "roundoff_clipped": false,
+                        "source_kind": "OR",
+                        "source_value_sum": -71.371454171664,
+                        "source_visits": 2,
+                        "target": 0.7056730811916211,
+                        "unclipped_target": 0.7056730811916211,
+                        "value_floor": 1e-06,
+                        "value_semantics": "reap.search_backup_discounted_return.v1"
+                      }
+                    },
+                    "training_config": {
+                      "gamma": 0.99,
+                      "head": "sigmoid",
+                      "hidden_size": 3584,
+                      "kl_beta": 0.02,
+                      "kl_reduction": "visit_weighted_sum_of_prefix_next_token_KL_current_to_frozen_base",
+                      "learning_rate": 0.0001,
+                      "lora_rank": 16,
+                      "max_candidates": 64,
+                      "max_distance": 1375.6317296601653,
+                      "max_grad_norm": 1.0,
+                      "max_sequence_tokens": 4096,
+                      "objective": "search_visit_backup",
+                      "policy_reduction": "visit_weighted_joint_token_sum",
+                      "tokenization": "canonical_tactic_separate_tokenization_no_implicit_EOS_joint_token_sum",
+                      "value_coefficient": 0.5,
+                      "value_floor": 1e-06,
+                      "value_learning_rate": 0.0003,
+                      "value_semantics": "reap.search_backup_discounted_return.v1"
+                    },
+                    "value_before": 0.9930647015571594,
+                    "value_loss": 0.08259393274784088,
+                    "value_target": 0.7056730811916211
+                  },
+                  "event_id": "experience-source-01.s14.n1",
+                  "idempotent": false,
+                  "policy_version": 2
+                }
+              }
+            },
+            "lineage": {},
+            "optimizer_metadata": {
+              "kind": "AdamW",
+              "steps": 2
+            },
+            "policy_version": 2,
+            "reference_metadata": {
+              "adapter_disabled": true,
+              "kind": "frozen_base"
+            },
+            "schema_version": "reap.gpu.session.v1",
+            "session_id": "experience-source-01",
+            "theorem_id": "1c934ede5d3f068c24d12dc19d4b887078e5d17904cb690f022044714cf244e0",
+            "value_metadata": {
+              "gamma": 0.99,
+              "head": "sigmoid",
+              "hidden_size": 3584,
+              "kl_beta": 0.02,
+              "kl_reduction": "visit_weighted_sum_of_prefix_next_token_KL_current_to_frozen_base",
+              "last_loss": 0.08259393274784088,
+              "learning_rate": 0.0001,
+              "lora_rank": 16,
+              "max_candidates": 64,
+              "max_distance": 1375.6317296601653,
+              "max_grad_norm": 1.0,
+              "max_sequence_tokens": 4096,
+              "objective": "search_visit_backup",
+              "policy_reduction": "visit_weighted_joint_token_sum",
+              "tokenization": "canonical_tactic_separate_tokenization_no_implicit_EOS_joint_token_sum",
+              "value_coefficient": 0.5,
+              "value_floor": 1e-06,
+              "value_learning_rate": 0.0003,
+              "value_semantics": "reap.search_backup_discounted_return.v1"
+            }
+          },
+          "backend_metadata": {
+            "encoding": "torch-save-base64",
+            "schema_version": "reap.gpu.real-search-backend.v1",
+            "search_config": {
+              "gamma": 0.99,
+              "head": "sigmoid",
+              "hidden_size": 3584,
+              "kl_beta": 0.02,
+              "kl_reduction": "visit_weighted_sum_of_prefix_next_token_KL_current_to_frozen_base",
+              "learning_rate": 0.0001,
+              "lora_rank": 16,
+              "max_candidates": 64,
+              "max_distance": 1375.6317296601653,
+              "max_grad_norm": 1.0,
+              "max_sequence_tokens": 4096,
+              "objective": "search_visit_backup",
+              "policy_reduction": "visit_weighted_joint_token_sum",
+              "tokenization": "canonical_tactic_separate_tokenization_no_implicit_EOS_joint_token_sum",
+              "value_coefficient": 0.5,
+              "value_floor": 1e-06,
+              "value_learning_rate": 0.0003,
+              "value_semantics": "reap.search_backup_discounted_return.v1"
+            },
+            "session_id": "experience-source-01"
+          },
+          "groups": {
+            "adapter": {
+              "sha256": "86c1ee175be6f5e717c5d0aba358d3ed94ba6a409a6fad86123ebbd1e47913b0",
+              "tensor_count": 392
+            },
+            "value_head": {
+              "sha256": "f90e1fdff85c153e99d5769ac8ea91bf3032cc4f47d3bbdb728a9437b4f32fff",
+              "tensor_count": 4
+            },
+            "optimizer": {
+              "sha256": "0036e951046b9ccd22b11dcc32db5d0fdb7a5240ff876ef74d7e172957ce773d",
+              "tensor_count": 1188
+            },
+            "rng_counters": {
+              "sha256": "0069aa88661074f570e6d5f140be520e17ad9563e1f6fb2bd979a3f2f270b45f",
+              "tensor_count": 2
+            }
+          },
+          "all_tensors_finite": true,
+          "optimizer_steps": 2,
+          "examples_seen": 2,
+          "optimizer_state_steps": [
+            2.0
+          ],
+          "lora_B_nonzero_tensors": 196,
+          "lora_B_tensor_count": 196,
+          "rng_seed": 6453621056743959171
+        },
+        "candidate": {
+          "path": "/mnt/workspace/reap-ttt-20260828-experience/source-snapshots/experience-source-01/experience-candidate",
+          "manifest_sha256": "759661e4477bbeff353bc7e1c7e90e4e86f8ec07f38d19a044e14347c20a1402",
+          "manifest": {
+            "files": {
+              "backend.json": {
+                "bytes": 338295533,
+                "sha256": "b6ebf01c7b247b4cee1711ab3e79fd120ba1edb54a432cf54ca142dd015cbc1a"
+              },
+              "session.json": {
+                "bytes": 9735,
+                "sha256": "4281405a860b0d80da0857196f2688da29fe77e5b0696705947697be78f32162"
+              }
+            },
+            "schema_version": "reap.gpu.snapshot.v1",
+            "session_id": "experience-source-01",
+            "snapshot": "experience-candidate"
+          },
+          "state": {
+            "adapter_metadata": {
+              "examples_seen": 2,
+              "kind": "lora",
+              "objective": "search_visit_backup",
+              "rank": 16
+            },
+            "buffer_metadata": {
+              "consumed_event_ids": [
+                "experience-source-01.s13.n0",
+                "experience-source-01.s14.n1"
+              ],
+              "events": {
+                "experience-source-01.s13.n0": {
+                  "digest": "8cb817a0e965c14249713dd81937a521f0e4e4c0723da719d4969affad1c5a98",
+                  "policy_version": 0,
+                  "status": "consumed"
+                },
+                "experience-source-01.s14.n1": {
+                  "digest": "8c232add5739c0c25b711a6c31c11ca22bc3ec5c90f5335d07d3b1ae28dc5138",
+                  "policy_version": 1,
+                  "status": "consumed"
+                }
+              },
+              "pending_event_ids": []
+            },
+            "completed": true,
+            "created_at": 1787847182.879046,
+            "event_receipts": {
+              "experience-source-01.s13.n0": {
+                "digest": "8cb817a0e965c14249713dd81937a521f0e4e4c0723da719d4969affad1c5a98",
+                "response": {
+                  "applied": true,
+                  "detail": {
+                    "base_content_hash_checked": false,
+                    "base_parameters_frozen": true,
+                    "candidate_targets": [
+                      {
+                        "behavior_version": 0,
+                        "joint_token_nll": 4.412448883056641,
+                        "prefix_kl_sum": 0.0,
+                        "raw_logprob": -4.414157111066743,
+                        "tactic": "intro n",
+                        "target_probability": 1.0,
+                        "target_tokens": 2,
+                        "trained": true,
+                        "visits": 1
+                      }
+                    ],
+                    "finite_gradients": true,
+                    "finite_loss": true,
+                    "finite_optimizer_state": true,
+                    "finite_parameters": true,
+                    "grad_norm": 86.51692199707031,
+                    "kl": 0.0,
+                    "loss": 4.41244954995318,
+                    "objective": "search_visit_backup",
+                    "optimizer_steps": 1,
+                    "parameter_diffs": {
+                      "adapter": {
+                        "added_tensors": 0,
+                        "after_sha256": "0488e458cd6f3713c04a62ac30ff435ddc7dd9b3babe2a4ff37260c44d2af0b4",
+                        "after_tensors": 392,
+                        "before_sha256": "40ab030bf448e5933481985d1d3fa530afd2d5f31d9adf3b904ef2dec94a0d63",
+                        "before_tensors": 392,
+                        "changed_names_sample": [
+                          "/base_model.model.model.layers.0.mlp.down_proj.lora_B.weight",
+                          "/base_model.model.model.layers.0.mlp.gate_proj.lora_B.weight",
+                          "/base_model.model.model.layers.0.mlp.up_proj.lora_B.weight",
+                          "/base_model.model.model.layers.0.self_attn.k_proj.lora_B.weight"
+                        ],
+                        "changed_tensors": 196,
+                        "diff_manifest_sha256": "fc1a3a63044ddd9acf30089637fe1348f0f8c7fa61b75da40f8a9bcbbe5edbf9",
+                        "removed_tensors": 0
+                      },
+                      "optimizer": {
+                        "added_tensors": 1188,
+                        "after_sha256": "2cdc6969cd7fda28e6f893ffd5f84f966426ed730c155f5fa5597375fd132b65",
+                        "after_tensors": 1188,
+                        "before_sha256": "1a58fbaf42bac7f3d5568777b25308d2822c113921809b8fb03fd1fcb3f83b8a",
+                        "before_tensors": 0,
+                        "changed_names_sample": [],
+                        "changed_tensors": 0,
+                        "diff_manifest_sha256": "1a20aeb465b7b60a7172d69145c2887d63fc3750b912439f9ab4e7146a8439ae",
+                        "removed_tensors": 0
+                      },
+                      "rng_counters": {
+                        "added_tensors": 0,
+                        "after_sha256": "bdc0231a09902af751c413a429eac8dc2b5d3e831a82c9fa7a6accc36625433a",
+                        "after_tensors": 2,
+                        "before_sha256": "0194fa908bcae6d8739471711f2a4cfbf514d40b683457932169f752456bbdcd",
+                        "before_tensors": 2,
+                        "changed_names_sample": [],
+                        "changed_tensors": 0,
+                        "diff_manifest_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+                        "removed_tensors": 0
+                      },
+                      "value_head": {
+                        "added_tensors": 0,
+                        "after_sha256": "f674406305ec2103ac086e495eb00184b47a709147228e96f0215745ef36cebf",
+                        "after_tensors": 4,
+                        "before_sha256": "bdeddd7daf6b789f371f2b3f363222d0cf3de8b7bcc99e59833393db8b2e423c",
+                        "before_tensors": 4,
+                        "changed_names_sample": [
+                          "/0.bias",
+                          "/0.weight",
+                          "/2.bias",
+                          "/2.weight"
+                        ],
+                        "changed_tensors": 4,
+                        "diff_manifest_sha256": "6476f49a5b6d75f9a0acb67927f292481326fd83819851045700a153d1b87486",
+                        "removed_tensors": 0
+                      }
+                    },
+                    "policy_loss": 4.412448883056641,
+                    "prompt_sha256": "cbcbddb5566a72777289c634c09c4e4e1a541616b40ea50e9ff8855954b07cf5",
+                    "reward": 0.0,
+                    "search_trace": {
+                      "gamma": 0.99,
+                      "node_index": 0,
+                      "policy_version": 0,
+                      "step": 13,
+                      "terminal_verified": false,
+                      "tree_id": "experience-source-01.tree0",
+                      "value_trace": {
+                        "aggregation": "exp_of_mean_negative_distance_not_mean_return",
+                        "distance": 54.01228400077452,
+                        "distance_before_roundoff_clip": 54.01228400077452,
+                        "floor_clipped": false,
+                        "roundoff_clipped": false,
+                        "source_kind": "OR",
+                        "source_value_sum": -756.1719760108433,
+                        "source_visits": 14,
+                        "target": 0.5869643118283483,
+                        "unclipped_target": 0.5869643118283483,
+                        "value_floor": 1e-06,
+                        "value_semantics": "reap.search_backup_discounted_return.v1"
+                      }
+                    },
+                    "training_config": {
+                      "gamma": 0.99,
+                      "head": "sigmoid",
+                      "hidden_size": 3584,
+                      "kl_beta": 0.02,
+                      "kl_reduction": "visit_weighted_sum_of_prefix_next_token_KL_current_to_frozen_base",
+                      "learning_rate": 0.0001,
+                      "lora_rank": 16,
+                      "max_candidates": 64,
+                      "max_distance": 1375.6317296601653,
+                      "max_grad_norm": 1.0,
+                      "max_sequence_tokens": 4096,
+                      "objective": "search_visit_backup",
+                      "policy_reduction": "visit_weighted_joint_token_sum",
+                      "tokenization": "canonical_tactic_separate_tokenization_no_implicit_EOS_joint_token_sum",
+                      "value_coefficient": 0.5,
+                      "value_floor": 1e-06,
+                      "value_learning_rate": 0.0003,
+                      "value_semantics": "reap.search_backup_discounted_return.v1"
+                    },
+                    "value_before": 0.5858094096183777,
+                    "value_loss": 1.3337930795387365e-06,
+                    "value_target": 0.5869643118283483
+                  },
+                  "event_id": "experience-source-01.s13.n0",
+                  "idempotent": false,
+                  "policy_version": 1
+                }
+              },
+              "experience-source-01.s14.n1": {
+                "digest": "8c232add5739c0c25b711a6c31c11ca22bc3ec5c90f5335d07d3b1ae28dc5138",
+                "response": {
+                  "applied": true,
+                  "detail": {
+                    "base_content_hash_checked": false,
+                    "base_parameters_frozen": true,
+                    "candidate_targets": [
+                      {
+                        "behavior_version": 0,
+                        "joint_token_nll": 2.2003860473632812,
+                        "prefix_kl_sum": 0.05083312466740608,
+                        "raw_logprob": -1.570215279207332,
+                        "tactic": "induction n <;> simp_all [hfstep, hgstep]",
+                        "target_probability": 1.0,
+                        "target_tokens": 15,
+                        "trained": true,
+                        "visits": 1
+                      }
+                    ],
+                    "finite_gradients": true,
+                    "finite_loss": true,
+                    "finite_optimizer_state": true,
+                    "finite_parameters": true,
+                    "grad_norm": 26.037155151367188,
+                    "kl": 0.05083312466740608,
+                    "loss": 2.2426996762305498,
+                    "objective": "search_visit_backup",
+                    "optimizer_steps": 2,
+                    "parameter_diffs": {
+                      "adapter": {
+                        "added_tensors": 0,
+                        "after_sha256": "86c1ee175be6f5e717c5d0aba358d3ed94ba6a409a6fad86123ebbd1e47913b0",
+                        "after_tensors": 392,
+                        "before_sha256": "0488e458cd6f3713c04a62ac30ff435ddc7dd9b3babe2a4ff37260c44d2af0b4",
+                        "before_tensors": 392,
+                        "changed_names_sample": [
+                          "/base_model.model.model.layers.0.mlp.down_proj.lora_A.weight",
+                          "/base_model.model.model.layers.0.mlp.down_proj.lora_B.weight",
+                          "/base_model.model.model.layers.0.mlp.gate_proj.lora_A.weight",
+                          "/base_model.model.model.layers.0.mlp.gate_proj.lora_B.weight"
+                        ],
+                        "changed_tensors": 392,
+                        "diff_manifest_sha256": "7179e2acbb0b7eb3968631a73a8a945e3509a1b6af04af21fb2a02b7a696df49",
+                        "removed_tensors": 0
+                      },
+                      "optimizer": {
+                        "added_tensors": 0,
+                        "after_sha256": "0036e951046b9ccd22b11dcc32db5d0fdb7a5240ff876ef74d7e172957ce773d",
+                        "after_tensors": 1188,
+                        "before_sha256": "2cdc6969cd7fda28e6f893ffd5f84f966426ed730c155f5fa5597375fd132b65",
+                        "before_tensors": 1188,
+                        "changed_names_sample": [
+                          "/state/0/exp_avg",
+                          "/state/0/exp_avg_sq",
+                          "/state/0/step",
+                          "/state/1/exp_avg"
+                        ],
+                        "changed_tensors": 1188,
+                        "diff_manifest_sha256": "7e03d697de04588a39f559cc8272042ff174f32718228ca18c140db2c6186a41",
+                        "removed_tensors": 0
+                      },
+                      "rng_counters": {
+                        "added_tensors": 0,
+                        "after_sha256": "ac682859359449e58a3e345633751268a45887bcc4f73b5f770fa13c8b7f73a6",
+                        "after_tensors": 2,
+                        "before_sha256": "4e66d505ad011d4c5e65f4786a443ed11deca3d89fec54d8c20f45c9e6375703",
+                        "before_tensors": 2,
+                        "changed_names_sample": [],
+                        "changed_tensors": 0,
+                        "diff_manifest_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+                        "removed_tensors": 0
+                      },
+                      "value_head": {
+                        "added_tensors": 0,
+                        "after_sha256": "f90e1fdff85c153e99d5769ac8ea91bf3032cc4f47d3bbdb728a9437b4f32fff",
+                        "after_tensors": 4,
+                        "before_sha256": "f674406305ec2103ac086e495eb00184b47a709147228e96f0215745ef36cebf",
+                        "before_tensors": 4,
+                        "changed_names_sample": [
+                          "/0.bias",
+                          "/0.weight",
+                          "/2.bias",
+                          "/2.weight"
+                        ],
+                        "changed_tensors": 4,
+                        "diff_manifest_sha256": "00f9cc0dbb7ac27f33c22e4f44d0d4e8c42e5892538574d159b4ee8377218988",
+                        "removed_tensors": 0
+                      }
+                    },
+                    "policy_loss": 2.2003860473632812,
+                    "prompt_sha256": "32acc0897a1c9c79012d78830dd2306b2f851fd70a270019e04d8af524fc0667",
+                    "reward": 0.0,
+                    "search_trace": {
+                      "gamma": 0.99,
+                      "node_index": 1,
+                      "policy_version": 1,
+                      "step": 14,
+                      "terminal_verified": false,
+                      "tree_id": "experience-source-01.tree0",
+                      "value_trace": {
+                        "aggregation": "exp_of_mean_negative_distance_not_mean_return",
+                        "distance": 35.685727085832,
+                        "distance_before_roundoff_clip": 35.685727085832,
+                        "floor_clipped": false,
+                        "roundoff_clipped": false,
+                        "source_kind": "OR",
+                        "source_value_sum": -71.371454171664,
+                        "source_visits": 2,
+                        "target": 0.7056730811916211,
+                        "unclipped_target": 0.7056730811916211,
+                        "value_floor": 1e-06,
+                        "value_semantics": "reap.search_backup_discounted_return.v1"
+                      }
+                    },
+                    "training_config": {
+                      "gamma": 0.99,
+                      "head": "sigmoid",
+                      "hidden_size": 3584,
+                      "kl_beta": 0.02,
+                      "kl_reduction": "visit_weighted_sum_of_prefix_next_token_KL_current_to_frozen_base",
+                      "learning_rate": 0.0001,
+                      "lora_rank": 16,
+                      "max_candidates": 64,
+                      "max_distance": 1375.6317296601653,
+                      "max_grad_norm": 1.0,
+                      "max_sequence_tokens": 4096,
+                      "objective": "search_visit_backup",
+                      "policy_reduction": "visit_weighted_joint_token_sum",
+                      "tokenization": "canonical_tactic_separate_tokenization_no_implicit_EOS_joint_token_sum",
+                      "value_coefficient": 0.5,
+                      "value_floor": 1e-06,
+                      "value_learning_rate": 0.0003,
+                      "value_semantics": "reap.search_backup_discounted_return.v1"
+                    },
+                    "value_before": 0.9930647015571594,
+                    "value_loss": 0.08259393274784088,
+                    "value_target": 0.7056730811916211
+                  },
+                  "event_id": "experience-source-01.s14.n1",
+                  "idempotent": false,
+                  "policy_version": 2
+                }
+              }
+            },
+            "lineage": {},
+            "optimizer_metadata": {
+              "kind": "AdamW",
+              "steps": 2
+            },
+            "policy_version": 2,
+            "reference_metadata": {
+              "adapter_disabled": true,
+              "kind": "frozen_base"
+            },
+            "schema_version": "reap.gpu.session.v1",
+            "session_id": "experience-source-01",
+            "theorem_id": "1c934ede5d3f068c24d12dc19d4b887078e5d17904cb690f022044714cf244e0",
+            "value_metadata": {
+              "gamma": 0.99,
+              "head": "sigmoid",
+              "hidden_size": 3584,
+              "kl_beta": 0.02,
+              "kl_reduction": "visit_weighted_sum_of_prefix_next_token_KL_current_to_frozen_base",
+              "last_loss": 0.08259393274784088,
+              "learning_rate": 0.0001,
+              "lora_rank": 16,
+              "max_candidates": 64,
+              "max_distance": 1375.6317296601653,
+              "max_grad_norm": 1.0,
+              "max_sequence_tokens": 4096,
+              "objective": "search_visit_backup",
+              "policy_reduction": "visit_weighted_joint_token_sum",
+              "tokenization": "canonical_tactic_separate_tokenization_no_implicit_EOS_joint_token_sum",
+              "value_coefficient": 0.5,
+              "value_floor": 1e-06,
+              "value_learning_rate": 0.0003,
+              "value_semantics": "reap.search_backup_discounted_return.v1"
+            }
+          },
+          "backend_metadata": {
+            "encoding": "torch-save-base64",
+            "experience_contract": {
+              "backend": "real-search",
+              "base_sha256": "2ff73d37f6f4edad02f5c2e67bdabeeecef97a187b4747834e6acdf648980839",
+              "hidden_size": 3584,
+              "lora_alpha": 32,
+              "lora_dropout": 0.0,
+              "lora_rank": 16,
+              "objective": "search_visit_backup",
+              "search_config": {
+                "gamma": 0.99,
+                "head": "sigmoid",
+                "hidden_size": 3584,
+                "kl_beta": 0.02,
+                "kl_reduction": "visit_weighted_sum_of_prefix_next_token_KL_current_to_frozen_base",
+                "learning_rate": 0.0001,
+                "lora_rank": 16,
+                "max_candidates": 64,
+                "max_distance": 1375.6317296601653,
+                "max_grad_norm": 1.0,
+                "max_sequence_tokens": 4096,
+                "objective": "search_visit_backup",
+                "policy_reduction": "visit_weighted_joint_token_sum",
+                "tokenization": "canonical_tactic_separate_tokenization_no_implicit_EOS_joint_token_sum",
+                "value_coefficient": 0.5,
+                "value_floor": 1e-06,
+                "value_learning_rate": 0.0003,
+                "value_semantics": "reap.search_backup_discounted_return.v1"
+              },
+              "target_modules": [
+                "down_proj",
+                "gate_proj",
+                "k_proj",
+                "o_proj",
+                "q_proj",
+                "up_proj",
+                "v_proj"
+              ],
+              "value_head": "linear-silu-linear-sigmoid-v1"
+            },
+            "schema_version": "reap.gpu.real-search-backend.v1",
+            "search_config": {
+              "gamma": 0.99,
+              "head": "sigmoid",
+              "hidden_size": 3584,
+              "kl_beta": 0.02,
+              "kl_reduction": "visit_weighted_sum_of_prefix_next_token_KL_current_to_frozen_base",
+              "learning_rate": 0.0001,
+              "lora_rank": 16,
+              "max_candidates": 64,
+              "max_distance": 1375.6317296601653,
+              "max_grad_norm": 1.0,
+              "max_sequence_tokens": 4096,
+              "objective": "search_visit_backup",
+              "policy_reduction": "visit_weighted_joint_token_sum",
+              "tokenization": "canonical_tactic_separate_tokenization_no_implicit_EOS_joint_token_sum",
+              "value_coefficient": 0.5,
+              "value_floor": 1e-06,
+              "value_learning_rate": 0.0003,
+              "value_semantics": "reap.search_backup_discounted_return.v1"
+            },
+            "session_id": "experience-source-01"
+          },
+          "groups": {
+            "adapter": {
+              "sha256": "86c1ee175be6f5e717c5d0aba358d3ed94ba6a409a6fad86123ebbd1e47913b0",
+              "tensor_count": 392
+            },
+            "value_head": {
+              "sha256": "f90e1fdff85c153e99d5769ac8ea91bf3032cc4f47d3bbdb728a9437b4f32fff",
+              "tensor_count": 4
+            },
+            "optimizer": {
+              "sha256": "0036e951046b9ccd22b11dcc32db5d0fdb7a5240ff876ef74d7e172957ce773d",
+              "tensor_count": 1188
+            },
+            "rng_counters": {
+              "sha256": "0069aa88661074f570e6d5f140be520e17ad9563e1f6fb2bd979a3f2f270b45f",
+              "tensor_count": 2
+            }
+          },
+          "all_tensors_finite": true,
+          "optimizer_steps": 2,
+          "examples_seen": 2,
+          "optimizer_state_steps": [
+            2.0
+          ],
+          "lora_B_nonzero_tensors": 196,
+          "lora_B_tensor_count": 196,
+          "rng_seed": 6453621056743959171
+        },
+        "comparisons": {
+          "adapter": {
+            "before_sha256": "40ab030bf448e5933481985d1d3fa530afd2d5f31d9adf3b904ef2dec94a0d63",
+            "after_sha256": "86c1ee175be6f5e717c5d0aba358d3ed94ba6a409a6fad86123ebbd1e47913b0",
+            "changed": 392,
+            "added": 0,
+            "removed": 0,
+            "snapshot_matches_first_last_receipt": true,
+            "all_intermediate_receipt_hashes_contiguous": true
+          },
+          "value_head": {
+            "before_sha256": "bdeddd7daf6b789f371f2b3f363222d0cf3de8b7bcc99e59833393db8b2e423c",
+            "after_sha256": "f90e1fdff85c153e99d5769ac8ea91bf3032cc4f47d3bbdb728a9437b4f32fff",
+            "changed": 4,
+            "added": 0,
+            "removed": 0,
+            "snapshot_matches_first_last_receipt": true,
+            "all_intermediate_receipt_hashes_contiguous": true
+          },
+          "optimizer": {
+            "before_sha256": "1a58fbaf42bac7f3d5568777b25308d2822c113921809b8fb03fd1fcb3f83b8a",
+            "after_sha256": "0036e951046b9ccd22b11dcc32db5d0fdb7a5240ff876ef74d7e172957ce773d",
+            "changed": 0,
+            "added": 1188,
+            "removed": 0,
+            "snapshot_matches_first_last_receipt": true,
+            "all_intermediate_receipt_hashes_contiguous": true
+          }
+        }
+      }
+    ],
+    "candidate_exact_final_parameters": true,
+    "scope": "Actual immutable pre/post snapshot bytes and all mutable tensor fingerprints; no restore performed; no base-model rehash."
+  },
+  "stderr": ""
+}

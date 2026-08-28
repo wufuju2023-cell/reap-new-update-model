@@ -1,0 +1,56 @@
+{
+  "schema_version": "reap.verified-replay.plan.v1",
+  "nodes": [
+    {
+      "node_index": 0,
+      "state": [
+        "f g : ℕ → ℕ\nhfzero : f 0 = 1\nhgzero : g 0 = 0\nhfstep : ∀ (n : ℕ), f (n + 1) = f n + 2\nhgstep : ∀ (n : ℕ), g (n + 1) = g n + f n\n⊢ ∀ (n : ℕ), f n = 2 * n + 1 ∧ g n = n * n"
+      ],
+      "kind": "OR",
+      "tactic": "intro n",
+      "children": [
+        1
+      ]
+    },
+    {
+      "node_index": 1,
+      "state": [
+        "f g : ℕ → ℕ\nhfzero : f 0 = 1\nhgzero : g 0 = 0\nhfstep : ∀ (n : ℕ), f (n + 1) = f n + 2\nhgstep : ∀ (n : ℕ), g (n + 1) = g n + f n\nn : ℕ\n⊢ f n = 2 * n + 1 ∧ g n = n * n"
+      ],
+      "kind": "OR",
+      "tactic": "induction n <;> simp_all [hfstep, hgstep]",
+      "children": [
+        2
+      ]
+    },
+    {
+      "node_index": 2,
+      "state": [
+        "case succ\nf g : ℕ → ℕ\nhfzero : f 0 = 1\nhgzero : g 0 = 0\nhfstep : ∀ (n : ℕ), f (n + 1) = f n + 2\nhgstep : ∀ (n : ℕ), g (n + 1) = g n + f n\nn✝ : ℕ\na✝ : f n✝ = 2 * n✝ + 1 ∧ g n✝ = n✝ * n✝\n⊢ 2 * n✝ + 2 = 2 * (n✝ + 1) ∧ n✝ * n✝ + (2 * n✝ + 1) = (n✝ + 1) * (n✝ + 1)"
+      ],
+      "kind": "OR",
+      "tactic": "ring",
+      "children": [
+        3
+      ]
+    },
+    {
+      "node_index": 4,
+      "state": [
+        "case succ\nf g : ℕ → ℕ\nhfzero : f 0 = 1\nhgzero : g 0 = 0\nhfstep : ∀ (n : ℕ), f (n + 1) = f n + 2\nhgstep : ∀ (n : ℕ), g (n + 1) = g n + f n\nn✝ : ℕ\na✝ : f n✝ = 2 * n✝ + 1 ∧ g n✝ = n✝ * n✝\n⊢ True ∧ True"
+      ],
+      "kind": "OR",
+      "tactic": "next => simp",
+      "children": [
+        4
+      ]
+    },
+    {
+      "node_index": 5,
+      "state": [],
+      "kind": "terminal",
+      "tactic": "",
+      "children": []
+    }
+  ]
+}

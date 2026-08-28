@@ -1,0 +1,9 @@
+{
+  "body": {
+    "expected_policy_version": 0,
+    "name": "recovery-final"
+  },
+  "method": "POST",
+  "mutation_retry_allowed": false,
+  "path": "/sessions/latest-recovery-r2-actor/retire/v1"
+}

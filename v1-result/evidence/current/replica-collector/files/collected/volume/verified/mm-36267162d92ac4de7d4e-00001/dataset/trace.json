@@ -1,0 +1,15 @@
+{"theorem": "ReapCurriculumWrapper.attempt",
+ "schema_version": "reap.verified-replay.trace.v1",
+ "rows":
+ [{"tactic": "push_neg",
+   "state": ["⊢ ¬∀ (n : ℕ), n = 0"],
+   "return": -2,
+   "node_index": 0,
+   "next_state": ["⊢ ∃ n, n ≠ 0"]},
+  {"tactic": "refine' ⟨1, by norm_num⟩",
+   "state": ["⊢ ∃ n, n ≠ 0"],
+   "return": -1,
+   "node_index": 1,
+   "next_state": []}],
+ "root_return": -2,
+ "complete": true}

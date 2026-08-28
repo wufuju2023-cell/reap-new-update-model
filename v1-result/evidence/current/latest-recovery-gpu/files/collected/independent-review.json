@@ -1,0 +1,60 @@
+{
+  "R1_complete_sha256": "157a429fd75352a1d64e94ba7b40a22b875b066defdacd39cca5d434764768bd",
+  "R2_parameters": {
+    "adapter": "8d9fcdda49eb821b2b7dc1b2a5df9c778c31ca2a6232e3c6150c15e8a848e13e",
+    "value_head": "afa785f60bcc5e46bece7ecab0ae90392f9b1e6fa22fd22b1f27aaa8f40704bd"
+  },
+  "actual_code_hashes_bound_to_original_and_patch": 68,
+  "all_four_pids_absent_at_status_epoch": 1787874969.343524,
+  "child_pids": [
+    3608,
+    3609
+  ],
+  "evidence_pins": {
+    "export-manifest.json": "cfaec8923efeaccd0e9c3290dd455e3ff7c5856d070fe3ad1d00212f6a9ebb4d",
+    "recovery-complete.json": "2d18434a5a356dc9d0c739c85d4b8856e13de0b56ad785f61cdd245ef49b725b",
+    "result/actor1-restored-after-R2.json": "4d4630cda9c2b2072556b626f6ebfa5801cda9f45c2ede193a89ed88723c55fa",
+    "result/actor1-restored-before.json": "4d4630cda9c2b2072556b626f6ebfa5801cda9f45c2ede193a89ed88723c55fa",
+    "result/actor2-initial.json": "9267ae00eebcb6bc2e28788e6c7600c57865ccb314bcdca6cfb988f20c0bba01",
+    "result/input-manifest.json": "d89d6176cdfed72622250130e2b667965d1bf43633b562fe4b7376e79b622fc0",
+    "worker-exit.json": "86e6121e8fd66bd42b93d6f5e8ebb95e4378c4713eb248de4201fba8eba35334"
+  },
+  "gates": {
+    "actual_R2_HTTP_policy_value": true,
+    "both_base_fingerprints_unchanged": true,
+    "both_retired_and_child_exit0": true,
+    "original_R1_complete_private_state_restored": true,
+    "original_cp2_release_parameters_exact": true,
+    "original_head_selection_bound": true,
+    "restored_R1_unchanged_during_R2_consumption": true,
+    "two_new_independent_7B_processes": true
+  },
+  "head": {
+    "checkpoint_sha256": "700ee66fbe22e55d41e7eb31041b1fea0d49c7de0d9f619687c749752ebc4701",
+    "model_release_sha256": "8a2bf4d4e93cf8e4f79e6905b2a01b7df831599498e4bf856baf841e05e56dea",
+    "previous_head_sha256": "40ebecf1641df70be7582229a8d9eee8b4ff2de33b32ad49f0e915edf81cf5cb",
+    "publication_intent_sha256": "5a6910ad8b28f3eeb48fe0e0ff93b1b77a0c326e225fbf5d35656f9000ae7c84",
+    "run_sha256": "ea79c9af443ee80a8e9669506a6aabc1a5dcad47687c40be772798c82278b60a",
+    "schema_version": "reap.learner.release-head.v1",
+    "step": 2
+  },
+  "main_and_outer_exit_codes": [
+    0,
+    0
+  ],
+  "original_report_still_failed": true,
+  "original_store_immutability": {
+    "basis": "Frozen recovery source compares full original CAS inventory again after all HTTP operations, before final success; actual worker exit0 and report true. Large payload hashes and tensor decode are remote worker evidence, not separately recomputed locally.",
+    "before_inventory_entries": 163
+  },
+  "raw_files_rehashed": 60,
+  "report_sha256": "362f50a4063721f619d995b6be4baf6e95ad0d2b999aa2b6ffcdf8e2f2c72c71",
+  "reviewer": "design_review",
+  "schema_version": "reap.latest-recovery.independent-evidence-review.v1",
+  "scope": [
+    "Actual local raw files, exact hashes, original/patch code identities, report/exit/ready/retirement/HTTP receipts and original-R1/restored-R1 metadata digests reviewed.",
+    "No remote access, GPU rerun, training, publication or Lean verification by this reviewer.",
+    "No new Lean search or full latest ReplicaCollector batch; original run failed and actor process continuity was interrupted."
+  ],
+  "status": "passed_recovery_consumption_scope"
+}

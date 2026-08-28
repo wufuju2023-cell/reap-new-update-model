@@ -1,0 +1,28 @@
+{
+  "command": [
+    "podman",
+    "create",
+    "--name",
+    "reap-gpu-runtime-local-smoke-r2-20260828",
+    "--network=none",
+    "--read-only",
+    "--tmpfs",
+    "/tmp:rw,nosuid,size=256m",
+    "--memory=4g",
+    "--entrypoint",
+    "python",
+    "--volume",
+    "/mnt/c/Users/21812/Desktop/ai4math_26Summercamp/Alpha-Proof-26-summer-school/.downloads/gpu-runtime-image-local-20260828/smoke_runtime_image_v2.py:/audit.py:ro",
+    "localhost/reap-gpu:runtime-20260828",
+    "-B",
+    "/audit.py"
+  ],
+  "podman_exit_code": 0,
+  "container_exit_code": 0,
+  "running": false,
+  "seconds": 6.709060532000876,
+  "image_id": "fc5687143dd7fd6ca276e45ed1d420fd3b611fa3299c42245216f94326c2dba3",
+  "network": "none",
+  "user": "reap",
+  "gpu_tested": false
+}
