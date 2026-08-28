@@ -1,0 +1,58 @@
+{
+  "session": "course-2cffcb9eb8c1-04",
+  "declaration": "CodexMathFive.Pell.CourseRecurrence",
+  "original_target_solved": false,
+  "independently_verified_historical_course": true,
+  "proof_sha256": "797fef2cdd6e1190296c377835eb73129e6d140d8224872648316b1cbd70a91b",
+  "old_stop_reason_incorrect": "repeated successor branch without structural progress; operator stop before budget exhaustion",
+  "old_stop_preserved_unchanged": true,
+  "process_started_wall_time": "2026-08-28T15:13:31.294485+08:00",
+  "filesystem_timestamps_not_transaction_times": {
+    "result.json": "2026-08-28T15:28:37.489161+08:00",
+    "online-result.json": "2026-08-28T15:28:42.266361+08:00",
+    "operator-stop.json": "2026-08-28T15:31:02.352389+08:00"
+  },
+  "lean_elapsed_seconds": 775.451613097,
+  "online_elapsed_seconds": 834.1949850919991,
+  "root_first_solved": {
+    "step": 187,
+    "version": 23,
+    "seconds_after_first_observer": 775.3162923
+  },
+  "created_actions": [
+    {
+      "step": 3,
+      "tactic": "induction k <;> simp_all",
+      "node": 5,
+      "child": 7,
+      "seconds_after_first_observer": 49.361815097
+    },
+    {
+      "step": 173,
+      "tactic": "ring_nf at h₀ h₁ ⊢",
+      "node": 7,
+      "child": 8,
+      "seconds_after_first_observer": 697.938072453
+    },
+    {
+      "step": 186,
+      "tactic": "simp_all",
+      "node": 8,
+      "child": 9,
+      "seconds_after_first_observer": 769.428396213
+    },
+    {
+      "step": 187,
+      "tactic": "omega",
+      "node": 9,
+      "child": 10,
+      "seconds_after_first_observer": 774.833555881
+    }
+  ],
+  "proof_script": "intro s h₀ h₁ k\ninduction k <;> simp_all\nring_nf at h₀ h₁ ⊢\nsimp_all\nomega",
+  "optimizer_updates": 23,
+  "success_finalization_performed": false,
+  "published": false,
+  "new_gpu_calls": false,
+  "design_consequence": "The student had generated induction at an early step and ultimately completed the recurrence course. Do not claim absence of induction ability or repeat a generic induction microcourse before resolving use of this historical accepted proof. Retired v23 is not a success-trained published experience."
+}

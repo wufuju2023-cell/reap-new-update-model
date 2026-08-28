@@ -1,0 +1,30 @@
+{
+  "schema_version": "reap.verified-replay.receipt.v1",
+  "session_id": "course-b3183bd902c9-01",
+  "theorem": "ReapCurriculumWrapper.attempt",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "${HISTORICAL_RUNS}/radeon-pell-indexed-witness-cpu15-20260828-native/replay-01/replay.lean"
+  ],
+  "cwd": "/opt/reap-runtime",
+  "returncode": 0,
+  "elapsed_seconds": 9.470905494999897,
+  "inputs_sha256": {
+    "raw_tree.json": "d970d95ec8750607b0f59f5067128849e53a03850cc871525553aa5437860073",
+    "replay.lean": "1a4655ed48163585633a58186bc4c4d2689c2fe1f32eb704ec6c734bc5fb7ee1",
+    "plan.json": "54e56716bfeaabbaa74590574d976c9031a1d22eedf9037588702610e9aff743",
+    "source.lean": "1956afa5bdce27404aa5361ffda2c135ab33960a243dd7cb4d87b961214275a2",
+    "observer.jsonl": "aa063e24d4206f0f1eda33545ea431447b21fecafd763e9c0a72028fb40fd94a",
+    "historical-proof.stdout": "d2efbf89f5d3a9ace65099fb5f8f91d60bb50d4c0cfd96e7cc1a1cf5b78cee3d",
+    "VerifiedReplay.lean": "a642aaf993f884c26c255ca3cdf1f4c6227ccc87273880243a0fc9c153761f23",
+    "historical-proof.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "session.json": "9f04833e325222999bb8b36d84c2978e01a2fe5748418ba609423676460cfcf2",
+    "historical-proof-receipt.json": "8408e25fced739e9d1e1e927672da03598a84ddbcdc9df63a323ad882171261d",
+    "accepted-proof.lean": "22cc641db19f129d534f6c29456eb22f6d9f24dbed64c26ea4261cdc92ad5c7d",
+    "result.json": "cb42caa553e5c5d971fa2f2371e79a777736651966b20fe4671e0d010613bbb7"
+  },
+  "stdout_sha256": "03320ee604c972de4551144a246c905f7d2822381d002d01142cb14ae421ca11",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

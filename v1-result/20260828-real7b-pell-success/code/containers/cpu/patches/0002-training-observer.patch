@@ -1,0 +1,205 @@
+diff --git a/Reap/Tactic/TreeSearch.lean b/Reap/Tactic/TreeSearch.lean
+--- a/Reap/Tactic/TreeSearch.lean
++++ b/Reap/Tactic/TreeSearch.lean
+@@ -76,6 +76,10 @@
+ 
+ abbrev ProgressReporter := MCTSProgress → TacticM Unit
+ 
++/-- Optional synchronous observation. JSON contains no mutable search state.
++Callbacks run with the tactic state restored on success and on exceptions. -/
++abbrev MCTSObserver := Json → TacticM Unit
++
+ namespace MCTSProgress
+ 
+ def initial (maxNodes maxSteps : Nat) : MCTSProgress where
+@@ -178,6 +182,17 @@
+ abbrev NodeType := Node NodeData (EdgeData × NodeData)
+ 
+ abbrev SearchM := IndexedTreeT NodeData EdgeData TacticM
++
++/-- Lazily construct an event only when observation is enabled. The observer
++cannot access the StateT tree, and rendering/callback effects on Lean are undone. -/
++def observe? (observer? : Option MCTSObserver) (record : TacticM Json) : SearchM Unit := do
++  if let some observer := observer? then
++    liftM (show TacticM Unit from do
++      let saved ← Tactic.saveState
++      try
++        observer (← record)
++      finally
++        saved.restore (restoreInfo := true))
+ 
+ def getNode! (nodeIdx : Nat) : SearchM (Node NodeData (EdgeData × Nat)) := do
+   let nodes ← get
+@@ -237,7 +252,8 @@
+ 
+ def visitNode (ctx : ProofCheckContext) (evalPolicyValue : PolicyValueEval)
+     (ancestorKeys : Std.HashSet StateKey)
+-    (nodeIdx : Nat) (node : NodeType) : SearchM Float := do
++    (nodeIdx : Nat) (node : NodeType)
++    (observer? : Option MCTSObserver := none) (step := 0) : SearchM Float := do
+   if node.data.toPlay == .andNode then
+     if node.children.isEmpty then
+       pushFocusChildren nodeIdx node.data
+@@ -261,7 +277,17 @@
+   let opts ← getOptions
+   let heartbeats := reap.heartbeats.get opts
+   let priorTemperature := reap.prior_temperature.get opts |>.toFloat
+-  for (t, ps, prior) in tactics do
++  for ((t, ps, prior), candidateIdx) in tactics.zipIdx do
++    observe? observer? do
++      node.data.state.restore
++      let goalState := toString (← TacticGenerator.Meta.ppProofState (← getUnsolvedGoals))
++      return json%{
++        kind: "generation", step: $step, node_index: $nodeIdx,
++        generation_index: $(node.data.numEvaluations), candidate_index: $candidateIdx,
++        goal_state: $goalState, state_key: $(node.data.key), node_kind: $(node.data.toPlay),
++        tactic: $t, ps: $ps, prompt: $(TacticGenerator.mkPrompt goalState ps),
++        raw_logprob: $prior, search_value: $p'
++      }
+     node.data.state.restore
+     let result ←
+       match node.data.partialGoal with
+@@ -272,6 +298,8 @@
+           evalTacticStrNoFinalCheck (node.data.proofCheckContext ctx) t heartbeats
+       | none =>
+           evalTacticStr (node.data.proofCheckContext ctx) t heartbeats
++    let mut observedChild : Option Nat := none
++    let mut disposition := if result.isOk then "ancestor_rejected" else "eval_rejected"
+     if result.isOk then
+       let probability := (prior / priorTemperature).exp
+       let childKind ← childKindAfterTactic
+@@ -280,6 +308,8 @@
+         let parentRef ← getNode! nodeIdx
+         let parent ← resolve parentRef
+         if let some ((e, c), childPos) := parent.children.zipIdx.find? fun ((e, c), _) => e.tacticStr == t || c.key == childData.key then
++          observedChild := parentRef.children[childPos]?.map Prod.snd
++          disposition := "merged"
+           let e' := { e with probability := e.probability + probability }
+           updateDuplicateChild nodeIdx childPos childData
+           modifyAtT nodeIdx fun node => {
+@@ -294,9 +324,18 @@
+             probability
+             value := 0.0
+           } childData
++          observedChild := some childIdx
++          disposition := "created"
+           if childData.toPlay == .andNode then
+             pushFocusChildren childIdx childData
+             refreshNodeSolved childIdx
++    observe? observer? do
++      return json%{
++        kind: "eval", step: $step, node_index: $nodeIdx,
++        generation_index: $(node.data.numEvaluations), candidate_index: $candidateIdx,
++        tactic: $t, eval_result: $result, child_index: $observedChild,
++        disposition: $disposition, partial_goal: $(node.data.partialGoal.isSome)
++      }
+   refreshNodeSolved nodeIdx
+   return p'
+ 
+@@ -368,6 +407,19 @@
+     children: $ppChildren
+   }
+ 
++/-- An iteration boundary: the callback returns before this same tree continues.
++root_is_solved is a search flag, not a substitute for final replay/checkProof. -/
++def reportCheckpoint? (observer? : Option MCTSObserver) (params : SearchHyperparameters)
++    (step : Nat) : SearchM Unit := do
++  let nodes ← get
++  observe? observer? do
++    let ppNodes ← nodes.mapM (ppNode params nodes)
++    return json%{
++      kind: "checkpoint", step: $step, gamma: $(params.visitDiscount),
++      root_is_solved: $((nodes[0]?.map fun n => n.data.isSolved).getD false),
++      tree: { root_index: 0, nodes: $ppNodes }
++    }
++
+ def selectChild (params : SearchHyperparameters) (node : NodeType) : Option Nat := do
+   if node.children.isEmpty || shouldProgressiveSample params node.data then
+     none
+@@ -439,14 +491,21 @@
+ unsafe def reapMCTSStep (ctx : ProofCheckContext) (evalPolicyValue : PolicyValueEval)
+     (params : SearchHyperparameters) (ancestorKeys : Std.HashSet StateKey)
+     (nodeIdx : Nat) (progress? : Option ProgressReporter := none)
+-    (step := 0) (maxNodes := MCTS.defaultMaxNodes) (maxSteps := MCTS.defaultMaxSteps) :
+-    SearchM Float := do
++    (step := 0) (maxNodes := MCTS.defaultMaxNodes) (maxSteps := MCTS.defaultMaxSteps)
++    (observer? : Option MCTSObserver := none) : SearchM Float := do
+   let x ← getNode! nodeIdx
+   let node ← resolve x
+-  match selectChild params node with
++  let selected := selectChild params node
++  observe? observer? do
++    return json%{
++      kind: "selection", step: $step, node_index: $nodeIdx,
++      child_position: $selected,
++      child_index: $(selected.bind fun k => x.children[k]?.map Prod.snd)
++    }
++  match selected with
+   | none =>
+       let goalType ← currentGoalType node.data
+-      let value ← visitNode ctx evalPolicyValue ancestorKeys nodeIdx node
++      let value ← visitNode ctx evalPolicyValue ancestorKeys nodeIdx node observer? step
+       reportProgress? progress? step maxNodes maxSteps goalType false false "running"
+       return value
+   | some childPos =>
+@@ -454,7 +513,7 @@
+       let childRef ← getNode! childIdx
+       let childValue ←
+         reapMCTSStep ctx evalPolicyValue params (ancestorKeys.insert childRef.data.key) childIdx
+-          progress? step maxNodes maxSteps
++          progress? step maxNodes maxSteps observer?
+       let x ← getNode! nodeIdx
+       let (edge, childIdx) ← getChild! x childPos
+       let value := childValue - edgeStepCost edge
+@@ -465,17 +524,29 @@
+       let x ← getNode! nodeIdx
+       setAtT nodeIdx { x with data := data' }
+       let node ← resolve (← getNode! nodeIdx)
+-      return backupValueForParent node value
++      let backedUp := backupValueForParent node value
++      observe? observer? do
++        return json%{
++          kind: "backup", step: $step, node_index: $nodeIdx,
++          child_position: $childPos, child_index: $childIdx,
++          child_value: $childValue, step_cost: $(edgeStepCost edge),
++          backed_up_value: $backedUp, edge: $edge',
++          node_value_sum: $(node.data.valueSum), node_visits: $(node.data.numVisit),
++          node_kind: $(node.data.toPlay)
++        }
++      return backedUp
+ 
+ unsafe def monteCarloTreeSearch (ctx : ProofCheckContext) (evalPolicyValue : PolicyValueEval)
+     (params : SearchHyperparameters) (start : NodeData)
+     (maxNodes := MCTS.defaultMaxNodes) (maxSteps := MCTS.defaultMaxSteps)
+-    (progress? : Option ProgressReporter := none) :
++    (progress? : Option ProgressReporter := none)
++    (observer? : Option MCTSObserver := none) :
+     TacticM (Option Nat × Array (Node NodeData (EdgeData × Nat))) :=
+   StateT.run (s := #[ { data := start } ]) do
+     let mut step := 0
+     while (← get).size <= maxNodes && step < maxSteps do
+-      discard <| reapMCTSStep ctx evalPolicyValue params {start.key} 0 progress? step maxNodes maxSteps
++      discard <| reapMCTSStep ctx evalPolicyValue params {start.key} 0 progress? step maxNodes maxSteps observer?
++      reportCheckpoint? observer? params step
+       let root ← getNode! 0
+       if root.data.isSolved then
+         reportProgress? progress? (step + 1) maxNodes maxSteps "no goals" true true "solved"
+@@ -590,7 +661,8 @@
+ def runMCTS (evalPolicyValue : PolicyValueEval)
+     (maxNodes := MCTS.defaultMaxNodes)
+     (maxSteps := MCTS.defaultMaxSteps)
+-    (progress? : Option ProgressReporter := none) : TacticM MCTSResult := unsafe do
++    (progress? : Option ProgressReporter := none)
++    (observer? : Option MCTSObserver := none) : TacticM MCTSResult := unsafe do
+   let opts ← getOptions
+   let path := reap.wall_clock_log_path.get opts
+   if !path.isEmpty then
+@@ -598,7 +670,7 @@
+   let ctx ← mkProofCheckContext
+   let params := SearchHyperparameters.fromOptions opts
+   let (k, nodes) ←
+-    monteCarloTreeSearch ctx evalPolicyValue params (← NodeData.fromState) maxNodes maxSteps progress?
++    monteCarloTreeSearch ctx evalPolicyValue params (← NodeData.fromState) maxNodes maxSteps progress? observer?
+ 
+   let ppNodes ← nodes.mapM (ppNode params nodes)
+   let info := json%{

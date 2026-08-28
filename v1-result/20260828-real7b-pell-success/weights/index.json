@@ -1,0 +1,16 @@
+{
+  "lineage_newest_first": [
+    "exp-23a72c86ef2a-01",
+    "exp-26c724af16ee-01",
+    "exp-b3183bd902c9-01",
+    "exp-4ead8f8eab8f-01",
+    "exp-0314796052d2-01",
+    "exp-a5e11df458f9-01",
+    "exp-2cffcb9eb8c1-03",
+    "exp-2cffcb9eb8c1-02",
+    "exp-2cffcb9eb8c1-01"
+  ],
+  "backend_tensors_in_git": false,
+  "reason": "adapter/value retained outside Git; metadata and hashes included",
+  "restore_scope": "new session adapter/value; not optimizer or live Lean tree"
+}

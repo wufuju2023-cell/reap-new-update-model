@@ -1,0 +1,26 @@
+'CodexMathFive.Pell.StudentLibraryRecurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+${HISTORICAL_RUNS}/radeon-pell-target-after-unbounded-cpu15-20260828-native/replay-01/replay.lean:294:13: warning: This simp argument is unused:
+  Prod.mk.injEq
+
+Hint: Omit it from the simp argument list.
+  simp only [P̵r̵o̵d̵.̵m̵k̵.̵i̵n̵j̵E̵q̵,̵ ̵and_self]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+${HISTORICAL_RUNS}/radeon-pell-target-after-unbounded-cpu15-20260828-native/replay-01/replay.lean:294:28: warning: This simp argument is unused:
+  and_self
+
+Hint: Omit it from the simp argument list.
+  simp only [Prod.mk.injEq,̵ ̵a̵n̵d̵_̵s̵e̵l̵f̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'CodexMathFive.Pell.StudentLibraryIndexedWitness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CodexMathFive.Pell.StudentLibrarySequenceExists' depends on axioms: [propext, Quot.sound]
+'CodexMathFive.Pell.StudentLibraryUnboundedFromRecurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+REAP_STUDENT_PROOF_PREMISE CodexMathFive.Pell.StudentLibrarySequenceExists 49459def3ee98d3ccb6eedfe42bfbb3c9b10e31ec084ff71d795807cf8c73522
+∃ s, s 0 = (3, 2) ∧ ∀ (k : ℕ), s (k + 1) = (3 * (s k).1 + 4 * (s k).2, 2 * (s k).1 + 3 * (s k).2)
+REAP_STUDENT_PROOF_PREMISE CodexMathFive.Pell.StudentLibraryUnboundedFromRecurrence 3c2045f615d28e4f8d9f83655415526e952422448a516b1d3ece2d636a6c36a1
+∀ (s : ℕ → ℕ × ℕ),
+  s 0 = (3, 2) →
+    (∀ (k : ℕ), s (k + 1) = (3 * (s k).1 + 4 * (s k).2, 2 * (s k).1 + 3 * (s k).2)) →
+      ∀ (B : ℕ), ∃ x y, B < x ∧ B < y ∧ x ^ 2 = 2 * y ^ 2 + 1
+'ReapCurriculumWrapper.attempt' depends on axioms: [propext, Classical.choice, Quot.sound]

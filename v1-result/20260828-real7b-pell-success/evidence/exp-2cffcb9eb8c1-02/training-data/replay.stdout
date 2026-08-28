@@ -1,0 +1,28 @@
+${HISTORICAL_RUNS}/radeon-pell-success-code04-20260828-native/pell-replay-001/replay.lean:1:6: warning: This simp argument is unused:
+  Nat.add_comm
+
+Hint: Omit it from the simp argument list.
+  i̵m̵p̵o̵r̵t̵ ̵R̵e̵a̵p̵R̵u̵n̵t̵i̵m̵e̵
+  ̵i̵m̵p̵o̵r̵t̵ ̵M̵a̵t̵h̵l̵i̵b̵
+  ̵i̵m̵p̵o̵r̵t̵ ̵R̵e̵a̵p̵.̵T̵a̵c̵t̵i̵c̵.̵s̲i̲m̲p̲ ̲[̲N̲a̲t̲.̲a̲d̲d̲_̲l̲e̲f̲t̲_̲c̲o̲m̲m̲,̲ ̲N̲a̲t̲.̲a̲d̲d̲_̲a̲s̲s̲o̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+${HISTORICAL_RUNS}/radeon-pell-success-code04-20260828-native/pell-replay-001/replay.lean:2:1: warning: This simp argument is unused:
+  Nat.add_left_comm
+
+Hint: Omit it from the simp argument list.
+  i̵m̵p̵o̵r̵t̵ ̵R̵e̵a̵p̵R̵u̵n̵t̵i̵m̵e̵
+  ̵i̵m̵p̵o̵r̵t̵ ̵M̵a̵t̵h̵l̵i̵b̵
+  ̵i̵m̵p̵o̵r̵t̵ ̵R̵e̵a̵p̵.̵T̵a̵c̵t̵i̵c̵.̵s̲i̲m̲p̲ ̲[̲N̲a̲t̲.̲a̲d̲d̲_̲c̲o̲m̲m̲,̲ ̲N̲a̲t̲.̲a̲d̲d̲_̲a̲s̲s̲o̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+${HISTORICAL_RUNS}/radeon-pell-success-code04-20260828-native/pell-replay-001/replay.lean:3:5: warning: This simp argument is unused:
+  Nat.add_assoc
+
+Hint: Omit it from the simp argument list.
+  i̵m̵p̵o̵r̵t̵ ̵R̵e̵a̵p̵R̵u̵n̵t̵i̵m̵e̵
+  ̵i̵m̵p̵o̵r̵t̵ ̵M̵a̵t̵h̵l̵i̵b̵
+  ̵i̵m̵p̵o̵r̵t̵ ̵R̵e̵a̵p̵.̵T̵a̵c̵t̵i̵c̵.̵s̲i̲m̲p̲ ̲[̲N̲a̲t̲.̲a̲d̲d̲_̲c̲o̲m̲m̲,̲ ̲N̲a̲t̲.̲a̲d̲d̲_̲l̲e̲f̲t̲_̲c̲o̲m̲m̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ReapCurriculumWrapper.attempt' depends on axioms: [propext, Classical.choice, Quot.sound]

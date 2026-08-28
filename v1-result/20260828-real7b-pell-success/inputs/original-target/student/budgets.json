@@ -1,0 +1,17 @@
+{
+  "schema_version": "reap.proof-curriculum.budgets.v3",
+  "gamma": 0.99,
+  "profiles": {
+    "probe": {
+      "search_steps": 32,
+      "max_nodes": 2048,
+      "num_samples": 8,
+      "max_tokens": 256,
+      "max_updates": 4,
+      "min_checkpoint_interval": 8
+    }
+  },
+  "lesson_profiles": {
+    "CodexMathFive.Pell.Target": "probe"
+  }
+}

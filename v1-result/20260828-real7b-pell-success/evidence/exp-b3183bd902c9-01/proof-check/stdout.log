@@ -1,0 +1,15 @@
+/proof/proof.lean:194:13: warning: This simp argument is unused:
+  Prod.mk.injEq
+
+Hint: Omit it from the simp argument list.
+  simp only [P̵r̵o̵d̵.̵m̵k̵.̵i̵n̵j̵E̵q̵,̵ ̵and_self]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/proof/proof.lean:194:28: warning: This simp argument is unused:
+  and_self
+
+Hint: Omit it from the simp argument list.
+  simp only [Prod.mk.injEq,̵ ̵a̵n̵d̵_̵s̵e̵l̵f̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ReapCurriculumWrapper.attempt' depends on axioms: [propext, Classical.choice, Quot.sound]

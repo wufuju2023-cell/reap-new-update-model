@@ -1,0 +1,2 @@
+/proof/proof.lean:199:2: warning: aesop: failed to prove the goal after exhaustive search.
+'ReapCurriculumWrapper.attempt' depends on axioms: [propext, Classical.choice, Quot.sound]

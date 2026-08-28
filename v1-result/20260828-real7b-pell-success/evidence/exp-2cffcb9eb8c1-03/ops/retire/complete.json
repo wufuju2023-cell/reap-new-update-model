@@ -1,0 +1,1 @@
+{"evidence":[{"path":"${HISTORICAL_RUNS}/radeon-pell-success-code04-20260828-native/store/pell-sequence/ops/02-retire/response.json","sha256":"1507cb6ad8ece0650139419162d43ee33a35293e4ce9c64ed1e09d161ef5eb88"}],"intent_sha256":"be66ce9e566530e924fd478b2e1345b518d686bc2b5cec36d31e8bafab3e572c","result":{"policy_version":1,"released":true}}

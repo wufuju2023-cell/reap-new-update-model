@@ -1,0 +1,107 @@
+{
+  "schema_version": "reap.verified-success-trajectory.v1",
+  "profile": "verified-generated-action-negative-longest-branch-v1",
+  "session_id": "course-b3183bd902c9-01",
+  "tree_id": "course-b3183bd902c9-01.tree0",
+  "theorem": "ReapCurriculumWrapper.attempt",
+  "theorem_sha256": "1956afa5bdce27404aa5361ffda2c135ab33960a243dd7cb4d87b961214275a2",
+  "root_return": -4,
+  "action_unit": "one generated tactic string; focus transitions cost zero",
+  "and_return": "minimum branch return; shared-metavariable branch skipping rejected",
+  "state_origin": "exact saved state matched against independent Lean replay",
+  "training_integration": "none; not search_visit_backup or categorical-head training",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "final_policy_version": 1,
+  "inputs_sha256": {
+    "raw_tree.json": "d970d95ec8750607b0f59f5067128849e53a03850cc871525553aa5437860073",
+    "replay.lean": "1a4655ed48163585633a58186bc4c4d2689c2fe1f32eb704ec6c734bc5fb7ee1",
+    "plan.json": "54e56716bfeaabbaa74590574d976c9031a1d22eedf9037588702610e9aff743",
+    "source.lean": "1956afa5bdce27404aa5361ffda2c135ab33960a243dd7cb4d87b961214275a2",
+    "observer.jsonl": "aa063e24d4206f0f1eda33545ea431447b21fecafd763e9c0a72028fb40fd94a",
+    "historical-proof.stdout": "d2efbf89f5d3a9ace65099fb5f8f91d60bb50d4c0cfd96e7cc1a1cf5b78cee3d",
+    "VerifiedReplay.lean": "a642aaf993f884c26c255ca3cdf1f4c6227ccc87273880243a0fc9c153761f23",
+    "historical-proof.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "session.json": "9f04833e325222999bb8b36d84c2978e01a2fe5748418ba609423676460cfcf2",
+    "historical-proof-receipt.json": "8408e25fced739e9d1e1e927672da03598a84ddbcdc9df63a323ad882171261d",
+    "accepted-proof.lean": "22cc641db19f129d534f6c29456eb22f6d9f24dbed64c26ea4261cdc92ad5c7d",
+    "result.json": "cb42caa553e5c5d971fa2f2371e79a777736651966b20fe4671e0d010613bbb7"
+  },
+  "trace_sha256": "2f51951299ae57733eee376d2b519d4e86bcac240153dceda4705c8f4495175e",
+  "replay_receipt_sha256": "d2ee6f0b0551547bef23d805fc1a8b86649f561563cd93a3a2bafa703b31c80b",
+  "rows": [
+    {
+      "node_index": 0,
+      "child_index": 3,
+      "state": [
+        "⊢ ∀ (s : ℕ → ℕ × ℕ),\n    (∀ (k : ℕ), k < (s k).1 ∧ k < (s k).2 ∧ (s k).1 ^ 2 = 2 * (s k).2 ^ 2 + 1) →\n      ∀ (B : ℕ), ∃ x y, B < x ∧ B < y ∧ x ^ 2 = 2 * y ^ 2 + 1"
+      ],
+      "next_state": [
+        "s : ℕ → ℕ × ℕ\nhs : ∀ (k : ℕ), k < (s k).1 ∧ k < (s k).2 ∧ (s k).1 ^ 2 = 2 * (s k).2 ^ 2 + 1\nB : ℕ\n⊢ ∃ x y, B < x ∧ B < y ∧ x ^ 2 = 2 * y ^ 2 + 1"
+      ],
+      "tactic": "intro s hs B",
+      "return": -4,
+      "prompt": "User: Please generate a tactic in lean4 to solve the state.\nHere're some theorems that may be helpful:\n\nSTATE:\n⊢ ∀ (s : ℕ → ℕ × ℕ),\n    (∀ (k : ℕ), k < (s k).1 ∧ k < (s k).2 ∧ (s k).1 ^ 2 = 2 * (s k).2 ^ 2 + 1) →\n      ∀ (B : ℕ), ∃ x y, B < x ∧ B < y ∧ x ^ 2 = 2 * y ^ 2 + 1\nTACTIC:\n\nAssistant:",
+      "policy_version": 0,
+      "generation_sequence": 5,
+      "eval_sequence": 6,
+      "generation_index": 0,
+      "candidate_index": 2
+    },
+    {
+      "node_index": 3,
+      "child_index": 4,
+      "state": [
+        "s : ℕ → ℕ × ℕ\nhs : ∀ (k : ℕ), k < (s k).1 ∧ k < (s k).2 ∧ (s k).1 ^ 2 = 2 * (s k).2 ^ 2 + 1\nB : ℕ\n⊢ ∃ x y, B < x ∧ B < y ∧ x ^ 2 = 2 * y ^ 2 + 1"
+      ],
+      "next_state": [
+        "s : ℕ → ℕ × ℕ\nB : ℕ\nhs : B < (s B).1 ∧ B < (s B).2 ∧ (s B).1 ^ 2 = 2 * (s B).2 ^ 2 + 1\n⊢ ∃ x y, B < x ∧ B < y ∧ x ^ 2 = 2 * y ^ 2 + 1"
+      ],
+      "tactic": "specialize hs B",
+      "return": -3,
+      "prompt": "User: Please generate a tactic in lean4 to solve the state.\nHere're some theorems that may be helpful:\n\nSTATE:\ns : ℕ → ℕ × ℕ\nhs : ∀ (k : ℕ), k < (s k).1 ∧ k < (s k).2 ∧ (s k).1 ^ 2 = 2 * (s k).2 ^ 2 + 1\nB : ℕ\n⊢ ∃ x y, B < x ∧ B < y ∧ x ^ 2 = 2 * y ^ 2 + 1\nTACTIC:\n\nAssistant:",
+      "policy_version": 0,
+      "generation_sequence": 22,
+      "eval_sequence": 23,
+      "generation_index": 1,
+      "candidate_index": 1
+    },
+    {
+      "node_index": 4,
+      "child_index": 8,
+      "state": [
+        "s : ℕ → ℕ × ℕ\nB : ℕ\nhs : B < (s B).1 ∧ B < (s B).2 ∧ (s B).1 ^ 2 = 2 * (s B).2 ^ 2 + 1\n⊢ ∃ x y, B < x ∧ B < y ∧ x ^ 2 = 2 * y ^ 2 + 1"
+      ],
+      "next_state": [
+        "s : ℕ → ℕ × ℕ\nB : ℕ\nhs : B < (s B).1 ∧ B < (s B).2 ∧ (s B).1 ^ 2 = 2 * (s B).2 ^ 2 + 1\n⊢ s B = s B"
+      ],
+      "tactic": "suffices s B = s B by rw [this] at hs; aesop",
+      "return": -2,
+      "prompt": "User: Please generate a tactic in lean4 to solve the state.\nHere're some theorems that may be helpful:\n\nSTATE:\ns : ℕ → ℕ × ℕ\nB : ℕ\nhs : B < (s B).1 ∧ B < (s B).2 ∧ (s B).1 ^ 2 = 2 * (s B).2 ^ 2 + 1\n⊢ ∃ x y, B < x ∧ B < y ∧ x ^ 2 = 2 * y ^ 2 + 1\nTACTIC:\n\nAssistant:",
+      "policy_version": 1,
+      "generation_sequence": 121,
+      "eval_sequence": 122,
+      "generation_index": 4,
+      "candidate_index": 0
+    },
+    {
+      "node_index": 8,
+      "child_index": 9,
+      "state": [
+        "s : ℕ → ℕ × ℕ\nB : ℕ\nhs : B < (s B).1 ∧ B < (s B).2 ∧ (s B).1 ^ 2 = 2 * (s B).2 ^ 2 + 1\n⊢ s B = s B"
+      ],
+      "next_state": [],
+      "tactic": "simp only [Prod.mk.injEq, and_self]",
+      "return": -1,
+      "prompt": "User: Please generate a tactic in lean4 to solve the state.\nHere're some theorems that may be helpful:\n\nSTATE:\ns : ℕ → ℕ × ℕ\nB : ℕ\nhs : B < (s B).1 ∧ B < (s B).2 ∧ (s B).1 ^ 2 = 2 * (s B).2 ^ 2 + 1\n⊢ s B = s B\nTACTIC:\n\nAssistant:",
+      "policy_version": 1,
+      "generation_sequence": 149,
+      "eval_sequence": 150,
+      "generation_index": 0,
+      "candidate_index": 2
+    }
+  ]
+}

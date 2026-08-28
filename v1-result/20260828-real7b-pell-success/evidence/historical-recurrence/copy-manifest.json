@@ -1,0 +1,51 @@
+{
+  "original_family": "${HISTORICAL_RUNS}/radeon-pell-success-code04-20260828-native/store/pell-sequence",
+  "files": [
+    {
+      "source": "${HISTORICAL_RUNS}/radeon-pell-success-code04-20260828-native/store/pell-sequence/inputs/lesson-04.lean",
+      "copy": "inputs/lesson-04.lean",
+      "sha256": "802f4950b85a89775eff914290805c963a35b42c6b3fe72b04619c1d40698d85"
+    },
+    {
+      "source": "${HISTORICAL_RUNS}/radeon-pell-success-code04-20260828-native/store/pell-sequence/plan.json",
+      "copy": "plan.json",
+      "sha256": "3f291ab72f9950c36bbc3569324496c218430587d7da5808001fc81323e027c4"
+    },
+    {
+      "source": "${HISTORICAL_RUNS}/radeon-pell-success-code04-20260828-native/store/pell-sequence/outputs/course-2cffcb9eb8c1-04/session.json",
+      "copy": "outputs/course-2cffcb9eb8c1-04/session.json",
+      "sha256": "acd95fe0785f1b4a740efccf0a08f874ab6afe71faf283efc65c4dae164b2266"
+    },
+    {
+      "source": "${HISTORICAL_RUNS}/radeon-pell-success-code04-20260828-native/store/pell-sequence/outputs/course-2cffcb9eb8c1-04/result.json",
+      "copy": "outputs/course-2cffcb9eb8c1-04/result.json",
+      "sha256": "72ac4ba11aa9a8c99c6fbc5d60354c185c8e134eb5b4477092dc8669acb3710d"
+    },
+    {
+      "source": "${HISTORICAL_RUNS}/radeon-pell-success-code04-20260828-native/store/pell-sequence/outputs/course-2cffcb9eb8c1-04/online-result.json",
+      "copy": "outputs/course-2cffcb9eb8c1-04/online-result.json",
+      "sha256": "7f39681fe545ca6d8fc7d1609ced9cd16cd245b207db4d3e5d2d68c9b9618085"
+    },
+    {
+      "source": "${HISTORICAL_RUNS}/radeon-pell-success-code04-20260828-native/store/pell-sequence/outputs/course-2cffcb9eb8c1-04/raw_tree.json",
+      "copy": "outputs/course-2cffcb9eb8c1-04/raw_tree.json",
+      "sha256": "13a24a3f443a42728ff17dcd843d7396619c6028485862cdcb31fa2ef6a4b6bf"
+    },
+    {
+      "source": "${HISTORICAL_RUNS}/radeon-pell-success-code04-20260828-native/store/pell-sequence/outputs/course-2cffcb9eb8c1-04/observer.jsonl",
+      "copy": "outputs/course-2cffcb9eb8c1-04/observer.jsonl",
+      "sha256": "f9788ff283529e4b3ab301de47a0f0a1a673c8906edd85ca94dc5ed678aef7da"
+    },
+    {
+      "source": "${HISTORICAL_RUNS}/radeon-pell-success-code04-20260828-native/store/pell-sequence/outputs/course-2cffcb9eb8c1-04/operator-stop.json",
+      "copy": "outputs/course-2cffcb9eb8c1-04/operator-stop.json",
+      "sha256": "37134efb06ed59747eaad584f675003ef3a884e0a0a6bc0339370a487f5290f7"
+    },
+    {
+      "source": "${HISTORICAL_RUNS}/radeon-pell-success-code04-20260828-native/store/pell-sequence/outputs/course-2cffcb9eb8c1-04/create-receipt.json",
+      "copy": "outputs/course-2cffcb9eb8c1-04/create-receipt.json",
+      "sha256": "5a2d3d5dbd722b4ddaa123cff191c1d2976a528ffea6d9fbd31b5272f5b9618c"
+    }
+  ],
+  "gpu_called": false
+}

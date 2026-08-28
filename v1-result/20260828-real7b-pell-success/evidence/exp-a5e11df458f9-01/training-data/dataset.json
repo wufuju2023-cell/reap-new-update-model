@@ -1,0 +1,53 @@
+{
+  "schema_version": "reap.verified-success-trajectory.v1",
+  "profile": "verified-generated-action-negative-longest-branch-v1",
+  "session_id": "course-a5e11df458f9-01",
+  "tree_id": "course-a5e11df458f9-01.tree0",
+  "theorem": "ReapCurriculumWrapper.attempt",
+  "theorem_sha256": "bf2de7513bdd9b4535e33f7d1a5ebf5b7b4713e316d78d623d6c49a0d8e7e313",
+  "root_return": -1,
+  "action_unit": "one generated tactic string; focus transitions cost zero",
+  "and_return": "minimum branch return; shared-metavariable branch skipping rejected",
+  "state_origin": "exact saved state matched against independent Lean replay",
+  "training_integration": "none; not search_visit_backup or categorical-head training",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "final_policy_version": 0,
+  "inputs_sha256": {
+    "raw_tree.json": "b525a4494b61a436f65bb2c07d6eac57ae8a057efac1199c0d5bef8dd4d388c4",
+    "replay.lean": "f5b25b15959ef6eb568e0c8c0da0a2ed4bc1ccb3a631c683abfbda84ea64ce5d",
+    "plan.json": "dd523d814c6064d08d406cee7b5e4814857bae5602e7700f436a52547faebee6",
+    "source.lean": "bf2de7513bdd9b4535e33f7d1a5ebf5b7b4713e316d78d623d6c49a0d8e7e313",
+    "observer.jsonl": "c920ccb3301dfe14d754a021493a1d73643e429fe42a1b34984fbc63a26080a7",
+    "historical-proof.stdout": "5d96d5753252d3cb3df132591ed107889907c83736efeaee71b79e3b73ce9817",
+    "VerifiedReplay.lean": "a642aaf993f884c26c255ca3cdf1f4c6227ccc87273880243a0fc9c153761f23",
+    "historical-proof.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "session.json": "7b40b658afe6ca9250fb3b563701c8920d6944c09fae69cdcb972495170c1318",
+    "historical-proof-receipt.json": "bb11eba8fff65ab7e61d42ffc60d8cd61b2ff7848c1343878d982fd26361bc18",
+    "accepted-proof.lean": "68ccd5eb3450676305548fe28d1e137022382e5bc5421b0fff31e48522b14d60",
+    "result.json": "41330c7c714d9ebe3ddadf88b106c47970e10b994bdcc069b8099d3d7cca29ac"
+  },
+  "trace_sha256": "44cf183803f93680826c363953e44f4483f8f2c19b1fee4fe1bac5b88c9dacc6",
+  "replay_receipt_sha256": "95199e7ebdd5bccb7548726efb4f55da6e1a521fc002181826b44b5e2b117e52",
+  "rows": [
+    {
+      "node_index": 0,
+      "child_index": 1,
+      "state": [
+        "⊢ ∀ (B x y : ℕ), B < x → B < y → B + 1 < 2 * x + 3 * y"
+      ],
+      "next_state": [],
+      "tactic": "exact fun B x y h₀ h₁ => by linarith [h₀, h₁]",
+      "return": -1,
+      "prompt": "User: Please generate a tactic in lean4 to solve the state.\nHere're some theorems that may be helpful:\n\nSTATE:\n⊢ ∀ (B x y : ℕ), B < x → B < y → B + 1 < 2 * x + 3 * y\nTACTIC:\n\nAssistant:",
+      "policy_version": 0,
+      "generation_sequence": 1,
+      "eval_sequence": 2,
+      "generation_index": 0,
+      "candidate_index": 0
+    }
+  ]
+}

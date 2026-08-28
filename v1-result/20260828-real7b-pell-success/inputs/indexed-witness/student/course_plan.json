@@ -1,0 +1,32 @@
+{
+  "schema_version": "reap.codex-five.course-plan.v2",
+  "source_kind": "codex_assembled_classical_exercises",
+  "frontiermath_problem": false,
+  "originality_claimed": false,
+  "source": "StudentDeclarations.lean",
+  "source_sha256": "44a1f67148b57425c80a41f631eb5b4cbea66951da4a0f702eafe42d22bd96a2",
+  "teacher_reference_imported_by_student": false,
+  "relation_kind": "operator_reviewed_teaching_dependencies_not_logical_implication_certificates",
+  "problems": [
+    {
+      "id": "pell-indexed-witness",
+      "title": "Pell全称序列性质到存在见证的结构迁移",
+      "target": "CodexMathFive.Pell.Target",
+      "target_proved": false,
+      "stages": [
+        {
+          "stage": 1,
+          "declarations": [
+            "CodexMathFive.Pell.CourseIndexedWitness"
+          ],
+          "status": "new_student_run_required"
+        }
+      ],
+      "final_stage": {
+        "declaration": "CodexMathFive.Pell.Target",
+        "counts_as_original_exercise_only_after_independent_lean_verification": true
+      }
+    }
+  ],
+  "scope": "Structural course, not arithmetic: given exactly the all-index property already obtained in the genuine student Recurrence proof, student must instantiate a universal fact and package existential witnesses. No chosen index, coordinate equality, tactic, teacher proof or theorem premise is supplied. This removes prerequisite chaining from the existing UnboundedFromRecurrence bridge; success must be learned/published and then tested back on the original bridge/Target. Original mathematical Target/source prefix unchanged; max-lessons1."
+}

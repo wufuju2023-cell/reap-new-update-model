@@ -1,0 +1,1 @@
+{"elapsed_ns":162922272936,"error":null,"proof_script":"intro s hs B\nspecialize hs B\nsuffices s B = s B by rw [this] at hs; aesop\nsimp only [Prod.mk.injEq, and_self]","schema_version":"reap.training.result.v1","session_id":"course-b3183bd902c9-01","solved":true,"status":"solved"}

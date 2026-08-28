@@ -1,0 +1,53 @@
+{
+  "schema_version": "reap.verified-success-trajectory.v1",
+  "profile": "verified-generated-action-negative-longest-branch-v1",
+  "session_id": "course-26c724af16ee-01",
+  "tree_id": "course-26c724af16ee-01.tree0",
+  "theorem": "ReapCurriculumWrapper.attempt",
+  "theorem_sha256": "0bf8271ebc3654f0c7b4bd9a847acd06faaf0895a92f053b6abcbd8ccdbccc4b",
+  "root_return": -1,
+  "action_unit": "one generated tactic string; focus transitions cost zero",
+  "and_return": "minimum branch return; shared-metavariable branch skipping rejected",
+  "state_origin": "exact saved state matched against independent Lean replay",
+  "training_integration": "none; not search_visit_backup or categorical-head training",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "final_policy_version": 0,
+  "inputs_sha256": {
+    "raw_tree.json": "9b9295907abaa3bb4ee9ab556a668685fd36828be24eca95ddfd14458f747ad9",
+    "replay.lean": "44f003c0d904cf1e124822f15198f044ac73d194969cddd86b0d471ab6d4c422",
+    "plan.json": "30fca3088194c2ac05894672195d1bc7dbefc833327bf0e928489f593ff1a591",
+    "source.lean": "0bf8271ebc3654f0c7b4bd9a847acd06faaf0895a92f053b6abcbd8ccdbccc4b",
+    "observer.jsonl": "69e39634789285b8833dd7f7289a7f04ae6f4b49488898f72d569c0ee67059f7",
+    "historical-proof.stdout": "2c7048d07040cc7f30666564f5dd78ecf1acff209f4257e7258c18caba281071",
+    "VerifiedReplay.lean": "a642aaf993f884c26c255ca3cdf1f4c6227ccc87273880243a0fc9c153761f23",
+    "historical-proof.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "session.json": "88fb9f9776bf276f7ffd24eb7078aaa44d832e38dde066cc43e2c2b92a0a1c7c",
+    "historical-proof-receipt.json": "51bb4fe1575e193841b9dea1e6589c4b609874c184ccc429502a8ee4b8465ad4",
+    "accepted-proof.lean": "7d1f9bd56870c38bd6b1681d51dffcab0f6a6f2176bb76ecfd328be40a106d87",
+    "result.json": "bce57ee1cbef85c89eaabe4312b83c4103ff07210e2394b75b303a00d8c2bcf2"
+  },
+  "trace_sha256": "fd2c1448e77be306b0079fc8dcc2fc0a751f76622463760d4172de6f0cbad046",
+  "replay_receipt_sha256": "51c57dd73c9c7eea75edfc118d6f93b54bc3e32116234d68d7f4c6fd25f49d94",
+  "rows": [
+    {
+      "node_index": 0,
+      "child_index": 2,
+      "state": [
+        "student_fact_1 :\n  ∀ (s : ℕ → ℕ × ℕ),\n    s 0 = (3, 2) →\n      (∀ (k : ℕ), s (k + 1) = (3 * (s k).1 + 4 * (s k).2, 2 * (s k).1 + 3 * (s k).2)) →\n        ∀ (k : ℕ), k < (s k).1 ∧ k < (s k).2 ∧ (s k).1 ^ 2 = 2 * (s k).2 ^ 2 + 1\nstudent_fact_2 :\n  ∀ (s : ℕ → ℕ × ℕ),\n    (∀ (k : ℕ), k < (s k).1 ∧ k < (s k).2 ∧ (s k).1 ^ 2 = 2 * (s k).2 ^ 2 + 1) →\n      ∀ (B : ℕ), ∃ x y, B < x ∧ B < y ∧ x ^ 2 = 2 * y ^ 2 + 1\n⊢ ∀ (s : ℕ → ℕ × ℕ),\n    s 0 = (3, 2) →\n      (∀ (k : ℕ), s (k + 1) = (3 * (s k).1 + 4 * (s k).2, 2 * (s k).1 + 3 * (s k).2)) →\n        ∀ (B : ℕ), ∃ x y, B < x ∧ B < y ∧ x ^ 2 = 2 * y ^ 2 + 1"
+      ],
+      "next_state": [],
+      "tactic": "exact fun s ↦ by tauto",
+      "return": -1,
+      "prompt": "User: Please generate a tactic in lean4 to solve the state.\nHere're some theorems that may be helpful:\nFormal name: CodexMathFive.Pell.StudentLibraryRecurrence\nFormal statement: ∀ (s : ℕ → ℕ × ℕ),\n  s 0 = (3, 2) →\n    (∀ (k : ℕ), s (k + 1) = (3 * (s k).1 + 4 * (s k).2, 2 * (s k).1 + 3 * (s k).2)) →\n      ∀ (k : ℕ), k < (s k).1 ∧ k < (s k).2 ∧ (s k).1 ^ 2 = 2 * (s k).2 ^ 2 + 1\nFormal name: CodexMathFive.Pell.StudentLibraryIndexedWitness\nFormal statement: ∀ (s : ℕ → ℕ × ℕ),\n  (∀ (k : ℕ), k < (s k).1 ∧ k < (s k).2 ∧ (s k).1 ^ 2 = 2 * (s k).2 ^ 2 + 1) →\n    ∀ (B : ℕ), ∃ x y, B < x ∧ B < y ∧ x ^ 2 = 2 * y ^ 2 + 1\nSTATE:\nstudent_fact_1 :\n  ∀ (s : ℕ → ℕ × ℕ),\n    s 0 = (3, 2) →\n      (∀ (k : ℕ), s (k + 1) = (3 * (s k).1 + 4 * (s k).2, 2 * (s k).1 + 3 * (s k).2)) →\n        ∀ (k : ℕ), k < (s k).1 ∧ k < (s k).2 ∧ (s k).1 ^ 2 = 2 * (s k).2 ^ 2 + 1\nstudent_fact_2 :\n  ∀ (s : ℕ → ℕ × ℕ),\n    (∀ (k : ℕ), k < (s k).1 ∧ k < (s k).2 ∧ (s k).1 ^ 2 = 2 * (s k).2 ^ 2 + 1) →\n      ∀ (B : ℕ), ∃ x y, B < x ∧ B < y ∧ x ^ 2 = 2 * y ^ 2 + 1\n⊢ ∀ (s : ℕ → ℕ × ℕ),\n    s 0 = (3, 2) →\n      (∀ (k : ℕ), s (k + 1) = (3 * (s k).1 + 4 * (s k).2, 2 * (s k).1 + 3 * (s k).2)) →\n        ∀ (B : ℕ), ∃ x y, B < x ∧ B < y ∧ x ^ 2 = 2 * y ^ 2 + 1\nTACTIC:\n\nAssistant:",
+      "policy_version": 0,
+      "generation_sequence": 15,
+      "eval_sequence": 16,
+      "generation_index": 0,
+      "candidate_index": 7
+    }
+  ]
+}

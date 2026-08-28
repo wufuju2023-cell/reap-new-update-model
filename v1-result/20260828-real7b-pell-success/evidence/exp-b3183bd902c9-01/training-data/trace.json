@@ -1,0 +1,32 @@
+{"theorem": "ReapCurriculumWrapper.attempt",
+ "schema_version": "reap.verified-replay.trace.v1",
+ "rows":
+ [{"tactic": "intro s hs B",
+   "state":
+   ["⊢ ∀ (s : ℕ → ℕ × ℕ),\n    (∀ (k : ℕ), k < (s k).1 ∧ k < (s k).2 ∧ (s k).1 ^ 2 = 2 * (s k).2 ^ 2 + 1) →\n      ∀ (B : ℕ), ∃ x y, B < x ∧ B < y ∧ x ^ 2 = 2 * y ^ 2 + 1"],
+   "return": -4,
+   "node_index": 0,
+   "next_state":
+   ["s : ℕ → ℕ × ℕ\nhs : ∀ (k : ℕ), k < (s k).1 ∧ k < (s k).2 ∧ (s k).1 ^ 2 = 2 * (s k).2 ^ 2 + 1\nB : ℕ\n⊢ ∃ x y, B < x ∧ B < y ∧ x ^ 2 = 2 * y ^ 2 + 1"]},
+  {"tactic": "specialize hs B",
+   "state":
+   ["s : ℕ → ℕ × ℕ\nhs : ∀ (k : ℕ), k < (s k).1 ∧ k < (s k).2 ∧ (s k).1 ^ 2 = 2 * (s k).2 ^ 2 + 1\nB : ℕ\n⊢ ∃ x y, B < x ∧ B < y ∧ x ^ 2 = 2 * y ^ 2 + 1"],
+   "return": -3,
+   "node_index": 3,
+   "next_state":
+   ["s : ℕ → ℕ × ℕ\nB : ℕ\nhs : B < (s B).1 ∧ B < (s B).2 ∧ (s B).1 ^ 2 = 2 * (s B).2 ^ 2 + 1\n⊢ ∃ x y, B < x ∧ B < y ∧ x ^ 2 = 2 * y ^ 2 + 1"]},
+  {"tactic": "suffices s B = s B by rw [this] at hs; aesop",
+   "state":
+   ["s : ℕ → ℕ × ℕ\nB : ℕ\nhs : B < (s B).1 ∧ B < (s B).2 ∧ (s B).1 ^ 2 = 2 * (s B).2 ^ 2 + 1\n⊢ ∃ x y, B < x ∧ B < y ∧ x ^ 2 = 2 * y ^ 2 + 1"],
+   "return": -2,
+   "node_index": 4,
+   "next_state":
+   ["s : ℕ → ℕ × ℕ\nB : ℕ\nhs : B < (s B).1 ∧ B < (s B).2 ∧ (s B).1 ^ 2 = 2 * (s B).2 ^ 2 + 1\n⊢ s B = s B"]},
+  {"tactic": "simp only [Prod.mk.injEq, and_self]",
+   "state":
+   ["s : ℕ → ℕ × ℕ\nB : ℕ\nhs : B < (s B).1 ∧ B < (s B).2 ∧ (s B).1 ^ 2 = 2 * (s B).2 ^ 2 + 1\n⊢ s B = s B"],
+   "return": -1,
+   "node_index": 8,
+   "next_state": []}],
+ "root_return": -4,
+ "complete": true}

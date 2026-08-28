@@ -1,0 +1,23 @@
+{
+  "schema_version": "reap.verified-replay.plan.v1",
+  "nodes": [
+    {
+      "node_index": 0,
+      "state": [
+        "student_fact_1 : ∃ s, s 0 = (3, 2) ∧ ∀ (k : ℕ), s (k + 1) = (3 * (s k).1 + 4 * (s k).2, 2 * (s k).1 + 3 * (s k).2)\nstudent_fact_2 :\n  ∀ (s : ℕ → ℕ × ℕ),\n    s 0 = (3, 2) →\n      (∀ (k : ℕ), s (k + 1) = (3 * (s k).1 + 4 * (s k).2, 2 * (s k).1 + 3 * (s k).2)) →\n        ∀ (B : ℕ), ∃ x y, B < x ∧ B < y ∧ x ^ 2 = 2 * y ^ 2 + 1\n⊢ ∀ (B : ℕ), ∃ x y, B < x ∧ B < y ∧ x ^ 2 = 2 * y ^ 2 + 1"
+      ],
+      "kind": "OR",
+      "tactic": "tauto",
+      "children": [
+        1
+      ]
+    },
+    {
+      "node_index": 1,
+      "state": [],
+      "kind": "terminal",
+      "tactic": "",
+      "children": []
+    }
+  ]
+}

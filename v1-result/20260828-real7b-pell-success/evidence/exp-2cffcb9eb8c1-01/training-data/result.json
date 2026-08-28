@@ -1,0 +1,1 @@
+{"elapsed_ns":17689042160,"error":null,"proof_script":"rintro x y h\nring_nf at h ⊢\nomega","schema_version":"reap.training.result.v1","session_id":"course-2cffcb9eb8c1-01","solved":true,"status":"solved"}

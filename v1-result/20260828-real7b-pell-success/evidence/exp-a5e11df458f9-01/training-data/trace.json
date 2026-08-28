@@ -1,0 +1,10 @@
+{"theorem": "ReapCurriculumWrapper.attempt",
+ "schema_version": "reap.verified-replay.trace.v1",
+ "rows":
+ [{"tactic": "exact fun B x y h₀ h₁ => by linarith [h₀, h₁]",
+   "state": ["⊢ ∀ (B x y : ℕ), B < x → B < y → B + 1 < 2 * x + 3 * y"],
+   "return": -1,
+   "node_index": 0,
+   "next_state": []}],
+ "root_return": -1,
+ "complete": true}

@@ -1,0 +1,85 @@
+{
+  "schema_version": "reap.verified-replay.plan.v1",
+  "nodes": [
+    {
+      "node_index": 0,
+      "state": [
+        "⊢ ∀ (B x y : ℕ),\n    B < x →\n      B < y →\n        x ^ 2 = 2 * y ^ 2 + 1 →\n          have u := 3 * x + 4 * y;\n          have v := 2 * x + 3 * y;\n          B + 1 < u ∧ B + 1 < v ∧ u ^ 2 = 2 * v ^ 2 + 1"
+      ],
+      "kind": "OR",
+      "tactic": "aesop",
+      "children": [
+        1
+      ]
+    },
+    {
+      "node_index": 1,
+      "state": [
+        "case left\nB x y : ℕ\na : B < x\na_1 : B < y\na_2 : x ^ 2 = 2 * y ^ 2 + 1\nu : ℕ := ⋯\nv : ℕ := ⋯\n⊢ B + 1 < 3 * x + 4 * y",
+        "case right.left\nB x y : ℕ\na : B < x\na_1 : B < y\na_2 : x ^ 2 = 2 * y ^ 2 + 1\nu : ℕ := ⋯\nv : ℕ := ⋯\n⊢ B + 1 < 2 * x + 3 * y",
+        "case right.right\nB x y : ℕ\na : B < x\na_1 : B < y\na_2 : x ^ 2 = 2 * y ^ 2 + 1\nu : ℕ := ⋯\nv : ℕ := ⋯\n⊢ (3 * x + 4 * y) ^ 2 = 2 * (2 * x + 3 * y) ^ 2 + 1"
+      ],
+      "kind": "AND",
+      "tactic": "",
+      "children": [
+        2,
+        4,
+        6
+      ]
+    },
+    {
+      "node_index": 2,
+      "state": [
+        "case left\nB x y : ℕ\na : B < x\na_1 : B < y\na_2 : x ^ 2 = 2 * y ^ 2 + 1\nu : ℕ := ⋯\nv : ℕ := ⋯\n⊢ B + 1 < 3 * x + 4 * y"
+      ],
+      "kind": "OR",
+      "tactic": "linarith [a_1, a_2]",
+      "children": [
+        3
+      ]
+    },
+    {
+      "node_index": 10,
+      "state": [],
+      "kind": "terminal",
+      "tactic": "",
+      "children": []
+    },
+    {
+      "node_index": 3,
+      "state": [
+        "case right.left\nB x y : ℕ\na : B < x\na_1 : B < y\na_2 : x ^ 2 = 2 * y ^ 2 + 1\nu : ℕ := ⋯\nv : ℕ := ⋯\n⊢ B + 1 < 2 * x + 3 * y"
+      ],
+      "kind": "OR",
+      "tactic": "omega",
+      "children": [
+        5
+      ]
+    },
+    {
+      "node_index": 11,
+      "state": [],
+      "kind": "terminal",
+      "tactic": "",
+      "children": []
+    },
+    {
+      "node_index": 4,
+      "state": [
+        "case right.right\nB x y : ℕ\na : B < x\na_1 : B < y\na_2 : x ^ 2 = 2 * y ^ 2 + 1\nu : ℕ := ⋯\nv : ℕ := ⋯\n⊢ (3 * x + 4 * y) ^ 2 = 2 * (2 * x + 3 * y) ^ 2 + 1"
+      ],
+      "kind": "OR",
+      "tactic": "nlinarith [a, a_1, a_2, u, v]",
+      "children": [
+        7
+      ]
+    },
+    {
+      "node_index": 12,
+      "state": [],
+      "kind": "terminal",
+      "tactic": "",
+      "children": []
+    }
+  ]
+}

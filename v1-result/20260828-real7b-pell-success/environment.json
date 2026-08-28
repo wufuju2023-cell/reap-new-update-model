@@ -1,0 +1,37 @@
+{
+  "student_model": {
+    "repository": "FrenzyMath/REAL-Prover",
+    "revision": "fe76f68d9a88f342cb7b546307c20292fea9cced",
+    "base_sha256": "2ff73d37f6f4edad02f5c2e67bdabeeecef97a187b4747834e6acdf648980839"
+  },
+  "lean": "4.28.0-rc1",
+  "mathlib_commit": "5352afccd6866369be9de43f5b7ec47203555f44",
+  "reap_commit": "0090d73c5f739e4d74000e053b00fd0148ff46aa",
+  "historical_cpu_image_id": "623ae445c3cb8c843afb6c85a1db0dfa25f17e72ae95afaf23a49ef8844f0fce",
+  "cpu_image_kind": "v1-delivery base (not verified-collector delta)",
+  "python": "3.12.3 (prior environment receipt)",
+  "torch": "2.10.0+rocm7.2.4.git3d3aa833",
+  "hip": "7.2.53211",
+  "transformers": "4.57.1",
+  "peft": "0.17.1",
+  "gpus": [
+    {
+      "index": 0,
+      "name": "AMD Radeon Graphics",
+      "memory": 51522830336,
+      "architecture": "gfx1100",
+      "bf16_backward": true
+    },
+    {
+      "index": 1,
+      "name": "AMD Radeon Graphics",
+      "memory": 51522830336,
+      "architecture": "gfx1100",
+      "bf16_backward": true
+    }
+  ],
+  "active_experiment_gpu_count": 1,
+  "gpu_code": "unchanged code04",
+  "cpu_code": "isolated CPU15",
+  "scope": "historical observed environment; rebuild must record its own identity"
+}

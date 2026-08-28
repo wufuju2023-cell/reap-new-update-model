@@ -1,0 +1,32 @@
+{"theorem": "ReapCurriculumWrapper.attempt",
+ "schema_version": "reap.verified-replay.trace.v1",
+ "rows":
+ [{"tactic": "aesop",
+   "state":
+   ["⊢ ∀ (B x y : ℕ),\n    B < x →\n      B < y →\n        x ^ 2 = 2 * y ^ 2 + 1 →\n          ∃ u v, u = 3 * x + 4 * y ∧ v = 2 * x + 3 * y ∧ B + 1 < u ∧ B + 1 < v ∧ u ^ 2 = 2 * v ^ 2 + 1"],
+   "return": -2,
+   "node_index": 0,
+   "next_state":
+   ["case left\nB x y : ℕ\na : B < x\na_1 : B < y\na_2 : x ^ 2 = 2 * y ^ 2 + 1\n⊢ B + 1 < 3 * x + 4 * y",
+    "case right.left\nB x y : ℕ\na : B < x\na_1 : B < y\na_2 : x ^ 2 = 2 * y ^ 2 + 1\n⊢ B + 1 < 2 * x + 3 * y",
+    "case right.right\nB x y : ℕ\na : B < x\na_1 : B < y\na_2 : x ^ 2 = 2 * y ^ 2 + 1\n⊢ (3 * x + 4 * y) ^ 2 = 2 * (2 * x + 3 * y) ^ 2 + 1"]},
+  {"tactic": "nlinarith [a, a_1, a_2]",
+   "state":
+   ["case left\nB x y : ℕ\na : B < x\na_1 : B < y\na_2 : x ^ 2 = 2 * y ^ 2 + 1\n⊢ B + 1 < 3 * x + 4 * y"],
+   "return": -1,
+   "node_index": 2,
+   "next_state": []},
+  {"tactic": "nlinarith",
+   "state":
+   ["case right.left\nB x y : ℕ\na : B < x\na_1 : B < y\na_2 : x ^ 2 = 2 * y ^ 2 + 1\n⊢ B + 1 < 2 * x + 3 * y"],
+   "return": -1,
+   "node_index": 3,
+   "next_state": []},
+  {"tactic": "nlinarith",
+   "state":
+   ["case right.right\nB x y : ℕ\na : B < x\na_1 : B < y\na_2 : x ^ 2 = 2 * y ^ 2 + 1\n⊢ (3 * x + 4 * y) ^ 2 = 2 * (2 * x + 3 * y) ^ 2 + 1"],
+   "return": -1,
+   "node_index": 4,
+   "next_state": []}],
+ "root_return": -2,
+ "complete": true}

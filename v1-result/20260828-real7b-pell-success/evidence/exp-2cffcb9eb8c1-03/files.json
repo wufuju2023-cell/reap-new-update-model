@@ -1,0 +1,175 @@
+{
+  "experience_id": "exp-2cffcb9eb8c1-03",
+  "source_family": "${HISTORICAL_RUNS}/radeon-pell-success-code04-20260828-native/store/pell-sequence",
+  "dataset_sha256": "3f91e2a46e9806f3ec9ac8e88d2428ab665db5ca9ee0aca8abf963658c3c4a74",
+  "files": {
+    "training-data/replay.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "training-data/raw_tree.json": {
+      "bytes": 932,
+      "sha256": "6428a589e4e86b1dd64759f87e533d87c8f0b2e67441dffb00cf68ac7125b69c"
+    },
+    "training-data/replay.stdout": {
+      "bytes": 73,
+      "sha256": "f8df2456111a097c775a547d5f7dbdc1ff9b455551a1cebaabbf7f67fca83da9"
+    },
+    "training-data/replay-receipt.json": {
+      "bytes": 1692,
+      "sha256": "b823e4c1083a217c56fbff74c2f201f60e1e2578f17d934221d9edcd2db7a517"
+    },
+    "training-data/replay.lean": {
+      "bytes": 11078,
+      "sha256": "67ed392c58350d544b0867113d550d4ff022386ba5bbd1171b392a96e756a301"
+    },
+    "training-data/trace.json": {
+      "bytes": 454,
+      "sha256": "6399608c4bb94bf214c9e181a763912ded8c40c5754ba3466ae2d4cd1500d2e9"
+    },
+    "training-data/plan.json": {
+      "bytes": 554,
+      "sha256": "09b839bee9a5aad22584e5f5761a952a71545ba166a0e2657bff6226af163904"
+    },
+    "training-data/source.lean": {
+      "bytes": 6397,
+      "sha256": "cde6890517e4032b0a90041c84520b98658bada32f259740aead16e5d74e5a6f"
+    },
+    "training-data/observer.jsonl": {
+      "bytes": 22481,
+      "sha256": "0dd78ca1a7d1042f3112fb90a8f76b37bf0c71d0b81afa23cbf884fa7d4419c3"
+    },
+    "training-data/historical-proof.stdout": {
+      "bytes": 73,
+      "sha256": "f8df2456111a097c775a547d5f7dbdc1ff9b455551a1cebaabbf7f67fca83da9"
+    },
+    "training-data/VerifiedReplay.lean": {
+      "bytes": 4450,
+      "sha256": "a642aaf993f884c26c255ca3cdf1f4c6227ccc87273880243a0fc9c153761f23"
+    },
+    "training-data/historical-proof.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "training-data/session.json": {
+      "bytes": 989,
+      "sha256": "68e47aed67045f3be9ed12ba08ef118581b5483ef5f4dad4ced9024d30ff94f9"
+    },
+    "training-data/historical-proof-receipt.json": {
+      "bytes": 7433,
+      "sha256": "bd845d2202715db91ea21ea8e44e39e02c1e533ab1d30f739ea18f24afb4811f"
+    },
+    "training-data/dataset.json": {
+      "bytes": 2890,
+      "sha256": "3f91e2a46e9806f3ec9ac8e88d2428ab665db5ca9ee0aca8abf963658c3c4a74"
+    },
+    "training-data/accepted-proof.lean": {
+      "bytes": 6526,
+      "sha256": "d01b94e968e9995ce950c4f74b56e0d43ab66e7a41b6090de62a70178bd45cda"
+    },
+    "training-data/result.json": {
+      "bytes": 271,
+      "sha256": "9e9192efde4533d0b0567577fac7641d5b4a9aa33ba1b719d1e32e8de977614b"
+    },
+    "proof-check/accepted.json": {
+      "bytes": 2990,
+      "sha256": "a8ef82f2c4195ade9164c2324235258bbcce08148df074a397c5e8f7eee3289a"
+    },
+    "proof-check/inspect.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof-check/proof.lean": {
+      "bytes": 6526,
+      "sha256": "d01b94e968e9995ce950c4f74b56e0d43ab66e7a41b6090de62a70178bd45cda"
+    },
+    "proof-check/stdout.log": {
+      "bytes": 73,
+      "sha256": "f8df2456111a097c775a547d5f7dbdc1ff9b455551a1cebaabbf7f67fca83da9"
+    },
+    "proof-check/launch-intent.json": {
+      "bytes": 620,
+      "sha256": "c0920d84715c98b8535a2380e3990e82068005331deffff9f9cf66c9721e8cd6"
+    },
+    "proof-check/inspect.stdout.json": {
+      "bytes": 13085,
+      "sha256": "59fbfeb558516e1af3bcdefaefc5a29f564b0022c609fb173cf684297b8ccae7"
+    },
+    "proof-check/receipt.json": {
+      "bytes": 2889,
+      "sha256": "00d98348f49072c0f883bcb37429f49852abab8e6620e4e685fa72ab286b96bb"
+    },
+    "proof-check/stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "ops/success-learn/response.json": {
+      "bytes": 4204,
+      "sha256": "2a6c5980cbbc5f10a2d968b7789ab03e96908cee0952c7fb148a105b0e23fb6c"
+    },
+    "ops/success-learn/intent.json": {
+      "bytes": 675,
+      "sha256": "b3f377f007f8026ee934ab4a0d2a065058156a0607630a53ca884c7bbbf1fd0e"
+    },
+    "ops/success-learn/complete.json": {
+      "bytes": 5205,
+      "sha256": "4345b99b334add4a89ed4661e691789aa43ced78d2a79bf346ec47e836911981"
+    },
+    "ops/seal/response.json": {
+      "bytes": 386,
+      "sha256": "2e1b7207240aabad8d2a2cfbba72d8728504f7948715738d00a60a84ce752097"
+    },
+    "ops/seal/intent.json": {
+      "bytes": 235,
+      "sha256": "9416c5f25c24f38e0d5f6a129372d897467d536038715146d23df1ea77f7219e"
+    },
+    "ops/seal/complete.json": {
+      "bytes": 324,
+      "sha256": "709a86e5be2d3128012bf12bc9a94a4258e7ea9374709c4cb94d152d333156d9"
+    },
+    "ops/publish/response.json": {
+      "bytes": 983,
+      "sha256": "5ce882f3bd018053c658407b05b17940b7dbad569d9643bbded9c0f97d6419d0"
+    },
+    "ops/publish/intent.json": {
+      "bytes": 726,
+      "sha256": "3994f5ceb4e5384e395a2ccd2e027b5e65337c1ae35eb077a9e3c279bac144bc"
+    },
+    "ops/publish/complete.json": {
+      "bytes": 546,
+      "sha256": "05cc48fa787b3d133de7c6182654c50e2057d60ce0b5feb4c301fce1f9f13d53"
+    },
+    "ops/retire/response.json": {
+      "bytes": 305,
+      "sha256": "1507cb6ad8ece0650139419162d43ee33a35293e4ce9c64ed1e09d161ef5eb88"
+    },
+    "ops/retire/intent.json": {
+      "bytes": 269,
+      "sha256": "be66ce9e566530e924fd478b2e1345b518d686bc2b5cec36d31e8bafab3e572c"
+    },
+    "ops/retire/complete.json": {
+      "bytes": 342,
+      "sha256": "d5999da5661907fb4ce7db923a75c871cfc981459bf62e96688ec81735ed6dba"
+    },
+    "search/session.json": {
+      "bytes": 989,
+      "sha256": "68e47aed67045f3be9ed12ba08ef118581b5483ef5f4dad4ced9024d30ff94f9"
+    },
+    "search/create-receipt.json": {
+      "bytes": 3828,
+      "sha256": "ab991ee2cdf0146a085d85e013c3c25b25c88e1d37ffe2e6206532be3d13c8e5"
+    },
+    "search/result.json": {
+      "bytes": 271,
+      "sha256": "9e9192efde4533d0b0567577fac7641d5b4a9aa33ba1b719d1e32e8de977614b"
+    },
+    "search/online-result.json": {
+      "bytes": 809,
+      "sha256": "239cebff56d1f6c3bac958861883d53afe8e282e719144dabd065243ec5f938f"
+    },
+    "plan.json": {
+      "bytes": 17774,
+      "sha256": "3f291ab72f9950c36bbc3569324496c218430587d7da5808001fc81323e027c4"
+    }
+  }
+}

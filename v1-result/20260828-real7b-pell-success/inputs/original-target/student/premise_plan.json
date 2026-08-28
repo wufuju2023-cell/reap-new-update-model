@@ -1,0 +1,44 @@
+{
+  "schema_version": "reap.teacher-course.student-proof-library.v1",
+  "source_sha256": "95e59c53b39c38685dd89ead1bb4ef2a1be00844ca07c633a4aa43ce6412b367",
+  "course_record_sha256": "1b225ad2e2cb13e22d3a222e9070ed9d9422619441c4d17dd5cb7d68f3612d35",
+  "environment_sha256": "623ae445c3cb8c843afb6c85a1db0dfa25f17e72ae95afaf23a49ef8844f0fce",
+  "cpu_image": "623ae445c3cb8c843afb6c85a1db0dfa25f17e72ae95afaf23a49ef8844f0fce",
+  "review": {
+    "reviewer": "Radeon independent operator",
+    "basic_library_only": false,
+    "verified_student_proofs_only": true,
+    "excludes_complete_goal": true,
+    "scope": "Original Pell Target only, CPU15 verified student local-facts setting. Two visible complete student theorems, with their full proof dependencies. No teacher proof, witness, existential elimination or induction scaffold supplied."
+  },
+  "lessons": {
+    "CodexMathFive.Pell.Target": [
+      {
+        "kind": "verified_student_proof",
+        "name": "CodexMathFive.Pell.StudentLibrarySequenceExists",
+        "proved_declaration": "CodexMathFive.Pell.CourseSequenceExists",
+        "acceptance_path": "${HISTORICAL_RUNS}/radeon-pell-target-after-unbounded-cpu15-20260828-native/student-proof-source/SequenceExists/accepted.json",
+        "acceptance_sha256": "a8ef82f2c4195ade9164c2324235258bbcce08148df074a397c5e8f7eee3289a",
+        "proof_path": "${HISTORICAL_RUNS}/radeon-pell-target-after-unbounded-cpu15-20260828-native/student-proof-source/SequenceExists/proof.lean",
+        "proof_sha256": "d01b94e968e9995ce950c4f74b56e0d43ab66e7a41b6090de62a70178bd45cda",
+        "session_id": "course-2cffcb9eb8c1-03",
+        "action_body_sha256": "5109d3b0e15f39a251129558ddc45c38f771efdb5734f88bfd4db1df4f914331",
+        "declarations_sha256": "95e59c53b39c38685dd89ead1bb4ef2a1be00844ca07c633a4aa43ce6412b367",
+        "type_sha256": "49459def3ee98d3ccb6eedfe42bfbb3c9b10e31ec084ff71d795807cf8c73522"
+      },
+      {
+        "kind": "verified_student_proof",
+        "name": "CodexMathFive.Pell.StudentLibraryUnboundedFromRecurrence",
+        "proved_declaration": "CodexMathFive.Pell.CourseUnboundedFromRecurrence",
+        "acceptance_path": "${HISTORICAL_RUNS}/radeon-pell-target-after-unbounded-cpu15-20260828-native/student-proof-source/UnboundedFromRecurrence/accepted.json",
+        "acceptance_sha256": "8f8e1885ddd55536ef47be105866ddfa02ed97600c0f6f6d0f055f915f6bcd70",
+        "proof_path": "${HISTORICAL_RUNS}/radeon-pell-target-after-unbounded-cpu15-20260828-native/student-proof-source/UnboundedFromRecurrence/proof.lean",
+        "proof_sha256": "7d1f9bd56870c38bd6b1681d51dffcab0f6a6f2176bb76ecfd328be40a106d87",
+        "session_id": "course-26c724af16ee-01",
+        "action_body_sha256": "0a311493fceeb07a910b13746ef519953ad3c7f90ec1d438030b871458f638f6",
+        "declarations_sha256": "95e59c53b39c38685dd89ead1bb4ef2a1be00844ca07c633a4aa43ce6412b367",
+        "type_sha256": "3c2045f615d28e4f8d9f83655415526e952422448a516b1d3ece2d636a6c36a1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": "reap.teacher-course.visibility.v1",
+  "source": "StudentDeclarations.lean",
+  "source_sha256": "ed5aeb5cd6f338dbc64c1a1225c3a898910064db16fb7081ba41a104208c240a",
+  "course_record": "course_plan.json",
+  "course_record_sha256": "b61b6a1ab493636353bdea968843bcf6a54d50a0f9dd2d974d045041bc633c97",
+  "definitions": {
+    "CodexMathFive.Pell.CourseUnboundedFromRecurrence": [],
+    "CodexMathFive.Pell.Target": []
+  },
+  "scope": "CPU15 same uninstantiated local-fact environment. Exactly two genuine verified student proofs; no supplied specialization, witness, tactic or teacher proof. Return to original complete sequence bridge, max-lessons1 before original Target.",
+  "gpu_started": false
+}

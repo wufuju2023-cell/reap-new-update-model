@@ -1,0 +1,8 @@
+{
+  "validated": true,
+  "type_pins": {
+    "CodexMathFive.Pell.StudentLibraryRecurrence": "b02864630325fb50b95a715cb04925a633924cbda1e063e1ea5bc3408f7ea22c",
+    "CodexMathFive.Pell.StudentLibraryIndexedWitness": "b8dac2d50ea6c2b5ac59a9685ee8b485307a24443e2ebbe01e1827225abe8d10"
+  },
+  "fixed_lean_exit_code": 0
+}

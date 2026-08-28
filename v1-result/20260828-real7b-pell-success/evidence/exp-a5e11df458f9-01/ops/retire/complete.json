@@ -1,0 +1,1 @@
+{"evidence":[{"path":"${HISTORICAL_RUNS}/radeon-pell-lower-coordinate-code04-20260828-native/store/pell-lower-coordinate/ops/00-retire/response.json","sha256":"b6610d24d264d0f00db64493c9d90c01c6326c3566eaff4b2102e98081d2aa1b"}],"intent_sha256":"cbe59e4ad3f53037db070b3f36e31ccc37b38ec6858f4f23874f92e8eb91fbfd","result":{"policy_version":1,"released":true}}

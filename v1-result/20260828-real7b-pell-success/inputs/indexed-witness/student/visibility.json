@@ -1,0 +1,13 @@
+{
+  "schema_version": "reap.teacher-course.visibility.v1",
+  "source": "StudentDeclarations.lean",
+  "source_sha256": "44a1f67148b57425c80a41f631eb5b4cbea66951da4a0f702eafe42d22bd96a2",
+  "course_record": "course_plan.json",
+  "course_record_sha256": "b8cd86edfa5e625029c89fbe2fd2a573b287232f183963a904a928df2c2f39c9",
+  "definitions": {
+    "CodexMathFive.Pell.CourseIndexedWitness": [],
+    "CodexMathFive.Pell.Target": []
+  },
+  "scope": "Structural course, not arithmetic: given exactly the all-index property already obtained in the genuine student Recurrence proof, student must instantiate a universal fact and package existential witnesses. No chosen index, coordinate equality, tactic, teacher proof or theorem premise is supplied. This removes prerequisite chaining from the existing UnboundedFromRecurrence bridge; success must be learned/published and then tested back on the original bridge/Target. Original mathematical Target/source prefix unchanged; max-lessons1.",
+  "gpu_started": false
+}

@@ -1,0 +1,1 @@
+{"evidence":[{"path":"${HISTORICAL_RUNS}/radeon-pell-indexed-witness-cpu15-20260828-native/store/pell-indexed-witness/ops/00-retire/response.json","sha256":"e15ab7499e0c54389d180fbcc891080ed0955a39700b7ca11902ae13e54553df"}],"intent_sha256":"cfa59554c783ccc379c0cbdc2ce21ec9b05503e87be2d5d05e89384697fddb58","result":{"policy_version":2,"released":true}}

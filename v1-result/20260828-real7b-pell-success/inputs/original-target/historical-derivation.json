@@ -1,0 +1,20 @@
+{
+  "source_sha256": "95e59c53b39c38685dd89ead1bb4ef2a1be00844ca07c633a4aa43ce6412b367",
+  "parent_source_sha256": "ed5aeb5cd6f338dbc64c1a1225c3a898910064db16fb7081ba41a104208c240a",
+  "parent_prefix_byte_identical": true,
+  "original_target_unchanged": true,
+  "successful_seed": "exp-26c724af16ee-01",
+  "historical_v23_inherited": false,
+  "proof_dependency_graph": {
+    "UnboundedFromRecurrence": [
+      "Recurrence",
+      "IndexedWitness"
+    ],
+    "Target_visible": [
+      "SequenceExists",
+      "UnboundedFromRecurrence"
+    ]
+  },
+  "provenance_note": "The complete verified bridge proof body retains its two deterministic local-fact loader lines plus the single generated exact/tauto action. Loader lines are environment support, NOT model actions or success-training targets. All dependency theorem bodies are retained byte-for-byte in the source.",
+  "scope": "Original Pell Target only, CPU15 verified student local-facts setting. Two visible complete student theorems, with their full proof dependencies. No teacher proof, witness, existential elimination or induction scaffold supplied."
+}

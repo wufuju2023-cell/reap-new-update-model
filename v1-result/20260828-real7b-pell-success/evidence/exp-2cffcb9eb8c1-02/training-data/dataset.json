@@ -1,0 +1,71 @@
+{
+  "schema_version": "reap.verified-success-trajectory.v1",
+  "profile": "verified-generated-action-negative-longest-branch-v1",
+  "session_id": "course-2cffcb9eb8c1-02",
+  "tree_id": "course-2cffcb9eb8c1-02.tree0",
+  "theorem": "ReapCurriculumWrapper.attempt",
+  "theorem_sha256": "8844f064354637884d4974106cfbcc27dc719802e055b5311e6e2127d5f0a1b7",
+  "root_return": -2,
+  "action_unit": "one generated tactic string; focus transitions cost zero",
+  "and_return": "minimum branch return; shared-metavariable branch skipping rejected",
+  "state_origin": "exact saved state matched against independent Lean replay",
+  "training_integration": "none; not search_visit_backup or categorical-head training",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "final_policy_version": 0,
+  "inputs_sha256": {
+    "raw_tree.json": "21abc2fffc841d2066f8132778fea4cd4228fcfd653895295f6937c83a2b1d46",
+    "replay.lean": "eefb45d0695f3346862149db279c3fc84f448562cceccb4a6566432f29baca2b",
+    "plan.json": "a6a7d6bd5757acbc1d265cc8e1608427efe89f277f8d97d30b6bc1baa2a2ef1e",
+    "source.lean": "8844f064354637884d4974106cfbcc27dc719802e055b5311e6e2127d5f0a1b7",
+    "observer.jsonl": "82d2c69765d56adcaac57aaadf7e6b15a308a6d5229a6ee051ea88534e6f7ef5",
+    "historical-proof.stdout": "250da5dbae1b46458098cf37ce70a0493a5f5a1029d10074b0891f391fd21bf7",
+    "VerifiedReplay.lean": "a642aaf993f884c26c255ca3cdf1f4c6227ccc87273880243a0fc9c153761f23",
+    "historical-proof.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "session.json": "53a2331e7a8df04f51eebcc6296b4513babe4c1248fcda302b33678661d30c4b",
+    "historical-proof-receipt.json": "a48d59051ca49b24c6226aff46f416237b727eb358e8a24edf734c603c6d1648",
+    "accepted-proof.lean": "f7c1842b4da0605367ca2538a0465ccc608ca6ea195b0d6bc9907b385cbccbfc",
+    "result.json": "7b00d9124b715d90aa67c5b9cb09f0279f5b071390439994398b1c11f07dd357"
+  },
+  "trace_sha256": "b73519bcc3dc13be353ffbd4dff6eebc6e6f4f4823865c895fa2dde8420410ac",
+  "replay_receipt_sha256": "22ac5dae6224d67e98285776aa9df3e162fe607ce6e5eb5cb6c029771776023c",
+  "rows": [
+    {
+      "node_index": 0,
+      "child_index": 1,
+      "state": [
+        "⊢ ∀ (x y : ℕ),\n    0 < x →\n      0 < y →\n        x < (3 * (x, y).1 + 4 * (x, y).2, 2 * (x, y).1 + 3 * (x, y).2).1 ∧\n          y < (3 * (x, y).1 + 4 * (x, y).2, 2 * (x, y).1 + 3 * (x, y).2).2"
+      ],
+      "next_state": [
+        "⊢ ∀ (x y : ℕ), 0 < x → 0 < y → x < 3 * x + 4 * y ∧ y < 2 * x + 3 * y"
+      ],
+      "tactic": "simp [Nat.add_comm, Nat.add_left_comm, Nat.add_assoc]",
+      "return": -2,
+      "prompt": "User: Please generate a tactic in lean4 to solve the state.\nHere're some theorems that may be helpful:\n\nSTATE:\n⊢ ∀ (x y : ℕ),\n    0 < x →\n      0 < y →\n        x < (3 * (x, y).1 + 4 * (x, y).2, 2 * (x, y).1 + 3 * (x, y).2).1 ∧\n          y < (3 * (x, y).1 + 4 * (x, y).2, 2 * (x, y).1 + 3 * (x, y).2).2\nTACTIC:\n\nAssistant:",
+      "policy_version": 0,
+      "generation_sequence": 3,
+      "eval_sequence": 4,
+      "generation_index": 0,
+      "candidate_index": 1
+    },
+    {
+      "node_index": 1,
+      "child_index": 6,
+      "state": [
+        "⊢ ∀ (x y : ℕ), 0 < x → 0 < y → x < 3 * x + 4 * y ∧ y < 2 * x + 3 * y"
+      ],
+      "next_state": [],
+      "tactic": "exact fun x y hx hy ↦ ⟨by linarith [hx, hy], by linarith [hx, hy]⟩",
+      "return": -1,
+      "prompt": "User: Please generate a tactic in lean4 to solve the state.\nHere're some theorems that may be helpful:\n\nSTATE:\n⊢ ∀ (x y : ℕ), 0 < x → 0 < y → x < 3 * x + 4 * y ∧ y < 2 * x + 3 * y\nTACTIC:\n\nAssistant:",
+      "policy_version": 0,
+      "generation_sequence": 17,
+      "eval_sequence": 18,
+      "generation_index": 0,
+      "candidate_index": 1
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "schema_version": "reap.reproduction.independent-lean.v1",
+  "passed": true,
+  "session_id": "course-2cffcb9eb8c1-04",
+  "theorem": "ReapCurriculumWrapper.attempt",
+  "requested_image": "623ae445c3cb8c843afb6c85a1db0dfa25f17e72ae95afaf23a49ef8844f0fce",
+  "theorem_sha256": "802f4950b85a89775eff914290805c963a35b42c6b3fe72b04619c1d40698d85",
+  "proof_sha256": "797fef2cdd6e1190296c377835eb73129e6d140d8224872648316b1cbd70a91b",
+  "proof_file": "proof.lean",
+  "input_files": {
+    "source": {
+      "path": "inputs/lesson-04.lean",
+      "sha256": "802f4950b85a89775eff914290805c963a35b42c6b3fe72b04619c1d40698d85"
+    },
+    "session": {
+      "path": "outputs/course-2cffcb9eb8c1-04/session.json",
+      "sha256": "acd95fe0785f1b4a740efccf0a08f874ab6afe71faf283efc65c4dae164b2266"
+    },
+    "result": {
+      "path": "outputs/course-2cffcb9eb8c1-04/result.json",
+      "sha256": "72ac4ba11aa9a8c99c6fbc5d60354c185c8e134eb5b4477092dc8669acb3710d"
+    },
+    "online_result": {
+      "path": "outputs/course-2cffcb9eb8c1-04/online-result.json",
+      "sha256": "7f39681fe545ca6d8fc7d1609ced9cd16cd245b207db4d3e5d2d68c9b9618085"
+    }
+  },
+  "online_status": "passed_execution",
+  "online_updates": 23,
+  "command": [
+    "podman",
+    "run",
+    "--name",
+    "reap-proof-course-2cffcb9eb8c1-04",
+    "--pull",
+    "never",
+    "--network",
+    "none",
+    "--userns",
+    "keep-id:uid=10001,gid=10001",
+    "--user",
+    "10001:10001",
+    "--volume",
+    "${HISTORICAL_RUNS}/radeon-sequence-historical-proof-audit-20260828-native/proof-check/course-2cffcb9eb8c1-04:/proof:ro",
+    "--workdir",
+    "/opt/reap-runtime",
+    "--entrypoint",
+    "bash",
+    "623ae445c3cb8c843afb6c85a1db0dfa25f17e72ae95afaf23a49ef8844f0fce",
+    "-lc",
+    "lake env lean /proof/proof.lean"
+  ],
+  "lean_returncode": 0,
+  "container_exit_code": 0,
+  "container_running": false,
+  "image": "623ae445c3cb8c843afb6c85a1db0dfa25f17e72ae95afaf23a49ef8844f0fce",
+  "network": "none",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "elapsed_seconds": 51.25794203999976,
+  "files": {
+    "inspect.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    "inspect.stdout.json": {
+      "sha256": "b9bd1306c5571fdada639d692e52086005922b2baee1d94a971c69d088b73a4e",
+      "size": 13073
+    },
+    "launch-intent.json": {
+      "sha256": "9937362f6196f97974447fdb1c2fc12fabf17493841fd6f037a585780b993170",
+      "size": 616
+    },
+    "proof.lean": {
+      "sha256": "797fef2cdd6e1190296c377835eb73129e6d140d8224872648316b1cbd70a91b",
+      "size": 6502
+    },
+    "stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    "stdout.log": {
+      "sha256": "5d96d5753252d3cb3df132591ed107889907c83736efeaee71b79e3b73ce9817",
+      "size": 91
+    }
+  },
+  "verification_receipt_sha256": "bb6608b1f04a82ae517ce37e91be7eb80fe10e702317816a039e282b02d0eb98"
+}

@@ -1,0 +1,2 @@
+# The optional patch matches the delivered RolloutSink's mixed newlines exactly.
+0004-selection-value-refresh.patch -text

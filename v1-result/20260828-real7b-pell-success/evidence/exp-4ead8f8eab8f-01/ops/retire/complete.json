@@ -1,0 +1,1 @@
+{"evidence":[{"path":"${HISTORICAL_RUNS}/radeon-pell-witness-successor-code11-20260828-native/store/pell-witness-successor/ops/00-retire/response.json","sha256":"70972dea188b5788ec19fd317d7db91db397d100eaf56af497320ab8a97a9bd4"}],"intent_sha256":"fb3e3dbf9a29a46bf7c6983f11ca20e79061f6dfdd38f96d7972d24c5e3e1365","result":{"policy_version":2,"released":true}}

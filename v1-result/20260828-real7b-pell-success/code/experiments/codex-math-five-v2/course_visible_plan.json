@@ -1,0 +1,176 @@
+{
+  "schema_version": "reap.codex-five.course-plan.v2",
+  "source_kind": "codex_assembled_classical_exercises",
+  "frontiermath_problem": false,
+  "originality_claimed": false,
+  "official_difficulty_rating": null,
+  "source": "StudentVisibleDeclarations.lean",
+  "source_sha256": "d6db1937664f61e8768ece308a7e3578965c17067a7b5dae457fe4ff05e112d7",
+  "teacher_reference": "TeacherRoutes.md",
+  "teacher_reference_imported_by_student": false,
+  "relation_kind": "operator_reviewed_teaching_dependencies_not_logical_implication_certificates",
+  "student_search_started": false,
+  "training_records_exported": false,
+  "group_status": "five_targets_prepared",
+  "teacher_has_seen_imo_reference": true,
+  "teacher_imo_reference": {
+    "mathlib_commit": "5352afccd6866369be9de43f5b7ec47203555f44",
+    "path": "Archive/Imo/Imo1988Q6.lean"
+  },
+  "problems": [
+    {
+      "id": "functional-equation",
+      "title": "整数函数方程",
+      "target": "CodexMathFive.FunctionalEquation.Target",
+      "target_proved": false,
+      "stages": [
+        {
+          "stage": 1,
+          "declarations": [
+            "CodexMathFive.FunctionalEquation.CourseInvolution"
+          ],
+          "status": "unproved_propositions"
+        },
+        {
+          "stage": 2,
+          "declarations": [
+            "CodexMathFive.FunctionalEquation.CourseAdditivity",
+            "CodexMathFive.FunctionalEquation.CourseIntegerLinearity"
+          ],
+          "status": "unproved_propositions"
+        }
+      ],
+      "final_stage": {
+        "declaration": "CodexMathFive.FunctionalEquation.Target",
+        "counts_as_original_exercise_only_after_independent_lean_verification": true
+      },
+      "teacher_assessed_role": "preparatory_method_target",
+      "difficulty_empirically_measured": false
+    },
+    {
+      "id": "prime-square-sum",
+      "title": "模4余3素数与平方和",
+      "target": "CodexMathFive.PrimeSquareSum.Target",
+      "target_proved": false,
+      "stages": [
+        {
+          "stage": 1,
+          "declarations": [
+            "CodexMathFive.PrimeSquareSum.CourseMinusOne"
+          ],
+          "status": "unproved_propositions"
+        },
+        {
+          "stage": 2,
+          "declarations": [
+            "CodexMathFive.PrimeSquareSum.CourseResiduePair"
+          ],
+          "status": "unproved_propositions"
+        }
+      ],
+      "final_stage": {
+        "declaration": "CodexMathFive.PrimeSquareSum.Target",
+        "counts_as_original_exercise_only_after_independent_lean_verification": true
+      },
+      "teacher_assessed_role": "preparatory_method_target",
+      "difficulty_empirically_measured": false
+    },
+    {
+      "id": "pell-unbounded",
+      "title": "Pell方程任意大正解",
+      "target": "CodexMathFive.Pell.Target",
+      "target_proved": false,
+      "stages": [
+        {
+          "stage": 1,
+          "declarations": [
+            "CodexMathFive.Pell.CourseInvariant",
+            "CodexMathFive.Pell.CoursePositiveGrowth"
+          ],
+          "status": "unproved_propositions"
+        },
+        {
+          "stage": 2,
+          "declarations": [
+            "CodexMathFive.Pell.CourseRecurrence"
+          ],
+          "status": "unproved_propositions"
+        }
+      ],
+      "final_stage": {
+        "declaration": "CodexMathFive.Pell.Target",
+        "counts_as_original_exercise_only_after_independent_lean_verification": true
+      },
+      "teacher_assessed_role": "preparatory_method_target",
+      "difficulty_empirically_measured": false
+    },
+    {
+      "id": "imo-1988-q6",
+      "title": "IMO 1988 第6题：韦达跳跃",
+      "target": "CodexMathFive.Imo1988Q6.Target",
+      "source_kind": "IMO_1988_question_6",
+      "teacher_reference_seen": true,
+      "target_proved": false,
+      "stages": [
+        {
+          "stage": 1,
+          "declarations": [
+            "CodexMathFive.Imo1988Q6.CoursePositiveQuotient",
+            "CodexMathFive.Imo1988Q6.CourseOtherRoot"
+          ],
+          "status": "unproved_propositions"
+        },
+        {
+          "stage": 2,
+          "declarations": [
+            "CodexMathFive.Imo1988Q6.CourseDescent",
+            "CodexMathFive.Imo1988Q6.CourseBoundary"
+          ],
+          "status": "unproved_propositions"
+        }
+      ],
+      "final_stage": {
+        "declaration": "CodexMathFive.Imo1988Q6.Target",
+        "counts_as_original_exercise_only_after_independent_lean_verification": true
+      },
+      "teacher_assessed_role": "primary_hard_target",
+      "difficulty_empirically_measured": false
+    },
+    {
+      "id": "schur-polynomial",
+      "title": "Schur整系数多项式不可约性",
+      "target": "CodexMathFive.Schur.Target",
+      "source_kind": "classical_schur_irreducibility_exercise",
+      "teacher_reference_seen": true,
+      "target_proved": false,
+      "stages": [
+        {
+          "stage": 1,
+          "declarations": [
+            "CodexMathFive.Schur.CourseMonicDegree",
+            "CodexMathFive.Schur.CourseIntegerValues"
+          ],
+          "status": "unproved_propositions"
+        },
+        {
+          "stage": 2,
+          "declarations": [
+            "CodexMathFive.Schur.CourseProperFactorDegrees",
+            "CodexMathFive.Schur.CourseOppositeFactors",
+            "CodexMathFive.Schur.CourseMonicNotNegativeSquare"
+          ],
+          "status": "unproved_propositions"
+        }
+      ],
+      "final_stage": {
+        "declaration": "CodexMathFive.Schur.Target",
+        "counts_as_original_exercise_only_after_independent_lean_verification": true
+      },
+      "teacher_assessed_role": "primary_hard_target",
+      "difficulty_empirically_measured": false
+    }
+  ],
+  "revision": "explicit_pell_recurrence_hypotheses",
+  "parent_student_sha256": "acb26fb7e222648906455a4d10afda475a24be65a96c772877b57fcd20b2fb4c",
+  "visible_input_notes": "VisibleInput.md"
+}

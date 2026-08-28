@@ -1,0 +1,105 @@
+{
+  "schema_version": "reap.verified-success-trajectory.v1",
+  "profile": "verified-generated-action-negative-longest-branch-v1",
+  "session_id": "course-0314796052d2-01",
+  "tree_id": "course-0314796052d2-01.tree0",
+  "theorem": "ReapCurriculumWrapper.attempt",
+  "theorem_sha256": "9d8b19f829034d5cf44876d8786c607fd51d7e1cbdb064f44d04016637e29a97",
+  "root_return": -2,
+  "action_unit": "one generated tactic string; focus transitions cost zero",
+  "and_return": "minimum branch return; shared-metavariable branch skipping rejected",
+  "state_origin": "exact saved state matched against independent Lean replay",
+  "training_integration": "none; not search_visit_backup or categorical-head training",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "final_policy_version": 2,
+  "inputs_sha256": {
+    "raw_tree.json": "e15f06e0bd90aab19d316a22276c2c0c3b44315a1926d7ec4421193ac5df90ff",
+    "replay.lean": "ff9ad40ee95e8b4f3bf48f301609e65e5ad824a7a99fa8c5b2266ea3df43acd5",
+    "plan.json": "d9b215ef68a4dead54e98d66b6e2abb2cd525c04c10e44df1630143bc4b220a9",
+    "source.lean": "9d8b19f829034d5cf44876d8786c607fd51d7e1cbdb064f44d04016637e29a97",
+    "observer.jsonl": "8b00e60075b9aaeeecc16661f5f9849f851bc2296153bf19f21ea66ba7aa8879",
+    "historical-proof.stdout": "e271ad8cec1b1930e9227070482b160b4b702b3a6cfadc950d9d3cd520df003a",
+    "VerifiedReplay.lean": "a642aaf993f884c26c255ca3cdf1f4c6227ccc87273880243a0fc9c153761f23",
+    "historical-proof.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "session.json": "4652da86ddeb45377744534925755041a6353625b08f8bb385af3e1539bac8ea",
+    "historical-proof-receipt.json": "8025b07fb7e49c856d83f8304cbea80946f7e966cc234b25c17aa3401a245c53",
+    "accepted-proof.lean": "92e4ab7314a3153fd6173f1372b73b976dd0c8889521647a52231a74a4c3ce2c",
+    "result.json": "ea0b67d63b99ad6e1eb4e97e1c15073297d461b63269663f26a5dbad67f1c88d"
+  },
+  "trace_sha256": "dc3f7f33e6cfd9cb5c117108085179279b1aa837d0c733268b8ed424dc147514",
+  "replay_receipt_sha256": "dc0a7589c629c73fa2734f7dce68058157a96e28f9d02a87beb0536c0a2f2186",
+  "rows": [
+    {
+      "node_index": 0,
+      "child_index": 1,
+      "state": [
+        "⊢ ∀ (B x y : ℕ),\n    B < x →\n      B < y →\n        x ^ 2 = 2 * y ^ 2 + 1 →\n          have u := 3 * x + 4 * y;\n          have v := 2 * x + 3 * y;\n          B + 1 < u ∧ B + 1 < v ∧ u ^ 2 = 2 * v ^ 2 + 1"
+      ],
+      "next_state": [
+        "case left\nB x y : ℕ\na : B < x\na_1 : B < y\na_2 : x ^ 2 = 2 * y ^ 2 + 1\nu : ℕ := ⋯\nv : ℕ := ⋯\n⊢ B + 1 < 3 * x + 4 * y",
+        "case right.left\nB x y : ℕ\na : B < x\na_1 : B < y\na_2 : x ^ 2 = 2 * y ^ 2 + 1\nu : ℕ := ⋯\nv : ℕ := ⋯\n⊢ B + 1 < 2 * x + 3 * y",
+        "case right.right\nB x y : ℕ\na : B < x\na_1 : B < y\na_2 : x ^ 2 = 2 * y ^ 2 + 1\nu : ℕ := ⋯\nv : ℕ := ⋯\n⊢ (3 * x + 4 * y) ^ 2 = 2 * (2 * x + 3 * y) ^ 2 + 1"
+      ],
+      "tactic": "aesop",
+      "return": -2,
+      "prompt": "User: Please generate a tactic in lean4 to solve the state.\nHere're some theorems that may be helpful:\nFormal name: and_iff_left\nFormal statement: ∀ {b a : Prop}, b → (a ∧ b ↔ a)\nFormal name: and_iff_right\nFormal statement: ∀ {a b : Prop}, a → (a ∧ b ↔ b)\nSTATE:\n⊢ ∀ (B x y : ℕ),\n    B < x →\n      B < y →\n        x ^ 2 = 2 * y ^ 2 + 1 →\n          have u := 3 * x + 4 * y;\n          have v := 2 * x + 3 * y;\n          B + 1 < u ∧ B + 1 < v ∧ u ^ 2 = 2 * v ^ 2 + 1\nTACTIC:\n\nAssistant:",
+      "policy_version": 0,
+      "generation_sequence": 1,
+      "eval_sequence": 2,
+      "generation_index": 0,
+      "candidate_index": 0
+    },
+    {
+      "node_index": 2,
+      "child_index": 10,
+      "state": [
+        "case left\nB x y : ℕ\na : B < x\na_1 : B < y\na_2 : x ^ 2 = 2 * y ^ 2 + 1\nu : ℕ := ⋯\nv : ℕ := ⋯\n⊢ B + 1 < 3 * x + 4 * y"
+      ],
+      "next_state": [],
+      "tactic": "linarith [a_1, a_2]",
+      "return": -1,
+      "prompt": "User: Please generate a tactic in lean4 to solve the state.\nHere're some theorems that may be helpful:\nFormal name: and_iff_left\nFormal statement: ∀ {b a : Prop}, b → (a ∧ b ↔ a)\nFormal name: and_iff_right\nFormal statement: ∀ {a b : Prop}, a → (a ∧ b ↔ b)\nSTATE:\ncase left\nB x y : ℕ\na : B < x\na_1 : B < y\na_2 : x ^ 2 = 2 * y ^ 2 + 1\nu : ℕ := ⋯\nv : ℕ := ⋯\n⊢ B + 1 < 3 * x + 4 * y\nTACTIC:\n\nAssistant:",
+      "policy_version": 2,
+      "generation_sequence": 279,
+      "eval_sequence": 280,
+      "generation_index": 0,
+      "candidate_index": 3
+    },
+    {
+      "node_index": 3,
+      "child_index": 11,
+      "state": [
+        "case right.left\nB x y : ℕ\na : B < x\na_1 : B < y\na_2 : x ^ 2 = 2 * y ^ 2 + 1\nu : ℕ := ⋯\nv : ℕ := ⋯\n⊢ B + 1 < 2 * x + 3 * y"
+      ],
+      "next_state": [],
+      "tactic": "omega",
+      "return": -1,
+      "prompt": "User: Please generate a tactic in lean4 to solve the state.\nHere're some theorems that may be helpful:\nFormal name: and_iff_left\nFormal statement: ∀ {b a : Prop}, b → (a ∧ b ↔ a)\nFormal name: and_iff_right\nFormal statement: ∀ {a b : Prop}, a → (a ∧ b ↔ b)\nSTATE:\ncase right.left\nB x y : ℕ\na : B < x\na_1 : B < y\na_2 : x ^ 2 = 2 * y ^ 2 + 1\nu : ℕ := ⋯\nv : ℕ := ⋯\n⊢ B + 1 < 2 * x + 3 * y\nTACTIC:\n\nAssistant:",
+      "policy_version": 2,
+      "generation_sequence": 300,
+      "eval_sequence": 301,
+      "generation_index": 0,
+      "candidate_index": 2
+    },
+    {
+      "node_index": 4,
+      "child_index": 12,
+      "state": [
+        "case right.right\nB x y : ℕ\na : B < x\na_1 : B < y\na_2 : x ^ 2 = 2 * y ^ 2 + 1\nu : ℕ := ⋯\nv : ℕ := ⋯\n⊢ (3 * x + 4 * y) ^ 2 = 2 * (2 * x + 3 * y) ^ 2 + 1"
+      ],
+      "next_state": [],
+      "tactic": "nlinarith [a, a_1, a_2, u, v]",
+      "return": -1,
+      "prompt": "User: Please generate a tactic in lean4 to solve the state.\nHere're some theorems that may be helpful:\nFormal name: and_iff_left\nFormal statement: ∀ {b a : Prop}, b → (a ∧ b ↔ a)\nFormal name: and_iff_right\nFormal statement: ∀ {a b : Prop}, a → (a ∧ b ↔ b)\nSTATE:\ncase right.right\nB x y : ℕ\na : B < x\na_1 : B < y\na_2 : x ^ 2 = 2 * y ^ 2 + 1\nu : ℕ := ⋯\nv : ℕ := ⋯\n⊢ (3 * x + 4 * y) ^ 2 = 2 * (2 * x + 3 * y) ^ 2 + 1\nTACTIC:\n\nAssistant:",
+      "policy_version": 2,
+      "generation_sequence": 313,
+      "eval_sequence": 314,
+      "generation_index": 0,
+      "candidate_index": 0
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "files": [
+    {
+      "path": "copy-manifest.json",
+      "sha256": "8432dea0fe14fbb88bdefcfe5e94af25b3f507982d91299392353c8987b54a26",
+      "bytes": 2806
+    },
+    {
+      "path": "plan.json",
+      "sha256": "3f291ab72f9950c36bbc3569324496c218430587d7da5808001fc81323e027c4",
+      "bytes": 17774
+    },
+    {
+      "path": "inputs/lesson-04.lean",
+      "sha256": "802f4950b85a89775eff914290805c963a35b42c6b3fe72b04619c1d40698d85",
+      "bytes": 6381
+    },
+    {
+      "path": "proof-check/course-2cffcb9eb8c1-04/accepted.json",
+      "sha256": "3ad3a361f1379c6006f3a901e031c26379ff6f182400dd1061dbe461c1f39163",
+      "bytes": 2998
+    },
+    {
+      "path": "proof-check/course-2cffcb9eb8c1-04/inspect.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "proof-check/course-2cffcb9eb8c1-04/proof.lean",
+      "sha256": "797fef2cdd6e1190296c377835eb73129e6d140d8224872648316b1cbd70a91b",
+      "bytes": 6502
+    },
+    {
+      "path": "proof-check/course-2cffcb9eb8c1-04/stdout.log",
+      "sha256": "5d96d5753252d3cb3df132591ed107889907c83736efeaee71b79e3b73ce9817",
+      "bytes": 91
+    },
+    {
+      "path": "proof-check/course-2cffcb9eb8c1-04/launch-intent.json",
+      "sha256": "9937362f6196f97974447fdb1c2fc12fabf17493841fd6f037a585780b993170",
+      "bytes": 616
+    },
+    {
+      "path": "proof-check/course-2cffcb9eb8c1-04/inspect.stdout.json",
+      "sha256": "b9bd1306c5571fdada639d692e52086005922b2baee1d94a971c69d088b73a4e",
+      "bytes": 13073
+    },
+    {
+      "path": "proof-check/course-2cffcb9eb8c1-04/receipt.json",
+      "sha256": "bb6608b1f04a82ae517ce37e91be7eb80fe10e702317816a039e282b02d0eb98",
+      "bytes": 2897
+    },
+    {
+      "path": "proof-check/course-2cffcb9eb8c1-04/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "outputs/course-2cffcb9eb8c1-04/raw_tree.json",
+      "sha256": "13a24a3f443a42728ff17dcd843d7396619c6028485862cdcb31fa2ef6a4b6bf",
+      "bytes": 9095
+    },
+    {
+      "path": "outputs/course-2cffcb9eb8c1-04/operator-stop.json",
+      "sha256": "37134efb06ed59747eaad584f675003ef3a884e0a0a6bc0339370a487f5290f7",
+      "bytes": 627
+    },
+    {
+      "path": "outputs/course-2cffcb9eb8c1-04/observer.jsonl",
+      "sha256": "f9788ff283529e4b3ab301de47a0f0a1a673c8906edd85ca94dc5ed678aef7da",
+      "bytes": 3429827
+    },
+    {
+      "path": "outputs/course-2cffcb9eb8c1-04/session.json",
+      "sha256": "acd95fe0785f1b4a740efccf0a08f874ab6afe71faf283efc65c4dae164b2266",
+      "bytes": 989
+    },
+    {
+      "path": "outputs/course-2cffcb9eb8c1-04/create-receipt.json",
+      "sha256": "5a2d3d5dbd722b4ddaa123cff191c1d2976a528ffea6d9fbd31b5272f5b9618c",
+      "bytes": 3828
+    },
+    {
+      "path": "outputs/course-2cffcb9eb8c1-04/result.json",
+      "sha256": "72ac4ba11aa9a8c99c6fbc5d60354c185c8e134eb5b4477092dc8669acb3710d",
+      "bytes": 260
+    },
+    {
+      "path": "outputs/course-2cffcb9eb8c1-04/online-result.json",
+      "sha256": "7f39681fe545ca6d8fc7d1609ced9cd16cd245b207db4d3e5d2d68c9b9618085",
+      "bytes": 182988
+    }
+  ],
+  "all_file_hashes_verified": true
+}

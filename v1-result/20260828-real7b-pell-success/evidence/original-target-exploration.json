@@ -1,0 +1,50 @@
+{
+  "observed_at_utc": "2026-08-28T12:42:30.798422+00:00",
+  "session": "course-23a72c86ef2a-01",
+  "step": 2,
+  "version": 0,
+  "checkpoint_sha256": "fb4fe0c7e2ab4a3680fa8526fb5eed0c7b52cc3339008db3b603d720ab38a2ee",
+  "source_sha256": "25f7fe26cd9ac58c2d19907acc06ad63c2bc9bd1719db1ecf1c6f25cf711c611",
+  "explicit_c_init": 1500,
+  "scaled_c_init": 1.5,
+  "actual_c_range": [
+    1.5012492194004319,
+    1.5012492194004319
+  ],
+  "root_solved": true,
+  "nodes": 2,
+  "root_evaluations": 3,
+  "solved_nodes": [
+    0,
+    1
+  ],
+  "root_branches_visited": 0,
+  "root_branches_total": 1,
+  "root_edges": [
+    {
+      "to": 1,
+      "tactic": "tauto",
+      "visits": 0,
+      "Q": 0,
+      "U": 2.6002399228246644,
+      "c": 1.5012492194004319,
+      "score": 2.6002399228246644
+    }
+  ],
+  "recent_states": [
+    [
+      "student_fact_1 : ∃ s, s 0 = (3, 2) ∧ ∀ (k : ℕ), s (k + 1) = (3 * (s k).1 + 4 * (s k).2, 2 * (s k).1 + 3 * (s k).2)\nstudent_fact_2 :\n  ∀ (s : ℕ → ℕ × ℕ),\n    s 0 = (3, 2) →\n      (∀ (k : ℕ), s (k + 1) = (3 * (s k).1 + 4 * (s k).2, 2 * (s k).1 + 3 * (s k).2)) →\n        ∀ (B : ℕ), ∃ x y, B < x ∧ B < y ∧ x ^ 2 = 2 * y ^ 2 + 1\n⊢ ∀ (B : ℕ), ∃ x y, B < x ∧ B < y ∧ x ^ 2 = 2 * y ^ 2 + 1"
+    ],
+    []
+  ],
+  "recent_created": [
+    {
+      "step": 2,
+      "node_index": 0,
+      "child_index": 1,
+      "tactic": "tauto"
+    }
+  ],
+  "selection_warning": null,
+  "scope": "bounded recent observer tail; no causal success claim, no automatic stop, no GPU mutation"
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": "reap.teacher-course.visibility.v1",
+  "source": "../codex-math-five-v2/StudentVisibleDeclarations.lean",
+  "source_sha256": "d6db1937664f61e8768ece308a7e3578965c17067a7b5dae457fe4ff05e112d7",
+  "course_record": "../codex-math-five-v2/course_visible_plan.json",
+  "course_record_sha256": "856d660ce16c60bada92aa511210618894bb43b712d5190d64e75cb2daef80ff",
+  "definitions": {
+    "CodexMathFive.FunctionalEquation.CourseInvolution": [
+      "CodexMathFive.FunctionalEquation.Satisfies"
+    ],
+    "CodexMathFive.FunctionalEquation.CourseAdditivity": [
+      "CodexMathFive.FunctionalEquation.Satisfies"
+    ],
+    "CodexMathFive.FunctionalEquation.CourseIntegerLinearity": [],
+    "CodexMathFive.FunctionalEquation.Target": [
+      "CodexMathFive.FunctionalEquation.Satisfies"
+    ],
+    "CodexMathFive.PrimeSquareSum.CourseMinusOne": [],
+    "CodexMathFive.PrimeSquareSum.CourseResiduePair": [],
+    "CodexMathFive.PrimeSquareSum.Target": [],
+    "CodexMathFive.Pell.CourseInvariant": [
+      "CodexMathFive.Pell.step"
+    ],
+    "CodexMathFive.Pell.CoursePositiveGrowth": [
+      "CodexMathFive.Pell.step"
+    ],
+    "CodexMathFive.Pell.CourseRecurrence": [],
+    "CodexMathFive.Pell.Target": [],
+    "CodexMathFive.Imo1988Q6.CoursePositiveQuotient": [
+      "CodexMathFive.Imo1988Q6.Equation"
+    ],
+    "CodexMathFive.Imo1988Q6.CourseOtherRoot": [],
+    "CodexMathFive.Imo1988Q6.CourseDescent": [
+      "CodexMathFive.Imo1988Q6.Equation"
+    ],
+    "CodexMathFive.Imo1988Q6.CourseBoundary": [
+      "CodexMathFive.Imo1988Q6.Equation"
+    ],
+    "CodexMathFive.Imo1988Q6.Target": [],
+    "CodexMathFive.Schur.CourseMonicDegree": [
+      "CodexMathFive.Schur.schurPolynomial"
+    ],
+    "CodexMathFive.Schur.CourseIntegerValues": [
+      "CodexMathFive.Schur.schurPolynomial"
+    ],
+    "CodexMathFive.Schur.CourseProperFactorDegrees": [
+      "CodexMathFive.Schur.schurPolynomial"
+    ],
+    "CodexMathFive.Schur.CourseOppositeFactors": [
+      "CodexMathFive.Schur.schurPolynomial"
+    ],
+    "CodexMathFive.Schur.CourseMonicNotNegativeSquare": [],
+    "CodexMathFive.Schur.Target": [
+      "CodexMathFive.Schur.schurPolynomial"
+    ]
+  },
+  "scope": "Expose exact nonrecursive mathematical definitions, no teacher proofs. Recursive Pell course is replaced by explicit recurrence assumptions.",
+  "gpu_started": false
+}

@@ -1,0 +1,26 @@
+{
+  "command": [
+    "podman",
+    "run",
+    "--name",
+    "reap-proof-course-2cffcb9eb8c1-02",
+    "--pull",
+    "never",
+    "--network",
+    "none",
+    "--userns",
+    "keep-id:uid=10001,gid=10001",
+    "--user",
+    "10001:10001",
+    "--volume",
+    "${HISTORICAL_RUNS}/radeon-pell-success-code04-20260828-native/pell-verify-001/proof-check/course-2cffcb9eb8c1-02:/proof:ro",
+    "--workdir",
+    "/opt/reap-runtime",
+    "--entrypoint",
+    "bash",
+    "623ae445c3cb8c843afb6c85a1db0dfa25f17e72ae95afaf23a49ef8844f0fce",
+    "-lc",
+    "lake env lean /proof/proof.lean"
+  ],
+  "mutation_retry_allowed": false
+}

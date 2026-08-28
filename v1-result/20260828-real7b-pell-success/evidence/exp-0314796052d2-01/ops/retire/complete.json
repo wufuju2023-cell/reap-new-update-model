@@ -1,0 +1,1 @@
+{"evidence":[{"path":"${HISTORICAL_RUNS}/radeon-pell-composition-explore-code11-20260828-native/store/pell-composition-explore/ops/00-retire/response.json","sha256":"a15a10487f6697730bb3b22b5d2ba484d527cbd3f80d9508e30dcb41d53db032"}],"intent_sha256":"74f9bb28c9f0eaf3acd23727b85834ba7ee633b49d308e7c40b02423f7dcc11b","result":{"policy_version":3,"released":true}}

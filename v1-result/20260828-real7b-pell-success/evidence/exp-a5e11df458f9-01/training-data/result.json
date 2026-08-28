@@ -1,0 +1,1 @@
+{"elapsed_ns":7511665654,"error":null,"proof_script":"exact fun B x y h₀ h₁ => by linarith [h₀, h₁]","schema_version":"reap.training.result.v1","session_id":"course-a5e11df458f9-01","solved":true,"status":"solved"}

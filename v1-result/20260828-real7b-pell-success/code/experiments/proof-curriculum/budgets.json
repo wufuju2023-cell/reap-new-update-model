@@ -1,0 +1,21 @@
+{
+  "schema_version": "reap.proof-curriculum.budgets.v2",
+  "gamma": 0.99,
+  "transport": {
+    "max_request_body_bytes": 262144,
+    "http_timeout_seconds": 1800,
+    "barrier_timeout_seconds": 1860,
+    "policy_scoring": "tokenwise"
+  },
+  "profiles": {
+    "probe": {"search_steps": 128, "max_nodes": 512, "num_samples": 4, "max_tokens": 256, "max_updates": 16, "min_checkpoint_interval": 8},
+    "main": {"search_steps": 512, "max_nodes": 2048, "num_samples": 8, "max_tokens": 512, "max_updates": 64, "min_checkpoint_interval": 8},
+    "deep": {"search_steps": 2048, "max_nodes": 8192, "num_samples": 8, "max_tokens": 768, "max_updates": 256, "min_checkpoint_interval": 8}
+  },
+  "instance": {
+    "lifetime_seconds": 28800,
+    "save_margin_seconds": 3600,
+    "initial_parallel_searches": 2,
+    "note": "Capacity and save margin are planning constraints. This file does not enforce a wall-clock shutdown or restart an interrupted Lean tree."
+  }
+}

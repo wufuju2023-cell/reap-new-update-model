@@ -1,0 +1,19 @@
+${HISTORICAL_RUNS}/radeon-pell-indexed-witness-cpu15-20260828-native/replay-01/replay.lean:1:11: warning: This simp argument is unused:
+  Prod.mk.injEq
+
+Hint: Omit it from the simp argument list.
+  i̵m̵p̵o̵r̵t̵ ̵R̵e̵a̵p̵R̵u̵n̵t̵i̵m̵e̵
+  ̵i̵m̵p̵o̵r̵t̵ ̵M̵a̵t̵h̵l̵i̵b̵
+  ̵i̵s̲i̲m̲p̲ ̲o̲n̲l̲y̲ ̲[̲a̲n̲d̲_̲s̲e̲l̲f̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+${HISTORICAL_RUNS}/radeon-pell-indexed-witness-cpu15-20260828-native/replay-01/replay.lean:2:7: warning: This simp argument is unused:
+  and_self
+
+Hint: Omit it from the simp argument list.
+  i̵m̵p̵o̵r̵t̵ ̵R̵e̵a̵p̵R̵u̵n̵t̵i̵m̵e̵
+  ̵i̵m̵p̵o̵r̵t̵ ̵M̵a̵t̵h̵l̵i̵b̵
+  ̵i̵s̲i̲m̲p̲ ̲o̲n̲l̲y̲ ̲[̲P̲r̲o̲d̲.̲m̲k̲.̲i̲n̲j̲E̲q̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ReapCurriculumWrapper.attempt' depends on axioms: [propext, Classical.choice, Quot.sound]

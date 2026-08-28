@@ -1,0 +1,56 @@
+{
+  "schema_version": "reap.verified-replay.plan.v1",
+  "nodes": [
+    {
+      "node_index": 0,
+      "state": [
+        "⊢ ∀ (s : ℕ → ℕ × ℕ),\n    (∀ (k : ℕ), k < (s k).1 ∧ k < (s k).2 ∧ (s k).1 ^ 2 = 2 * (s k).2 ^ 2 + 1) →\n      ∀ (B : ℕ), ∃ x y, B < x ∧ B < y ∧ x ^ 2 = 2 * y ^ 2 + 1"
+      ],
+      "kind": "OR",
+      "tactic": "intro s hs B",
+      "children": [
+        1
+      ]
+    },
+    {
+      "node_index": 3,
+      "state": [
+        "s : ℕ → ℕ × ℕ\nhs : ∀ (k : ℕ), k < (s k).1 ∧ k < (s k).2 ∧ (s k).1 ^ 2 = 2 * (s k).2 ^ 2 + 1\nB : ℕ\n⊢ ∃ x y, B < x ∧ B < y ∧ x ^ 2 = 2 * y ^ 2 + 1"
+      ],
+      "kind": "OR",
+      "tactic": "specialize hs B",
+      "children": [
+        2
+      ]
+    },
+    {
+      "node_index": 4,
+      "state": [
+        "s : ℕ → ℕ × ℕ\nB : ℕ\nhs : B < (s B).1 ∧ B < (s B).2 ∧ (s B).1 ^ 2 = 2 * (s B).2 ^ 2 + 1\n⊢ ∃ x y, B < x ∧ B < y ∧ x ^ 2 = 2 * y ^ 2 + 1"
+      ],
+      "kind": "OR",
+      "tactic": "suffices s B = s B by rw [this] at hs; aesop",
+      "children": [
+        3
+      ]
+    },
+    {
+      "node_index": 8,
+      "state": [
+        "s : ℕ → ℕ × ℕ\nB : ℕ\nhs : B < (s B).1 ∧ B < (s B).2 ∧ (s B).1 ^ 2 = 2 * (s B).2 ^ 2 + 1\n⊢ s B = s B"
+      ],
+      "kind": "OR",
+      "tactic": "simp only [Prod.mk.injEq, and_self]",
+      "children": [
+        4
+      ]
+    },
+    {
+      "node_index": 9,
+      "state": [],
+      "kind": "terminal",
+      "tactic": "",
+      "children": []
+    }
+  ]
+}

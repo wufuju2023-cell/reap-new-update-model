@@ -1,0 +1,1 @@
+{"elapsed_ns":193352635222,"error":null,"proof_script":"aesop\n· linarith [a_1, a_2]\n· omega\n· nlinarith [a, a_1, a_2, u, v]","schema_version":"reap.training.result.v1","session_id":"course-0314796052d2-01","solved":true,"status":"solved"}

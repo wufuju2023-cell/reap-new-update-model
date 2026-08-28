@@ -1,0 +1,52 @@
+{
+  "schema_version": "reap.verified-success-trajectory.v1",
+  "profile": "verified-generated-action-negative-longest-branch-v1",
+  "session_id": "course-2cffcb9eb8c1-03",
+  "tree_id": "course-2cffcb9eb8c1-03.tree0",
+  "theorem": "ReapCurriculumWrapper.attempt",
+  "theorem_sha256": "cde6890517e4032b0a90041c84520b98658bada32f259740aead16e5d74e5a6f",
+  "root_return": -1,
+  "action_unit": "one generated tactic string; focus transitions cost zero",
+  "and_return": "minimum branch return; shared-metavariable branch skipping rejected",
+  "state_origin": "exact saved state matched against independent Lean replay",
+  "training_integration": "none; not search_visit_backup or categorical-head training",
+  "axioms": [
+    "propext",
+    "Quot.sound"
+  ],
+  "final_policy_version": 0,
+  "inputs_sha256": {
+    "raw_tree.json": "6428a589e4e86b1dd64759f87e533d87c8f0b2e67441dffb00cf68ac7125b69c",
+    "replay.lean": "67ed392c58350d544b0867113d550d4ff022386ba5bbd1171b392a96e756a301",
+    "plan.json": "09b839bee9a5aad22584e5f5761a952a71545ba166a0e2657bff6226af163904",
+    "source.lean": "cde6890517e4032b0a90041c84520b98658bada32f259740aead16e5d74e5a6f",
+    "observer.jsonl": "0dd78ca1a7d1042f3112fb90a8f76b37bf0c71d0b81afa23cbf884fa7d4419c3",
+    "historical-proof.stdout": "f8df2456111a097c775a547d5f7dbdc1ff9b455551a1cebaabbf7f67fca83da9",
+    "VerifiedReplay.lean": "a642aaf993f884c26c255ca3cdf1f4c6227ccc87273880243a0fc9c153761f23",
+    "historical-proof.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "session.json": "68e47aed67045f3be9ed12ba08ef118581b5483ef5f4dad4ced9024d30ff94f9",
+    "historical-proof-receipt.json": "bd845d2202715db91ea21ea8e44e39e02c1e533ab1d30f739ea18f24afb4811f",
+    "accepted-proof.lean": "d01b94e968e9995ce950c4f74b56e0d43ab66e7a41b6090de62a70178bd45cda",
+    "result.json": "9e9192efde4533d0b0567577fac7641d5b4a9aa33ba1b719d1e32e8de977614b"
+  },
+  "trace_sha256": "6399608c4bb94bf214c9e181a763912ded8c40c5754ba3466ae2d4cd1500d2e9",
+  "replay_receipt_sha256": "b823e4c1083a217c56fbff74c2f201f60e1e2578f17d934221d9edcd2db7a517",
+  "rows": [
+    {
+      "node_index": 0,
+      "child_index": 1,
+      "state": [
+        "⊢ ∃ s, s 0 = (3, 2) ∧ ∀ (k : ℕ), s (k + 1) = (3 * (s k).1 + 4 * (s k).2, 2 * (s k).1 + 3 * (s k).2)"
+      ],
+      "next_state": [],
+      "tactic": "exact ⟨fun k ↦ Nat.recOn k (3, 2) fun k s ↦ (3 * s.1 + 4 * s.2, 2 * s.1 + 3 * s.2), by simp⟩",
+      "return": -1,
+      "prompt": "User: Please generate a tactic in lean4 to solve the state.\nHere're some theorems that may be helpful:\n\nSTATE:\n⊢ ∃ s, s 0 = (3, 2) ∧ ∀ (k : ℕ), s (k + 1) = (3 * (s k).1 + 4 * (s k).2, 2 * (s k).1 + 3 * (s k).2)\nTACTIC:\n\nAssistant:",
+      "policy_version": 0,
+      "generation_sequence": 7,
+      "eval_sequence": 8,
+      "generation_index": 0,
+      "candidate_index": 3
+    }
+  ]
+}

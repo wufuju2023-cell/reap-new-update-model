@@ -1,0 +1,9 @@
+{
+  "source_sha256": "ed5aeb5cd6f338dbc64c1a1225c3a898910064db16fb7081ba41a104208c240a",
+  "parent_source_sha256": "44a1f67148b57425c80a41f631eb5b4cbea66951da4a0f702eafe42d22bd96a2",
+  "parent_prefix_byte_identical": true,
+  "original_bridge_and_target_unchanged": true,
+  "successful_seed": "exp-b3183bd902c9-01",
+  "historical_v23_inherited": false,
+  "scope": "CPU15 same uninstantiated local-fact environment. Exactly two genuine verified student proofs; no supplied specialization, witness, tactic or teacher proof. Return to original complete sequence bridge, max-lessons1 before original Target."
+}

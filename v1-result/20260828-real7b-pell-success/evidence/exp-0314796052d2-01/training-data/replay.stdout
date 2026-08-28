@@ -1,0 +1,5 @@
+REAP_FIXED_PREMISE_HINT and_iff_left Init.PropLemmas b6878ec5bff6fb097aa6bfef3083f898416ce0d27dfdb5aeb25eed3f85155ec5
+∀ {b a : Prop}, b → (a ∧ b ↔ a)
+REAP_FIXED_PREMISE_HINT and_iff_right Init.PropLemmas 0ef93d0640d9b4111e9655bac8d43da01b64146532969c26fbd94d49b1bb64a6
+∀ {a b : Prop}, a → (a ∧ b ↔ b)
+'ReapCurriculumWrapper.attempt' depends on axioms: [propext, Classical.choice, Quot.sound]

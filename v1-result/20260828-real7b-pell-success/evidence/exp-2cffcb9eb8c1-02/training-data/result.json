@@ -1,0 +1,1 @@
+{"elapsed_ns":69080142792,"error":null,"proof_script":"simp [Nat.add_comm, Nat.add_left_comm, Nat.add_assoc]\nexact fun x y hx hy ↦ ⟨by linarith [hx, hy], by linarith [hx, hy]⟩","schema_version":"reap.training.result.v1","session_id":"course-2cffcb9eb8c1-02","solved":true,"status":"solved"}

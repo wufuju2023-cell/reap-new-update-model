@@ -1,0 +1,30 @@
+{
+  "schema_version": "reap.verified-replay.receipt.v1",
+  "session_id": "course-26c724af16ee-01",
+  "theorem": "ReapCurriculumWrapper.attempt",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "${HISTORICAL_RUNS}/radeon-pell-unbounded-after-indexed-cpu15-20260828-native/replay-01/replay.lean"
+  ],
+  "cwd": "/opt/reap-runtime",
+  "returncode": 0,
+  "elapsed_seconds": 10.245872925996082,
+  "inputs_sha256": {
+    "raw_tree.json": "9b9295907abaa3bb4ee9ab556a668685fd36828be24eca95ddfd14458f747ad9",
+    "replay.lean": "44f003c0d904cf1e124822f15198f044ac73d194969cddd86b0d471ab6d4c422",
+    "plan.json": "30fca3088194c2ac05894672195d1bc7dbefc833327bf0e928489f593ff1a591",
+    "source.lean": "0bf8271ebc3654f0c7b4bd9a847acd06faaf0895a92f053b6abcbd8ccdbccc4b",
+    "observer.jsonl": "69e39634789285b8833dd7f7289a7f04ae6f4b49488898f72d569c0ee67059f7",
+    "historical-proof.stdout": "2c7048d07040cc7f30666564f5dd78ecf1acff209f4257e7258c18caba281071",
+    "VerifiedReplay.lean": "a642aaf993f884c26c255ca3cdf1f4c6227ccc87273880243a0fc9c153761f23",
+    "historical-proof.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "session.json": "88fb9f9776bf276f7ffd24eb7078aaa44d832e38dde066cc43e2c2b92a0a1c7c",
+    "historical-proof-receipt.json": "51bb4fe1575e193841b9dea1e6589c4b609874c184ccc429502a8ee4b8465ad4",
+    "accepted-proof.lean": "7d1f9bd56870c38bd6b1681d51dffcab0f6a6f2176bb76ecfd328be40a106d87",
+    "result.json": "bce57ee1cbef85c89eaabe4312b83c4103ff07210e2394b75b303a00d8c2bcf2"
+  },
+  "stdout_sha256": "c20a20a459beca13199dda8fa3980c6cde446570d2750516343aff00e46ea485",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

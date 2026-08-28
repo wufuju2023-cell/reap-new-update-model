@@ -1,0 +1,12 @@
+{
+  "schema_version": "reap.teacher-course.visibility.v1",
+  "source": "StudentDeclarations.lean",
+  "source_sha256": "95e59c53b39c38685dd89ead1bb4ef2a1be00844ca07c633a4aa43ce6412b367",
+  "course_record": "course_plan.json",
+  "course_record_sha256": "1b225ad2e2cb13e22d3a222e9070ed9d9422619441c4d17dd5cb7d68f3612d35",
+  "definitions": {
+    "CodexMathFive.Pell.Target": []
+  },
+  "scope": "Original Pell Target only, CPU15 verified student local-facts setting. Two visible complete student theorems, with their full proof dependencies. No teacher proof, witness, existential elimination or induction scaffold supplied.",
+  "gpu_started": false
+}

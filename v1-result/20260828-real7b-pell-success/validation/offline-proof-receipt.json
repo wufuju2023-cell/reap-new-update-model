@@ -1,0 +1,17 @@
+{
+  "image": "623ae445c3cb8c843afb6c85a1db0dfa25f17e72ae95afaf23a49ef8844f0fce",
+  "network": "none",
+  "results": [
+    {
+      "proof": "07-original-target.lean",
+      "sha256": "118904a229711907a6453a0c0b11f280bfb148ebb22112a5550b3b33d6180059",
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seconds": 55.78607245600142
+    }
+  ]
+}

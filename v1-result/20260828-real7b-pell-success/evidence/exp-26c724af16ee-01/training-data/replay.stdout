@@ -1,0 +1,26 @@
+'CodexMathFive.Pell.StudentLibraryRecurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+${HISTORICAL_RUNS}/radeon-pell-unbounded-after-indexed-cpu15-20260828-native/replay-01/replay.lean:294:13: warning: This simp argument is unused:
+  Prod.mk.injEq
+
+Hint: Omit it from the simp argument list.
+  simp only [P̵r̵o̵d̵.̵m̵k̵.̵i̵n̵j̵E̵q̵,̵ ̵and_self]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+${HISTORICAL_RUNS}/radeon-pell-unbounded-after-indexed-cpu15-20260828-native/replay-01/replay.lean:294:28: warning: This simp argument is unused:
+  and_self
+
+Hint: Omit it from the simp argument list.
+  simp only [Prod.mk.injEq,̵ ̵a̵n̵d̵_̵s̵e̵l̵f̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'CodexMathFive.Pell.StudentLibraryIndexedWitness' depends on axioms: [propext, Classical.choice, Quot.sound]
+REAP_STUDENT_PROOF_PREMISE CodexMathFive.Pell.StudentLibraryRecurrence b02864630325fb50b95a715cb04925a633924cbda1e063e1ea5bc3408f7ea22c
+∀ (s : ℕ → ℕ × ℕ),
+  s 0 = (3, 2) →
+    (∀ (k : ℕ), s (k + 1) = (3 * (s k).1 + 4 * (s k).2, 2 * (s k).1 + 3 * (s k).2)) →
+      ∀ (k : ℕ), k < (s k).1 ∧ k < (s k).2 ∧ (s k).1 ^ 2 = 2 * (s k).2 ^ 2 + 1
+REAP_STUDENT_PROOF_PREMISE CodexMathFive.Pell.StudentLibraryIndexedWitness b8dac2d50ea6c2b5ac59a9685ee8b485307a24443e2ebbe01e1827225abe8d10
+∀ (s : ℕ → ℕ × ℕ),
+  (∀ (k : ℕ), k < (s k).1 ∧ k < (s k).2 ∧ (s k).1 ^ 2 = 2 * (s k).2 ^ 2 + 1) →
+    ∀ (B : ℕ), ∃ x y, B < x ∧ B < y ∧ x ^ 2 = 2 * y ^ 2 + 1
+'ReapCurriculumWrapper.attempt' depends on axioms: [propext, Classical.choice, Quot.sound]

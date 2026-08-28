@@ -1,0 +1,298 @@
+[
+     {
+          "Id": "762747b6bfb6c60526f55f99858921bf812d3621e3addec4c906fe51b1c6ce57",
+          "Created": "2026-08-28T20:19:46.926863375+08:00",
+          "Path": "bash",
+          "Args": [
+               "-lc",
+               "lake env lean /proof/proof.lean"
+          ],
+          "State": {
+               "OciVersion": "1.1.0",
+               "Status": "exited",
+               "Running": false,
+               "Paused": false,
+               "Restarting": false,
+               "OOMKilled": false,
+               "Dead": false,
+               "Pid": 0,
+               "ExitCode": 0,
+               "Error": "",
+               "StartedAt": "2026-08-28T20:19:46.991790422+08:00",
+               "FinishedAt": "2026-08-28T20:19:55.463552908+08:00",
+               "Health": {
+                    "Status": "",
+                    "FailingStreak": 0,
+                    "Log": null
+               },
+               "CheckpointedAt": "0001-01-01T00:00:00Z",
+               "RestoredAt": "0001-01-01T00:00:00Z"
+          },
+          "Image": "623ae445c3cb8c843afb6c85a1db0dfa25f17e72ae95afaf23a49ef8844f0fce",
+          "ImageDigest": "sha256:597edeed42e8c22cc92fc4e46fe3e20df7e0c596227b709e4a19ca735d0fbc29",
+          "ImageName": "localhost/reap-cpu:v1-delivery-20260827",
+          "Rootfs": "",
+          "Pod": "",
+          "ResolvConfPath": "",
+          "HostnamePath": "/run/user/1000/containers/overlay-containers/762747b6bfb6c60526f55f99858921bf812d3621e3addec4c906fe51b1c6ce57/userdata/hostname",
+          "HostsPath": "/run/user/1000/containers/overlay-containers/762747b6bfb6c60526f55f99858921bf812d3621e3addec4c906fe51b1c6ce57/userdata/hosts",
+          "StaticDir": "${HISTORICAL_USER}/.local/share/containers/storage/overlay-containers/762747b6bfb6c60526f55f99858921bf812d3621e3addec4c906fe51b1c6ce57/userdata",
+          "OCIConfigPath": "${HISTORICAL_USER}/.local/share/containers/storage/overlay-containers/762747b6bfb6c60526f55f99858921bf812d3621e3addec4c906fe51b1c6ce57/userdata/config.json",
+          "OCIRuntime": "crun",
+          "ConmonPidFile": "/run/user/1000/containers/overlay-containers/762747b6bfb6c60526f55f99858921bf812d3621e3addec4c906fe51b1c6ce57/userdata/conmon.pid",
+          "PidFile": "/run/user/1000/containers/overlay-containers/762747b6bfb6c60526f55f99858921bf812d3621e3addec4c906fe51b1c6ce57/userdata/pidfile",
+          "Name": "reap-proof-course-b3183bd902c9-01",
+          "RestartCount": 0,
+          "Driver": "overlay",
+          "MountLabel": "",
+          "ProcessLabel": "",
+          "AppArmorProfile": "",
+          "EffectiveCaps": null,
+          "BoundingCaps": [
+               "CAP_CHOWN",
+               "CAP_DAC_OVERRIDE",
+               "CAP_FOWNER",
+               "CAP_FSETID",
+               "CAP_KILL",
+               "CAP_NET_BIND_SERVICE",
+               "CAP_SETFCAP",
+               "CAP_SETGID",
+               "CAP_SETPCAP",
+               "CAP_SETUID",
+               "CAP_SYS_CHROOT"
+          ],
+          "ExecIDs": [],
+          "GraphDriver": {
+               "Name": "overlay",
+               "Data": {
+                    "LowerDir": "${HISTORICAL_USER}/.local/share/containers/storage/overlay/7d76d614764bd56aff99a75a532e91374f788faa1c9e2316d52b0e45e088d49c/diff:${HISTORICAL_USER}/.local/share/containers/storage/overlay/7d6a2b26080d21d9faf9268eb525720d2ce294957e9e9b1244251ec1f4a13bb7/diff:${HISTORICAL_USER}/.local/share/containers/storage/overlay/7c1f974f1695b05b92ee205e8a7898d6fe4d1dd15b4f3d8c4c1cbf130eb71d83/diff:${HISTORICAL_USER}/.local/share/containers/storage/overlay/e9d30652921b552a83f7e8a31e4f9eff47e9de0f6760550cc60521e5f15a640c/diff:${HISTORICAL_USER}/.local/share/containers/storage/overlay/3d3fdc719c2c3d6545d90d51e04b3d9e8970e2f1920fdcc13cfb56139b52c522/diff:${HISTORICAL_USER}/.local/share/containers/storage/overlay/14b8682a9fb259679a3d95ed0de5708aac1a39141e1ff604a81ab719ff1f4e63/diff:${HISTORICAL_USER}/.local/share/containers/storage/overlay/34eafab3c2c8d9ff573a965992ab5eab3c488abb21fc157b1a908555ce613825/diff:${HISTORICAL_USER}/.local/share/containers/storage/overlay/27ef6127eaf040ccbf77e947bf91106f4d7b0cc1219c5c7d988f16bb5e218200/diff:${HISTORICAL_USER}/.local/share/containers/storage/overlay/2d4c046fb4ec267cb7de51fa8c542aadfbf63dc20d78a6a1bacb4555aa0cb5cf/diff:${HISTORICAL_USER}/.local/share/containers/storage/overlay/d12118774eb57d90b33ba7c205fcdb7bd94e29613b3a28bf82f0103a4a5781d1/diff:${HISTORICAL_USER}/.local/share/containers/storage/overlay/2a03cc84b511f00f63141bf9db8197dd8716afa7b800dd2de14e203764bc13bb/diff:${HISTORICAL_USER}/.local/share/containers/storage/overlay/b9a65b3c65ab22d490085bd0bf5490e2409da8748b406870f2463bdc41cd6795/diff",
+                    "UpperDir": "${HISTORICAL_USER}/.local/share/containers/storage/overlay/5ded1cb3cd36368a3d2c1f30126f97f0413a6230161442d3be500ce37daf6f73/diff",
+                    "WorkDir": "${HISTORICAL_USER}/.local/share/containers/storage/overlay/5ded1cb3cd36368a3d2c1f30126f97f0413a6230161442d3be500ce37daf6f73/work"
+               }
+          },
+          "Mounts": [
+               {
+                    "Type": "bind",
+                    "Source": "${HISTORICAL_RUNS}/radeon-pell-indexed-witness-cpu15-20260828-native/verify-export-01/proof-check/course-b3183bd902c9-01",
+                    "Destination": "/proof",
+                    "Driver": "",
+                    "Mode": "",
+                    "Options": [
+                         "rbind"
+                    ],
+                    "RW": false,
+                    "Propagation": "rprivate"
+               }
+          ],
+          "Dependencies": [],
+          "NetworkSettings": {
+               "EndpointID": "",
+               "Gateway": "",
+               "IPAddress": "",
+               "IPPrefixLen": 0,
+               "IPv6Gateway": "",
+               "GlobalIPv6Address": "",
+               "GlobalIPv6PrefixLen": 0,
+               "MacAddress": "",
+               "Bridge": "",
+               "SandboxID": "",
+               "HairpinMode": false,
+               "LinkLocalIPv6Address": "",
+               "LinkLocalIPv6PrefixLen": 0,
+               "Ports": {},
+               "SandboxKey": "",
+               "Networks": {
+                    "none": {
+                         "EndpointID": "",
+                         "Gateway": "",
+                         "IPAddress": "",
+                         "IPPrefixLen": 0,
+                         "IPv6Gateway": "",
+                         "GlobalIPv6Address": "",
+                         "GlobalIPv6PrefixLen": 0,
+                         "MacAddress": "",
+                         "NetworkID": "none",
+                         "DriverOpts": null,
+                         "IPAMConfig": null,
+                         "Links": null
+                    }
+               }
+          },
+          "Namespace": "",
+          "IsInfra": false,
+          "IsService": false,
+          "KubeExitCodePropagation": "invalid",
+          "lockNumber": 503,
+          "Config": {
+               "Hostname": "762747b6bfb6",
+               "Domainname": "",
+               "User": "10001:10001",
+               "AttachStdin": false,
+               "AttachStdout": false,
+               "AttachStderr": false,
+               "Tty": false,
+               "OpenStdin": false,
+               "StdinOnce": false,
+               "Env": [
+                    "PATH=/opt/lean/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "container=podman",
+                    "PYTHONPATH=/opt/reap-tools",
+                    "REAP_PROJECT_DIR=/opt/reap-runtime",
+                    "REAP_OUTPUT_DIR=/workspace/out",
+                    "HOME=/home/reap",
+                    "HOSTNAME=762747b6bfb6"
+               ],
+               "Cmd": [
+                    "-lc",
+                    "lake env lean /proof/proof.lean"
+               ],
+               "Image": "localhost/reap-cpu:v1-delivery-20260827",
+               "Volumes": null,
+               "WorkingDir": "/opt/reap-runtime",
+               "Entrypoint": "bash",
+               "OnBuild": null,
+               "Labels": {
+                    "io.buildah.version": "1.33.7",
+                    "org.opencontainers.image.version": "24.04"
+               },
+               "Annotations": {
+                    "io.container.manager": "libpod",
+                    "org.opencontainers.image.stopSignal": "15"
+               },
+               "StopSignal": 15,
+               "HealthcheckOnFailureAction": "none",
+               "CreateCommand": [
+                    "podman",
+                    "run",
+                    "--name",
+                    "reap-proof-course-b3183bd902c9-01",
+                    "--pull",
+                    "never",
+                    "--network",
+                    "none",
+                    "--userns",
+                    "keep-id:uid=10001,gid=10001",
+                    "--user",
+                    "10001:10001",
+                    "--volume",
+                    "${HISTORICAL_RUNS}/radeon-pell-indexed-witness-cpu15-20260828-native/verify-export-01/proof-check/course-b3183bd902c9-01:/proof:ro",
+                    "--workdir",
+                    "/opt/reap-runtime",
+                    "--entrypoint",
+                    "bash",
+                    "623ae445c3cb8c843afb6c85a1db0dfa25f17e72ae95afaf23a49ef8844f0fce",
+                    "-lc",
+                    "lake env lean /proof/proof.lean"
+               ],
+               "Umask": "0022",
+               "Timeout": 0,
+               "StopTimeout": 10,
+               "Passwd": true,
+               "sdNotifyMode": "container"
+          },
+          "HostConfig": {
+               "Binds": [
+                    "${HISTORICAL_RUNS}/radeon-pell-indexed-witness-cpu15-20260828-native/verify-export-01/proof-check/course-b3183bd902c9-01:/proof:ro,rprivate,rbind"
+               ],
+               "CgroupManager": "systemd",
+               "CgroupMode": "private",
+               "ContainerIDFile": "",
+               "LogConfig": {
+                    "Type": "journald",
+                    "Config": null,
+                    "Path": "",
+                    "Tag": "",
+                    "Size": "0B"
+               },
+               "NetworkMode": "none",
+               "PortBindings": {},
+               "RestartPolicy": {
+                    "Name": "",
+                    "MaximumRetryCount": 0
+               },
+               "AutoRemove": false,
+               "VolumeDriver": "",
+               "VolumesFrom": null,
+               "CapAdd": [],
+               "CapDrop": [],
+               "Dns": [],
+               "DnsOptions": [],
+               "DnsSearch": [],
+               "ExtraHosts": [],
+               "GroupAdd": [],
+               "IpcMode": "shareable",
+               "Cgroup": "",
+               "Cgroups": "default",
+               "Links": null,
+               "OomScoreAdj": 0,
+               "PidMode": "private",
+               "Privileged": false,
+               "PublishAllPorts": false,
+               "ReadonlyRootfs": false,
+               "SecurityOpt": [],
+               "Tmpfs": {},
+               "UTSMode": "private",
+               "UsernsMode": "private",
+               "IDMappings": {
+                    "UidMap": [
+                         "0:1:10001",
+                         "10001:0:1",
+                         "10002:10002:55535"
+                    ],
+                    "GidMap": [
+                         "0:1:10001",
+                         "10001:0:1",
+                         "10002:10002:55535"
+                    ]
+               },
+               "ShmSize": 65536000,
+               "Runtime": "oci",
+               "ConsoleSize": [
+                    0,
+                    0
+               ],
+               "Isolation": "",
+               "CpuShares": 0,
+               "Memory": 0,
+               "NanoCpus": 0,
+               "CgroupParent": "user.slice",
+               "BlkioWeight": 0,
+               "BlkioWeightDevice": null,
+               "BlkioDeviceReadBps": null,
+               "BlkioDeviceWriteBps": null,
+               "BlkioDeviceReadIOps": null,
+               "BlkioDeviceWriteIOps": null,
+               "CpuPeriod": 0,
+               "CpuQuota": 0,
+               "CpuRealtimePeriod": 0,
+               "CpuRealtimeRuntime": 0,
+               "CpusetCpus": "",
+               "CpusetMems": "",
+               "Devices": [],
+               "DiskQuota": 0,
+               "KernelMemory": 0,
+               "MemoryReservation": 0,
+               "MemorySwap": 0,
+               "MemorySwappiness": 0,
+               "OomKillDisable": false,
+               "PidsLimit": 2048,
+               "Ulimits": [
+                    {
+                         "Name": "RLIMIT_NOFILE",
+                         "Soft": 1048576,
+                         "Hard": 1048576
+                    },
+                    {
+                         "Name": "RLIMIT_NPROC",
+                         "Soft": 62907,
+                         "Hard": 62907
+                    }
+               ],
+               "CpuCount": 0,
+               "CpuPercent": 0,
+               "IOMaximumIOps": 0,
+               "IOMaximumBandwidth": 0,
+               "CgroupConf": null
+          }
+     }
+]

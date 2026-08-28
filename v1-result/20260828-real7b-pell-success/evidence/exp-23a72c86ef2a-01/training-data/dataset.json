@@ -1,0 +1,53 @@
+{
+  "schema_version": "reap.verified-success-trajectory.v1",
+  "profile": "verified-generated-action-negative-longest-branch-v1",
+  "session_id": "course-23a72c86ef2a-01",
+  "tree_id": "course-23a72c86ef2a-01.tree0",
+  "theorem": "ReapCurriculumWrapper.attempt",
+  "theorem_sha256": "25f7fe26cd9ac58c2d19907acc06ad63c2bc9bd1719db1ecf1c6f25cf711c611",
+  "root_return": -1,
+  "action_unit": "one generated tactic string; focus transitions cost zero",
+  "and_return": "minimum branch return; shared-metavariable branch skipping rejected",
+  "state_origin": "exact saved state matched against independent Lean replay",
+  "training_integration": "none; not search_visit_backup or categorical-head training",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "final_policy_version": 0,
+  "inputs_sha256": {
+    "raw_tree.json": "8deccd3308a26b5a2820824c0ff9e1e0646115dde8226ff9218b9ca626a839df",
+    "replay.lean": "9b53001bab36cfc3b75850fc190c6f5cd06bcad634e68e4ac463aa1066ce0667",
+    "plan.json": "fea258ba975dfe1a5ffe01626e1d8e8a7a9451d9c6248763ded98c9e5410f535",
+    "source.lean": "25f7fe26cd9ac58c2d19907acc06ad63c2bc9bd1719db1ecf1c6f25cf711c611",
+    "observer.jsonl": "110b6558aeb107f76ae8073adfa74f124bb32524acbe2f433f69ba2a9b4a753b",
+    "historical-proof.stdout": "d2f2f7a675fad5976f44d85ba2b22164bb791d1e785f34a04c1946e3fd7cae40",
+    "VerifiedReplay.lean": "a642aaf993f884c26c255ca3cdf1f4c6227ccc87273880243a0fc9c153761f23",
+    "historical-proof.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "session.json": "6040cd191fd558273faa1abf4dcc8aa3d55c1327c1682d111d27d8235e067b06",
+    "historical-proof-receipt.json": "f7306fea65bcc25a8d8104feaeefbbb45264a36ff801742b8a1e079bf6ae45c8",
+    "accepted-proof.lean": "118904a229711907a6453a0c0b11f280bfb148ebb22112a5550b3b33d6180059",
+    "result.json": "5649e07856469134731831667537a2a0eafcf8f48912b4d273960c6a6045ebb3"
+  },
+  "trace_sha256": "5471e6097ffaadb01b934838db19327f2103c291b64a9c15c4183a1ad423808c",
+  "replay_receipt_sha256": "840fbfa5ede0f3b3132aa530e4f61927851ab7e95928ad919db11476e39b43f4",
+  "rows": [
+    {
+      "node_index": 0,
+      "child_index": 1,
+      "state": [
+        "student_fact_1 : ∃ s, s 0 = (3, 2) ∧ ∀ (k : ℕ), s (k + 1) = (3 * (s k).1 + 4 * (s k).2, 2 * (s k).1 + 3 * (s k).2)\nstudent_fact_2 :\n  ∀ (s : ℕ → ℕ × ℕ),\n    s 0 = (3, 2) →\n      (∀ (k : ℕ), s (k + 1) = (3 * (s k).1 + 4 * (s k).2, 2 * (s k).1 + 3 * (s k).2)) →\n        ∀ (B : ℕ), ∃ x y, B < x ∧ B < y ∧ x ^ 2 = 2 * y ^ 2 + 1\n⊢ ∀ (B : ℕ), ∃ x y, B < x ∧ B < y ∧ x ^ 2 = 2 * y ^ 2 + 1"
+      ],
+      "next_state": [],
+      "tactic": "tauto",
+      "return": -1,
+      "prompt": "User: Please generate a tactic in lean4 to solve the state.\nHere're some theorems that may be helpful:\nFormal name: CodexMathFive.Pell.StudentLibrarySequenceExists\nFormal statement: ∃ s, s 0 = (3, 2) ∧ ∀ (k : ℕ), s (k + 1) = (3 * (s k).1 + 4 * (s k).2, 2 * (s k).1 + 3 * (s k).2)\nFormal name: CodexMathFive.Pell.StudentLibraryUnboundedFromRecurrence\nFormal statement: ∀ (s : ℕ → ℕ × ℕ),\n  s 0 = (3, 2) →\n    (∀ (k : ℕ), s (k + 1) = (3 * (s k).1 + 4 * (s k).2, 2 * (s k).1 + 3 * (s k).2)) →\n      ∀ (B : ℕ), ∃ x y, B < x ∧ B < y ∧ x ^ 2 = 2 * y ^ 2 + 1\nSTATE:\nstudent_fact_1 : ∃ s, s 0 = (3, 2) ∧ ∀ (k : ℕ), s (k + 1) = (3 * (s k).1 + 4 * (s k).2, 2 * (s k).1 + 3 * (s k).2)\nstudent_fact_2 :\n  ∀ (s : ℕ → ℕ × ℕ),\n    s 0 = (3, 2) →\n      (∀ (k : ℕ), s (k + 1) = (3 * (s k).1 + 4 * (s k).2, 2 * (s k).1 + 3 * (s k).2)) →\n        ∀ (B : ℕ), ∃ x y, B < x ∧ B < y ∧ x ^ 2 = 2 * y ^ 2 + 1\n⊢ ∀ (B : ℕ), ∃ x y, B < x ∧ B < y ∧ x ^ 2 = 2 * y ^ 2 + 1\nTACTIC:\n\nAssistant:",
+      "policy_version": 0,
+      "generation_sequence": 51,
+      "eval_sequence": 52,
+      "generation_index": 2,
+      "candidate_index": 6
+    }
+  ]
+}

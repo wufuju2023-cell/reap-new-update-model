@@ -1,0 +1,24 @@
+{
+  "wrapper": {
+    "version": "reap.closed-prop-wrapper.student-local-facts.v1",
+    "names": [
+      "CodexMathFive.Pell.StudentLibrarySequenceExists",
+      "CodexMathFive.Pell.StudentLibraryRecurrence"
+    ],
+    "prelude_sha256": "eff1633d894e6049c2459c24d9ee35dc19dcd6f95de62dc40ecb0d06b359e516",
+    "uninstantiated": true,
+    "model_actions": false,
+    "training_targets": false
+  },
+  "positive": true,
+  "negative_cases": [
+    "proof_sha256",
+    "session_id",
+    "kind",
+    "name"
+  ],
+  "source_sha256": "6a8363d8feb684f283eb12d3c77dab0ed49690d48b4d55f1e6eaa0fbd9b5327c",
+  "closed_problem_sha256": "4cfd5e4d36be810c2b574a1f9e839647d2b4f92a7dd2152411947aa009e4dba7",
+  "execution_source_sha256": "d2714f1ff2c4af3c4516dd7b3ae39741bc156dadafa6cc04a62863b4754588c7",
+  "scope": "source generation and reject gates only; actual fixed Lean preflight follows"
+}

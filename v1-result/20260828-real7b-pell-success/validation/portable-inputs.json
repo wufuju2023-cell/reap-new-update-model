@@ -1,0 +1,16 @@
+{
+  "schema": "reap.pell.portable-input-check.v1",
+  "prepared_lessons": ["indexed-witness", "unbounded-sequence", "original-target"],
+  "gpu_calls": 0,
+  "original_target_preflight": {
+    "status": "ready",
+    "search_started": false,
+    "budget_steps": 32,
+    "execution_source_sha256": "25f7fe26cd9ac58c2d19907acc06ad63c2bc9bd1719db1ecf1c6f25cf711c611",
+    "matches_historical_execution_source": true,
+    "preflight_source_sha256": "8c722dde8de836de97c6182e588a9c93392d0aef69308db78950dc6b71a8cb85",
+    "compilation_receipt_sha256": "ec06e0dc59af65f0b384d19c8e9af00f1dc7d57a122c745682cadac79507da26",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "scope": "Portable projection of actual checks; paths omitted. No GPU proof or new training claimed."
+}

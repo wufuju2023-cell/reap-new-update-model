@@ -1,0 +1,52 @@
+{
+  "schema": "reap.local-release-backup.v1",
+  "copied_at_utc": "2026-08-28T12:46:48.931512+00:00",
+  "source": "${HISTORICAL_GPU_RUN}/gpu1/experiences/exp-23a72c86ef2a-01/release",
+  "metadata": {
+    "acceptance": {
+      "completed": true,
+      "evidence_sha256": "5ccd71aa9d17ea30a36e1a1b2779b00f139ac9ce8bc7c66a8f371a0b6ede8c3e",
+      "kind": "independent-lean",
+      "passed": true,
+      "source": {
+        "parent_experience_id": "exp-26c724af16ee-01",
+        "policy_version": 1,
+        "session_id": "course-23a72c86ef2a-01",
+        "snapshot": "experience-candidate",
+        "snapshot_sha256": "73e7c2e7f5b21168d4fd2d35af2e552798862f0d72b48bdc01b5f305950f135f",
+        "theorem_id": "25f7fe26cd9ac58c2d19907acc06ad63c2bc9bd1719db1ecf1c6f25cf711c611"
+      }
+    },
+    "experience_id": "exp-23a72c86ef2a-01",
+    "schema_version": "reap.gpu.experience.v1",
+    "source": {
+      "parent_experience_id": "exp-26c724af16ee-01",
+      "policy_version": 1,
+      "session_id": "course-23a72c86ef2a-01",
+      "snapshot": "experience-candidate",
+      "snapshot_sha256": "73e7c2e7f5b21168d4fd2d35af2e552798862f0d72b48bdc01b5f305950f135f",
+      "theorem_id": "25f7fe26cd9ac58c2d19907acc06ad63c2bc9bd1719db1ecf1c6f25cf711c611"
+    },
+    "transfer": [
+      "adapter",
+      "value_head"
+    ],
+    "weights_sha256": "b59a32f6f5f10b82b65b91b8a5be6454d3077e6c3aa022096a4874e9b2f6e522"
+  },
+  "files": {
+    "backend.json": {
+      "bytes": 112730636,
+      "sha256": "b59a32f6f5f10b82b65b91b8a5be6454d3077e6c3aa022096a4874e9b2f6e522"
+    },
+    "manifest.json": {
+      "bytes": 324,
+      "sha256": "3e05685fbdf736e2b9fb405d618f7fcd687dfa83aa7bba3dc84def77e9f8a9ab"
+    },
+    "session.json": {
+      "bytes": 983,
+      "sha256": "9a0ceeb3726828f6e164ebdb74ae2af0122030275df42b4f9d3b571736b5e4e6"
+    }
+  },
+  "contains_base_model": false,
+  "restore_scope": "new-session adapter/value inheritance; no optimizer or live Lean tree"
+}
