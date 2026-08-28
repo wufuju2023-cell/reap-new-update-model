@@ -9,6 +9,7 @@ MOCK_ACTIONS = [
     "effect:arith-check", "effect:sqsum-check",
     "adddecl:1 + 1 = 2~decide", "adddecl:2 * 2 = 4~decide",
     "adddecl:9 = 9~rfl",
+    "mine:series",
     "patch:∀→∃", "fillhole:h0",
 ]
 

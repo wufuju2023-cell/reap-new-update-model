@@ -11,6 +11,7 @@ from .eff_registry import EffSpec, EffClass, lookup
 from .tower import Tower, TowerEntry
 from .gate_lean import gate_lean
 from .policy_client import PolicyClient
+from .mine import detect
 
 C_BASE, C_INIT = 3200.0, 1.0
 
@@ -30,7 +31,7 @@ def c_init_for(N: float) -> float:
 
 class V2MCTS:
     def __init__(self, goal: str, policy: PolicyClient, tower: Tower, gate_mode: str = "lean",
-                 num_samples: int = 4, seed: int = 42):
+                 num_samples: int = 4, seed: int = 42, series: list | None = None):
         self.goal = goal
         self.policy = policy
         self.tower = tower
@@ -39,6 +40,8 @@ class V2MCTS:
         self.rng = __import__("random").Random(seed)
         self.root = Node(state=goal)
         self.log = []
+        # 实验观测序列（H_obs）默认内置：立方和 1^3+...+n^3 前 10 项（多项式安全类原料）
+        self.series = series or [0, 1, 9, 36, 100, 225, 441, 784, 1296, 2025]
 
     def _select(self, node: Node) -> str:
         N = float(node.n_visits)
@@ -70,6 +73,15 @@ class V2MCTS:
                 ok = True
             entered = self.tower.register(e, ok)
             return (0.5 if entered else -0.3), f"adddecl:{typ[:20]} gate={ok}"
+        if kind == "mine":
+            cand = detect(self.series)
+            if cand.cls == "F_k":
+                e = TowerEntry(name=f"lem{len(self.tower.lib)+1}", body="decide",
+                               deps=[], type=cand.stmt)
+                ok, _l = gate_lean(e) if self.gate_mode == "lean" else (True, "mock")
+                entered = self.tower.register(e, ok)
+                return (0.5 if entered else -0.2), f"mine:{cand.kind} F_k score={cand.score}"
+            return 0.05, f"mine:open F_c score={cand.score} (no gate)"
         if kind == "patch":
             return 0.0, f"patch:{rest[:20]}"
         if kind == "fillhole":
