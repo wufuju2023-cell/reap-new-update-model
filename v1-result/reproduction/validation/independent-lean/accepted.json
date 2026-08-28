@@ -1,0 +1,89 @@
+{
+  "schema_version": "reap.reproduction.independent-lean.v1",
+  "passed": true,
+  "session_id": "experience-source-01",
+  "theorem": "MultiroundCandidates.CoupledOddSquare.coupled_odd_square",
+  "requested_image": "623ae445c3cb8c843afb6c85a1db0dfa25f17e72ae95afaf23a49ef8844f0fce",
+  "theorem_sha256": "1c934ede5d3f068c24d12dc19d4b887078e5d17904cb690f022044714cf244e0",
+  "proof_sha256": "941e19a050e5cd91e0ef4a8ac5279240063a736a402f9ccea7813adf97c92873",
+  "proof_file": "proof.lean",
+  "input_files": {
+    "source": {
+      "path": "inputs/01-CoupledOddSquare.lean",
+      "sha256": "1c934ede5d3f068c24d12dc19d4b887078e5d17904cb690f022044714cf244e0"
+    },
+    "session": {
+      "path": "outputs/experience-source-01/session.json",
+      "sha256": "ca9ff46c7ae7110e4f5ed91049a6d36d08c9f0430785755560b7b45798b0a358"
+    },
+    "result": {
+      "path": "outputs/experience-source-01/result.json",
+      "sha256": "48c71c5401457d8f54fc3c4fd740247356b50435e218e97e07f171bf53f9a530"
+    },
+    "online_result": {
+      "path": "outputs/experience-source-01/online-result.json",
+      "sha256": "b5c020e4e27cdfd17c33df7e7c8e8d0e00d126e759239a29636b547925dc1de6"
+    }
+  },
+  "online_status": "passed_execution",
+  "online_updates": 2,
+  "command": [
+    "podman",
+    "run",
+    "--name",
+    "reap-proof-experience-source-01",
+    "--pull",
+    "never",
+    "--network",
+    "none",
+    "--userns",
+    "keep-id:uid=10001,gid=10001",
+    "--user",
+    "10001:10001",
+    "--volume",
+    "/home/hsy/repro-single-check-GR0zgs/proof-check/experience-source-01:/proof:ro",
+    "--workdir",
+    "/opt/reap-runtime",
+    "--entrypoint",
+    "bash",
+    "623ae445c3cb8c843afb6c85a1db0dfa25f17e72ae95afaf23a49ef8844f0fce",
+    "-lc",
+    "lake env lean /proof/proof.lean"
+  ],
+  "lean_returncode": 0,
+  "container_exit_code": 0,
+  "container_running": false,
+  "image": "623ae445c3cb8c843afb6c85a1db0dfa25f17e72ae95afaf23a49ef8844f0fce",
+  "network": "none",
+  "axioms": [
+    "propext"
+  ],
+  "elapsed_seconds": 130.15288051199968,
+  "files": {
+    "inspect.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    "inspect.stdout.json": {
+      "sha256": "146b8d5c069b56442a22bde8e785fbb5c83d3fa9de5d6053d4607504a2668965",
+      "size": 12945
+    },
+    "launch-intent.json": {
+      "sha256": "36278cc58dbec530b7e97008117db41ed47257ef9309cd35b4d012ea0905189e",
+      "size": 573
+    },
+    "proof.lean": {
+      "sha256": "941e19a050e5cd91e0ef4a8ac5279240063a736a402f9ccea7813adf97c92873",
+      "size": 769
+    },
+    "stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    "stdout.log": {
+      "sha256": "cd2f9405f42baabc2feebdab7352ec96e9e3fcb635e8ef6a3ddd1c5183977b25",
+      "size": 871
+    }
+  },
+  "verification_receipt_sha256": "7aafd9112bb04fe218eb36b943229a0ec4e966eb46b0b04c3106cb1290efe751"
+}

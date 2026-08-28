@@ -1,0 +1,15 @@
+name = "reap_runtime"
+defaultTargets = ["ReapRuntime"]
+
+[[require]]
+name = "reap"
+path = "../reap"
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.28.0-rc1"
+
+[[lean_lib]]
+name = "ReapRuntime"
+

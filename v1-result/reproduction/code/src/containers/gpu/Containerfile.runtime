@@ -1,0 +1,38 @@
+# syntax=docker/dockerfile:1.7
+ARG GPU_BASE_IMAGE=docker.io/rocm/pytorch@sha256:4449f856653602317e4101a76fce599c7fcd58ccec2e539951fce5f73083179e
+FROM ${GPU_BASE_IMAGE} AS runtime-base
+
+# Runtime-only: no weights or model downloads in any build stage.
+# The digest above is ROCm7.2.4 / Python3.12 / Torch2.10.0 (GPU gate pending).
+ENV PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONPATH=/opt/reap-python:/opt/reap-gpu \
+    HF_HOME=/opt/huggingface \
+    TRANSFORMERS_OFFLINE=1 \
+    HF_HUB_OFFLINE=1 \
+    REAP_MODEL_PATH=/opt/models/REAL-Prover \
+    REAP_SNAPSHOT_ROOT=/workspace/out/snapshots
+
+# Install only the reviewed/hash-pinned wheels in an image-local overlay. The
+# ROCm base's torch remains untouched; no resolver may fetch another torch.
+COPY containers/gpu/requirements-gpu-hashed.lock /tmp/requirements-gpu-hashed.lock
+COPY wheels/ /opt/reap-wheels/
+COPY containers/gpu/install_runtime.sh /tmp/install_runtime.sh
+RUN sh /tmp/install_runtime.sh
+
+COPY gpu_runtime /opt/reap-gpu/gpu_runtime
+COPY runtime-context-manifest.json /opt/reap-runtime-context-manifest.json
+# Verified replay admission is pure Python; do not ship the CPU runner, Lean,
+# evidence datasets, or private local files into the GPU runtime image.
+COPY cpu_runtime/__init__.py cpu_runtime/verified_trajectory.py cpu_runtime/verified_dataset_store.py cpu_runtime/mathlib_trajectory.py /opt/reap-gpu/cpu_runtime/
+COPY containers/gpu/smoke_gpu.py /usr/local/bin/reap-gpu-smoke
+
+RUN useradd --create-home --uid 10001 reap \
+    && mkdir -p /workspace/out /opt/models /opt/huggingface \
+    && chown -R reap:reap /workspace /opt/models /opt/huggingface
+
+USER reap
+WORKDIR /workspace
+EXPOSE 8760
+ENTRYPOINT ["python", "-m", "gpu_runtime.server"]
+CMD ["--backend", "real", "--model-path", "/opt/models/REAL-Prover", "--snapshot-root", "/workspace/out/snapshots"]

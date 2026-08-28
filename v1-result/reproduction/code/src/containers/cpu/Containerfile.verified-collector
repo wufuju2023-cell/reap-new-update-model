@@ -1,0 +1,16 @@
+# Explicit local delta. Existing CPU image/default Containerfile remain unchanged.
+# Python control code is supplied as a separately pinned mounted bundle.
+ARG CPU_BASE_IMAGE=localhost/reap-cpu:selection-value-refresh-20260828
+FROM ${CPU_BASE_IMAGE}
+WORKDIR /opt/reap
+COPY --chown=reap:reap containers/cpu/verified-collector-overlay/Reap/VerifiedCollector.lean Reap/VerifiedCollector.lean
+RUN lean --version | grep -F 'version 4.28.0-rc1,' \
+    && printf '%s\n' \
+       '0323b4d13b7b96296ea6fa63b7fa114aebeab9c872678865b6e15253f54ff29c  Reap/Tactic/TreeSearch.lean' \
+       '112c63fe913d69f1ffca03d797ef9d3096a6dce6b4f9244b1cd859db265e74f0  Reap/Training/Observer.lean' \
+       '1eba30a67c438e8493a30e65e72ff63f4c17effa1f88dceb566fe9e8d02ecdb5  Reap/Training/RolloutSink.lean' \
+       'f37d8ba3a55706aeac3578626430bb47ad8fea08d2892324f7b1e4552d59a3bd  Reap/VerifiedCollector.lean' \
+       | sha256sum --check \
+    && lake build Reap.VerifiedCollector
+ENV REAP_SELECTION_VALUE_REFRESH=""
+WORKDIR /opt/reap-runtime

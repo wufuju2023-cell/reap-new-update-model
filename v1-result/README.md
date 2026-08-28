@@ -86,9 +86,11 @@
 
 ## 详细报告与复现入口
 
+- **[代码与完整复现步骤](reproduction/README.md)**：单题TTT、跨题经验复用、双服务并发分别提供准备、运行命令、实际代码和验收方法。
+- **[给新同学与新Agent的交接](prompt_for_agent/README.md)**：可直接复制到全新对话的prompt，以及从原理到成功实例的完整教学。
 - [总设计与阅读地图](docs/current/00-总设计与阅读地图.md)：系统各部分怎样配合。
 - [具体实验与结果](docs/current/04-实际实例与验收结果.md)：每次实验跑了什么流程、得到什么证明、验证了哪项设计。
-- [源码与复现步骤](source/current/README.md)：解包代码、准备数据、运行与检查的方法。
+- [扩展训练与恢复入口](source/current/README.md)：集中训练、继续学习、发布恢复及既有工具的详细参数。
 - [原始实验材料](evidence/README.md)：证明文件、运行记录和核查依据。
 - [容器环境说明](docker/README.md)：CPU和GPU环境的构建方法与实际验收情况。
 

@@ -1,5 +1,7 @@
 # 当前TTT框架的检查与复现
 
+**首次复现入口：[代码与复现](../../reproduction/README.md)。** 该目录将单题TTT、跨题经验和双服务并发拆成完整操作章节，附原题、可浏览代码、准备与验收脚本；[新Agent交接与教学](../../prompt_for_agent/README.md)适用于另一台电脑和全新对话。本页保留集中训练、继续学习和发布恢复的扩展入口。
+
 在 `v1-result` 根运行以下命令。Python 3.12 或以上可做包检查；完整本地测试需要 PyTorch。GPU 运行另需与实际硬件匹配的 ROCm、Transformers、PEFT。运行环境见[Docker说明](../../docker/README.md)。
 
 先检查整个交付包：`python3 -B source/current/check_package.py`。它检查清单、各阶段归档及成员、JSON和本地链接；Linux可加`--bash`检查命令块语法。
@@ -66,6 +68,8 @@ python3 source/current/reproduce.py continual \
 加 `--run` 执行。新学习器继承来源参数，使用新的私有训练状态；第一次训练后完整恢复，再加入包内的新成功证明数据，执行第二次更新及发布。新增证明由先前固定版本的搜索会话生成，来源记录保存在包内。
 
 ## 6. 单题与多题运行
+
+完整命令分别见[单题TTT](../../reproduction/01-单题TTT.md)、[跨题经验复用](../../reproduction/02-跨题经验复用.md)和[多题并发](../../reproduction/03-多题并发.md)。
 
 解压源码后的 `cpu_runtime/online_ttt.py` 是在同一搜索树内更新模型的TTT入口，`online_batch.py` 是多题调度入口；`verified_collector.py` 负责固定发布版本的证明采集。这些入口都提供 `--help`。CPU侧需要预编译Lean 4.28.0-rc1及已构建的Reap/Mathlib容器。
 

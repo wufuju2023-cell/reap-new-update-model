@@ -1,0 +1,21 @@
+test_active_container_refused (__main__.ProofCheckTests.test_active_container_refused) ... ok
+test_changed_theorem_refused_before_container (__main__.ProofCheckTests.test_changed_theorem_refused_before_container) ... ok
+test_declaration_binding (__main__.ProofCheckTests.test_declaration_binding) ... ok
+test_existing_container_refuses_launch (__main__.ProofCheckTests.test_existing_container_refuses_launch) ... ok
+test_existing_output_cannot_repeat (__main__.ProofCheckTests.test_existing_output_cannot_repeat) ... ok
+test_leftover_search_refused (__main__.ProofCheckTests.test_leftover_search_refused) ... ok
+test_nonzero_exit_keeps_failure_receipt (__main__.ProofCheckTests.test_nonzero_exit_keeps_failure_receipt) ... ok
+test_sorry_ax_refused (__main__.ProofCheckTests.test_sorry_ax_refused) ... ok
+test_success_binds_actual_proof_and_offline_command (__main__.ProofCheckTests.test_success_binds_actual_proof_and_offline_command) ... ok
+test_timeout_keeps_partial_output_without_retry (__main__.ProofCheckTests.test_timeout_keeps_partial_output_without_retry) ... ok
+test_unconfirmed_exit_not_success (__main__.ProofCheckTests.test_unconfirmed_exit_not_success) ... ok
+test_unexpected_axiom_refused (__main__.ProofCheckTests.test_unexpected_axiom_refused) ... ok
+test_unknown_online_refused (__main__.ProofCheckTests.test_unknown_online_refused) ... ok
+test_unsolved_refused (__main__.ProofCheckTests.test_unsolved_refused) ... ok
+test_wrong_image_refused (__main__.ProofCheckTests.test_wrong_image_refused) ... ok
+test_wrong_network_refused (__main__.ProofCheckTests.test_wrong_network_refused) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.261s
+
+OK

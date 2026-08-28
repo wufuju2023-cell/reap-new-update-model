@@ -1,0 +1,21 @@
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+/proof/proof.lean:20:28: warning: This simp argument is unused:
+  hfstep
+
+Hint: Omit it from the simp argument list.
+  simp_all [hf̵s̵t̵e̵p̵,̵ ̵h̵gstep]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/proof/proof.lean:20:36: warning: This simp argument is unused:
+  hgstep
+
+Hint: Omit it from the simp argument list.
+  simp_all [hfstep,̵ ̵h̵g̵s̵t̵e̵p̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'MultiroundCandidates.CoupledOddSquare.coupled_odd_square' depends on axioms: [propext]

@@ -1,0 +1,39 @@
+diff --git a/Reap/PremiseSelection/API.lean b/Reap/PremiseSelection/API.lean
+index c275071..bd698f3 100644
+--- a/Reap/PremiseSelection/API.lean
++++ b/Reap/PremiseSelection/API.lean
+@@ -29,7 +29,8 @@ def getPremises (s : String) (num_results : Nat := 6) : CoreM <| Array PremiseSe
+   | some results => return results
+   | none => do
+     let req := PremiseSelectionRequest.mk s num_results
+-    let url := reap.ps_endpoint.get (← getOptions)
++    let opts ← getOptions
++    let url := (← IO.getEnv "REAP_PS_ENDPOINT").getD (reap.ps_endpoint.get opts)
+     let results : Array PremiseSelectionResult ← Requests.post url req
+     cache.modify fun m => m.insert (s, num_results) results
+     return results
+diff --git a/Reap/Tactic/Generator.lean b/Reap/Tactic/Generator.lean
+index a3d6848..62c9e8f 100644
+--- a/Reap/Tactic/Generator.lean
++++ b/Reap/Tactic/Generator.lean
+@@ -82,10 +82,17 @@ TACTIC:
+ Assistant:"
+ 
+ def getClient : CoreM TacticGenerator := do
++  let opts ← getOptions
++  let policyEndpoint := (← IO.getEnv "REAP_POLICY_ENDPOINT").getD
++    (reap.policy_endpoint.get opts)
++  let valueEndpoint := (← IO.getEnv "REAP_VALUE_ENDPOINT").getD
++    (reap.value_endpoint.get opts)
++  let premiseEndpoint := (← IO.getEnv "REAP_PS_ENDPOINT").getD
++    (reap.ps_endpoint.get opts)
+   return {
+-    llmClient := ⟨reap.policy_endpoint.get (← getOptions), reap.llm_api_key.get (← getOptions)⟩
+-    valueClient := ⟨reap.value_endpoint.get (← getOptions), reap.llm_api_key.get (← getOptions)⟩
+-    premiseSelectionClient := ⟨reap.ps_endpoint.get (← getOptions)⟩
++    llmClient := ⟨policyEndpoint, reap.llm_api_key.get opts⟩
++    valueClient := ⟨valueEndpoint, reap.llm_api_key.get opts⟩
++    premiseSelectionClient := ⟨premiseEndpoint⟩
+   }
+ 
+ deriving instance ToJson for OpenAIChatCompletionTokenLogprob, OpenAIChoiceLogprobs, OpenAIChatChoice, OpenAIChatResponse

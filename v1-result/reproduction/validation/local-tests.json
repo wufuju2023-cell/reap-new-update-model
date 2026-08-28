@@ -1,0 +1,62 @@
+{
+  "ok": true,
+  "source": "Verified 188-file extraction from the report source.zip",
+  "source_archive_sha256": "50bd3fb37005694e97b5244b7def5ea7b33881d6e61adc5223998fcef30f4e7c",
+  "scope": "Local preparation, mocked processes/HTTP, and small CPU tensors; no model search or GPU training",
+  "results": [
+    {
+      "platform": "windows",
+      "test": "test_prepare.py",
+      "returncode": 0,
+      "tests": 7,
+      "skipped": 0,
+      "script_sha256": "d15f10da0dd5bcdbeb6addbfc7e790e90baa51d885516f80b91e58d1a7140213",
+      "log_sha256": "89990b8fac58cc557e32692f0d31e8b393336a51b1477574dfa36e8c33187008"
+    },
+    {
+      "platform": "windows",
+      "test": "test_extract_online_proof.py",
+      "returncode": 0,
+      "tests": 16,
+      "skipped": 0,
+      "script_sha256": "875cb059976bffdb0c69e75cca9e62eb3654cd3a658e9b8933b640c9cd154733",
+      "log_sha256": "ffcc6b5f77bfd46507818cd501836e66dd1d351cb4dca907f02eef9d29afacda"
+    },
+    {
+      "platform": "windows",
+      "test": "test_cross_experience.py",
+      "returncode": 0,
+      "tests": 16,
+      "skipped": 0,
+      "script_sha256": "3d051d1d1a6c7de47c9b11e9096520808e22a6b9204241a027c068de5aa21a92",
+      "log_sha256": "b2f091061d2a4c6cfb996706444d9818264b791fe2a0532d20e5a9a4421c1785"
+    },
+    {
+      "platform": "wsl",
+      "test": "test_prepare.py",
+      "returncode": 0,
+      "tests": 7,
+      "skipped": 0,
+      "script_sha256": "d15f10da0dd5bcdbeb6addbfc7e790e90baa51d885516f80b91e58d1a7140213",
+      "log_sha256": "5a14a39aa0776b4d651b1e3a53eb57e6a397c9a41ed846cd5af8cf0406d1a856"
+    },
+    {
+      "platform": "wsl",
+      "test": "test_extract_online_proof.py",
+      "returncode": 0,
+      "tests": 16,
+      "skipped": 0,
+      "script_sha256": "875cb059976bffdb0c69e75cca9e62eb3654cd3a658e9b8933b640c9cd154733",
+      "log_sha256": "2e9ac2b6727f5097edfbea1ad027ef863f41776523875526be84e7522541c406"
+    },
+    {
+      "platform": "wsl",
+      "test": "test_cross_experience.py",
+      "returncode": 0,
+      "tests": 16,
+      "skipped": 6,
+      "script_sha256": "3d051d1d1a6c7de47c9b11e9096520808e22a6b9204241a027c068de5aa21a92",
+      "log_sha256": "bfa66c4aec3927d6ef70779d73c3271d449fefe4c7024fc53b09296872efc8a8"
+    }
+  ]
+}

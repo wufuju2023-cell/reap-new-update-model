@@ -1,0 +1,235 @@
+diff --git a/Reap/Tactic/TreeSearch.lean b/Reap/Tactic/TreeSearch.lean
+--- a/Reap/Tactic/TreeSearch.lean
++++ b/Reap/Tactic/TreeSearch.lean
+@@ -80,6 +80,19 @@
+ Callbacks run with the tactic state restored on success and on exceptions. -/
+ abbrev MCTSObserver := Json → TacticM Unit
+ 
++/-- Explicit selection-only refresh. Historical search/learning sums are not
++recomputed. The version reader is called only at iteration barriers. -/
++structure SelectionValueRefresh where
++  currentVersion : TacticM Nat
++  evalValue : List MVarId → MetaM Float
++
++def readSelectionVersion (control : SelectionValueRefresh) : TacticM Nat := do
++  let saved ← Tactic.saveState
++  try
++    control.currentVersion
++  finally
++    saved.restore (restoreInfo := true)
++
+ namespace MCTSProgress
+ 
+ def initial (maxNodes maxSteps : Nat) : MCTSProgress where
+@@ -138,6 +151,8 @@
+   valueSum : Float
+   numVisit : Nat
+   numEvaluations : Nat
++  /-- Versioned selection heuristic only; never a search visit or reward. -/
++  selectionValue? : Option (Nat × Float) := none
+ 
+ namespace NodeData
+ def fromState (toPlay := NodeKind.orNode) (partialGoal : Option MVarId := none) : TacticM NodeData := do
+@@ -154,6 +169,10 @@
+ 
+ def value (node : NodeData) : Float :=
+   if node.numVisit == 0 then 0.0 else node.valueSum / node.numVisit.toFloat
++
++def selectionValue (node : NodeData) : Float :=
++  if node.isSolved then node.value
++  else (node.selectionValue?.map Prod.snd).getD node.value
+ 
+ def restore (node : NodeData) : TacticM Unit :=
+   node.state.restore
+@@ -357,7 +376,7 @@
+   node.children.map fun (e, n) =>
+     let valueScore :=
+       if n.numVisit > 0 then
+-        let value := n.value - edgeStepCost e
++        let value := n.selectionValue - edgeStepCost e
+         params.visitDiscount.pow (-1.0 - value)
+       else
+         0.0
+@@ -376,7 +395,7 @@
+ def ppNodeData (node : NodeData) : TacticM Json := do
+   node.state.restore
+   let pp ← (← getUnsolvedGoals).mapM fun g => do return toString (← Meta.ppGoal g)
+-  return json%{
++  let record := json%{
+     state: $(pp),
+     toPlay: $(node.toPlay),
+     isPartial: $(node.partialGoal.isSome),
+@@ -385,6 +404,12 @@
+     numVisit: $(node.numVisit),
+     numEvaluations: $(node.numEvaluations)
+   }
++  if let some (version, value) := node.selectionValue? then
++    return record
++      |>.setObjVal! "selectionValueVersion" (toJson version)
++      |>.setObjVal! "selectionValue" (toJson value)
++      |>.setObjVal! "selectionValueScope" (toJson "selection-only-not-training-Q")
++  return record
+ 
+ def ppNode (params : SearchHyperparameters) (arr : Array (Node NodeData (EdgeData × Nat)))
+     (node : Node NodeData (EdgeData × Nat)) : TacticM Json := do
+@@ -462,6 +487,53 @@
+       numVisit := node.data.numVisit + 1
+       valueSum := node.data.valueSum + value
+   }
++
++/-- One fresh value forward per visited, unsolved OR node. AND caches use the
++same unsolved-child min convention, but only for selection. All cache writes
++commit together; any callback/value error leaves the input tree unchanged.
++This does not rewrite history, manufacture visits, change proof flags, priors,
++edges, or the OR/AND training backup functions. -/
++def refreshSelectionValues (control : SelectionValueRefresh) (version step : Nat)
++    (observer? : Option MCTSObserver := none) : SearchM Unit := do
++  let original ← get
++  let saved ← liftM Tactic.saveState
++  try
++    let mut refreshed := original
++    let mut changes : Array Json := #[]
++    -- Reap appends children after their parent; reject a different topology.
++    for (node, index) in original.zipIdx do
++      for (_, child) in node.children do
++        unless index < child && child < original.size do
++          throwError "selection-value-refresh requires the append-only Reap tree topology"
++    for offset in [:original.size] do
++      let index := original.size - 1 - offset
++      let some node := refreshed[index]? | throwError "refresh node out of bounds"
++      if node.data.isSolved || node.data.numVisit == 0 then continue
++      let value ← if node.data.toPlay == .orNode then do
++        node.data.state.restore
++        let goals ← getUnsolvedGoals
++        if goals.isEmpty then
++          throwError "unsolved refresh node has no goals; refusing to change proof state"
++        let value ← control.evalValue goals
++        if value.isNaN || value.isInf || value > 0.0 then
++          throwError "selection-value-refresh requires a finite nonpositive value"
++        pure value
++      else do
++        let mut value := 1.0
++        for (_, childIndex) in node.children do
++          let some child := refreshed[childIndex]? | throwError "refresh child out of bounds"
++          if !child.data.isSolved && child.data.numVisit > 0 then
++            value := min value child.data.selectionValue
++        pure value
++      refreshed := refreshed.set! index { node with data := {
++        node.data with selectionValue? := some (version, value) } }
++      changes := changes.push <| json%{node_index: $index, node_kind: $(node.data.toPlay), value: $value}
++    observe? observer? do
++      return json%{kind: "selection_value_refresh", step: $step,
++        selection_value_version: $version, scope: "selection-only-not-training-Q", nodes: $changes}
++    set refreshed
++  finally
++    saved.restore (restoreInfo := true)
+ 
+ def currentGoalType (node : NodeData) : TacticM String := do
+   node.state.restore
+@@ -540,17 +612,31 @@
+     (params : SearchHyperparameters) (start : NodeData)
+     (maxNodes := MCTS.defaultMaxNodes) (maxSteps := MCTS.defaultMaxSteps)
+     (progress? : Option ProgressReporter := none)
+-    (observer? : Option MCTSObserver := none) :
++    (observer? : Option MCTSObserver := none)
++    (selectionValueRefresh? : Option SelectionValueRefresh := none) :
+     TacticM (Option Nat × Array (Node NodeData (EdgeData × Nat))) :=
+   StateT.run (s := #[ { data := start } ]) do
++    let initialSelectionVersion : Nat ← match selectionValueRefresh? with
++      | some control => liftM (readSelectionVersion control)
++      | none => pure 0
++    let mut selectionVersion := initialSelectionVersion
+     let mut step := 0
+     while (← get).size <= maxNodes && step < maxSteps do
+       discard <| reapMCTSStep ctx evalPolicyValue params {start.key} 0 progress? step maxNodes maxSteps observer?
+       reportCheckpoint? observer? params step
++      let nextSelectionVersion : Nat ← match selectionValueRefresh? with
++        | some control => liftM (readSelectionVersion control)
++        | none => pure selectionVersion
++      unless nextSelectionVersion == selectionVersion || nextSelectionVersion == selectionVersion + 1 do
++        throwError "selection-value-refresh version must stay equal or advance by one ACK"
+       let root ← getNode! 0
+       if root.data.isSolved then
+         reportProgress? progress? (step + 1) maxNodes maxSteps "no goals" true true "solved"
+         return some 0
++      if let some control := selectionValueRefresh? then
++        if nextSelectionVersion != selectionVersion then
++          refreshSelectionValues control nextSelectionVersion step observer?
++          selectionVersion := nextSelectionVersion
+       step := step + 1
+     reportProgress? progress? step maxNodes maxSteps "search exhausted" true false "exhausted"
+     return none
+@@ -662,7 +748,8 @@
+     (maxNodes := MCTS.defaultMaxNodes)
+     (maxSteps := MCTS.defaultMaxSteps)
+     (progress? : Option ProgressReporter := none)
+-    (observer? : Option MCTSObserver := none) : TacticM MCTSResult := unsafe do
++    (observer? : Option MCTSObserver := none)
++    (selectionValueRefresh? : Option SelectionValueRefresh := none) : TacticM MCTSResult := unsafe do
+   let opts ← getOptions
+   let path := reap.wall_clock_log_path.get opts
+   if !path.isEmpty then
+@@ -670,7 +757,8 @@
+   let ctx ← mkProofCheckContext
+   let params := SearchHyperparameters.fromOptions opts
+   let (k, nodes) ←
+-    monteCarloTreeSearch ctx evalPolicyValue params (← NodeData.fromState) maxNodes maxSteps progress? observer?
++    monteCarloTreeSearch ctx evalPolicyValue params (← NodeData.fromState) maxNodes maxSteps
++      progress? observer? selectionValueRefresh?
+ 
+   let ppNodes ← nodes.mapM (ppNode params nodes)
+   let info := json%{
+diff --git a/Reap/Training/Observer.lean b/Reap/Training/Observer.lean
+--- a/Reap/Training/Observer.lean
++++ b/Reap/Training/Observer.lean
+@@ -57,7 +57,8 @@
+ 
+ /-- Default-off stream. Only JSON leaves the core; checkpoint ACK changes the
+ external policy version, never Lean goals or the in-memory MCTS tree. -/
+-def makeTrainingObserver (sessionId : String) : IO (Option Reap.TreeSearch.MCTSObserver) := do
++def makeTrainingObserver (sessionId : String)
++    (policyVersionRef? : Option (IO.Ref Nat) := none) : IO (Option Reap.TreeSearch.MCTSObserver) := do
+   let pathText := (← IO.getEnv "REAP_OBSERVER_PATH").getD ""
+   if pathText.isEmpty then
+     return none
+@@ -70,7 +71,9 @@
+   let checkpointDir := (← IO.getEnv "REAP_CHECKPOINT_DIR").filter (!·.isEmpty)
+   if let some directory := checkpointDir then IO.FS.createDirAll (.mk directory)
+   let sequence ← IO.mkRef (0 : Nat)
+-  let policyVersion ← IO.mkRef initialVersion
++  let policyVersion ← match policyVersionRef? with
++    | some ref => do ref.set initialVersion; pure ref
++    | none => IO.mkRef initialVersion
+   let emit (record : Json) : IO Unit := do
+     let index ← sequence.modifyGet fun n => (n, n + 1)
+     let version ← policyVersion.get
+diff --git a/Reap/Training/RolloutSink.lean b/Reap/Training/RolloutSink.lean
+--- a/Reap/Training/RolloutSink.lean
++++ b/Reap/Training/RolloutSink.lean
+@@ -4,7 +4,7 @@
+ public meta import Reap.Tactic.Generator
+ public meta import Reap.Tactic.TreeSearch
+ public meta import Reap.Tactic.WallClock
+-public meta import Reap.Training.Observer
++public meta import Reap.Training.SelectionValueRefresh
+ 
+ open Lean Elab Tactic
+ 
+@@ -69,7 +69,7 @@
+   let wallClockPath := outputDir / "wall_clock.jsonl"
+   let start ← IO.monoNanosNow
+   Reap.WallClock.openLogFile wallClockPath
+-  let observer? ← makeTrainingObserver sessionId
++  let (observer?, selectionValueRefresh?) ← makeSelectionValueTrainingObserver sessionId
+   let reportProgress (progress : Reap.TreeSearch.MCTSProgress) : TacticM Unit := do
+     let now ← IO.monoNanosNow
+     appendJsonl progressPath (progressJson sessionId (now - start) progress)
+@@ -78,7 +78,7 @@
+     let result ← Reap.TreeSearch.runMCTS
+       TacticGenerator.generatePolicyValue
+       (maxNodes := maxNodes) (maxSteps := maxSteps) (progress? := some reportProgress)
+-      (observer? := observer?)
++      (observer? := observer?) (selectionValueRefresh? := selectionValueRefresh?)
+     saved.restore
+     Reap.TreeSearch.writeRawTree treePath.toString result.info
+     let now ← IO.monoNanosNow

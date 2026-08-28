@@ -1,0 +1,12 @@
+test_bad_payload_creates_no_output (__main__.PreparationTests.test_bad_payload_creates_no_output) ... ok
+test_code_copy_must_match_original_archive (__main__.PreparationTests.test_code_copy_must_match_original_archive) ... ok
+test_existing_directory_is_never_reused (__main__.PreparationTests.test_existing_directory_is_never_reused) ... ok
+test_failed_write_does_not_commit_final_directory (__main__.PreparationTests.test_failed_write_does_not_commit_final_directory) ... ok
+test_output_inside_report_is_rejected (__main__.PreparationTests.test_output_inside_report_is_rejected) ... ok
+test_readable_code_change_is_rejected (__main__.PreparationTests.test_readable_code_change_is_rejected) ... ok
+test_real_archives_extract_and_detect_modified_input (__main__.PreparationTests.test_real_archives_extract_and_detect_modified_input) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 20.996s
+
+OK

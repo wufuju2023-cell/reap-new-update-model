@@ -4,7 +4,9 @@
 
 ## 复现顺序
 
-1. 阅读[当前复现指南](current/README.md)。
+首次复现先看[单题、跨题与并发操作指南](../reproduction/README.md)，代码可在[可浏览代码目录](../reproduction/code/README.md)直接阅读。其他电脑上的新Agent可使用[交接prompt与教学](../prompt_for_agent/README.md)。
+
+1. 阅读[扩展训练与恢复指南](current/README.md)。
 2. 用 `current/verify.py` 校验并解压当前源码到新目录。
 3. 用 `current/reproduce.py prepare` 从本包证据提取完整证明数据，再做本地检查。
 4. 需要重做训练时，再按指南准备AMD环境并选择具体GPU阶段；模型目录从外部挂载，包内不含权重。

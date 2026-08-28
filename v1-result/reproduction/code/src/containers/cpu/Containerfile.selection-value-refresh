@@ -1,0 +1,26 @@
+# Optional, local-only delta over the accepted CPU delivery image.
+# Default Containerfile and the accepted V1 image remain unchanged.
+ARG CPU_BASE_IMAGE=localhost/reap-cpu:v1-delivery-20260827
+FROM ${CPU_BASE_IMAGE}
+
+WORKDIR /opt/reap
+COPY --chown=reap:reap containers/cpu/patches/0004-selection-value-refresh.patch /tmp/reap-selection-value-refresh.patch
+COPY --chown=reap:reap containers/cpu/selection-value-refresh-overlay/Reap/Training/SelectionValueRefresh.lean Reap/Training/SelectionValueRefresh.lean
+
+# Keep the patch's exact mixed-newline context; never run sed/dos2unix on it.
+RUN lean --version | grep -F 'version 4.28.0-rc1,' \
+    && printf '%s\n' \
+       '384c42cf9645869f29da125d49d2c0fb93989d4586454ea124bae4de1370dd1b  Reap/Tactic/TreeSearch.lean' \
+       'b848002cfb8f25740d6023159a3bd75769bb71b244454738c89f910b6a4aca89  Reap/Training/Observer.lean' \
+       '9ea79fe21a800873c88588bb3dc974ecd40908ba7e9e228d89dd1419c0bea7fa  Reap/Training/RolloutSink.lean' \
+       '9555b493849e2afdfd5c69d08203a5bdb046e5ba30d8363960ce432a4d38ceb3  /tmp/reap-selection-value-refresh.patch' \
+       '4645c80751ea84677e37e24621646319d48bc12040b9d5d996abd2f3a4d5dd2f  Reap/Training/SelectionValueRefresh.lean' \
+       | sha256sum --check \
+    && git apply --check /tmp/reap-selection-value-refresh.patch \
+    && git apply /tmp/reap-selection-value-refresh.patch \
+    && lake build Reap.Training \
+    && python3 -c 'import hashlib,json,pathlib; root=pathlib.Path("/opt/reap"); names=["Reap/Tactic/TreeSearch.lean","Reap/Training/Observer.lean","Reap/Training/RolloutSink.lean","Reap/Training/SelectionValueRefresh.lean"]; data={"schema_version":"reap.selection-value-refresh.cpu-build.v1","mode":"selection-value-refresh","default_enabled":False,"historical_Q_recomputed":False,"source_sha256":{name:hashlib.sha256((root/name).read_bytes()).hexdigest() for name in names}}; (root/"selection-value-refresh-build.json").write_text(json.dumps(data,sort_keys=True)+"\n")'
+
+# An explicit online coordinator flag must opt into the new protocol.
+ENV REAP_SELECTION_VALUE_REFRESH=""
+WORKDIR /opt/reap-runtime

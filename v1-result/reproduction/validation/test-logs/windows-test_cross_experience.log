@@ -1,0 +1,21 @@
+test_after_guard_requires_target_independent_proof (__main__.CrossTests.test_after_guard_requires_target_independent_proof) ... ok
+test_before_guard_refuses_target_already_started (__main__.CrossTests.test_before_guard_refuses_target_already_started) ... ok
+test_candidate_wrong_version_refused (__main__.CrossTests.test_candidate_wrong_version_refused) ... ok
+test_changed_proof_or_input_refused_before_publish (__main__.CrossTests.test_changed_proof_or_input_refused_before_publish) ... ok
+test_publish_pins_and_single_attempt (__main__.CrossTests.test_publish_pins_and_single_attempt) ... ok
+test_retire_requires_proof_and_tensor_evidence (__main__.CrossTests.test_retire_requires_proof_and_tensor_evidence) ... ok
+test_retire_two_explicit_snapshots_once (__main__.CrossTests.test_retire_two_explicit_snapshots_once) ... ok
+test_retire_wrong_snapshot_preserves_raw_response_and_stops (__main__.CrossTests.test_retire_wrong_snapshot_preserves_raw_response_and_stops) ... ok
+test_snapshot_ack_and_unknown_are_not_reissued (__main__.CrossTests.test_snapshot_ack_and_unknown_are_not_reissued) ... ok
+test_unknown_publish_preserves_intent_and_cannot_retry (__main__.CrossTests.test_unknown_publish_preserves_intent_and_cannot_retry) ... ok
+test_actual_small_tensor_copy_and_full_state_audit (__main__.TensorTests.test_actual_small_tensor_copy_and_full_state_audit) ... ok
+test_rehashed_target_outer_gamma_mismatch_refused (__main__.TensorTests.test_rehashed_target_outer_gamma_mismatch_refused) ... ok
+test_rehashed_target_outer_session_mismatch_refused (__main__.TensorTests.test_rehashed_target_outer_session_mismatch_refused) ... ok
+test_source_optimizer_pollution_refused (__main__.TensorTests.test_source_optimizer_pollution_refused) ... ok
+test_target_inherited_buffer_refused (__main__.TensorTests.test_target_inherited_buffer_refused) ... ok
+test_wrong_target_parameter_refused (__main__.TensorTests.test_wrong_target_parameter_refused) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 1.279s
+
+OK

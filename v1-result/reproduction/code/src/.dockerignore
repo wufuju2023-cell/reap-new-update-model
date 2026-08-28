@@ -1,0 +1,13 @@
+.git
+.downloads
+.opencli-extension
+Learning
+agent_record
+environment-spec
+计划对齐与实践
+__pycache__
+*.pyc
+*.pyo
+*.log
+out
+artifacts

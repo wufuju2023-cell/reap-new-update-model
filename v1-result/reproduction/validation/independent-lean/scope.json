@@ -1,0 +1,7 @@
+{
+  "scope": "New independent offline Lean verification of an existing proof; no new search or GPU training",
+  "new_search_runs": 0,
+  "new_gpu_training_updates": 0,
+  "historical_session": "experience-source-01",
+  "helper_sha256": "a5fe4f3321b1a18f56acd2fdfed4c8dc196db8ca6b13491c579da664e8312bb3"
+}

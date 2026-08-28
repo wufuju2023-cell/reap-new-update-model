@@ -1,0 +1,33 @@
+diff --git a/Reap/Tactic/Generator.lean b/Reap/Tactic/Generator.lean
+--- a/Reap/Tactic/Generator.lean
++++ b/Reap/Tactic/Generator.lean
+@@ -134,11 +134,16 @@
+ def generateValueFromPrompt (generator : TacticGenerator) (opts : Options)
+     (ppGoal : String) (relatedTheorems : Array PremiseSelectionResult) (prompt : String) :
+     CoreM Float := do
++  -- Online training must not interpret the upstream transport-error fallback as a value.
++  -- Keep the original behavior when the optional observer is disabled.
++  let strict := !((← IO.getEnv "REAP_OBSERVER_PATH").getD "").isEmpty
+   let req := mkChatRequest opts prompt 1
+   let result : Option ValueResult ← withLogWallClockTime "value" (fun result => json%{ state: $ppGoal, ps: $relatedTheorems, result: $result }) do
+     retryCoreM? (maxRetries := 3) do
+       let res ← generator.valueClient.generateChat req
+       let res := parseChatResponseOpenAI res
++      if strict && res.isEmpty then
++        throwError "Strict value response has no choices"
+       let res := Json.parse res[0]!.1
+       if let .ok res := res then
+         match fromJson? res with
+@@ -148,7 +153,11 @@
+         throwError "Failed to parse value response as JSON"
+   match result with
+   | some result => return -result.score
+-  | none => return -1000.0
++  | none =>
++    if strict then
++      throwError "Strict value inference failed after 3 attempts; refusing fallback sentinel"
++    else
++      return -1000.0
+ 
+ def Meta.ppProofState (mvarIds : List MVarId) : MetaM Format := do
+   return Std.Format.joinSep (← mvarIds.mapM (Meta.ppGoal)) "\n".toFormat
