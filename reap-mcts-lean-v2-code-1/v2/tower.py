@@ -13,6 +13,7 @@ class TowerEntry:
     name: str
     body: str
     deps: List[str] = field(default_factory=list)
+    type: str = "1 + 1 = 2"      # gate_lean 验证的目标语句（标准库命题）
 
 
 @dataclass
