@@ -15,3 +15,13 @@ data/
 # 大件（留在 F 盘不入 git）
 *.tar.zst
 *.tar.gz
+
+# Python build/cache artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Local nested checkouts and runtime state
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/

@@ -1,0 +1,3 @@
+[submodule "nanoproof"]
+	path = nanoproof
+	url = https://github.com/wufuju2023-cell/nanoproof-value-head.git

@@ -2,6 +2,9 @@
 """rttt_demo — 真实调用 policy_server (/v1/chat/completions → /ttt_step 循环)
 P1 PASS 判定: ≥5 个 items 的 buffer 全部成功提交 /ttt_step 且响应 loss<inf, 指标落 metrics.
 用法: /opt/venv/bin/python /workspace/app/rttt_demo.py --host localhost --port 8760 --steps 10
+
+每个样本同时携带 ``value_target``，因此该演示会真正更新 value head；生产
+环境应把该字段替换为 Lean verifier 产生的 discounted return/TD target。
 """
 import argparse, json, time, urllib.request
 from pathlib import Path
@@ -20,6 +23,8 @@ def main():
     ap.add_argument("--steps", type=int, default=10)
     ap.add_argument("--k", type=int, default=8)
     ap.add_argument("--metrics", default="/workspace/out/rttt_metrics.jsonl")
+    ap.add_argument("--value-target", type=float, default=None,
+                    help="override demo value target; otherwise use reward")
     a = ap.parse_args()
     Path(a.metrics).parent.mkdir(parents=True, exist_ok=True)
     base = f"http://{a.host}:{a.port}"
@@ -31,8 +36,15 @@ def main():
         prompt = prompts[i % len(prompts)]
         outs = post(base + "/v1/chat/completions", {"prompt": prompt, "n": 2, "temperature": 0.99})
         for c in outs["choices"][:1]:
-            items.append({"prompt": prompt, "target": c["text"], "r": 1 if i % 3 == 0 else -0.5,
-                          "logprob_old": c.get("logprob_avg", -12.0)})
+            reward = 1.0 if i % 3 == 0 else -0.5
+            items.append({
+                "prompt": prompt,
+                "target": c["text"],
+                "r": reward,
+                "value_target": reward if a.value_target is None else a.value_target,
+                "done": True,
+                "logprob_old": c.get("logprob_avg", -12.0),
+            })
         if len(items) >= a.k:
             r = post(base + "/ttt_step", {"items": items})
             with open(a.metrics, "a") as f:
@@ -43,4 +55,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
