@@ -1,0 +1,685 @@
+{
+  "architecture": "linear-3584-silu-256-linear-64",
+  "checkpoint_sha256": "7d6ab63f355013f6821b41bf20c31982e8e0bc7baad5d91243168a1ff36fdbc2",
+  "dataset_manifest_sha256": "1cc7f4765dd4f6bef59ceec0b2fe9d7e934e37ce38a426b22ce69e73731c8393",
+  "extension_provenance": {
+    "base_dataset_manifest_sha256": "1cc7f4765dd4f6bef59ceec0b2fe9d7e934e37ce38a426b22ce69e73731c8393",
+    "base_feature_manifest_sha256": "dca6f3ebd9cd2862c33a50d4ff877d1d8db4f1fc4e09528a0e71a8b38c06db0b",
+    "dataset_extension_manifest_sha256": "2a6d5cad0f7b3db8b72d139c9749eae372fbffc5f80f0fec728c3c52116eca6a",
+    "extension_feature_manifest_sha256": "d0083e275cbb66b551c7de6bf8055bb0e3b52f97ceebc30f3ef3c1f27df6644f"
+  },
+  "feature_model_fingerprint_sha256": "e8783d9a2a81243f795ae93d8d707d4bfeb1d7bd4f26409ae34781c81a24b80d",
+  "history": [
+    {
+      "epoch": 1,
+      "train_nll": 1.958065658105698,
+      "validation": {
+        "accuracy": 0.3803749978542328,
+        "argmax_within_two_bins": 0.7806249856948853,
+        "depth_buckets": {
+          "1-4": {
+            "accuracy": 0.4684754014015198,
+            "argmax_within_two_bins": 0.945891797542572,
+            "count": 6487,
+            "expected_clipped_depth_mae": 1.237992763519287,
+            "expected_clipped_depth_within_two": 0.8065361380577087
+          },
+          "17-32": {
+            "accuracy": 0.0,
+            "argmax_within_two_bins": 0.0,
+            "count": 32,
+            "expected_clipped_depth_mae": 14.016326904296875,
+            "expected_clipped_depth_within_two": 0.0
+          },
+          "33-64": {
+            "count": 0
+          },
+          "5-8": {
+            "accuracy": 0.003442340763285756,
+            "argmax_within_two_bins": 0.0938037857413292,
+            "count": 1162,
+            "expected_clipped_depth_mae": 2.432065963745117,
+            "expected_clipped_depth_within_two": 0.4001721143722534
+          },
+          "9-16": {
+            "accuracy": 0.0,
+            "argmax_within_two_bins": 0.0,
+            "count": 319,
+            "expected_clipped_depth_mae": 6.701787948608398,
+            "expected_clipped_depth_within_two": 0.006269592326134443
+          }
+        },
+        "expected_clipped_depth_mae": 1.680414080619812,
+        "expected_clipped_depth_within_two": 0.7123749852180481,
+        "nll": 1.7796486616134644,
+        "pearson_expected_vs_clipped_depth": 0.4081505537033081,
+        "within_root_order": {
+          "accuracy_ties_half": 0.6555137844611529,
+          "comparable_pairs": 7980,
+          "correct": 5231,
+          "ties": 0
+        }
+      }
+    },
+    {
+      "epoch": 2,
+      "train_nll": 1.7197044802029267,
+      "validation": {
+        "accuracy": 0.3648749887943268,
+        "argmax_within_two_bins": 0.7942500114440918,
+        "depth_buckets": {
+          "1-4": {
+            "accuracy": 0.4488978087902069,
+            "argmax_within_two_bins": 0.9691690802574158,
+            "count": 6487,
+            "expected_clipped_depth_mae": 1.1958051919937134,
+            "expected_clipped_depth_within_two": 0.8251888155937195
+          },
+          "17-32": {
+            "accuracy": 0.0,
+            "argmax_within_two_bins": 0.0,
+            "count": 32,
+            "expected_clipped_depth_mae": 13.836822509765625,
+            "expected_clipped_depth_within_two": 0.0
+          },
+          "33-64": {
+            "count": 0
+          },
+          "5-8": {
+            "accuracy": 0.0060240961611270905,
+            "argmax_within_two_bins": 0.05765920877456665,
+            "count": 1162,
+            "expected_clipped_depth_mae": 2.47397518157959,
+            "expected_clipped_depth_within_two": 0.38640275597572327
+          },
+          "9-16": {
+            "accuracy": 0.0,
+            "argmax_within_two_bins": 0.0,
+            "count": 319,
+            "expected_clipped_depth_mae": 6.651142120361328,
+            "expected_clipped_depth_within_two": 0.021943572908639908
+          }
+        },
+        "expected_clipped_depth_mae": 1.6495550870895386,
+        "expected_clipped_depth_within_two": 0.7261250019073486,
+        "nll": 1.7692251205444336,
+        "pearson_expected_vs_clipped_depth": 0.42474114894866943,
+        "within_root_order": {
+          "accuracy_ties_half": 0.6670426065162908,
+          "comparable_pairs": 7980,
+          "correct": 5323,
+          "ties": 0
+        }
+      }
+    },
+    {
+      "epoch": 3,
+      "train_nll": 1.6698939239034754,
+      "validation": {
+        "accuracy": 0.3840000033378601,
+        "argmax_within_two_bins": 0.7648749947547913,
+        "depth_buckets": {
+          "1-4": {
+            "accuracy": 0.47217512130737305,
+            "argmax_within_two_bins": 0.9167565703392029,
+            "count": 6487,
+            "expected_clipped_depth_mae": 1.0207306146621704,
+            "expected_clipped_depth_within_two": 0.8748265504837036
+          },
+          "17-32": {
+            "accuracy": 0.0,
+            "argmax_within_two_bins": 0.0,
+            "count": 32,
+            "expected_clipped_depth_mae": 14.370063781738281,
+            "expected_clipped_depth_within_two": 0.0
+          },
+          "33-64": {
+            "count": 0
+          },
+          "5-8": {
+            "accuracy": 0.007745266892015934,
+            "argmax_within_two_bins": 0.1480206549167633,
+            "count": 1162,
+            "expected_clipped_depth_mae": 2.7401561737060547,
+            "expected_clipped_depth_within_two": 0.3080894947052002
+          },
+          "9-16": {
+            "accuracy": 0.0,
+            "argmax_within_two_bins": 0.0,
+            "count": 319,
+            "expected_clipped_depth_mae": 7.04983377456665,
+            "expected_clipped_depth_within_two": 0.012539184652268887
+          }
+        },
+        "expected_clipped_depth_mae": 1.564285159111023,
+        "expected_clipped_depth_within_two": 0.7546250224113464,
+        "nll": 1.7702791690826416,
+        "pearson_expected_vs_clipped_depth": 0.4256352186203003,
+        "within_root_order": {
+          "accuracy_ties_half": 0.6771929824561403,
+          "comparable_pairs": 7980,
+          "correct": 5404,
+          "ties": 0
+        }
+      }
+    },
+    {
+      "epoch": 4,
+      "train_nll": 1.6248500460463613,
+      "validation": {
+        "accuracy": 0.3877499997615814,
+        "argmax_within_two_bins": 0.7761250138282776,
+        "depth_buckets": {
+          "1-4": {
+            "accuracy": 0.47448742389678955,
+            "argmax_within_two_bins": 0.931401252746582,
+            "count": 6487,
+            "expected_clipped_depth_mae": 1.155198335647583,
+            "expected_clipped_depth_within_two": 0.8319716453552246
+          },
+          "17-32": {
+            "accuracy": 0.0,
+            "argmax_within_two_bins": 0.0,
+            "count": 32,
+            "expected_clipped_depth_mae": 13.63541030883789,
+            "expected_clipped_depth_within_two": 0.0
+          },
+          "33-64": {
+            "count": 0
+          },
+          "5-8": {
+            "accuracy": 0.016351118683815002,
+            "argmax_within_two_bins": 0.13339070975780487,
+            "count": 1162,
+            "expected_clipped_depth_mae": 2.4866511821746826,
+            "expected_clipped_depth_within_two": 0.38726332783699036
+          },
+          "9-16": {
+            "accuracy": 0.015673981979489326,
+            "argmax_within_two_bins": 0.037617553025484085,
+            "count": 319,
+            "expected_clipped_depth_mae": 6.462143898010254,
+            "expected_clipped_depth_within_two": 0.05642633140087128
+          }
+        },
+        "expected_clipped_depth_mae": 1.6101272106170654,
+        "expected_clipped_depth_within_two": 0.7331249713897705,
+        "nll": 1.7548209428787231,
+        "pearson_expected_vs_clipped_depth": 0.4299742877483368,
+        "within_root_order": {
+          "accuracy_ties_half": 0.6829573934837093,
+          "comparable_pairs": 7980,
+          "correct": 5450,
+          "ties": 0
+        }
+      }
+    },
+    {
+      "epoch": 5,
+      "train_nll": 1.5804846822817789,
+      "validation": {
+        "accuracy": 0.38737499713897705,
+        "argmax_within_two_bins": 0.7817500233650208,
+        "depth_buckets": {
+          "1-4": {
+            "accuracy": 0.4746415913105011,
+            "argmax_within_two_bins": 0.9347926378250122,
+            "count": 6487,
+            "expected_clipped_depth_mae": 1.041250228881836,
+            "expected_clipped_depth_within_two": 0.8635733127593994
+          },
+          "17-32": {
+            "accuracy": 0.0,
+            "argmax_within_two_bins": 0.0,
+            "count": 32,
+            "expected_clipped_depth_mae": 14.240114212036133,
+            "expected_clipped_depth_within_two": 0.0
+          },
+          "33-64": {
+            "count": 0
+          },
+          "5-8": {
+            "accuracy": 0.016351118683815002,
+            "argmax_within_two_bins": 0.15490533411502838,
+            "count": 1162,
+            "expected_clipped_depth_mae": 2.6299736499786377,
+            "expected_clipped_depth_within_two": 0.34423407912254333
+          },
+          "9-16": {
+            "accuracy": 0.0031347961630672216,
+            "argmax_within_two_bins": 0.03134796395897865,
+            "count": 319,
+            "expected_clipped_depth_mae": 6.7945637702941895,
+            "expected_clipped_depth_within_two": 0.037617553025484085
+          }
+        },
+        "expected_clipped_depth_mae": 1.5542211532592773,
+        "expected_clipped_depth_within_two": 0.7517499923706055,
+        "nll": 1.75754976272583,
+        "pearson_expected_vs_clipped_depth": 0.43752655386924744,
+        "within_root_order": {
+          "accuracy_ties_half": 0.6911027568922306,
+          "comparable_pairs": 7980,
+          "correct": 5515,
+          "ties": 0
+        }
+      }
+    },
+    {
+      "epoch": 6,
+      "train_nll": 1.5253449294452415,
+      "validation": {
+        "accuracy": 0.3942500054836273,
+        "argmax_within_two_bins": 0.7712500095367432,
+        "depth_buckets": {
+          "1-4": {
+            "accuracy": 0.4792662262916565,
+            "argmax_within_two_bins": 0.9189147353172302,
+            "count": 6487,
+            "expected_clipped_depth_mae": 1.0166661739349365,
+            "expected_clipped_depth_within_two": 0.8638815879821777
+          },
+          "17-32": {
+            "accuracy": 0.0,
+            "argmax_within_two_bins": 0.0,
+            "count": 32,
+            "expected_clipped_depth_mae": 14.343647003173828,
+            "expected_clipped_depth_within_two": 0.0
+          },
+          "33-64": {
+            "count": 0
+          },
+          "5-8": {
+            "accuracy": 0.037005163729190826,
+            "argmax_within_two_bins": 0.17125645279884338,
+            "count": 1162,
+            "expected_clipped_depth_mae": 2.64243221282959,
+            "expected_clipped_depth_within_two": 0.3519793450832367
+          },
+          "9-16": {
+            "accuracy": 0.006269592326134443,
+            "argmax_within_two_bins": 0.03134796395897865,
+            "count": 319,
+            "expected_clipped_depth_mae": 6.798089027404785,
+            "expected_clipped_depth_within_two": 0.03448275849223137
+          }
+        },
+        "expected_clipped_depth_mae": 1.5366506576538086,
+        "expected_clipped_depth_within_two": 0.753000020980835,
+        "nll": 1.7679600715637207,
+        "pearson_expected_vs_clipped_depth": 0.44070786237716675,
+        "within_root_order": {
+          "accuracy_ties_half": 0.6907268170426065,
+          "comparable_pairs": 7980,
+          "correct": 5512,
+          "ties": 0
+        }
+      }
+    },
+    {
+      "epoch": 7,
+      "train_nll": 1.4676029824634549,
+      "validation": {
+        "accuracy": 0.38999998569488525,
+        "argmax_within_two_bins": 0.7791249752044678,
+        "depth_buckets": {
+          "1-4": {
+            "accuracy": 0.476183146238327,
+            "argmax_within_two_bins": 0.9312471151351929,
+            "count": 6487,
+            "expected_clipped_depth_mae": 0.9727525115013123,
+            "expected_clipped_depth_within_two": 0.8796053528785706
+          },
+          "17-32": {
+            "accuracy": 0.0,
+            "argmax_within_two_bins": 0.0,
+            "count": 32,
+            "expected_clipped_depth_mae": 14.41293716430664,
+            "expected_clipped_depth_within_two": 0.0
+          },
+          "33-64": {
+            "count": 0
+          },
+          "5-8": {
+            "accuracy": 0.024956971406936646,
+            "argmax_within_two_bins": 0.15662650763988495,
+            "count": 1162,
+            "expected_clipped_depth_mae": 2.7678940296173096,
+            "expected_clipped_depth_within_two": 0.3080894947052002
+          },
+          "9-16": {
+            "accuracy": 0.006269592326134443,
+            "argmax_within_two_bins": 0.03134796395897865,
+            "count": 319,
+            "expected_clipped_depth_mae": 6.895416736602783,
+            "expected_clipped_depth_within_two": 0.043887145817279816
+          }
+        },
+        "expected_clipped_depth_mae": 1.5234237909317017,
+        "expected_clipped_depth_within_two": 0.7597500085830688,
+        "nll": 1.8102357387542725,
+        "pearson_expected_vs_clipped_depth": 0.4381590485572815,
+        "within_root_order": {
+          "accuracy_ties_half": 0.6830827067669173,
+          "comparable_pairs": 7980,
+          "correct": 5451,
+          "ties": 0
+        }
+      }
+    },
+    {
+      "epoch": 8,
+      "train_nll": 1.4238571778577793,
+      "validation": {
+        "accuracy": 0.38975000381469727,
+        "argmax_within_two_bins": 0.7767500281333923,
+        "depth_buckets": {
+          "1-4": {
+            "accuracy": 0.4746415913105011,
+            "argmax_within_two_bins": 0.9206104278564453,
+            "count": 6487,
+            "expected_clipped_depth_mae": 1.0372015237808228,
+            "expected_clipped_depth_within_two": 0.8614151477813721
+          },
+          "17-32": {
+            "accuracy": 0.0,
+            "argmax_within_two_bins": 0.0,
+            "count": 32,
+            "expected_clipped_depth_mae": 14.154659271240234,
+            "expected_clipped_depth_within_two": 0.0
+          },
+          "33-64": {
+            "count": 0
+          },
+          "5-8": {
+            "accuracy": 0.03184165060520172,
+            "argmax_within_two_bins": 0.20137692987918854,
+            "count": 1162,
+            "expected_clipped_depth_mae": 2.665499210357666,
+            "expected_clipped_depth_within_two": 0.33304646611213684
+          },
+          "9-16": {
+            "accuracy": 0.006269592326134443,
+            "argmax_within_two_bins": 0.025078369304537773,
+            "count": 319,
+            "expected_clipped_depth_mae": 6.6562724113464355,
+            "expected_clipped_depth_within_two": 0.050156738609075546
+          }
+        },
+        "expected_clipped_depth_mae": 1.5502419471740723,
+        "expected_clipped_depth_within_two": 0.7488750219345093,
+        "nll": 1.8228955268859863,
+        "pearson_expected_vs_clipped_depth": 0.43037185072898865,
+        "within_root_order": {
+          "accuracy_ties_half": 0.6781954887218045,
+          "comparable_pairs": 7980,
+          "correct": 5412,
+          "ties": 0
+        }
+      }
+    },
+    {
+      "epoch": 9,
+      "train_nll": 1.3669634272073765,
+      "validation": {
+        "accuracy": 0.382625013589859,
+        "argmax_within_two_bins": 0.7885000109672546,
+        "depth_buckets": {
+          "1-4": {
+            "accuracy": 0.46523815393447876,
+            "argmax_within_two_bins": 0.9307846426963806,
+            "count": 6487,
+            "expected_clipped_depth_mae": 1.052362084388733,
+            "expected_clipped_depth_within_two": 0.8584861755371094
+          },
+          "17-32": {
+            "accuracy": 0.0,
+            "argmax_within_two_bins": 0.0,
+            "count": 32,
+            "expected_clipped_depth_mae": 14.167851448059082,
+            "expected_clipped_depth_within_two": 0.0
+          },
+          "33-64": {
+            "count": 0
+          },
+          "5-8": {
+            "accuracy": 0.03528399392962456,
+            "argmax_within_two_bins": 0.2194492220878601,
+            "count": 1162,
+            "expected_clipped_depth_mae": 2.598538637161255,
+            "expected_clipped_depth_within_two": 0.36058521270751953
+          },
+          "9-16": {
+            "accuracy": 0.006269592326134443,
+            "argmax_within_two_bins": 0.04702194407582283,
+            "count": 319,
+            "expected_clipped_depth_mae": 6.686578750610352,
+            "expected_clipped_depth_within_two": 0.05329153686761856
+          }
+        },
+        "expected_clipped_depth_mae": 1.5540705919265747,
+        "expected_clipped_depth_within_two": 0.7506250143051147,
+        "nll": 1.845486044883728,
+        "pearson_expected_vs_clipped_depth": 0.4309319853782654,
+        "within_root_order": {
+          "accuracy_ties_half": 0.6706766917293233,
+          "comparable_pairs": 7980,
+          "correct": 5352,
+          "ties": 0
+        }
+      }
+    }
+  ],
+  "initial_checkpoint_sha256": "e0cab9659a89765b4d64aee8d655bc9ea921eca181772d7a3cd215bb4de9cec7",
+  "initial_head_sha256": "6cd5878a7d9c7b6a0a6770f0cd66eb6677e4902e9c7cd0470439712e331e9d18",
+  "initial_random_head": {
+    "test": {
+      "accuracy": 0.02237500064074993,
+      "argmax_within_two_bins": 0.11737500131130219,
+      "depth_buckets": {
+        "1-4": {
+          "accuracy": 0.01622195355594158,
+          "argmax_within_two_bins": 0.08929654210805893,
+          "count": 6596,
+          "expected_clipped_depth_mae": 29.873384475708008,
+          "expected_clipped_depth_within_two": 0.0
+        },
+        "17-32": {
+          "accuracy": 0.0,
+          "argmax_within_two_bins": 0.1538461595773697,
+          "count": 39,
+          "expected_clipped_depth_mae": 10.531371116638184,
+          "expected_clipped_depth_within_two": 0.025641025975346565
+        },
+        "33-64": {
+          "accuracy": 0.0,
+          "argmax_within_two_bins": 0.0,
+          "count": 2,
+          "expected_clipped_depth_mae": 3.936227798461914,
+          "expected_clipped_depth_within_two": 0.5
+        },
+        "5-8": {
+          "accuracy": 0.06798867136240005,
+          "argmax_within_two_bins": 0.31728044152259827,
+          "count": 1059,
+          "expected_clipped_depth_mae": 25.710012435913086,
+          "expected_clipped_depth_within_two": 0.0
+        },
+        "9-16": {
+          "accuracy": 0.0,
+          "argmax_within_two_bins": 0.02631578966975212,
+          "count": 304,
+          "expected_clipped_depth_mae": 20.712871551513672,
+          "expected_clipped_depth_within_two": 0.0
+        }
+      },
+      "expected_clipped_depth_mae": 28.87337875366211,
+      "expected_clipped_depth_within_two": 0.0002500000118743628,
+      "nll": 4.12975549697876,
+      "pearson_expected_vs_clipped_depth": -0.02587265335023403,
+      "within_root_order": {
+        "accuracy_ties_half": 0.5073645073645073,
+        "comparable_pairs": 6993,
+        "correct": 3548,
+        "ties": 0
+      }
+    },
+    "validation": {
+      "accuracy": 0.021250000223517418,
+      "argmax_within_two_bins": 0.13262499868869781,
+      "depth_buckets": {
+        "1-4": {
+          "accuracy": 0.013565592467784882,
+          "argmax_within_two_bins": 0.09680899977684021,
+          "count": 6487,
+          "expected_clipped_depth_mae": 29.866230010986328,
+          "expected_clipped_depth_within_two": 0.0
+        },
+        "17-32": {
+          "accuracy": 0.0,
+          "argmax_within_two_bins": 0.0625,
+          "count": 32,
+          "expected_clipped_depth_mae": 12.761502265930176,
+          "expected_clipped_depth_within_two": 0.0
+        },
+        "33-64": {
+          "count": 0
+        },
+        "5-8": {
+          "accuracy": 0.06970740109682083,
+          "argmax_within_two_bins": 0.3571428656578064,
+          "count": 1162,
+          "expected_clipped_depth_mae": 25.706022262573242,
+          "expected_clipped_depth_within_two": 0.0
+        },
+        "9-16": {
+          "accuracy": 0.0031347961630672216,
+          "argmax_within_two_bins": 0.050156738609075546,
+          "count": 319,
+          "expected_clipped_depth_mae": 20.637901306152344,
+          "expected_clipped_depth_within_two": 0.0
+        }
+      },
+      "expected_clipped_depth_mae": 28.825565338134766,
+      "expected_clipped_depth_within_two": 0.0,
+      "nll": 4.1293721199035645,
+      "pearson_expected_vs_clipped_depth": -0.03942398726940155,
+      "within_root_order": {
+        "accuracy_ties_half": 0.5152882205513785,
+        "comparable_pairs": 7980,
+        "correct": 4112,
+        "ties": 0
+      }
+    }
+  },
+  "objective": "unweighted-categorical-cross-entropy-depth-1-to-64",
+  "optimizer": {
+    "learning_rate": 0.001,
+    "name": "AdamW",
+    "weight_decay": 0.01
+  },
+  "parameters": 934208,
+  "schema_version": "new_value_head.full-training-report.v2",
+  "seed": 20260829,
+  "test": {
+    "accuracy": 0.4011250138282776,
+    "argmax_within_two_bins": 0.7985000014305115,
+    "depth_buckets": {
+      "1-4": {
+        "accuracy": 0.48302000761032104,
+        "argmax_within_two_bins": 0.9434505701065063,
+        "count": 6596,
+        "expected_clipped_depth_mae": 1.138403296470642,
+        "expected_clipped_depth_within_two": 0.8327774405479431
+      },
+      "17-32": {
+        "accuracy": 0.0,
+        "argmax_within_two_bins": 0.0,
+        "count": 39,
+        "expected_clipped_depth_mae": 15.612648963928223,
+        "expected_clipped_depth_within_two": 0.0
+      },
+      "33-64": {
+        "accuracy": 0.0,
+        "argmax_within_two_bins": 0.0,
+        "count": 2,
+        "expected_clipped_depth_mae": 29.321308135986328,
+        "expected_clipped_depth_within_two": 0.0
+      },
+      "5-8": {
+        "accuracy": 0.018885741010308266,
+        "argmax_within_two_bins": 0.14919735491275787,
+        "count": 1059,
+        "expected_clipped_depth_mae": 2.371954917907715,
+        "expected_clipped_depth_within_two": 0.4315391778945923
+      },
+      "9-16": {
+        "accuracy": 0.009868420660495758,
+        "argmax_within_two_bins": 0.02302631549537182,
+        "count": 304,
+        "expected_clipped_depth_mae": 6.432500839233398,
+        "expected_clipped_depth_within_two": 0.03618421033024788
+      }
+    },
+    "expected_clipped_depth_mae": 1.5804781913757324,
+    "expected_clipped_depth_within_two": 0.7451249957084656,
+    "nll": 1.711850643157959,
+    "pearson_expected_vs_clipped_depth": 0.4462815225124359,
+    "within_root_order": {
+      "accuracy_ties_half": 0.6915486915486916,
+      "comparable_pairs": 6993,
+      "correct": 4836,
+      "ties": 0
+    }
+  },
+  "test_rows": 8000,
+  "train_rows": 205628,
+  "validation": {
+    "accuracy": 0.3877499997615814,
+    "argmax_within_two_bins": 0.7761250138282776,
+    "depth_buckets": {
+      "1-4": {
+        "accuracy": 0.47448742389678955,
+        "argmax_within_two_bins": 0.931401252746582,
+        "count": 6487,
+        "expected_clipped_depth_mae": 1.155198335647583,
+        "expected_clipped_depth_within_two": 0.8319716453552246
+      },
+      "17-32": {
+        "accuracy": 0.0,
+        "argmax_within_two_bins": 0.0,
+        "count": 32,
+        "expected_clipped_depth_mae": 13.63541030883789,
+        "expected_clipped_depth_within_two": 0.0
+      },
+      "33-64": {
+        "count": 0
+      },
+      "5-8": {
+        "accuracy": 0.016351118683815002,
+        "argmax_within_two_bins": 0.13339070975780487,
+        "count": 1162,
+        "expected_clipped_depth_mae": 2.4866511821746826,
+        "expected_clipped_depth_within_two": 0.38726332783699036
+      },
+      "9-16": {
+        "accuracy": 0.015673981979489326,
+        "argmax_within_two_bins": 0.037617553025484085,
+        "count": 319,
+        "expected_clipped_depth_mae": 6.462143898010254,
+        "expected_clipped_depth_within_two": 0.05642633140087128
+      }
+    },
+    "expected_clipped_depth_mae": 1.6101272106170654,
+    "expected_clipped_depth_within_two": 0.7331249713897705,
+    "nll": 1.7548209428787231,
+    "pearson_expected_vs_clipped_depth": 0.4299742877483368,
+    "within_root_order": {
+      "accuracy_ties_half": 0.6829573934837093,
+      "comparable_pairs": 7980,
+      "correct": 5450,
+      "ties": 0
+    }
+  },
+  "validation_rows": 8000
+}

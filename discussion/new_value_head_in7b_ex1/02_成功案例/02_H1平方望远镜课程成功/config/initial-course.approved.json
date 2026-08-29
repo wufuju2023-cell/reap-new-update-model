@@ -1,0 +1,11 @@
+{
+  "schema_version": "reap.teacher-course.members.v1",
+  "family_id": "challenge-v1-h1-square-course",
+  "approved_for_execution": true,
+  "source": "ExecutionDeclarations.lean",
+  "source_sha256": "6a27d4d7f9e1ae017fa998b95598396001530968844266e81dfde4f5805d3bdf",
+  "target": "ChallengeV1.H1Curriculum.CourseSquareTelescope",
+  "relation_kind": "operator_reviewed_teaching_dependencies_not_logical_implication_certificates",
+  "teacher_reference_imported_by_student": false,
+  "lessons": []
+}

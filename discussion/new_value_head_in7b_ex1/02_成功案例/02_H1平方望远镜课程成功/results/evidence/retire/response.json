@@ -1,0 +1,1 @@
+{"mutation_retry_allowed":false,"policy_version":3,"schema_version":"reap.gpu.retirement.v1","session_id":"course-078cea5460cb-01","snapshot":"retired-online-ttt","snapshot_sha256":"90414cf2052d01f4c632fa8ec68aca9e203cfb1ad75cdfb1ce5db2e84c0bef59","status":"released","tombstone_scope":"current_runtime"}

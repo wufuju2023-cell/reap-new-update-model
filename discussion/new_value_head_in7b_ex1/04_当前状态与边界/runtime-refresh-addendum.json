@@ -1,0 +1,41 @@
+{
+  "schema_version": "new_value_head.course-runtime-refresh-addendum.v1",
+  "purpose": "Allow a frozen course runtime to opt into post-learn selection value refresh without changing historical families.",
+  "historical_default_unchanged": true,
+  "new_h1_family_required_value": true,
+  "runtime_field": "selection_value_refresh",
+  "files": [
+    {
+      "path": "experiments/proof-curriculum/runner/course_driver.py",
+      "before_sha256": "30e3bab2a36b02a4e11cd6a7efd2deaeeeffe8f452c0a9e3f7bf68507cb9ab7c",
+      "after_sha256": "0de1354cc352e1f80d8fd304139abe6b94ac08ec95ea07a64271a9b72cc60de2",
+      "after_bytes": 45838
+    },
+    {
+      "path": "experiments/proof-curriculum/runner/production.py",
+      "before_sha256": "f1a50b04327ec51360e65dff49b0f0929baabc4d086344a001094ff8b4fa1683",
+      "after_sha256": "75702a93be058fcc41b05fae3237aac0e336f910ebad77b25931731017adb484",
+      "after_bytes": 18196
+    },
+    {
+      "path": "experiments/proof-curriculum/runner/runtime.template.json",
+      "before_sha256": "bcdb8b703399869ddfcf80e090d5f655f6fc9f4812eeef4615a894cffba73e3c",
+      "after_sha256": "307e284da09cfa77550dcd1bc30f75316b927550c1d9f9c86e5161bdaf4e9b6d",
+      "after_bytes": 483
+    },
+    {
+      "path": "experiments/proof-curriculum/runner/tests/test_course_driver.py",
+      "before_sha256": "d8e00db589de46ae9c376a8b5f7cc52dc203d50bee618f5f377696a2fa6c20b7",
+      "after_sha256": "97d0005717afd958406ac1af8223cd50a5e5b744d3a273aeb0d92e5217d92165",
+      "after_bytes": 65127
+    }
+  ],
+  "verification": {
+    "command": "python -B -m unittest discover -s tests -v",
+    "working_directory": "experiments/proof-curriculum/runner",
+    "tests_run": 55,
+    "result": "passed",
+    "elapsed_seconds": 42.301,
+    "git_diff_check": "passed"
+  }
+}

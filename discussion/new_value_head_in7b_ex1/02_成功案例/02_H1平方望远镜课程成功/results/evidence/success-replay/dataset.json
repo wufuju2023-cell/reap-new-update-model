@@ -1,0 +1,125 @@
+{
+  "schema_version": "reap.verified-success-trajectory.v1",
+  "profile": "verified-generated-action-negative-longest-branch-v1",
+  "session_id": "course-078cea5460cb-01",
+  "tree_id": "course-078cea5460cb-01.tree0",
+  "theorem": "ReapCurriculumWrapper.attempt",
+  "theorem_sha256": "01d599563bd8f4fdd3be04c9813975df05d2d83d61a368a871a89c821ff91812",
+  "root_return": -5,
+  "action_unit": "one generated tactic string; focus transitions cost zero",
+  "and_return": "minimum branch return; shared-metavariable branch skipping rejected",
+  "state_origin": "exact saved state matched against independent Lean replay",
+  "training_integration": "none; not search_visit_backup or categorical-head training",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "final_policy_version": 2,
+  "inputs_sha256": {
+    "raw_tree.json": "1157a3e39ac1835cdb34d946985e6ef9f71fb58425427b940ac13ff5dfd57984",
+    "replay.lean": "f1bdf21610564b2dbe35c729aca1b7f0b59885cfccf52186d0c6e76aa7aa6bc3",
+    "plan.json": "bf0472b416394dc2f26f499233ab28be42cc03365066be3432963e393cb2e01a",
+    "source.lean": "01d599563bd8f4fdd3be04c9813975df05d2d83d61a368a871a89c821ff91812",
+    "observer.jsonl": "c160388575e6767419131000de5414bb5378ebe70fbef750572aa6f42317a903",
+    "historical-proof.stdout": "b7ed7b0964446294bf7ca60746404c09e45f713eb03ea3addafb600dfdd5d15d",
+    "VerifiedReplay.lean": "a642aaf993f884c26c255ca3cdf1f4c6227ccc87273880243a0fc9c153761f23",
+    "historical-proof.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "session.json": "2155fb2f70285ef07d4e283b72854652aedaee07a17c0aa4e95f02fbddcc193f",
+    "historical-proof-receipt.json": "95b2313453428ee33cf33004b9ef93f67a145c96824ebf215648ac2c3b86a60f",
+    "accepted-proof.lean": "7345d0ebdc495d2a633a1d51257b9b4017733bb9ee759ce9f830e14ba54a08cf",
+    "result.json": "f8cb90804e11c208613d0f95674db012e3a2dff4745b83bd519fa2c04167a336"
+  },
+  "trace_sha256": "556dda1df19cd4ef1925b3d398b46b377a8d915933ef0b03c8458927349f8526",
+  "replay_receipt_sha256": "4eb44db8b074730ba54a6371c96b2d7bdcfe24eaae91ca8c84fa954169e7da0e",
+  "rows": [
+    {
+      "node_index": 0,
+      "child_index": 1,
+      "state": [
+        "⊢ ∀ (n : ℕ), ∑ i ∈ Finset.range n, ((↑i + 1) ^ 2 - ↑i ^ 2) = ↑n ^ 2"
+      ],
+      "next_state": [
+        "n : ℕ\n⊢ ∑ i ∈ Finset.range n, ((↑i + 1) ^ 2 - ↑i ^ 2) = ↑n ^ 2"
+      ],
+      "tactic": "intro n",
+      "return": -5,
+      "prompt": "User: Please generate a tactic in lean4 to solve the state.\nHere're some theorems that may be helpful:\n\nSTATE:\n⊢ ∀ (n : ℕ), ∑ i ∈ Finset.range n, ((↑i + 1) ^ 2 - ↑i ^ 2) = ↑n ^ 2\nTACTIC:\n\nAssistant:",
+      "policy_version": 0,
+      "generation_sequence": 1,
+      "eval_sequence": 2,
+      "generation_index": 0,
+      "candidate_index": 0
+    },
+    {
+      "node_index": 1,
+      "child_index": 6,
+      "state": [
+        "n : ℕ\n⊢ ∑ i ∈ Finset.range n, ((↑i + 1) ^ 2 - ↑i ^ 2) = ↑n ^ 2"
+      ],
+      "next_state": [
+        "n : ℕ\n⊢ ∑ x ∈ Finset.range n, (↑x + 1) ^ 2 - ∑ x ∈ Finset.range n, ↑x ^ 2 = ↑n ^ 2"
+      ],
+      "tactic": "simp [Finset.sum_range_succ, Finset.sum_range_zero]",
+      "return": -4,
+      "prompt": "User: Please generate a tactic in lean4 to solve the state.\nHere're some theorems that may be helpful:\n\nSTATE:\nn : ℕ\n⊢ ∑ i ∈ Finset.range n, ((↑i + 1) ^ 2 - ↑i ^ 2) = ↑n ^ 2\nTACTIC:\n\nAssistant:",
+      "policy_version": 0,
+      "generation_sequence": 76,
+      "eval_sequence": 77,
+      "generation_index": 1,
+      "candidate_index": 0
+    },
+    {
+      "node_index": 6,
+      "child_index": 8,
+      "state": [
+        "n : ℕ\n⊢ ∑ x ∈ Finset.range n, (↑x + 1) ^ 2 - ∑ x ∈ Finset.range n, ↑x ^ 2 = ↑n ^ 2"
+      ],
+      "next_state": [
+        "n : ℕ\n⊢ ∑ x ∈ Finset.range n, (↑x + 1) * (↑x + 1) - ∑ x ∈ Finset.range n, ↑x * ↑x = ↑n * ↑n"
+      ],
+      "tactic": "simp [Finset.sum_range_succ, Finset.sum_range_zero, pow_two, Nat.cast_add_one, Nat.cast_one]",
+      "return": -3,
+      "prompt": "User: Please generate a tactic in lean4 to solve the state.\nHere're some theorems that may be helpful:\n\nSTATE:\nn : ℕ\n⊢ ∑ x ∈ Finset.range n, (↑x + 1) ^ 2 - ∑ x ∈ Finset.range n, ↑x ^ 2 = ↑n ^ 2\nTACTIC:\n\nAssistant:",
+      "policy_version": 2,
+      "generation_sequence": 224,
+      "eval_sequence": 225,
+      "generation_index": 0,
+      "candidate_index": 6
+    },
+    {
+      "node_index": 8,
+      "child_index": 10,
+      "state": [
+        "n : ℕ\n⊢ ∑ x ∈ Finset.range n, (↑x + 1) * (↑x + 1) - ∑ x ∈ Finset.range n, ↑x * ↑x = ↑n * ↑n"
+      ],
+      "next_state": [
+        "case succ\nn✝ : ℕ\na✝ : ∑ x ∈ Finset.range n✝, (↑x + 1) * (↑x + 1) - ∑ x ∈ Finset.range n✝, ↑x * ↑x = ↑n✝ * ↑n✝\n⊢ ∑ x ∈ Finset.range n✝, (↑x + 1) * (↑x + 1) + (↑n✝ + 1) * (↑n✝ + 1) - (∑ x ∈ Finset.range n✝, ↑x * ↑x + ↑n✝ * ↑n✝) =\n    (↑n✝ + 1) * (↑n✝ + 1)"
+      ],
+      "tactic": "induction n <;> simp [Finset.sum_range_succ, *]",
+      "return": -2,
+      "prompt": "User: Please generate a tactic in lean4 to solve the state.\nHere're some theorems that may be helpful:\n\nSTATE:\nn : ℕ\n⊢ ∑ x ∈ Finset.range n, (↑x + 1) * (↑x + 1) - ∑ x ∈ Finset.range n, ↑x * ↑x = ↑n * ↑n\nTACTIC:\n\nAssistant:",
+      "policy_version": 2,
+      "generation_sequence": 240,
+      "eval_sequence": 241,
+      "generation_index": 0,
+      "candidate_index": 3
+    },
+    {
+      "node_index": 10,
+      "child_index": 11,
+      "state": [
+        "case succ\nn✝ : ℕ\na✝ : ∑ x ∈ Finset.range n✝, (↑x + 1) * (↑x + 1) - ∑ x ∈ Finset.range n✝, ↑x * ↑x = ↑n✝ * ↑n✝\n⊢ ∑ x ∈ Finset.range n✝, (↑x + 1) * (↑x + 1) + (↑n✝ + 1) * (↑n✝ + 1) - (∑ x ∈ Finset.range n✝, ↑x * ↑x + ↑n✝ * ↑n✝) =\n    (↑n✝ + 1) * (↑n✝ + 1)"
+      ],
+      "next_state": [],
+      "tactic": "linarith",
+      "return": -1,
+      "prompt": "User: Please generate a tactic in lean4 to solve the state.\nHere're some theorems that may be helpful:\n\nSTATE:\ncase succ\nn✝ : ℕ\na✝ : ∑ x ∈ Finset.range n✝, (↑x + 1) * (↑x + 1) - ∑ x ∈ Finset.range n✝, ↑x * ↑x = ↑n✝ * ↑n✝\n⊢ ∑ x ∈ Finset.range n✝, (↑x + 1) * (↑x + 1) + (↑n✝ + 1) * (↑n✝ + 1) - (∑ x ∈ Finset.range n✝, ↑x * ↑x + ↑n✝ * ↑n✝) =\n    (↑n✝ + 1) * (↑n✝ + 1)\nTACTIC:\n\nAssistant:",
+      "policy_version": 2,
+      "generation_sequence": 260,
+      "eval_sequence": 261,
+      "generation_index": 0,
+      "candidate_index": 0
+    }
+  ]
+}
