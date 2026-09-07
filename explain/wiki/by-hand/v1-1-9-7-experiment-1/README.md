@@ -16,7 +16,7 @@
 | E3 | prompt 变体分布敏感性 | ✅（`03-E3-E4-E5.md`）spread +2.4~+4.6 |
 | E4 | policy candidates 多样性 | ✅（`03-…`）distinct 7-11/16，Jaccard 0.0-0.27 |
 | E5 | 温度/采样扫描 | ✅（`03-…`）unique 2→4→6（T 0.4→1.6） |
-| 汇 | 结论与下一步 | ⏳ |
+| 汇 | 结论与下一步 | ✅（`04-summary.md`）后验已可观测；phi→MCTS selection 接线待做 |
 
 ## 环境
 
