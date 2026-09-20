@@ -15,3 +15,11 @@ data/
 # 大件（留在 F 盘不入 git）
 *.tar.zst
 *.tar.gz
+
+# Retired/superseded docs (retired 2026-09-20; kept only in git history).
+# Corrections: v1-spec/v1-1-training-on-amd-cloud/00-overview.md (SFT),
+# v1-result/docs/current/** (experiments), v1-result/docs/08-*.md (CPU acceptance).
+v1-spec/v1-1-training-methods/02-sft-spec.md
+v1-result/docs/0[1-7]-*.md
+v1-result/docs/09-*.md
+v1-result/docs/10-*.md
